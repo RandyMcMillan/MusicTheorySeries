@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		482E6BCA140C28B200A50917 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482E6BC9140C28B200A50917 /* AudioUnit.framework */; };
+		484006D41472CA5700D38283 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 484006D31472CA5700D38283 /* www */; };
+		484006D51472CA5700D38283 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 484006D31472CA5700D38283 /* www */; };
+		4899612313DA0979009041E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4899612213DA0979009041E6 /* Cocoa.framework */; };
+		4899612D13DA0979009041E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4899612B13DA0979009041E6 /* InfoPlist.strings */; };
+		4899612F13DA0979009041E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4899612E13DA0979009041E6 /* main.m */; };
+		4899613313DA0979009041E6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4899613113DA0979009041E6 /* Credits.rtf */; };
+		4899613613DA0979009041E6 /* MacGapAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4899613513DA0979009041E6 /* MacGapAppDelegate.m */; };
+		4899613913DA0979009041E6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4899613713DA0979009041E6 /* MainMenu.xib */; };
+		4899614113DA0979009041E6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4899614013DA0979009041E6 /* SenTestingKit.framework */; };
+		4899614213DA0979009041E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4899612213DA0979009041E6 /* Cocoa.framework */; };
+		4899614A13DA0979009041E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4899614813DA0979009041E6 /* InfoPlist.strings */; };
+		4899614C13DA0979009041E6 /* MacGapTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4899614B13DA0979009041E6 /* MacGapTests.h */; };
+		4899614E13DA0979009041E6 /* MacGapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4899614D13DA0979009041E6 /* MacGapTests.m */; };
+		4899616313DA0C5F009041E6 /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4899616213DA0C5F009041E6 /* ContentView.m */; };
+		4899616613DA0D7E009041E6 /* WebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4899616513DA0D7E009041E6 /* WebViewDelegate.m */; };
+		4899616913DA0EBE009041E6 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4899616813DA0EBD009041E6 /* Utils.m */; };
+		4899616C13DA0F66009041E6 /* Music Theory 101.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4899616B13DA0F66009041E6 /* Music Theory 101.icns */; };
+		4899617113DA11AA009041E6 /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = 4899617013DA11AA009041E6 /* Sound.m */; };
+		4899617913DA1617009041E6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4899617813DA1617009041E6 /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4899614313DA0979009041E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4899611513DA0979009041E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4899611D13DA0979009041E6;
+			remoteInfo = MacGap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		482E6BC9140C28B200A50917 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		484006D31472CA5700D38283 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../MT101/www; sourceTree = "<group>"; };
+		4899611E13DA0979009041E6 /* Music Theory 101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music Theory 101.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4899612213DA0979009041E6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4899612513DA0979009041E6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4899612613DA0979009041E6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4899612713DA0979009041E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4899612A13DA0979009041E6 /* Music Theory 101-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Music Theory 101-Info.plist"; sourceTree = "<group>"; };
+		4899612C13DA0979009041E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4899612E13DA0979009041E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4899613013DA0979009041E6 /* Music Theory 101-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Music Theory 101-Prefix.pch"; sourceTree = "<group>"; };
+		4899613213DA0979009041E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4899613413DA0979009041E6 /* MacGapAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacGapAppDelegate.h; sourceTree = "<group>"; };
+		4899613513DA0979009041E6 /* MacGapAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacGapAppDelegate.m; sourceTree = "<group>"; };
+		4899613813DA0979009041E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4899613F13DA0979009041E6 /* MT101Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MT101Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4899614013DA0979009041E6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4899614713DA0979009041E6 /* Music Theory 101Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Music Theory 101Tests-Info.plist"; sourceTree = "<group>"; };
+		4899614913DA0979009041E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4899614B13DA0979009041E6 /* MacGapTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacGapTests.h; sourceTree = "<group>"; };
+		4899614D13DA0979009041E6 /* MacGapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacGapTests.m; sourceTree = "<group>"; };
+		4899616013DA0BED009041E6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		4899616113DA0C5F009041E6 /* ContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentView.h; sourceTree = "<group>"; };
+		4899616213DA0C5F009041E6 /* ContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentView.m; sourceTree = "<group>"; };
+		4899616413DA0D7E009041E6 /* WebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewDelegate.h; sourceTree = "<group>"; };
+		4899616513DA0D7E009041E6 /* WebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewDelegate.m; sourceTree = "<group>"; };
+		4899616713DA0EBD009041E6 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		4899616813DA0EBD009041E6 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		4899616B13DA0F66009041E6 /* Music Theory 101.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Music Theory 101.icns"; sourceTree = "<group>"; };
+		4899616F13DA11AA009041E6 /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sound.h; sourceTree = "<group>"; };
+		4899617013DA11AA009041E6 /* Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sound.m; sourceTree = "<group>"; };
+		4899617813DA1617009041E6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4899611B13DA0979009041E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				482E6BCA140C28B200A50917 /* AudioUnit.framework in Frameworks */,
+				4899617913DA1617009041E6 /* WebKit.framework in Frameworks */,
+				4899612313DA0979009041E6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4899613B13DA0979009041E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4899614113DA0979009041E6 /* SenTestingKit.framework in Frameworks */,
+				4899614213DA0979009041E6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4899611313DA0979009041E6 = {
+			isa = PBXGroup;
+			children = (
+				484006D31472CA5700D38283 /* www */,
+				4899616A13DA0F3C009041E6 /* Resources */,
+				4899615E13DA09B3009041E6 /* Classes */,
+				4899612813DA0979009041E6 /* MacGap */,
+				4899614513DA0979009041E6 /* MacGapTests */,
+				4899612113DA0979009041E6 /* Frameworks */,
+				4899611F13DA0979009041E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4899611F13DA0979009041E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4899611E13DA0979009041E6 /* Music Theory 101.app */,
+				4899613F13DA0979009041E6 /* MT101Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4899612113DA0979009041E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4899617813DA1617009041E6 /* WebKit.framework */,
+				4899612213DA0979009041E6 /* Cocoa.framework */,
+				4899614013DA0979009041E6 /* SenTestingKit.framework */,
+				4899612413DA0979009041E6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4899612413DA0979009041E6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				482E6BC9140C28B200A50917 /* AudioUnit.framework */,
+				4899612513DA0979009041E6 /* AppKit.framework */,
+				4899612613DA0979009041E6 /* CoreData.framework */,
+				4899612713DA0979009041E6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4899612813DA0979009041E6 /* MacGap */ = {
+			isa = PBXGroup;
+			children = (
+				4899613413DA0979009041E6 /* MacGapAppDelegate.h */,
+				4899613513DA0979009041E6 /* MacGapAppDelegate.m */,
+				4899613713DA0979009041E6 /* MainMenu.xib */,
+				4899612913DA0979009041E6 /* Supporting Files */,
+			);
+			path = MacGap;
+			sourceTree = "<group>";
+		};
+		4899612913DA0979009041E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4899612A13DA0979009041E6 /* Music Theory 101-Info.plist */,
+				4899612B13DA0979009041E6 /* InfoPlist.strings */,
+				4899612E13DA0979009041E6 /* main.m */,
+				4899613013DA0979009041E6 /* Music Theory 101-Prefix.pch */,
+				4899613113DA0979009041E6 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4899614513DA0979009041E6 /* MacGapTests */ = {
+			isa = PBXGroup;
+			children = (
+				4899614B13DA0979009041E6 /* MacGapTests.h */,
+				4899614D13DA0979009041E6 /* MacGapTests.m */,
+				4899614613DA0979009041E6 /* Supporting Files */,
+			);
+			path = MacGapTests;
+			sourceTree = "<group>";
+		};
+		4899614613DA0979009041E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4899614713DA0979009041E6 /* Music Theory 101Tests-Info.plist */,
+				4899614813DA0979009041E6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4899615E13DA09B3009041E6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4899615F13DA09F6009041E6 /* Commands */,
+				4899616013DA0BED009041E6 /* Constants.h */,
+				4899616113DA0C5F009041E6 /* ContentView.h */,
+				4899616213DA0C5F009041E6 /* ContentView.m */,
+				4899616413DA0D7E009041E6 /* WebViewDelegate.h */,
+				4899616513DA0D7E009041E6 /* WebViewDelegate.m */,
+				4899616713DA0EBD009041E6 /* Utils.h */,
+				4899616813DA0EBD009041E6 /* Utils.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4899615F13DA09F6009041E6 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				4899616F13DA11AA009041E6 /* Sound.h */,
+				4899617013DA11AA009041E6 /* Sound.m */,
+			);
+			name = Commands;
+			sourceTree = "<group>";
+		};
+		4899616A13DA0F3C009041E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4899616B13DA0F66009041E6 /* Music Theory 101.icns */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4899611D13DA0979009041E6 /* Music Theory 101 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4899615113DA0979009041E6 /* Build configuration list for PBXNativeTarget "Music Theory 101" */;
+			buildPhases = (
+				4899611A13DA0979009041E6 /* Sources */,
+				4899611B13DA0979009041E6 /* Frameworks */,
+				48DC5C0613DA606400713A59 /* ShellScript */,
+				4899611C13DA0979009041E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Music Theory 101";
+			productName = MacGap;
+			productReference = 4899611E13DA0979009041E6 /* Music Theory 101.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4899613E13DA0979009041E6 /* MT101Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4899615413DA0979009041E6 /* Build configuration list for PBXNativeTarget "MT101Tests" */;
+			buildPhases = (
+				4899613A13DA0979009041E6 /* Sources */,
+				4899613B13DA0979009041E6 /* Frameworks */,
+				48A5179813DA1D28007C6A90 /* ShellScript */,
+				4899613C13DA0979009041E6 /* Resources */,
+				4899613D13DA0979009041E6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4899614413DA0979009041E6 /* PBXTargetDependency */,
+			);
+			name = MT101Tests;
+			productName = MacGapTests;
+			productReference = 4899613F13DA0979009041E6 /* MT101Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4899611513DA0979009041E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 4899611813DA0979009041E6 /* Build configuration list for PBXProject "Music Theory 101" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4899611313DA0979009041E6;
+			productRefGroup = 4899611F13DA0979009041E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4899611D13DA0979009041E6 /* Music Theory 101 */,
+				4899613E13DA0979009041E6 /* MT101Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4899611C13DA0979009041E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4899612D13DA0979009041E6 /* InfoPlist.strings in Resources */,
+				4899613313DA0979009041E6 /* Credits.rtf in Resources */,
+				4899613913DA0979009041E6 /* MainMenu.xib in Resources */,
+				4899616C13DA0F66009041E6 /* Music Theory 101.icns in Resources */,
+				484006D41472CA5700D38283 /* www in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4899613C13DA0979009041E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4899614A13DA0979009041E6 /* InfoPlist.strings in Resources */,
+				4899614C13DA0979009041E6 /* MacGapTests.h in Resources */,
+				484006D51472CA5700D38283 /* www in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4899613D13DA0979009041E6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		48A5179813DA1D28007C6A90 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "touch www\ntouch www/index.html\ntouch www/index.js";
+		};
+		48DC5C0613DA606400713A59 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "touch www\ntouch index.js\ntouch src";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4899611A13DA0979009041E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4899612F13DA0979009041E6 /* main.m in Sources */,
+				4899613613DA0979009041E6 /* MacGapAppDelegate.m in Sources */,
+				4899616313DA0C5F009041E6 /* ContentView.m in Sources */,
+				4899616613DA0D7E009041E6 /* WebViewDelegate.m in Sources */,
+				4899616913DA0EBE009041E6 /* Utils.m in Sources */,
+				4899617113DA11AA009041E6 /* Sound.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4899613A13DA0979009041E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4899614E13DA0979009041E6 /* MacGapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4899614413DA0979009041E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4899611D13DA0979009041E6 /* Music Theory 101 */;
+			targetProxy = 4899614313DA0979009041E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4899612B13DA0979009041E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4899612C13DA0979009041E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4899613113DA0979009041E6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4899613213DA0979009041E6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4899613713DA0979009041E6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4899613813DA0979009041E6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4899614813DA0979009041E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4899614913DA0979009041E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4899614F13DA0979009041E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "Mac Developer: Randy McMillan (PHTM25SWUN)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "9191ED7A-5C21-48B4-9198-AFFBE19BDC3B";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4899615013DA0979009041E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "Mac Developer: Randy McMillan (PHTM25SWUN)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE = "9191ED7A-5C21-48B4-9198-AFFBE19BDC3B";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4899615213DA0979009041E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacGap/Music Theory 101-Prefix.pch";
+				INFOPLIST_FILE = "MacGap/Music Theory 101-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "Music Theory 101";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4899615313DA0979009041E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacGap/Music Theory 101-Prefix.pch";
+				INFOPLIST_FILE = "MacGap/Music Theory 101-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "Music Theory 101";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4899615513DA0979009041E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacGap.app/Contents/MacOS/MacGap";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacGap/MacGap-Prefix.pch";
+				INFOPLIST_FILE = "MacGapTests/Music Theory 101Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4899615613DA0979009041E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacGap.app/Contents/MacOS/MacGap";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacGap/MacGap-Prefix.pch";
+				INFOPLIST_FILE = "MacGapTests/Music Theory 101Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		48A5179913DA214C007C6A90 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "Mac Developer: Randy McMillan (PHTM25SWUN)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE = "9191ED7A-5C21-48B4-9198-AFFBE19BDC3B";
+				SDKROOT = macosx;
+			};
+			name = Distribution;
+		};
+		48A5179A13DA214C007C6A90 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacGap/Music Theory 101-Prefix.pch";
+				INFOPLIST_FILE = "MacGap/Music Theory 101-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "Music Theory 101";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		48A5179B13DA214C007C6A90 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacGap.app/Contents/MacOS/MacGap";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacGap/MacGap-Prefix.pch";
+				INFOPLIST_FILE = "MacGapTests/Music Theory 101Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4899611813DA0979009041E6 /* Build configuration list for PBXProject "Music Theory 101" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4899614F13DA0979009041E6 /* Debug */,
+				4899615013DA0979009041E6 /* Release */,
+				48A5179913DA214C007C6A90 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4899615113DA0979009041E6 /* Build configuration list for PBXNativeTarget "Music Theory 101" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4899615213DA0979009041E6 /* Debug */,
+				4899615313DA0979009041E6 /* Release */,
+				48A5179A13DA214C007C6A90 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4899615413DA0979009041E6 /* Build configuration list for PBXNativeTarget "MT101Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4899615513DA0979009041E6 /* Debug */,
+				4899615613DA0979009041E6 /* Release */,
+				48A5179B13DA214C007C6A90 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4899611513DA0979009041E6 /* Project object */;
+}

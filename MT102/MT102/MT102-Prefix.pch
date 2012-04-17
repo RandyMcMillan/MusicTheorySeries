@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MT102' target in the 'MT102' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
