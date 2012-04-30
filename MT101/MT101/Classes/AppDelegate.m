@@ -182,7 +182,7 @@
 	 */
 	/**/
 #if TARGET_IPHONE_SIMULATOR
-	[NSClassFromString(@"WebView") _enableRemoteInspector];
+	//[NSClassFromString(@"WebView") _enableRemoteInspector];
 	NSLog(@"MediaBrowserViewController.m Line 76. This makes MediaBrowser debbugging in the desktop browser possible http://localhost:9999/?page=1 or 2 ");
 #endif
 	/**/
