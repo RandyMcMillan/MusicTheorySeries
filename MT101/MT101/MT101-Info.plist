@@ -10,15 +10,6 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string>icon.png</string>
-	<key>CFBundleIconFiles</key>
-	<array>
-		<string>icon.png</string>
-		<string>icon@2x.png</string>
-		<string>icon-72.png</string>
-		<string>Default.png</string>
-		<string>Default@2x.png</string>
-		<string>icon-72@2x.png</string>
-	</array>
 	<key>CFBundleIcons</key>
 	<dict>
 		<key>CFBundlePrimaryIcon</key>
@@ -28,12 +19,10 @@
 				<string>icon.png</string>
 				<string>icon@2x.png</string>
 				<string>icon-72.png</string>
-				<string>Default.png</string>
-				<string>Default@2x.png</string>
 				<string>icon-72@2x.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
@@ -54,25 +43,15 @@
 	<string></string>
 	<key>NSMainNibFile~ipad</key>
 	<string></string>
-	<key>UIApplicationExitsOnSuspend</key>
-	<true/>
-	<key>UIPrerenderedIcon</key>
-	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIRequiresPersistentWiFi</key>
-	<true/>
-	<key>UIInterfaceOrientation</key>
-	<string>UIInterfaceOrientationLandscapeLeft</string>
-	<key>UIStatusBarHidden</key>
-	<true/>
 </dict>
 </plist>

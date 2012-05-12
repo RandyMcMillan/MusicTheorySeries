@@ -21,7 +21,7 @@
 //  AppDelegate.m
 //  MT101
 //
-//  Created by Randy McMillan on 3/23/12.
+//  Created by Randy McMillan on 5/11/12.
 //  Copyright OpenOSX.org 2012. All rights reserved.
 //
 
@@ -39,7 +39,7 @@
 
 @implementation AppDelegate
 
-@synthesize invokeString, window, viewController;
+@synthesize window, viewController;
 
 - (id) init
 {	
@@ -48,8 +48,8 @@
 	 **/
     NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage]; 
     [cookieStorage setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
-    
-    [CDVURLProtocol registerPGHttpURLProtocol];
+        
+    [CDVURLProtocol registerURLProtocol];
     
     return [super init];
 }
@@ -62,8 +62,10 @@
 - (BOOL) application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {    
     NSURL* url = [launchOptions objectForKey:UIApplicationLaunchOptionsURLKey];
+    NSString* invokeString = nil;
+    
     if (url && [url isKindOfClass:[NSURL class]]) {
-        self.invokeString = [url absoluteString];
+        invokeString = [url absoluteString];
 		NSLog(@"MT101 launchOptions = %@", url);
     }    
     
@@ -77,12 +79,9 @@
     self.viewController.useSplashScreen = YES;
     self.viewController.wwwFolderName = @"www";
     self.viewController.startPage = @"index.html";
+    self.viewController.invokeString = invokeString;
     self.viewController.view.frame = viewBounds;
     
-    // over-ride delegates
-    self.viewController.webView.delegate = self;
-    self.viewController.commandDelegate = self;
-
     // check whether the current orientation is supported: if it is, keep it, rather than forcing a rotation
     BOOL forceStartupRotation = YES;
     UIDeviceOrientation curDevOrientation = [[UIDevice currentDevice] orientation];
@@ -108,7 +107,7 @@
         NSLog(@"AppDelegate forcing status bar to: %d from: %d", newOrient, curDevOrientation);
         [[UIApplication sharedApplication] setStatusBarOrientation:newOrient];
     }
-    self.viewController.view.backgroundColor = [UIColor colorWithRed:0.918 green:0.918 blue:0.918 alpha:1.000];
+    
     [self.window addSubview:self.viewController.view];
     [self.window makeKeyAndVisible];
     
@@ -116,7 +115,7 @@
 }
 
 // this happens while we are running ( in the background, or from within our own app )
-// only valid if FooBar.plist specifies a protocol to handle
+// only valid if MT101-Info.plist specifies a protocol to handle
 - (BOOL) application:(UIApplication*)application handleOpenURL:(NSURL*)url 
 {
     if (!url) { 
@@ -131,74 +130,6 @@
     [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:CDVPluginHandleOpenURLNotification object:url]];
     
     return YES;    
-}
-
-#pragma PGCommandDelegate implementation
-
-- (id) getCommandInstance:(NSString*)className
-{
-	return [self.viewController getCommandInstance:className];
-}
-
-- (BOOL) execute:(CDVInvokedUrlCommand*)command
-{
-	return [self.viewController execute:command];
-}
-
-- (NSString*) pathForResource:(NSString*)resourcepath;
-{
-	return [self.viewController pathForResource:resourcepath];
-}
-
-#pragma UIWebDelegate implementation
-
-- (void) webViewDidFinishLoad:(UIWebView*) theWebView 
-{
-	// only valid if FooBar.plist specifies a protocol to handle
-	if (self.invokeString)
-	{
-		// this is passed before the deviceready event is fired, so you can access it in js when you receive deviceready
-		NSString* jsString = [NSString stringWithFormat:@"var invokeString = \"%@\";", self.invokeString];
-		[theWebView stringByEvaluatingJavaScriptFromString:jsString];
-	}
-	
-	 // Black base color for background matches the native apps
-   	theWebView.backgroundColor = [UIColor colorWithRed:0.918 green:0.918 blue:0.918 alpha:1.000];
-    
-	return [self.viewController webViewDidFinishLoad:theWebView];
-}
-
-- (void) webViewDidStartLoad:(UIWebView*)theWebView 
-{
-	
-	/*
-	 Uncommentto make MediaBrowser debbugging in the desktop browser possible
-	 Add to your app AddDelegate.m approx line LINE: 173
-	 debug your app in simulator 
-	 http://localhost:9999/?page=1
-	 and
-	 debug MediaBrowser webView in simulator
-	 http://localhost:9999/?page=2
-	 */
-	/**/
-#if TARGET_IPHONE_SIMULATOR
-	//[NSClassFromString(@"WebView") _enableRemoteInspector];
-	NSLog(@"MediaBrowserViewController.m Line 76. This makes MediaBrowser debbugging in the desktop browser possible http://localhost:9999/?page=1 or 2 ");
-#endif
-	/**/
-
-	
-	return [self.viewController webViewDidStartLoad:theWebView];
-}
-
-- (void) webView:(UIWebView*)theWebView didFailLoadWithError:(NSError*)error 
-{
-	return [self.viewController webView:theWebView didFailLoadWithError:error];
-}
-
-- (BOOL) webView:(UIWebView*)theWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
-{
-	return [self.viewController webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType];
 }
 
 - (void) dealloc
