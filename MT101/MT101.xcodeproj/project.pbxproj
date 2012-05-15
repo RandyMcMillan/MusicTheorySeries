@@ -42,7 +42,6 @@
 		48CF0093155D8F89000C53E2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF0092155D8F89000C53E2 /* MainViewController.m */; };
 		48CF0095155D8F89000C53E2 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48CF0094155D8F89000C53E2 /* MainViewController.xib */; };
 		48CF0099155D8F89000C53E2 /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = 48CF0098155D8F89000C53E2 /* verify.sh */; };
-		48CF00A0155D8F9F000C53E2 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 48CF009F155D8F9F000C53E2 /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,7 +86,6 @@
 		48CF0094155D8F89000C53E2 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		48CF0097155D8F89000C53E2 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		48CF0098155D8F89000C53E2 /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
-		48CF009F155D8F9F000C53E2 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +134,6 @@
 		48CF0035155D8F88000C53E2 = {
 			isa = PBXGroup;
 			children = (
-				48CF009F155D8F9F000C53E2 /* www */,
 				48CF0061155D8F89000C53E2 /* MT101 */,
 				48CF0046155D8F89000C53E2 /* Frameworks */,
 				48CF0044155D8F89000C53E2 /* Products */,
@@ -353,7 +350,6 @@
 				48CF008C155D8F89000C53E2 /* Cordova.plist in Resources */,
 				48CF0095155D8F89000C53E2 /* MainViewController.xib in Resources */,
 				48CF0099155D8F89000C53E2 /* verify.sh in Resources */,
-				48CF00A0155D8F9F000C53E2 /* www in Resources */,
 				48B66D27155EE41500D9420E /* LICENSE in Resources */,
 				48B66D28155EE41500D9420E /* README.md in Resources */,
 			);
@@ -505,6 +501,7 @@
 					"CORDOVA_FRAMEWORK=1",
 				);
 				INFOPLIST_FILE = "MT101/MT101-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
@@ -535,6 +532,7 @@
 					"CORDOVA_FRAMEWORK=1",
 				);
 				INFOPLIST_FILE = "MT101/MT101-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
