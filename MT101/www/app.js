@@ -1,47 +1,52 @@
-Ext.application({
-    name: 'MT101',
+//<debug>
+Ext.Loader.setPath({
+    'Ext': 'sdk/src'
+});
+//</debug>
 
-    requires: [
-        'Ext.MessageBox'
+/**
+ * Ext.application is the heart of your app. It sets the application name, can specify the icon and startup images to
+ * use when your app is added to the home screen, and sets up your application's dependencies - usually the models,
+ * views and controllers that your app uses.
+ */
+Ext.application({
+    name: 'Kitchensink',
+
+    //sets up the icon and startup screens for when the app is added to a phone/tablet home screen
+
+    glossOnIcon: false,
+    icon: {
+        57: 'resources/icons/icon.png',
+        72: 'resources/icons/icon@72.png',
+        114: 'resources/icons/icon@2x.png',
+        144: 'resources/icons/icon@114.png'
+    },
+
+    phoneStartupScreen: 'resources/loading/Homescreen.jpg',
+    tabletStartupScreen: 'resources/loading/Homescreen~ipad.jpg',
+
+    //loads the views used by the app from the app/view folder
+    views: [
+        //component demos
+        'NestedList', 'List', 'SourceOverlay', 'Buttons',
+        'Forms', 'Icons', 'BottomTabs',
+        'Map', 'Overlays', 'Tabs','Toolbars',
+        'Video', 'Audio', 'Carousel', 'TouchEvents',
+
+        //data and utility demos
+        'JSONP', 'YQL', 'Ajax', 'NestedLoading',
+
+        //card transition animation demos
+        'SlideLeft', 'SlideRight', 'SlideUp', 'SlideDown',
+        'CoverLeft', 'CoverRight', 'CoverUp', 'CoverDown',
+        'RevealLeft', 'RevealRight', 'RevealUp', 'RevealDown',
+        'Pop', 'Fade', 'Flip','Cube'
     ],
 
-    views: ['Main'],
+    //loads app/store/Demos.js, which contains the tree data for our main navigation NestedList
+    stores: ['Demos'],
 
-    icon: {
-        '57': 'resources/icons/Icon.png',
-        '72': 'resources/icons/Icon~ipad.png',
-        '114': 'resources/icons/Icon@2x.png',
-        '144': 'resources/icons/Icon~ipad@2x.png'
-    },
-
-    isIconPrecomposed: true,
-
-    startupImage: {
-        '320x460': 'resources/startup/320x460.jpg',
-        '640x920': 'resources/startup/640x920.png',
-        '768x1004': 'resources/startup/768x1004.png',
-        '748x1024': 'resources/startup/748x1024.png',
-        '1536x2008': 'resources/startup/1536x2008.png',
-        '1496x2048': 'resources/startup/1496x2048.png'
-    },
-
-    launch: function() {
-        // Destroy the #appLoadingIndicator element
-        Ext.fly('appLoadingIndicator').destroy();
-
-        // Initialize the main view
-        Ext.Viewport.add(Ext.create('MT101.view.Main'));
-    },
-
-    onUpdated: function() {
-        Ext.Msg.confirm(
-            "Application Update",
-            "This application has just successfully been updated to the latest version. Reload now?",
-            function(buttonId) {
-                if (buttonId === 'yes') {
-                    window.location.reload();
-                }
-            }
-        );
-    }
+    //the Kitchen Sink has Phone and Tablet modes, which rearrange the screen based on the type
+    //of device detected
+    profiles: ['Tablet', 'Phone']
 });

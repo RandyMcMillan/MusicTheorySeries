@@ -21,7 +21,7 @@
 //  AppDelegate.m
 //  MT101
 //
-//  Created by Randy McMillan on 5/11/12.
+//  Created by Randy McMillan on 5/15/12.
 //  Copyright OpenOSX.org 2012. All rights reserved.
 //
 
@@ -78,7 +78,7 @@
     self.viewController = [[[MainViewController alloc] init] autorelease];
     self.viewController.useSplashScreen = YES;
     self.viewController.wwwFolderName = @"www";
-    self.viewController.startPage = @"index.html";
+    self.viewController.startPage = @"indexSencha2.html";
     self.viewController.invokeString = invokeString;
     self.viewController.view.frame = viewBounds;
     

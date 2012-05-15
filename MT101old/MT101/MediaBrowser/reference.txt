@@ -1,0 +1,21 @@
+- (BOOL)webView:(UIWebView *)theWebView shouldStartLoadWithRequest:
+(NSURLRequest *)request navigationType:
+(UIWebViewNavigationType)navigationType
+{
+    NSURL *url = [request URL];
+    if ([[url scheme] isEqualToString:@"gap"] || [url
+                                                  isFileURL]) {
+       // return [ super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType ];
+    	return [self.viewController webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType];
+
+    
+    }
+    else {
+        ChildBrowserViewController* childBrowser =
+        [ [ ChildBrowserViewController alloc ] initWithScale:FALSE ];
+        [super.viewController presentModalViewController:childBrowser
+                                                animated:YES ];
+        [childBrowser loadURL:[url description]];
+        [childBrowser release];
+        return NO;
+    }

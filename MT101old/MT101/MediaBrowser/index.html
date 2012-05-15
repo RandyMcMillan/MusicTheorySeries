@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+<script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="MediaBrowser.js"></script>
+<script type="text/javascript">
+
+
+function onBodyLoad()
+{
+	document.addEventListener("deviceready", onDeviceReady, false);
+}
+/* When this function is called, Cordova has been initialized and is ready to roll */
+/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+for more details -jm */
+function onDeviceReady()
+{
+	var element = document.getElementById('deviceProperties');
+	element.innerHTML = 'Device Name: '     + device.name     + '<br />' + 
+	'Device PhoneGap: ' + device.cordova + '<br />' + 
+	'Device Platform: ' + device.platform + '<br />' + 
+	'Device UUID: '     + device.uuid     + '<br />' + 
+	'Device Version: '  + device.version  + '<br />' +
+	''+window.innerHeight+'<br />';
+
+	//var loc = "http://www.w3.org/html/logo/img/html5-topper.png";
+	//var loc = "http://media.w3.org/2010/07/plh_slides_test.mov";
+	//var loc = "http://media.w3.org/2010/03/octopus.mp4";
+	//var loc = "http://media.w3.org/2010/05/bunny/trailer.mp4";
+	//var loc = "http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4";
+	//var loc = "http://upload.wikimedia.org/wikipedia/commons/9/9a/Curly_Brackets.svg";
+	//var loc = "http://upload.wikimedia.org/wikipedia/commons/2/29/FakeRealLogSprial.svg";
+	//var loc = "https://github.com/apache/incubator-cordova-ios/raw/master/Cordova-based%20Application/Resources/icons/icon@2x.png";
+</script>
+
+<script type="text/javascript">
+
+function showRapheal()
+{
+	var loc = "local.rapheal.html";
+	Cordova.exec("MediaBrowserCommand.showWebPage", loc);
+}
+function showIScrollDemo()
+{
+	var loc = "local.iScrollDemo.html";
+	Cordova.exec("MediaBrowserCommand.showWebPage", loc);
+}
+
+
+</script>
+
+
+</head>
+	<body onload="onBodyLoad()">
+
+	<form>
+	<input type="button" value="showRapheal" onclick="showRapheal()" />
+	</form>
+	<form>
+	<input type="button" value="showIScrollDemo" onclick="showIScrollDemo()" />
+	</form>
+
+	<p id="deviceProperties">Loading device properties...</p>
+</body>
+</html>
