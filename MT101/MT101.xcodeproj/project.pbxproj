@@ -20,7 +20,6 @@
 		485DA8AC156ECBA900E6B4F8 /* Cordova.plist.png in Resources */ = {isa = PBXBuildFile; fileRef = 485DA8A4156ECBA900E6B4F8 /* Cordova.plist.png */; };
 		485DA8AD156ECBA900E6B4F8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 485DA8A5156ECBA900E6B4F8 /* index.html */; };
 		485DA8AE156ECBA900E6B4F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 485DA8A6156ECBA900E6B4F8 /* README.md */; };
-		4892317B157E9D3E00B28FE6 /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4892317A157E9D3E00B28FE6 /* Cordova.framework */; };
 		48923194157EA8B900B28FE6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48923193157EA8B900B28FE6 /* icon.png */; };
 		48923196157EA8C400B28FE6 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48923195157EA8C400B28FE6 /* icon@2x.png */; };
 		48923198157EA8C900B28FE6 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 48923197157EA8C900B28FE6 /* icon-72.png */; };
@@ -31,6 +30,58 @@
 		489231A2157EA92400B28FE6 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489231A1157EA92400B28FE6 /* Default-Landscape~ipad.png */; };
 		489231A4157EA93F00B28FE6 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489231A3157EA93F00B28FE6 /* Default-Portrait@2x~ipad.png */; };
 		489231A6157EA94400B28FE6 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489231A5157EA94400B28FE6 /* Default-Landscape@2x~ipad.png */; };
+		48BA1212157EACBB001123F3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11C2157EACBB001123F3 /* .gitignore */; };
+		48BA1213157EACBB001123F3 /* FBConnectExample.zip in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11C4157EACBB001123F3 /* FBConnectExample.zip */; };
+		48BA1214157EACBB001123F3 /* bot.css in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11C6157EACBB001123F3 /* bot.css */; };
+		48BA1215157EACBB001123F3 /* bot.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11C7157EACBB001123F3 /* bot.html */; };
+		48BA1216157EACBB001123F3 /* cordova_128.css in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11C8157EACBB001123F3 /* cordova_128.css */; };
+		48BA1217157EACBB001123F3 /* cordova_512.css in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11C9157EACBB001123F3 /* cordova_512.css */; };
+		48BA1218157EACBB001123F3 /* local.alertsDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11CA157EACBB001123F3 /* local.alertsDemo.html */; };
+		48BA1219157EACBB001123F3 /* local.box.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11CB157EACBB001123F3 /* local.box.html */; };
+		48BA121A157EACBB001123F3 /* local.doc1.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11CC157EACBB001123F3 /* local.doc1.html */; };
+		48BA121B157EACBB001123F3 /* local.doc2.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11CD157EACBB001123F3 /* local.doc2.html */; };
+		48BA121C157EACBB001123F3 /* local.doc3.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11CE157EACBB001123F3 /* local.doc3.html */; };
+		48BA121D157EACBB001123F3 /* local.doc4.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11CF157EACBB001123F3 /* local.doc4.html */; };
+		48BA121E157EACBB001123F3 /* local.iPad.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D0157EACBB001123F3 /* local.iPad.html */; };
+		48BA121F157EACBB001123F3 /* local.iPhone.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D1157EACBB001123F3 /* local.iPhone.html */; };
+		48BA1220157EACBB001123F3 /* local.iScrollDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D2157EACBB001123F3 /* local.iScrollDemo.html */; };
+		48BA1221157EACBB001123F3 /* local.iScrollDemo.iscroll in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D3157EACBB001123F3 /* local.iScrollDemo.iscroll */; };
+		48BA1222157EACBB001123F3 /* local.orientation.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D4157EACBB001123F3 /* local.orientation.html */; };
+		48BA1223157EACBB001123F3 /* local.rapheal.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D5157EACBB001123F3 /* local.rapheal.html */; };
+		48BA1224157EACBB001123F3 /* local.ReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D6157EACBB001123F3 /* local.ReadMe.html */; };
+		48BA1225157EACBB001123F3 /* local.Sencha.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D7157EACBB001123F3 /* local.Sencha.html */; };
+		48BA1226157EACBB001123F3 /* local.Sencha2.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D8157EACBB001123F3 /* local.Sencha2.html */; };
+		48BA1227157EACBB001123F3 /* local.Sencha3.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D9157EACBB001123F3 /* local.Sencha3.html */; };
+		48BA1228157EACBB001123F3 /* local.vanillaHomePage.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11DA157EACBB001123F3 /* local.vanillaHomePage.html */; };
+		48BA1229157EACBB001123F3 /* app-store-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11DC157EACBB001123F3 /* app-store-icon.jpg */; };
+		48BA122A157EACBB001123F3 /* license.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11DE157EACBB001123F3 /* license.html */; };
+		48BA122B157EACBB001123F3 /* license.md in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11DF157EACBB001123F3 /* license.md */; };
+		48BA122C157EACBB001123F3 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E0157EACBB001123F3 /* license.txt */; };
+		48BA122D157EACBB001123F3 /* cordova_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E2157EACBB001123F3 /* cordova_bot.png */; };
+		48BA122E157EACBB001123F3 /* FileSystem.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E3157EACBB001123F3 /* FileSystem.png */; };
+		48BA122F157EACBB001123F3 /* iPadAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E4157EACBB001123F3 /* iPadAlert.png */; };
+		48BA1230157EACBB001123F3 /* iPadHybrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E5157EACBB001123F3 /* iPadHybrid.png */; };
+		48BA1231157EACBB001123F3 /* iPhoneAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E6157EACBB001123F3 /* iPhoneAlert.png */; };
+		48BA1232157EACBB001123F3 /* KeyValueExample.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E7157EACBB001123F3 /* KeyValueExample.png */; };
+		48BA1233157EACBB001123F3 /* MediaBrowserScreenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E8157EACBB001123F3 /* MediaBrowserScreenShot.png */; };
+		48BA1234157EACBB001123F3 /* MediaBrowserScreenShot2.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E9157EACBB001123F3 /* MediaBrowserScreenShot2.png */; };
+		48BA1235157EACBB001123F3 /* svgScreenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11EA157EACBB001123F3 /* svgScreenShot.png */; };
+		48BA1236157EACBB001123F3 /* VectorPresentation.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11EB157EACBB001123F3 /* VectorPresentation.png */; };
+		48BA1237157EACBB001123F3 /* local.0 in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11ED157EACBB001123F3 /* local.0 */; };
+		48BA1238157EACBB001123F3 /* local.error in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11EE157EACBB001123F3 /* local.error */; };
+		48BA1239157EACBB001123F3 /* local.list.json in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11EF157EACBB001123F3 /* local.list.json */; };
+		48BA123A157EACBB001123F3 /* local.text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11F0157EACBB001123F3 /* local.text.txt */; };
+		48BA123B157EACBB001123F3 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11F1157EACBB001123F3 /* index.html */; };
+		48BA123E157EACBB001123F3 /* iScrollLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA11F5157EACBB001123F3 /* iScrollLib.m */; };
+		48BA1240157EACBB001123F3 /* MediaBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11F7157EACBB001123F3 /* MediaBrowser.bundle */; };
+		48BA1241157EACBB001123F3 /* MediaBrowser.js in Sources */ = {isa = PBXBuildFile; fileRef = 48BA11F8157EACBB001123F3 /* MediaBrowser.js */; };
+		48BA1244157EACBB001123F3 /* MediaBrowserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA11FC157EACBB001123F3 /* MediaBrowserCommand.m */; };
+		48BA1247157EACBB001123F3 /* MediaBrowserConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA1200157EACBB001123F3 /* MediaBrowserConstants.m */; };
+		48BA124A157EACBB001123F3 /* MediaBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA1204157EACBB001123F3 /* MediaBrowserViewController.m */; };
+		48BA124C157EACBB001123F3 /* MediaBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48BA1206157EACBB001123F3 /* MediaBrowserViewController.xib */; };
+		48BA1250157EACBB001123F3 /* reference.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48BA120A157EACBB001123F3 /* reference.txt */; };
+		48BA1255157EACBB001123F3 /* yourJSLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA1210157EACBB001123F3 /* yourJSLib.m */; };
+		48BA1259157EAD52001123F3 /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BA1258157EAD52001123F3 /* Cordova.framework */; };
 		48BCBEE1156B10A800A10F16 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE0156B10A800A10F16 /* AddressBook.framework */; };
 		48BCBEE3156B10AE00A10F16 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE2156B10AE00A10F16 /* AddressBookUI.framework */; };
 		48BCBEE5156B10B300A10F16 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE4156B10B300A10F16 /* AudioToolbox.framework */; };
@@ -84,7 +135,6 @@
 		485DA8A4156ECBA900E6B4F8 /* Cordova.plist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cordova.plist.png; sourceTree = "<group>"; };
 		485DA8A5156ECBA900E6B4F8 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		485DA8A6156ECBA900E6B4F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		4892317A157E9D3E00B28FE6 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../../Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
 		48923193157EA8B900B28FE6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		48923195157EA8C400B28FE6 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		48923197157EA8C900B28FE6 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
@@ -95,6 +145,63 @@
 		489231A1157EA92400B28FE6 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		489231A3157EA93F00B28FE6 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		489231A5157EA94400B28FE6 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		48BA11C2157EACBB001123F3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		48BA11C4157EACBB001123F3 /* FBConnectExample.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = FBConnectExample.zip; sourceTree = "<group>"; };
+		48BA11C6157EACBB001123F3 /* bot.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = bot.css; sourceTree = "<group>"; };
+		48BA11C7157EACBB001123F3 /* bot.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bot.html; sourceTree = "<group>"; };
+		48BA11C8157EACBB001123F3 /* cordova_128.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = cordova_128.css; sourceTree = "<group>"; };
+		48BA11C9157EACBB001123F3 /* cordova_512.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = cordova_512.css; sourceTree = "<group>"; };
+		48BA11CA157EACBB001123F3 /* local.alertsDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.alertsDemo.html; sourceTree = "<group>"; };
+		48BA11CB157EACBB001123F3 /* local.box.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.box.html; sourceTree = "<group>"; };
+		48BA11CC157EACBB001123F3 /* local.doc1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.doc1.html; sourceTree = "<group>"; };
+		48BA11CD157EACBB001123F3 /* local.doc2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.doc2.html; sourceTree = "<group>"; };
+		48BA11CE157EACBB001123F3 /* local.doc3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.doc3.html; sourceTree = "<group>"; };
+		48BA11CF157EACBB001123F3 /* local.doc4.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.doc4.html; sourceTree = "<group>"; };
+		48BA11D0157EACBB001123F3 /* local.iPad.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.iPad.html; sourceTree = "<group>"; };
+		48BA11D1157EACBB001123F3 /* local.iPhone.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.iPhone.html; sourceTree = "<group>"; };
+		48BA11D2157EACBB001123F3 /* local.iScrollDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.iScrollDemo.html; sourceTree = "<group>"; };
+		48BA11D3157EACBB001123F3 /* local.iScrollDemo.iscroll */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = local.iScrollDemo.iscroll; sourceTree = "<group>"; };
+		48BA11D4157EACBB001123F3 /* local.orientation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.orientation.html; sourceTree = "<group>"; };
+		48BA11D5157EACBB001123F3 /* local.rapheal.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.rapheal.html; sourceTree = "<group>"; };
+		48BA11D6157EACBB001123F3 /* local.ReadMe.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.ReadMe.html; sourceTree = "<group>"; };
+		48BA11D7157EACBB001123F3 /* local.Sencha.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.Sencha.html; sourceTree = "<group>"; };
+		48BA11D8157EACBB001123F3 /* local.Sencha2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.Sencha2.html; sourceTree = "<group>"; };
+		48BA11D9157EACBB001123F3 /* local.Sencha3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.Sencha3.html; sourceTree = "<group>"; };
+		48BA11DA157EACBB001123F3 /* local.vanillaHomePage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.vanillaHomePage.html; sourceTree = "<group>"; };
+		48BA11DC157EACBB001123F3 /* app-store-icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-store-icon.jpg"; sourceTree = "<group>"; };
+		48BA11DE157EACBB001123F3 /* license.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = license.html; sourceTree = "<group>"; };
+		48BA11DF157EACBB001123F3 /* license.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.md; sourceTree = "<group>"; };
+		48BA11E0157EACBB001123F3 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		48BA11E2157EACBB001123F3 /* cordova_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_bot.png; sourceTree = "<group>"; };
+		48BA11E3157EACBB001123F3 /* FileSystem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FileSystem.png; sourceTree = "<group>"; };
+		48BA11E4157EACBB001123F3 /* iPadAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadAlert.png; sourceTree = "<group>"; };
+		48BA11E5157EACBB001123F3 /* iPadHybrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadHybrid.png; sourceTree = "<group>"; };
+		48BA11E6157EACBB001123F3 /* iPhoneAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneAlert.png; sourceTree = "<group>"; };
+		48BA11E7157EACBB001123F3 /* KeyValueExample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyValueExample.png; sourceTree = "<group>"; };
+		48BA11E8157EACBB001123F3 /* MediaBrowserScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MediaBrowserScreenShot.png; sourceTree = "<group>"; };
+		48BA11E9157EACBB001123F3 /* MediaBrowserScreenShot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MediaBrowserScreenShot2.png; sourceTree = "<group>"; };
+		48BA11EA157EACBB001123F3 /* svgScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = svgScreenShot.png; sourceTree = "<group>"; };
+		48BA11EB157EACBB001123F3 /* VectorPresentation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VectorPresentation.png; sourceTree = "<group>"; };
+		48BA11ED157EACBB001123F3 /* local.0 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = local.0; sourceTree = "<group>"; };
+		48BA11EE157EACBB001123F3 /* local.error */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = local.error; sourceTree = "<group>"; };
+		48BA11EF157EACBB001123F3 /* local.list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = local.list.json; sourceTree = "<group>"; };
+		48BA11F0157EACBB001123F3 /* local.text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = local.text.txt; sourceTree = "<group>"; };
+		48BA11F1157EACBB001123F3 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		48BA11F3157EACBB001123F3 /* iScrollLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iScrollLib.h; sourceTree = "<group>"; };
+		48BA11F5157EACBB001123F3 /* iScrollLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iScrollLib.m; sourceTree = "<group>"; };
+		48BA11F7157EACBB001123F3 /* MediaBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MediaBrowser.bundle; sourceTree = "<group>"; };
+		48BA11F8157EACBB001123F3 /* MediaBrowser.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = MediaBrowser.js; sourceTree = "<group>"; };
+		48BA11FA157EACBB001123F3 /* MediaBrowserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaBrowserCommand.h; sourceTree = "<group>"; };
+		48BA11FC157EACBB001123F3 /* MediaBrowserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaBrowserCommand.m; sourceTree = "<group>"; };
+		48BA11FE157EACBB001123F3 /* MediaBrowserConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaBrowserConstants.h; sourceTree = "<group>"; };
+		48BA1200157EACBB001123F3 /* MediaBrowserConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaBrowserConstants.m; sourceTree = "<group>"; };
+		48BA1202157EACBB001123F3 /* MediaBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaBrowserViewController.h; sourceTree = "<group>"; };
+		48BA1204157EACBB001123F3 /* MediaBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaBrowserViewController.m; sourceTree = "<group>"; };
+		48BA1206157EACBB001123F3 /* MediaBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaBrowserViewController.xib; sourceTree = "<group>"; };
+		48BA120A157EACBB001123F3 /* reference.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reference.txt; sourceTree = "<group>"; };
+		48BA120E157EACBB001123F3 /* yourJSLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yourJSLib.h; sourceTree = "<group>"; };
+		48BA1210157EACBB001123F3 /* yourJSLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yourJSLib.m; sourceTree = "<group>"; };
+		48BA1258157EAD52001123F3 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../../Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
 		48BCBEE0156B10A800A10F16 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		48BCBEE2156B10AE00A10F16 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		48BCBEE4156B10B300A10F16 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -139,7 +246,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4892317B157E9D3E00B28FE6 /* Cordova.framework in Frameworks */,
+				48BA1259157EAD52001123F3 /* Cordova.framework in Frameworks */,
 				48BCBF46156B12D300A10F16 /* iAd.framework in Frameworks */,
 				48BCBF44156B12BF00A10F16 /* Twitter.framework in Frameworks */,
 				48BCBF42156B12BA00A10F16 /* Accounts.framework in Frameworks */,
@@ -173,6 +280,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				48BA1258157EAD52001123F3 /* Cordova.framework */,
 				489231A7157EA99D00B28FE6 /* Classes */,
 				48486887156B0D6A00A6E5E6 /* www */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -197,7 +305,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4892317A157E9D3E00B28FE6 /* Cordova.framework */,
 				48BCBF45156B12D300A10F16 /* iAd.framework */,
 				48BCBF43156B12BF00A10F16 /* Twitter.framework */,
 				48BCBF41156B12BA00A10F16 /* Accounts.framework */,
@@ -245,9 +352,121 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		48BA11C1157EACBB001123F3 /* MediaBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				48BA11C2157EACBB001123F3 /* .gitignore */,
+				48BA11C3157EACBB001123F3 /* assets */,
+				48BA11F1157EACBB001123F3 /* index.html */,
+				48BA11F3157EACBB001123F3 /* iScrollLib.h */,
+				48BA11F5157EACBB001123F3 /* iScrollLib.m */,
+				48BA11F7157EACBB001123F3 /* MediaBrowser.bundle */,
+				48BA11F8157EACBB001123F3 /* MediaBrowser.js */,
+				48BA11FA157EACBB001123F3 /* MediaBrowserCommand.h */,
+				48BA11FC157EACBB001123F3 /* MediaBrowserCommand.m */,
+				48BA11FE157EACBB001123F3 /* MediaBrowserConstants.h */,
+				48BA1200157EACBB001123F3 /* MediaBrowserConstants.m */,
+				48BA1202157EACBB001123F3 /* MediaBrowserViewController.h */,
+				48BA1204157EACBB001123F3 /* MediaBrowserViewController.m */,
+				48BA1206157EACBB001123F3 /* MediaBrowserViewController.xib */,
+				48BA120A157EACBB001123F3 /* reference.txt */,
+				48BA120E157EACBB001123F3 /* yourJSLib.h */,
+				48BA1210157EACBB001123F3 /* yourJSLib.m */,
+			);
+			path = MediaBrowser;
+			sourceTree = "<group>";
+		};
+		48BA11C3157EACBB001123F3 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				48BA11C4157EACBB001123F3 /* FBConnectExample.zip */,
+				48BA11C5157EACBB001123F3 /* html */,
+				48BA11DB157EACBB001123F3 /* jpg */,
+				48BA11DD157EACBB001123F3 /* license */,
+				48BA11E1157EACBB001123F3 /* png */,
+				48BA11EC157EACBB001123F3 /* txt */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		48BA11C5157EACBB001123F3 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				48BA11C6157EACBB001123F3 /* bot.css */,
+				48BA11C7157EACBB001123F3 /* bot.html */,
+				48BA11C8157EACBB001123F3 /* cordova_128.css */,
+				48BA11C9157EACBB001123F3 /* cordova_512.css */,
+				48BA11CA157EACBB001123F3 /* local.alertsDemo.html */,
+				48BA11CB157EACBB001123F3 /* local.box.html */,
+				48BA11CC157EACBB001123F3 /* local.doc1.html */,
+				48BA11CD157EACBB001123F3 /* local.doc2.html */,
+				48BA11CE157EACBB001123F3 /* local.doc3.html */,
+				48BA11CF157EACBB001123F3 /* local.doc4.html */,
+				48BA11D0157EACBB001123F3 /* local.iPad.html */,
+				48BA11D1157EACBB001123F3 /* local.iPhone.html */,
+				48BA11D2157EACBB001123F3 /* local.iScrollDemo.html */,
+				48BA11D3157EACBB001123F3 /* local.iScrollDemo.iscroll */,
+				48BA11D4157EACBB001123F3 /* local.orientation.html */,
+				48BA11D5157EACBB001123F3 /* local.rapheal.html */,
+				48BA11D6157EACBB001123F3 /* local.ReadMe.html */,
+				48BA11D7157EACBB001123F3 /* local.Sencha.html */,
+				48BA11D8157EACBB001123F3 /* local.Sencha2.html */,
+				48BA11D9157EACBB001123F3 /* local.Sencha3.html */,
+				48BA11DA157EACBB001123F3 /* local.vanillaHomePage.html */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		48BA11DB157EACBB001123F3 /* jpg */ = {
+			isa = PBXGroup;
+			children = (
+				48BA11DC157EACBB001123F3 /* app-store-icon.jpg */,
+			);
+			path = jpg;
+			sourceTree = "<group>";
+		};
+		48BA11DD157EACBB001123F3 /* license */ = {
+			isa = PBXGroup;
+			children = (
+				48BA11DE157EACBB001123F3 /* license.html */,
+				48BA11DF157EACBB001123F3 /* license.md */,
+				48BA11E0157EACBB001123F3 /* license.txt */,
+			);
+			path = license;
+			sourceTree = "<group>";
+		};
+		48BA11E1157EACBB001123F3 /* png */ = {
+			isa = PBXGroup;
+			children = (
+				48BA11E2157EACBB001123F3 /* cordova_bot.png */,
+				48BA11E3157EACBB001123F3 /* FileSystem.png */,
+				48BA11E4157EACBB001123F3 /* iPadAlert.png */,
+				48BA11E5157EACBB001123F3 /* iPadHybrid.png */,
+				48BA11E6157EACBB001123F3 /* iPhoneAlert.png */,
+				48BA11E7157EACBB001123F3 /* KeyValueExample.png */,
+				48BA11E8157EACBB001123F3 /* MediaBrowserScreenShot.png */,
+				48BA11E9157EACBB001123F3 /* MediaBrowserScreenShot2.png */,
+				48BA11EA157EACBB001123F3 /* svgScreenShot.png */,
+				48BA11EB157EACBB001123F3 /* VectorPresentation.png */,
+			);
+			path = png;
+			sourceTree = "<group>";
+		};
+		48BA11EC157EACBB001123F3 /* txt */ = {
+			isa = PBXGroup;
+			children = (
+				48BA11ED157EACBB001123F3 /* local.0 */,
+				48BA11EE157EACBB001123F3 /* local.error */,
+				48BA11EF157EACBB001123F3 /* local.list.json */,
+				48BA11F0157EACBB001123F3 /* local.text.txt */,
+			);
+			path = txt;
+			sourceTree = "<group>";
+		};
 		48BCBEF6156B119300A10F16 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				48BA11C1157EACBB001123F3 /* MediaBrowser */,
 				485DA89C156ECBA900E6B4F8 /* ChildBrowser */,
 				48BCBF35156B11ED00A10F16 /* AdPlugin */,
 				48BCBF1C156B11DF00A10F16 /* Twitter */,
@@ -434,6 +653,51 @@
 				489231A2157EA92400B28FE6 /* Default-Landscape~ipad.png in Resources */,
 				489231A4157EA93F00B28FE6 /* Default-Portrait@2x~ipad.png in Resources */,
 				489231A6157EA94400B28FE6 /* Default-Landscape@2x~ipad.png in Resources */,
+				48BA1212157EACBB001123F3 /* .gitignore in Resources */,
+				48BA1213157EACBB001123F3 /* FBConnectExample.zip in Resources */,
+				48BA1214157EACBB001123F3 /* bot.css in Resources */,
+				48BA1215157EACBB001123F3 /* bot.html in Resources */,
+				48BA1216157EACBB001123F3 /* cordova_128.css in Resources */,
+				48BA1217157EACBB001123F3 /* cordova_512.css in Resources */,
+				48BA1218157EACBB001123F3 /* local.alertsDemo.html in Resources */,
+				48BA1219157EACBB001123F3 /* local.box.html in Resources */,
+				48BA121A157EACBB001123F3 /* local.doc1.html in Resources */,
+				48BA121B157EACBB001123F3 /* local.doc2.html in Resources */,
+				48BA121C157EACBB001123F3 /* local.doc3.html in Resources */,
+				48BA121D157EACBB001123F3 /* local.doc4.html in Resources */,
+				48BA121E157EACBB001123F3 /* local.iPad.html in Resources */,
+				48BA121F157EACBB001123F3 /* local.iPhone.html in Resources */,
+				48BA1220157EACBB001123F3 /* local.iScrollDemo.html in Resources */,
+				48BA1221157EACBB001123F3 /* local.iScrollDemo.iscroll in Resources */,
+				48BA1222157EACBB001123F3 /* local.orientation.html in Resources */,
+				48BA1223157EACBB001123F3 /* local.rapheal.html in Resources */,
+				48BA1224157EACBB001123F3 /* local.ReadMe.html in Resources */,
+				48BA1225157EACBB001123F3 /* local.Sencha.html in Resources */,
+				48BA1226157EACBB001123F3 /* local.Sencha2.html in Resources */,
+				48BA1227157EACBB001123F3 /* local.Sencha3.html in Resources */,
+				48BA1228157EACBB001123F3 /* local.vanillaHomePage.html in Resources */,
+				48BA1229157EACBB001123F3 /* app-store-icon.jpg in Resources */,
+				48BA122A157EACBB001123F3 /* license.html in Resources */,
+				48BA122B157EACBB001123F3 /* license.md in Resources */,
+				48BA122C157EACBB001123F3 /* license.txt in Resources */,
+				48BA122D157EACBB001123F3 /* cordova_bot.png in Resources */,
+				48BA122E157EACBB001123F3 /* FileSystem.png in Resources */,
+				48BA122F157EACBB001123F3 /* iPadAlert.png in Resources */,
+				48BA1230157EACBB001123F3 /* iPadHybrid.png in Resources */,
+				48BA1231157EACBB001123F3 /* iPhoneAlert.png in Resources */,
+				48BA1232157EACBB001123F3 /* KeyValueExample.png in Resources */,
+				48BA1233157EACBB001123F3 /* MediaBrowserScreenShot.png in Resources */,
+				48BA1234157EACBB001123F3 /* MediaBrowserScreenShot2.png in Resources */,
+				48BA1235157EACBB001123F3 /* svgScreenShot.png in Resources */,
+				48BA1236157EACBB001123F3 /* VectorPresentation.png in Resources */,
+				48BA1237157EACBB001123F3 /* local.0 in Resources */,
+				48BA1238157EACBB001123F3 /* local.error in Resources */,
+				48BA1239157EACBB001123F3 /* local.list.json in Resources */,
+				48BA123A157EACBB001123F3 /* local.text.txt in Resources */,
+				48BA123B157EACBB001123F3 /* index.html in Resources */,
+				48BA1240157EACBB001123F3 /* MediaBrowser.bundle in Resources */,
+				48BA124C157EACBB001123F3 /* MediaBrowserViewController.xib in Resources */,
+				48BA1250157EACBB001123F3 /* reference.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +720,12 @@
 				485DA8A8156ECBA900E6B4F8 /* ChildBrowser.js in Sources */,
 				485DA8A9156ECBA900E6B4F8 /* ChildBrowserCommand.m in Sources */,
 				485DA8AA156ECBA900E6B4F8 /* ChildBrowserViewController.m in Sources */,
+				48BA123E157EACBB001123F3 /* iScrollLib.m in Sources */,
+				48BA1241157EACBB001123F3 /* MediaBrowser.js in Sources */,
+				48BA1244157EACBB001123F3 /* MediaBrowserCommand.m in Sources */,
+				48BA1247157EACBB001123F3 /* MediaBrowserConstants.m in Sources */,
+				48BA124A157EACBB001123F3 /* MediaBrowserViewController.m in Sources */,
+				48BA1255157EACBB001123F3 /* yourJSLib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
