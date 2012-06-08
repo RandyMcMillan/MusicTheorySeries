@@ -49,7 +49,7 @@
     
 	CDVViewController* cleaverViewController = [CDVViewController new];
 	controller.view.autoresizesSubviews = YES;
-	cleaverViewController.wwwFolderName = @"www";
+	cleaverViewController.wwwFolderName = @"www/Welcome/";
 	cleaverViewController.startPage = @"Welcome.html";
     
     
