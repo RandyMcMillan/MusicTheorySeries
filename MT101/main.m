@@ -169,7 +169,7 @@
 		NSArray *navList;
 		navList = [[NSArray alloc] initWithObjects:
 		           @"index",
-		           @"ChildBrowser",
+		           @"MediaBrowser",
 		           @"Cordova",
 		           @"MrImageProc/index",
 		           nil];
