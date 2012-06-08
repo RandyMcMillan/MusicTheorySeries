@@ -11,6 +11,8 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		4839F9731582769C000371DD /* local.CircleOfFifths.svg in Resources */ = {isa = PBXBuildFile; fileRef = 4839F9721582769C000371DD /* local.CircleOfFifths.svg */; };
+		4839F97C15828C34000371DD /* local.CircleOfFifths.html in Resources */ = {isa = PBXBuildFile; fileRef = 4839F97B15828C34000371DD /* local.CircleOfFifths.html */; };
 		48486888156B0D6A00A6E5E6 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 48486887156B0D6A00A6E5E6 /* www */; };
 		485DA8A7156ECBA900E6B4F8 /* ChildBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 485DA89D156ECBA900E6B4F8 /* ChildBrowser.bundle */; };
 		485DA8A8156ECBA900E6B4F8 /* ChildBrowser.js in Sources */ = {isa = PBXBuildFile; fileRef = 485DA89E156ECBA900E6B4F8 /* ChildBrowser.js */; };
@@ -124,6 +126,8 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* MT101_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MT101_Prefix.pch; sourceTree = "<group>"; };
+		4839F9721582769C000371DD /* local.CircleOfFifths.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = local.CircleOfFifths.svg; sourceTree = "<group>"; };
+		4839F97B15828C34000371DD /* local.CircleOfFifths.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.CircleOfFifths.html; sourceTree = "<group>"; };
 		48486887156B0D6A00A6E5E6 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		485DA89D156ECBA900E6B4F8 /* ChildBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ChildBrowser.bundle; sourceTree = "<group>"; };
 		485DA89E156ECBA900E6B4F8 /* ChildBrowser.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ChildBrowser.js; sourceTree = "<group>"; };
@@ -325,6 +329,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4839F9711582769C000371DD /* svg */ = {
+			isa = PBXGroup;
+			children = (
+				4839F9721582769C000371DD /* local.CircleOfFifths.svg */,
+			);
+			path = svg;
+			sourceTree = "<group>";
+		};
 		485DA89C156ECBA900E6B4F8 /* ChildBrowser */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +391,7 @@
 		48BA11C3157EACBB001123F3 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				4839F9711582769C000371DD /* svg */,
 				48BA11C4157EACBB001123F3 /* FBConnectExample.zip */,
 				48BA11C5157EACBB001123F3 /* html */,
 				48BA11DB157EACBB001123F3 /* jpg */,
@@ -392,6 +405,7 @@
 		48BA11C5157EACBB001123F3 /* html */ = {
 			isa = PBXGroup;
 			children = (
+				4839F97B15828C34000371DD /* local.CircleOfFifths.html */,
 				48BA11C6157EACBB001123F3 /* bot.css */,
 				48BA11C7157EACBB001123F3 /* bot.html */,
 				48BA11C8157EACBB001123F3 /* cordova_128.css */,
@@ -698,6 +712,8 @@
 				48BA1240157EACBB001123F3 /* MediaBrowser.bundle in Resources */,
 				48BA124C157EACBB001123F3 /* MediaBrowserViewController.xib in Resources */,
 				48BA1250157EACBB001123F3 /* reference.txt in Resources */,
+				4839F9731582769C000371DD /* local.CircleOfFifths.svg in Resources */,
+				4839F97C15828C34000371DD /* local.CircleOfFifths.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
