@@ -25,11 +25,12 @@
 
 #import <UIKit/UIKit.h>
 #import "cleaverViewController.h"
+#import "Constants.h"
 
 
-#define CORDOVA_GRAY_COLOR  [UIColor colorWithRed:0.435 green:0.439 blue:0.447 alpha:1.000]
-#define BARBUTTON(TITLE, SELECTOR)  [[UIBarButtonItem alloc] initWithTitle : TITLE style : UIBarButtonItemStylePlain target : self action : SELECTOR]
-#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+//#define CORDOVA_GRAY_COLOR  [UIColor colorWithRed:0.435 green:0.439 blue:0.447 alpha:1.000]
+//#define BARBUTTON(TITLE, SELECTOR)  [[UIBarButtonItem alloc] initWithTitle : TITLE style : UIBarButtonItemStylePlain target : self action : SELECTOR]
+//#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 #pragma mark Split View Detail Controller
 @interface DetailViewController : UIViewController <UIPopoverControllerDelegate, UISplitViewControllerDelegate>
@@ -64,12 +65,7 @@
 	int y = [UIScreen mainScreen].bounds.size.height * 0.004;
 	button.frame = CGRectMake(x, y, 85.0, 35.0);
     
-    
-	//[cleaverViewController.view addSubview:button];
-    
 	cleaverViewController.view.frame = controller.view.bounds;
-    
-    
 	[controller.view addSubview:cleaverViewController.view];
 	[controller.view bringSubviewToFront:cleaverViewController.view];
     
@@ -109,8 +105,7 @@
 
 @implementation ColorViewController
 
-+ (id) controller
-{
++ (id) controller {
     
 	ColorViewController *controller = [[ColorViewController alloc] init];
 	NSLog(@"%f",controller.view.frame.size.width);
@@ -118,10 +113,10 @@
 	return controller;
 }
 
-- (BOOL)tableView:(UITableView *)tableView
-canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     return YES;
+
 }
 
 /*
@@ -190,7 +185,9 @@ canEditRowAtIndexPath:(NSIndexPath *)indexPath
         
         return @"return if else 5"; 
         
-    } else { return @"If all else failed!"; } 
+    } else { return @"If all else failed!"; }
+    
+   
 
     
 }
@@ -203,41 +200,169 @@ canEditRowAtIndexPath:(NSIndexPath *)indexPath
 }
 
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-	return 5;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+
+	
+    return NUMBEROFSECTIONS;
+
 }
 
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-	return 4;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
+	
+    
+    if (section == 0) {
+    
+        return 1;
+    
+    }
+    if (section == 1) {
+    
+        return 2;
+    
+    }
+    
+    if (section == 2) {
+        
+        return 3;
+        
+    } 
+
+    if (section == 3) {
+        
+        return 4;
+        
+    } 
+
+    
+    if (section == 4) {
+        
+        return 4;
+        
+    } 
+
+    
+    
+    else {
+        
+        return 4;
+    
+    }
+    
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+   	
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"%i",indexPath.section]];
+	if (!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[NSString stringWithFormat:@"%@",indexPath]];
+        NSArray *navList;
+ 
+    if (indexPath.section == 0) {
+        
+        NSLog(@"indexPath = %@ ",indexPath);
+        NSLog(@"indexPath.section = %i ",indexPath.section);
+        NSLog(@"indexPath.row = %i",indexPath.row);
     
-	NSLog(@"indexPath = %@",indexPath);
-	NSLog(@"indexPath.row = %i",indexPath.row);
-    
-    
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"generic"];
-    
-	if (!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"generic"];
-    
-	NSArray *navList;
-	navList = [[NSArray alloc] initWithObjects:
+        navList = [[NSArray alloc] initWithObjects:
 	           @"Circle Of Fifths",
 	           @"ChildBrowser",
-	           @"How to use Cleaver", ///correspondes to @"Cordova" in the array below
+	           @"How to use Cleaver", 
 	           @"MrImageProc/index",
 	           nil];
+
+    }
     
+    
+    if (indexPath.section == 1) {
+        
+        NSLog(@"indexPath = %@ ",indexPath);
+        NSLog(@"indexPath.section = %i ",indexPath.section);
+        NSLog(@"indexPath.row = %i",indexPath.row);
+        
+        navList = [[NSArray alloc] initWithObjects:
+                   @"Circle Of Fifths",
+                   @"ChildBrowser",
+                   @"How to use Cleaver", 
+                   @"MrImageProc/index",
+                   nil];
+        
+    }
+
+    
+    
+    if (indexPath.section == 2) {
+        
+        NSLog(@"indexPath = %@ ",indexPath);
+        NSLog(@"indexPath.section = %i ",indexPath.section);
+        NSLog(@"indexPath.row = %i",indexPath.row);
+        
+        navList = [[NSArray alloc] initWithObjects:
+                   @"Circle Of Fifths",
+                   @"ChildBrowser",
+                   @"How to use Cleaver", 
+                   @"MrImageProc/index",
+                   nil];
+        
+    }
+
+    
+    
+    if (indexPath.section == 3) {
+        
+        NSLog(@"indexPath = %@ ",indexPath);
+        NSLog(@"indexPath.section = %i ",indexPath.section);
+        NSLog(@"indexPath.row = %i",indexPath.row);
+        
+        navList = [[NSArray alloc] initWithObjects:
+                   @"Circle Of Fifths",
+                   @"ChildBrowser",
+                   @"How to use Cleaver", 
+                   @"MrImageProc/index",
+                   nil];
+    }
+
+    
+    
+    if (indexPath.section == 4) {
+        
+        NSLog(@"indexPath = %@ ",indexPath);
+        NSLog(@"indexPath.section = %i ",indexPath.section);
+        NSLog(@"indexPath.row = %i",indexPath.row);
+        
+        navList = [[NSArray alloc] initWithObjects:
+                   @"Circle Of Fifths",
+                   @"ChildBrowser",
+                   @"How to use Cleaver", 
+                   @"MrImageProc/index",
+                   nil];
+        
+    }
+
+    
+    
+    if (indexPath.section == 5) {
+        
+        NSLog(@"indexPath = %@ ",indexPath);
+        NSLog(@"indexPath.section = %i ",indexPath.section);
+        NSLog(@"indexPath.row = %i",indexPath.row);
+        
+        navList = [[NSArray alloc] initWithObjects:
+                   @"Circle Of Fifths",
+                   @"ChildBrowser",
+                   @"How to use Cleaver", 
+                   @"MrImageProc/index",
+                   nil];
+        
+    }
+
     
     
 	cell.textLabel.text = [NSString stringWithFormat:@"%@", [navList objectAtIndex:indexPath.row]];
 	cell.accessoryType = IS_IPAD ? UITableViewCellAccessoryNone : UITableViewCellAccessoryDisclosureIndicator;
+
     
 	return cell;
 }
@@ -245,20 +370,107 @@ canEditRowAtIndexPath:(NSIndexPath *)indexPath
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    
-    
+    NSArray *navList;
+ 
 	if (IS_IPAD)
 	{
+        if (indexPath.section == 0) {
+            
+            NSLog(@"indexPath = %@ ",indexPath);
+            NSLog(@"indexPath.section = %i ",indexPath.section);
+            NSLog(@"indexPath.row = %i",indexPath.row);
+            
+            navList = [[NSArray alloc] initWithObjects:
+                       @"CircleOfFifths/CircleOfFifths",
+                       @"ChildBrowser",
+                       @"How to use Cleaver", 
+                       @"MrImageProc/index",
+                       nil];
+            
+        }
         
-		NSArray *navList;
-		navList = [[NSArray alloc] initWithObjects:
-		           @"CircleOfFifths/CircleOfFifths",
-		           @"MediaBrowser",
-		           @"Cordova",
-		           @"MrImageProc/index",
-		           nil];
+        if (indexPath.section == 1) {
+            
+            NSLog(@"indexPath = %@ ",indexPath);
+            NSLog(@"indexPath.section = %i ",indexPath.section);
+            NSLog(@"indexPath.row = %i",indexPath.row);
+            
+            navList = [[NSArray alloc] initWithObjects:
+                       @"CircleOfFifths/CircleOfFifths",
+                       @"ChildBrowser",
+                       @"How to use Cleaver", 
+                       @"MrImageProc/index",
+                       nil];
+            
+        }
+
+        
+        if (indexPath.section == 2) {
+            
+            NSLog(@"indexPath = %@ ",indexPath);
+            NSLog(@"indexPath.section = %i ",indexPath.section);
+            NSLog(@"indexPath.row = %i",indexPath.row);
+            
+            navList = [[NSArray alloc] initWithObjects:
+                       @"CircleOfFifths/CircleOfFifths",
+                       @"ChildBrowser",
+                       @"How to use Cleaver", 
+                       @"MrImageProc/index",
+                       nil];
+            
+        }
+
+        
+        if (indexPath.section == 3) {
+            
+            NSLog(@"indexPath = %@ ",indexPath);
+            NSLog(@"indexPath.section = %i ",indexPath.section);
+            NSLog(@"indexPath.row = %i",indexPath.row);
+            
+            navList = [[NSArray alloc] initWithObjects:
+                       @"CircleOfFifths/CircleOfFifths",
+                       @"ChildBrowser",
+                       @"How to use Cleaver", 
+                       @"MrImageProc/index",
+                       nil];
+            
+        }
+
+        
+        if (indexPath.section == 4) {
+            
+            NSLog(@"indexPath = %@ ",indexPath);
+            NSLog(@"indexPath.section = %i ",indexPath.section);
+            NSLog(@"indexPath.row = %i",indexPath.row);
+            
+            navList = [[NSArray alloc] initWithObjects:
+                       @"CircleOfFifths/CircleOfFifths",
+                       @"ChildBrowser",
+                       @"How to use Cleaver", 
+                       @"MrImageProc/index",
+                       nil];
+            
+        }
+
+        if (indexPath.section == 5) {
+            
+            NSLog(@"indexPath = %@ ",indexPath);
+            NSLog(@"indexPath.section = %i ",indexPath.section);
+            NSLog(@"indexPath.row = %i",indexPath.row);
+            
+            navList = [[NSArray alloc] initWithObjects:
+                       @"CircleOfFifths/CircleOfFifths",
+                       @"ChildBrowser",
+                       @"How to use Cleaver", 
+                       @"MrImageProc/index",
+                       nil];
+            
+        }
+
         
         
+ 
+		        
 		UIViewController *controller = (UIViewController *)self.splitViewController.delegate;
         
 		CDVViewController* cleaverViewController = [CDVViewController new];
@@ -294,54 +506,7 @@ canEditRowAtIndexPath:(NSIndexPath *)indexPath
         
 	}
 	else
-        if (!IS_IPAD)
-        {
-            NSArray *navList;
-            navList = [[NSArray alloc] initWithObjects:
-                       @"index",
-                       @"ChildBrowser",
-                       @"Cordova",
-                       @"MrImageProc/index",
-                       nil];
-            
-            
-            
-            DetailViewController *controller = [DetailViewController controller];
-            
-            //controller.view.backgroundColor = [UIColor colorWithRed:0.757 green:0.757 blue:0.757 alpha:1.000];//cell.textLabel.textColor;
-            
-            CDVViewController* cleaverViewController = [CDVViewController new];
-            
-            controller.view.autoresizesSubviews = YES;
-            //cleaverViewController.wwwFolderName = [NSString stringWithFormat:@"www/%@", [navList objectAtIndex:indexPath.row]];
-            cleaverViewController.wwwFolderName = @"www";
-            //cleaverViewController.startPage = @"index.html";
-            cleaverViewController.startPage = [NSString stringWithFormat:@"%@.html", [navList objectAtIndex:indexPath.row]];
-            
-            NSLog(@"cleaverViewController.startPage = %@",cleaverViewController.startPage);
-            
-            UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-            [button addTarget:self
-                       action:@selector(closeCleaverView:)
-             forControlEvents:UIControlEventTouchUpInside];
-            
-            [button setTitle:@"Close"
-                    forState:UIControlStateNormal];
-            
-            int x = [UIScreen mainScreen].bounds.size.width * 0.775;
-            int y = [UIScreen mainScreen].bounds.size.height * 0.010;
-            button.frame = CGRectMake(x, y, 70.0, 35.0);
-            
-            
-            
-            //[cleaverViewController.view addSubview:button];
-            
-            [controller.view addSubview:cleaverViewController.view];
-            
-            [self.navigationController pushViewController:controller animated:YES];
-        }
-        else
-        {}
+        if (!IS_IPAD) {} else {}
     
     
 	if (IS_IPAD) {}
