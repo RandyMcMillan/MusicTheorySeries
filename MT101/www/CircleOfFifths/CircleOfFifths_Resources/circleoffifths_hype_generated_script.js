@@ -1,9 +1,9 @@
-//	HYPE.documents["Welcome"]
+//	HYPE.documents["CircleOfFifths"]
 
 (function HYPE_DocumentLoader() {
-	var resourcesFolderName = "Welcome_Resources";
-	var documentName = "Welcome";
-	var documentLoaderFilename = "welcome_hype_generated_script.js";
+	var resourcesFolderName = "CircleOfFifths_Resources";
+	var documentName = "CircleOfFifths";
+	var documentLoaderFilename = "circleoffifths_hype_generated_script.js";
 
 	// find the URL for this script's absolute path and set as the resourceFolderName
 	try {
@@ -48,7 +48,7 @@
 	
 	var attributeTransformerMapping = {b:"i",c:"i",bC:"i",d:"i",aS:"i",M:"i",e:"f",N:"i",f:"d",aT:"i",O:"i",g:"c",aU:"i",P:"i",Q:"i",aV:"i",R:"c",aW:"f",aI:"i",S:"i",T:"i",l:"d",aX:"i",aJ:"i",m:"c",n:"c",aK:"i",X:"i",aL:"i",A:"c",aZ:"i",Y:"i",B:"c",C:"c",D:"c",t:"i",E:"i",G:"c",bA:"c",a:"i",bB:"i"};
 
-var scenes = [{timelines:{kTimelineDefaultIdentifier:{framesPerSecond:30,animations:[],identifier:"kTimelineDefaultIdentifier",name:"Main Timeline",duration:0}},sceneIndex:0,perspective:"600px",oid:"1",initialValues:{"3":{U:"htmlwidget.html",c:666,V:"0",d:666,I:"Solid",W:"",e:"0.000000",J:"Solid",aW:"0.000000",K:"Solid",g:"#FFFFFF",aX:0,L:"Solid",M:1,N:1,aI:24,j:"absolute",x:"visible",O:1,k:"div",aJ:24,P:1,Q:0,z:"1",aK:24,R:"#000000",S:0,a:16,aL:24,T:0,b:16},"7":{o:"content-box",h:"Icon512x512.png",x:"visible",a:222,q:"100% 100%",b:222,j:"absolute",r:"inline",c:256,z:"4",k:"div",d:256},"6":{aV:8,w:"<div>Music Theory 101</div>",x:"visible",a:241,Z:"break-word",y:"preserve",aS:8,r:"inline",z:"3",j:"absolute",b:471,aT:8,k:"div",t:24,F:"center",s:"'Helvetica Neue',Arial,Helvetica,Sans-Serif",G:"#000000",aU:8,v:"bold"}},backgroundColor:"#FFFFFF",name:"init"}];
+var scenes = [{timelines:{kTimelineDefaultIdentifier:{framesPerSecond:30,animations:[],identifier:"kTimelineDefaultIdentifier",name:"Main Timeline",duration:0}},sceneIndex:0,perspective:"600px",oid:"1",initialValues:{"9":{o:"content-box",h:"CircleOfFifths.svg",x:"visible",a:0,q:"100% 100%",b:0,j:"absolute",r:"inline",c:700,z:"4",k:"div",d:700},"3":{U:"htmlwidget.html",c:666,V:"0",d:666,I:"Solid",W:"",e:"0.000000",J:"Solid",aW:"0.000000",K:"Solid",g:"#FFFFFF",aX:0,L:"Solid",M:1,N:1,aI:24,j:"absolute",x:"visible",O:1,k:"div",aJ:24,P:1,Q:0,z:"1",aK:24,R:"#000000",S:0,a:16,aL:24,T:0,b:16},"8":{x:"visible",b:446,c:0,k:"div",q:"100% 100%",z:"3",d:0,r:"inline",a:482,j:"absolute",o:"content-box"}},backgroundColor:"#FFFFFF",name:"init"}];
 
 
 	
@@ -73,7 +73,7 @@ var scenes = [{timelines:{kTimelineDefaultIdentifier:{framesPerSecond:30,animati
 	hypeDoc.setJavascriptMapping(javascriptMapping);
 	hypeDoc.Custom = Custom;
 	hypeDoc.setCurrentSceneIndex(0);
-	hypeDoc.setMainContentContainerID("welcome_hype_container");
+	hypeDoc.setMainContentContainerID("circleoffifths_hype_container");
 	hypeDoc.setResourcesFolderName(resourcesFolderName);
 	hypeDoc.setShowHypeBuiltWatermark(0);
 	hypeDoc.setShowLoadingPage(true);

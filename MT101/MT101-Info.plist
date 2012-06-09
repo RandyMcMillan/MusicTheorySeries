@@ -16,9 +16,9 @@
 		<string>iPhoneIcon@2x.png</string>
 		<string>iPhoneIcon.png</string>
 		<string>iPadIcon@2x.png</string>
-		<string>Default-Landscape@2x~ipad.png</string>
 		<string>Default-Landscape~ipad.png</string>
-		<string>Default-Portrait@2x~ipad.png</string>
+		<string>Default-Landscape~ipad.png</string>
+		<string>Default-Portrait~ipad.png</string>
 		<string>Default-Portrait~ipad.png</string>
 		<string>Default.png</string>
 		<string>Default@2x.png</string>
@@ -47,6 +47,8 @@
 		<string>icon-72@2x.png</string>
 		<string>Default-Portrait@2x~ipad.png</string>
 		<string>Default-Landscape@2x~ipad.png</string>
+		<string>Default-Landscape@2x~ipad.png</string>
+		<string>Default-Portrait@2x~ipad.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -58,9 +60,9 @@
 				<string>iPhoneIcon@2x.png</string>
 				<string>iPhoneIcon.png</string>
 				<string>iPadIcon@2x.png</string>
-				<string>Default-Landscape@2x~ipad.png</string>
 				<string>Default-Landscape~ipad.png</string>
-				<string>Default-Portrait@2x~ipad.png</string>
+				<string>Default-Landscape~ipad.png</string>
+				<string>Default-Portrait~ipad.png</string>
 				<string>Default-Portrait~ipad.png</string>
 				<string>Default.png</string>
 				<string>Default@2x.png</string>
@@ -89,6 +91,8 @@
 				<string>icon-72@2x.png</string>
 				<string>Default-Portrait@2x~ipad.png</string>
 				<string>Default-Landscape@2x~ipad.png</string>
+				<string>Default-Landscape@2x~ipad.png</string>
+				<string>Default-Portrait@2x~ipad.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<true/>
@@ -108,19 +112,17 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIApplicationExitsOnSuspend</key>
+	<true/>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>

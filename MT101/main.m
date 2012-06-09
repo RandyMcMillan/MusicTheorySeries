@@ -144,7 +144,7 @@
     
 	NSArray *navList;
 	navList = [[NSArray alloc] initWithObjects:
-	           @"index.html",
+	           @"Circle Of Fifths",
 	           @"ChildBrowser",
 	           @"How to use Cleaver", ///correspondes to @"Cordova" in the array below
 	           @"MrImageProc/index",
@@ -168,7 +168,7 @@
         
 		NSArray *navList;
 		navList = [[NSArray alloc] initWithObjects:
-		           @"index",
+		           @"CircleOfFifths/CircleOfFifths",
 		           @"MediaBrowser",
 		           @"Cordova",
 		           @"MrImageProc/index",
