@@ -118,10 +118,94 @@
 	return controller;
 }
 
+- (BOOL)tableView:(UITableView *)tableView
+canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+/*
+ 
+ - (void)tableView:(UITableView *)tableView
+ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+ forRowAtIndexPath:(NSIndexPath *)indexPath
+ 
+ {
+ // remove the item from your data
+ [myItems removeObjectAtIndex:indexPath.row];
+ 
+ // refresh the table view
+ [tableView reloadData];
+ }
+ 
+
+*/
+
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    return YES;
+
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+
+
+    
+    if (section == 0) {
+    
+        return @"return if else 0"; 
+    
+    }
+    
+    
+    if (section == 1) {
+        
+        return @"return if else 1"; 
+        
+    } 
+
+    
+    if (section == 2) {
+        
+        return @"return if else 2"; 
+        
+    } 
+
+    
+    if (section == 3) {
+        
+        return @"return if else 3"; 
+        
+    } 
+
+    
+    if (section == 4) {
+        
+        return @"return if else 4"; 
+        
+    } 
+
+    
+    if (section == 5) {
+        
+        return @"return if else 5"; 
+        
+    } else { return @"If all else failed!"; } 
+
+    
+}
+
+
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+
+  //  return YES;
+
+}
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-	return 1;
+	return 5;
 }
 
 
