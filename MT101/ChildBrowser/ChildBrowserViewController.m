@@ -3,7 +3,8 @@
 //  Copyright 2012, Randy McMillan
 
 #import "ChildBrowserViewController.h"
-#define IS_IPAD        (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#import "Constants.h"
+
 
 @implementation ChildBrowserViewController
 
@@ -115,7 +116,7 @@
 {
     [ self closeBrowser];
 
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@""]];
     [webView loadRequest:request];
 }
 

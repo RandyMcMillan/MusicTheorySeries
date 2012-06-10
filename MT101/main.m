@@ -484,11 +484,11 @@
         
 		CDVViewController* cleaverViewController = [CDVViewController new];
         
-        
 		controller.view.autoresizesSubviews = YES;
 		cleaverViewController.wwwFolderName = @"www";
 		cleaverViewController.startPage = [NSString stringWithFormat:@"%@.html", [navList objectAtIndex:indexPath.row]];
-        
+        cleaverViewController.view.frame = controller.view.bounds;
+ 
 		NSLog(@"cleaverViewController.startPage = %@",cleaverViewController.startPage);
         
         
