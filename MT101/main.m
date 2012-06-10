@@ -550,7 +550,7 @@
     
     if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
         return NO;
-    }
+    } else {return NO;}
 
 
 }
