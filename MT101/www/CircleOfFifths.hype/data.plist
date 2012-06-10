@@ -7,8 +7,8 @@
 	<key>displayedAttributes</key>
 	<array>
 		<string>kPropertiesMenuItemIdentifierOpacity</string>
-		<string>kPropertiesMenuItemIdentifierAnimated</string>
 		<string>kPropertiesMenuItemIdentifierPosition</string>
+		<string>kPropertiesMenuItemIdentifierAnimated</string>
 	</array>
 	<key>documentVersion</key>
 	<string>108</string>
@@ -17,7 +17,7 @@
 	<key>guidesAreLocked</key>
 	<false/>
 	<key>lastCheckDate</key>
-	<date>2012-06-09T19:55:12Z</date>
+	<date>2012-06-10T00:29:01Z</date>
 	<key>layout</key>
 	<dict>
 		<key>keyframeTimelineHeight</key>
@@ -104,7 +104,7 @@
 				<integer>60</integer>
 			</dict>
 			<key>canvasSize</key>
-			<string>{1815, 760}</string>
+			<string>{1800, 760}</string>
 			<key>context</key>
 			<dict>
 				<key>currentTimelineIdentifier</key>
@@ -347,13 +347,13 @@
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>Position</string>
-							<key>objectValue</key>
-							<string>absolute</string>
+							<string>DisplayName</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>DisplayName</string>
+							<string>Position</string>
+							<key>objectValue</key>
+							<string>absolute</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -381,6 +381,12 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>OriginalHeight</string>
+							<key>objectValue</key>
+							<string>0px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>Display</string>
 							<key>objectValue</key>
 							<string>inline</string>
@@ -388,12 +394,6 @@
 						<dict>
 							<key>identifier</key>
 							<string>BackgroundImage</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>OriginalHeight</string>
-							<key>objectValue</key>
-							<string>0px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -454,15 +454,15 @@
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>Position</string>
-							<key>objectValue</key>
-							<string>absolute</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
 							<string>DisplayName</string>
 							<key>objectValue</key>
 							<string>CircleOfFifths</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Position</string>
+							<key>objectValue</key>
+							<string>absolute</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -486,7 +486,13 @@
 							<key>identifier</key>
 							<string>Left</string>
 							<key>objectValue</key>
-							<string>0px</string>
+							<string>16px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>OriginalHeight</string>
+							<key>objectValue</key>
+							<string>500px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -502,21 +508,15 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalHeight</string>
-							<key>objectValue</key>
-							<string>500px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
 							<string>ConstrainProportions</string>
 							<key>objectValue</key>
-							<string>YES</string>
+							<string>NO</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>Height</string>
 							<key>objectValue</key>
-							<string>700px</string>
+							<string>668px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -528,13 +528,13 @@
 							<key>identifier</key>
 							<string>Width</string>
 							<key>objectValue</key>
-							<string>700px</string>
+							<string>668px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>Top</string>
 							<key>objectValue</key>
-							<string>0px</string>
+							<string>16px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -598,9 +598,11 @@
 			<key>oid</key>
 			<string>1</string>
 			<key>scrollViewOffset</key>
-			<string>{31, 76}</string>
+			<string>{20, 76}</string>
 			<key>selectedObjects</key>
-			<array/>
+			<array>
+				<string>9</string>
+			</array>
 			<key>splitHeight</key>
 			<real>494</real>
 		</dict>

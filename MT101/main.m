@@ -93,7 +93,14 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return YES;
+    
+    // Return YES for supported orientations
+    if (interfaceOrientation != (UIInterfaceOrientationLandscapeRight | UIInterfaceOrientationLandscapeRight)){
+        return YES;
+    } else {
+        return YES;
+    }
+	//return NO;
 }
 @end
 
@@ -109,15 +116,17 @@
     
 	ColorViewController *controller = [[ColorViewController alloc] init];
 	NSLog(@"%f",controller.view.frame.size.width);
-	controller.title = @"NativeNav";
+	controller.title = @"Examples";
 	return controller;
 }
 
+/*
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     
     return YES;
 
 }
+*/
 
 /*
  
@@ -145,7 +154,6 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
 
 
-    
     if (section == 0) {
     
         return @"return if else 0"; 
@@ -187,7 +195,8 @@
         
     } else { return @"If all else failed!"; }
     
-   
+    
+//    return nil;
 
     
 }
@@ -214,7 +223,7 @@
     
     if (section == 0) {
     
-        return 1;
+        return 2;
     
     }
     if (section == 1) {
@@ -268,7 +277,7 @@
     
         navList = [[NSArray alloc] initWithObjects:
 	           @"Circle Of Fifths",
-	           @"ChildBrowser",
+               @"Chromatic Circle",
 	           @"How to use Cleaver", 
 	           @"MrImageProc/index",
 	           nil];
@@ -351,7 +360,7 @@
         
         navList = [[NSArray alloc] initWithObjects:
                    @"Circle Of Fifths",
-                   @"ChildBrowser",
+                   @"Chromatic Circle",
                    @"How to use Cleaver", 
                    @"MrImageProc/index",
                    nil];
@@ -382,7 +391,7 @@
             
             navList = [[NSArray alloc] initWithObjects:
                        @"CircleOfFifths/CircleOfFifths",
-                       @"ChildBrowser",
+                       @"ChromaticCircle/ChromaticCircle",
                        @"How to use Cleaver", 
                        @"MrImageProc/index",
                        nil];
@@ -525,7 +534,25 @@
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
-	return YES;
+
+    // Return YES for supported orientations
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight){
+        return YES;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft){
+        return YES;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationPortrait){
+        return NO;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
+        return NO;
+    }
+
+
 }
 @end
 
