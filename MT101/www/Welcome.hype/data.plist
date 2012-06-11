@@ -7,8 +7,8 @@
 	<key>displayedAttributes</key>
 	<array>
 		<string>kPropertiesMenuItemIdentifierOpacity</string>
-		<string>kPropertiesMenuItemIdentifierPosition</string>
 		<string>kPropertiesMenuItemIdentifierAnimated</string>
+		<string>kPropertiesMenuItemIdentifierPosition</string>
 	</array>
 	<key>documentVersion</key>
 	<string>108</string>
@@ -17,7 +17,7 @@
 	<key>guidesAreLocked</key>
 	<false/>
 	<key>lastCheckDate</key>
-	<date>2012-06-08T21:25:15Z</date>
+	<date>2012-06-11T21:32:51Z</date>
 	<key>layout</key>
 	<dict>
 		<key>keyframeTimelineHeight</key>
@@ -31,58 +31,99 @@
 		<key>showSceneTabView</key>
 		<true/>
 		<key>splitHeight</key>
-		<real>488</real>
+		<real>480</real>
 		<key>splitViewIsVertical</key>
 		<false/>
 		<key>splitWidth</key>
 		<real>640</real>
 	</dict>
 	<key>oidCounter</key>
-	<integer>7</integer>
+	<integer>8</integer>
 	<key>resources</key>
 	<array>
 		<dict>
 			<key>bookmark</key>
 			<data>
-			Ym9va5wDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAApAIAAAUAAAABAQAAVXNlcnMAAAANAAAAAQEAAHJh
+			Ym9va8QDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAzAIAAAUAAAABAQAAVXNlcnMAAAANAAAAAQEAAHJh
 			bmR5bWNtaWxsYW4AAAAJAAAAAQEAAERvY3VtZW50cwAAABEAAAAB
-			AQAATXVzaWNUaGVvcnlTZXJpZXMAAAAPAAAAAQEAAEljb241MTJ4
-			NTEyLnBuZwAUAAAAAQYAAAQAAAAUAAAALAAAAEAAAABcAAAACAAA
-			AAQDAACSvwAAAAAAAAgAAAAEAwAA+VMEAAAAAAAIAAAABAMAAPpT
-			BAAAAAAACAAAAAQDAACcdQQAAAAAAAgAAAAEAwAAlK9lAAAAAAAU
-			AAAAAQYAAJAAAACgAAAAsAAAAMAAAADQAAAAGAAAAAECAAABAAAA
-			AAAAAA8AAAAAAAAAAAAAAAAAAAAEAAAAAwMAAAMAAAAEAAAAAwMA
-			APUBAAAMAAAAAQEAAERlZXBTcGFjZVNTRAgAAAAEAwAAAIBKsTcA
-			AAAIAAAAAAQAAEG1WgtXAAAAJAAAAAEBAABDNTk2NkJENy1FMjU4
-			LTM3MUEtQTkxQS1BNUJDMTIyMTUxQkYYAAAAAQIAAIEAAAABAAgA
-			7z8AAAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAABAAA
-			AAMDAAAAAQAAyAAAAAECAAA2MTc2MjRlZTY3NTNiYjE0YTQyZTI3
-			MjM5NjZkMDMyMDBhMjdmODRjOzAwMDAwMDAwOzAwMDAwMDAwMDAw
-			MDAwMjA7Y29tLmFwcGxlLmFwcC1zYW5kYm94LnJlYWQtd3JpdGU7
-			MDAwMDAwMDE7MGUwMDAwMDU7MDAwMDAwMDAwMDY1YWY5NDsvdXNl
-			cnMvcmFuZHltY21pbGxhbi9kb2N1bWVudHMvbXVzaWN0aGVvcnlz
-			ZXJpZXMvaWNvbjUxMng1MTIucG5nAMAAAAD+////AQAAAAAAAAAP
-			AAAABBAAAHQAAAAAAAAABRAAAOAAAAAAAAAAEBAAAPwAAAAAAAAA
-			AiAAALQBAAAAAAAAECAAADQBAAAAAAAAESAAAGgBAAAAAAAAEiAA
-			AEgBAAAAAAAAEyAAAFgBAAAAAAAAICAAAJQBAAAAAAAAMCAAAMAB
-			AAAAAAAAAcAAABwBAAAAAAAAEcAAABQAAAAAAAAAEsAAACgBAAAA
-			AAAAENAAAMgBAAAAAAAAgPAAANQBAAAAAAAA
+			AQAATXVzaWNUaGVvcnlTZXJpZXMAAAAFAAAAAQEAAE1UMTAxAAAA
+			CwAAAAEBAABpY29uQDJ4LnBuZwAYAAAAAQYAAAQAAAAUAAAALAAA
+			AEAAAABcAAAAbAAAAAgAAAAEAwAAkr8AAAAAAAAIAAAABAMAAPlT
+			BAAAAAAACAAAAAQDAAD6UwQAAAAAAAgAAAAEAwAAnHUEAAAAAAAI
+			AAAABAMAAPhwYwAAAAAACAAAAAQDAADVi2MAAAAAABgAAAABBgAA
+			oAAAALAAAADAAAAA0AAAAOAAAADwAAAAGAAAAAECAAABAAAAAAAA
+			AA8AAAAAAAAAAAAAAAAAAAAEAAAAAwMAAAQAAAAEAAAAAwMAAPUB
+			AAAMAAAAAQEAAERlZXBTcGFjZVNTRAgAAAAEAwAAAIBKsTcAAAAI
+			AAAAAAQAAEG1WgtXAAAAJAAAAAEBAABDNTk2NkJENy1FMjU4LTM3
+			MUEtQTkxQS1BNUJDMTIyMTUxQkYYAAAAAQIAAIEAAAABAAgA7z8A
+			AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAABAAAAAMD
+			AAAAAQAAygAAAAECAAAwNWNhMTdiYzBhYWExZGU1Y2RhZTQxNmU5
+			MWNlNDZlY2JkY2UyYzQyOzAwMDAwMDAwOzAwMDAwMDAwMDAwMDAw
+			MjA7Y29tLmFwcGxlLmFwcC1zYW5kYm94LnJlYWQtd3JpdGU7MDAw
+			MDAwMDE7MGUwMDAwMDM7MDAwMDAwMDAwMDYzOGJkNTsvdXNlcnMv
+			cmFuZHltY21pbGxhbi9kb2N1bWVudHMvbXVzaWN0aGVvcnlzZXJp
+			ZXMvbXQxMDEvaWNvbkAyeC5wbmcAAADAAAAA/v///wEAAAAAAAAA
+			DwAAAAQQAACAAAAAAAAAAAUQAAAAAQAAAAAAABAQAAAgAQAAAAAA
+			AAIgAADYAQAAAAAAABAgAABYAQAAAAAAABEgAACMAQAAAAAAABIg
+			AABsAQAAAAAAABMgAAB8AQAAAAAAACAgAAC4AQAAAAAAADAgAADk
+			AQAAAAAAAAHAAABAAQAAAAAAABHAAAAUAAAAAAAAABLAAABMAQAA
+			AAAAABDQAADsAQAAAAAAAIDwAAD4AQAAAAAAAA==
 			</data>
 			<key>fileModificationDate</key>
-			<date>2012-06-08T21:21:23Z</date>
+			<date>2012-05-16T03:45:49Z</date>
 			<key>md5</key>
-			<string>95D5216999BDB43303D818A1CE3FE71D</string>
+			<string>8423F463E8609B719663671BFBDFAB2F</string>
 			<key>notifyOnBookmarkChange</key>
 			<true/>
 			<key>originalPath</key>
-			<string>/Users/randymcmillan/Documents/MusicTheorySeries/Icon512x512.png</string>
+			<string>/Users/randymcmillan/Documents/MusicTheorySeries/MT101/icon@2x.png</string>
 			<key>resourceName</key>
-			<string>Icon512x512.png</string>
+			<string>icon@2x.png</string>
+		</dict>
+		<dict>
+			<key>bookmark</key>
+			<data>
+			Ym9va8wDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAA1AIAAAUAAAABAQAAVXNlcnMAAAANAAAAAQEAAHJh
+			bmR5bWNtaWxsYW4AAAAJAAAAAQEAAERvY3VtZW50cwAAABEAAAAB
+			AQAATXVzaWNUaGVvcnlTZXJpZXMAAAAFAAAAAQEAAE1UMTAxAAAA
+			DgAAAAEBAABpY29uLTcyQDJ4LnBuZwAAGAAAAAEGAAAEAAAAFAAA
+			ACwAAABAAAAAXAAAAGwAAAAIAAAABAMAAJK/AAAAAAAACAAAAAQD
+			AAD5UwQAAAAAAAgAAAAEAwAA+lMEAAAAAAAIAAAABAMAAJx1BAAA
+			AAAACAAAAAQDAAD4cGMAAAAAAAgAAAAEAwAA0YtjAAAAAAAYAAAA
+			AQYAAKQAAAC0AAAAxAAAANQAAADkAAAA9AAAABgAAAABAgAAAQAA
+			AAAAAAAPAAAAAAAAAAAAAAAAAAAABAAAAAMDAAAEAAAABAAAAAMD
+			AAD1AQAADAAAAAEBAABEZWVwU3BhY2VTU0QIAAAABAMAAACASrE3
+			AAAACAAAAAAEAABBtVoLVwAAACQAAAABAQAAQzU5NjZCRDctRTI1
+			OC0zNzFBLUE5MUEtQTVCQzEyMjE1MUJGGAAAAAECAACBAAAAAQAI
+			AO8/AAABAAgAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAAQA
+			AAADAwAAAAEAAM0AAAABAgAANmU3MDRjNjM0NDljYjI1MWQ1ODEw
+			MDU1NzE4MzU4N2ZkMjU3YzE3MzswMDAwMDAwMDswMDAwMDAwMDAw
+			MDAwMDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5yZWFkLXdyaXRl
+			OzAwMDAwMDAxOzBlMDAwMDAzOzAwMDAwMDAwMDA2MzhiZDE7L3Vz
+			ZXJzL3JhbmR5bWNtaWxsYW4vZG9jdW1lbnRzL211c2ljdGhlb3J5
+			c2VyaWVzL210MTAxL2ljb24tNzJAMngucG5nAAAAAMAAAAD+////
+			AQAAAAAAAAAPAAAABBAAAIQAAAAAAAAABRAAAAQBAAAAAAAAEBAA
+			ACQBAAAAAAAAAiAAANwBAAAAAAAAECAAAFwBAAAAAAAAESAAAJAB
+			AAAAAAAAEiAAAHABAAAAAAAAEyAAAIABAAAAAAAAICAAALwBAAAA
+			AAAAMCAAAOgBAAAAAAAAAcAAAEQBAAAAAAAAEcAAABQAAAAAAAAA
+			EsAAAFABAAAAAAAAENAAAPABAAAAAAAAgPAAAPwBAAAAAAAA
+			</data>
+			<key>fileModificationDate</key>
+			<date>2012-05-15T00:04:34Z</date>
+			<key>md5</key>
+			<string>204C47FB6CE651B63235A740D41485A6</string>
+			<key>notifyOnBookmarkChange</key>
+			<true/>
+			<key>originalPath</key>
+			<string>/Users/randymcmillan/Documents/MusicTheorySeries/MT101/icon-72@2x.png</string>
+			<key>resourceName</key>
+			<string>icon-72@2x.png</string>
 		</dict>
 	</array>
 	<key>sceneSize</key>
-	<string>{700, 700}</string>
+	<string>{703, 718}</string>
 	<key>scenes</key>
 	<array>
 		<dict>
@@ -99,253 +140,15 @@
 				<integer>60</integer>
 			</dict>
 			<key>canvasSize</key>
-			<string>{1290, 760}</string>
+			<string>{1296, 758}</string>
 			<key>context</key>
 			<dict>
 				<key>currentTimelineIdentifier</key>
 				<string>kTimelineDefaultIdentifier</string>
 				<key>elements</key>
 				<dict>
-					<key>3</key>
-					<array>
-						<dict>
-							<key>identifier</key>
-							<string>BorderStyleRight</string>
-							<key>objectValue</key>
-							<string>Solid</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BorderStyleTop</string>
-							<key>objectValue</key>
-							<string>Solid</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BackgroundColor</string>
-							<key>objectValue</key>
-							<string>#FFFFFF</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BorderWidthBottom</string>
-							<key>objectValue</key>
-							<string>1px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BoxShadowXOffset</string>
-							<key>objectValue</key>
-							<string>0px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>IFrameURL</string>
-							<key>objectValue</key>
-							<string></string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>Opacity</string>
-							<key>objectValue</key>
-							<string>0.000000</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BorderWidthRight</string>
-							<key>objectValue</key>
-							<string>1px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>IFrameType</string>
-							<key>objectValue</key>
-							<string>0</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BoxShadowColor</string>
-							<key>objectValue</key>
-							<string>#000000</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BorderWidthTop</string>
-							<key>objectValue</key>
-							<string>1px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BorderStyleLeft</string>
-							<key>objectValue</key>
-							<string>Solid</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BorderRadiusTopRight</string>
-							<key>objectValue</key>
-							<string>24px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>DisplayName</string>
-							<key>objectValue</key>
-							<string>HTML Widget</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>Height</string>
-							<key>objectValue</key>
-							<string>666px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>ZIndex</string>
-							<key>objectValue</key>
-							<string>1</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>ExplicitDimensions</string>
-							<key>objectValue</key>
-							<string>YES</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>OriginalHeight</string>
-							<key>objectValue</key>
-							<string>736px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>Top</string>
-							<key>objectValue</key>
-							<string>16px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>TagName</string>
-							<key>objectValue</key>
-							<string>div</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BorderStyleBottom</string>
-							<key>objectValue</key>
-							<string>Solid</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>ConstrainProportions</string>
-							<key>objectValue</key>
-							<string>NO</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>Position</string>
-							<key>objectValue</key>
-							<string>absolute</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>Width</string>
-							<key>objectValue</key>
-							<string>666px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>ClassType</string>
-							<key>objectValue</key>
-							<string>iframe</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>ReflectionOffset</string>
-							<key>objectValue</key>
-							<string>0px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BorderRadiusBottomRight</string>
-							<key>objectValue</key>
-							<string>24px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>IFrameHTML</string>
-							<key>objectValue</key>
-							<string>	&lt;div style='margin:20px;'&gt;&lt;h1&gt;Hey, it's Cordova!&lt;/h1&gt;
-	&lt;p&gt;Don't know how to get started? Check out our &lt;em&gt;&lt;a target="_blank" href="http://docs.phonegap.com/en/edge/guide_getting-started_ios_index.md.html#Getting%20Started%20with%20iOS"&gt;Getting Started Guide&lt;/a&gt;&lt;/em&gt;
-	&lt;br /&gt;
-	&lt;ol&gt;
-		&lt;li&gt;Check your console log for any white-list rejection errors.&lt;/li&gt;
-		&lt;li&gt;Add your allowed &lt;strong&gt;hosts&lt;/strong&gt; in Cordova.plist/ExternalHosts (wildcards OK, don't enter the URL scheme)&lt;/li&gt;
-	&lt;/ol&gt;
-&lt;/div&gt;</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>ReflectionDepth</string>
-							<key>objectValue</key>
-							<string>0.000000</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BoxShadowYOffset</string>
-							<key>objectValue</key>
-							<string>0px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>Left</string>
-							<key>objectValue</key>
-							<string>16px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BorderRadiusTopLeft</string>
-							<key>objectValue</key>
-							<string>24px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BorderWidthLeft</string>
-							<key>objectValue</key>
-							<string>1px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BorderRadiusBottomLeft</string>
-							<key>objectValue</key>
-							<string>24px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>Overflow</string>
-							<key>objectValue</key>
-							<string>visible</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BoxShadowBlurRadius</string>
-							<key>objectValue</key>
-							<string>0px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>OriginalWidth</string>
-							<key>objectValue</key>
-							<string>736px</string>
-						</dict>
-					</array>
 					<key>6</key>
 					<array>
-						<dict>
-							<key>identifier</key>
-							<string>TextColor</string>
-							<key>objectValue</key>
-							<string>#000000</string>
-						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>FontFamily</string>
@@ -360,6 +163,12 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>TagName</string>
+							<key>objectValue</key>
+							<string>div</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>PaddingRight</string>
 							<key>objectValue</key>
 							<string>8px</string>
@@ -368,7 +177,7 @@
 							<key>identifier</key>
 							<string>FontSize</string>
 							<key>objectValue</key>
-							<string>24px</string>
+							<string>20px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -392,7 +201,7 @@
 							<key>identifier</key>
 							<string>Top</string>
 							<key>objectValue</key>
-							<string>471px</string>
+							<string>447px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -416,13 +225,13 @@
 							<key>identifier</key>
 							<string>Height</string>
 							<key>objectValue</key>
-							<string>29px</string>
+							<string>25px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>Left</string>
 							<key>objectValue</key>
-							<string>241px</string>
+							<string>259px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -438,6 +247,12 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>ZIndex</string>
+							<key>objectValue</key>
+							<string>3</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>PaddingLeft</string>
 							<key>objectValue</key>
 							<string>8px</string>
@@ -446,13 +261,7 @@
 							<key>identifier</key>
 							<string>Width</string>
 							<key>objectValue</key>
-							<string>201px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>ZIndex</string>
-							<key>objectValue</key>
-							<string>3</string>
+							<string>167px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -474,12 +283,12 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>TextColor</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>#000000</string>
 						</dict>
 					</array>
-					<key>7</key>
+					<key>8</key>
 					<array>
 						<dict>
 							<key>identifier</key>
@@ -491,7 +300,7 @@
 							<key>identifier</key>
 							<string>DisplayName</string>
 							<key>objectValue</key>
-							<string>Icon512x512</string>
+							<string>icon-72@2x</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -503,7 +312,7 @@
 							<key>identifier</key>
 							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>512px</string>
+							<string>144px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -515,7 +324,7 @@
 							<key>identifier</key>
 							<string>Left</string>
 							<key>objectValue</key>
-							<string>222px</string>
+							<string>252px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -527,13 +336,13 @@
 							<key>identifier</key>
 							<string>BackgroundImage</string>
 							<key>objectValue</key>
-							<string>Icon512x512.png</string>
+							<string>icon-72@2x.png</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>OriginalHeight</string>
 							<key>objectValue</key>
-							<string>512px</string>
+							<string>144px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -545,7 +354,7 @@
 							<key>identifier</key>
 							<string>Height</string>
 							<key>objectValue</key>
-							<string>256px</string>
+							<string>198px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -557,13 +366,13 @@
 							<key>identifier</key>
 							<string>Width</string>
 							<key>objectValue</key>
-							<string>256px</string>
+							<string>198px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>Top</string>
 							<key>objectValue</key>
-							<string>222px</string>
+							<string>260px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -600,7 +409,7 @@
 				<key>properties</key>
 				<dict>
 					<key>backgroundColor</key>
-					<string>#FFFFFF</string>
+					<string>#E9E8EE</string>
 					<key>perspective</key>
 					<real>600</real>
 				</dict>
@@ -627,13 +436,11 @@
 			<key>oid</key>
 			<string>1</string>
 			<key>scrollViewOffset</key>
-			<string>{0, 82}</string>
+			<string>{5, 104}</string>
 			<key>selectedObjects</key>
-			<array>
-				<string>3</string>
-			</array>
+			<array/>
 			<key>splitHeight</key>
-			<real>488</real>
+			<real>480</real>
 		</dict>
 	</array>
 	<key>scripts</key>

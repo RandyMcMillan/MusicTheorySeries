@@ -69,9 +69,6 @@
 	[controller.view addSubview:cleaverViewController.view];
 	[controller.view bringSubviewToFront:cleaverViewController.view];
     
-    
-    
-    
 	return controller;
 }
 
@@ -156,7 +153,7 @@
 
     if (section == 0) {
     
-        return @"return if else 0"; 
+        return @"Circle Diagrams"; 
     
     }
     
