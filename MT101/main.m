@@ -160,7 +160,7 @@
     
     if (section == 1) {
         
-        return @"return if else 1"; 
+        return @"Staffs / Staves"; 
         
     } 
 
@@ -289,7 +289,7 @@
         NSLog(@"indexPath.row = %i",indexPath.row);
         
         navList = [[NSArray alloc] initWithObjects:
-                   @"Circle Of Fifths",
+                   @"Grand Staff",
                    @"ChildBrowser",
                    @"How to use Cleaver", 
                    @"MrImageProc/index",
@@ -402,7 +402,7 @@
             NSLog(@"indexPath.row = %i",indexPath.row);
             
             navList = [[NSArray alloc] initWithObjects:
-                       @"CircleOfFifths/CircleOfFifths",
+                       @"GrandStaff/GrandStaff",
                        @"ChildBrowser",
                        @"How to use Cleaver", 
                        @"MrImageProc/index",
