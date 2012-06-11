@@ -488,6 +488,8 @@
 		cleaverViewController.wwwFolderName = @"www";
 		cleaverViewController.startPage = [NSString stringWithFormat:@"%@.html", [navList objectAtIndex:indexPath.row]];
         cleaverViewController.view.frame = controller.view.bounds;
+        NSLog(@"width = %f",cleaverViewController.view.frame.size.width);
+        NSLog(@"height = %f",cleaverViewController.view.frame.size.height);
  
 		NSLog(@"cleaverViewController.startPage = %@",cleaverViewController.startPage);
         
