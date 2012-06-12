@@ -48,6 +48,7 @@
 + (id) controller
 {
 	DetailViewController *controller = [[DetailViewController alloc] init];
+    controller.title = @"Music Theory 101";
 	controller.view.backgroundColor = TOOLBAR_COLOR;
     
 	CDVViewController* cleaverViewController = [CDVViewController new];
@@ -199,13 +200,6 @@
 //    return nil;
 
     
-}
-
-
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-
-  //  return YES;
-
 }
 
 
@@ -381,8 +375,8 @@
 {
     
     NSURLCache* cache = [NSURLCache sharedURLCache];
-	[cache setMemoryCapacity:4 * 1024 * 1024]; //refer NSURLCache.h line:130 for alt values
-	[cache setDiskCapacity:512*1024];
+	[cache setMemoryCapacity:1 * 512 * 512]; //refer NSURLCache.h line:130 for alt values
+	[cache setDiskCapacity:512*512];
     //NSLog(@"cache.memoryCapacity = %i",cache.memoryCapacity);
     //NSLog(@"cache.diskCapacity = %i",cache.diskCapacity);
     //NSLog(@"%i",cache.currentDiskUsage);
@@ -400,7 +394,7 @@
             //NSLog(@"indexPath.row = %i",indexPath.row);
             
             navList = [[NSArray alloc] initWithObjects:
-                       @"CircleOfFifths/CircleOfFifths",
+                       @"Circle Of Fifths/Circle Of Fifths",
                        @"ChromaticCircle/ChromaticCircle",
                        @"How to use Cleaver", 
                        @"MrImageProc/index",
@@ -502,7 +496,13 @@
         //NSLog(@"height = %f",cleaverViewController.view.frame.size.height);
  
 		//NSLog(@"cleaverViewController.startPage = %@",cleaverViewController.startPage);
+        NSString *path = [navList objectAtIndex:indexPath.row];
+        NSArray *titleComponents = [path pathComponents];
+        NSString *title = [titleComponents objectAtIndex:0];
+
+        NSLog(@"%@",[titleComponents objectAtIndex:0]);
         
+        controller.title = title;        
         
 		UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 		[button addTarget:self
