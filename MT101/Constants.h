@@ -35,7 +35,9 @@
 
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
-#define CORDOVA_GRAY_COLOR  [UIColor colorWithRed:0.435 green:0.439 blue:0.447 alpha:1.000]
+#define TOOLBAR_COLOR [UIColor colorWithRed:0.608 green:0.608 blue:0.635 alpha:1.000]  
+#define BKGRNDCOLOR [UIColor colorWithRed:0.894 green:0.890 blue:0.918 alpha:1.000]
+
 #define BARBUTTON(TITLE, SELECTOR)  [[UIBarButtonItem alloc] initWithTitle : TITLE style : UIBarButtonItemStylePlain target : self action : SELECTOR]
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 

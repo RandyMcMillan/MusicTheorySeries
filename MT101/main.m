@@ -23,12 +23,14 @@
 //  Copyright OpenOSX.org 2012. All rights reserved.
 //
 
+#import "mach/mach.h"
 #import <UIKit/UIKit.h>
+#import <Cordova/CDVViewController.h>
 #import "cleaverViewController.h"
 #import "Constants.h"
 
 
-//#define CORDOVA_GRAY_COLOR  [UIColor colorWithRed:0.435 green:0.439 blue:0.447 alpha:1.000]
+//#define TOOLBAR_COLOR  [UIColor colorWithRed:0.435 green:0.439 blue:0.447 alpha:1.000]
 //#define BARBUTTON(TITLE, SELECTOR)  [[UIBarButtonItem alloc] initWithTitle : TITLE style : UIBarButtonItemStylePlain target : self action : SELECTOR]
 //#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
@@ -46,7 +48,7 @@
 + (id) controller
 {
 	DetailViewController *controller = [[DetailViewController alloc] init];
-	controller.view.backgroundColor = CORDOVA_GRAY_COLOR;
+	controller.view.backgroundColor = TOOLBAR_COLOR;
     
 	CDVViewController* cleaverViewController = [CDVViewController new];
 	controller.view.autoresizesSubviews = YES;
@@ -66,6 +68,7 @@
 	button.frame = CGRectMake(x, y, 85.0, 35.0);
     
 	cleaverViewController.view.frame = controller.view.bounds;
+    cleaverViewController.view.backgroundColor = BKGRNDCOLOR;
 	[controller.view addSubview:cleaverViewController.view];
 	[controller.view bringSubviewToFront:cleaverViewController.view];
     
@@ -112,7 +115,7 @@
 + (id) controller {
     
 	ColorViewController *controller = [[ColorViewController alloc] init];
-	NSLog(@"%f",controller.view.frame.size.width);
+	//NSLog(@"%f",controller.view.frame.size.width);
 	controller.title = @"Examples";
 	return controller;
 }
@@ -160,7 +163,7 @@
     
     if (section == 1) {
         
-        return @"Staffs / Staves"; 
+        return @"Staffs / Staves / Clefs"; 
         
     } 
 
@@ -225,7 +228,7 @@
     }
     if (section == 1) {
     
-        return 2;
+        return 3;
     
     }
     
@@ -268,9 +271,9 @@
  
     if (indexPath.section == 0) {
         
-        NSLog(@"indexPath = %@ ",indexPath);
-        NSLog(@"indexPath.section = %i ",indexPath.section);
-        NSLog(@"indexPath.row = %i",indexPath.row);
+        //NSLog(@"indexPath = %@ ",indexPath);
+        //NSLog(@"indexPath.section = %i ",indexPath.section);
+        //NSLog(@"indexPath.row = %i",indexPath.row);
     
         navList = [[NSArray alloc] initWithObjects:
 	           @"Circle Of Fifths",
@@ -284,13 +287,14 @@
     
     if (indexPath.section == 1) {
         
-        NSLog(@"indexPath = %@ ",indexPath);
-        NSLog(@"indexPath.section = %i ",indexPath.section);
-        NSLog(@"indexPath.row = %i",indexPath.row);
+        //NSLog(@"indexPath = %@ ",indexPath);
+        //NSLog(@"indexPath.section = %i ",indexPath.section);
+        //NSLog(@"indexPath.row = %i",indexPath.row);
         
         navList = [[NSArray alloc] initWithObjects:
                    @"Grand Staff",
-                   @"ChildBrowser",
+                   @"Soprano Clef",
+                   @"Alto Clef",
                    @"How to use Cleaver", 
                    @"MrImageProc/index",
                    nil];
@@ -301,9 +305,9 @@
     
     if (indexPath.section == 2) {
         
-        NSLog(@"indexPath = %@ ",indexPath);
-        NSLog(@"indexPath.section = %i ",indexPath.section);
-        NSLog(@"indexPath.row = %i",indexPath.row);
+        //NSLog(@"indexPath = %@ ",indexPath);
+        //NSLog(@"indexPath.section = %i ",indexPath.section);
+        //NSLog(@"indexPath.row = %i",indexPath.row);
         
         navList = [[NSArray alloc] initWithObjects:
                    @"Circle Of Fifths",
@@ -318,9 +322,9 @@
     
     if (indexPath.section == 3) {
         
-        NSLog(@"indexPath = %@ ",indexPath);
-        NSLog(@"indexPath.section = %i ",indexPath.section);
-        NSLog(@"indexPath.row = %i",indexPath.row);
+        //NSLog(@"indexPath = %@ ",indexPath);
+        //NSLog(@"indexPath.section = %i ",indexPath.section);
+        //NSLog(@"indexPath.row = %i",indexPath.row);
         
         navList = [[NSArray alloc] initWithObjects:
                    @"Circle Of Fifths",
@@ -334,9 +338,9 @@
     
     if (indexPath.section == 4) {
         
-        NSLog(@"indexPath = %@ ",indexPath);
-        NSLog(@"indexPath.section = %i ",indexPath.section);
-        NSLog(@"indexPath.row = %i",indexPath.row);
+        //NSLog(@"indexPath = %@ ",indexPath);
+        //NSLog(@"indexPath.section = %i ",indexPath.section);
+        //NSLog(@"indexPath.row = %i",indexPath.row);
         
         navList = [[NSArray alloc] initWithObjects:
                    @"Circle Of Fifths",
@@ -351,9 +355,9 @@
     
     if (indexPath.section == 5) {
         
-        NSLog(@"indexPath = %@ ",indexPath);
-        NSLog(@"indexPath.section = %i ",indexPath.section);
-        NSLog(@"indexPath.row = %i",indexPath.row);
+        //NSLog(@"indexPath = %@ ",indexPath);
+        //NSLog(@"indexPath.section = %i ",indexPath.section);
+        //NSLog(@"indexPath.row = %i",indexPath.row);
         
         navList = [[NSArray alloc] initWithObjects:
                    @"Circle Of Fifths",
@@ -376,15 +380,24 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    NSURLCache* cache = [NSURLCache sharedURLCache];
+	[cache setMemoryCapacity:4 * 1024 * 1024]; //refer NSURLCache.h line:130 for alt values
+	[cache setDiskCapacity:512*1024];
+    //NSLog(@"cache.memoryCapacity = %i",cache.memoryCapacity);
+    //NSLog(@"cache.diskCapacity = %i",cache.diskCapacity);
+    //NSLog(@"%i",cache.currentDiskUsage);
+    //NSLog(@"%i",cache.currentMemoryUsage);
+
+    
     NSArray *navList;
  
 	if (IS_IPAD)
 	{
         if (indexPath.section == 0) {
             
-            NSLog(@"indexPath = %@ ",indexPath);
-            NSLog(@"indexPath.section = %i ",indexPath.section);
-            NSLog(@"indexPath.row = %i",indexPath.row);
+            //NSLog(@"indexPath = %@ ",indexPath);
+            //NSLog(@"indexPath.section = %i ",indexPath.section);
+            //NSLog(@"indexPath.row = %i",indexPath.row);
             
             navList = [[NSArray alloc] initWithObjects:
                        @"CircleOfFifths/CircleOfFifths",
@@ -397,14 +410,14 @@
         
         if (indexPath.section == 1) {
             
-            NSLog(@"indexPath = %@ ",indexPath);
-            NSLog(@"indexPath.section = %i ",indexPath.section);
-            NSLog(@"indexPath.row = %i",indexPath.row);
+            //NSLog(@"indexPath = %@ ",indexPath);
+            //NSLog(@"indexPath.section = %i ",indexPath.section);
+            //NSLog(@"indexPath.row = %i",indexPath.row);
             
             navList = [[NSArray alloc] initWithObjects:
                        @"GrandStaff/GrandStaff",
-                       @"ChildBrowser",
-                       @"How to use Cleaver", 
+                       @"SopranoClef/SopranoClef", 
+                       @"AltoClef/AltoClef",
                        @"MrImageProc/index",
                        nil];
             
@@ -413,9 +426,9 @@
         
         if (indexPath.section == 2) {
             
-            NSLog(@"indexPath = %@ ",indexPath);
-            NSLog(@"indexPath.section = %i ",indexPath.section);
-            NSLog(@"indexPath.row = %i",indexPath.row);
+            //NSLog(@"indexPath = %@ ",indexPath);
+            //NSLog(@"indexPath.section = %i ",indexPath.section);
+            //NSLog(@"indexPath.row = %i",indexPath.row);
             
             navList = [[NSArray alloc] initWithObjects:
                        @"CircleOfFifths/CircleOfFifths",
@@ -429,9 +442,9 @@
         
         if (indexPath.section == 3) {
             
-            NSLog(@"indexPath = %@ ",indexPath);
-            NSLog(@"indexPath.section = %i ",indexPath.section);
-            NSLog(@"indexPath.row = %i",indexPath.row);
+            //NSLog(@"indexPath = %@ ",indexPath);
+            //NSLog(@"indexPath.section = %i ",indexPath.section);
+            //NSLog(@"indexPath.row = %i",indexPath.row);
             
             navList = [[NSArray alloc] initWithObjects:
                        @"CircleOfFifths/CircleOfFifths",
@@ -445,9 +458,9 @@
         
         if (indexPath.section == 4) {
             
-            NSLog(@"indexPath = %@ ",indexPath);
-            NSLog(@"indexPath.section = %i ",indexPath.section);
-            NSLog(@"indexPath.row = %i",indexPath.row);
+            //NSLog(@"indexPath = %@ ",indexPath);
+            //NSLog(@"indexPath.section = %i ",indexPath.section);
+            //NSLog(@"indexPath.row = %i",indexPath.row);
             
             navList = [[NSArray alloc] initWithObjects:
                        @"CircleOfFifths/CircleOfFifths",
@@ -460,9 +473,9 @@
 
         if (indexPath.section == 5) {
             
-            NSLog(@"indexPath = %@ ",indexPath);
-            NSLog(@"indexPath.section = %i ",indexPath.section);
-            NSLog(@"indexPath.row = %i",indexPath.row);
+            //NSLog(@"indexPath = %@ ",indexPath);
+            //NSLog(@"indexPath.section = %i ",indexPath.section);
+            //NSLog(@"indexPath.row = %i",indexPath.row);
             
             navList = [[NSArray alloc] initWithObjects:
                        @"CircleOfFifths/CircleOfFifths",
@@ -480,15 +493,15 @@
 		UIViewController *controller = (UIViewController *)self.splitViewController.delegate;
         
 		CDVViewController* cleaverViewController = [CDVViewController new];
-        
 		controller.view.autoresizesSubviews = YES;
 		cleaverViewController.wwwFolderName = @"www";
 		cleaverViewController.startPage = [NSString stringWithFormat:@"%@.html", [navList objectAtIndex:indexPath.row]];
         cleaverViewController.view.frame = controller.view.bounds;
-        NSLog(@"width = %f",cleaverViewController.view.frame.size.width);
-        NSLog(@"height = %f",cleaverViewController.view.frame.size.height);
+        cleaverViewController.view.backgroundColor = BKGRNDCOLOR;
+        //NSLog(@"width = %f",cleaverViewController.view.frame.size.width);
+        //NSLog(@"height = %f",cleaverViewController.view.frame.size.height);
  
-		NSLog(@"cleaverViewController.startPage = %@",cleaverViewController.startPage);
+		//NSLog(@"cleaverViewController.startPage = %@",cleaverViewController.startPage);
         
         
 		UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -521,6 +534,12 @@
 	else
         if (!IS_IPAD) {}
         else {}
+    
+    //NSLog(@"cache.memoryCapacity = %i",cache.memoryCapacity);
+    //NSLog(@"cache.diskCapacity = %i",cache.diskCapacity);
+    //NSLog(@"%i",cache.currentDiskUsage);
+    //NSLog(@"%i",cache.currentMemoryUsage);
+
     
     
     
@@ -581,12 +600,12 @@
 	// Create the navigation-run root view
 	ColorViewController *rootVC = [ColorViewController controller];
 	UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController:rootVC];
-	rootNav.navigationBar.tintColor = CORDOVA_GRAY_COLOR;
+	rootNav.navigationBar.tintColor = TOOLBAR_COLOR;
     
 	// Create the navigation-run detail view
 	DetailViewController *detailVC = [DetailViewController controller];
 	UINavigationController *detailNav = [[UINavigationController alloc] initWithRootViewController:detailVC];
-	detailNav.navigationBar.tintColor = CORDOVA_GRAY_COLOR;
+	detailNav.navigationBar.tintColor = TOOLBAR_COLOR;
     
 	// Add both to the split view controller
 	UISplitViewController *svc = [[UISplitViewController alloc] init];
@@ -600,10 +619,55 @@
 {
 	ColorViewController *colorViewController = [ColorViewController controller];
 	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:colorViewController];
-	nav.navigationBar.tintColor = CORDOVA_GRAY_COLOR;
+	nav.navigationBar.tintColor = TOOLBAR_COLOR;
 	return nav;
 }
 
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
+  
+ 
+#if !TARGET_IPHONE_SIMULATOR
+
+    NSLog(@"RECIEVED MEM WARNING WHY?");
+    
+    Class     dynWebView;
+    dynWebView = NSClassFromString(@"WebView");
+    dynWebView = nil;
+
+    [self report_memory];
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
+    //[super dealloc];
+
+#endif
+    
+}
+
+-(void) report_memory {
+    
+    //#import "mach/mach.h" ///Add to headers
+
+    struct task_basic_info info;
+    mach_msg_type_number_t size = sizeof(info);
+    kern_return_t kerr = task_info(mach_task_self(),
+                                   TASK_BASIC_INFO,
+                                   (task_info_t)&info,
+                                   &size);
+    if( kerr == KERN_SUCCESS ) {
+        NSLog(@"Memory in use (in bytes): %u", info.resident_size);
+    } else {
+        NSLog(@"Error with task_info(): %s", mach_error_string(kerr));
+    }
+}
+
+- (void) dealloc
+{
+    
+//    Class     dynWebView;
+  //  dynWebView = NSClassFromString(@"WebView");
+    //dynWebView = nil;
+//    [dynWebView dealloc];
+    // [super dealloc]; << provided by the compiler
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -621,7 +685,15 @@
 		window.rootViewController = [self navWithColorViewController];
 	}
     
+	NSURLCache* cache = [NSURLCache sharedURLCache];
+	[cache setMemoryCapacity:1 * 1024 * 1024]; //refer NSURLCache.h line:130 for alt values
+	[cache setDiskCapacity:512*1024];
+    //NSLog(@"cache.memoryCapacity = %i",cache.memoryCapacity);
+    //NSLog(@"cache.diskCapacity = %i",cache.diskCapacity);
+    //NSLog(@"%i",cache.currentDiskUsage);
+    //NSLog(@"%i",cache.currentMemoryUsage);
 	[window makeKeyAndVisible];
+    
 	return YES;
 }
 @end
