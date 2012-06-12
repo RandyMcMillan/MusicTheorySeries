@@ -395,7 +395,7 @@
             
             navList = [[NSArray alloc] initWithObjects:
                        @"Circle Of Fifths/Circle Of Fifths",
-                       @"ChromaticCircle/ChromaticCircle",
+                       @"Chromatic Circle/Chromatic Circle",
                        @"How to use Cleaver", 
                        @"MrImageProc/index",
                        nil];
@@ -409,9 +409,9 @@
             //NSLog(@"indexPath.row = %i",indexPath.row);
             
             navList = [[NSArray alloc] initWithObjects:
-                       @"GrandStaff/GrandStaff",
-                       @"SopranoClef/SopranoClef", 
-                       @"AltoClef/AltoClef",
+                       @"Grand Staff/Grand Staff",
+                       @"Soprano Clef/Soprano Clef", 
+                       @"Alto Clef/Alto Clef",
                        @"MrImageProc/index",
                        nil];
             
