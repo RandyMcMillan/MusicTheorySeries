@@ -112,9 +112,21 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>LSUIPresentationMode</key>
+	<integer>0</integer>
+	<key>NSHumanReadableCopyright</key>
+	<string>Randy McMillan | 2012 | RandyMcMillan.net | OpenOSX.org </string>
+	<key>NSURLCacheStorageAllowedInMemoryOnly</key>
+	<string>YES</string>
 	<key>UIApplicationExitsOnSuspend</key>
 	<true/>
+	<key>UIInterfaceOrientation</key>
+	<string></string>
 	<key>UIPrerenderedIcon</key>
+	<true/>
+	<key>UIRequiresPersistentWiFi</key>
+	<true/>
+	<key>UIStatusBarHidden</key>
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
@@ -126,17 +138,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIStatusBarHidden</key>
-	<true/>
-	<key>LSUIPresentationMode</key>
-	<integer>0</integer>
-	<key>UIRequiresPersistentWiFi</key>
-	<true/>
-	<key>NSHumanReadableCopyright</key>
-	<string>Randy McMillan | 2012 | RandyMcMillan.net | OpenOSX.org </string>
-	<key>UIInterfaceOrientation</key>
-	<string></string>
-	<key>NSURLCacheStorageAllowedInMemoryOnly</key>
-	<string>YES</string>
 </dict>
 </plist>
