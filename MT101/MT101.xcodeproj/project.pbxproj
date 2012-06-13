@@ -11,6 +11,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		48059E1615890494008D7B9B /* CDVDebugWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48059E1415890494008D7B9B /* CDVDebugWebView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4839F9731582769C000371DD /* local.CircleOfFifths.svg in Resources */ = {isa = PBXBuildFile; fileRef = 4839F9721582769C000371DD /* local.CircleOfFifths.svg */; };
 		4839F97C15828C34000371DD /* local.CircleOfFifths.html in Resources */ = {isa = PBXBuildFile; fileRef = 4839F97B15828C34000371DD /* local.CircleOfFifths.html */; };
 		48486888156B0D6A00A6E5E6 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 48486887156B0D6A00A6E5E6 /* www */; };
@@ -168,6 +169,9 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* MT101_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MT101_Prefix.pch; sourceTree = "<group>"; };
+		48059E1315890494008D7B9B /* CDVDebugWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVDebugWebView.h; sourceTree = "<group>"; };
+		48059E1415890494008D7B9B /* CDVDebugWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVDebugWebView.m; sourceTree = "<group>"; };
+		48059E1515890494008D7B9B /* WebScriptDebugDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebScriptDebugDelegate.h; sourceTree = "<group>"; };
 		4839F9721582769C000371DD /* local.CircleOfFifths.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = local.CircleOfFifths.svg; sourceTree = "<group>"; };
 		4839F97B15828C34000371DD /* local.CircleOfFifths.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.CircleOfFifths.html; sourceTree = "<group>"; };
 		483A8A861583EEC700F4FDF6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -369,6 +373,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				48059E1215890494008D7B9B /* debugview */,
 				48486887156B0D6A00A6E5E6 /* www */,
 				489231A7157EA99D00B28FE6 /* Classes */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -413,6 +418,17 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48059E1215890494008D7B9B /* debugview */ = {
+			isa = PBXGroup;
+			children = (
+				48059E1315890494008D7B9B /* CDVDebugWebView.h */,
+				48059E1415890494008D7B9B /* CDVDebugWebView.m */,
+				48059E1515890494008D7B9B /* WebScriptDebugDelegate.h */,
+			);
+			name = debugview;
+			path = ../../CordovaLib/Classes/debugview;
 			sourceTree = "<group>";
 		};
 		4839F9711582769C000371DD /* svg */ = {
@@ -929,6 +945,7 @@
 				48BA1247157EACBB001123F3 /* MediaBrowserConstants.m in Sources */,
 				48BA124A157EACBB001123F3 /* MediaBrowserViewController.m in Sources */,
 				48BA1255157EACBB001123F3 /* yourJSLib.m in Sources */,
+				48059E1615890494008D7B9B /* CDVDebugWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -938,18 +955,18 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Shared/Cordova/Frameworks\"",
-					"\"$(SRCROOT)/../../../../Shared/Cordova/Frameworks\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "/Users/Shared/Cordova/Frameworks/**";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MT101_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1,",
+					"CORDOVA_FRAMEWORK=1",
+				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MT101-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
@@ -959,8 +976,51 @@
 				PRODUCT_NAME = MT101;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/../../../Shared/Cordova/Frameworks\" \"$(SRCROOT)/../../../../Shared/Cordova/Frameworks\"";
 			};
 			name = Debug;
+		};
+		48059E8215890959008D7B9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48059E8315890959008D7B9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MT101_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1,",
+					"CORDOVA_FRAMEWORK=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "MT101-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = "";
+				OTHER_TEST_FLAGS = "";
+				PRODUCT_NAME = MT101;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/../../../Shared/Cordova/Frameworks\" \"$(SRCROOT)/../../../../Shared/Cordova/Frameworks\"";
+			};
+			name = Release;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -983,6 +1043,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
+				48059E8315890959008D7B9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -991,6 +1052,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
+				48059E8215890959008D7B9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

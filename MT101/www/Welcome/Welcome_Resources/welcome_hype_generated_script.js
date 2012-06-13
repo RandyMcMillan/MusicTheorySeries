@@ -75,7 +75,7 @@ var scenes = [{timelines:{kTimelineDefaultIdentifier:{framesPerSecond:30,animati
 	hypeDoc.setCurrentSceneIndex(0);
 	hypeDoc.setMainContentContainerID("welcome_hype_container");
 	hypeDoc.setResourcesFolderName(resourcesFolderName);
-	hypeDoc.setShowHypeBuiltWatermark(1);
+	hypeDoc.setShowHypeBuiltWatermark(0);
 	hypeDoc.setShowLoadingPage(true);
 	hypeDoc.setDrawSceneBackgrounds(true);
 	hypeDoc.setDocumentName(documentName);

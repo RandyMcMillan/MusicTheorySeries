@@ -625,20 +625,10 @@
 
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
   
- 
-#if !TARGET_IPHONE_SIMULATOR
-
     NSLog(@"RECIEVED MEM WARNING WHY?");
-    
-    Class     dynWebView;
-    dynWebView = NSClassFromString(@"WebView");
-    dynWebView = nil;
-
     [self report_memory];
     [[NSURLCache sharedURLCache] removeAllCachedResponses];
     //[super dealloc];
-
-#endif
     
 }
 
@@ -686,8 +676,8 @@
 	}
     
 	NSURLCache* cache = [NSURLCache sharedURLCache];
-	[cache setMemoryCapacity:1 * 1024 * 1024]; //refer NSURLCache.h line:130 for alt values
-	[cache setDiskCapacity:512*1024];
+	[cache setMemoryCapacity:1 * 512 * 512]; //refer NSURLCache.h line:130 for alt values
+	[cache setDiskCapacity:512*512];
     //NSLog(@"cache.memoryCapacity = %i",cache.memoryCapacity);
     //NSLog(@"cache.diskCapacity = %i",cache.diskCapacity);
     //NSLog(@"%i",cache.currentDiskUsage);
