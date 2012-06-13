@@ -81,7 +81,12 @@
 
 - (void) viewDidUnload
 {
+    
+    NSLog(@"viewDidUnload");
 	[super viewDidUnload];
+    self.view = nil;
+    self.webView = nil;
+    
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 }

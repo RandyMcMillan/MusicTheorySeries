@@ -68,9 +68,13 @@
 	int y = [UIScreen mainScreen].bounds.size.height * 0.004;
 	button.frame = CGRectMake(x, y, 85.0, 35.0);
     
-	cleaverViewController.view.frame = controller.view.bounds;
+	cleaverViewController.view.frame = CGRectMake(0, 0, 320, 480);//controller.view.bounds;
     cleaverViewController.view.backgroundColor = BKGRNDCOLOR;
 	[controller.view addSubview:cleaverViewController.view];
+    
+    BOOL doesContain;
+    doesContain = [controller.view.subviews indexOfObject:[UIView class]];
+    NSLog(@"%i",doesContain); 
 	[controller.view bringSubviewToFront:cleaverViewController.view];
     
 	return controller;
@@ -487,7 +491,7 @@
 		UIViewController *controller = (UIViewController *)self.splitViewController.delegate;
         
 		CDVViewController* cleaverViewController = [CDVViewController new];
-		controller.view.autoresizesSubviews = YES;
+		//controller.view.autoresizesSubviews = YES;
 		cleaverViewController.wwwFolderName = @"www";
 		cleaverViewController.startPage = [NSString stringWithFormat:@"%@.html", [navList objectAtIndex:indexPath.row]];
         cleaverViewController.view.frame = controller.view.bounds;
@@ -518,9 +522,9 @@
         
         //[cleaverViewController.view addSubview:button];
         
-		cleaverViewController.view.frame = controller.view.bounds;
         
-        
+        cleaverViewController.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 0.1, [UIScreen mainScreen].bounds.size.height * 0.1, [UIScreen mainScreen].bounds.size.width * 0.1, [UIScreen mainScreen].bounds.size.height * 0.1);//controller.view.bounds;
+        cleaverViewController.view.autoresizingMask = (UIViewAutoresizingFlexibleWidth);
 		[controller.view addSubview:cleaverViewController.view];
 		[controller.view bringSubviewToFront:cleaverViewController.view];
         
