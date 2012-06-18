@@ -56,7 +56,7 @@
 	cleaverViewController.wwwFolderName = @"www/Welcome/";
 	cleaverViewController.startPage = @"Welcome.html";
     
-    
+   /* 
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	[button addTarget:self
                action:@selector(closeCleaverView:)
@@ -67,6 +67,7 @@
 	int x = [UIScreen mainScreen].bounds.size.width * 0.885;
 	int y = [UIScreen mainScreen].bounds.size.height * 0.004;
 	button.frame = CGRectMake(x, y, 85.0, 35.0);
+    */
     
 	//cleaverViewController.view.frame = CGRectMake(0, 0, 320, 480);//controller.view.bounds;
     cleaverViewController.view.backgroundColor = BKGRNDCOLOR;
@@ -484,16 +485,11 @@
             
         }
 
-        
-        
- 
-		        
 		UIViewController *controller = (UIViewController *)self.splitViewController.delegate;
-        
 		CDVViewController* cleaverViewController = [CDVViewController new];
-		//controller.view.autoresizesSubviews = YES;
+        //controller.view.autoresizesSubviews = YES;
 		cleaverViewController.wwwFolderName = @"www";
-		cleaverViewController.startPage = [NSString stringWithFormat:@"%@.html", [navList objectAtIndex:indexPath.row]];
+    cleaverViewController.startPage = [NSString stringWithFormat:@"%@.html", [navList objectAtIndex:indexPath.row]];
         cleaverViewController.view.frame = controller.view.bounds;
         cleaverViewController.view.backgroundColor = BKGRNDCOLOR;
         //NSLog(@"width = %f",cleaverViewController.view.frame.size.width);
