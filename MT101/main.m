@@ -68,7 +68,7 @@
 	int y = [UIScreen mainScreen].bounds.size.height * 0.004;
 	button.frame = CGRectMake(x, y, 85.0, 35.0);
     
-	cleaverViewController.view.frame = CGRectMake(0, 0, 320, 480);//controller.view.bounds;
+	//cleaverViewController.view.frame = CGRectMake(0, 0, 320, 480);//controller.view.bounds;
     cleaverViewController.view.backgroundColor = BKGRNDCOLOR;
 	[controller.view addSubview:cleaverViewController.view];
     
@@ -523,7 +523,7 @@
         //[cleaverViewController.view addSubview:button];
         
         
-        cleaverViewController.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 0.1, [UIScreen mainScreen].bounds.size.height * 0.1, [UIScreen mainScreen].bounds.size.width * 0.1, [UIScreen mainScreen].bounds.size.height * 0.1);//controller.view.bounds;
+       // cleaverViewController.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 0.1, [UIScreen mainScreen].bounds.size.height * 0.1, [UIScreen mainScreen].bounds.size.width * 0.1, [UIScreen mainScreen].bounds.size.height * 0.1);//controller.view.bounds;
         cleaverViewController.view.autoresizingMask = (UIViewAutoresizingFlexibleWidth);
 		[controller.view addSubview:cleaverViewController.view];
 		[controller.view bringSubviewToFront:cleaverViewController.view];
@@ -593,13 +593,7 @@
 - (UISplitViewController *) splitviewController
 {
     
-    
-    
 	/////work on resizing!!!
-    
-    
-    
-    
     
 	// Create the navigation-run root view
 	ColorViewController *rootVC = [ColorViewController controller];
