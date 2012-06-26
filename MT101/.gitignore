@@ -1,15 +1,4 @@
-.DS_Store
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-.sass-cache
-
-# Xcode
+# IOS / Xcode
 build/*
 *.pbxuser
 !default.pbxuser
@@ -24,5 +13,20 @@ build/*
 xcuserdata
 profile
 *.moved-aside
+# IOS/www/
 
-*.uncrustify
+# OSX
+.DS_Store
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+.sass-cache
+.sass-cache/*
+.DS_Store
+
+
