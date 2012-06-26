@@ -42,7 +42,7 @@
     }
 
     @try {
-        [dynWebView performSelector:@selector(_enableRemoteInspector)];
+        //[dynWebView performSelector:@selector(_enableRemoteInspector)];
     }
     @catch (NSException *exception) {
         NSLog(
