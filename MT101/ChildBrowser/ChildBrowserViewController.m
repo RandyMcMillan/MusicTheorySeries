@@ -83,19 +83,17 @@
 
     webView.delegate = nil;
 
-    /*
-    [webView release];
-    [closeBtn release];
-    [refreshBtn release];
-    [addressLabel release];
-    [backBtn release];
-    [fwdBtn release];
-    [safariBtn release];
-    [spinner release];
-    [ supportedOrientations release];
-    [super dealloc];
+    
+     webView  = nil;
+     closeBtn = nil;
+     refreshBtn = nil;
+     addressLabel = nil;
+     backBtn = nil;
+     fwdBtn = nil;
+     safariBtn = nil;
+     spinner = nil;
+     supportedOrientations = nil;
      
-     */
 }
 
 -(void)closeBrowser

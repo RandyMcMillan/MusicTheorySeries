@@ -66,6 +66,7 @@
 		4845B8E2159A391F00FE3343 /* AudioHostViewController4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4845B8AE159A391F00FE3343 /* AudioHostViewController4.xib */; };
 		4845B8E3159A391F00FE3343 /* AudioHostViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4845B8AF159A391F00FE3343 /* AudioHostViewController5.xib */; };
 		4845B8E4159A391F00FE3343 /* AudioHostViewController6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4845B8B0159A391F00FE3343 /* AudioHostViewController6.xib */; };
+		4845B8E7159A41AB00FE3343 /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4845B8E6159A41AB00FE3343 /* Cordova.framework */; };
 		48486888156B0D6A00A6E5E6 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 48486887156B0D6A00A6E5E6 /* www */; };
 		485DA8A7156ECBA900E6B4F8 /* ChildBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 485DA89D156ECBA900E6B4F8 /* ChildBrowser.bundle */; };
 		485DA8A8156ECBA900E6B4F8 /* ChildBrowser.js in Sources */ = {isa = PBXBuildFile; fileRef = 485DA89E156ECBA900E6B4F8 /* ChildBrowser.js */; };
@@ -136,7 +137,6 @@
 		48BA124C157EACBB001123F3 /* MediaBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48BA1206157EACBB001123F3 /* MediaBrowserViewController.xib */; };
 		48BA1250157EACBB001123F3 /* reference.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48BA120A157EACBB001123F3 /* reference.txt */; };
 		48BA1255157EACBB001123F3 /* yourJSLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA1210157EACBB001123F3 /* yourJSLib.m */; };
-		48BA1259157EAD52001123F3 /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BA1258157EAD52001123F3 /* Cordova.framework */; };
 		48BCBEE1156B10A800A10F16 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE0156B10A800A10F16 /* AddressBook.framework */; };
 		48BCBEE3156B10AE00A10F16 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE2156B10AE00A10F16 /* AddressBookUI.framework */; };
 		48BCBEE5156B10B300A10F16 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE4156B10B300A10F16 /* AudioToolbox.framework */; };
@@ -249,6 +249,7 @@
 		4845B8AE159A391F00FE3343 /* AudioHostViewController4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioHostViewController4.xib; sourceTree = "<group>"; };
 		4845B8AF159A391F00FE3343 /* AudioHostViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioHostViewController5.xib; sourceTree = "<group>"; };
 		4845B8B0159A391F00FE3343 /* AudioHostViewController6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioHostViewController6.xib; sourceTree = "<group>"; };
+		4845B8E6159A41AB00FE3343 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../../Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
 		48486887156B0D6A00A6E5E6 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		485DA89D156ECBA900E6B4F8 /* ChildBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ChildBrowser.bundle; sourceTree = "<group>"; };
 		485DA89E156ECBA900E6B4F8 /* ChildBrowser.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ChildBrowser.js; sourceTree = "<group>"; };
@@ -326,7 +327,6 @@
 		48BA120A157EACBB001123F3 /* reference.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reference.txt; sourceTree = "<group>"; };
 		48BA120E157EACBB001123F3 /* yourJSLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yourJSLib.h; sourceTree = "<group>"; };
 		48BA1210157EACBB001123F3 /* yourJSLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yourJSLib.m; sourceTree = "<group>"; };
-		48BA1258157EAD52001123F3 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../../Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
 		48BCBEE0156B10A800A10F16 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		48BCBEE2156B10AE00A10F16 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		48BCBEE4156B10B300A10F16 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -371,7 +371,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48BA1259157EAD52001123F3 /* Cordova.framework in Frameworks */,
+				4845B8E7159A41AB00FE3343 /* Cordova.framework in Frameworks */,
 				48BCBF46156B12D300A10F16 /* iAd.framework in Frameworks */,
 				48BCBF44156B12BF00A10F16 /* Twitter.framework in Frameworks */,
 				48BCBF42156B12BA00A10F16 /* Accounts.framework in Frameworks */,
@@ -405,6 +405,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				4845B8E6159A41AB00FE3343 /* Cordova.framework */,
 				48059E1215890494008D7B9B /* debugview */,
 				48486887156B0D6A00A6E5E6 /* www */,
 				489231A7157EA99D00B28FE6 /* Classes */,
@@ -430,7 +431,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				48BA1258157EAD52001123F3 /* Cordova.framework */,
 				48BCBF45156B12D300A10F16 /* iAd.framework */,
 				48BCBF43156B12BF00A10F16 /* Twitter.framework */,
 				48BCBF41156B12BA00A10F16 /* Accounts.framework */,
@@ -1061,7 +1061,10 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "/Users/Shared/Cordova/Frameworks/**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/Shared/Cordova/Frameworks/**",
+					"\"$(SRCROOT)/../../../../Shared/Cordova/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

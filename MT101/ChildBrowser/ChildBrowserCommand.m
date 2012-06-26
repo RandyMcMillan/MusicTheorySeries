@@ -47,6 +47,8 @@
     }
     else 
     {
+        
+        childBrowser.modalPresentationStyle = UIModalPresentationFullScreen;
         NSLog(@"iphone doesnt like modal presentations in landscape");
         NSLog(@"iphone doesnt like modal presentations in landscape");        
         NSLog(@"iphone doesnt like modal presentations in landscape");        
