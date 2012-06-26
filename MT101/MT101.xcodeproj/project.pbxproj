@@ -26,6 +26,7 @@
 		485DA8AC156ECBA900E6B4F8 /* Cordova.plist.png in Resources */ = {isa = PBXBuildFile; fileRef = 485DA8A4156ECBA900E6B4F8 /* Cordova.plist.png */; };
 		485DA8AD156ECBA900E6B4F8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 485DA8A5156ECBA900E6B4F8 /* index.html */; };
 		485DA8AE156ECBA900E6B4F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 485DA8A6156ECBA900E6B4F8 /* README.md */; };
+		4863E9C9159969A30031507C /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4863E9C8159969A30031507C /* Cordova.framework */; };
 		48BCBEE1156B10A800A10F16 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE0156B10A800A10F16 /* AddressBook.framework */; };
 		48BCBEE3156B10AE00A10F16 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE2156B10AE00A10F16 /* AddressBookUI.framework */; };
 		48BCBEE5156B10B300A10F16 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE4156B10B300A10F16 /* AudioToolbox.framework */; };
@@ -59,7 +60,6 @@
 		48BCBF44156B12BF00A10F16 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBF43156B12BF00A10F16 /* Twitter.framework */; };
 		48BCBF46156B12D300A10F16 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBF45156B12D300A10F16 /* iAd.framework */; };
 		48BCBF4D156B215C00A10F16 /* cleaverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BCBF4C156B215C00A10F16 /* cleaverViewController.m */; };
-		48E9EAEB15995E360063DC2B /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E9EAEA15995E350063DC2B /* Cordova.framework */; };
 		8E3EA0DB13AB9B7800D6C49B /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0DA13AB9B7800D6C49B /* Default-Portrait~ipad.png */; };
 		8E3EA0DD13AB9B9400D6C49B /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0DC13AB9B9400D6C49B /* Default-Landscape~ipad.png */; };
 		8E3EA0E113AB9BAC00D6C49B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0E013AB9BAC00D6C49B /* Default@2x.png */; };
@@ -90,6 +90,8 @@
 		485DA8A4156ECBA900E6B4F8 /* Cordova.plist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cordova.plist.png; sourceTree = "<group>"; };
 		485DA8A5156ECBA900E6B4F8 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		485DA8A6156ECBA900E6B4F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		4863E9C8159969A30031507C /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../../Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
+		48BCBEDD156B106700A10F16 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
 		48BCBEE0156B10A800A10F16 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		48BCBEE2156B10AE00A10F16 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		48BCBEE4156B10B300A10F16 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -126,7 +128,6 @@
 		48BCBF45156B12D300A10F16 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		48BCBF4B156B215C00A10F16 /* cleaverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleaverViewController.h; sourceTree = "<group>"; };
 		48BCBF4C156B215C00A10F16 /* cleaverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cleaverViewController.m; sourceTree = "<group>"; };
-		48E9EAEA15995E350063DC2B /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../../Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MT101-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MT101-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		8E3EA0DA13AB9B7800D6C49B /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		8E3EA0DC13AB9B9400D6C49B /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
@@ -139,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48E9EAEB15995E360063DC2B /* Cordova.framework in Frameworks */,
+				4863E9C9159969A30031507C /* Cordova.framework in Frameworks */,
 				48BCBF46156B12D300A10F16 /* iAd.framework in Frameworks */,
 				48BCBF44156B12BF00A10F16 /* Twitter.framework in Frameworks */,
 				48BCBF42156B12BA00A10F16 /* Accounts.framework in Frameworks */,
@@ -173,7 +174,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				48E9EAEA15995E350063DC2B /* Cordova.framework */,
+				4863E9C8159969A30031507C /* Cordova.framework */,
 				48BCBF4B156B215C00A10F16 /* cleaverViewController.h */,
 				48BCBF4C156B215C00A10F16 /* cleaverViewController.m */,
 				48486887156B0D6A00A6E5E6 /* www */,
@@ -219,6 +220,7 @@
 				48BCBEE4156B10B300A10F16 /* AudioToolbox.framework */,
 				48BCBEE2156B10AE00A10F16 /* AddressBookUI.framework */,
 				48BCBEE0156B10A800A10F16 /* AddressBook.framework */,
+				48BCBEDD156B106700A10F16 /* Cordova.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,

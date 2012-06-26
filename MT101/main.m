@@ -24,7 +24,7 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "cleaverViewController.h"
+#import "cleaverViewController.h"
 
 
 #define CORDOVA_GRAY_COLOR  [UIColor colorWithRed:0.435 green:0.439 blue:0.447 alpha:1.000]
@@ -47,8 +47,6 @@
 	DetailViewController *controller = [[DetailViewController alloc] init];
 	controller.view.backgroundColor = CORDOVA_GRAY_COLOR;
     
-    
-    /*
 	CDVViewController* cleaverViewController = [CDVViewController new];
 	controller.view.autoresizesSubviews = YES;
 	cleaverViewController.wwwFolderName = @"www";
@@ -75,7 +73,7 @@
 	[controller.view addSubview:cleaverViewController.view];
 	[controller.view bringSubviewToFront:cleaverViewController.view];
     
-    */
+    
     
     
 	return controller;
@@ -146,7 +144,7 @@
     
 	NSArray *navList;
 	navList = [[NSArray alloc] initWithObjects:
-               @"Grand Staff",
+	           @"index.html",
 	           @"ChildBrowser",
 	           @"How to use Cleaver", ///correspondes to @"Cordova" in the array below
 	           @"MrImageProc/index",
@@ -170,7 +168,7 @@
         
 		NSArray *navList;
 		navList = [[NSArray alloc] initWithObjects:
-		           @"Grand Staff",
+		           @"index",
 		           @"ChildBrowser",
 		           @"Cordova",
 		           @"MrImageProc/index",
@@ -179,17 +177,16 @@
         
 		UIViewController *controller = (UIViewController *)self.splitViewController.delegate;
         
-		//CDVViewController* cleaverViewController = [CDVViewController new];
+		CDVViewController* cleaverViewController = [CDVViewController new];
         
         
 		controller.view.autoresizesSubviews = YES;
-		//cleaverViewController.wwwFolderName = @"www";
-		//cleaverViewController.startPage = [NSString stringWithFormat:@"%@.html", [navList objectAtIndex:indexPath.row]];
+		cleaverViewController.wwwFolderName = @"www";
+		cleaverViewController.startPage = [NSString stringWithFormat:@"%@.html", [navList objectAtIndex:indexPath.row]];
         
-		//NSLog(@"cleaverViewController.startPage = %@",cleaverViewController.startPage);
+		NSLog(@"cleaverViewController.startPage = %@",cleaverViewController.startPage);
         
         
-        /*
 		UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 		[button addTarget:self
                    action:@selector(closeCleaverView:)
@@ -201,14 +198,14 @@
 		int y = [UIScreen mainScreen].bounds.size.height * 0.004;
 		button.frame = CGRectMake(x, y, 85.0, 35.0);
         
-        */
+        
         //[cleaverViewController.view addSubview:button];
         
-		//cleaverViewController.view.frame = controller.view.bounds;
+		cleaverViewController.view.frame = controller.view.bounds;
         
         
-		//[controller.view addSubview:cleaverViewController.view];
-		//[controller.view bringSubviewToFront:cleaverViewController.view];
+		[controller.view addSubview:cleaverViewController.view];
+		[controller.view bringSubviewToFront:cleaverViewController.view];
         
         
 	}
@@ -228,16 +225,17 @@
             DetailViewController *controller = [DetailViewController controller];
             
             //controller.view.backgroundColor = [UIColor colorWithRed:0.757 green:0.757 blue:0.757 alpha:1.000];//cell.textLabel.textColor;
-            //CDVViewController* cleaverViewController = [CDVViewController new];
+            
+            CDVViewController* cleaverViewController = [CDVViewController new];
             
             controller.view.autoresizesSubviews = YES;
             //cleaverViewController.wwwFolderName = [NSString stringWithFormat:@"www/%@", [navList objectAtIndex:indexPath.row]];
-            //cleaverViewController.wwwFolderName = @"www";
+            cleaverViewController.wwwFolderName = @"www";
             //cleaverViewController.startPage = @"index.html";
-            //cleaverViewController.startPage = [NSString stringWithFormat:@"%@.html", [navList objectAtIndex:indexPath.row]];
-            //NSLog(@"cleaverViewController.startPage = %@",cleaverViewController.startPage);
+            cleaverViewController.startPage = [NSString stringWithFormat:@"%@.html", [navList objectAtIndex:indexPath.row]];
             
-            /*
+            NSLog(@"cleaverViewController.startPage = %@",cleaverViewController.startPage);
+            
             UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
             [button addTarget:self
                        action:@selector(closeCleaverView:)
@@ -250,9 +248,11 @@
             int y = [UIScreen mainScreen].bounds.size.height * 0.010;
             button.frame = CGRectMake(x, y, 70.0, 35.0);
             
+            
+            
             //[cleaverViewController.view addSubview:button];
+            
             [controller.view addSubview:cleaverViewController.view];
-            */
             
             [self.navigationController pushViewController:controller animated:YES];
         }
