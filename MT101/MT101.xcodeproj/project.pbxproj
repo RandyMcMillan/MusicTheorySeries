@@ -11,12 +11,9 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		4848687B156B0B4900A6E5E6 /* cordova_ios_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4848687A156B0B4900A6E5E6 /* cordova_ios_57.png */; };
-		4848687E156B0B5400A6E5E6 /* cordova_ios_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4848687D156B0B5400A6E5E6 /* cordova_ios_114.png */; };
-		48486880156B0B5A00A6E5E6 /* cordova_ios_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4848687F156B0B5A00A6E5E6 /* cordova_ios_72.png */; };
-		48486882156B0B5F00A6E5E6 /* cordova_ios_144.png in Resources */ = {isa = PBXBuildFile; fileRef = 48486881156B0B5F00A6E5E6 /* cordova_ios_144.png */; };
-		48486884156B0B6E00A6E5E6 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48486883156B0B6E00A6E5E6 /* Default-Landscape@2x~ipad.png */; };
-		48486886156B0B7A00A6E5E6 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48486885156B0B7A00A6E5E6 /* Default-Portrait@2x~ipad.png */; };
+		48059E1615890494008D7B9B /* CDVDebugWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48059E1415890494008D7B9B /* CDVDebugWebView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4839F9731582769C000371DD /* local.CircleOfFifths.svg in Resources */ = {isa = PBXBuildFile; fileRef = 4839F9721582769C000371DD /* local.CircleOfFifths.svg */; };
+		4839F97C15828C34000371DD /* local.CircleOfFifths.html in Resources */ = {isa = PBXBuildFile; fileRef = 4839F97B15828C34000371DD /* local.CircleOfFifths.html */; };
 		48486888156B0D6A00A6E5E6 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 48486887156B0D6A00A6E5E6 /* www */; };
 		485DA8A7156ECBA900E6B4F8 /* ChildBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 485DA89D156ECBA900E6B4F8 /* ChildBrowser.bundle */; };
 		485DA8A8156ECBA900E6B4F8 /* ChildBrowser.js in Sources */ = {isa = PBXBuildFile; fileRef = 485DA89E156ECBA900E6B4F8 /* ChildBrowser.js */; };
@@ -26,28 +23,68 @@
 		485DA8AC156ECBA900E6B4F8 /* Cordova.plist.png in Resources */ = {isa = PBXBuildFile; fileRef = 485DA8A4156ECBA900E6B4F8 /* Cordova.plist.png */; };
 		485DA8AD156ECBA900E6B4F8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 485DA8A5156ECBA900E6B4F8 /* index.html */; };
 		485DA8AE156ECBA900E6B4F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 485DA8A6156ECBA900E6B4F8 /* README.md */; };
-		4863E9C9159969A30031507C /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4863E9C8159969A30031507C /* Cordova.framework */; };
-		4863E9CE15996A190031507C /* welcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4863E9CC15996A190031507C /* welcomeViewController.m */; };
-		4863E9CF15996A190031507C /* welcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4863E9CD15996A190031507C /* welcomeViewController.xib */; };
-		48847F92159975AF00EB0D2D /* campfire.png in Resources */ = {isa = PBXBuildFile; fileRef = 48847F80159975AF00EB0D2D /* campfire.png */; };
-		48847F93159975AF00EB0D2D /* campFire01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F81159975AF00EB0D2D /* campFire01.gif */; };
-		48847F94159975AF00EB0D2D /* campFire02.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F82159975AF00EB0D2D /* campFire02.gif */; };
-		48847F95159975AF00EB0D2D /* campFire03.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F83159975AF00EB0D2D /* campFire03.gif */; };
-		48847F96159975AF00EB0D2D /* campFire04.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F84159975AF00EB0D2D /* campFire04.gif */; };
-		48847F97159975AF00EB0D2D /* campFire05.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F85159975AF00EB0D2D /* campFire05.gif */; };
-		48847F98159975AF00EB0D2D /* campFire06.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F86159975AF00EB0D2D /* campFire06.gif */; };
-		48847F99159975AF00EB0D2D /* campFire07.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F87159975AF00EB0D2D /* campFire07.gif */; };
-		48847F9A159975AF00EB0D2D /* campFire08.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F88159975AF00EB0D2D /* campFire08.gif */; };
-		48847F9B159975AF00EB0D2D /* campFire09.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F89159975AF00EB0D2D /* campFire09.gif */; };
-		48847F9C159975AF00EB0D2D /* campFire10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F8A159975AF00EB0D2D /* campFire10.gif */; };
-		48847F9D159975AF00EB0D2D /* campFire11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F8B159975AF00EB0D2D /* campFire11.gif */; };
-		48847F9E159975AF00EB0D2D /* campFire12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F8C159975AF00EB0D2D /* campFire12.gif */; };
-		48847F9F159975AF00EB0D2D /* campFire13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F8D159975AF00EB0D2D /* campFire13.gif */; };
-		48847FA0159975AF00EB0D2D /* campFire14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F8E159975AF00EB0D2D /* campFire14.gif */; };
-		48847FA1159975AF00EB0D2D /* campFire15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F8F159975AF00EB0D2D /* campFire15.gif */; };
-		48847FA2159975AF00EB0D2D /* campFire16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F90159975AF00EB0D2D /* campFire16.gif */; };
-		48847FA3159975AF00EB0D2D /* campFire17.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48847F91159975AF00EB0D2D /* campFire17.gif */; };
-		48847FFC1599786B00EB0D2D /* GrandStaff.png in Resources */ = {isa = PBXBuildFile; fileRef = 48847FFB1599786B00EB0D2D /* GrandStaff.png */; };
+		48923194157EA8B900B28FE6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48923193157EA8B900B28FE6 /* icon.png */; };
+		48923196157EA8C400B28FE6 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48923195157EA8C400B28FE6 /* icon@2x.png */; };
+		48923198157EA8C900B28FE6 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 48923197157EA8C900B28FE6 /* icon-72.png */; };
+		4892319A157EA8CC00B28FE6 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48923199157EA8CC00B28FE6 /* icon-72@2x.png */; };
+		4892319C157EA8FA00B28FE6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4892319B157EA8FA00B28FE6 /* Default.png */; };
+		4892319E157EA91600B28FE6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4892319D157EA91600B28FE6 /* Default@2x.png */; };
+		489231A0157EA91F00B28FE6 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4892319F157EA91F00B28FE6 /* Default-Portrait~ipad.png */; };
+		489231A2157EA92400B28FE6 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489231A1157EA92400B28FE6 /* Default-Landscape~ipad.png */; };
+		489231A4157EA93F00B28FE6 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489231A3157EA93F00B28FE6 /* Default-Portrait@2x~ipad.png */; };
+		489231A6157EA94400B28FE6 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489231A5157EA94400B28FE6 /* Default-Landscape@2x~ipad.png */; };
+		48BA1212157EACBB001123F3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11C2157EACBB001123F3 /* .gitignore */; };
+		48BA1213157EACBB001123F3 /* FBConnectExample.zip in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11C4157EACBB001123F3 /* FBConnectExample.zip */; };
+		48BA1214157EACBB001123F3 /* bot.css in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11C6157EACBB001123F3 /* bot.css */; };
+		48BA1215157EACBB001123F3 /* bot.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11C7157EACBB001123F3 /* bot.html */; };
+		48BA1216157EACBB001123F3 /* cordova_128.css in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11C8157EACBB001123F3 /* cordova_128.css */; };
+		48BA1217157EACBB001123F3 /* cordova_512.css in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11C9157EACBB001123F3 /* cordova_512.css */; };
+		48BA1218157EACBB001123F3 /* local.alertsDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11CA157EACBB001123F3 /* local.alertsDemo.html */; };
+		48BA1219157EACBB001123F3 /* local.box.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11CB157EACBB001123F3 /* local.box.html */; };
+		48BA121A157EACBB001123F3 /* local.doc1.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11CC157EACBB001123F3 /* local.doc1.html */; };
+		48BA121B157EACBB001123F3 /* local.doc2.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11CD157EACBB001123F3 /* local.doc2.html */; };
+		48BA121C157EACBB001123F3 /* local.doc3.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11CE157EACBB001123F3 /* local.doc3.html */; };
+		48BA121D157EACBB001123F3 /* local.doc4.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11CF157EACBB001123F3 /* local.doc4.html */; };
+		48BA121E157EACBB001123F3 /* local.iPad.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D0157EACBB001123F3 /* local.iPad.html */; };
+		48BA121F157EACBB001123F3 /* local.iPhone.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D1157EACBB001123F3 /* local.iPhone.html */; };
+		48BA1220157EACBB001123F3 /* local.iScrollDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D2157EACBB001123F3 /* local.iScrollDemo.html */; };
+		48BA1221157EACBB001123F3 /* local.iScrollDemo.iscroll in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D3157EACBB001123F3 /* local.iScrollDemo.iscroll */; };
+		48BA1222157EACBB001123F3 /* local.orientation.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D4157EACBB001123F3 /* local.orientation.html */; };
+		48BA1223157EACBB001123F3 /* local.rapheal.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D5157EACBB001123F3 /* local.rapheal.html */; };
+		48BA1224157EACBB001123F3 /* local.ReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D6157EACBB001123F3 /* local.ReadMe.html */; };
+		48BA1225157EACBB001123F3 /* local.Sencha.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D7157EACBB001123F3 /* local.Sencha.html */; };
+		48BA1226157EACBB001123F3 /* local.Sencha2.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D8157EACBB001123F3 /* local.Sencha2.html */; };
+		48BA1227157EACBB001123F3 /* local.Sencha3.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11D9157EACBB001123F3 /* local.Sencha3.html */; };
+		48BA1228157EACBB001123F3 /* local.vanillaHomePage.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11DA157EACBB001123F3 /* local.vanillaHomePage.html */; };
+		48BA1229157EACBB001123F3 /* app-store-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11DC157EACBB001123F3 /* app-store-icon.jpg */; };
+		48BA122A157EACBB001123F3 /* license.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11DE157EACBB001123F3 /* license.html */; };
+		48BA122B157EACBB001123F3 /* license.md in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11DF157EACBB001123F3 /* license.md */; };
+		48BA122C157EACBB001123F3 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E0157EACBB001123F3 /* license.txt */; };
+		48BA122D157EACBB001123F3 /* cordova_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E2157EACBB001123F3 /* cordova_bot.png */; };
+		48BA122E157EACBB001123F3 /* FileSystem.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E3157EACBB001123F3 /* FileSystem.png */; };
+		48BA122F157EACBB001123F3 /* iPadAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E4157EACBB001123F3 /* iPadAlert.png */; };
+		48BA1230157EACBB001123F3 /* iPadHybrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E5157EACBB001123F3 /* iPadHybrid.png */; };
+		48BA1231157EACBB001123F3 /* iPhoneAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E6157EACBB001123F3 /* iPhoneAlert.png */; };
+		48BA1232157EACBB001123F3 /* KeyValueExample.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E7157EACBB001123F3 /* KeyValueExample.png */; };
+		48BA1233157EACBB001123F3 /* MediaBrowserScreenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E8157EACBB001123F3 /* MediaBrowserScreenShot.png */; };
+		48BA1234157EACBB001123F3 /* MediaBrowserScreenShot2.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11E9157EACBB001123F3 /* MediaBrowserScreenShot2.png */; };
+		48BA1235157EACBB001123F3 /* svgScreenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11EA157EACBB001123F3 /* svgScreenShot.png */; };
+		48BA1236157EACBB001123F3 /* VectorPresentation.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11EB157EACBB001123F3 /* VectorPresentation.png */; };
+		48BA1237157EACBB001123F3 /* local.0 in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11ED157EACBB001123F3 /* local.0 */; };
+		48BA1238157EACBB001123F3 /* local.error in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11EE157EACBB001123F3 /* local.error */; };
+		48BA1239157EACBB001123F3 /* local.list.json in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11EF157EACBB001123F3 /* local.list.json */; };
+		48BA123A157EACBB001123F3 /* local.text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11F0157EACBB001123F3 /* local.text.txt */; };
+		48BA123B157EACBB001123F3 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11F1157EACBB001123F3 /* index.html */; };
+		48BA123E157EACBB001123F3 /* iScrollLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA11F5157EACBB001123F3 /* iScrollLib.m */; };
+		48BA1240157EACBB001123F3 /* MediaBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48BA11F7157EACBB001123F3 /* MediaBrowser.bundle */; };
+		48BA1241157EACBB001123F3 /* MediaBrowser.js in Sources */ = {isa = PBXBuildFile; fileRef = 48BA11F8157EACBB001123F3 /* MediaBrowser.js */; };
+		48BA1244157EACBB001123F3 /* MediaBrowserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA11FC157EACBB001123F3 /* MediaBrowserCommand.m */; };
+		48BA1247157EACBB001123F3 /* MediaBrowserConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA1200157EACBB001123F3 /* MediaBrowserConstants.m */; };
+		48BA124A157EACBB001123F3 /* MediaBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA1204157EACBB001123F3 /* MediaBrowserViewController.m */; };
+		48BA124C157EACBB001123F3 /* MediaBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48BA1206157EACBB001123F3 /* MediaBrowserViewController.xib */; };
+		48BA1250157EACBB001123F3 /* reference.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48BA120A157EACBB001123F3 /* reference.txt */; };
+		48BA1255157EACBB001123F3 /* yourJSLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA1210157EACBB001123F3 /* yourJSLib.m */; };
+		48BA1259157EAD52001123F3 /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BA1258157EAD52001123F3 /* Cordova.framework */; };
 		48BCBEE1156B10A800A10F16 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE0156B10A800A10F16 /* AddressBook.framework */; };
 		48BCBEE3156B10AE00A10F16 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE2156B10AE00A10F16 /* AddressBookUI.framework */; };
 		48BCBEE5156B10B300A10F16 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE4156B10B300A10F16 /* AudioToolbox.framework */; };
@@ -81,10 +118,6 @@
 		48BCBF44156B12BF00A10F16 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBF43156B12BF00A10F16 /* Twitter.framework */; };
 		48BCBF46156B12D300A10F16 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBF45156B12D300A10F16 /* iAd.framework */; };
 		48BCBF4D156B215C00A10F16 /* cleaverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BCBF4C156B215C00A10F16 /* cleaverViewController.m */; };
-		8E3EA0DB13AB9B7800D6C49B /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0DA13AB9B7800D6C49B /* Default-Portrait~ipad.png */; };
-		8E3EA0DD13AB9B9400D6C49B /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0DC13AB9B9400D6C49B /* Default-Landscape~ipad.png */; };
-		8E3EA0E113AB9BAC00D6C49B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0E013AB9BAC00D6C49B /* Default@2x.png */; };
-		8E3EA0E313AB9BB100D6C49B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0E213AB9BB100D6C49B /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,12 +127,12 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* MT101_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MT101_Prefix.pch; sourceTree = "<group>"; };
-		4848687A156B0B4900A6E5E6 /* cordova_ios_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_ios_57.png; sourceTree = "<group>"; };
-		4848687D156B0B5400A6E5E6 /* cordova_ios_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_ios_114.png; sourceTree = "<group>"; };
-		4848687F156B0B5A00A6E5E6 /* cordova_ios_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_ios_72.png; sourceTree = "<group>"; };
-		48486881156B0B5F00A6E5E6 /* cordova_ios_144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_ios_144.png; sourceTree = "<group>"; };
-		48486883156B0B6E00A6E5E6 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
-		48486885156B0B7A00A6E5E6 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		48059E1315890494008D7B9B /* CDVDebugWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVDebugWebView.h; sourceTree = "<group>"; };
+		48059E1415890494008D7B9B /* CDVDebugWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVDebugWebView.m; sourceTree = "<group>"; };
+		48059E1515890494008D7B9B /* WebScriptDebugDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebScriptDebugDelegate.h; sourceTree = "<group>"; };
+		4839F9721582769C000371DD /* local.CircleOfFifths.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = local.CircleOfFifths.svg; sourceTree = "<group>"; };
+		4839F97B15828C34000371DD /* local.CircleOfFifths.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.CircleOfFifths.html; sourceTree = "<group>"; };
+		483A8A861583EEC700F4FDF6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		48486887156B0D6A00A6E5E6 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		485DA89D156ECBA900E6B4F8 /* ChildBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ChildBrowser.bundle; sourceTree = "<group>"; };
 		485DA89E156ECBA900E6B4F8 /* ChildBrowser.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ChildBrowser.js; sourceTree = "<group>"; };
@@ -111,30 +144,73 @@
 		485DA8A4156ECBA900E6B4F8 /* Cordova.plist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cordova.plist.png; sourceTree = "<group>"; };
 		485DA8A5156ECBA900E6B4F8 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		485DA8A6156ECBA900E6B4F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		4863E9C8159969A30031507C /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../../Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
-		4863E9CB15996A190031507C /* welcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = welcomeViewController.h; sourceTree = "<group>"; };
-		4863E9CC15996A190031507C /* welcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = welcomeViewController.m; sourceTree = "<group>"; };
-		4863E9CD15996A190031507C /* welcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = welcomeViewController.xib; sourceTree = "<group>"; };
-		48847F80159975AF00EB0D2D /* campfire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campfire.png; sourceTree = "<group>"; };
-		48847F81159975AF00EB0D2D /* campFire01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire01.gif; sourceTree = "<group>"; };
-		48847F82159975AF00EB0D2D /* campFire02.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire02.gif; sourceTree = "<group>"; };
-		48847F83159975AF00EB0D2D /* campFire03.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire03.gif; sourceTree = "<group>"; };
-		48847F84159975AF00EB0D2D /* campFire04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire04.gif; sourceTree = "<group>"; };
-		48847F85159975AF00EB0D2D /* campFire05.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire05.gif; sourceTree = "<group>"; };
-		48847F86159975AF00EB0D2D /* campFire06.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire06.gif; sourceTree = "<group>"; };
-		48847F87159975AF00EB0D2D /* campFire07.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire07.gif; sourceTree = "<group>"; };
-		48847F88159975AF00EB0D2D /* campFire08.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire08.gif; sourceTree = "<group>"; };
-		48847F89159975AF00EB0D2D /* campFire09.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire09.gif; sourceTree = "<group>"; };
-		48847F8A159975AF00EB0D2D /* campFire10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire10.gif; sourceTree = "<group>"; };
-		48847F8B159975AF00EB0D2D /* campFire11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire11.gif; sourceTree = "<group>"; };
-		48847F8C159975AF00EB0D2D /* campFire12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire12.gif; sourceTree = "<group>"; };
-		48847F8D159975AF00EB0D2D /* campFire13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire13.gif; sourceTree = "<group>"; };
-		48847F8E159975AF00EB0D2D /* campFire14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire14.gif; sourceTree = "<group>"; };
-		48847F8F159975AF00EB0D2D /* campFire15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire15.gif; sourceTree = "<group>"; };
-		48847F90159975AF00EB0D2D /* campFire16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire16.gif; sourceTree = "<group>"; };
-		48847F91159975AF00EB0D2D /* campFire17.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire17.gif; sourceTree = "<group>"; };
-		48847FFB1599786B00EB0D2D /* GrandStaff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GrandStaff.png; sourceTree = "<group>"; };
-		48BCBEDD156B106700A10F16 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
+		48923193157EA8B900B28FE6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		48923195157EA8C400B28FE6 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		48923197157EA8C900B28FE6 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		48923199157EA8CC00B28FE6 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
+		4892319B157EA8FA00B28FE6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4892319D157EA91600B28FE6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4892319F157EA91F00B28FE6 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		489231A1157EA92400B28FE6 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		489231A3157EA93F00B28FE6 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		489231A5157EA94400B28FE6 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		48BA11C2157EACBB001123F3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		48BA11C4157EACBB001123F3 /* FBConnectExample.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = FBConnectExample.zip; sourceTree = "<group>"; };
+		48BA11C6157EACBB001123F3 /* bot.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = bot.css; sourceTree = "<group>"; };
+		48BA11C7157EACBB001123F3 /* bot.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bot.html; sourceTree = "<group>"; };
+		48BA11C8157EACBB001123F3 /* cordova_128.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = cordova_128.css; sourceTree = "<group>"; };
+		48BA11C9157EACBB001123F3 /* cordova_512.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = cordova_512.css; sourceTree = "<group>"; };
+		48BA11CA157EACBB001123F3 /* local.alertsDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.alertsDemo.html; sourceTree = "<group>"; };
+		48BA11CB157EACBB001123F3 /* local.box.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.box.html; sourceTree = "<group>"; };
+		48BA11CC157EACBB001123F3 /* local.doc1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.doc1.html; sourceTree = "<group>"; };
+		48BA11CD157EACBB001123F3 /* local.doc2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.doc2.html; sourceTree = "<group>"; };
+		48BA11CE157EACBB001123F3 /* local.doc3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.doc3.html; sourceTree = "<group>"; };
+		48BA11CF157EACBB001123F3 /* local.doc4.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.doc4.html; sourceTree = "<group>"; };
+		48BA11D0157EACBB001123F3 /* local.iPad.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.iPad.html; sourceTree = "<group>"; };
+		48BA11D1157EACBB001123F3 /* local.iPhone.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.iPhone.html; sourceTree = "<group>"; };
+		48BA11D2157EACBB001123F3 /* local.iScrollDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.iScrollDemo.html; sourceTree = "<group>"; };
+		48BA11D3157EACBB001123F3 /* local.iScrollDemo.iscroll */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = local.iScrollDemo.iscroll; sourceTree = "<group>"; };
+		48BA11D4157EACBB001123F3 /* local.orientation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.orientation.html; sourceTree = "<group>"; };
+		48BA11D5157EACBB001123F3 /* local.rapheal.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.rapheal.html; sourceTree = "<group>"; };
+		48BA11D6157EACBB001123F3 /* local.ReadMe.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.ReadMe.html; sourceTree = "<group>"; };
+		48BA11D7157EACBB001123F3 /* local.Sencha.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.Sencha.html; sourceTree = "<group>"; };
+		48BA11D8157EACBB001123F3 /* local.Sencha2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.Sencha2.html; sourceTree = "<group>"; };
+		48BA11D9157EACBB001123F3 /* local.Sencha3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.Sencha3.html; sourceTree = "<group>"; };
+		48BA11DA157EACBB001123F3 /* local.vanillaHomePage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.vanillaHomePage.html; sourceTree = "<group>"; };
+		48BA11DC157EACBB001123F3 /* app-store-icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-store-icon.jpg"; sourceTree = "<group>"; };
+		48BA11DE157EACBB001123F3 /* license.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = license.html; sourceTree = "<group>"; };
+		48BA11DF157EACBB001123F3 /* license.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.md; sourceTree = "<group>"; };
+		48BA11E0157EACBB001123F3 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		48BA11E2157EACBB001123F3 /* cordova_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cordova_bot.png; sourceTree = "<group>"; };
+		48BA11E3157EACBB001123F3 /* FileSystem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FileSystem.png; sourceTree = "<group>"; };
+		48BA11E4157EACBB001123F3 /* iPadAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadAlert.png; sourceTree = "<group>"; };
+		48BA11E5157EACBB001123F3 /* iPadHybrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadHybrid.png; sourceTree = "<group>"; };
+		48BA11E6157EACBB001123F3 /* iPhoneAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneAlert.png; sourceTree = "<group>"; };
+		48BA11E7157EACBB001123F3 /* KeyValueExample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyValueExample.png; sourceTree = "<group>"; };
+		48BA11E8157EACBB001123F3 /* MediaBrowserScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MediaBrowserScreenShot.png; sourceTree = "<group>"; };
+		48BA11E9157EACBB001123F3 /* MediaBrowserScreenShot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MediaBrowserScreenShot2.png; sourceTree = "<group>"; };
+		48BA11EA157EACBB001123F3 /* svgScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = svgScreenShot.png; sourceTree = "<group>"; };
+		48BA11EB157EACBB001123F3 /* VectorPresentation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VectorPresentation.png; sourceTree = "<group>"; };
+		48BA11ED157EACBB001123F3 /* local.0 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = local.0; sourceTree = "<group>"; };
+		48BA11EE157EACBB001123F3 /* local.error */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = local.error; sourceTree = "<group>"; };
+		48BA11EF157EACBB001123F3 /* local.list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = local.list.json; sourceTree = "<group>"; };
+		48BA11F0157EACBB001123F3 /* local.text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = local.text.txt; sourceTree = "<group>"; };
+		48BA11F1157EACBB001123F3 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		48BA11F3157EACBB001123F3 /* iScrollLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iScrollLib.h; sourceTree = "<group>"; };
+		48BA11F5157EACBB001123F3 /* iScrollLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iScrollLib.m; sourceTree = "<group>"; };
+		48BA11F7157EACBB001123F3 /* MediaBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MediaBrowser.bundle; sourceTree = "<group>"; };
+		48BA11F8157EACBB001123F3 /* MediaBrowser.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = MediaBrowser.js; sourceTree = "<group>"; };
+		48BA11FA157EACBB001123F3 /* MediaBrowserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaBrowserCommand.h; sourceTree = "<group>"; };
+		48BA11FC157EACBB001123F3 /* MediaBrowserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaBrowserCommand.m; sourceTree = "<group>"; };
+		48BA11FE157EACBB001123F3 /* MediaBrowserConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaBrowserConstants.h; sourceTree = "<group>"; };
+		48BA1200157EACBB001123F3 /* MediaBrowserConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaBrowserConstants.m; sourceTree = "<group>"; };
+		48BA1202157EACBB001123F3 /* MediaBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaBrowserViewController.h; sourceTree = "<group>"; };
+		48BA1204157EACBB001123F3 /* MediaBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaBrowserViewController.m; sourceTree = "<group>"; };
+		48BA1206157EACBB001123F3 /* MediaBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaBrowserViewController.xib; sourceTree = "<group>"; };
+		48BA120A157EACBB001123F3 /* reference.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reference.txt; sourceTree = "<group>"; };
+		48BA120E157EACBB001123F3 /* yourJSLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yourJSLib.h; sourceTree = "<group>"; };
+		48BA1210157EACBB001123F3 /* yourJSLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yourJSLib.m; sourceTree = "<group>"; };
+		48BA1258157EAD52001123F3 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../../Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
 		48BCBEE0156B10A800A10F16 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		48BCBEE2156B10AE00A10F16 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		48BCBEE4156B10B300A10F16 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -172,10 +248,6 @@
 		48BCBF4B156B215C00A10F16 /* cleaverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cleaverViewController.h; sourceTree = "<group>"; };
 		48BCBF4C156B215C00A10F16 /* cleaverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cleaverViewController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MT101-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MT101-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		8E3EA0DA13AB9B7800D6C49B /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
-		8E3EA0DC13AB9B9400D6C49B /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
-		8E3EA0E013AB9BAC00D6C49B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		8E3EA0E213AB9BB100D6C49B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +255,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4863E9C9159969A30031507C /* Cordova.framework in Frameworks */,
+				48BA1259157EAD52001123F3 /* Cordova.framework in Frameworks */,
 				48BCBF46156B12D300A10F16 /* iAd.framework in Frameworks */,
 				48BCBF44156B12BF00A10F16 /* Twitter.framework in Frameworks */,
 				48BCBF42156B12BA00A10F16 /* Accounts.framework in Frameworks */,
@@ -217,20 +289,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				4863E9C8159969A30031507C /* Cordova.framework */,
-				48BCBF4B156B215C00A10F16 /* cleaverViewController.h */,
-				48BCBF4C156B215C00A10F16 /* cleaverViewController.m */,
-				4863E9CB15996A190031507C /* welcomeViewController.h */,
-				4863E9CC15996A190031507C /* welcomeViewController.m */,
-				4863E9CD15996A190031507C /* welcomeViewController.xib */,
+				48059E1215890494008D7B9B /* debugview */,
 				48486887156B0D6A00A6E5E6 /* www */,
-				48486885156B0B7A00A6E5E6 /* Default-Portrait@2x~ipad.png */,
-				48486883156B0B6E00A6E5E6 /* Default-Landscape@2x~ipad.png */,
-				48486881156B0B5F00A6E5E6 /* cordova_ios_144.png */,
-				4848687F156B0B5A00A6E5E6 /* cordova_ios_72.png */,
-				4848687D156B0B5400A6E5E6 /* cordova_ios_114.png */,
-				4848687A156B0B4900A6E5E6 /* cordova_ios_57.png */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
+				489231A7157EA99D00B28FE6 /* Classes */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -241,8 +302,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				48847FFA1599786B00EB0D2D /* ScalePNGs */,
-				48847F7F159975AF00EB0D2D /* Images */,
 				48BCBEF6156B119300A10F16 /* Plugins */,
 				48BCBEF4156B118C00A10F16 /* Cordova.plist */,
 				8E3EA0EB13AB9BEE00D6C49B /* Art */,
@@ -255,6 +314,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				48BA1258157EAD52001123F3 /* Cordova.framework */,
 				48BCBF45156B12D300A10F16 /* iAd.framework */,
 				48BCBF43156B12BF00A10F16 /* Twitter.framework */,
 				48BCBF41156B12BA00A10F16 /* Accounts.framework */,
@@ -268,12 +328,30 @@
 				48BCBEE4156B10B300A10F16 /* AudioToolbox.framework */,
 				48BCBEE2156B10AE00A10F16 /* AddressBookUI.framework */,
 				48BCBEE0156B10A800A10F16 /* AddressBook.framework */,
-				48BCBEDD156B106700A10F16 /* Cordova.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48059E1215890494008D7B9B /* debugview */ = {
+			isa = PBXGroup;
+			children = (
+				48059E1315890494008D7B9B /* CDVDebugWebView.h */,
+				48059E1415890494008D7B9B /* CDVDebugWebView.m */,
+				48059E1515890494008D7B9B /* WebScriptDebugDelegate.h */,
+			);
+			name = debugview;
+			path = ../../CordovaLib/Classes/debugview;
+			sourceTree = "<group>";
+		};
+		4839F9711582769C000371DD /* svg */ = {
+			isa = PBXGroup;
+			children = (
+				4839F9721582769C000371DD /* local.CircleOfFifths.svg */,
+			);
+			path = svg;
 			sourceTree = "<group>";
 		};
 		485DA89C156ECBA900E6B4F8 /* ChildBrowser */ = {
@@ -293,42 +371,134 @@
 			path = ChildBrowser;
 			sourceTree = "<group>";
 		};
-		48847F7F159975AF00EB0D2D /* Images */ = {
+		489231A7157EA99D00B28FE6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				48847F80159975AF00EB0D2D /* campfire.png */,
-				48847F81159975AF00EB0D2D /* campFire01.gif */,
-				48847F82159975AF00EB0D2D /* campFire02.gif */,
-				48847F83159975AF00EB0D2D /* campFire03.gif */,
-				48847F84159975AF00EB0D2D /* campFire04.gif */,
-				48847F85159975AF00EB0D2D /* campFire05.gif */,
-				48847F86159975AF00EB0D2D /* campFire06.gif */,
-				48847F87159975AF00EB0D2D /* campFire07.gif */,
-				48847F88159975AF00EB0D2D /* campFire08.gif */,
-				48847F89159975AF00EB0D2D /* campFire09.gif */,
-				48847F8A159975AF00EB0D2D /* campFire10.gif */,
-				48847F8B159975AF00EB0D2D /* campFire11.gif */,
-				48847F8C159975AF00EB0D2D /* campFire12.gif */,
-				48847F8D159975AF00EB0D2D /* campFire13.gif */,
-				48847F8E159975AF00EB0D2D /* campFire14.gif */,
-				48847F8F159975AF00EB0D2D /* campFire15.gif */,
-				48847F90159975AF00EB0D2D /* campFire16.gif */,
-				48847F91159975AF00EB0D2D /* campFire17.gif */,
+				483A8A861583EEC700F4FDF6 /* Constants.h */,
+				48BCBF4B156B215C00A10F16 /* cleaverViewController.h */,
+				48BCBF4C156B215C00A10F16 /* cleaverViewController.m */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
-			path = Images;
+			name = Classes;
 			sourceTree = "<group>";
 		};
-		48847FFA1599786B00EB0D2D /* ScalePNGs */ = {
+		48BA11C1157EACBB001123F3 /* MediaBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				48847FFB1599786B00EB0D2D /* GrandStaff.png */,
+				48BA11C2157EACBB001123F3 /* .gitignore */,
+				48BA11C3157EACBB001123F3 /* assets */,
+				48BA11F1157EACBB001123F3 /* index.html */,
+				48BA11F3157EACBB001123F3 /* iScrollLib.h */,
+				48BA11F5157EACBB001123F3 /* iScrollLib.m */,
+				48BA11F7157EACBB001123F3 /* MediaBrowser.bundle */,
+				48BA11F8157EACBB001123F3 /* MediaBrowser.js */,
+				48BA11FA157EACBB001123F3 /* MediaBrowserCommand.h */,
+				48BA11FC157EACBB001123F3 /* MediaBrowserCommand.m */,
+				48BA11FE157EACBB001123F3 /* MediaBrowserConstants.h */,
+				48BA1200157EACBB001123F3 /* MediaBrowserConstants.m */,
+				48BA1202157EACBB001123F3 /* MediaBrowserViewController.h */,
+				48BA1204157EACBB001123F3 /* MediaBrowserViewController.m */,
+				48BA1206157EACBB001123F3 /* MediaBrowserViewController.xib */,
+				48BA120A157EACBB001123F3 /* reference.txt */,
+				48BA120E157EACBB001123F3 /* yourJSLib.h */,
+				48BA1210157EACBB001123F3 /* yourJSLib.m */,
 			);
-			path = ScalePNGs;
+			path = MediaBrowser;
+			sourceTree = "<group>";
+		};
+		48BA11C3157EACBB001123F3 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				4839F9711582769C000371DD /* svg */,
+				48BA11C4157EACBB001123F3 /* FBConnectExample.zip */,
+				48BA11C5157EACBB001123F3 /* html */,
+				48BA11DB157EACBB001123F3 /* jpg */,
+				48BA11DD157EACBB001123F3 /* license */,
+				48BA11E1157EACBB001123F3 /* png */,
+				48BA11EC157EACBB001123F3 /* txt */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		48BA11C5157EACBB001123F3 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				4839F97B15828C34000371DD /* local.CircleOfFifths.html */,
+				48BA11C6157EACBB001123F3 /* bot.css */,
+				48BA11C7157EACBB001123F3 /* bot.html */,
+				48BA11C8157EACBB001123F3 /* cordova_128.css */,
+				48BA11C9157EACBB001123F3 /* cordova_512.css */,
+				48BA11CA157EACBB001123F3 /* local.alertsDemo.html */,
+				48BA11CB157EACBB001123F3 /* local.box.html */,
+				48BA11CC157EACBB001123F3 /* local.doc1.html */,
+				48BA11CD157EACBB001123F3 /* local.doc2.html */,
+				48BA11CE157EACBB001123F3 /* local.doc3.html */,
+				48BA11CF157EACBB001123F3 /* local.doc4.html */,
+				48BA11D0157EACBB001123F3 /* local.iPad.html */,
+				48BA11D1157EACBB001123F3 /* local.iPhone.html */,
+				48BA11D2157EACBB001123F3 /* local.iScrollDemo.html */,
+				48BA11D3157EACBB001123F3 /* local.iScrollDemo.iscroll */,
+				48BA11D4157EACBB001123F3 /* local.orientation.html */,
+				48BA11D5157EACBB001123F3 /* local.rapheal.html */,
+				48BA11D6157EACBB001123F3 /* local.ReadMe.html */,
+				48BA11D7157EACBB001123F3 /* local.Sencha.html */,
+				48BA11D8157EACBB001123F3 /* local.Sencha2.html */,
+				48BA11D9157EACBB001123F3 /* local.Sencha3.html */,
+				48BA11DA157EACBB001123F3 /* local.vanillaHomePage.html */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		48BA11DB157EACBB001123F3 /* jpg */ = {
+			isa = PBXGroup;
+			children = (
+				48BA11DC157EACBB001123F3 /* app-store-icon.jpg */,
+			);
+			path = jpg;
+			sourceTree = "<group>";
+		};
+		48BA11DD157EACBB001123F3 /* license */ = {
+			isa = PBXGroup;
+			children = (
+				48BA11DE157EACBB001123F3 /* license.html */,
+				48BA11DF157EACBB001123F3 /* license.md */,
+				48BA11E0157EACBB001123F3 /* license.txt */,
+			);
+			path = license;
+			sourceTree = "<group>";
+		};
+		48BA11E1157EACBB001123F3 /* png */ = {
+			isa = PBXGroup;
+			children = (
+				48BA11E2157EACBB001123F3 /* cordova_bot.png */,
+				48BA11E3157EACBB001123F3 /* FileSystem.png */,
+				48BA11E4157EACBB001123F3 /* iPadAlert.png */,
+				48BA11E5157EACBB001123F3 /* iPadHybrid.png */,
+				48BA11E6157EACBB001123F3 /* iPhoneAlert.png */,
+				48BA11E7157EACBB001123F3 /* KeyValueExample.png */,
+				48BA11E8157EACBB001123F3 /* MediaBrowserScreenShot.png */,
+				48BA11E9157EACBB001123F3 /* MediaBrowserScreenShot2.png */,
+				48BA11EA157EACBB001123F3 /* svgScreenShot.png */,
+				48BA11EB157EACBB001123F3 /* VectorPresentation.png */,
+			);
+			path = png;
+			sourceTree = "<group>";
+		};
+		48BA11EC157EACBB001123F3 /* txt */ = {
+			isa = PBXGroup;
+			children = (
+				48BA11ED157EACBB001123F3 /* local.0 */,
+				48BA11EE157EACBB001123F3 /* local.error */,
+				48BA11EF157EACBB001123F3 /* local.list.json */,
+				48BA11F0157EACBB001123F3 /* local.text.txt */,
+			);
+			path = txt;
 			sourceTree = "<group>";
 		};
 		48BCBEF6156B119300A10F16 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				48BA11C1157EACBB001123F3 /* MediaBrowser */,
 				485DA89C156ECBA900E6B4F8 /* ChildBrowser */,
 				48BCBF35156B11ED00A10F16 /* AdPlugin */,
 				48BCBF1C156B11DF00A10F16 /* Twitter */,
@@ -421,10 +591,16 @@
 		8E3EA0EB13AB9BEE00D6C49B /* Art */ = {
 			isa = PBXGroup;
 			children = (
-				8E3EA0E213AB9BB100D6C49B /* Default.png */,
-				8E3EA0E013AB9BAC00D6C49B /* Default@2x.png */,
-				8E3EA0DC13AB9B9400D6C49B /* Default-Landscape~ipad.png */,
-				8E3EA0DA13AB9B7800D6C49B /* Default-Portrait~ipad.png */,
+				489231A5157EA94400B28FE6 /* Default-Landscape@2x~ipad.png */,
+				489231A3157EA93F00B28FE6 /* Default-Portrait@2x~ipad.png */,
+				489231A1157EA92400B28FE6 /* Default-Landscape~ipad.png */,
+				4892319F157EA91F00B28FE6 /* Default-Portrait~ipad.png */,
+				4892319D157EA91600B28FE6 /* Default@2x.png */,
+				4892319B157EA8FA00B28FE6 /* Default.png */,
+				48923199157EA8CC00B28FE6 /* icon-72@2x.png */,
+				48923197157EA8C900B28FE6 /* icon-72.png */,
+				48923195157EA8C400B28FE6 /* icon@2x.png */,
+				48923193157EA8B900B28FE6 /* icon.png */,
 			);
 			name = Art;
 			sourceTree = "<group>";
@@ -481,16 +657,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E3EA0DB13AB9B7800D6C49B /* Default-Portrait~ipad.png in Resources */,
-				8E3EA0DD13AB9B9400D6C49B /* Default-Landscape~ipad.png in Resources */,
-				8E3EA0E113AB9BAC00D6C49B /* Default@2x.png in Resources */,
-				8E3EA0E313AB9BB100D6C49B /* Default.png in Resources */,
-				4848687B156B0B4900A6E5E6 /* cordova_ios_57.png in Resources */,
-				4848687E156B0B5400A6E5E6 /* cordova_ios_114.png in Resources */,
-				48486880156B0B5A00A6E5E6 /* cordova_ios_72.png in Resources */,
-				48486882156B0B5F00A6E5E6 /* cordova_ios_144.png in Resources */,
-				48486884156B0B6E00A6E5E6 /* Default-Landscape@2x~ipad.png in Resources */,
-				48486886156B0B7A00A6E5E6 /* Default-Portrait@2x~ipad.png in Resources */,
 				48486888156B0D6A00A6E5E6 /* www in Resources */,
 				48BCBEF5156B118C00A10F16 /* Cordova.plist in Resources */,
 				48BCBF1A156B11CA00A10F16 /* LICENSE in Resources */,
@@ -509,26 +675,63 @@
 				485DA8AC156ECBA900E6B4F8 /* Cordova.plist.png in Resources */,
 				485DA8AD156ECBA900E6B4F8 /* index.html in Resources */,
 				485DA8AE156ECBA900E6B4F8 /* README.md in Resources */,
-				4863E9CF15996A190031507C /* welcomeViewController.xib in Resources */,
-				48847F92159975AF00EB0D2D /* campfire.png in Resources */,
-				48847F93159975AF00EB0D2D /* campFire01.gif in Resources */,
-				48847F94159975AF00EB0D2D /* campFire02.gif in Resources */,
-				48847F95159975AF00EB0D2D /* campFire03.gif in Resources */,
-				48847F96159975AF00EB0D2D /* campFire04.gif in Resources */,
-				48847F97159975AF00EB0D2D /* campFire05.gif in Resources */,
-				48847F98159975AF00EB0D2D /* campFire06.gif in Resources */,
-				48847F99159975AF00EB0D2D /* campFire07.gif in Resources */,
-				48847F9A159975AF00EB0D2D /* campFire08.gif in Resources */,
-				48847F9B159975AF00EB0D2D /* campFire09.gif in Resources */,
-				48847F9C159975AF00EB0D2D /* campFire10.gif in Resources */,
-				48847F9D159975AF00EB0D2D /* campFire11.gif in Resources */,
-				48847F9E159975AF00EB0D2D /* campFire12.gif in Resources */,
-				48847F9F159975AF00EB0D2D /* campFire13.gif in Resources */,
-				48847FA0159975AF00EB0D2D /* campFire14.gif in Resources */,
-				48847FA1159975AF00EB0D2D /* campFire15.gif in Resources */,
-				48847FA2159975AF00EB0D2D /* campFire16.gif in Resources */,
-				48847FA3159975AF00EB0D2D /* campFire17.gif in Resources */,
-				48847FFC1599786B00EB0D2D /* GrandStaff.png in Resources */,
+				48923194157EA8B900B28FE6 /* icon.png in Resources */,
+				48923196157EA8C400B28FE6 /* icon@2x.png in Resources */,
+				48923198157EA8C900B28FE6 /* icon-72.png in Resources */,
+				4892319A157EA8CC00B28FE6 /* icon-72@2x.png in Resources */,
+				4892319C157EA8FA00B28FE6 /* Default.png in Resources */,
+				4892319E157EA91600B28FE6 /* Default@2x.png in Resources */,
+				489231A0157EA91F00B28FE6 /* Default-Portrait~ipad.png in Resources */,
+				489231A2157EA92400B28FE6 /* Default-Landscape~ipad.png in Resources */,
+				489231A4157EA93F00B28FE6 /* Default-Portrait@2x~ipad.png in Resources */,
+				489231A6157EA94400B28FE6 /* Default-Landscape@2x~ipad.png in Resources */,
+				48BA1212157EACBB001123F3 /* .gitignore in Resources */,
+				48BA1213157EACBB001123F3 /* FBConnectExample.zip in Resources */,
+				48BA1214157EACBB001123F3 /* bot.css in Resources */,
+				48BA1215157EACBB001123F3 /* bot.html in Resources */,
+				48BA1216157EACBB001123F3 /* cordova_128.css in Resources */,
+				48BA1217157EACBB001123F3 /* cordova_512.css in Resources */,
+				48BA1218157EACBB001123F3 /* local.alertsDemo.html in Resources */,
+				48BA1219157EACBB001123F3 /* local.box.html in Resources */,
+				48BA121A157EACBB001123F3 /* local.doc1.html in Resources */,
+				48BA121B157EACBB001123F3 /* local.doc2.html in Resources */,
+				48BA121C157EACBB001123F3 /* local.doc3.html in Resources */,
+				48BA121D157EACBB001123F3 /* local.doc4.html in Resources */,
+				48BA121E157EACBB001123F3 /* local.iPad.html in Resources */,
+				48BA121F157EACBB001123F3 /* local.iPhone.html in Resources */,
+				48BA1220157EACBB001123F3 /* local.iScrollDemo.html in Resources */,
+				48BA1221157EACBB001123F3 /* local.iScrollDemo.iscroll in Resources */,
+				48BA1222157EACBB001123F3 /* local.orientation.html in Resources */,
+				48BA1223157EACBB001123F3 /* local.rapheal.html in Resources */,
+				48BA1224157EACBB001123F3 /* local.ReadMe.html in Resources */,
+				48BA1225157EACBB001123F3 /* local.Sencha.html in Resources */,
+				48BA1226157EACBB001123F3 /* local.Sencha2.html in Resources */,
+				48BA1227157EACBB001123F3 /* local.Sencha3.html in Resources */,
+				48BA1228157EACBB001123F3 /* local.vanillaHomePage.html in Resources */,
+				48BA1229157EACBB001123F3 /* app-store-icon.jpg in Resources */,
+				48BA122A157EACBB001123F3 /* license.html in Resources */,
+				48BA122B157EACBB001123F3 /* license.md in Resources */,
+				48BA122C157EACBB001123F3 /* license.txt in Resources */,
+				48BA122D157EACBB001123F3 /* cordova_bot.png in Resources */,
+				48BA122E157EACBB001123F3 /* FileSystem.png in Resources */,
+				48BA122F157EACBB001123F3 /* iPadAlert.png in Resources */,
+				48BA1230157EACBB001123F3 /* iPadHybrid.png in Resources */,
+				48BA1231157EACBB001123F3 /* iPhoneAlert.png in Resources */,
+				48BA1232157EACBB001123F3 /* KeyValueExample.png in Resources */,
+				48BA1233157EACBB001123F3 /* MediaBrowserScreenShot.png in Resources */,
+				48BA1234157EACBB001123F3 /* MediaBrowserScreenShot2.png in Resources */,
+				48BA1235157EACBB001123F3 /* svgScreenShot.png in Resources */,
+				48BA1236157EACBB001123F3 /* VectorPresentation.png in Resources */,
+				48BA1237157EACBB001123F3 /* local.0 in Resources */,
+				48BA1238157EACBB001123F3 /* local.error in Resources */,
+				48BA1239157EACBB001123F3 /* local.list.json in Resources */,
+				48BA123A157EACBB001123F3 /* local.text.txt in Resources */,
+				48BA123B157EACBB001123F3 /* index.html in Resources */,
+				48BA1240157EACBB001123F3 /* MediaBrowser.bundle in Resources */,
+				48BA124C157EACBB001123F3 /* MediaBrowserViewController.xib in Resources */,
+				48BA1250157EACBB001123F3 /* reference.txt in Resources */,
+				4839F9731582769C000371DD /* local.CircleOfFifths.svg in Resources */,
+				4839F97C15828C34000371DD /* local.CircleOfFifths.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +754,13 @@
 				485DA8A8156ECBA900E6B4F8 /* ChildBrowser.js in Sources */,
 				485DA8A9156ECBA900E6B4F8 /* ChildBrowserCommand.m in Sources */,
 				485DA8AA156ECBA900E6B4F8 /* ChildBrowserViewController.m in Sources */,
-				4863E9CE15996A190031507C /* welcomeViewController.m in Sources */,
+				48BA123E157EACBB001123F3 /* iScrollLib.m in Sources */,
+				48BA1241157EACBB001123F3 /* MediaBrowser.js in Sources */,
+				48BA1244157EACBB001123F3 /* MediaBrowserCommand.m in Sources */,
+				48BA1247157EACBB001123F3 /* MediaBrowserConstants.m in Sources */,
+				48BA124A157EACBB001123F3 /* MediaBrowserViewController.m in Sources */,
+				48BA1255157EACBB001123F3 /* yourJSLib.m in Sources */,
+				48059E1615890494008D7B9B /* CDVDebugWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,18 +770,18 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Shared/Cordova/Frameworks\"",
-					"\"$(SRCROOT)/../../../../Shared/Cordova/Frameworks\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "/Users/Shared/Cordova/Frameworks/**";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MT101_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1,",
+					"CORDOVA_FRAMEWORK=1",
+				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MT101-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
@@ -582,8 +791,51 @@
 				PRODUCT_NAME = MT101;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/../../../Shared/Cordova/Frameworks\" \"$(SRCROOT)/../../../../Shared/Cordova/Frameworks\"";
 			};
 			name = Debug;
+		};
+		48059E8215890959008D7B9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48059E8315890959008D7B9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MT101_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1,",
+					"CORDOVA_FRAMEWORK=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "MT101-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = "";
+				OTHER_TEST_FLAGS = "";
+				PRODUCT_NAME = MT101;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/../../../Shared/Cordova/Frameworks\" \"$(SRCROOT)/../../../../Shared/Cordova/Frameworks\"";
+			};
+			name = Release;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -606,6 +858,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
+				48059E8315890959008D7B9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -614,6 +867,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
+				48059E8215890959008D7B9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

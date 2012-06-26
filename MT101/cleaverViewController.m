@@ -23,7 +23,9 @@
 //  Copyright OpenOSX.org 2012. All rights reserved.
 //
 
+#import "mach/mach.h" 
 #import "cleaverViewController.h"
+#import "CDVDebugWebView.h"
 
 @implementation cleaverViewController
 
@@ -31,18 +33,43 @@
 {
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 	if (self) {
-		// Custom initialization
+        
+        // Custom initialization
 	}
 	return self;
 }
 
 - (void) didReceiveMemoryWarning
 {
+    
+    NSLog(@"RECIEVED MEM WARNING WHY?");
+    [self report_memory];
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
+    //[super dealloc];
+
 	// Releases the view if it doesn't have a superview.
 	[super didReceiveMemoryWarning];
     
 	// Release any cached data, images, etc that aren't in use.
 }
+
+-(void) report_memory {
+    
+    //#import "mach/mach.h" ///Add to headers
+    
+    struct task_basic_info info;
+    mach_msg_type_number_t size = sizeof(info);
+    kern_return_t kerr = task_info(mach_task_self(),
+                                   TASK_BASIC_INFO,
+                                   (task_info_t)&info,
+                                   &size);
+    if( kerr == KERN_SUCCESS ) {
+        NSLog(@"Memory in use (in bytes): %u", info.resident_size);
+    } else {
+        NSLog(@"Error with task_info(): %s", mach_error_string(kerr));
+    }
+}
+
 
 #pragma mark - View lifecycle
 
@@ -54,7 +81,12 @@
 
 - (void) viewDidUnload
 {
+    
+    NSLog(@"viewDidUnload");
 	[super viewDidUnload];
+    self.view = nil;
+    self.webView = nil;
+    
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 }
@@ -62,17 +94,17 @@
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
 	// Return YES for supported orientations
-	//return [super shouldAutorotateToInterfaceOrientation:interfaceOrientation];
-	return YES;
+//	return [super shouldAutorotateToInterfaceOrientation:interfaceOrientation];
+	return NO;
 }
 
 /* Comment out the block below to over-ride */
-/*
+
  - (CDVCordovaView*) newCordovaViewWithFrame:(CGRect)bounds
  {
  return[super newCordovaViewWithFrame:bounds];
  }
- */
+ 
 
 /* Comment out the block below to over-ride */
 /*

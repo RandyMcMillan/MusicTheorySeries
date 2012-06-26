@@ -3,12 +3,10 @@
 //  Copyright 2012, Randy McMillan
 
 #import "ChildBrowserCommand.h"
-
+#import "Constants.h"
 //#import "Cordova/CDVViewController.h"
 #import "cleaverViewController.h"
 
-
-#define IS_IPAD        (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 @implementation ChildBrowserCommand
 
