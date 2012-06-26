@@ -25,6 +25,7 @@
 
 #import <UIKit/UIKit.h>
 #import "cleaverViewController.h"
+#import "welcomeViewController.h"
 
 
 #define CORDOVA_GRAY_COLOR  [UIColor colorWithRed:0.435 green:0.439 blue:0.447 alpha:1.000]
@@ -68,10 +69,14 @@
 	//[cleaverViewController.view addSubview:button];
     
 	cleaverViewController.view.frame = controller.view.bounds;
+    welcomeViewController* welcome = [welcomeViewController new];
+    [cleaverViewController.view addSubview:welcome.view];
+    [cleaverViewController.view bringSubviewToFront:welcome.view];
     
-    
-	[controller.view addSubview:cleaverViewController.view];
-	[controller.view bringSubviewToFront:cleaverViewController.view];
+    [controller.view addSubview:welcome.view];
+    [controller.view bringSubviewToFront:welcome.view];
+	//[controller.view addSubview:cleaverViewController.view];
+	//[controller.view bringSubviewToFront:cleaverViewController.view];
     
     
     

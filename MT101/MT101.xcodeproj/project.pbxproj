@@ -27,6 +27,8 @@
 		485DA8AD156ECBA900E6B4F8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 485DA8A5156ECBA900E6B4F8 /* index.html */; };
 		485DA8AE156ECBA900E6B4F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 485DA8A6156ECBA900E6B4F8 /* README.md */; };
 		4863E9C9159969A30031507C /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4863E9C8159969A30031507C /* Cordova.framework */; };
+		4863E9CE15996A190031507C /* welcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4863E9CC15996A190031507C /* welcomeViewController.m */; };
+		4863E9CF15996A190031507C /* welcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4863E9CD15996A190031507C /* welcomeViewController.xib */; };
 		48BCBEE1156B10A800A10F16 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE0156B10A800A10F16 /* AddressBook.framework */; };
 		48BCBEE3156B10AE00A10F16 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE2156B10AE00A10F16 /* AddressBookUI.framework */; };
 		48BCBEE5156B10B300A10F16 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCBEE4156B10B300A10F16 /* AudioToolbox.framework */; };
@@ -91,6 +93,9 @@
 		485DA8A5156ECBA900E6B4F8 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		485DA8A6156ECBA900E6B4F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		4863E9C8159969A30031507C /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../../Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
+		4863E9CB15996A190031507C /* welcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = welcomeViewController.h; sourceTree = "<group>"; };
+		4863E9CC15996A190031507C /* welcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = welcomeViewController.m; sourceTree = "<group>"; };
+		4863E9CD15996A190031507C /* welcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = welcomeViewController.xib; sourceTree = "<group>"; };
 		48BCBEDD156B106700A10F16 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
 		48BCBEE0156B10A800A10F16 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		48BCBEE2156B10AE00A10F16 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
@@ -177,6 +182,9 @@
 				4863E9C8159969A30031507C /* Cordova.framework */,
 				48BCBF4B156B215C00A10F16 /* cleaverViewController.h */,
 				48BCBF4C156B215C00A10F16 /* cleaverViewController.m */,
+				4863E9CB15996A190031507C /* welcomeViewController.h */,
+				4863E9CC15996A190031507C /* welcomeViewController.m */,
+				4863E9CD15996A190031507C /* welcomeViewController.xib */,
 				48486887156B0D6A00A6E5E6 /* www */,
 				48486885156B0B7A00A6E5E6 /* Default-Portrait@2x~ipad.png */,
 				48486883156B0B6E00A6E5E6 /* Default-Landscape@2x~ipad.png */,
@@ -428,6 +436,7 @@
 				485DA8AC156ECBA900E6B4F8 /* Cordova.plist.png in Resources */,
 				485DA8AD156ECBA900E6B4F8 /* index.html in Resources */,
 				485DA8AE156ECBA900E6B4F8 /* README.md in Resources */,
+				4863E9CF15996A190031507C /* welcomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +459,7 @@
 				485DA8A8156ECBA900E6B4F8 /* ChildBrowser.js in Sources */,
 				485DA8A9156ECBA900E6B4F8 /* ChildBrowserCommand.m in Sources */,
 				485DA8AA156ECBA900E6B4F8 /* ChildBrowserViewController.m in Sources */,
+				4863E9CE15996A190031507C /* welcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
