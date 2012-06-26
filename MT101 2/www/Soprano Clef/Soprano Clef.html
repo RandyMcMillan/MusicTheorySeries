@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=703, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="../stylesheets/ipad.css" type="text/css" />
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="../stylesheets/iphone.css" type="text/css" />
+    <!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+    <script type="text/javascript" charset="utf-8" src="../cordova-1.7.0.js"></script>
+    <script type="text/javascript">
+    // If you want to prevent dragging, uncomment this section
+    function preventBehavior(e) {
+      e.preventDefault();
+    };
+    document.addEventListener("touchmove", preventBehavior, false);
+
+    /* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+    see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+    for more details -jm */
+    /*
+    function handleOpenURL(url)
+    {
+        // TODO: do something with the url passed in.
+    }
+    */
+
+    function onBodyLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    /* When this function is called, Cordova has been initialized and is ready to roll */
+    /* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+    see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+    for more details -jm */
+    function onDeviceReady() {
+    // do your thing!
+    //navigator.notification.alert("Cordova is working")
+    }
+
+    </script>
+
+    <title>Soprano Clef</title>
+    <style>
+        body {
+            background-color: #E9E8EE;
+            margin: 0px;
+        }
+    </style>
+
+    </head>
+    <body onload="onBodyLoad()">
+        <div style ="margin:0px;width:703px">
+        <!-- copy these lines to your document: -->
+        <div id="sopranoclef_hype_container" style="position:relative;overflow:hidden;width:703px;height:724px;">
+            <!--
+                <div id="sopranoclef_hype_container" style="position:relative;overflow:hidden;width:703px;height:724px;">
+            -->
+            <script type="text/javascript" charset="utf-8" src="Soprano%20Clef_Resources/sopranoclef_hype_generated_script.js?77509"></script>
+        </div>
+    <!-- end copy -->
+        </div>
+      </body>
+</html>
+

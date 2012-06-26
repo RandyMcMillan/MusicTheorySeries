@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface welcomeViewController : UIViewController {
+@interface welcomeViewController : UIViewController <UISplitViewControllerDelegate, UIPopoverControllerDelegate,UINavigationControllerDelegate> {
 
-
-    IBOutlet UIView* welcome;
 
 }
 

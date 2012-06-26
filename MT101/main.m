@@ -48,10 +48,10 @@
 	DetailViewController *controller = [[DetailViewController alloc] init];
 	controller.view.backgroundColor = CORDOVA_GRAY_COLOR;
     
-	CDVViewController* cleaverViewController = [CDVViewController new];
+	//CDVViewController* cleaverViewController = [CDVViewController new];
 	controller.view.autoresizesSubviews = YES;
-	cleaverViewController.wwwFolderName = @"www";
-	cleaverViewController.startPage = @"Welcome.html";
+	//cleaverViewController.wwwFolderName = @"www";
+	//cleaverViewController.startPage = @"Welcome.html";
     
     
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -66,19 +66,59 @@
 	button.frame = CGRectMake(x, y, 85.0, 35.0);
     
     
+   // UIView *welcome = [UIView new];
+    
+    // create the view that will execute our animation
+    //UIImageView* campFireView = [[UIImageView alloc] initWithFrame:[controller view].bounds];
+    UIImageView* scaleImage = [[UIImageView alloc] init];
+    scaleImage.center = controller.view.center;
+    scaleImage.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin);
+    scaleImage.bounds = CGRectMake(100, 100, 500 * 1.3, 270 * 1.3);
+    //scaleImage.bounds = controller.view.bounds;
+    // load all the frames of our animation
+    scaleImage.animationImages = [NSArray arrayWithObjects:	
+                                    [UIImage imageNamed:@"GrandStaff.png"],
+                                    //[UIImage imageNamed:@"campFire02.gif"],
+                                    //[UIImage imageNamed:@"campFire03.gif"],
+                                    //[UIImage imageNamed:@"campFire04.gif"],
+                                    //[UIImage imageNamed:@"campFire05.gif"],
+                                    //[UIImage imageNamed:@"campFire06.gif"],
+                                    //[UIImage imageNamed:@"campFire07.gif"],
+                                    //[UIImage imageNamed:@"campFire08.gif"],
+                                    //[UIImage imageNamed:@"campFire09.gif"],
+                                    //[UIImage imageNamed:@"campFire10.gif"],
+                                    //[UIImage imageNamed:@"campFire11.gif"],
+                                    //[UIImage imageNamed:@"campFire12.gif"],
+                                    //[UIImage imageNamed:@"campFire13.gif"],
+                                    //[UIImage imageNamed:@"campFire14.gif"],
+                                    //[UIImage imageNamed:@"campFire15.gif"],
+                                    //[UIImage imageNamed:@"campFire16.gif"],
+                                    //[UIImage imageNamed:@"campFire17.gif"],
+                                    nil];
+    
+    // all frames will execute in 1.75 seconds
+    scaleImage.animationDuration = 1.75;
+    // repeat the annimation forever
+    scaleImage.animationRepeatCount = 0;
+    // start animating
+    [scaleImage startAnimating];
+    // add the animation view to the main window 
+    [controller.view addSubview:scaleImage];
+    //[campFireView release]; 
+
+    
+    
+
+//    [controller.view addSubview:welcome];
+    
 	//[cleaverViewController.view addSubview:button];
     
-	cleaverViewController.view.frame = controller.view.bounds;
-    welcomeViewController* welcome = [welcomeViewController new];
-    [cleaverViewController.view addSubview:welcome.view];
-    [cleaverViewController.view bringSubviewToFront:welcome.view];
+	//cleaverViewController.view.frame = controller.view.bounds;
     
-    [controller.view addSubview:welcome.view];
-    [controller.view bringSubviewToFront:welcome.view];
 	//[controller.view addSubview:cleaverViewController.view];
 	//[controller.view bringSubviewToFront:cleaverViewController.view];
     
-    
+    //[controller.view addSubview:button];
     
     
 	return controller;
