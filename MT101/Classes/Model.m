@@ -13,6 +13,8 @@
 
 @synthesize firstDetail;
 @synthesize secondDetail;
+@synthesize thirdDetail;
+
 
 - (id)init {
   
@@ -27,6 +29,12 @@
                           [NSDictionary dictionaryWithObjectsAndKeys:@"Sublabel 1 For Second Detail", @"name", @"detailvalue21", @"detail", nil],
                           [NSDictionary dictionaryWithObjectsAndKeys:@"Sublabel 2 For Second Detail", @"name", @"detailvalue22", @"detail", nil], nil
                         ];
+      
+      self.thirdDetail = [NSArray arrayWithObjects:
+                           [NSDictionary dictionaryWithObjectsAndKeys:@"Sublabel 1 For Third Detail", @"name", @"detailvalue31", @"detail", nil],
+                           [NSDictionary dictionaryWithObjectsAndKeys:@"Sublabel 2 For Third Detail", @"name", @"detailvalue32", @"detail", nil], nil
+                           ];
+
   }
   
   return self;
@@ -36,6 +44,8 @@
   
   [firstDetail release];
   [secondDetail release];
+    [thirdDetail release];
+
   
   [super dealloc];
 }

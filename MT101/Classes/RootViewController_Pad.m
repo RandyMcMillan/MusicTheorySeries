@@ -22,8 +22,12 @@
   
   if (indexPath.row == 0) {
     detailViewController.subcategories = model.firstDetail;
-  } else {
+  } else if (indexPath.row == 1) {
     detailViewController.subcategories = model.secondDetail;
+  } else {
+      //
+      
+      detailViewController.subcategories = model.thirdDetail;
   }
   
   [model release];
