@@ -22,6 +22,7 @@
   
   self.tblView.frame            = tblFrame;
   self.tblView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+  self.navigationItem.title = @"Scale Example";
   
   self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Dismiss" 
                                                                             style:UIBarButtonItemStyleBordered              
