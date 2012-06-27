@@ -59,6 +59,18 @@
 		48436890159AD269001A0FEF /* AudioHostViewController4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4843685C159AD269001A0FEF /* AudioHostViewController4.xib */; };
 		48436891159AD269001A0FEF /* AudioHostViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4843685D159AD269001A0FEF /* AudioHostViewController5.xib */; };
 		48436892159AD269001A0FEF /* AudioHostViewController6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4843685E159AD269001A0FEF /* AudioHostViewController6.xib */; };
+		484368A3159AD38D001A0FEF /* ChildBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48436894159AD38D001A0FEF /* ChildBrowser.bundle */; };
+		484368A4159AD38D001A0FEF /* ChildBrowser.js in Sources */ = {isa = PBXBuildFile; fileRef = 48436895159AD38D001A0FEF /* ChildBrowser.js */; };
+		484368A5159AD38D001A0FEF /* ChildBrowserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 48436897159AD38D001A0FEF /* ChildBrowserCommand.m */; };
+		484368A6159AD38D001A0FEF /* ChildBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48436899159AD38D001A0FEF /* ChildBrowserViewController.m */; };
+		484368A7159AD38D001A0FEF /* ChildBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4843689A159AD38D001A0FEF /* ChildBrowserViewController.xib */; };
+		484368A8159AD38D001A0FEF /* Cordova.plist.png in Resources */ = {isa = PBXBuildFile; fileRef = 4843689B159AD38D001A0FEF /* Cordova.plist.png */; };
+		484368A9159AD38D001A0FEF /* facebook.html in Resources */ = {isa = PBXBuildFile; fileRef = 4843689D159AD38D001A0FEF /* facebook.html */; };
+		484368AA159AD38D001A0FEF /* FBConnect.js in Sources */ = {isa = PBXBuildFile; fileRef = 4843689E159AD38D001A0FEF /* FBConnect.js */; };
+		484368AB159AD38D001A0FEF /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 4843689F159AD38D001A0FEF /* index.html */; };
+		484368AC159AD38D001A0FEF /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 484368A0159AD38D001A0FEF /* README.txt */; };
+		484368AD159AD38D001A0FEF /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 484368A1159AD38D001A0FEF /* index.html */; };
+		484368AE159AD38D001A0FEF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 484368A2159AD38D001A0FEF /* README.md */; };
 		485C2FFE1597984700B08267 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485C2FFD1597984700B08267 /* Foundation.framework */; };
 		485C30001597984700B08267 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485C2FFF1597984700B08267 /* UIKit.framework */; };
 		485C30021597984700B08267 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485C30011597984700B08267 /* CoreGraphics.framework */; };
@@ -157,6 +169,20 @@
 		4843685C159AD269001A0FEF /* AudioHostViewController4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioHostViewController4.xib; sourceTree = "<group>"; };
 		4843685D159AD269001A0FEF /* AudioHostViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioHostViewController5.xib; sourceTree = "<group>"; };
 		4843685E159AD269001A0FEF /* AudioHostViewController6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioHostViewController6.xib; sourceTree = "<group>"; };
+		48436894159AD38D001A0FEF /* ChildBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ChildBrowser.bundle; sourceTree = "<group>"; };
+		48436895159AD38D001A0FEF /* ChildBrowser.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ChildBrowser.js; sourceTree = "<group>"; };
+		48436896159AD38D001A0FEF /* ChildBrowserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildBrowserCommand.h; sourceTree = "<group>"; };
+		48436897159AD38D001A0FEF /* ChildBrowserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildBrowserCommand.m; sourceTree = "<group>"; };
+		48436898159AD38D001A0FEF /* ChildBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildBrowserViewController.h; sourceTree = "<group>"; };
+		48436899159AD38D001A0FEF /* ChildBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildBrowserViewController.m; sourceTree = "<group>"; };
+		4843689A159AD38D001A0FEF /* ChildBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildBrowserViewController.xib; sourceTree = "<group>"; };
+		4843689B159AD38D001A0FEF /* Cordova.plist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cordova.plist.png; sourceTree = "<group>"; };
+		4843689D159AD38D001A0FEF /* facebook.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = facebook.html; sourceTree = "<group>"; };
+		4843689E159AD38D001A0FEF /* FBConnect.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = FBConnect.js; sourceTree = "<group>"; };
+		4843689F159AD38D001A0FEF /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		484368A0159AD38D001A0FEF /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		484368A1159AD38D001A0FEF /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		484368A2159AD38D001A0FEF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		485C2FF91597984700B08267 /* MT101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		485C2FFD1597984700B08267 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		485C2FFF1597984700B08267 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -348,6 +374,35 @@
 			path = Xibs;
 			sourceTree = "<group>";
 		};
+		48436893159AD38D001A0FEF /* ChildBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				48436894159AD38D001A0FEF /* ChildBrowser.bundle */,
+				48436895159AD38D001A0FEF /* ChildBrowser.js */,
+				48436896159AD38D001A0FEF /* ChildBrowserCommand.h */,
+				48436897159AD38D001A0FEF /* ChildBrowserCommand.m */,
+				48436898159AD38D001A0FEF /* ChildBrowserViewController.h */,
+				48436899159AD38D001A0FEF /* ChildBrowserViewController.m */,
+				4843689A159AD38D001A0FEF /* ChildBrowserViewController.xib */,
+				4843689B159AD38D001A0FEF /* Cordova.plist.png */,
+				4843689C159AD38D001A0FEF /* FBConnectExample */,
+				484368A1159AD38D001A0FEF /* index.html */,
+				484368A2159AD38D001A0FEF /* README.md */,
+			);
+			path = ChildBrowser;
+			sourceTree = "<group>";
+		};
+		4843689C159AD38D001A0FEF /* FBConnectExample */ = {
+			isa = PBXGroup;
+			children = (
+				4843689D159AD38D001A0FEF /* facebook.html */,
+				4843689E159AD38D001A0FEF /* FBConnect.js */,
+				4843689F159AD38D001A0FEF /* index.html */,
+				484368A0159AD38D001A0FEF /* README.txt */,
+			);
+			path = FBConnectExample;
+			sourceTree = "<group>";
+		};
 		485C2FEB1597984700B08267 = {
 			isa = PBXGroup;
 			children = (
@@ -491,6 +546,7 @@
 		485C304C1597984700B08267 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				48436893159AD38D001A0FEF /* ChildBrowser */,
 				48436818159AD269001A0FEF /* AudioHost */,
 				485C304D1597984700B08267 /* README */,
 			);
@@ -607,6 +663,14 @@
 				48436890159AD269001A0FEF /* AudioHostViewController4.xib in Resources */,
 				48436891159AD269001A0FEF /* AudioHostViewController5.xib in Resources */,
 				48436892159AD269001A0FEF /* AudioHostViewController6.xib in Resources */,
+				484368A3159AD38D001A0FEF /* ChildBrowser.bundle in Resources */,
+				484368A7159AD38D001A0FEF /* ChildBrowserViewController.xib in Resources */,
+				484368A8159AD38D001A0FEF /* Cordova.plist.png in Resources */,
+				484368A9159AD38D001A0FEF /* facebook.html in Resources */,
+				484368AB159AD38D001A0FEF /* index.html in Resources */,
+				484368AC159AD38D001A0FEF /* README.txt in Resources */,
+				484368AD159AD38D001A0FEF /* index.html in Resources */,
+				484368AE159AD38D001A0FEF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +713,10 @@
 				48436888159AD269001A0FEF /* AudioHostViewController4.m in Sources */,
 				48436889159AD269001A0FEF /* AudioHostViewController5.m in Sources */,
 				4843688A159AD269001A0FEF /* AudioHostViewController6.m in Sources */,
+				484368A4159AD38D001A0FEF /* ChildBrowser.js in Sources */,
+				484368A5159AD38D001A0FEF /* ChildBrowserCommand.m in Sources */,
+				484368A6159AD38D001A0FEF /* ChildBrowserViewController.m in Sources */,
+				484368AA159AD38D001A0FEF /* FBConnect.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
