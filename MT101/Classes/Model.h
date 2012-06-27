@@ -12,13 +12,9 @@
 @interface Model : NSObject {
   NSArray *firstDetail;
   NSArray *secondDetail;
-    NSArray *thirdDetail;
-
 }
 
 @property (nonatomic, retain) NSArray *firstDetail;
 @property (nonatomic, retain) NSArray *secondDetail;
-@property (nonatomic, retain) NSArray *thirdDetail;
-
 
 @end
