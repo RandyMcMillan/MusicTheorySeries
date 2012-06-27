@@ -9,7 +9,14 @@
 #import "RootViewController_Pad.h"
 
 
-@implementation RootViewController_Pad
+@implementation RootViewController_Pad {}
+
+
+- (void)viewDidLoad {
+
+self.title = @"Examples";
+
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
