@@ -91,7 +91,7 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        MovieToPlay = @"GreenBeam";
+       // MovieToPlay = @"GreenBeam";
     }
 }
 

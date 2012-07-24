@@ -50,6 +50,7 @@
 		486B05E715BF2C1C00B3F10D /* Whole_tone_scale_on_C.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05BD15BF2C1C00B3F10D /* Whole_tone_scale_on_C.svg */; };
 		486B05E815BF2C1C00B3F10D /* WholeToneScaleFromC.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05BE15BF2C1C00B3F10D /* WholeToneScaleFromC.svg */; };
 		486B05EC15BF2CBD00B3F10D /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05EB15BF2CBD00B3F10D /* Aeolian.png */; };
+		486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05ED15BF334A00B3F10D /* icon@2x.png */; };
 		B225A72B1534CF59006FD46F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72A1534CF59006FD46F /* UIKit.framework */; };
 		B225A72D1534CF59006FD46F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72C1534CF59006FD46F /* Foundation.framework */; };
 		B225A72F1534CF59006FD46F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72E1534CF59006FD46F /* CoreGraphics.framework */; };
@@ -118,6 +119,7 @@
 		486B05BD15BF2C1C00B3F10D /* Whole_tone_scale_on_C.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Whole_tone_scale_on_C.svg; sourceTree = "<group>"; };
 		486B05BE15BF2C1C00B3F10D /* WholeToneScaleFromC.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WholeToneScaleFromC.svg; sourceTree = "<group>"; };
 		486B05EB15BF2CBD00B3F10D /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
+		486B05ED15BF334A00B3F10D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		B225A7261534CF59006FD46F /* MT101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B225A72A1534CF59006FD46F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B225A72C1534CF59006FD46F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -268,6 +270,7 @@
 		B225A7311534CF59006FD46F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				486B05ED15BF334A00B3F10D /* icon@2x.png */,
 				486B05EA15BF2CBD00B3F10D /* ScalePNGs */,
 				486B059415BF2C1C00B3F10D /* scaleSVGs */,
 				B225A76C1534D27F006FD46F /* greenlights.png */,
@@ -403,6 +406,7 @@
 				486B05E715BF2C1C00B3F10D /* Whole_tone_scale_on_C.svg in Resources */,
 				486B05E815BF2C1C00B3F10D /* WholeToneScaleFromC.svg in Resources */,
 				486B05EC15BF2CBD00B3F10D /* Aeolian.png in Resources */,
+				486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
