@@ -44,7 +44,7 @@
 						<string key="NSFrame">{{0.5, 145}, {768, 478}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="194045878"/>
+						<reference key="NSNextKeyView" ref="947599279"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -53,15 +53,15 @@
 							<string key="NSResourceName">welcome.png</string>
 						</object>
 					</object>
-					<object class="IBUIToolbar" id="194045878">
+					<object class="IBUIToolbar" id="947599279">
 						<reference key="NSNextResponder" ref="647120888"/>
 						<int key="NSvFlags">266</int>
 						<array class="NSMutableArray" key="NSSubviews">
 							<object class="IBUIButton" id="121611704">
-								<reference key="NSNextResponder" ref="194045878"/>
+								<reference key="NSNextResponder" ref="947599279"/>
 								<int key="NSvFlags">301</int>
 								<string key="NSFrame">{{271, 8}, {225, 29}}</string>
-								<reference key="NSSuperview" ref="194045878"/>
+								<reference key="NSSuperview" ref="947599279"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -103,20 +103,20 @@
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<array class="NSMutableArray" key="IBUIItems">
-							<object class="IBUIBarButtonItem" id="841718067">
+							<object class="IBUIBarButtonItem" id="645458470">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<reference key="IBUIToolbar" ref="194045878"/>
+								<reference key="IBUIToolbar" ref="947599279"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
-							<object class="IBUIBarButtonItem" id="87816775">
+							<object class="IBUIBarButtonItem" id="881059529">
 								<string key="IBUITitle">Item</string>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<reference key="IBUICustomView" ref="121611704"/>
-								<reference key="IBUIToolbar" ref="194045878"/>
+								<reference key="IBUIToolbar" ref="947599279"/>
 							</object>
-							<object class="IBUIBarButtonItem" id="626713176">
+							<object class="IBUIBarButtonItem" id="897017454">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<reference key="IBUIToolbar" ref="194045878"/>
+								<reference key="IBUIToolbar" ref="947599279"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
 						</array>
@@ -190,7 +190,7 @@
 						<reference key="object" ref="647120888"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="204503168"/>
-							<reference ref="194045878"/>
+							<reference ref="947599279"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -201,36 +201,36 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">71</int>
-						<reference key="object" ref="194045878"/>
+						<reference key="object" ref="947599279"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="87816775"/>
-							<reference ref="841718067"/>
-							<reference ref="626713176"/>
+							<reference ref="881059529"/>
+							<reference ref="645458470"/>
+							<reference ref="897017454"/>
 						</array>
 						<reference key="parent" ref="647120888"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">73</int>
-						<reference key="object" ref="87816775"/>
+						<reference key="object" ref="881059529"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="121611704"/>
 						</array>
-						<reference key="parent" ref="194045878"/>
+						<reference key="parent" ref="947599279"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">67</int>
 						<reference key="object" ref="121611704"/>
-						<reference key="parent" ref="87816775"/>
+						<reference key="parent" ref="881059529"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">77</int>
-						<reference key="object" ref="841718067"/>
-						<reference key="parent" ref="194045878"/>
+						<reference key="object" ref="645458470"/>
+						<reference key="parent" ref="947599279"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">78</int>
-						<reference key="object" ref="626713176"/>
-						<reference key="parent" ref="194045878"/>
+						<reference key="object" ref="897017454"/>
+						<reference key="parent" ref="947599279"/>
 					</object>
 				</array>
 			</object>
