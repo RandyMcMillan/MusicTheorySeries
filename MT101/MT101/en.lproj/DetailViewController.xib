@@ -41,11 +41,12 @@
 					<object class="IBUIImageView" id="204503168">
 						<reference key="NSNextResponder" ref="647120888"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{0.5, 145}, {768, 478}}</string>
+						<string key="NSFrame">{{48, 175}, {672, 418}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="947599279"/>
+						<reference key="NSNextKeyView" ref="359118249"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<int key="IBUIContentMode">4</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
@@ -53,15 +54,15 @@
 							<string key="NSResourceName">welcome.png</string>
 						</object>
 					</object>
-					<object class="IBUIToolbar" id="947599279">
+					<object class="IBUIToolbar" id="359118249">
 						<reference key="NSNextResponder" ref="647120888"/>
 						<int key="NSvFlags">266</int>
 						<array class="NSMutableArray" key="NSSubviews">
 							<object class="IBUIButton" id="121611704">
-								<reference key="NSNextResponder" ref="947599279"/>
+								<reference key="NSNextResponder" ref="359118249"/>
 								<int key="NSvFlags">301</int>
 								<string key="NSFrame">{{271, 8}, {225, 29}}</string>
-								<reference key="NSSuperview" ref="947599279"/>
+								<reference key="NSSuperview" ref="359118249"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -103,20 +104,20 @@
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<array class="NSMutableArray" key="IBUIItems">
-							<object class="IBUIBarButtonItem" id="645458470">
+							<object class="IBUIBarButtonItem" id="11828992">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<reference key="IBUIToolbar" ref="947599279"/>
+								<reference key="IBUIToolbar" ref="359118249"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
-							<object class="IBUIBarButtonItem" id="881059529">
+							<object class="IBUIBarButtonItem" id="643730071">
 								<string key="IBUITitle">Item</string>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<reference key="IBUICustomView" ref="121611704"/>
-								<reference key="IBUIToolbar" ref="947599279"/>
+								<reference key="IBUIToolbar" ref="359118249"/>
 							</object>
-							<object class="IBUIBarButtonItem" id="897017454">
+							<object class="IBUIBarButtonItem" id="144915076">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<reference key="IBUIToolbar" ref="947599279"/>
+								<reference key="IBUIToolbar" ref="359118249"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
 						</array>
@@ -189,8 +190,8 @@
 						<int key="objectID">8</int>
 						<reference key="object" ref="647120888"/>
 						<array class="NSMutableArray" key="children">
+							<reference ref="359118249"/>
 							<reference ref="204503168"/>
-							<reference ref="947599279"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -201,36 +202,36 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">71</int>
-						<reference key="object" ref="947599279"/>
+						<reference key="object" ref="359118249"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="881059529"/>
-							<reference ref="645458470"/>
-							<reference ref="897017454"/>
+							<reference ref="643730071"/>
+							<reference ref="11828992"/>
+							<reference ref="144915076"/>
 						</array>
 						<reference key="parent" ref="647120888"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">73</int>
-						<reference key="object" ref="881059529"/>
+						<reference key="object" ref="643730071"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="121611704"/>
 						</array>
-						<reference key="parent" ref="947599279"/>
+						<reference key="parent" ref="359118249"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">67</int>
 						<reference key="object" ref="121611704"/>
-						<reference key="parent" ref="881059529"/>
+						<reference key="parent" ref="643730071"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">77</int>
-						<reference key="object" ref="645458470"/>
-						<reference key="parent" ref="947599279"/>
+						<reference key="object" ref="11828992"/>
+						<reference key="parent" ref="359118249"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">78</int>
-						<reference key="object" ref="897017454"/>
-						<reference key="parent" ref="947599279"/>
+						<reference key="object" ref="144915076"/>
+						<reference key="parent" ref="359118249"/>
 					</object>
 				</array>
 			</object>
@@ -301,7 +302,7 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="NS.key.0">welcome.png</string>
-			<string key="NS.object.0">{3200, 2054}</string>
+			<string key="NS.object.0">{768, 493}</string>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">1181</string>
 	</data>
