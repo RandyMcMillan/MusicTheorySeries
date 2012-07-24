@@ -43,7 +43,7 @@
                  nil];
     
     imageList = [[NSArray alloc] initWithObjects:
-                 [UIImage imageNamed: @"greenlights.png"],
+                 [UIImage imageNamed: @"Aeolian.png"],
                  [UIImage imageNamed:@"clouds.png"],
                  [UIImage imageNamed:@"sunset.png"],
                  [UIImage imageNamed:@"underwater.png"], 
