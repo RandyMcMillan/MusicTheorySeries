@@ -118,7 +118,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Video Player", @"Video Player");
+        //self.title = NSLocalizedString(@"Video Player", @"Video Player");
+        
     }
     return self;
 }
