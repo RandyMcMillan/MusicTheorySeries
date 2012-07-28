@@ -35,7 +35,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
        
-    videoList = [[NSArray alloc] initWithObjects:@"GreenBeam",
+    videoList = [[NSArray alloc] initWithObjects:
+                 @"GreenBeam",
                  @"RollingClouds",
                  @"SunInClouds",
                  @"UnderWater",
@@ -103,10 +104,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.detailViewController.MovieToPlay = [videoList objectAtIndex:indexPath.row];
-    
+    //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
+    self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
     self.detailViewController.imageView.image = [imageList objectAtIndex:indexPath.row];
-    
-    
     
 }
 
