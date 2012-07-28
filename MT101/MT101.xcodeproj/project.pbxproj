@@ -53,6 +53,7 @@
 		486B05F415BF371E00B3F10D /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05F315BF371E00B3F10D /* welcome.png */; };
 		48893ACF15C48F3C00A382BC /* Aeolian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 48893ACD15C48F3C00A382BC /* Aeolian.ai */; };
 		48893AD015C48F3C00A382BC /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 48893ACE15C48F3C00A382BC /* Aeolian.png */; };
+		48AF3EAE15C4A222005C667B /* Aeolian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48AF3EAD15C4A222005C667B /* Aeolian.mp4 */; };
 		B225A72B1534CF59006FD46F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72A1534CF59006FD46F /* UIKit.framework */; };
 		B225A72D1534CF59006FD46F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72C1534CF59006FD46F /* Foundation.framework */; };
 		B225A72F1534CF59006FD46F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72E1534CF59006FD46F /* CoreGraphics.framework */; };
@@ -124,6 +125,7 @@
 		486B05F315BF371E00B3F10D /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = SOURCE_ROOT; };
 		48893ACD15C48F3C00A382BC /* Aeolian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aeolian.ai; sourceTree = "<group>"; };
 		48893ACE15C48F3C00A382BC /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
+		48AF3EAD15C4A222005C667B /* Aeolian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Aeolian.mp4; path = Movies/Aeolian.mp4; sourceTree = SOURCE_ROOT; };
 		B225A7261534CF59006FD46F /* MT101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B225A72A1534CF59006FD46F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B225A72C1534CF59006FD46F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -296,6 +298,7 @@
 		B225A74D1534CFBE006FD46F /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				48AF3EAD15C4A222005C667B /* Aeolian.mp4 */,
 				B225A7621534D24D006FD46F /* GreenBeam.mp4 */,
 				B225A7631534D24D006FD46F /* RollingClouds.mp4 */,
 				B225A7641534D24D006FD46F /* SunInClouds.mp4 */,
@@ -415,6 +418,7 @@
 				486B05F415BF371E00B3F10D /* welcome.png in Resources */,
 				48893ACF15C48F3C00A382BC /* Aeolian.ai in Resources */,
 				48893AD015C48F3C00A382BC /* Aeolian.png in Resources */,
+				48AF3EAE15C4A222005C667B /* Aeolian.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,7 +36,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
        
     videoList = [[NSArray alloc] initWithObjects:
-                 @"GreenBeam",
+                 @"Aeolian",
                  @"RollingClouds",
                  @"SunInClouds",
                  @"UnderWater",
@@ -86,6 +86,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
 
+
+    tableView.backgroundColor = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
+    tableView.separatorColor = [UIColor lightGrayColor];
 
 
     cell.textLabel.text = [videoList objectAtIndex:indexPath.row];

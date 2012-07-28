@@ -28,7 +28,7 @@
 
 -(IBAction)playMovie:(id)sender{
     
-    NSBundle *bundle = [NSBundle mainBundle];
+   // NSBundle *bundle = [NSBundle mainBundle];
 	
 	NSURL *movieURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:MovieToPlay ofType:@"mp4"]];
     
