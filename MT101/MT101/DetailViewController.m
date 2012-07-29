@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+#import "ColorConstants.h"
 #import "DetailViewController.h"
 
 @interface DetailViewController (){
@@ -51,7 +52,7 @@
     [self.view addSubview:moviePlayer.view];
 
     
-	//[self presentMoviePlayerViewControllerAnimated:moviePlayer];	
+	//[self presentMoviePlayerViewControllerAnimated:moviePlayer];
 }
 
 - (void) moviePlayBackDidFinish:(NSNotification*)notification {  
@@ -128,8 +129,11 @@
 
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
 {
-    barButtonItem.title = NSLocalizedString(@"Videos", @"Videos");
+    barButtonItem.title = NSLocalizedString(@"Examples", @"Examples");
+    //self.navigationController.navigationBar.alpha = 0.5;
+    self.navigationController.navigationBar.tintColor = DETAIL_NAV_BAR;
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
+    
     self.masterPopoverController = popoverController;
 }
 

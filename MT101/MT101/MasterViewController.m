@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+#import "ColorConstants.h"
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
 
 @interface MasterViewController () {
@@ -33,6 +33,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //self.navigationController.navigationBar.alpha = 0.9;
+    self.navigationController.navigationBar.tintColor = TABLE_NAV_BAR;//TABLE_NAV_BAR;
 	// Do any additional setup after loading the view, typically from a nib.
        
     videoList = [[NSArray alloc] initWithObjects:
@@ -68,7 +71,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -87,7 +90,7 @@
     }
 
 
-    tableView.backgroundColor = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
+    //tableView.backgroundColor = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
     tableView.separatorColor = [UIColor lightGrayColor];
 
 
