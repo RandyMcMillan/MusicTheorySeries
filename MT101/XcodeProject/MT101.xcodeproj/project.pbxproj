@@ -115,7 +115,6 @@
 		48F66ADF159D857C004CFB1A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F66ADE159D857C004CFB1A /* SystemConfiguration.framework */; };
 		48F66AE1159D8583004CFB1A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F66AE0159D8583004CFB1A /* MobileCoreServices.framework */; };
 		48F66AE3159D858A004CFB1A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F66AE2159D858A004CFB1A /* CoreMedia.framework */; };
-		48F66AE7159D85CD004CFB1A /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48F66AE6159D85CC004CFB1A /* Cordova.plist */; };
 		65FC35C314C2BEFB00F8C26D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FC35C214C2BEFB00F8C26D /* UIKit.framework */; };
 		65FC35C514C2BEFB00F8C26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FC35C414C2BEFB00F8C26D /* Foundation.framework */; };
 		65FC35C714C2BEFB00F8C26D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FC35C614C2BEFB00F8C26D /* CoreGraphics.framework */; };
@@ -240,7 +239,6 @@
 		48F66ADE159D857C004CFB1A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		48F66AE0159D8583004CFB1A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		48F66AE2159D858A004CFB1A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		48F66AE6159D85CC004CFB1A /* Cordova.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Cordova.plist; path = ../Cordova.plist; sourceTree = "<group>"; };
 		65FC35BE14C2BEFB00F8C26D /* MT101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FC35C214C2BEFB00F8C26D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65FC35C414C2BEFB00F8C26D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -456,7 +454,6 @@
 		65FC35C914C2BEFB00F8C26D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				48F66AE6159D85CC004CFB1A /* Cordova.plist */,
 				65FC35CA14C2BEFB00F8C26D /* MT101-Info.plist */,
 				65FC35CB14C2BEFB00F8C26D /* InfoPlist.strings */,
 				65FC35CE14C2BEFB00F8C26D /* main.m */,
@@ -516,7 +513,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				65FC35CD14C2BEFB00F8C26D /* InfoPlist.strings in Resources */,
-				48F66AE7159D85CD004CFB1A /* Cordova.plist in Resources */,
 				48082D3D159E8646003D1A8F /* SampleViewController.xib in Resources */,
 				48082D3F159E8646003D1A8F /* Default-Landscape.jpg in Resources */,
 				48082D40159E8646003D1A8F /* Default-Landscape@2x.jpg in Resources */,
@@ -700,7 +696,7 @@
 				INFOPLIST_FILE = "CDVFaceBook/MT101-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = MT101;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -717,7 +713,7 @@
 				INFOPLIST_FILE = "CDVFaceBook/MT101-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = MT101;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
