@@ -17,6 +17,7 @@
 			<string>IBUIImageView</string>
 			<string>IBUIToolbar</string>
 			<string>IBUIView</string>
+			<string>IBUIViewController</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -33,6 +34,17 @@
 			<object class="IBProxyObject" id="606714003">
 				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+			</object>
+			<object class="IBUIViewController" id="106680216">
+				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
+					<int key="IBUIStatusBarStyle">2</int>
+				</object>
+				<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
+					<int key="IBUIInterfaceOrientation">1</int>
+					<int key="interfaceOrientation">1</int>
+				</object>
+				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+				<bool key="IBUIHorizontal">NO</bool>
 			</object>
 			<object class="IBUIView" id="647120888">
 				<reference key="NSNextResponder"/>
@@ -64,7 +76,7 @@
 								<string key="NSFrame">{{107, 8}, {225, 29}}</string>
 								<reference key="NSSuperview" ref="359118249"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="603429830"/>
+								<reference key="NSNextKeyView" ref="1013532138"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -72,7 +84,7 @@
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">Play Movie</string>
-								<object class="NSColor" key="IBUIHighlightedTitleColor" id="976297795">
+								<object class="NSColor" key="IBUIHighlightedTitleColor" id="1039863054">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MQA</bytes>
 								</object>
@@ -80,27 +92,26 @@
 									<int key="NSColorSpace">2</int>
 									<bytes key="NSRGB">MC4wMTk2MDc4NDM4MyAwLjA1ODgyMzUzMzM2IDAuNDM5MjE1NzE5NwA</bytes>
 								</object>
-								<object class="NSColor" key="IBUINormalTitleShadowColor" id="486538696">
+								<object class="NSColor" key="IBUINormalTitleShadowColor" id="708600195">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MC41AA</bytes>
 								</object>
-								<object class="IBUIFontDescription" key="IBUIFontDescription" id="845598491">
+								<object class="IBUIFontDescription" key="IBUIFontDescription" id="1069914708">
 									<int key="type">2</int>
 									<double key="pointSize">15</double>
 								</object>
-								<object class="NSFont" key="IBUIFont" id="776396275">
+								<object class="NSFont" key="IBUIFont" id="598446264">
 									<string key="NSName">Helvetica-Bold</string>
 									<double key="NSSize">15</double>
 									<int key="NSfFlags">16</int>
 								</object>
 							</object>
-							<object class="IBUIButton" id="603429830">
+							<object class="IBUIButton" id="1013532138">
 								<reference key="NSNextResponder" ref="359118249"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{436, 8}, {225, 29}}</string>
 								<reference key="NSSuperview" ref="359118249"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -108,14 +119,14 @@
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">Interactive</string>
-								<reference key="IBUIHighlightedTitleColor" ref="976297795"/>
+								<reference key="IBUIHighlightedTitleColor" ref="1039863054"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 								</object>
-								<reference key="IBUINormalTitleShadowColor" ref="486538696"/>
-								<reference key="IBUIFontDescription" ref="845598491"/>
-								<reference key="IBUIFont" ref="776396275"/>
+								<reference key="IBUINormalTitleShadowColor" ref="708600195"/>
+								<reference key="IBUIFontDescription" ref="1069914708"/>
+								<reference key="IBUIFont" ref="598446264"/>
 							</object>
 						</array>
 						<string key="NSFrame">{{0, 724}, {768, 44}}</string>
@@ -138,14 +149,14 @@
 								<reference key="IBUICustomView" ref="121611704"/>
 								<reference key="IBUIToolbar" ref="359118249"/>
 							</object>
-							<object class="IBUIBarButtonItem" id="975489659">
+							<object class="IBUIBarButtonItem" id="463551028">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<reference key="IBUIToolbar" ref="359118249"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
-							<object class="IBUIBarButtonItem" id="630442720">
+							<object class="IBUIBarButtonItem" id="305922762">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<reference key="IBUICustomView" ref="603429830"/>
+								<reference key="IBUICustomView" ref="1013532138"/>
 								<reference key="IBUIToolbar" ref="359118249"/>
 							</object>
 							<object class="IBUIBarButtonItem" id="144915076">
@@ -199,6 +210,15 @@
 					</object>
 					<int key="connectionID">70</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">displayInteractive:</string>
+						<reference key="source" ref="1013532138"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">82</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -240,8 +260,8 @@
 							<reference ref="643730071"/>
 							<reference ref="11828992"/>
 							<reference ref="144915076"/>
-							<reference ref="630442720"/>
-							<reference ref="975489659"/>
+							<reference ref="305922762"/>
+							<reference ref="463551028"/>
 						</array>
 						<reference key="parent" ref="647120888"/>
 					</object>
@@ -270,21 +290,26 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">80</int>
-						<reference key="object" ref="630442720"/>
+						<reference key="object" ref="305922762"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="603429830"/>
+							<reference ref="1013532138"/>
 						</array>
 						<reference key="parent" ref="359118249"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">79</int>
-						<reference key="object" ref="603429830"/>
-						<reference key="parent" ref="630442720"/>
+						<reference key="object" ref="1013532138"/>
+						<reference key="parent" ref="305922762"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">81</int>
-						<reference key="object" ref="975489659"/>
+						<reference key="object" ref="463551028"/>
 						<reference key="parent" ref="359118249"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">83</int>
+						<reference key="object" ref="106680216"/>
+						<reference key="parent" ref="0"/>
 					</object>
 				</array>
 			</object>
@@ -304,29 +329,53 @@
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="80.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="81.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="83.CustomClassName">AppleXylophoneViewController</string>
+				<string key="83.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">81</int>
+			<int key="maxID">83</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
-					<string key="className">DetailViewController</string>
+					<string key="className">AppleXylophoneViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">playMovie:</string>
-						<string key="NS.object.0">id</string>
+						<string key="NS.key.0">mixerOutputGainChanged:</string>
+						<string key="NS.object.0">UISlider</string>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">playMovie:</string>
+						<string key="NS.key.0">mixerOutputGainChanged:</string>
 						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">mixerOutputGainChanged:</string>
+							<string key="candidateClassName">UISlider</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/AppleXylophoneViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">DetailViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="displayInteractive:">id</string>
+						<string key="playMovie:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="displayInteractive:">
+							<string key="name">displayInteractive:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="playMovie:">
 							<string key="name">playMovie:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</object>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="detailDescriptionLabel">UILabel</string>
 						<string key="imageView">UIImageView</string>

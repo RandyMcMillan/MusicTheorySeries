@@ -255,7 +255,7 @@
 			path = ScalePNGs;
 			sourceTree = "<group>";
 		};
-		48BF0C3715C9AC4000F0F1A0 /* SoundFiles */ = {
+		48BF0C3715C9AC4000F0F1A0 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
 				48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */,
@@ -265,7 +265,7 @@
 				48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */,
 				48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */,
 			);
-			name = SoundFiles;
+			name = Audio;
 			sourceTree = "<group>";
 		};
 		B225A71B1534CF58006FD46F = {
@@ -318,7 +318,7 @@
 		B225A7311534CF59006FD46F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				48BF0C3715C9AC4000F0F1A0 /* SoundFiles */,
+				48BF0C3715C9AC4000F0F1A0 /* Audio */,
 				4825A36415C4DB43006F0C46 /* MixerHostAudio.h */,
 				4825A36515C4DB43006F0C46 /* MixerHostAudio.m */,
 				4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */,

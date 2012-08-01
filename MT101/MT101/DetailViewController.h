@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "AppleXylophoneViewController.h"
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
 
@@ -17,6 +18,7 @@
 
 @property(nonatomic, retain) NSString *MovieToPlay;
 @property(nonatomic,retain) IBOutlet UIImageView *imageView;
+@property (nonatomic, retain) IBOutlet AppleXylophoneViewController *viewController;
 
 -(IBAction)displayInteractive:(id)sender;
 -(IBAction)playMovie:(id)sender;

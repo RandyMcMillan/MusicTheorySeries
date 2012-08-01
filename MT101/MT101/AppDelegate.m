@@ -11,10 +11,12 @@
 #import "MasterViewController.h"
 
 #import "DetailViewController.h"
+#import "AppleXylophoneViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize viewController;
 @synthesize splitViewController = _splitViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

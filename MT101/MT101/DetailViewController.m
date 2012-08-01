@@ -7,10 +7,14 @@
 //
 
 #import "DetailViewController.h"
+#import "AppleXylophoneViewController.h"
+
 
 @interface DetailViewController (){
     
     MPMoviePlayerViewController *moviePlayer;
+    AppleXylophoneViewController *test;
+    
 }
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
@@ -26,7 +30,16 @@
 
 #pragma mark - Managing the detail item
 
--(IBAction)displayInteractive:(id)sender{}
+-(IBAction)displayInteractive:(id)sender{
+
+
+    NSLog(@"displayInteractive");
+    
+    AppleXylophoneViewController *test = [[AppleXylophoneViewController alloc]init];
+    [self.view addSubview:test.view];
+    
+
+}
 
 -(IBAction)playMovie:(id)sender{
     

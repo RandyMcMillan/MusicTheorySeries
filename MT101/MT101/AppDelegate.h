@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppleXylophoneViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) UISplitViewController *splitViewController;
+@property (nonatomic, retain) IBOutlet AppleXylophoneViewController *viewController;
+
 
 @end
