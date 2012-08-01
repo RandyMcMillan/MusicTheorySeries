@@ -246,9 +246,6 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
-				4825A36915C4DBCF006F0C46 /* AVFoundation.framework */,
-				4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */,
-				B225A77A1534D6D7006FD46F /* MediaPlayer.framework */,
 				B225A7301534CF59006FD46F /* MT101 */,
 				B225A7291534CF59006FD46F /* Frameworks */,
 				B225A7271534CF59006FD46F /* Products */,
@@ -266,6 +263,9 @@
 		B225A7291534CF59006FD46F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4825A36915C4DBCF006F0C46 /* AVFoundation.framework */,
+				4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */,
+				B225A77A1534D6D7006FD46F /* MediaPlayer.framework */,
 				B225A72A1534CF59006FD46F /* UIKit.framework */,
 				B225A72C1534CF59006FD46F /* Foundation.framework */,
 				B225A72E1534CF59006FD46F /* CoreGraphics.framework */,
