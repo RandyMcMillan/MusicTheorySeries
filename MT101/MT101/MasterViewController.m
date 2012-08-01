@@ -119,7 +119,12 @@
     
     if (indexPath.row == 0){
     AppleXylophoneViewController *viewOneTest = [[AppleXylophoneViewController alloc]init];
-    [self.detailViewController.view addSubview:viewOneTest.view];
+        
+        viewOneTest.view.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+        viewOneTest.view.frame = CGRectMake(0, 0,700, 660);
+       // viewOneTest.view.bounds = self.detailViewController.view.bounds;
+
+        [self.detailViewController.view addSubview:viewOneTest.view];
     }
     
     
