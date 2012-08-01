@@ -9,7 +9,6 @@
 #import "ColorConstants.h"
 #import "DetailViewController.h"
 
-
 @interface DetailViewController (){
     
     MPMoviePlayerViewController *moviePlayer;

@@ -190,7 +190,7 @@ static OSStatus inputRenderCallback (
         NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"vib_%i",i] withExtension:@"aiff"];
         
         // ExtAudioFileRef objects expect CFURLRef URLs, so cast to CRURLRef here
-        sourceURLArray[i] = (CFURLRef) url;// [url retain];
+        sourceURLArray[i] = (__bridge CFURLRef) url;// [url retain];
     }
 }
 
@@ -743,7 +743,7 @@ static OSStatus inputRenderCallback (
         }
     }
     
-    [super dealloc];
+//    [super dealloc];
 }
 
 @end

@@ -9,8 +9,6 @@
 #import "ColorConstants.h"
 #import "MasterViewController.h"
 #import "DetailViewController.h"
-#import "AppleXylophoneViewController.h"
-
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -25,7 +23,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Examples", @"Examples");
+        self.title = NSLocalizedString(@"Videos", @"Videos");
         self.clearsSelectionOnViewWillAppear = NO;
         self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
     }
@@ -111,18 +109,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //self.detailViewController.MovieToPlay = [videoList objectAtIndex:indexPath.row];
+    self.detailViewController.MovieToPlay = [videoList objectAtIndex:indexPath.row];
     //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
-    //self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
-   // self.detailViewController.imageView.image = [imageList objectAtIndex:indexPath.row];
-  
-    
-    if (indexPath.row == 0){
-    AppleXylophoneViewController *viewOneTest = [[AppleXylophoneViewController alloc]init];
-    [self.detailViewController.view addSubview:viewOneTest.view];
-    }
-    
-    
+    self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+    self.detailViewController.imageView.image = [imageList objectAtIndex:indexPath.row];
     
 }
 
