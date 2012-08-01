@@ -59,6 +59,12 @@
 		48893ACF15C48F3C00A382BC /* Aeolian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 48893ACD15C48F3C00A382BC /* Aeolian.ai */; };
 		48893AD015C48F3C00A382BC /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 48893ACE15C48F3C00A382BC /* Aeolian.png */; };
 		48AF3EAE15C4A222005C667B /* Aeolian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48AF3EAD15C4A222005C667B /* Aeolian.mp4 */; };
+		48BF0C3015C9AC3400F0F1A0 /* vib_0.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */; };
+		48BF0C3115C9AC3400F0F1A0 /* vib_1.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2B15C9AC3400F0F1A0 /* vib_1.aiff */; };
+		48BF0C3215C9AC3400F0F1A0 /* vib_2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2C15C9AC3400F0F1A0 /* vib_2.aiff */; };
+		48BF0C3315C9AC3400F0F1A0 /* vib_3.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2D15C9AC3400F0F1A0 /* vib_3.aiff */; };
+		48BF0C3415C9AC3400F0F1A0 /* vib_4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */; };
+		48BF0C3515C9AC3400F0F1A0 /* vib_5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */; };
 		B225A72B1534CF59006FD46F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72A1534CF59006FD46F /* UIKit.framework */; };
 		B225A72D1534CF59006FD46F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72C1534CF59006FD46F /* Foundation.framework */; };
 		B225A72F1534CF59006FD46F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72E1534CF59006FD46F /* CoreGraphics.framework */; };
@@ -138,6 +144,12 @@
 		48893ACD15C48F3C00A382BC /* Aeolian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aeolian.ai; sourceTree = "<group>"; };
 		48893ACE15C48F3C00A382BC /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
 		48AF3EAD15C4A222005C667B /* Aeolian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Aeolian.mp4; path = Movies/Aeolian.mp4; sourceTree = SOURCE_ROOT; };
+		48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_0.aiff; path = ../vib_0.aiff; sourceTree = "<group>"; };
+		48BF0C2B15C9AC3400F0F1A0 /* vib_1.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_1.aiff; path = ../vib_1.aiff; sourceTree = "<group>"; };
+		48BF0C2C15C9AC3400F0F1A0 /* vib_2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_2.aiff; path = ../vib_2.aiff; sourceTree = "<group>"; };
+		48BF0C2D15C9AC3400F0F1A0 /* vib_3.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_3.aiff; path = ../vib_3.aiff; sourceTree = "<group>"; };
+		48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_4.aiff; path = ../vib_4.aiff; sourceTree = "<group>"; };
+		48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_5.aiff; path = ../vib_5.aiff; sourceTree = "<group>"; };
 		B225A7261534CF59006FD46F /* MT101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B225A72A1534CF59006FD46F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B225A72C1534CF59006FD46F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -243,6 +255,19 @@
 			path = ScalePNGs;
 			sourceTree = "<group>";
 		};
+		48BF0C3715C9AC4000F0F1A0 /* SoundFiles */ = {
+			isa = PBXGroup;
+			children = (
+				48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */,
+				48BF0C2B15C9AC3400F0F1A0 /* vib_1.aiff */,
+				48BF0C2C15C9AC3400F0F1A0 /* vib_2.aiff */,
+				48BF0C2D15C9AC3400F0F1A0 /* vib_3.aiff */,
+				48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */,
+				48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */,
+			);
+			name = SoundFiles;
+			sourceTree = "<group>";
+		};
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +318,7 @@
 		B225A7311534CF59006FD46F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48BF0C3715C9AC4000F0F1A0 /* SoundFiles */,
 				4825A36415C4DB43006F0C46 /* MixerHostAudio.h */,
 				4825A36515C4DB43006F0C46 /* MixerHostAudio.m */,
 				4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */,
@@ -441,6 +467,12 @@
 				48893AD015C48F3C00A382BC /* Aeolian.png in Resources */,
 				48AF3EAE15C4A222005C667B /* Aeolian.mp4 in Resources */,
 				4825A36215C4DB2D006F0C46 /* AppleXylophoneViewController.xib in Resources */,
+				48BF0C3015C9AC3400F0F1A0 /* vib_0.aiff in Resources */,
+				48BF0C3115C9AC3400F0F1A0 /* vib_1.aiff in Resources */,
+				48BF0C3215C9AC3400F0F1A0 /* vib_2.aiff in Resources */,
+				48BF0C3315C9AC3400F0F1A0 /* vib_3.aiff in Resources */,
+				48BF0C3415C9AC3400F0F1A0 /* vib_4.aiff in Resources */,
+				48BF0C3515C9AC3400F0F1A0 /* vib_5.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
