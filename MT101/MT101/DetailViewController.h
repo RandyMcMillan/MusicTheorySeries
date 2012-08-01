@@ -18,6 +18,7 @@
 @property(nonatomic, retain) NSString *MovieToPlay;
 @property(nonatomic,retain) IBOutlet UIImageView *imageView;
 
+-(IBAction)displayInteractive:(id)sender;
 -(IBAction)playMovie:(id)sender;
 
 @end

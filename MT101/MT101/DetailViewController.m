@@ -26,6 +26,8 @@
 
 #pragma mark - Managing the detail item
 
+-(IBAction)displayInteractive:(id)sender{}
+
 -(IBAction)playMovie:(id)sender{
     
    // NSBundle *bundle = [NSBundle mainBundle];
