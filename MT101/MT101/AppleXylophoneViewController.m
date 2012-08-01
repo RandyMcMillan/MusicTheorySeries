@@ -30,6 +30,51 @@
     keyRects[3] = CGRectMake(55, 213, 199, 44);
     keyRects[4] = CGRectMake(55, 166, 199, 44);
     keyRects[5] = CGRectMake(55, 43, 199, 121);
+    
+    
+    
+    
+#if TARGET_IPHONE_SIMULATOR
+    
+    //For your convience in configuring keyRects. Pink Transparencies only displayed in Simulator
+    
+    UILabel *label0 = [ [UILabel alloc ] initWithFrame:keyRects[0] ];
+    label0.numberOfLines = 3;
+    label0.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label0.text = [NSString stringWithFormat: @"keyRect[0]\nOnly displayed in Simulator"];
+    
+    UILabel *label1 = [ [UILabel alloc ] initWithFrame:keyRects[1] ];
+    label1.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label1.text = [NSString stringWithFormat: @"keyRect[1]"];
+    
+    UILabel *label2 = [ [UILabel alloc ] initWithFrame:keyRects[2] ];
+    label2.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label2.text = [NSString stringWithFormat: @"keyRect[2]"];
+    
+    UILabel *label3 = [ [UILabel alloc ] initWithFrame:keyRects[3] ];
+    label3.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label3.text = [NSString stringWithFormat: @"keyRect[3]"];
+    
+    UILabel *label4 = [ [UILabel alloc ] initWithFrame:keyRects[4] ];
+    label4.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label4.text = [NSString stringWithFormat: @"keyRect[4]"];
+    
+    UILabel *label5 = [ [UILabel alloc ] initWithFrame:keyRects[5] ];
+    label5.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label5.text = [NSString stringWithFormat: @"keyRect[5]"];
+    
+    
+    [self.view addSubview:label0];
+    [self.view addSubview:label1];
+    [self.view addSubview:label2];
+    [self.view addSubview:label3];
+    [self.view addSubview:label4];
+    [self.view addSubview:label5];
+    
+#endif
+
+    
+    
         
     //create the mixer
     self.mixerHost = [[MixerHostAudio alloc] init];
