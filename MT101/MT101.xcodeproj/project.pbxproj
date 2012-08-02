@@ -90,9 +90,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleXylophoneViewController.h; sourceTree = "<group>"; };
-		4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleXylophoneViewController.m; sourceTree = "<group>"; };
-		4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppleXylophoneViewController.xib; sourceTree = "<group>"; };
+		4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleXylophoneViewController.h; path = MT101/AppleXylophoneViewController.h; sourceTree = "<group>"; };
+		4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppleXylophoneViewController.m; path = MT101/AppleXylophoneViewController.m; sourceTree = "<group>"; };
+		4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AppleXylophoneViewController.xib; path = MT101/AppleXylophoneViewController.xib; sourceTree = "<group>"; };
 		4825A36415C4DB43006F0C46 /* MixerHostAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerHostAudio.h; sourceTree = "<group>"; };
 		4825A36515C4DB43006F0C46 /* MixerHostAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixerHostAudio.m; sourceTree = "<group>"; };
 		4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -160,10 +160,10 @@
 		B225A7381534CF59006FD46F /* MT101-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MT101-Prefix.pch"; sourceTree = "<group>"; };
 		B225A7391534CF59006FD46F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B225A73A1534CF59006FD46F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B225A73C1534CF59006FD46F /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		B225A73D1534CF59006FD46F /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		B225A73F1534CF59006FD46F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		B225A7401534CF59006FD46F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B225A73C1534CF59006FD46F /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = MT101/MasterViewController.h; sourceTree = "<group>"; };
+		B225A73D1534CF59006FD46F /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = MT101/MasterViewController.m; sourceTree = "<group>"; };
+		B225A73F1534CF59006FD46F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = MT101/DetailViewController.h; sourceTree = "<group>"; };
+		B225A7401534CF59006FD46F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = MT101/DetailViewController.m; sourceTree = "<group>"; };
 		B225A7431534CF59006FD46F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
 		B225A7461534CF59006FD46F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
 		B225A7581534D110006FD46F /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = SOURCE_ROOT; };
@@ -268,9 +268,51 @@
 			name = Audio;
 			sourceTree = "<group>";
 		};
+		48FAB51815CAF84F0087DCFA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B225A73C1534CF59006FD46F /* MasterViewController.h */,
+				B225A73D1534CF59006FD46F /* MasterViewController.m */,
+				B225A73F1534CF59006FD46F /* DetailViewController.h */,
+				B225A7401534CF59006FD46F /* DetailViewController.m */,
+				4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */,
+				4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		48FAB51A15CAF8710087DCFA /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */,
+				B225A7421534CF59006FD46F /* MasterViewController.xib */,
+				B225A7451534CF59006FD46F /* DetailViewController.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		48FAB51B15CAF8B30087DCFA /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				48893ACC15C48F3C00A382BC /* ScalePNGs */,
+				486B05F315BF371E00B3F10D /* welcome.png */,
+				486B05ED15BF334A00B3F10D /* icon@2x.png */,
+				486B059415BF2C1C00B3F10D /* scaleSVGs */,
+				B225A76C1534D27F006FD46F /* greenlights.png */,
+				B225A7581534D110006FD46F /* button1.png */,
+				B225A75A1534D1D4006FD46F /* clouds.png */,
+				B225A75B1534D1D4006FD46F /* sunset.png */,
+				B225A75C1534D1D4006FD46F /* trees.png */,
+				B225A75D1534D1D4006FD46F /* underwater.png */,
+			);
+			name = Art;
+			sourceTree = "<group>";
+		};
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
+				48FAB51A15CAF8710087DCFA /* XIBs */,
+				48FAB51815CAF84F0087DCFA /* ViewControllers */,
 				B225A7301534CF59006FD46F /* MT101 */,
 				B225A7291534CF59006FD46F /* Frameworks */,
 				B225A7271534CF59006FD46F /* Products */,
@@ -304,12 +346,6 @@
 				B225A74D1534CFBE006FD46F /* Movies */,
 				B225A7391534CF59006FD46F /* AppDelegate.h */,
 				B225A73A1534CF59006FD46F /* AppDelegate.m */,
-				B225A73C1534CF59006FD46F /* MasterViewController.h */,
-				B225A73D1534CF59006FD46F /* MasterViewController.m */,
-				B225A73F1534CF59006FD46F /* DetailViewController.h */,
-				B225A7401534CF59006FD46F /* DetailViewController.m */,
-				B225A7421534CF59006FD46F /* MasterViewController.xib */,
-				B225A7451534CF59006FD46F /* DetailViewController.xib */,
 				B225A7311534CF59006FD46F /* Supporting Files */,
 			);
 			path = MT101;
@@ -318,22 +354,10 @@
 		B225A7311534CF59006FD46F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48FAB51B15CAF8B30087DCFA /* Art */,
 				48BF0C3715C9AC4000F0F1A0 /* Audio */,
 				4825A36415C4DB43006F0C46 /* MixerHostAudio.h */,
 				4825A36515C4DB43006F0C46 /* MixerHostAudio.m */,
-				4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */,
-				4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */,
-				4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */,
-				48893ACC15C48F3C00A382BC /* ScalePNGs */,
-				486B05F315BF371E00B3F10D /* welcome.png */,
-				486B05ED15BF334A00B3F10D /* icon@2x.png */,
-				486B059415BF2C1C00B3F10D /* scaleSVGs */,
-				B225A76C1534D27F006FD46F /* greenlights.png */,
-				B225A7581534D110006FD46F /* button1.png */,
-				B225A75A1534D1D4006FD46F /* clouds.png */,
-				B225A75B1534D1D4006FD46F /* sunset.png */,
-				B225A75C1534D1D4006FD46F /* trees.png */,
-				B225A75D1534D1D4006FD46F /* underwater.png */,
 				B225A7321534CF59006FD46F /* MT101-Info.plist */,
 				B225A7331534CF59006FD46F /* InfoPlist.strings */,
 				B225A7361534CF59006FD46F /* main.m */,
@@ -509,6 +533,7 @@
 				B225A7431534CF59006FD46F /* en */,
 			);
 			name = MasterViewController.xib;
+			path = MT101;
 			sourceTree = "<group>";
 		};
 		B225A7451534CF59006FD46F /* DetailViewController.xib */ = {
@@ -517,6 +542,7 @@
 				B225A7461534CF59006FD46F /* en */,
 			);
 			name = DetailViewController.xib;
+			path = MT101;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
