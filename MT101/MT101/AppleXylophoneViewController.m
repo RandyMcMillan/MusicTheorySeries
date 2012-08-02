@@ -18,6 +18,22 @@
    // [mixerHost release];
 }
 
+
+-(void)closeBrowser {
+    
+    if ([self respondsToSelector:@selector(presentingViewController)]) {
+        [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [[self parentViewController] dismissModalViewControllerAnimated:YES];
+    }
+}
+
+-(IBAction) onDoneButtonPress:(id)sender {
+    
+    [ self closeBrowser];
+}
+
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
