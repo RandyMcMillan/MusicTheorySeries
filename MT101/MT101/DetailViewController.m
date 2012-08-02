@@ -119,6 +119,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+   self.toolBar.alpha = 1.0;
+
 }
 
 - (void)viewDidUnload
@@ -128,9 +130,29 @@
     self.detailDescriptionLabel = nil;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return YES;
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+
+
+    // Return YES for supported orientations
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight){
+        return YES;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft){
+        return YES;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationPortrait){
+        return NO;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
+        return NO;
+    } else {return NO;}
+    
+
+
+
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
