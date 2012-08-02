@@ -62,7 +62,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<float key="IBUIValue">0.75</float>
+						<float key="IBUIValue">0.5</float>
 					</object>
 					<object class="IBUIToolbar" id="623534185">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -70,6 +70,7 @@
 						<string key="NSFrame">{{0, 724}, {1024, 44}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
