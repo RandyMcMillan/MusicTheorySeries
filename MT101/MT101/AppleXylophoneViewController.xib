@@ -48,7 +48,7 @@
 						<string key="NSFrameSize">{480, 256}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="601754031"/>
+						<reference key="NSNextKeyView" ref="623534185"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
@@ -68,7 +68,7 @@
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<float key="IBUIValue">0.75</float>
 					</object>
-					<object class="IBUIToolbar" id="601754031">
+					<object class="IBUIToolbar" id="623534185">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">266</int>
 						<string key="NSFrame">{{0, 256}, {480, 44}}</string>
@@ -81,21 +81,21 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSMutableArray" key="IBUIItems">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIBarButtonItem" id="697971945">
+							<object class="IBUIBarButtonItem" id="901051953">
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<reference key="IBUIToolbar" ref="601754031"/>
+								<reference key="IBUIToolbar" ref="623534185"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
-							<object class="IBUIBarButtonItem" id="679502298">
+							<object class="IBUIBarButtonItem" id="623275644">
 								<string key="IBUITitle">Close</string>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<float key="IBUIWidth">129</float>
 								<int key="IBUIStyle">2</int>
-								<reference key="IBUIToolbar" ref="601754031"/>
+								<reference key="IBUIToolbar" ref="623534185"/>
 							</object>
-							<object class="IBUIBarButtonItem" id="938910447">
+							<object class="IBUIBarButtonItem" id="46793193">
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<reference key="IBUIToolbar" ref="601754031"/>
+								<reference key="IBUIToolbar" ref="623534185"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
 						</object>
@@ -142,7 +142,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">onDoneButtonPress:</string>
-						<reference key="source" ref="679502298"/>
+						<reference key="source" ref="623275644"/>
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">11</int>
@@ -166,7 +166,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="348375537"/>
 							<reference ref="790537734"/>
-							<reference ref="601754031"/>
+							<reference ref="623534185"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -193,29 +193,29 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">7</int>
-						<reference key="object" ref="601754031"/>
+						<reference key="object" ref="623534185"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="697971945"/>
-							<reference ref="679502298"/>
-							<reference ref="938910447"/>
+							<reference ref="901051953"/>
+							<reference ref="623275644"/>
+							<reference ref="46793193"/>
 						</object>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">8</int>
-						<reference key="object" ref="679502298"/>
-						<reference key="parent" ref="601754031"/>
+						<reference key="object" ref="623275644"/>
+						<reference key="parent" ref="623534185"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">9</int>
-						<reference key="object" ref="697971945"/>
-						<reference key="parent" ref="601754031"/>
+						<reference key="object" ref="901051953"/>
+						<reference key="parent" ref="623534185"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">10</int>
-						<reference key="object" ref="938910447"/>
-						<reference key="parent" ref="601754031"/>
+						<reference key="object" ref="46793193"/>
+						<reference key="parent" ref="623534185"/>
 					</object>
 				</object>
 			</object>

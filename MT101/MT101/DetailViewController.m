@@ -39,7 +39,7 @@
     //[self.view addSubview:test.view];
    // test.modalTransitionStyle = UIViewAnimationOptionTransitionFlipFromLeft;
    // test.modalPresentationStyle = UIViewAnimationOptionTransitionFlipFromLeft;
-    self.modalPresentationStyle = UIModalPresentationPageSheet;
+    //self.modalPresentationStyle = UIModalPresentationPageSheet;
     [self presentModalViewController:test animated:YES];
     
 
