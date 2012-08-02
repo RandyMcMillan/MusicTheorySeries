@@ -2,13 +2,14 @@
 //  DetailViewController.m
 //  MT101
 //
-//  Created by David McMahon on 4/10/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Randy McMillan on 8/2/12.
+//  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 
 #import "DetailViewController.h"
 #import "AppleXylophoneViewController.h"
 #import "AeolianViewController.h"
+#import "CircleOfFifthsViewController.h"
 
 
 @interface DetailViewController (){
@@ -16,6 +17,7 @@
     MPMoviePlayerViewController *moviePlayer;
     AppleXylophoneViewController *test;
     AeolianViewController *aeolianVC;
+    CircleOfFifthsViewController *circleOfFifths;
     
 }
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -44,6 +46,15 @@
         [self presentModalViewController:aeolianVC animated:YES];
 
     }
+    
+    if (interactiveToDisplay == @"circleOfFifthsVC") {
+        
+        NSLog(@"displayInteractive");
+        CircleOfFifthsViewController *circleOfFifthsVC = [[CircleOfFifthsViewController alloc]init];
+        [self presentModalViewController:circleOfFifthsVC animated:YES];
+        
+    }
+
     
     
  //   [self presentModalViewController:test animated:YES];
@@ -135,6 +146,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     self.detailDescriptionLabel = nil;
+    aeolianVC = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {

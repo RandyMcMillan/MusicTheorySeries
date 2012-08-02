@@ -46,7 +46,7 @@
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
 			</object>
-			<object class="IBUIViewController" id="725365736">
+			<object class="IBUIViewController" id="771121774">
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
 					<int key="IBUIStatusBarStyle">2</int>
 				</object>
@@ -123,7 +123,6 @@
 								<string key="NSFrame">{{436, 8}, {225, 29}}</string>
 								<reference key="NSSuperview" ref="359118249"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -148,7 +147,6 @@
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-						<float key="IBUIAlpha">0.0</float>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<array class="NSMutableArray" key="IBUIItems">
 							<object class="IBUIBarButtonItem" id="11828992">
@@ -334,7 +332,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">85</int>
-						<reference key="object" ref="725365736"/>
+						<reference key="object" ref="771121774"/>
 						<reference key="parent" ref="0"/>
 					</object>
 				</array>
@@ -413,6 +411,28 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">CircleOfFifthsViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="mixerOutputGainChanged:">UISlider</string>
+						<string key="onDoneButtonPress:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="mixerOutputGainChanged:">
+							<string key="name">mixerOutputGainChanged:</string>
+							<string key="candidateClassName">UISlider</string>
+						</object>
+						<object class="IBActionInfo" key="onDoneButtonPress:">
+							<string key="name">onDoneButtonPress:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/CircleOfFifthsViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">DetailViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
@@ -431,6 +451,7 @@
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="aeolianVC">AeolianViewController</string>
+						<string key="circleOfFifthsVC">CircleOfFifthsViewController</string>
 						<string key="detailDescriptionLabel">UILabel</string>
 						<string key="imageView">UIImageView</string>
 						<string key="interactiveToDisplay">NSString</string>
@@ -441,6 +462,10 @@
 						<object class="IBToOneOutletInfo" key="aeolianVC">
 							<string key="name">aeolianVC</string>
 							<string key="candidateClassName">AeolianViewController</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="circleOfFifthsVC">
+							<string key="name">circleOfFifthsVC</string>
+							<string key="candidateClassName">CircleOfFifthsViewController</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="detailDescriptionLabel">
 							<string key="name">detailDescriptionLabel</string>

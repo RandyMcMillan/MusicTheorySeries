@@ -2,10 +2,9 @@
 //  AppleXylophone.h
 //  AudioMeetupDemo
 //
-//  Created by Barry Ezell on 6/13/11.
-//  Copyright 2011 DOCKMARKET LLC. All rights reserved.
+//  Created by Randy McMillan on 8/2/12.
+//  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
-
 #import <UIKit/UIKit.h>
 #import "MixerHostAudio.h"
 

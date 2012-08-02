@@ -2,8 +2,8 @@
 //  MasterViewController.m
 //  MT101
 //
-//  Created by David McMahon on 4/10/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Randy McMillan on 8/2/12.
+//  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 
 #import "MasterViewController.h"
@@ -36,21 +36,21 @@
        
     videoList = [[NSArray alloc] initWithObjects:
                  @"Aeolian",
-                 @"RollingClouds",
+                 @"CircleOfFifths",
                  @"SunInClouds",
                  @"UnderWater",
                  @"WindyTrees", 
                  nil];
     
     imageList = [[NSArray alloc] initWithObjects:
-                 [UIImage imageNamed: @"Aeolian.png"],
-                 [UIImage imageNamed:@"clouds.png"],
+                 [UIImage imageNamed:@"Aeolian.png"],
+                 [UIImage imageNamed:@"CircleOfFifths.png"],
                  [UIImage imageNamed:@"sunset.png"],
                  [UIImage imageNamed:@"underwater.png"], 
-                 [UIImage imageNamed: @"trees.png"],
+                 [UIImage imageNamed:@"trees.png"],
                  nil];
     
-    interactiveList = [[NSArray alloc] initWithObjects:@"aeolianVC",@"",@"",@"",@"",nil];
+    interactiveList = [[NSArray alloc] initWithObjects:@"aeolianVC",@"circleOfFifthsVC",@"",@"",@"",nil];
 }
 
 - (void)viewDidUnload

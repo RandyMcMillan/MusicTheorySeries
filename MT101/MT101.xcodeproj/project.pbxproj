@@ -56,7 +56,6 @@
 		486B05E815BF2C1C00B3F10D /* WholeToneScaleFromC.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05BE15BF2C1C00B3F10D /* WholeToneScaleFromC.svg */; };
 		486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05ED15BF334A00B3F10D /* icon@2x.png */; };
 		486B05F415BF371E00B3F10D /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05F315BF371E00B3F10D /* welcome.png */; };
-		48893ACF15C48F3C00A382BC /* Aeolian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 48893ACD15C48F3C00A382BC /* Aeolian.ai */; };
 		48893AD015C48F3C00A382BC /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 48893ACE15C48F3C00A382BC /* Aeolian.png */; };
 		48AF3EAE15C4A222005C667B /* Aeolian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48AF3EAD15C4A222005C667B /* Aeolian.mp4 */; };
 		48BF0C3015C9AC3400F0F1A0 /* vib_0.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */; };
@@ -67,6 +66,10 @@
 		48BF0C3515C9AC3400F0F1A0 /* vib_5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */; };
 		48FAB51E15CAF90A0087DCFA /* AeolianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */; };
+		48FAB52215CB12EA0087DCFA /* CircleOfFifths.png in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB52115CB12EA0087DCFA /* CircleOfFifths.png */; };
+		48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */; };
+		48FAB52715CB13930087DCFA /* CircleOfFifthsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		48FAB56115CB1CA70087DCFA /* CircleOfFifths.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB56015CB1CA70087DCFA /* CircleOfFifths.mp4 */; };
 		B225A72B1534CF59006FD46F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72A1534CF59006FD46F /* UIKit.framework */; };
 		B225A72D1534CF59006FD46F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72C1534CF59006FD46F /* Foundation.framework */; };
 		B225A72F1534CF59006FD46F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72E1534CF59006FD46F /* CoreGraphics.framework */; };
@@ -143,7 +146,6 @@
 		486B05BE15BF2C1C00B3F10D /* WholeToneScaleFromC.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WholeToneScaleFromC.svg; sourceTree = "<group>"; };
 		486B05ED15BF334A00B3F10D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		486B05F315BF371E00B3F10D /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = SOURCE_ROOT; };
-		48893ACD15C48F3C00A382BC /* Aeolian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aeolian.ai; sourceTree = "<group>"; };
 		48893ACE15C48F3C00A382BC /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
 		48AF3EAD15C4A222005C667B /* Aeolian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Aeolian.mp4; path = Movies/Aeolian.mp4; sourceTree = SOURCE_ROOT; };
 		48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_0.aiff; path = ../vib_0.aiff; sourceTree = "<group>"; };
@@ -155,6 +157,11 @@
 		48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeolianViewController.h; path = MT101/AeolianViewController.h; sourceTree = "<group>"; };
 		48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AeolianViewController.m; path = MT101/AeolianViewController.m; sourceTree = "<group>"; };
 		48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AeolianViewController.xib; path = MT101/AeolianViewController.xib; sourceTree = "<group>"; };
+		48FAB52115CB12EA0087DCFA /* CircleOfFifths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CircleOfFifths.png; path = MT101/Art/ScalePNGs/CircleOfFifths.png; sourceTree = SOURCE_ROOT; };
+		48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CircleOfFifthsViewController.xib; path = MT101/CircleOfFifthsViewController.xib; sourceTree = "<group>"; };
+		48FAB52515CB13930087DCFA /* CircleOfFifthsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleOfFifthsViewController.h; path = MT101/CircleOfFifthsViewController.h; sourceTree = "<group>"; };
+		48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleOfFifthsViewController.m; path = MT101/CircleOfFifthsViewController.m; sourceTree = "<group>"; };
+		48FAB56015CB1CA70087DCFA /* CircleOfFifths.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = CircleOfFifths.mp4; path = Movies/CircleOfFifths.mp4; sourceTree = SOURCE_ROOT; };
 		B225A7261534CF59006FD46F /* MT101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B225A72A1534CF59006FD46F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B225A72C1534CF59006FD46F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -254,7 +261,7 @@
 		48893ACC15C48F3C00A382BC /* ScalePNGs */ = {
 			isa = PBXGroup;
 			children = (
-				48893ACD15C48F3C00A382BC /* Aeolian.ai */,
+				48FAB52115CB12EA0087DCFA /* CircleOfFifths.png */,
 				48893ACE15C48F3C00A382BC /* Aeolian.png */,
 			);
 			path = ScalePNGs;
@@ -276,6 +283,8 @@
 		48FAB51815CAF84F0087DCFA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				48FAB52515CB13930087DCFA /* CircleOfFifthsViewController.h */,
+				48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */,
 				48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */,
 				48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */,
 				B225A73C1534CF59006FD46F /* MasterViewController.h */,
@@ -291,6 +300,7 @@
 		48FAB51A15CAF8710087DCFA /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */,
 				48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */,
 				4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */,
 				B225A7421534CF59006FD46F /* MasterViewController.xib */,
@@ -377,6 +387,7 @@
 		B225A74D1534CFBE006FD46F /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				48FAB56015CB1CA70087DCFA /* CircleOfFifths.mp4 */,
 				48AF3EAD15C4A222005C667B /* Aeolian.mp4 */,
 				B225A7621534D24D006FD46F /* GreenBeam.mp4 */,
 				B225A7631534D24D006FD46F /* RollingClouds.mp4 */,
@@ -495,7 +506,6 @@
 				486B05E815BF2C1C00B3F10D /* WholeToneScaleFromC.svg in Resources */,
 				486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */,
 				486B05F415BF371E00B3F10D /* welcome.png in Resources */,
-				48893ACF15C48F3C00A382BC /* Aeolian.ai in Resources */,
 				48893AD015C48F3C00A382BC /* Aeolian.png in Resources */,
 				48AF3EAE15C4A222005C667B /* Aeolian.mp4 in Resources */,
 				4825A36215C4DB2D006F0C46 /* AppleXylophoneViewController.xib in Resources */,
@@ -506,6 +516,9 @@
 				48BF0C3415C9AC3400F0F1A0 /* vib_4.aiff in Resources */,
 				48BF0C3515C9AC3400F0F1A0 /* vib_5.aiff in Resources */,
 				48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */,
+				48FAB52215CB12EA0087DCFA /* CircleOfFifths.png in Resources */,
+				48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */,
+				48FAB56115CB1CA70087DCFA /* CircleOfFifths.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +536,7 @@
 				4825A36115C4DB2D006F0C46 /* AppleXylophoneViewController.m in Sources */,
 				4825A36615C4DB43006F0C46 /* MixerHostAudio.m in Sources */,
 				48FAB51E15CAF90A0087DCFA /* AeolianViewController.m in Sources */,
+				48FAB52715CB13930087DCFA /* CircleOfFifthsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

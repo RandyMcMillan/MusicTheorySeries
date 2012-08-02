@@ -2,14 +2,15 @@
 //  DetailViewController.h
 //  MT101
 //
-//  Created by David McMahon on 4/10/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Randy McMillan on 8/2/12.
+//  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "AppleXylophoneViewController.h"
 #import "AeolianViewController.h"
+#import "CircleOfFifthsViewController.h"
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
 
@@ -24,6 +25,7 @@
 
 @property(nonatomic,retain) IBOutlet AppleXylophoneViewController *viewController;
 @property(nonatomic,retain) IBOutlet AeolianViewController *aeolianVC;
+@property(nonatomic,retain) IBOutlet CircleOfFifthsViewController *circleOfFifthsVC;
 
 
 
