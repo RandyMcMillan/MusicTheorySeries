@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppleXylophoneViewController.h"
+#import "AeolianViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -15,6 +16,8 @@
 
 @property (strong, nonatomic) UISplitViewController *splitViewController;
 @property (nonatomic, retain) IBOutlet AppleXylophoneViewController *viewController;
+@property (nonatomic, retain) IBOutlet AeolianViewController *aeolianVC;
+
 
 
 @end

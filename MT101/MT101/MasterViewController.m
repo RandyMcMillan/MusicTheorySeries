@@ -7,7 +7,6 @@
 //
 
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
 
 @interface MasterViewController () {
@@ -51,7 +50,7 @@
                  [UIImage imageNamed: @"trees.png"],
                  nil];
     
-    interactiveList = [[NSArray alloc] initWithObjects:@"",@"",nil];
+    interactiveList = [[NSArray alloc] initWithObjects:@"aeolianVC",@"",nil];
 }
 
 - (void)viewDidUnload
@@ -112,6 +111,7 @@
     //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
     self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
     self.detailViewController.imageView.image = [imageList objectAtIndex:indexPath.row];
+    self.detailViewController.interactiveToDisplay = [interactiveList objectAtIndex:indexPath.row];
     
 }
 

@@ -65,6 +65,8 @@
 		48BF0C3315C9AC3400F0F1A0 /* vib_3.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2D15C9AC3400F0F1A0 /* vib_3.aiff */; };
 		48BF0C3415C9AC3400F0F1A0 /* vib_4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */; };
 		48BF0C3515C9AC3400F0F1A0 /* vib_5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */; };
+		48FAB51E15CAF90A0087DCFA /* AeolianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */; };
 		B225A72B1534CF59006FD46F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72A1534CF59006FD46F /* UIKit.framework */; };
 		B225A72D1534CF59006FD46F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72C1534CF59006FD46F /* Foundation.framework */; };
 		B225A72F1534CF59006FD46F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72E1534CF59006FD46F /* CoreGraphics.framework */; };
@@ -150,6 +152,9 @@
 		48BF0C2D15C9AC3400F0F1A0 /* vib_3.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_3.aiff; path = ../vib_3.aiff; sourceTree = "<group>"; };
 		48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_4.aiff; path = ../vib_4.aiff; sourceTree = "<group>"; };
 		48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_5.aiff; path = ../vib_5.aiff; sourceTree = "<group>"; };
+		48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeolianViewController.h; path = MT101/AeolianViewController.h; sourceTree = "<group>"; };
+		48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AeolianViewController.m; path = MT101/AeolianViewController.m; sourceTree = "<group>"; };
+		48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AeolianViewController.xib; path = MT101/AeolianViewController.xib; sourceTree = "<group>"; };
 		B225A7261534CF59006FD46F /* MT101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B225A72A1534CF59006FD46F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B225A72C1534CF59006FD46F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -271,6 +276,8 @@
 		48FAB51815CAF84F0087DCFA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */,
+				48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */,
 				B225A73C1534CF59006FD46F /* MasterViewController.h */,
 				B225A73D1534CF59006FD46F /* MasterViewController.m */,
 				B225A73F1534CF59006FD46F /* DetailViewController.h */,
@@ -284,6 +291,7 @@
 		48FAB51A15CAF8710087DCFA /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */,
 				4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */,
 				B225A7421534CF59006FD46F /* MasterViewController.xib */,
 				B225A7451534CF59006FD46F /* DetailViewController.xib */,
@@ -497,6 +505,7 @@
 				48BF0C3315C9AC3400F0F1A0 /* vib_3.aiff in Resources */,
 				48BF0C3415C9AC3400F0F1A0 /* vib_4.aiff in Resources */,
 				48BF0C3515C9AC3400F0F1A0 /* vib_5.aiff in Resources */,
+				48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +522,7 @@
 				B225A7411534CF59006FD46F /* DetailViewController.m in Sources */,
 				4825A36115C4DB2D006F0C46 /* AppleXylophoneViewController.m in Sources */,
 				4825A36615C4DB43006F0C46 /* MixerHostAudio.m in Sources */,
+				48FAB51E15CAF90A0087DCFA /* AeolianViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

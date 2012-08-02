@@ -8,12 +8,14 @@
 
 #import "DetailViewController.h"
 #import "AppleXylophoneViewController.h"
+#import "AeolianViewController.h"
 
 
 @interface DetailViewController (){
     
     MPMoviePlayerViewController *moviePlayer;
     AppleXylophoneViewController *test;
+    AeolianViewController *aeolianVC;
     
 }
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -26,7 +28,7 @@
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 @synthesize masterPopoverController = _masterPopoverController;
 
-@synthesize imageView,MovieToPlay;
+@synthesize imageView,MovieToPlay,interactiveToDisplay;
 
 #pragma mark - Managing the detail item
 
@@ -35,12 +37,16 @@
 
     NSLog(@"displayInteractive");
     
-    AppleXylophoneViewController *test = [[AppleXylophoneViewController alloc]init];
+  //  AppleXylophoneViewController *test = [[AppleXylophoneViewController alloc]init];
+    AeolianViewController *aeolianVC = [[AeolianViewController alloc]init];
     //[self.view addSubview:test.view];
    // test.modalTransitionStyle = UIViewAnimationOptionTransitionFlipFromLeft;
    // test.modalPresentationStyle = UIViewAnimationOptionTransitionFlipFromLeft;
     //self.modalPresentationStyle = UIModalPresentationPageSheet;
-    [self presentModalViewController:test animated:YES];
+    
+    [self presentModalViewController:aeolianVC animated:YES];
+ //   [self presentModalViewController:test animated:YES];
+    
     
 
 }

@@ -6,10 +6,9 @@
 //  Copyright 2011 DOCKMARKET LLC. All rights reserved.
 //
 
-#import "AppleXylophoneViewController.h"
+#import "AeolianViewController.h"
 
-
-@implementation AppleXylophoneViewController
+@implementation AeolianViewController
 
 @synthesize mixerHost;
 
