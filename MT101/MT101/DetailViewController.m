@@ -33,18 +33,19 @@
 #pragma mark - Managing the detail item
 
 -(IBAction)displayInteractive:(id)sender{
-
-
-    NSLog(@"displayInteractive");
     
-  //  AppleXylophoneViewController *test = [[AppleXylophoneViewController alloc]init];
-    AeolianViewController *aeolianVC = [[AeolianViewController alloc]init];
-    //[self.view addSubview:test.view];
-   // test.modalTransitionStyle = UIViewAnimationOptionTransitionFlipFromLeft;
-   // test.modalPresentationStyle = UIViewAnimationOptionTransitionFlipFromLeft;
-    //self.modalPresentationStyle = UIModalPresentationPageSheet;
+    NSLog(@"interactiveToDisplay = %@ ",interactiveToDisplay);
+
+   
+    if (interactiveToDisplay == @"aeolianVC") {
+        
+        NSLog(@"displayInteractive");
+        AeolianViewController *aeolianVC = [[AeolianViewController alloc]init];
+        [self presentModalViewController:aeolianVC animated:YES];
+
+    }
     
-    [self presentModalViewController:aeolianVC animated:YES];
+    
  //   [self presentModalViewController:test animated:YES];
     
     
