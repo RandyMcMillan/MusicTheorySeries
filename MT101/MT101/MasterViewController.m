@@ -50,7 +50,7 @@
                  [UIImage imageNamed: @"trees.png"],
                  nil];
     
-    interactiveList = [[NSArray alloc] initWithObjects:@"aeolianVC",@"",nil];
+    interactiveList = [[NSArray alloc] initWithObjects:@"aeolianVC",@"",@"",@"",@"",nil];
 }
 
 - (void)viewDidUnload
