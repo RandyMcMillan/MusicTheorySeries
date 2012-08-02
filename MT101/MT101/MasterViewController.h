@@ -14,6 +14,8 @@
     
     NSArray *videoList;
     NSArray *imageList;
+    NSArray *interactiveList;
+    
 }
 
 @property (strong, nonatomic) DetailViewController *detailViewController;

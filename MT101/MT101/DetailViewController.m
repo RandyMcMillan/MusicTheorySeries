@@ -36,7 +36,11 @@
     NSLog(@"displayInteractive");
     
     AppleXylophoneViewController *test = [[AppleXylophoneViewController alloc]init];
-    [self.view addSubview:test.view];
+    //[self.view addSubview:test.view];
+   // test.modalTransitionStyle = UIViewAnimationOptionTransitionFlipFromLeft;
+   // test.modalPresentationStyle = UIViewAnimationOptionTransitionFlipFromLeft;
+    self.modalPresentationStyle = UIModalPresentationPageSheet;
+    [self presentModalViewController:test animated:YES];
     
 
 }

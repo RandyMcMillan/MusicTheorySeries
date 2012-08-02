@@ -149,4 +149,11 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
+
+
+
 @end

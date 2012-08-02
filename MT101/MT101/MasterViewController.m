@@ -50,6 +50,8 @@
                  [UIImage imageNamed:@"underwater.png"], 
                  [UIImage imageNamed: @"trees.png"],
                  nil];
+    
+    interactiveList = [[NSArray alloc] initWithObjects:@"",@"",nil];
 }
 
 - (void)viewDidUnload
