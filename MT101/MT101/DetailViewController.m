@@ -139,6 +139,10 @@
     [self configureView];
    self.toolBar.alpha = 1.0;
 
+    
+    NSLog(@"width = %f",self.view.frame.size.width);
+    NSLog(@"height = %f",self.view.frame.size.height);
+
 }
 
 - (void)viewDidUnload
@@ -178,7 +182,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        //self.title = NSLocalizedString(@"Video Player", @"Video Player");
+        self.title = NSLocalizedString(@"Video Player", @"Video Player");
         
     }
     return self;

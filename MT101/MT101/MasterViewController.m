@@ -399,7 +399,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     };
     
-    NSString *mainLabelText;
+ //   NSString *mainLabelText;
   //  mainLabelText = @"test";
   //  mainLabel.text = mainLabelText;
   //  [cell.contentView addSubview:mainLabel];
@@ -495,8 +495,6 @@
     
     if (indexPath.section == 0) {
         //
-       
-        
         
         self.detailViewController.MovieToPlay = [videoList0 objectAtIndex:indexPath.row];
         //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
@@ -528,6 +526,7 @@
         self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
         self.detailViewController.imageView.image = [imageList2 objectAtIndex:indexPath.row];
         self.detailViewController.interactiveToDisplay = [interactiveList2 objectAtIndex:indexPath.row];
+
     }
     
     if (indexPath.section == 3) {
@@ -539,6 +538,7 @@
         self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
         self.detailViewController.imageView.image = [imageList3 objectAtIndex:indexPath.row];
         self.detailViewController.interactiveToDisplay = [interactiveList3 objectAtIndex:indexPath.row];
+
     }
     
     if (indexPath.section == 4) {
@@ -566,13 +566,8 @@
     if (indexPath.section == 6) {}
     if (indexPath.section == 7) {}
 
-    
-   // self.detailViewController.MovieToPlay = [videoList1 objectAtIndex:indexPath.row];
-    //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
-    //self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
-    //self.detailViewController.imageView.image = [imageList objectAtIndex:indexPath.row];
-    //self.detailViewController.interactiveToDisplay = [interactiveList objectAtIndex:indexPath.row];
-    
+    self.detailViewController.title = self.detailViewController.MovieToPlay;
+
 }
 
 @end
