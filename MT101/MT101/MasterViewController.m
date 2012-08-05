@@ -47,7 +47,7 @@
                       nil];
     
     videoList0 = [[NSArray alloc] initWithObjects:
-                  @"0Aeolian",
+                  @"Aeolian",
                   @"Circle Of Fifths",
                   @"SunInClouds",
                   @"UnderWater",
@@ -56,7 +56,7 @@
 
        
     videoList1 = [[NSArray alloc] initWithObjects:
-                 @"1Aeolian",
+                 @"Aeolian",
                  @"Circle Of Fifths",
                  @"SunInClouds",
                  @"UnderWater",
