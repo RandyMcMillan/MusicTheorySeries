@@ -12,6 +12,7 @@
 		4825A36615C4DB43006F0C46 /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A36515C4DB43006F0C46 /* MixerHostAudio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4825A36815C4DBC3006F0C46 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */; };
 		4825A36A15C4DBCF006F0C46 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36915C4DBCF006F0C46 /* AVFoundation.framework */; };
+		486AD37215CE0B7D0054753C /* DGMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AD37115CE0B7D0054753C /* DGMenuItemCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		486B05BF15BF2C1C00B3F10D /* Aeolian.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059515BF2C1C00B3F10D /* Aeolian.svg */; };
 		486B05C015BF2C1C00B3F10D /* AltoClef.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059615BF2C1C00B3F10D /* AltoClef.svg */; };
 		486B05C115BF2C1C00B3F10D /* BariToneClef.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059715BF2C1C00B3F10D /* BariToneClef.svg */; };
@@ -102,6 +103,8 @@
 		4825A36515C4DB43006F0C46 /* MixerHostAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixerHostAudio.m; sourceTree = "<group>"; };
 		4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4825A36915C4DBCF006F0C46 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		486AD37015CE0B7D0054753C /* DGMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGMenuItemCell.h; sourceTree = "<group>"; };
+		486AD37115CE0B7D0054753C /* DGMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGMenuItemCell.m; sourceTree = "<group>"; };
 		486B059515BF2C1C00B3F10D /* Aeolian.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Aeolian.svg; sourceTree = "<group>"; };
 		486B059615BF2C1C00B3F10D /* AltoClef.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AltoClef.svg; sourceTree = "<group>"; };
 		486B059715BF2C1C00B3F10D /* BariToneClef.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BariToneClef.svg; sourceTree = "<group>"; };
@@ -290,6 +293,8 @@
 				B225A73C1534CF59006FD46F /* MasterViewController.h */,
 				B225A73D1534CF59006FD46F /* MasterViewController.m */,
 				B225A73F1534CF59006FD46F /* DetailViewController.h */,
+				486AD37015CE0B7D0054753C /* DGMenuItemCell.h */,
+				486AD37115CE0B7D0054753C /* DGMenuItemCell.m */,
 				B225A7401534CF59006FD46F /* DetailViewController.m */,
 				4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */,
 				4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */,
@@ -537,6 +542,7 @@
 				4825A36615C4DB43006F0C46 /* MixerHostAudio.m in Sources */,
 				48FAB51E15CAF90A0087DCFA /* AeolianViewController.m in Sources */,
 				48FAB52715CB13930087DCFA /* CircleOfFifthsViewController.m in Sources */,
+				486AD37215CE0B7D0054753C /* DGMenuItemCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

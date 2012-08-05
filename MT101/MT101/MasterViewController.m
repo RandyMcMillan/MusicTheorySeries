@@ -8,6 +8,9 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#define MAINLABEL_TAG 1
+#define SECONDLABEL_TAG 2
+#define PHOTO_TAG 3
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -33,6 +36,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    sectionHeader = [[NSArray alloc]initWithObjects:
+                      @"section 1",
+                      @"section 2",
+                      @"section 3",
+                      @"section 4",
+                      @"section 5",
+                      nil];
        
     videoList = [[NSArray alloc] initWithObjects:
                  @"Aeolian",
@@ -77,19 +88,51 @@
     return [videoList count];
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+	// The header for the section is the region name -- get this from the region at the section index.
+//	Region *region = [regions objectAtIndex:section];
+
+    return [sectionHeader objectAtIndex:section];//sectionHeaders;
+    
+}
+
+
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     
+    UILabel *mainLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, 220.0, 15.0)];
+    mainLabel.font = [UIFont systemFontOfSize:34.0];
+    mainLabel.textAlignment = UITextAlignmentRight;
+    mainLabel.textColor = [UIColor blackColor];
+    mainLabel.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight;
+    mainLabel.tag = MAINLABEL_TAG;
+
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+    };
+    
+    NSString *mainLabelText;
+    mainLabelText = @"test";
+    mainLabel.text = mainLabelText;
+ //   [cell.contentView addSubview:mainLabel];
 
 
     tableView.backgroundColor = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
     tableView.separatorColor = [UIColor lightGrayColor];
+
+    
+    NSString *imagePath = [[NSBundle mainBundle] pathForResource:[videoList objectAtIndex:indexPath.row] ofType:@"png"];
+    UIImage *theImage = [UIImage imageWithContentsOfFile:imagePath];
+    UIImageView *photo = [[UIImageView alloc] initWithFrame:CGRectMake(225.0, 0.0, 80.0, 45.0)];
+    photo.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight;
+    photo.tag = PHOTO_TAG;
+
+    photo.image = theImage;
+ //   [cell.contentView addSubview:photo];
 
 
     cell.textLabel.text = [videoList objectAtIndex:indexPath.row];

@@ -14,6 +14,7 @@
     NSArray *videoList;
     NSArray *imageList;
     NSArray *interactiveList;
+    NSArray *sectionHeader;
     
 }
 
