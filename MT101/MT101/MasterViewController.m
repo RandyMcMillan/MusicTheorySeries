@@ -44,12 +44,6 @@
                       @"section 4",
                       @"section 5",
                      @"working",
-                     @"Clefs",
-                     @"section 2",
-                     @"section 3",
-                     @"section 4",
-                     @"section 5",
-                     @"working",
                       nil];
     
     videoList0 = [[NSArray alloc] initWithObjects:
@@ -57,13 +51,6 @@
                   @"Circle Of Fifths",
                   @"SunInClouds",
                   @"UnderWater",
-                  @"WindyTrees",
-                  @"WindyTrees",
-                  @"Aeolian",
-                  @"Circle Of Fifths",
-                  @"SunInClouds",
-                  @"UnderWater",
-                  @"WindyTrees",
                   @"WindyTrees",
                   nil];
 
@@ -74,13 +61,6 @@
                  @"SunInClouds",
                  @"UnderWater",
                  @"WindyTrees",
-                 @"WindyTrees",
-                 @"Aeolian",
-                 @"Circle Of Fifths",
-                 @"SunInClouds",
-                 @"UnderWater",
-                 @"WindyTrees",
-                 @"WindyTrees",
                  nil];
     
     videoList2 = [[NSArray alloc] initWithObjects:
@@ -89,26 +69,12 @@
                   @"SunInClouds",
                   @"UnderWater",
                   @"WindyTrees",
-                  @"WindyTrees",
-                  @"Aeolian",
-                  @"Circle Of Fifths",
-                  @"SunInClouds",
-                  @"UnderWater",
-                  @"WindyTrees",
-                  @"WindyTrees",
                   nil];
     videoList3 = [[NSArray alloc] initWithObjects:
                   @"3Aeolian",
                   @"Circle Of Fifths",
                   @"SunInClouds",
                   @"UnderWater",
-                  @"WindyTrees",
-                  @"WindyTrees",
-                  @"Aeolian",
-                  @"Circle Of Fifths",
-                  @"SunInClouds",
-                  @"UnderWater",
-                  @"WindyTrees",
                   @"WindyTrees",
                   nil];
     videoList4 = [[NSArray alloc] initWithObjects:
@@ -117,26 +83,12 @@
                   @"SunInClouds",
                   @"UnderWater",
                   @"WindyTrees",
-                  @"WindyTrees",
-                  @"Aeolian",
-                  @"Circle Of Fifths",
-                  @"SunInClouds",
-                  @"UnderWater",
-                  @"WindyTrees",
-                  @"WindyTrees",
                   nil];
     videoList5 = [[NSArray alloc] initWithObjects:
                   @"5Aeolian",
                   @"Circle Of Fifths",
                   @"SunInClouds",
                   @"UnderWater",
-                  @"WindyTrees",
-                  @"WindyTrees",
-                  @"Aeolian",
-                  @"Circle Of Fifths",
-                  @"SunInClouds",
-                  @"UnderWater",
-                  @"WindyTrees",
                   @"WindyTrees",
                   nil];
 
@@ -225,7 +177,7 @@
         
     } else {}
     
-    return 10;
+  //  return 10;
     
     
 }
@@ -268,13 +220,13 @@
     tableView.separatorColor = [UIColor lightGrayColor];
 
     
-    NSString *imagePath = [[NSBundle mainBundle] pathForResource:[videoList1 objectAtIndex:indexPath.row] ofType:@"png"];
-    UIImage *theImage = [UIImage imageWithContentsOfFile:imagePath];
-    UIImageView *photo = [[UIImageView alloc] initWithFrame:CGRectMake(225.0, 0.0, 80.0, 45.0)];
-    photo.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight;
-    photo.tag = PHOTO_TAG;
+  //  NSString *imagePath = [[NSBundle mainBundle] pathForResource:[videoList1 objectAtIndex:indexPath.row] ofType:@"png"];
+  //  UIImage *theImage = [UIImage imageWithContentsOfFile:imagePath];
+  //  UIImageView *photo = [[UIImageView alloc] initWithFrame:CGRectMake(225.0, 0.0, 80.0, 45.0)];
+  //  photo.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight;
+  //  photo.tag = PHOTO_TAG;
 
-    photo.image = theImage;
+   // photo.image = theImage;
 //    [cell.contentView addSubview:photo];
 
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:18.0];
