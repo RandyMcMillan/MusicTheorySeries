@@ -137,7 +137,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
-   self.toolBar.alpha = 1.0;
+  // self.toolBar.alpha = 1.0;
 
     
     NSLog(@"width = %f",self.view.frame.size.width);
@@ -182,7 +182,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Video Player", @"Video Player");
+        self.title = NSLocalizedString(@"Music Theory 101", @"Music Theory 101");
         
     }
     return self;

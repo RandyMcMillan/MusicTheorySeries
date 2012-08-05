@@ -561,6 +561,8 @@
     
     if (indexPath.section == 6) {}
     if (indexPath.section == 7) {}
+    
+    self.detailViewController.toolBar.alpha = 1.0;
 
     self.detailViewController.title = self.detailViewController.MovieToPlay;
 
