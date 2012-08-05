@@ -58,6 +58,7 @@
 		486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05ED15BF334A00B3F10D /* icon@2x.png */; };
 		486B05F415BF371E00B3F10D /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05F315BF371E00B3F10D /* welcome.png */; };
 		48893AD015C48F3C00A382BC /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 48893ACE15C48F3C00A382BC /* Aeolian.png */; };
+		489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */; };
 		48AF3EAE15C4A222005C667B /* Aeolian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48AF3EAD15C4A222005C667B /* Aeolian.mp4 */; };
 		48BF0C3015C9AC3400F0F1A0 /* vib_0.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */; };
 		48BF0C3115C9AC3400F0F1A0 /* vib_1.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2B15C9AC3400F0F1A0 /* vib_1.aiff */; };
@@ -151,6 +152,7 @@
 		486B05ED15BF334A00B3F10D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		486B05F315BF371E00B3F10D /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = SOURCE_ROOT; };
 		48893ACE15C48F3C00A382BC /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
+		489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		48AF3EAD15C4A222005C667B /* Aeolian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Aeolian.mp4; path = Movies/Aeolian.mp4; sourceTree = SOURCE_ROOT; };
 		48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_0.aiff; path = ../vib_0.aiff; sourceTree = "<group>"; };
 		48BF0C2B15C9AC3400F0F1A0 /* vib_1.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_1.aiff; path = ../vib_1.aiff; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
+				489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */,
 				48FAB51A15CAF8710087DCFA /* XIBs */,
 				48FAB51815CAF84F0087DCFA /* ViewControllers */,
 				B225A7301534CF59006FD46F /* MT101 */,
@@ -528,6 +531,7 @@
 				48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */,
 				48FAB56115CB1CA70087DCFA /* CircleOfFifths.mp4 in Resources */,
 				48F2DC5615CE251F00640AAB /* Circle Of Fifths.mp4 in Resources */,
+				489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
