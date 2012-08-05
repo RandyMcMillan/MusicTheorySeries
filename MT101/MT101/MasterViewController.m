@@ -38,29 +38,23 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     sectionHeader = [[NSArray alloc]initWithObjects:
-                      @"Clefs",
-                      @"section 2",
-                      @"section 3",
-                      @"section 4",
-                      @"section 5",
+                     @"The Grand Staff",
+                     @"Circle of Fifths",
+                     @"Clefs",
+                     @"Modes",
+                     @"section 3",
+                     @"section 4",
+                     @"section 5",
                      @"working",
                       nil];
     
     videoList0 = [[NSArray alloc] initWithObjects:
-                  @"Aeolian",
-                  @"Circle Of Fifths",
-                  @"SunInClouds",
-                  @"UnderWater",
-                  @"WindyTrees",
+                  @"The Grand Staff",
                   nil];
 
        
     videoList1 = [[NSArray alloc] initWithObjects:
-                 @"Aeolian",
                  @"Circle Of Fifths",
-                 @"SunInClouds",
-                 @"UnderWater",
-                 @"WindyTrees",
                  nil];
     
     videoList2 = [[NSArray alloc] initWithObjects:
@@ -72,10 +66,6 @@
                   nil];
     videoList3 = [[NSArray alloc] initWithObjects:
                   @"Aeolian",
-                  @"Circle Of Fifths",
-                  @"SunInClouds",
-                  @"UnderWater",
-                  @"WindyTrees",
                   nil];
     videoList4 = [[NSArray alloc] initWithObjects:
                   @"Aeolian",
@@ -94,18 +84,7 @@
 
     
     imageList0 = [[NSArray alloc] initWithObjects:
-                 [UIImage imageNamed:@"Aeolian.png"],
-                 [UIImage imageNamed:@"CircleOfFifths.png"],
-                 [UIImage imageNamed:@"sunset.png"],
-                 [UIImage imageNamed:@"underwater.png"], 
-                 [UIImage imageNamed:@"trees.png"],
-                 [UIImage imageNamed:@"trees.png"],
-                 [UIImage imageNamed:@"Aeolian.png"],
-                 [UIImage imageNamed:@"CircleOfFifths.png"],
-                 [UIImage imageNamed:@"sunset.png"],
-                 [UIImage imageNamed:@"underwater.png"],
-                 [UIImage imageNamed:@"trees.png"],
-                 [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"TheGrandStaff.png"],
                  nil];
     
     imageList1 = [[NSArray alloc] initWithObjects:
@@ -181,20 +160,7 @@
 
     
     interactiveList0 = [[NSArray alloc] initWithObjects:
-                        @"aeolianVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
+                        @"theGrandStaffVC",
                         nil];
     
     interactiveList1 = [[NSArray alloc] initWithObjects:

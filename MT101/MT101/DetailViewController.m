@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "GrandStaffViewController.h"
 #import "AppleXylophoneViewController.h"
 #import "AeolianViewController.h"
 #import "CircleOfFifthsViewController.h"
@@ -54,6 +55,15 @@
         [self presentModalViewController:circleOfFifthsVC animated:YES];
         
     }
+    
+    if (interactiveToDisplay == @"theGrandStaffVC") {
+        
+        NSLog(@"displayInteractive");
+        GrandStaffViewController *theGrandStaffVC = [[GrandStaffViewController alloc]init];
+        [self presentModalViewController:theGrandStaffVC animated:YES];
+        
+    }
+
 
     
     
