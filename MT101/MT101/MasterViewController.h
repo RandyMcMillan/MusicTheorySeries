@@ -18,8 +18,20 @@
     NSArray *videoList4;
     NSArray *videoList5;
 
-    NSArray *imageList;
-    NSArray *interactiveList;
+    NSArray *imageList0;
+    NSArray *imageList1;
+    NSArray *imageList2;
+    NSArray *imageList3;
+    NSArray *imageList4;
+    NSArray *imageList5;
+
+    NSArray *interactiveList0;
+    NSArray *interactiveList1;
+    NSArray *interactiveList2;
+    NSArray *interactiveList3;
+    NSArray *interactiveList4;
+    NSArray *interactiveList5;
+
     NSArray *sectionHeader;
     
 }

@@ -64,28 +64,28 @@
                  nil];
     
     videoList2 = [[NSArray alloc] initWithObjects:
-                  @"2Aeolian",
+                  @"Aeolian",
                   @"Circle Of Fifths",
                   @"SunInClouds",
                   @"UnderWater",
                   @"WindyTrees",
                   nil];
     videoList3 = [[NSArray alloc] initWithObjects:
-                  @"3Aeolian",
+                  @"Aeolian",
                   @"Circle Of Fifths",
                   @"SunInClouds",
                   @"UnderWater",
                   @"WindyTrees",
                   nil];
     videoList4 = [[NSArray alloc] initWithObjects:
-                  @"4Aeolian",
+                  @"Aeolian",
                   @"Circle Of Fifths",
                   @"SunInClouds",
                   @"UnderWater",
                   @"WindyTrees",
                   nil];
     videoList5 = [[NSArray alloc] initWithObjects:
-                  @"5Aeolian",
+                  @"Aeolian",
                   @"Circle Of Fifths",
                   @"SunInClouds",
                   @"UnderWater",
@@ -93,7 +93,7 @@
                   nil];
 
     
-    imageList = [[NSArray alloc] initWithObjects:
+    imageList0 = [[NSArray alloc] initWithObjects:
                  [UIImage imageNamed:@"Aeolian.png"],
                  [UIImage imageNamed:@"CircleOfFifths.png"],
                  [UIImage imageNamed:@"sunset.png"],
@@ -106,11 +106,200 @@
                  [UIImage imageNamed:@"underwater.png"],
                  [UIImage imageNamed:@"trees.png"],
                  [UIImage imageNamed:@"trees.png"],
-
-
                  nil];
     
-    interactiveList = [[NSArray alloc] initWithObjects:@"aeolianVC",@"circleOfFifthsVC",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",nil];
+    imageList1 = [[NSArray alloc] initWithObjects:
+                  [UIImage imageNamed:@"Aeolian.png"],
+                  [UIImage imageNamed:@"CircleOfFifths.png"],
+                  [UIImage imageNamed:@"sunset.png"],
+                  [UIImage imageNamed:@"underwater.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"Aeolian.png"],
+                  [UIImage imageNamed:@"CircleOfFifths.png"],
+                  [UIImage imageNamed:@"sunset.png"],
+                  [UIImage imageNamed:@"underwater.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  nil];
+    imageList2 = [[NSArray alloc] initWithObjects:
+                  [UIImage imageNamed:@"Aeolian.png"],
+                  [UIImage imageNamed:@"CircleOfFifths.png"],
+                  [UIImage imageNamed:@"sunset.png"],
+                  [UIImage imageNamed:@"underwater.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"Aeolian.png"],
+                  [UIImage imageNamed:@"CircleOfFifths.png"],
+                  [UIImage imageNamed:@"sunset.png"],
+                  [UIImage imageNamed:@"underwater.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  nil];
+    imageList3 = [[NSArray alloc] initWithObjects:
+                  [UIImage imageNamed:@"Aeolian.png"],
+                  [UIImage imageNamed:@"CircleOfFifths.png"],
+                  [UIImage imageNamed:@"sunset.png"],
+                  [UIImage imageNamed:@"underwater.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"Aeolian.png"],
+                  [UIImage imageNamed:@"CircleOfFifths.png"],
+                  [UIImage imageNamed:@"sunset.png"],
+                  [UIImage imageNamed:@"underwater.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  nil];
+    imageList4 = [[NSArray alloc] initWithObjects:
+                  [UIImage imageNamed:@"Aeolian.png"],
+                  [UIImage imageNamed:@"CircleOfFifths.png"],
+                  [UIImage imageNamed:@"sunset.png"],
+                  [UIImage imageNamed:@"underwater.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"Aeolian.png"],
+                  [UIImage imageNamed:@"CircleOfFifths.png"],
+                  [UIImage imageNamed:@"sunset.png"],
+                  [UIImage imageNamed:@"underwater.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  nil];
+    imageList5 = [[NSArray alloc] initWithObjects:
+                  [UIImage imageNamed:@"Aeolian.png"],
+                  [UIImage imageNamed:@"CircleOfFifths.png"],
+                  [UIImage imageNamed:@"sunset.png"],
+                  [UIImage imageNamed:@"underwater.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"Aeolian.png"],
+                  [UIImage imageNamed:@"CircleOfFifths.png"],
+                  [UIImage imageNamed:@"sunset.png"],
+                  [UIImage imageNamed:@"underwater.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  [UIImage imageNamed:@"trees.png"],
+                  nil];
+
+    
+    interactiveList0 = [[NSArray alloc] initWithObjects:
+                        @"aeolianVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        nil];
+    
+    interactiveList1 = [[NSArray alloc] initWithObjects:
+                        @"aeolianVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        nil];
+    interactiveList2 = [[NSArray alloc] initWithObjects:
+                        @"aeolianVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        nil];
+    interactiveList3 = [[NSArray alloc] initWithObjects:
+                        @"aeolianVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        nil];
+    interactiveList4 = [[NSArray alloc] initWithObjects:
+                        @"aeolianVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        nil];
+    interactiveList5 = [[NSArray alloc] initWithObjects:
+                        @"aeolianVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"circleOfFifthsVC",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        @"",
+                        nil];
+
+    
+    
+    
 }
 
 - (void)viewDidUnload
@@ -177,7 +366,7 @@
         
     } else {}
     
-  //  return 10;
+    return 0;
     
     
 }
@@ -301,13 +490,88 @@
 }
 
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    self.detailViewController.MovieToPlay = [videoList1 objectAtIndex:indexPath.row];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    if (indexPath.section == 0) {
+        //
+       
+        
+        
+        self.detailViewController.MovieToPlay = [videoList0 objectAtIndex:indexPath.row];
+        //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
+        self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+        self.detailViewController.imageView.image = [imageList0 objectAtIndex:indexPath.row];
+        self.detailViewController.interactiveToDisplay = [interactiveList0 objectAtIndex:indexPath.row];
+        
+    }
+    
+    if (indexPath.section == 1) {
+        //
+        
+        
+        
+        self.detailViewController.MovieToPlay = [videoList1 objectAtIndex:indexPath.row];
+        //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
+        self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+        self.detailViewController.imageView.image = [imageList1 objectAtIndex:indexPath.row];
+        self.detailViewController.interactiveToDisplay = [interactiveList1 objectAtIndex:indexPath.row];
+        
+    }
+    
+    if (indexPath.section == 2) {
+        //
+        
+        
+        self.detailViewController.MovieToPlay = [videoList2 objectAtIndex:indexPath.row];
+        //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
+        self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+        self.detailViewController.imageView.image = [imageList2 objectAtIndex:indexPath.row];
+        self.detailViewController.interactiveToDisplay = [interactiveList2 objectAtIndex:indexPath.row];
+    }
+    
+    if (indexPath.section == 3) {
+        //
+        
+        
+        self.detailViewController.MovieToPlay = [videoList3 objectAtIndex:indexPath.row];
+        //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
+        self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+        self.detailViewController.imageView.image = [imageList3 objectAtIndex:indexPath.row];
+        self.detailViewController.interactiveToDisplay = [interactiveList3 objectAtIndex:indexPath.row];
+    }
+    
+    if (indexPath.section == 4) {
+        //
+        
+        self.detailViewController.MovieToPlay = [videoList4 objectAtIndex:indexPath.row];
+        //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
+        self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+        self.detailViewController.imageView.image = [imageList4 objectAtIndex:indexPath.row];
+        self.detailViewController.interactiveToDisplay = [interactiveList4 objectAtIndex:indexPath.row];
+        
+    }
+    
+    if (indexPath.section == 5) {
+        //
+        
+        self.detailViewController.MovieToPlay = [videoList5 objectAtIndex:indexPath.row];
+        //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
+        self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+        self.detailViewController.imageView.image = [imageList5 objectAtIndex:indexPath.row];
+        self.detailViewController.interactiveToDisplay = [interactiveList5 objectAtIndex:indexPath.row];
+        
+    }
+    
+    if (indexPath.section == 6) {}
+    if (indexPath.section == 7) {}
+
+    
+   // self.detailViewController.MovieToPlay = [videoList1 objectAtIndex:indexPath.row];
     //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
-    self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
-    self.detailViewController.imageView.image = [imageList objectAtIndex:indexPath.row];
-    self.detailViewController.interactiveToDisplay = [interactiveList objectAtIndex:indexPath.row];
+    //self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+    //self.detailViewController.imageView.image = [imageList objectAtIndex:indexPath.row];
+    //self.detailViewController.interactiveToDisplay = [interactiveList objectAtIndex:indexPath.row];
     
 }
 
