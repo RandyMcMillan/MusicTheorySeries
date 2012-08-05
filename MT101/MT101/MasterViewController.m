@@ -507,8 +507,6 @@
     if (indexPath.section == 1) {
         //
         
-        
-        
         self.detailViewController.MovieToPlay = [videoList1 objectAtIndex:indexPath.row];
         //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
         self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
@@ -520,7 +518,6 @@
     if (indexPath.section == 2) {
         //
         
-        
         self.detailViewController.MovieToPlay = [videoList2 objectAtIndex:indexPath.row];
         //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
         self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
@@ -531,7 +528,6 @@
     
     if (indexPath.section == 3) {
         //
-        
         
         self.detailViewController.MovieToPlay = [videoList3 objectAtIndex:indexPath.row];
         //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
