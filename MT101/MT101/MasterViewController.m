@@ -47,7 +47,7 @@
        
     videoList = [[NSArray alloc] initWithObjects:
                  @"Aeolian",
-                 @"CircleOfFifths",
+                 @"Circle Of Fifths",
                  @"SunInClouds",
                  @"UnderWater",
                  @"WindyTrees", 
@@ -118,7 +118,7 @@
     NSString *mainLabelText;
     mainLabelText = @"test";
     mainLabel.text = mainLabelText;
-    [cell.contentView addSubview:mainLabel];
+  //  [cell.contentView addSubview:mainLabel];
 
 
     tableView.backgroundColor = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
@@ -132,8 +132,12 @@
     photo.tag = PHOTO_TAG;
 
     photo.image = theImage;
-    [cell.contentView addSubview:photo];
+//    [cell.contentView addSubview:photo];
 
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:18.0];
+ //   cell.textLabel.shadowColor = [UIColor whiteColor];
+   // cell.textLabel.shadowOffset = CGSizeMake(1, 1);
+    cell.textLabel.backgroundColor = [UIColor clearColor];
 
     cell.textLabel.text = [videoList objectAtIndex:indexPath.row];
     
