@@ -38,20 +38,108 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     sectionHeader = [[NSArray alloc]initWithObjects:
-                      @"section 1",
+                      @"Clefs",
                       @"section 2",
                       @"section 3",
                       @"section 4",
                       @"section 5",
+                     @"working",
+                     @"Clefs",
+                     @"section 2",
+                     @"section 3",
+                     @"section 4",
+                     @"section 5",
+                     @"working",
                       nil];
+    
+    videoList0 = [[NSArray alloc] initWithObjects:
+                  @"0Aeolian",
+                  @"Circle Of Fifths",
+                  @"SunInClouds",
+                  @"UnderWater",
+                  @"WindyTrees",
+                  @"WindyTrees",
+                  @"Aeolian",
+                  @"Circle Of Fifths",
+                  @"SunInClouds",
+                  @"UnderWater",
+                  @"WindyTrees",
+                  @"WindyTrees",
+                  nil];
+
        
-    videoList = [[NSArray alloc] initWithObjects:
+    videoList1 = [[NSArray alloc] initWithObjects:
+                 @"1Aeolian",
+                 @"Circle Of Fifths",
+                 @"SunInClouds",
+                 @"UnderWater",
+                 @"WindyTrees",
+                 @"WindyTrees",
                  @"Aeolian",
                  @"Circle Of Fifths",
                  @"SunInClouds",
                  @"UnderWater",
-                 @"WindyTrees", 
+                 @"WindyTrees",
+                 @"WindyTrees",
                  nil];
+    
+    videoList2 = [[NSArray alloc] initWithObjects:
+                  @"2Aeolian",
+                  @"Circle Of Fifths",
+                  @"SunInClouds",
+                  @"UnderWater",
+                  @"WindyTrees",
+                  @"WindyTrees",
+                  @"Aeolian",
+                  @"Circle Of Fifths",
+                  @"SunInClouds",
+                  @"UnderWater",
+                  @"WindyTrees",
+                  @"WindyTrees",
+                  nil];
+    videoList3 = [[NSArray alloc] initWithObjects:
+                  @"3Aeolian",
+                  @"Circle Of Fifths",
+                  @"SunInClouds",
+                  @"UnderWater",
+                  @"WindyTrees",
+                  @"WindyTrees",
+                  @"Aeolian",
+                  @"Circle Of Fifths",
+                  @"SunInClouds",
+                  @"UnderWater",
+                  @"WindyTrees",
+                  @"WindyTrees",
+                  nil];
+    videoList4 = [[NSArray alloc] initWithObjects:
+                  @"4Aeolian",
+                  @"Circle Of Fifths",
+                  @"SunInClouds",
+                  @"UnderWater",
+                  @"WindyTrees",
+                  @"WindyTrees",
+                  @"Aeolian",
+                  @"Circle Of Fifths",
+                  @"SunInClouds",
+                  @"UnderWater",
+                  @"WindyTrees",
+                  @"WindyTrees",
+                  nil];
+    videoList5 = [[NSArray alloc] initWithObjects:
+                  @"5Aeolian",
+                  @"Circle Of Fifths",
+                  @"SunInClouds",
+                  @"UnderWater",
+                  @"WindyTrees",
+                  @"WindyTrees",
+                  @"Aeolian",
+                  @"Circle Of Fifths",
+                  @"SunInClouds",
+                  @"UnderWater",
+                  @"WindyTrees",
+                  @"WindyTrees",
+                  nil];
+
     
     imageList = [[NSArray alloc] initWithObjects:
                  [UIImage imageNamed:@"Aeolian.png"],
@@ -59,9 +147,18 @@
                  [UIImage imageNamed:@"sunset.png"],
                  [UIImage imageNamed:@"underwater.png"], 
                  [UIImage imageNamed:@"trees.png"],
+                 [UIImage imageNamed:@"trees.png"],
+                 [UIImage imageNamed:@"Aeolian.png"],
+                 [UIImage imageNamed:@"CircleOfFifths.png"],
+                 [UIImage imageNamed:@"sunset.png"],
+                 [UIImage imageNamed:@"underwater.png"],
+                 [UIImage imageNamed:@"trees.png"],
+                 [UIImage imageNamed:@"trees.png"],
+
+
                  nil];
     
-    interactiveList = [[NSArray alloc] initWithObjects:@"aeolianVC",@"circleOfFifthsVC",@"",@"",@"",nil];
+    interactiveList = [[NSArray alloc] initWithObjects:@"aeolianVC",@"circleOfFifthsVC",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",nil];
 }
 
 - (void)viewDidUnload
@@ -80,12 +177,57 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 5;
+//    return 5;
+  return  [sectionHeader count];
+
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [videoList count];
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    
+    if (section == 0) {
+    
+    return [videoList0 count];
+        
+    }
+    
+    if (section == 1) {
+        
+        return [videoList1 count];
+        
+    }
+
+    
+    if (section == 2) {
+        
+        return [videoList2 count];
+        
+    }
+
+    
+    if (section == 3) {
+        
+        return [videoList3 count];
+        
+    }
+
+    
+    if (section == 4) {
+        
+        return [videoList4 count];
+        
+    }
+
+    
+    if (section == 5) {
+        
+        return [videoList5 count];
+        
+    } else {}
+    
+    return 10;
+    
+    
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -102,13 +244,14 @@
 {
     static NSString *CellIdentifier = @"Cell";
     
+  /*
     UILabel *mainLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, 220.0, 15.0)];
     mainLabel.font = [UIFont systemFontOfSize:34.0];
     mainLabel.textAlignment = UITextAlignmentRight;
     mainLabel.textColor = [UIColor blackColor];
     mainLabel.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight;
     mainLabel.tag = MAINLABEL_TAG;
-
+*/
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -116,8 +259,8 @@
     };
     
     NSString *mainLabelText;
-    mainLabelText = @"test";
-    mainLabel.text = mainLabelText;
+  //  mainLabelText = @"test";
+  //  mainLabel.text = mainLabelText;
   //  [cell.contentView addSubview:mainLabel];
 
 
@@ -125,7 +268,7 @@
     tableView.separatorColor = [UIColor lightGrayColor];
 
     
-    NSString *imagePath = [[NSBundle mainBundle] pathForResource:[videoList objectAtIndex:indexPath.row] ofType:@"png"];
+    NSString *imagePath = [[NSBundle mainBundle] pathForResource:[videoList1 objectAtIndex:indexPath.row] ofType:@"png"];
     UIImage *theImage = [UIImage imageWithContentsOfFile:imagePath];
     UIImageView *photo = [[UIImageView alloc] initWithFrame:CGRectMake(225.0, 0.0, 80.0, 45.0)];
     photo.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight;
@@ -139,8 +282,62 @@
    // cell.textLabel.shadowOffset = CGSizeMake(1, 1);
     cell.textLabel.backgroundColor = [UIColor clearColor];
 
-    cell.textLabel.text = [videoList objectAtIndex:indexPath.row];
     
+    if (indexPath.section == 0) {
+        //
+           cell.textLabel.text = [videoList0 objectAtIndex:indexPath.row];
+ 
+        
+    }
+    
+    if (indexPath.section == 1) {
+        //
+        cell.textLabel.text = [videoList1 objectAtIndex:indexPath.row];
+        
+        
+    }
+    
+    if (indexPath.section == 2) {
+        //
+        cell.textLabel.text = [videoList2 objectAtIndex:indexPath.row];
+        
+        
+    }
+    
+    if (indexPath.section == 3) {
+        //
+        cell.textLabel.text = [videoList3 objectAtIndex:indexPath.row];
+        
+        
+    }
+    
+    if (indexPath.section == 4) {
+        //
+        cell.textLabel.text = [videoList4 objectAtIndex:indexPath.row];
+        
+        
+    }
+    
+    if (indexPath.section == 5) {
+        //
+        cell.textLabel.text = [videoList5 objectAtIndex:indexPath.row];
+        
+        
+    }
+    
+    if (indexPath.section == 6) {
+        //
+//        cell.textLabel.text = [videoList6 objectAtIndex:indexPath.row];
+        
+        
+    }
+
+    if (indexPath.section == 7) {
+        //
+  //      cell.textLabel.text = [videoList7 objectAtIndex:indexPath.row];
+        
+        
+    }
     return cell;                      
                            
 }
@@ -154,7 +351,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    self.detailViewController.MovieToPlay = [videoList objectAtIndex:indexPath.row];
+    self.detailViewController.MovieToPlay = [videoList1 objectAtIndex:indexPath.row];
     //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
     self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
     self.detailViewController.imageView.image = [imageList objectAtIndex:indexPath.row];

@@ -10,8 +10,14 @@
 @class DetailViewController;
 
 @interface MasterViewController : UITableViewController{
-    
-    NSArray *videoList;
+   
+    NSArray *videoList0;
+    NSArray *videoList1;
+    NSArray *videoList2;
+    NSArray *videoList3;
+    NSArray *videoList4;
+    NSArray *videoList5;
+
     NSArray *imageList;
     NSArray *interactiveList;
     NSArray *sectionHeader;
