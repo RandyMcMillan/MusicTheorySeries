@@ -118,7 +118,7 @@
     NSString *mainLabelText;
     mainLabelText = @"test";
     mainLabel.text = mainLabelText;
- //   [cell.contentView addSubview:mainLabel];
+    [cell.contentView addSubview:mainLabel];
 
 
     tableView.backgroundColor = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
@@ -132,7 +132,7 @@
     photo.tag = PHOTO_TAG;
 
     photo.image = theImage;
- //   [cell.contentView addSubview:photo];
+    [cell.contentView addSubview:photo];
 
 
     cell.textLabel.text = [videoList objectAtIndex:indexPath.row];
