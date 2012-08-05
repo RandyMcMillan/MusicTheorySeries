@@ -88,33 +88,13 @@
                  nil];
     
     imageList1 = [[NSArray alloc] initWithObjects:
-                  [UIImage imageNamed:@"Aeolian.png"],
                   [UIImage imageNamed:@"CircleOfFifths.png"],
-                  [UIImage imageNamed:@"sunset.png"],
-                  [UIImage imageNamed:@"underwater.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"Aeolian.png"],
-                  [UIImage imageNamed:@"CircleOfFifths.png"],
-                  [UIImage imageNamed:@"sunset.png"],
-                  [UIImage imageNamed:@"underwater.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"trees.png"],
                   nil];
+    
     imageList2 = [[NSArray alloc] initWithObjects:
                   [UIImage imageNamed:@"Aeolian.png"],
-                  [UIImage imageNamed:@"CircleOfFifths.png"],
-                  [UIImage imageNamed:@"sunset.png"],
-                  [UIImage imageNamed:@"underwater.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"Aeolian.png"],
-                  [UIImage imageNamed:@"CircleOfFifths.png"],
-                  [UIImage imageNamed:@"sunset.png"],
-                  [UIImage imageNamed:@"underwater.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"trees.png"],
                   nil];
+    
     imageList3 = [[NSArray alloc] initWithObjects:
                   [UIImage imageNamed:@"Aeolian.png"],
                   [UIImage imageNamed:@"CircleOfFifths.png"],
@@ -129,6 +109,7 @@
                   [UIImage imageNamed:@"trees.png"],
                   [UIImage imageNamed:@"trees.png"],
                   nil];
+    
     imageList4 = [[NSArray alloc] initWithObjects:
                   [UIImage imageNamed:@"Aeolian.png"],
                   [UIImage imageNamed:@"CircleOfFifths.png"],
