@@ -13,50 +13,8 @@
 		4825A36815C4DBC3006F0C46 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */; };
 		4825A36A15C4DBCF006F0C46 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36915C4DBCF006F0C46 /* AVFoundation.framework */; };
 		486AD37215CE0B7D0054753C /* DGMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AD37115CE0B7D0054753C /* DGMenuItemCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		486B05BF15BF2C1C00B3F10D /* Aeolian.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059515BF2C1C00B3F10D /* Aeolian.svg */; };
-		486B05C015BF2C1C00B3F10D /* AltoClef.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059615BF2C1C00B3F10D /* AltoClef.svg */; };
-		486B05C115BF2C1C00B3F10D /* BariToneClef.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059715BF2C1C00B3F10D /* BariToneClef.svg */; };
-		486B05C215BF2C1C00B3F10D /* BassClef.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059815BF2C1C00B3F10D /* BassClef.svg */; };
-		486B05C315BF2C1C00B3F10D /* BassClefSolfegeFlats.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059915BF2C1C00B3F10D /* BassClefSolfegeFlats.svg */; };
-		486B05C415BF2C1C00B3F10D /* BassClefSolfegeSharps.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059A15BF2C1C00B3F10D /* BassClefSolfegeSharps.svg */; };
-		486B05C515BF2C1C00B3F10D /* BluesScale.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059B15BF2C1C00B3F10D /* BluesScale.svg */; };
-		486B05C615BF2C1C00B3F10D /* ChromaticCircle.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059C15BF2C1C00B3F10D /* ChromaticCircle.svg */; };
-		486B05C715BF2C1C00B3F10D /* ChromaticWithFlats.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059D15BF2C1C00B3F10D /* ChromaticWithFlats.svg */; };
-		486B05C815BF2C1C00B3F10D /* ChromaticWithSharps.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059E15BF2C1C00B3F10D /* ChromaticWithSharps.svg */; };
-		486B05C915BF2C1C00B3F10D /* CircleOfFifths.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B059F15BF2C1C00B3F10D /* CircleOfFifths.svg */; };
-		486B05CA15BF2C1C00B3F10D /* Dorian.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05A015BF2C1C00B3F10D /* Dorian.svg */; };
-		486B05CB15BF2C1C00B3F10D /* Flats.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05A115BF2C1C00B3F10D /* Flats.svg */; };
-		486B05CC15BF2C1C00B3F10D /* GrandStaff.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05A215BF2C1C00B3F10D /* GrandStaff.svg */; };
-		486B05CD15BF2C1C00B3F10D /* HarmonicMinorScale.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05A315BF2C1C00B3F10D /* HarmonicMinorScale.svg */; };
-		486B05CE15BF2C1C00B3F10D /* Ionian.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05A415BF2C1C00B3F10D /* Ionian.svg */; };
-		486B05CF15BF2C1C00B3F10D /* LedgerLines.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05A515BF2C1C00B3F10D /* LedgerLines.svg */; };
-		486B05D015BF2C1C00B3F10D /* Locrian.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05A615BF2C1C00B3F10D /* Locrian.svg */; };
-		486B05D115BF2C1C00B3F10D /* Lydian.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05A715BF2C1C00B3F10D /* Lydian.svg */; };
-		486B05D215BF2C1C00B3F10D /* MajorScale.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05A815BF2C1C00B3F10D /* MajorScale.svg */; };
-		486B05D315BF2C1C00B3F10D /* MelodicMinorScale.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05A915BF2C1C00B3F10D /* MelodicMinorScale.svg */; };
-		486B05D415BF2C1C00B3F10D /* MezzoSopranoClef.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05AA15BF2C1C00B3F10D /* MezzoSopranoClef.svg */; };
-		486B05D515BF2C1C00B3F10D /* MinorScale.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05AB15BF2C1C00B3F10D /* MinorScale.svg */; };
-		486B05D615BF2C1C00B3F10D /* MinorScale300x300.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05AC15BF2C1C00B3F10D /* MinorScale300x300.svg */; };
-		486B05D715BF2C1C00B3F10D /* MixoLydian.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05AD15BF2C1C00B3F10D /* MixoLydian.svg */; };
-		486B05D815BF2C1C00B3F10D /* NaturalMinorScale.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05AE15BF2C1C00B3F10D /* NaturalMinorScale.svg */; };
-		486B05D915BF2C1C00B3F10D /* NaturalMinorScale300x300.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05AF15BF2C1C00B3F10D /* NaturalMinorScale300x300.svg */; };
-		486B05DA15BF2C1C00B3F10D /* PentaTonic300x300.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05B015BF2C1C00B3F10D /* PentaTonic300x300.svg */; };
-		486B05DB15BF2C1C00B3F10D /* PentaTonicScales.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05B115BF2C1C00B3F10D /* PentaTonicScales.svg */; };
-		486B05DC15BF2C1C00B3F10D /* Phrygian.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05B215BF2C1C00B3F10D /* Phrygian.svg */; };
-		486B05DD15BF2C1C00B3F10D /* ScaleDegrees.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05B315BF2C1C00B3F10D /* ScaleDegrees.svg */; };
-		486B05DE15BF2C1C00B3F10D /* Sharps.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05B415BF2C1C00B3F10D /* Sharps.svg */; };
-		486B05DF15BF2C1C00B3F10D /* SolfegeFlats.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05B515BF2C1C00B3F10D /* SolfegeFlats.svg */; };
-		486B05E015BF2C1C00B3F10D /* SolfegeSharps.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05B615BF2C1C00B3F10D /* SolfegeSharps.svg */; };
-		486B05E115BF2C1C00B3F10D /* SopranoClef.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05B715BF2C1C00B3F10D /* SopranoClef.svg */; };
-		486B05E215BF2C1C00B3F10D /* SubBassClef.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05B815BF2C1C00B3F10D /* SubBassClef.svg */; };
-		486B05E315BF2C1C00B3F10D /* TenorClef.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05B915BF2C1C00B3F10D /* TenorClef.svg */; };
-		486B05E415BF2C1C00B3F10D /* TrebleClef.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05BA15BF2C1C00B3F10D /* TrebleClef.svg */; };
-		486B05E515BF2C1C00B3F10D /* TrebleClefSolfegeFlats.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05BB15BF2C1C00B3F10D /* TrebleClefSolfegeFlats.svg */; };
-		486B05E615BF2C1C00B3F10D /* TrebleClefSolfegeSharps.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05BC15BF2C1C00B3F10D /* TrebleClefSolfegeSharps.svg */; };
-		486B05E715BF2C1C00B3F10D /* Whole_tone_scale_on_C.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05BD15BF2C1C00B3F10D /* Whole_tone_scale_on_C.svg */; };
-		486B05E815BF2C1C00B3F10D /* WholeToneScaleFromC.svg in Resources */ = {isa = PBXBuildFile; fileRef = 486B05BE15BF2C1C00B3F10D /* WholeToneScaleFromC.svg */; };
 		486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05ED15BF334A00B3F10D /* icon@2x.png */; };
-		48893AD015C48F3C00A382BC /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 48893ACE15C48F3C00A382BC /* Aeolian.png */; };
+		48815E9D15D060AE0083112C /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 48815E9C15D060AE0083112C /* Aeolian.png */; };
 		489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */; };
 		489C8BB215CF05DD00F15D05 /* GrandStaffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		489C8BB415CF062700F15D05 /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */; };
@@ -111,50 +69,8 @@
 		4825A36915C4DBCF006F0C46 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		486AD37015CE0B7D0054753C /* DGMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGMenuItemCell.h; sourceTree = "<group>"; };
 		486AD37115CE0B7D0054753C /* DGMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGMenuItemCell.m; sourceTree = "<group>"; };
-		486B059515BF2C1C00B3F10D /* Aeolian.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Aeolian.svg; sourceTree = "<group>"; };
-		486B059615BF2C1C00B3F10D /* AltoClef.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AltoClef.svg; sourceTree = "<group>"; };
-		486B059715BF2C1C00B3F10D /* BariToneClef.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BariToneClef.svg; sourceTree = "<group>"; };
-		486B059815BF2C1C00B3F10D /* BassClef.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BassClef.svg; sourceTree = "<group>"; };
-		486B059915BF2C1C00B3F10D /* BassClefSolfegeFlats.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BassClefSolfegeFlats.svg; sourceTree = "<group>"; };
-		486B059A15BF2C1C00B3F10D /* BassClefSolfegeSharps.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BassClefSolfegeSharps.svg; sourceTree = "<group>"; };
-		486B059B15BF2C1C00B3F10D /* BluesScale.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BluesScale.svg; sourceTree = "<group>"; };
-		486B059C15BF2C1C00B3F10D /* ChromaticCircle.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ChromaticCircle.svg; sourceTree = "<group>"; };
-		486B059D15BF2C1C00B3F10D /* ChromaticWithFlats.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ChromaticWithFlats.svg; sourceTree = "<group>"; };
-		486B059E15BF2C1C00B3F10D /* ChromaticWithSharps.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ChromaticWithSharps.svg; sourceTree = "<group>"; };
-		486B059F15BF2C1C00B3F10D /* CircleOfFifths.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CircleOfFifths.svg; sourceTree = "<group>"; };
-		486B05A015BF2C1C00B3F10D /* Dorian.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Dorian.svg; sourceTree = "<group>"; };
-		486B05A115BF2C1C00B3F10D /* Flats.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Flats.svg; sourceTree = "<group>"; };
-		486B05A215BF2C1C00B3F10D /* GrandStaff.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GrandStaff.svg; sourceTree = "<group>"; };
-		486B05A315BF2C1C00B3F10D /* HarmonicMinorScale.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HarmonicMinorScale.svg; sourceTree = "<group>"; };
-		486B05A415BF2C1C00B3F10D /* Ionian.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Ionian.svg; sourceTree = "<group>"; };
-		486B05A515BF2C1C00B3F10D /* LedgerLines.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LedgerLines.svg; sourceTree = "<group>"; };
-		486B05A615BF2C1C00B3F10D /* Locrian.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Locrian.svg; sourceTree = "<group>"; };
-		486B05A715BF2C1C00B3F10D /* Lydian.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Lydian.svg; sourceTree = "<group>"; };
-		486B05A815BF2C1C00B3F10D /* MajorScale.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MajorScale.svg; sourceTree = "<group>"; };
-		486B05A915BF2C1C00B3F10D /* MelodicMinorScale.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MelodicMinorScale.svg; sourceTree = "<group>"; };
-		486B05AA15BF2C1C00B3F10D /* MezzoSopranoClef.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MezzoSopranoClef.svg; sourceTree = "<group>"; };
-		486B05AB15BF2C1C00B3F10D /* MinorScale.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MinorScale.svg; sourceTree = "<group>"; };
-		486B05AC15BF2C1C00B3F10D /* MinorScale300x300.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MinorScale300x300.svg; sourceTree = "<group>"; };
-		486B05AD15BF2C1C00B3F10D /* MixoLydian.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MixoLydian.svg; sourceTree = "<group>"; };
-		486B05AE15BF2C1C00B3F10D /* NaturalMinorScale.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NaturalMinorScale.svg; sourceTree = "<group>"; };
-		486B05AF15BF2C1C00B3F10D /* NaturalMinorScale300x300.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NaturalMinorScale300x300.svg; sourceTree = "<group>"; };
-		486B05B015BF2C1C00B3F10D /* PentaTonic300x300.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PentaTonic300x300.svg; sourceTree = "<group>"; };
-		486B05B115BF2C1C00B3F10D /* PentaTonicScales.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PentaTonicScales.svg; sourceTree = "<group>"; };
-		486B05B215BF2C1C00B3F10D /* Phrygian.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Phrygian.svg; sourceTree = "<group>"; };
-		486B05B315BF2C1C00B3F10D /* ScaleDegrees.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ScaleDegrees.svg; sourceTree = "<group>"; };
-		486B05B415BF2C1C00B3F10D /* Sharps.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Sharps.svg; sourceTree = "<group>"; };
-		486B05B515BF2C1C00B3F10D /* SolfegeFlats.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SolfegeFlats.svg; sourceTree = "<group>"; };
-		486B05B615BF2C1C00B3F10D /* SolfegeSharps.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SolfegeSharps.svg; sourceTree = "<group>"; };
-		486B05B715BF2C1C00B3F10D /* SopranoClef.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SopranoClef.svg; sourceTree = "<group>"; };
-		486B05B815BF2C1C00B3F10D /* SubBassClef.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SubBassClef.svg; sourceTree = "<group>"; };
-		486B05B915BF2C1C00B3F10D /* TenorClef.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TenorClef.svg; sourceTree = "<group>"; };
-		486B05BA15BF2C1C00B3F10D /* TrebleClef.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TrebleClef.svg; sourceTree = "<group>"; };
-		486B05BB15BF2C1C00B3F10D /* TrebleClefSolfegeFlats.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TrebleClefSolfegeFlats.svg; sourceTree = "<group>"; };
-		486B05BC15BF2C1C00B3F10D /* TrebleClefSolfegeSharps.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TrebleClefSolfegeSharps.svg; sourceTree = "<group>"; };
-		486B05BD15BF2C1C00B3F10D /* Whole_tone_scale_on_C.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Whole_tone_scale_on_C.svg; sourceTree = "<group>"; };
-		486B05BE15BF2C1C00B3F10D /* WholeToneScaleFromC.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WholeToneScaleFromC.svg; sourceTree = "<group>"; };
 		486B05ED15BF334A00B3F10D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		48893ACE15C48F3C00A382BC /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
+		48815E9C15D060AE0083112C /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
 		489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrandStaffViewController.h; path = MT101/GrandStaffViewController.h; sourceTree = "<group>"; };
 		489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrandStaffViewController.m; path = MT101/GrandStaffViewController.m; sourceTree = "<group>"; };
@@ -225,65 +141,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		486B059415BF2C1C00B3F10D /* scaleSVGs */ = {
-			isa = PBXGroup;
-			children = (
-				486B059515BF2C1C00B3F10D /* Aeolian.svg */,
-				486B059615BF2C1C00B3F10D /* AltoClef.svg */,
-				486B059715BF2C1C00B3F10D /* BariToneClef.svg */,
-				486B059815BF2C1C00B3F10D /* BassClef.svg */,
-				486B059915BF2C1C00B3F10D /* BassClefSolfegeFlats.svg */,
-				486B059A15BF2C1C00B3F10D /* BassClefSolfegeSharps.svg */,
-				486B059B15BF2C1C00B3F10D /* BluesScale.svg */,
-				486B059C15BF2C1C00B3F10D /* ChromaticCircle.svg */,
-				486B059D15BF2C1C00B3F10D /* ChromaticWithFlats.svg */,
-				486B059E15BF2C1C00B3F10D /* ChromaticWithSharps.svg */,
-				486B059F15BF2C1C00B3F10D /* CircleOfFifths.svg */,
-				486B05A015BF2C1C00B3F10D /* Dorian.svg */,
-				486B05A115BF2C1C00B3F10D /* Flats.svg */,
-				486B05A215BF2C1C00B3F10D /* GrandStaff.svg */,
-				486B05A315BF2C1C00B3F10D /* HarmonicMinorScale.svg */,
-				486B05A415BF2C1C00B3F10D /* Ionian.svg */,
-				486B05A515BF2C1C00B3F10D /* LedgerLines.svg */,
-				486B05A615BF2C1C00B3F10D /* Locrian.svg */,
-				486B05A715BF2C1C00B3F10D /* Lydian.svg */,
-				486B05A815BF2C1C00B3F10D /* MajorScale.svg */,
-				486B05A915BF2C1C00B3F10D /* MelodicMinorScale.svg */,
-				486B05AA15BF2C1C00B3F10D /* MezzoSopranoClef.svg */,
-				486B05AB15BF2C1C00B3F10D /* MinorScale.svg */,
-				486B05AC15BF2C1C00B3F10D /* MinorScale300x300.svg */,
-				486B05AD15BF2C1C00B3F10D /* MixoLydian.svg */,
-				486B05AE15BF2C1C00B3F10D /* NaturalMinorScale.svg */,
-				486B05AF15BF2C1C00B3F10D /* NaturalMinorScale300x300.svg */,
-				486B05B015BF2C1C00B3F10D /* PentaTonic300x300.svg */,
-				486B05B115BF2C1C00B3F10D /* PentaTonicScales.svg */,
-				486B05B215BF2C1C00B3F10D /* Phrygian.svg */,
-				486B05B315BF2C1C00B3F10D /* ScaleDegrees.svg */,
-				486B05B415BF2C1C00B3F10D /* Sharps.svg */,
-				486B05B515BF2C1C00B3F10D /* SolfegeFlats.svg */,
-				486B05B615BF2C1C00B3F10D /* SolfegeSharps.svg */,
-				486B05B715BF2C1C00B3F10D /* SopranoClef.svg */,
-				486B05B815BF2C1C00B3F10D /* SubBassClef.svg */,
-				486B05B915BF2C1C00B3F10D /* TenorClef.svg */,
-				486B05BA15BF2C1C00B3F10D /* TrebleClef.svg */,
-				486B05BB15BF2C1C00B3F10D /* TrebleClefSolfegeFlats.svg */,
-				486B05BC15BF2C1C00B3F10D /* TrebleClefSolfegeSharps.svg */,
-				486B05BD15BF2C1C00B3F10D /* Whole_tone_scale_on_C.svg */,
-				486B05BE15BF2C1C00B3F10D /* WholeToneScaleFromC.svg */,
-			);
-			path = scaleSVGs;
-			sourceTree = "<group>";
-		};
 		48893ACC15C48F3C00A382BC /* ScalePNGs */ = {
 			isa = PBXGroup;
 			children = (
+				48815E9C15D060AE0083112C /* Aeolian.png */,
 				489C8BBD15CF141100F15D05 /* sunset.png */,
 				489C8BBE15CF141100F15D05 /* trees.png */,
 				489C8BBF15CF141100F15D05 /* underwater.png */,
 				489C8BBB15CF13E200F15D05 /* TheGrandStaff.png */,
 				489C8BB715CF139E00F15D05 /* welcome.png */,
 				48FAB52115CB12EA0087DCFA /* CircleOfFifths.png */,
-				48893ACE15C48F3C00A382BC /* Aeolian.png */,
 			);
 			path = ScalePNGs;
 			sourceTree = "<group>";
@@ -340,7 +207,6 @@
 			children = (
 				48893ACC15C48F3C00A382BC /* ScalePNGs */,
 				486B05ED15BF334A00B3F10D /* icon@2x.png */,
-				486B059415BF2C1C00B3F10D /* scaleSVGs */,
 				B225A76C1534D27F006FD46F /* greenlights.png */,
 				B225A7581534D110006FD46F /* button1.png */,
 				B225A75A1534D1D4006FD46F /* clouds.png */,
@@ -484,50 +350,7 @@
 				B225A76A1534D24D006FD46F /* UnderWater.mp4 in Resources */,
 				B225A76B1534D24D006FD46F /* WindyTrees.mp4 in Resources */,
 				B225A76D1534D27F006FD46F /* greenlights.png in Resources */,
-				486B05BF15BF2C1C00B3F10D /* Aeolian.svg in Resources */,
-				486B05C015BF2C1C00B3F10D /* AltoClef.svg in Resources */,
-				486B05C115BF2C1C00B3F10D /* BariToneClef.svg in Resources */,
-				486B05C215BF2C1C00B3F10D /* BassClef.svg in Resources */,
-				486B05C315BF2C1C00B3F10D /* BassClefSolfegeFlats.svg in Resources */,
-				486B05C415BF2C1C00B3F10D /* BassClefSolfegeSharps.svg in Resources */,
-				486B05C515BF2C1C00B3F10D /* BluesScale.svg in Resources */,
-				486B05C615BF2C1C00B3F10D /* ChromaticCircle.svg in Resources */,
-				486B05C715BF2C1C00B3F10D /* ChromaticWithFlats.svg in Resources */,
-				486B05C815BF2C1C00B3F10D /* ChromaticWithSharps.svg in Resources */,
-				486B05C915BF2C1C00B3F10D /* CircleOfFifths.svg in Resources */,
-				486B05CA15BF2C1C00B3F10D /* Dorian.svg in Resources */,
-				486B05CB15BF2C1C00B3F10D /* Flats.svg in Resources */,
-				486B05CC15BF2C1C00B3F10D /* GrandStaff.svg in Resources */,
-				486B05CD15BF2C1C00B3F10D /* HarmonicMinorScale.svg in Resources */,
-				486B05CE15BF2C1C00B3F10D /* Ionian.svg in Resources */,
-				486B05CF15BF2C1C00B3F10D /* LedgerLines.svg in Resources */,
-				486B05D015BF2C1C00B3F10D /* Locrian.svg in Resources */,
-				486B05D115BF2C1C00B3F10D /* Lydian.svg in Resources */,
-				486B05D215BF2C1C00B3F10D /* MajorScale.svg in Resources */,
-				486B05D315BF2C1C00B3F10D /* MelodicMinorScale.svg in Resources */,
-				486B05D415BF2C1C00B3F10D /* MezzoSopranoClef.svg in Resources */,
-				486B05D515BF2C1C00B3F10D /* MinorScale.svg in Resources */,
-				486B05D615BF2C1C00B3F10D /* MinorScale300x300.svg in Resources */,
-				486B05D715BF2C1C00B3F10D /* MixoLydian.svg in Resources */,
-				486B05D815BF2C1C00B3F10D /* NaturalMinorScale.svg in Resources */,
-				486B05D915BF2C1C00B3F10D /* NaturalMinorScale300x300.svg in Resources */,
-				486B05DA15BF2C1C00B3F10D /* PentaTonic300x300.svg in Resources */,
-				486B05DB15BF2C1C00B3F10D /* PentaTonicScales.svg in Resources */,
-				486B05DC15BF2C1C00B3F10D /* Phrygian.svg in Resources */,
-				486B05DD15BF2C1C00B3F10D /* ScaleDegrees.svg in Resources */,
-				486B05DE15BF2C1C00B3F10D /* Sharps.svg in Resources */,
-				486B05DF15BF2C1C00B3F10D /* SolfegeFlats.svg in Resources */,
-				486B05E015BF2C1C00B3F10D /* SolfegeSharps.svg in Resources */,
-				486B05E115BF2C1C00B3F10D /* SopranoClef.svg in Resources */,
-				486B05E215BF2C1C00B3F10D /* SubBassClef.svg in Resources */,
-				486B05E315BF2C1C00B3F10D /* TenorClef.svg in Resources */,
-				486B05E415BF2C1C00B3F10D /* TrebleClef.svg in Resources */,
-				486B05E515BF2C1C00B3F10D /* TrebleClefSolfegeFlats.svg in Resources */,
-				486B05E615BF2C1C00B3F10D /* TrebleClefSolfegeSharps.svg in Resources */,
-				486B05E715BF2C1C00B3F10D /* Whole_tone_scale_on_C.svg in Resources */,
-				486B05E815BF2C1C00B3F10D /* WholeToneScaleFromC.svg in Resources */,
 				486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */,
-				48893AD015C48F3C00A382BC /* Aeolian.png in Resources */,
 				48AF3EAE15C4A222005C667B /* Aeolian.mp4 in Resources */,
 				4825A36215C4DB2D006F0C46 /* AppleXylophoneViewController.xib in Resources */,
 				48BF0C3015C9AC3400F0F1A0 /* vib_0.aiff in Resources */,
@@ -549,6 +372,7 @@
 				489C8BC015CF141100F15D05 /* sunset.png in Resources */,
 				489C8BC115CF141100F15D05 /* trees.png in Resources */,
 				489C8BC215CF141100F15D05 /* underwater.png in Resources */,
+				48815E9D15D060AE0083112C /* Aeolian.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
