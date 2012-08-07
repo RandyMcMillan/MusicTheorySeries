@@ -145,7 +145,6 @@
                         nil];
     
     interactiveList1 = [[NSArray alloc] initWithObjects:
-                        @"aeolianVC",
                         @"circleOfFifthsVC",
                         @"circleOfFifthsVC",
                         @"circleOfFifthsVC",

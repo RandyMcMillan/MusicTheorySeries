@@ -99,6 +99,7 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+    self.mixerHost = nil;
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
