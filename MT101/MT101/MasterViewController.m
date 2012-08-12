@@ -141,44 +141,16 @@
 
     
     interactiveList0 = [[NSArray alloc] initWithObjects:
-                        @"theGrandStaffVC",
+                        @"GrandStaffViewController",
                         nil];
     
     interactiveList1 = [[NSArray alloc] initWithObjects:
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
+                        @"CircleOfFifthsViewController",
                         @"",
                         @"",
                         nil];
     interactiveList2 = [[NSArray alloc] initWithObjects:
-                        @"aeolianVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
+                        @"AeolianViewController",
                         @"",
                         @"",
                         nil];

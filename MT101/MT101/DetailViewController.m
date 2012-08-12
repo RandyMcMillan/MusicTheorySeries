@@ -40,7 +40,7 @@
     NSLog(@"interactiveToDisplay = %@ ",interactiveToDisplay);
 
    
-    if (interactiveToDisplay == @"aeolianVC") {
+    if (interactiveToDisplay == @"AeolianViewController") {
         
         NSLog(@"displayInteractive");
         AeolianViewController *aeolianVC = [[AeolianViewController alloc]init];
@@ -48,7 +48,7 @@
 
     }
     
-    if (interactiveToDisplay == @"circleOfFifthsVC") {
+    if (interactiveToDisplay == @"CircleOfFifthsViewController") {
         
         NSLog(@"displayInteractive");
         CircleOfFifthsViewController *circleOfFifthsVC = [[CircleOfFifthsViewController alloc]init];
@@ -56,7 +56,7 @@
         
     }
     
-    if (interactiveToDisplay == @"theGrandStaffVC") {
+    if (interactiveToDisplay == @"GrandStaffViewController") {
         
         NSLog(@"displayInteractive");
         GrandStaffViewController *theGrandStaffVC = [[GrandStaffViewController alloc]init];
