@@ -59,20 +59,27 @@
                      @"working",
                       nil];
     
-    videoList0 = [[NSArray alloc] initWithObjects:
+    videoList0 = [[NSArray alloc] initWithObjects: //staffs
                   @"The Grand Staff",
                   @"Treble Clef",
+                  @"Soprano Clef",
+                  @"MezzoSoprano Clef",
+                  @"Alto Clef",
+                  @"Tenor Clef",
+                  @"BariTone Clef",
+                  @"Bass Clef",
+                  @"SubBass Clef",
                   nil];
        
-    videoList1 = [[NSArray alloc] initWithObjects:
+    videoList1 = [[NSArray alloc] initWithObjects: //Circle Of Fifths
                  @"Circle Of Fifths",
                  nil];
     
-    videoList2 = [[NSArray alloc] initWithObjects: //clefs
+    videoList2 = [[NSArray alloc] initWithObjects: //Modes
                   @"Aeolian",
                   nil];
 
-    videoList3 = [[NSArray alloc] initWithObjects: ///modes
+    videoList3 = [[NSArray alloc] initWithObjects: //
                   @"Aeolian",
                   nil];
     
@@ -95,13 +102,27 @@
     imageList0 = [[NSArray alloc] initWithObjects:
                   [UIImage imageNamed:@"TheGrandStaff.png"],
                   [UIImage imageNamed:@"TrebleClef.png"],
+                  [UIImage imageNamed:@"TrebleClef.png"],
+                  [UIImage imageNamed:@"TrebleClef.png"],
+                  [UIImage imageNamed:@"TrebleClef.png"],
+                  [UIImage imageNamed:@"TrebleClef.png"],
+                  [UIImage imageNamed:@"TrebleClef.png"],
+                  [UIImage imageNamed:@"TrebleClef.png"],
+                  [UIImage imageNamed:@"TrebleClef.png"],
                  nil];
     
     imageList1 = [[NSArray alloc] initWithObjects:
                   [UIImage imageNamed:@"CircleOfFifths.png"],
+                  [UIImage imageNamed:@"CircleOfFifths.png"],
+                  [UIImage imageNamed:@"CircleOfFifths.png"],
+                  [UIImage imageNamed:@"CircleOfFifths.png"],
                   nil];
     
     imageList2 = [[NSArray alloc] initWithObjects://clefs
+                  [UIImage imageNamed:@"Aeolian.png"],
+                  [UIImage imageNamed:@"Aeolian.png"],
+                  [UIImage imageNamed:@"Aeolian.png"],
+                  [UIImage imageNamed:@"Aeolian.png"],
                   [UIImage imageNamed:@"Aeolian.png"],
                   nil];
     
@@ -129,6 +150,23 @@
     interactiveList0 = [[NSArray alloc] initWithObjects:
                         @"GrandStaffViewController",
                         @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+                        @"TrebleClefViewController",
+
                         nil];
     
     interactiveList1 = [[NSArray alloc] initWithObjects:

@@ -19,11 +19,9 @@
 		489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */; };
 		489C8BB215CF05DD00F15D05 /* GrandStaffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		489C8BB415CF062700F15D05 /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */; };
-		489C8BB615CF0CB800F15D05 /* The Grand Staff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BB515CF0CB800F15D05 /* The Grand Staff.mp4 */; };
 		489C8BC015CF141100F15D05 /* sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BBD15CF141100F15D05 /* sunset.png */; };
 		489C8BC115CF141100F15D05 /* trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BBE15CF141100F15D05 /* trees.png */; };
 		489C8BC215CF141100F15D05 /* underwater.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BBF15CF141100F15D05 /* underwater.png */; };
-		48AF3EAE15C4A222005C667B /* Aeolian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48AF3EAD15C4A222005C667B /* Aeolian.mp4 */; };
 		48BF0C3015C9AC3400F0F1A0 /* vib_0.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */; };
 		48BF0C3115C9AC3400F0F1A0 /* vib_1.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2B15C9AC3400F0F1A0 /* vib_1.aiff */; };
 		48BF0C3215C9AC3400F0F1A0 /* vib_2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2C15C9AC3400F0F1A0 /* vib_2.aiff */; };
@@ -34,13 +32,30 @@
 		48D50A1E15D886C7009121C3 /* TrebleClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A1D15D886C7009121C3 /* TrebleClef.png */; };
 		48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A2215D88779009121C3 /* TrebleClefViewController.xib */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		48F2DC5615CE251F00640AAB /* Circle Of Fifths.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48F2DC5515CE251F00640AAB /* Circle Of Fifths.mp4 */; };
 		48FAB51E15CAF90A0087DCFA /* AeolianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */; };
 		48FAB52215CB12EA0087DCFA /* CircleOfFifths.png in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB52115CB12EA0087DCFA /* CircleOfFifths.png */; };
 		48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */; };
 		48FAB52715CB13930087DCFA /* CircleOfFifthsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		48FAB56115CB1CA70087DCFA /* CircleOfFifths.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB56015CB1CA70087DCFA /* CircleOfFifths.mp4 */; };
+		48FBC8E715D8C1E500011BE9 /* Aeolian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8D415D8C1E500011BE9 /* Aeolian.mp4 */; };
+		48FBC8E815D8C1E500011BE9 /* Alto Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8D515D8C1E500011BE9 /* Alto Clef.mp4 */; };
+		48FBC8E915D8C1E500011BE9 /* BariTone Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8D615D8C1E500011BE9 /* BariTone Clef.mp4 */; };
+		48FBC8EA15D8C1E500011BE9 /* Bass Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8D715D8C1E500011BE9 /* Bass Clef.mp4 */; };
+		48FBC8EB15D8C1E500011BE9 /* Circle Of Fifths.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8D815D8C1E500011BE9 /* Circle Of Fifths.mp4 */; };
+		48FBC8EC15D8C1E500011BE9 /* CircleOfFifths.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8D915D8C1E500011BE9 /* CircleOfFifths.mp4 */; };
+		48FBC8ED15D8C1E500011BE9 /* GreenBeam.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8DA15D8C1E500011BE9 /* GreenBeam.mp4 */; };
+		48FBC8EE15D8C1E500011BE9 /* MezzoSoprano Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8DB15D8C1E500011BE9 /* MezzoSoprano Clef.mp4 */; };
+		48FBC8EF15D8C1E500011BE9 /* RollingClouds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8DC15D8C1E500011BE9 /* RollingClouds.mp4 */; };
+		48FBC8F015D8C1E500011BE9 /* Soprano Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8DD15D8C1E500011BE9 /* Soprano Clef.mp4 */; };
+		48FBC8F115D8C1E500011BE9 /* SubBass Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8DE15D8C1E500011BE9 /* SubBass Clef.mp4 */; };
+		48FBC8F215D8C1E500011BE9 /* SunInClouds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8DF15D8C1E500011BE9 /* SunInClouds.mp4 */; };
+		48FBC8F315D8C1E500011BE9 /* Tenor Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8E015D8C1E500011BE9 /* Tenor Clef.mp4 */; };
+		48FBC8F415D8C1E500011BE9 /* The Grand Staff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8E115D8C1E500011BE9 /* The Grand Staff.mp4 */; };
+		48FBC8F515D8C1E500011BE9 /* Treble Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8E215D8C1E500011BE9 /* Treble Clef.mp4 */; };
+		48FBC8F615D8C1E500011BE9 /* UnderWater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8E315D8C1E500011BE9 /* UnderWater.mp4 */; };
+		48FBC8F715D8C1E500011BE9 /* Untitled.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8E415D8C1E500011BE9 /* Untitled.m4v */; };
+		48FBC8F815D8C1E500011BE9 /* Untitled.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8E515D8C1E500011BE9 /* Untitled.mov */; };
+		48FBC8F915D8C1E500011BE9 /* WindyTrees.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8E615D8C1E500011BE9 /* WindyTrees.mp4 */; };
 		B225A72B1534CF59006FD46F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72A1534CF59006FD46F /* UIKit.framework */; };
 		B225A72D1534CF59006FD46F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72C1534CF59006FD46F /* Foundation.framework */; };
 		B225A72F1534CF59006FD46F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72E1534CF59006FD46F /* CoreGraphics.framework */; };
@@ -53,11 +68,6 @@
 		B225A7471534CF59006FD46F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B225A7451534CF59006FD46F /* DetailViewController.xib */; };
 		B225A7591534D110006FD46F /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = B225A7581534D110006FD46F /* button1.png */; };
 		B225A75E1534D1D4006FD46F /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = B225A75A1534D1D4006FD46F /* clouds.png */; };
-		B225A7671534D24D006FD46F /* GreenBeam.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B225A7621534D24D006FD46F /* GreenBeam.mp4 */; };
-		B225A7681534D24D006FD46F /* RollingClouds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B225A7631534D24D006FD46F /* RollingClouds.mp4 */; };
-		B225A7691534D24D006FD46F /* SunInClouds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B225A7641534D24D006FD46F /* SunInClouds.mp4 */; };
-		B225A76A1534D24D006FD46F /* UnderWater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B225A7651534D24D006FD46F /* UnderWater.mp4 */; };
-		B225A76B1534D24D006FD46F /* WindyTrees.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B225A7661534D24D006FD46F /* WindyTrees.mp4 */; };
 		B225A76D1534D27F006FD46F /* greenlights.png in Resources */ = {isa = PBXBuildFile; fileRef = B225A76C1534D27F006FD46F /* greenlights.png */; };
 		B225A77B1534D6D7006FD46F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A77A1534D6D7006FD46F /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
@@ -79,11 +89,9 @@
 		489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrandStaffViewController.h; path = MT101/GrandStaffViewController.h; sourceTree = "<group>"; };
 		489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrandStaffViewController.m; path = MT101/GrandStaffViewController.m; sourceTree = "<group>"; };
 		489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GrandStaffViewController.xib; path = MT101/GrandStaffViewController.xib; sourceTree = "<group>"; };
-		489C8BB515CF0CB800F15D05 /* The Grand Staff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "The Grand Staff.mp4"; path = "Movies/The Grand Staff.mp4"; sourceTree = SOURCE_ROOT; };
 		489C8BBD15CF141100F15D05 /* sunset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sunset.png; path = MT101/sunset.png; sourceTree = SOURCE_ROOT; };
 		489C8BBE15CF141100F15D05 /* trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trees.png; path = MT101/trees.png; sourceTree = SOURCE_ROOT; };
 		489C8BBF15CF141100F15D05 /* underwater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = underwater.png; path = MT101/underwater.png; sourceTree = SOURCE_ROOT; };
-		48AF3EAD15C4A222005C667B /* Aeolian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Aeolian.mp4; path = Movies/Aeolian.mp4; sourceTree = SOURCE_ROOT; };
 		48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_0.aiff; path = ../vib_0.aiff; sourceTree = "<group>"; };
 		48BF0C2B15C9AC3400F0F1A0 /* vib_1.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_1.aiff; path = ../vib_1.aiff; sourceTree = "<group>"; };
 		48BF0C2C15C9AC3400F0F1A0 /* vib_2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_2.aiff; path = ../vib_2.aiff; sourceTree = "<group>"; };
@@ -95,7 +103,6 @@
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2215D88779009121C3 /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrebleClefViewController.xib; path = MT101/TrebleClefViewController.xib; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
-		48F2DC5515CE251F00640AAB /* Circle Of Fifths.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Circle Of Fifths.mp4"; path = "Movies/Circle Of Fifths.mp4"; sourceTree = SOURCE_ROOT; };
 		48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeolianViewController.h; path = MT101/AeolianViewController.h; sourceTree = "<group>"; };
 		48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AeolianViewController.m; path = MT101/AeolianViewController.m; sourceTree = "<group>"; };
 		48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AeolianViewController.xib; path = MT101/AeolianViewController.xib; sourceTree = "<group>"; };
@@ -103,7 +110,25 @@
 		48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CircleOfFifthsViewController.xib; path = MT101/CircleOfFifthsViewController.xib; sourceTree = "<group>"; };
 		48FAB52515CB13930087DCFA /* CircleOfFifthsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleOfFifthsViewController.h; path = MT101/CircleOfFifthsViewController.h; sourceTree = "<group>"; };
 		48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleOfFifthsViewController.m; path = MT101/CircleOfFifthsViewController.m; sourceTree = "<group>"; };
-		48FAB56015CB1CA70087DCFA /* CircleOfFifths.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = CircleOfFifths.mp4; path = Movies/CircleOfFifths.mp4; sourceTree = SOURCE_ROOT; };
+		48FBC8D415D8C1E500011BE9 /* Aeolian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aeolian.mp4; sourceTree = "<group>"; };
+		48FBC8D515D8C1E500011BE9 /* Alto Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alto Clef.mp4"; sourceTree = "<group>"; };
+		48FBC8D615D8C1E500011BE9 /* BariTone Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BariTone Clef.mp4"; sourceTree = "<group>"; };
+		48FBC8D715D8C1E500011BE9 /* Bass Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bass Clef.mp4"; sourceTree = "<group>"; };
+		48FBC8D815D8C1E500011BE9 /* Circle Of Fifths.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circle Of Fifths.mp4"; sourceTree = "<group>"; };
+		48FBC8D915D8C1E500011BE9 /* CircleOfFifths.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CircleOfFifths.mp4; sourceTree = "<group>"; };
+		48FBC8DA15D8C1E500011BE9 /* GreenBeam.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GreenBeam.mp4; sourceTree = "<group>"; };
+		48FBC8DB15D8C1E500011BE9 /* MezzoSoprano Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MezzoSoprano Clef.mp4"; sourceTree = "<group>"; };
+		48FBC8DC15D8C1E500011BE9 /* RollingClouds.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RollingClouds.mp4; sourceTree = "<group>"; };
+		48FBC8DD15D8C1E500011BE9 /* Soprano Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soprano Clef.mp4"; sourceTree = "<group>"; };
+		48FBC8DE15D8C1E500011BE9 /* SubBass Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SubBass Clef.mp4"; sourceTree = "<group>"; };
+		48FBC8DF15D8C1E500011BE9 /* SunInClouds.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SunInClouds.mp4; sourceTree = "<group>"; };
+		48FBC8E015D8C1E500011BE9 /* Tenor Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tenor Clef.mp4"; sourceTree = "<group>"; };
+		48FBC8E115D8C1E500011BE9 /* The Grand Staff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Grand Staff.mp4"; sourceTree = "<group>"; };
+		48FBC8E215D8C1E500011BE9 /* Treble Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Treble Clef.mp4"; sourceTree = "<group>"; };
+		48FBC8E315D8C1E500011BE9 /* UnderWater.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnderWater.mp4; sourceTree = "<group>"; };
+		48FBC8E415D8C1E500011BE9 /* Untitled.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Untitled.m4v; sourceTree = "<group>"; };
+		48FBC8E515D8C1E500011BE9 /* Untitled.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Untitled.mov; sourceTree = "<group>"; };
+		48FBC8E615D8C1E500011BE9 /* WindyTrees.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WindyTrees.mp4; sourceTree = "<group>"; };
 		B225A7261534CF59006FD46F /* MT101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B225A72A1534CF59006FD46F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B225A72C1534CF59006FD46F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,11 +147,6 @@
 		B225A7461534CF59006FD46F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
 		B225A7581534D110006FD46F /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = SOURCE_ROOT; };
 		B225A75A1534D1D4006FD46F /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = SOURCE_ROOT; };
-		B225A7621534D24D006FD46F /* GreenBeam.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = GreenBeam.mp4; path = Movies/GreenBeam.mp4; sourceTree = SOURCE_ROOT; };
-		B225A7631534D24D006FD46F /* RollingClouds.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = RollingClouds.mp4; path = Movies/RollingClouds.mp4; sourceTree = SOURCE_ROOT; };
-		B225A7641534D24D006FD46F /* SunInClouds.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = SunInClouds.mp4; path = Movies/SunInClouds.mp4; sourceTree = SOURCE_ROOT; };
-		B225A7651534D24D006FD46F /* UnderWater.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = UnderWater.mp4; path = Movies/UnderWater.mp4; sourceTree = SOURCE_ROOT; };
-		B225A7661534D24D006FD46F /* WindyTrees.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = WindyTrees.mp4; path = Movies/WindyTrees.mp4; sourceTree = SOURCE_ROOT; };
 		B225A76C1534D27F006FD46F /* greenlights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenlights.png; sourceTree = SOURCE_ROOT; };
 		B225A77A1534D6D7006FD46F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -224,6 +244,32 @@
 			name = Art;
 			sourceTree = "<group>";
 		};
+		48FBC8D315D8C1E500011BE9 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				48FBC8D415D8C1E500011BE9 /* Aeolian.mp4 */,
+				48FBC8D515D8C1E500011BE9 /* Alto Clef.mp4 */,
+				48FBC8D615D8C1E500011BE9 /* BariTone Clef.mp4 */,
+				48FBC8D715D8C1E500011BE9 /* Bass Clef.mp4 */,
+				48FBC8D815D8C1E500011BE9 /* Circle Of Fifths.mp4 */,
+				48FBC8D915D8C1E500011BE9 /* CircleOfFifths.mp4 */,
+				48FBC8DA15D8C1E500011BE9 /* GreenBeam.mp4 */,
+				48FBC8DB15D8C1E500011BE9 /* MezzoSoprano Clef.mp4 */,
+				48FBC8DC15D8C1E500011BE9 /* RollingClouds.mp4 */,
+				48FBC8DD15D8C1E500011BE9 /* Soprano Clef.mp4 */,
+				48FBC8DE15D8C1E500011BE9 /* SubBass Clef.mp4 */,
+				48FBC8DF15D8C1E500011BE9 /* SunInClouds.mp4 */,
+				48FBC8E015D8C1E500011BE9 /* Tenor Clef.mp4 */,
+				48FBC8E115D8C1E500011BE9 /* The Grand Staff.mp4 */,
+				48FBC8E215D8C1E500011BE9 /* Treble Clef.mp4 */,
+				48FBC8E315D8C1E500011BE9 /* UnderWater.mp4 */,
+				48FBC8E415D8C1E500011BE9 /* Untitled.m4v */,
+				48FBC8E515D8C1E500011BE9 /* Untitled.mov */,
+				48FBC8E615D8C1E500011BE9 /* WindyTrees.mp4 */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
@@ -261,7 +307,6 @@
 		B225A7301534CF59006FD46F /* MT101 */ = {
 			isa = PBXGroup;
 			children = (
-				B225A74D1534CFBE006FD46F /* Movies */,
 				B225A7391534CF59006FD46F /* AppDelegate.h */,
 				B225A73A1534CF59006FD46F /* AppDelegate.m */,
 				B225A7311534CF59006FD46F /* Supporting Files */,
@@ -272,6 +317,7 @@
 		B225A7311534CF59006FD46F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48FBC8D315D8C1E500011BE9 /* Movies */,
 				48FAB51B15CAF8B30087DCFA /* Art */,
 				48BF0C3715C9AC4000F0F1A0 /* Audio */,
 				4825A36415C4DB43006F0C46 /* MixerHostAudio.h */,
@@ -282,22 +328,6 @@
 				B225A7381534CF59006FD46F /* MT101-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B225A74D1534CFBE006FD46F /* Movies */ = {
-			isa = PBXGroup;
-			children = (
-				489C8BB515CF0CB800F15D05 /* The Grand Staff.mp4 */,
-				48F2DC5515CE251F00640AAB /* Circle Of Fifths.mp4 */,
-				48FAB56015CB1CA70087DCFA /* CircleOfFifths.mp4 */,
-				48AF3EAD15C4A222005C667B /* Aeolian.mp4 */,
-				B225A7621534D24D006FD46F /* GreenBeam.mp4 */,
-				B225A7631534D24D006FD46F /* RollingClouds.mp4 */,
-				B225A7641534D24D006FD46F /* SunInClouds.mp4 */,
-				B225A7651534D24D006FD46F /* UnderWater.mp4 */,
-				B225A7661534D24D006FD46F /* WindyTrees.mp4 */,
-			);
-			name = Movies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,14 +385,8 @@
 				B225A7471534CF59006FD46F /* DetailViewController.xib in Resources */,
 				B225A7591534D110006FD46F /* button1.png in Resources */,
 				B225A75E1534D1D4006FD46F /* clouds.png in Resources */,
-				B225A7671534D24D006FD46F /* GreenBeam.mp4 in Resources */,
-				B225A7681534D24D006FD46F /* RollingClouds.mp4 in Resources */,
-				B225A7691534D24D006FD46F /* SunInClouds.mp4 in Resources */,
-				B225A76A1534D24D006FD46F /* UnderWater.mp4 in Resources */,
-				B225A76B1534D24D006FD46F /* WindyTrees.mp4 in Resources */,
 				B225A76D1534D27F006FD46F /* greenlights.png in Resources */,
 				486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */,
-				48AF3EAE15C4A222005C667B /* Aeolian.mp4 in Resources */,
 				4825A36215C4DB2D006F0C46 /* AppleXylophoneViewController.xib in Resources */,
 				48BF0C3015C9AC3400F0F1A0 /* vib_0.aiff in Resources */,
 				48BF0C3115C9AC3400F0F1A0 /* vib_1.aiff in Resources */,
@@ -373,11 +397,8 @@
 				48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */,
 				48FAB52215CB12EA0087DCFA /* CircleOfFifths.png in Resources */,
 				48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */,
-				48FAB56115CB1CA70087DCFA /* CircleOfFifths.mp4 in Resources */,
-				48F2DC5615CE251F00640AAB /* Circle Of Fifths.mp4 in Resources */,
 				489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */,
 				489C8BB415CF062700F15D05 /* GrandStaffViewController.xib in Resources */,
-				489C8BB615CF0CB800F15D05 /* The Grand Staff.mp4 in Resources */,
 				489C8BC015CF141100F15D05 /* sunset.png in Resources */,
 				489C8BC115CF141100F15D05 /* trees.png in Resources */,
 				489C8BC215CF141100F15D05 /* underwater.png in Resources */,
@@ -386,6 +407,25 @@
 				48D50A1B15D87E39009121C3 /* interactiveList0.plist in Resources */,
 				48D50A1E15D886C7009121C3 /* TrebleClef.png in Resources */,
 				48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */,
+				48FBC8E715D8C1E500011BE9 /* Aeolian.mp4 in Resources */,
+				48FBC8E815D8C1E500011BE9 /* Alto Clef.mp4 in Resources */,
+				48FBC8E915D8C1E500011BE9 /* BariTone Clef.mp4 in Resources */,
+				48FBC8EA15D8C1E500011BE9 /* Bass Clef.mp4 in Resources */,
+				48FBC8EB15D8C1E500011BE9 /* Circle Of Fifths.mp4 in Resources */,
+				48FBC8EC15D8C1E500011BE9 /* CircleOfFifths.mp4 in Resources */,
+				48FBC8ED15D8C1E500011BE9 /* GreenBeam.mp4 in Resources */,
+				48FBC8EE15D8C1E500011BE9 /* MezzoSoprano Clef.mp4 in Resources */,
+				48FBC8EF15D8C1E500011BE9 /* RollingClouds.mp4 in Resources */,
+				48FBC8F015D8C1E500011BE9 /* Soprano Clef.mp4 in Resources */,
+				48FBC8F115D8C1E500011BE9 /* SubBass Clef.mp4 in Resources */,
+				48FBC8F215D8C1E500011BE9 /* SunInClouds.mp4 in Resources */,
+				48FBC8F315D8C1E500011BE9 /* Tenor Clef.mp4 in Resources */,
+				48FBC8F415D8C1E500011BE9 /* The Grand Staff.mp4 in Resources */,
+				48FBC8F515D8C1E500011BE9 /* Treble Clef.mp4 in Resources */,
+				48FBC8F615D8C1E500011BE9 /* UnderWater.mp4 in Resources */,
+				48FBC8F715D8C1E500011BE9 /* Untitled.m4v in Resources */,
+				48FBC8F815D8C1E500011BE9 /* Untitled.mov in Resources */,
+				48FBC8F915D8C1E500011BE9 /* WindyTrees.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
