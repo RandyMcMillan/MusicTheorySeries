@@ -149,27 +149,13 @@
                         @"",
                         @"",
                         nil];
-    interactiveList2 = [[NSArray alloc] initWithObjects:
+    interactiveList2 = [[NSArray alloc] initWithObjects: //clefs
                         @"AeolianViewController",
                         @"",
                         @"",
                         nil];
-    interactiveList3 = [[NSArray alloc] initWithObjects:
-                        @"aeolianVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
-                        @"",
+    interactiveList3 = [[NSArray alloc] initWithObjects: //modes
+                        @"AeolianViewController",
                         @"",
                         @"",
                         @"",
