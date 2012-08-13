@@ -63,7 +63,6 @@
     videoList0 = [[NSArray alloc] initWithObjects:
                   @"The Grand Staff",
                   nil];
-
        
     videoList1 = [[NSArray alloc] initWithObjects:
                  @"Circle Of Fifths",
@@ -72,9 +71,11 @@
     videoList2 = [[NSArray alloc] initWithObjects: //clefs
                   @"Treble Clef",
                   nil];
+
     videoList3 = [[NSArray alloc] initWithObjects: ///modes
                   @"Aeolian",
                   nil];
+    
     videoList4 = [[NSArray alloc] initWithObjects:
                   @"Aeolian",
                   @"Circle Of Fifths",
@@ -82,6 +83,7 @@
                   @"UnderWater",
                   @"WindyTrees",
                   nil];
+    
     videoList5 = [[NSArray alloc] initWithObjects:
                   @"Aeolian",
                   @"Circle Of Fifths",
@@ -89,7 +91,6 @@
                   @"UnderWater",
                   @"WindyTrees",
                   nil];
-
     
     imageList0 = [[NSArray alloc] initWithObjects:
                   [UIImage imageNamed:@"TheGrandStaff.png"],
@@ -116,6 +117,7 @@
                   [UIImage imageNamed:@"underwater.png"],
                   [UIImage imageNamed:@"trees.png"],
                   nil];
+    
     imageList5 = [[NSArray alloc] initWithObjects:
                   [UIImage imageNamed:@"Aeolian.png"],
                   [UIImage imageNamed:@"CircleOfFifths.png"],
@@ -123,7 +125,6 @@
                   [UIImage imageNamed:@"underwater.png"],
                   nil];
 
-    
     interactiveList0 = [[NSArray alloc] initWithObjects:
                         @"GrandStaffViewController",
                         nil];
@@ -133,17 +134,20 @@
                         @"",
                         @"",
                         nil];
+
     interactiveList2 = [[NSArray alloc] initWithObjects: //clefs
                         @"TrebleClefViewController",
                         @"",
                         @"",
                         nil];
+    
     interactiveList3 = [[NSArray alloc] initWithObjects: //modes
                         @"AeolianViewController",
                         @"",
                         @"",
                         @"",
                         nil];
+    
     interactiveList4 = [[NSArray alloc] initWithObjects:
                         @"aeolianVC",
                         @"circleOfFifthsVC",
@@ -164,6 +168,7 @@
                         @"",
                         @"",
                         nil];
+    
     interactiveList5 = [[NSArray alloc] initWithObjects:
                         @"aeolianVC",
                         @"circleOfFifthsVC",
@@ -184,9 +189,6 @@
                         @"",
                         @"",
                         nil];
-
-    
-    
     
 }
 
@@ -204,8 +206,7 @@
 
 #pragma mark - Table View
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //    return 5;
   return  [sectionHeader count];
 
@@ -269,8 +270,7 @@
 
 
 // Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     
   /*
@@ -371,8 +371,7 @@
                            
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return NO;
 }
