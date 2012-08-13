@@ -50,9 +50,8 @@
         NSLog(@"array2 = %@", str);
     
     sectionHeader = [[NSArray alloc]initWithObjects:
-                     @"The Grand Staff",
+                     @"Staffs / Clefs",
                      @"Circle of Fifths",
-                     @"Clefs",
                      @"Modes",
                      @"section 3",
                      @"section 4",
@@ -62,6 +61,7 @@
     
     videoList0 = [[NSArray alloc] initWithObjects:
                   @"The Grand Staff",
+                  @"Treble Clef",
                   nil];
        
     videoList1 = [[NSArray alloc] initWithObjects:
@@ -69,7 +69,7 @@
                  nil];
     
     videoList2 = [[NSArray alloc] initWithObjects: //clefs
-                  @"Treble Clef",
+                  @"Aeolian",
                   nil];
 
     videoList3 = [[NSArray alloc] initWithObjects: ///modes
@@ -94,6 +94,7 @@
     
     imageList0 = [[NSArray alloc] initWithObjects:
                   [UIImage imageNamed:@"TheGrandStaff.png"],
+                  [UIImage imageNamed:@"TrebleClef.png"],
                  nil];
     
     imageList1 = [[NSArray alloc] initWithObjects:
@@ -101,7 +102,7 @@
                   nil];
     
     imageList2 = [[NSArray alloc] initWithObjects://clefs
-                  [UIImage imageNamed:@"TrebleClef.png"],
+                  [UIImage imageNamed:@"Aeolian.png"],
                   nil];
     
     imageList3 = [[NSArray alloc] initWithObjects://modes
@@ -127,6 +128,7 @@
 
     interactiveList0 = [[NSArray alloc] initWithObjects:
                         @"GrandStaffViewController",
+                        @"TrebleClefViewController",
                         nil];
     
     interactiveList1 = [[NSArray alloc] initWithObjects:
@@ -136,7 +138,7 @@
                         nil];
 
     interactiveList2 = [[NSArray alloc] initWithObjects: //clefs
-                        @"TrebleClefViewController",
+                        @"AeolianViewController",
                         @"",
                         @"",
                         nil];
