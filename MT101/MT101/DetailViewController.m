@@ -39,23 +39,6 @@
     
     NSLog(@"interactiveToDisplay = %@ ",interactiveToDisplay);
 
-   
-    if (interactiveToDisplay == @"AeolianViewController") {
-        
-        NSLog(@"displayInteractive");
-        AeolianViewController *aeolianVC = [[AeolianViewController alloc]init];
-        [self presentModalViewController:aeolianVC animated:YES];
-
-    }
-    
-    if (interactiveToDisplay == @"CircleOfFifthsViewController") {
-        
-        NSLog(@"displayInteractive");
-        CircleOfFifthsViewController *circleOfFifthsVC = [[CircleOfFifthsViewController alloc]init];
-        [self presentModalViewController:circleOfFifthsVC animated:YES];
-        
-    }
-    
     if (interactiveToDisplay == @"GrandStaffViewController") {
         
         NSLog(@"displayInteractive");
@@ -63,9 +46,24 @@
         [self presentModalViewController:theGrandStaffVC animated:YES];
         
     }
+  
+    if (interactiveToDisplay == @"CircleOfFifthsViewController") {
+        
+        NSLog(@"displayInteractive");
+        CircleOfFifthsViewController *circleOfFifthsVC = [[CircleOfFifthsViewController alloc]init];
+        [self presentModalViewController:circleOfFifthsVC animated:YES];
+        
+    }
+ 
+    if (interactiveToDisplay == @"AeolianViewController") {
+        
+        NSLog(@"displayInteractive");
+        AeolianViewController *aeolianVC = [[AeolianViewController alloc]init];
+        [self presentModalViewController:aeolianVC animated:YES];
 
-
-    
+    }
+      
+  
     
  //   [self presentModalViewController:test animated:YES];
     
