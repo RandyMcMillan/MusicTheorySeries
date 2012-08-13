@@ -31,6 +31,9 @@
 		48BF0C3415C9AC3400F0F1A0 /* vib_4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */; };
 		48BF0C3515C9AC3400F0F1A0 /* vib_5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */; };
 		48D50A1B15D87E39009121C3 /* interactiveList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A1A15D87E39009121C3 /* interactiveList0.plist */; };
+		48D50A1E15D886C7009121C3 /* TrebleClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A1D15D886C7009121C3 /* TrebleClef.png */; };
+		48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A2215D88779009121C3 /* TrebleClefViewController.xib */; };
+		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48F2DC5615CE251F00640AAB /* Circle Of Fifths.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48F2DC5515CE251F00640AAB /* Circle Of Fifths.mp4 */; };
 		48FAB51E15CAF90A0087DCFA /* AeolianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */; };
@@ -88,6 +91,10 @@
 		48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_4.aiff; path = ../vib_4.aiff; sourceTree = "<group>"; };
 		48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_5.aiff; path = ../vib_5.aiff; sourceTree = "<group>"; };
 		48D50A1A15D87E39009121C3 /* interactiveList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = interactiveList0.plist; sourceTree = "<group>"; };
+		48D50A1D15D886C7009121C3 /* TrebleClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrebleClef.png; path = MT101/Art/ScalePNGs/TrebleClef.png; sourceTree = SOURCE_ROOT; };
+		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
+		48D50A2215D88779009121C3 /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrebleClefViewController.xib; path = MT101/TrebleClefViewController.xib; sourceTree = "<group>"; };
+		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
 		48F2DC5515CE251F00640AAB /* Circle Of Fifths.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Circle Of Fifths.mp4"; path = "Movies/Circle Of Fifths.mp4"; sourceTree = SOURCE_ROOT; };
 		48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeolianViewController.h; path = MT101/AeolianViewController.h; sourceTree = "<group>"; };
 		48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AeolianViewController.m; path = MT101/AeolianViewController.m; sourceTree = "<group>"; };
@@ -144,6 +151,7 @@
 		48893ACC15C48F3C00A382BC /* ScalePNGs */ = {
 			isa = PBXGroup;
 			children = (
+				48D50A1D15D886C7009121C3 /* TrebleClef.png */,
 				483BEBEF15D0DFDB00D72F95 /* welcome.png */,
 				483BEBED15D0DF8A00D72F95 /* Aeolian.png */,
 				489C8BBD15CF141100F15D05 /* sunset.png */,
@@ -170,6 +178,8 @@
 		48FAB51815CAF84F0087DCFA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				48D50A2415D8879D009121C3 /* TrebleClefViewController.m */,
+				48D50A2115D8876D009121C3 /* TrebleClefViewController.h */,
 				489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */,
 				489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */,
 				48FAB52515CB13930087DCFA /* CircleOfFifthsViewController.h */,
@@ -191,6 +201,7 @@
 		48FAB51A15CAF8710087DCFA /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				48D50A2215D88779009121C3 /* TrebleClefViewController.xib */,
 				489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */,
 				48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */,
 				48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */,
@@ -373,6 +384,8 @@
 				483BEBEE15D0DF8A00D72F95 /* Aeolian.png in Resources */,
 				483BEBF015D0DFDB00D72F95 /* welcome.png in Resources */,
 				48D50A1B15D87E39009121C3 /* interactiveList0.plist in Resources */,
+				48D50A1E15D886C7009121C3 /* TrebleClef.png in Resources */,
+				48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +406,7 @@
 				48FAB52715CB13930087DCFA /* CircleOfFifthsViewController.m in Sources */,
 				486AD37215CE0B7D0054753C /* DGMenuItemCell.m in Sources */,
 				489C8BB215CF05DD00F15D05 /* GrandStaffViewController.m in Sources */,
+				48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

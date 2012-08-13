@@ -56,7 +56,7 @@
                      @"Modes",
                      @"section 3",
                      @"section 4",
-                     @"section 5",
+                     @"section 5"
                      @"working",
                       nil];
     
@@ -69,14 +69,10 @@
                  @"Circle Of Fifths",
                  nil];
     
-    videoList2 = [[NSArray alloc] initWithObjects:
-                  @"Aeolian",
-                  @"Circle Of Fifths",
-                  @"SunInClouds",
-                  @"UnderWater",
-                  @"WindyTrees",
+    videoList2 = [[NSArray alloc] initWithObjects: //clefs
+                  @"Treble Clef",
                   nil];
-    videoList3 = [[NSArray alloc] initWithObjects:
+    videoList3 = [[NSArray alloc] initWithObjects: ///modes
                   @"Aeolian",
                   nil];
     videoList4 = [[NSArray alloc] initWithObjects:
@@ -103,23 +99,14 @@
                   [UIImage imageNamed:@"CircleOfFifths.png"],
                   nil];
     
-    imageList2 = [[NSArray alloc] initWithObjects:
-                  [UIImage imageNamed:@"Aeolian.png"],
+    imageList2 = [[NSArray alloc] initWithObjects://clefs
+                  [UIImage imageNamed:@"TrebleClef.png"],
                   nil];
     
-    imageList3 = [[NSArray alloc] initWithObjects:
+    imageList3 = [[NSArray alloc] initWithObjects://modes
                   [UIImage imageNamed:@"Aeolian.png"],
                   [UIImage imageNamed:@"CircleOfFifths.png"],
                   [UIImage imageNamed:@"sunset.png"],
-                  [UIImage imageNamed:@"underwater.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"Aeolian.png"],
-                  [UIImage imageNamed:@"CircleOfFifths.png"],
-                  [UIImage imageNamed:@"sunset.png"],
-                  [UIImage imageNamed:@"underwater.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"trees.png"],
                   nil];
     
     imageList4 = [[NSArray alloc] initWithObjects:
@@ -128,27 +115,12 @@
                   [UIImage imageNamed:@"sunset.png"],
                   [UIImage imageNamed:@"underwater.png"],
                   [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"Aeolian.png"],
-                  [UIImage imageNamed:@"CircleOfFifths.png"],
-                  [UIImage imageNamed:@"sunset.png"],
-                  [UIImage imageNamed:@"underwater.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"trees.png"],
                   nil];
     imageList5 = [[NSArray alloc] initWithObjects:
                   [UIImage imageNamed:@"Aeolian.png"],
                   [UIImage imageNamed:@"CircleOfFifths.png"],
                   [UIImage imageNamed:@"sunset.png"],
                   [UIImage imageNamed:@"underwater.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"Aeolian.png"],
-                  [UIImage imageNamed:@"CircleOfFifths.png"],
-                  [UIImage imageNamed:@"sunset.png"],
-                  [UIImage imageNamed:@"underwater.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  [UIImage imageNamed:@"trees.png"],
                   nil];
 
     
@@ -162,7 +134,7 @@
                         @"",
                         nil];
     interactiveList2 = [[NSArray alloc] initWithObjects: //clefs
-                        @"AeolianViewController",
+                        @"TrebleClefViewController",
                         @"",
                         @"",
                         nil];

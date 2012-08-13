@@ -11,14 +11,16 @@
 #import "AppleXylophoneViewController.h"
 #import "AeolianViewController.h"
 #import "CircleOfFifthsViewController.h"
-
+#import "TrebleClefViewController.h"
 
 @interface DetailViewController (){
     
     MPMoviePlayerViewController *moviePlayer;
-    AppleXylophoneViewController *test;
+   // AppleXylophoneViewController *test;
     AeolianViewController *aeolianVC;
-    CircleOfFifthsViewController *circleOfFifths;
+    GrandStaffViewController *theGrandStaffVC;
+    CircleOfFifthsViewController *circleOfFifthsVC;
+    TrebleClefViewController *trebleClefVC;
     
 }
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -52,6 +54,14 @@
         [self presentModalViewController:circleOfFifthsVC animated:YES];
         
     }
+    
+    if (interactiveToDisplay == @"TrebleClefViewController") {
+        
+        TrebleClefViewController *trebleClefVC = [[TrebleClefViewController alloc]init];
+        [self presentModalViewController:trebleClefVC animated:YES];
+        
+    }
+
  
     if (interactiveToDisplay == @"AeolianViewController") {
         
@@ -61,6 +71,10 @@
     }
       
   
+   //TrebleClefViewController
+    
+    
+    
     
  //   [self presentModalViewController:test animated:YES];
     

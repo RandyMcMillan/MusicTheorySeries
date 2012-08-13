@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "AppleXylophoneViewController.h"
+#import "GrandStaffViewController.h"
 #import "AeolianViewController.h"
 #import "CircleOfFifthsViewController.h"
+#import "TrebleClefViewController.h"
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
 
@@ -25,7 +27,9 @@
 
 @property(nonatomic,retain) IBOutlet AppleXylophoneViewController *viewController;
 @property(nonatomic,retain) IBOutlet AeolianViewController *aeolianVC;
+@property(nonatomic,retain) IBOutlet GrandStaffViewController *grandStaffVC;
 @property(nonatomic,retain) IBOutlet CircleOfFifthsViewController *circleOfFifthsVC;
+@property(nonatomic,retain) IBOutlet TrebleClefViewController *trebleClefVC;
 
 
 
