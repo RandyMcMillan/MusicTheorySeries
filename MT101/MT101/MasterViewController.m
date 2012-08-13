@@ -37,6 +37,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    
+    // Path to the plist (in the application bundle)
+    NSString *path = [[NSBundle mainBundle] pathForResource:
+                      @"interactiveList0" ofType:@"plist"];
+    
+    // Build the array from the plist
+    NSArray *array2 = [[NSArray alloc] initWithContentsOfFile:path];
+    
+    // Show the string values
+    for (NSString *str in array2)
+        NSLog(@"array2 = %@", str);
+    
     sectionHeader = [[NSArray alloc]initWithObjects:
                      @"The Grand Staff",
                      @"Circle of Fifths",
