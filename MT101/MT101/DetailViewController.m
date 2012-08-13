@@ -41,7 +41,6 @@
 
     if (interactiveToDisplay == @"GrandStaffViewController") {
         
-        NSLog(@"displayInteractive");
         GrandStaffViewController *theGrandStaffVC = [[GrandStaffViewController alloc]init];
         [self presentModalViewController:theGrandStaffVC animated:YES];
         
@@ -49,7 +48,6 @@
   
     if (interactiveToDisplay == @"CircleOfFifthsViewController") {
         
-        NSLog(@"displayInteractive");
         CircleOfFifthsViewController *circleOfFifthsVC = [[CircleOfFifthsViewController alloc]init];
         [self presentModalViewController:circleOfFifthsVC animated:YES];
         
@@ -57,7 +55,6 @@
  
     if (interactiveToDisplay == @"AeolianViewController") {
         
-        NSLog(@"displayInteractive");
         AeolianViewController *aeolianVC = [[AeolianViewController alloc]init];
         [self presentModalViewController:aeolianVC animated:YES];
 
