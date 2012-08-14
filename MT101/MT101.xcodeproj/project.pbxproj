@@ -63,6 +63,7 @@
 		48D50A1B15D87E39009121C3 /* interactiveList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A1A15D87E39009121C3 /* interactiveList0.plist */; };
 		48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A2215D88779009121C3 /* TrebleClefViewController.xib */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		48FA4BF015DAE7DA00FF91CA /* videoList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */; };
 		48FAB51E15CAF90A0087DCFA /* AeolianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */; };
 		48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */; };
@@ -164,6 +165,7 @@
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2215D88779009121C3 /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrebleClefViewController.xib; path = MT101/TrebleClefViewController.xib; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
+		48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList0.plist; sourceTree = "<group>"; };
 		48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeolianViewController.h; path = MT101/AeolianViewController.h; sourceTree = "<group>"; };
 		48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AeolianViewController.m; path = MT101/AeolianViewController.m; sourceTree = "<group>"; };
 		48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AeolianViewController.xib; path = MT101/AeolianViewController.xib; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				484D16E415DAE485005FC66E /* SectionHeaders.plist */,
+				48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */,
 			);
 			name = Plists;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				484D16E015DAE21D005FC66E /* welcome.png in Resources */,
 				484D16E215DAE259005FC66E /* AltoClef.png in Resources */,
 				484D16E515DAE485005FC66E /* SectionHeaders.plist in Resources */,
+				48FA4BF015DAE7DA00FF91CA /* videoList0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

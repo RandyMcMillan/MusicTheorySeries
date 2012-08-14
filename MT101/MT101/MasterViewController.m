@@ -55,31 +55,14 @@
     sectionHeader = [[NSArray alloc]initWithContentsOfFile:sectionHeadersPath];
     for (NSString *str in sectionHeader)
         NSLog(@"sectionHeader = %@",str);
-
-    /*
-    sectionHeader = [[NSArray alloc]initWithObjects:
-                     @"Staffs / Clefs",
-                     @"Circle of Fifths",
-                     @"Modes",
-                     @"section 3",
-                     @"section 4",
-                     @"section 5"
-                     @"working",
-                      nil];
-    */
     
-    videoList0 = [[NSArray alloc] initWithObjects: //staffs
-                  @"The Grand Staff",
-                  @"Treble Clef",
-                  @"Soprano Clef",
-                  @"MezzoSoprano Clef",
-                  @"Alto Clef",
-                  @"Tenor Clef",
-                  @"BariTone Clef",
-                  @"Bass Clef",
-                  @"SubBass Clef",
-                  nil];
+    NSString *videoList0Path = [[NSBundle mainBundle] pathForResource:@"videoList0" ofType:@"plist"];
+    videoList0 = [[NSArray alloc]initWithContentsOfFile:videoList0Path];
+    for (NSString *str in videoList0)
+        NSLog(@"videoList0 = %@",str);
+
        
+    
     videoList1 = [[NSArray alloc] initWithObjects: //Circle Of Fifths
                  @"Circle Of Fifths",
                  nil];
