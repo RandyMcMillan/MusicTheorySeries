@@ -60,16 +60,20 @@
     videoList0 = [[NSArray alloc]initWithContentsOfFile:videoList0Path];
     for (NSString *str in videoList0)
         NSLog(@"videoList0 = %@",str);
+    
+    NSString *videoList1Path = [[NSBundle mainBundle] pathForResource:@"videoList1" ofType:@"plist"];
+    videoList1 = [[NSArray alloc]initWithContentsOfFile:videoList1Path];
+    for (NSString *str in videoList1)
+        NSLog(@"videoList1 = %@",str);
+
+    NSString *videoList2Path = [[NSBundle mainBundle] pathForResource:@"videoList2" ofType:@"plist"];
+    videoList2 = [[NSArray alloc]initWithContentsOfFile:videoList2Path];
+    for (NSString *str in videoList2)
+        NSLog(@"videoList2 = %@",str);
 
        
     
-    videoList1 = [[NSArray alloc] initWithObjects: //Circle Of Fifths
-                 @"Circle Of Fifths",
-                 nil];
     
-    videoList2 = [[NSArray alloc] initWithObjects: //Modes
-                  @"Aeolian",
-                  nil];
 
     videoList3 = [[NSArray alloc] initWithObjects: //
                   @"Aeolian",
@@ -139,6 +143,9 @@
                   [UIImage imageNamed:@"underwater.png"],
                   nil];
 
+    
+
+    
     interactiveList0 = [[NSArray alloc] initWithObjects:
                         @"GrandStaffViewController",
                         @"TrebleClefViewController",
@@ -158,7 +165,6 @@
                         @"TrebleClefViewController",
                         @"TrebleClefViewController",
                         @"TrebleClefViewController",
-
                         nil];
     
     interactiveList1 = [[NSArray alloc] initWithObjects:

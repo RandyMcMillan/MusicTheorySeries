@@ -60,10 +60,12 @@
 		48BF0C3315C9AC3400F0F1A0 /* vib_3.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2D15C9AC3400F0F1A0 /* vib_3.aiff */; };
 		48BF0C3415C9AC3400F0F1A0 /* vib_4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */; };
 		48BF0C3515C9AC3400F0F1A0 /* vib_5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */; };
-		48D50A1B15D87E39009121C3 /* interactiveList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A1A15D87E39009121C3 /* interactiveList0.plist */; };
 		48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A2215D88779009121C3 /* TrebleClefViewController.xib */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48FA4BF015DAE7DA00FF91CA /* videoList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */; };
+		48FA4BF315DAE90D00FF91CA /* videoList1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BF215DAE90D00FF91CA /* videoList1.plist */; };
+		48FA4BF515DAE9A500FF91CA /* videoList2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BF415DAE9A500FF91CA /* videoList2.plist */; };
+		48FA4BF915DAECD500FF91CA /* interactiveList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BF815DAECD500FF91CA /* interactiveList0.plist */; };
 		48FAB51E15CAF90A0087DCFA /* AeolianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */; };
 		48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */; };
@@ -161,11 +163,13 @@
 		48BF0C2D15C9AC3400F0F1A0 /* vib_3.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_3.aiff; path = ../vib_3.aiff; sourceTree = "<group>"; };
 		48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_4.aiff; path = ../vib_4.aiff; sourceTree = "<group>"; };
 		48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_5.aiff; path = ../vib_5.aiff; sourceTree = "<group>"; };
-		48D50A1A15D87E39009121C3 /* interactiveList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = interactiveList0.plist; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2215D88779009121C3 /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrebleClefViewController.xib; path = MT101/TrebleClefViewController.xib; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
 		48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList0.plist; sourceTree = "<group>"; };
+		48FA4BF215DAE90D00FF91CA /* videoList1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList1.plist; sourceTree = "<group>"; };
+		48FA4BF415DAE9A500FF91CA /* videoList2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList2.plist; sourceTree = "<group>"; };
+		48FA4BF815DAECD500FF91CA /* interactiveList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = interactiveList0.plist; sourceTree = "<group>"; };
 		48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeolianViewController.h; path = MT101/AeolianViewController.h; sourceTree = "<group>"; };
 		48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AeolianViewController.m; path = MT101/AeolianViewController.m; sourceTree = "<group>"; };
 		48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AeolianViewController.xib; path = MT101/AeolianViewController.xib; sourceTree = "<group>"; };
@@ -277,8 +281,11 @@
 		484D16E315DAE471005FC66E /* Plists */ = {
 			isa = PBXGroup;
 			children = (
+				48FA4BF815DAECD500FF91CA /* interactiveList0.plist */,
 				484D16E415DAE485005FC66E /* SectionHeaders.plist */,
 				48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */,
+				48FA4BF215DAE90D00FF91CA /* videoList1.plist */,
+				48FA4BF415DAE9A500FF91CA /* videoList2.plist */,
 			);
 			name = Plists;
 			sourceTree = "<group>";
@@ -376,7 +383,6 @@
 			children = (
 				484D16E315DAE471005FC66E /* Plists */,
 				489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */,
-				48D50A1A15D87E39009121C3 /* interactiveList0.plist */,
 				48FAB51A15CAF8710087DCFA /* XIBs */,
 				48FAB51815CAF84F0087DCFA /* ViewControllers */,
 				B225A7301534CF59006FD46F /* MT101 */,
@@ -500,7 +506,6 @@
 				48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */,
 				489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */,
 				489C8BB415CF062700F15D05 /* GrandStaffViewController.xib in Resources */,
-				48D50A1B15D87E39009121C3 /* interactiveList0.plist in Resources */,
 				48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */,
 				48FBC8E715D8C1E500011BE9 /* Aeolian.mp4 in Resources */,
 				48FBC8E815D8C1E500011BE9 /* Alto Clef.mp4 in Resources */,
@@ -559,6 +564,9 @@
 				484D16E215DAE259005FC66E /* AltoClef.png in Resources */,
 				484D16E515DAE485005FC66E /* SectionHeaders.plist in Resources */,
 				48FA4BF015DAE7DA00FF91CA /* videoList0.plist in Resources */,
+				48FA4BF315DAE90D00FF91CA /* videoList1.plist in Resources */,
+				48FA4BF515DAE9A500FF91CA /* videoList2.plist in Resources */,
+				48FA4BF915DAECD500FF91CA /* interactiveList0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
