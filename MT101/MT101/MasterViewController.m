@@ -102,13 +102,13 @@
     imageList0 = [[NSArray alloc] initWithObjects:
                   [UIImage imageNamed:@"TheGrandStaff.png"],
                   [UIImage imageNamed:@"TrebleClef.png"],
-                  [UIImage imageNamed:@"TrebleClef.png"],
-                  [UIImage imageNamed:@"TrebleClef.png"],
-                  [UIImage imageNamed:@"TrebleClef.png"],
-                  [UIImage imageNamed:@"TrebleClef.png"],
-                  [UIImage imageNamed:@"TrebleClef.png"],
-                  [UIImage imageNamed:@"TrebleClef.png"],
-                  [UIImage imageNamed:@"TrebleClef.png"],
+                  [UIImage imageNamed:@"SopranoClef.png"],
+                  [UIImage imageNamed:@"MezzoSopranoClef.png"],
+                  [UIImage imageNamed:@"AltoClef.png"],
+                  [UIImage imageNamed:@"TenorClef.png"],
+                  [UIImage imageNamed:@"BariToneClef.png"],
+                  [UIImage imageNamed:@"BassClef.png"],
+                  [UIImage imageNamed:@"SubBassClef.png"],
                  nil];
     
     imageList1 = [[NSArray alloc] initWithObjects:

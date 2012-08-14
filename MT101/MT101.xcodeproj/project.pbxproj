@@ -12,16 +12,47 @@
 		4825A36615C4DB43006F0C46 /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A36515C4DB43006F0C46 /* MixerHostAudio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4825A36815C4DBC3006F0C46 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */; };
 		4825A36A15C4DBCF006F0C46 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36915C4DBCF006F0C46 /* AVFoundation.framework */; };
-		483BEBEE15D0DF8A00D72F95 /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 483BEBED15D0DF8A00D72F95 /* Aeolian.png */; };
-		483BEBF015D0DFDB00D72F95 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 483BEBEF15D0DFDB00D72F95 /* welcome.png */; };
+		484D16BD15DAE21D005FC66E /* Aeolian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D169915DAE21D005FC66E /* Aeolian.ai */; };
+		484D16BE15DAE21D005FC66E /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D169A15DAE21D005FC66E /* Aeolian.png */; };
+		484D16C015DAE21D005FC66E /* AltoClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D169C15DAE21D005FC66E /* AltoClef.ai */; };
+		484D16C115DAE21D005FC66E /* BariToneClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D169D15DAE21D005FC66E /* BariToneClef.ai */; };
+		484D16C215DAE21D005FC66E /* BariToneClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D169E15DAE21D005FC66E /* BariToneClef.png */; };
+		484D16C315DAE21D005FC66E /* BassClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D169F15DAE21D005FC66E /* BassClef.ai */; };
+		484D16C415DAE21D005FC66E /* BassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16A015DAE21D005FC66E /* BassClef.png */; };
+		484D16C515DAE21D005FC66E /* CircleOfFifths.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16A115DAE21D005FC66E /* CircleOfFifths.ai */; };
+		484D16C615DAE21D005FC66E /* CircleOfFifths.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16A215DAE21D005FC66E /* CircleOfFifths.png */; };
+		484D16C715DAE21D005FC66E /* Dorian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16A315DAE21D005FC66E /* Dorian.ai */; };
+		484D16C815DAE21D005FC66E /* Dorian.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16A415DAE21D005FC66E /* Dorian.png */; };
+		484D16C915DAE21D005FC66E /* Ionian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16A515DAE21D005FC66E /* Ionian.ai */; };
+		484D16CA15DAE21D005FC66E /* Ionian.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16A615DAE21D005FC66E /* Ionian.png */; };
+		484D16CB15DAE21D005FC66E /* Locrian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16A715DAE21D005FC66E /* Locrian.ai */; };
+		484D16CC15DAE21D005FC66E /* Locrian.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16A815DAE21D005FC66E /* Locrian.png */; };
+		484D16CD15DAE21D005FC66E /* Lydian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16A915DAE21D005FC66E /* Lydian.ai */; };
+		484D16CE15DAE21D005FC66E /* Lydian.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16AA15DAE21D005FC66E /* Lydian.png */; };
+		484D16CF15DAE21D005FC66E /* MezzoSopranoClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16AB15DAE21D005FC66E /* MezzoSopranoClef.ai */; };
+		484D16D015DAE21D005FC66E /* MezzoSopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16AC15DAE21D005FC66E /* MezzoSopranoClef.png */; };
+		484D16D115DAE21D005FC66E /* Phrygian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16AD15DAE21D005FC66E /* Phrygian.ai */; };
+		484D16D215DAE21D005FC66E /* Phrygian.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16AE15DAE21D005FC66E /* Phrygian.png */; };
+		484D16D315DAE21D005FC66E /* Soprano.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16AF15DAE21D005FC66E /* Soprano.ai */; };
+		484D16D415DAE21D005FC66E /* Soprano.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16B015DAE21D005FC66E /* Soprano.png */; };
+		484D16D515DAE21D005FC66E /* SopranoClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16B115DAE21D005FC66E /* SopranoClef.ai */; };
+		484D16D615DAE21D005FC66E /* SopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16B215DAE21D005FC66E /* SopranoClef.png */; };
+		484D16D715DAE21D005FC66E /* SubBassClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16B315DAE21D005FC66E /* SubBassClef.ai */; };
+		484D16D815DAE21D005FC66E /* SubBassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16B415DAE21D005FC66E /* SubBassClef.png */; };
+		484D16D915DAE21D005FC66E /* TenorClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16B515DAE21D005FC66E /* TenorClef.ai */; };
+		484D16DA15DAE21D005FC66E /* TenorClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16B615DAE21D005FC66E /* TenorClef.png */; };
+		484D16DB15DAE21D005FC66E /* TheGrandStaff.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16B715DAE21D005FC66E /* TheGrandStaff.ai */; };
+		484D16DC15DAE21D005FC66E /* TheGrandStaff.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16B815DAE21D005FC66E /* TheGrandStaff.png */; };
+		484D16DD15DAE21D005FC66E /* TrebleClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16B915DAE21D005FC66E /* TrebleClef.ai */; };
+		484D16DE15DAE21D005FC66E /* TrebleClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16BA15DAE21D005FC66E /* TrebleClef.png */; };
+		484D16DF15DAE21D005FC66E /* welcome.ai in Resources */ = {isa = PBXBuildFile; fileRef = 484D16BB15DAE21D005FC66E /* welcome.ai */; };
+		484D16E015DAE21D005FC66E /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16BC15DAE21D005FC66E /* welcome.png */; };
+		484D16E215DAE259005FC66E /* AltoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 484D16E115DAE259005FC66E /* AltoClef.png */; };
 		486AD37215CE0B7D0054753C /* DGMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AD37115CE0B7D0054753C /* DGMenuItemCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05ED15BF334A00B3F10D /* icon@2x.png */; };
 		489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */; };
 		489C8BB215CF05DD00F15D05 /* GrandStaffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		489C8BB415CF062700F15D05 /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */; };
-		489C8BC015CF141100F15D05 /* sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BBD15CF141100F15D05 /* sunset.png */; };
-		489C8BC115CF141100F15D05 /* trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BBE15CF141100F15D05 /* trees.png */; };
-		489C8BC215CF141100F15D05 /* underwater.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BBF15CF141100F15D05 /* underwater.png */; };
 		48BF0C3015C9AC3400F0F1A0 /* vib_0.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */; };
 		48BF0C3115C9AC3400F0F1A0 /* vib_1.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2B15C9AC3400F0F1A0 /* vib_1.aiff */; };
 		48BF0C3215C9AC3400F0F1A0 /* vib_2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2C15C9AC3400F0F1A0 /* vib_2.aiff */; };
@@ -29,12 +60,10 @@
 		48BF0C3415C9AC3400F0F1A0 /* vib_4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */; };
 		48BF0C3515C9AC3400F0F1A0 /* vib_5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */; };
 		48D50A1B15D87E39009121C3 /* interactiveList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A1A15D87E39009121C3 /* interactiveList0.plist */; };
-		48D50A1E15D886C7009121C3 /* TrebleClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A1D15D886C7009121C3 /* TrebleClef.png */; };
 		48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A2215D88779009121C3 /* TrebleClefViewController.xib */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48FAB51E15CAF90A0087DCFA /* AeolianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */; };
-		48FAB52215CB12EA0087DCFA /* CircleOfFifths.png in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB52115CB12EA0087DCFA /* CircleOfFifths.png */; };
 		48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */; };
 		48FAB52715CB13930087DCFA /* CircleOfFifthsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48FBC8E715D8C1E500011BE9 /* Aeolian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FBC8D415D8C1E500011BE9 /* Aeolian.mp4 */; };
@@ -80,8 +109,42 @@
 		4825A36515C4DB43006F0C46 /* MixerHostAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixerHostAudio.m; sourceTree = "<group>"; };
 		4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4825A36915C4DBCF006F0C46 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		483BEBED15D0DF8A00D72F95 /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Aeolian.png; path = MT101/Art/ScalePNGs/Aeolian.png; sourceTree = SOURCE_ROOT; };
-		483BEBEF15D0DFDB00D72F95 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome.png; path = MT101/Art/ScalePNGs/welcome.png; sourceTree = SOURCE_ROOT; };
+		484D169915DAE21D005FC66E /* Aeolian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aeolian.ai; sourceTree = "<group>"; };
+		484D169A15DAE21D005FC66E /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
+		484D169C15DAE21D005FC66E /* AltoClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AltoClef.ai; sourceTree = "<group>"; };
+		484D169D15DAE21D005FC66E /* BariToneClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BariToneClef.ai; sourceTree = "<group>"; };
+		484D169E15DAE21D005FC66E /* BariToneClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BariToneClef.png; sourceTree = "<group>"; };
+		484D169F15DAE21D005FC66E /* BassClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BassClef.ai; sourceTree = "<group>"; };
+		484D16A015DAE21D005FC66E /* BassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BassClef.png; sourceTree = "<group>"; };
+		484D16A115DAE21D005FC66E /* CircleOfFifths.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CircleOfFifths.ai; sourceTree = "<group>"; };
+		484D16A215DAE21D005FC66E /* CircleOfFifths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleOfFifths.png; sourceTree = "<group>"; };
+		484D16A315DAE21D005FC66E /* Dorian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dorian.ai; sourceTree = "<group>"; };
+		484D16A415DAE21D005FC66E /* Dorian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dorian.png; sourceTree = "<group>"; };
+		484D16A515DAE21D005FC66E /* Ionian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ionian.ai; sourceTree = "<group>"; };
+		484D16A615DAE21D005FC66E /* Ionian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ionian.png; sourceTree = "<group>"; };
+		484D16A715DAE21D005FC66E /* Locrian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Locrian.ai; sourceTree = "<group>"; };
+		484D16A815DAE21D005FC66E /* Locrian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locrian.png; sourceTree = "<group>"; };
+		484D16A915DAE21D005FC66E /* Lydian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lydian.ai; sourceTree = "<group>"; };
+		484D16AA15DAE21D005FC66E /* Lydian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lydian.png; sourceTree = "<group>"; };
+		484D16AB15DAE21D005FC66E /* MezzoSopranoClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MezzoSopranoClef.ai; sourceTree = "<group>"; };
+		484D16AC15DAE21D005FC66E /* MezzoSopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MezzoSopranoClef.png; sourceTree = "<group>"; };
+		484D16AD15DAE21D005FC66E /* Phrygian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Phrygian.ai; sourceTree = "<group>"; };
+		484D16AE15DAE21D005FC66E /* Phrygian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phrygian.png; sourceTree = "<group>"; };
+		484D16AF15DAE21D005FC66E /* Soprano.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Soprano.ai; sourceTree = "<group>"; };
+		484D16B015DAE21D005FC66E /* Soprano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Soprano.png; sourceTree = "<group>"; };
+		484D16B115DAE21D005FC66E /* SopranoClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SopranoClef.ai; sourceTree = "<group>"; };
+		484D16B215DAE21D005FC66E /* SopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SopranoClef.png; sourceTree = "<group>"; };
+		484D16B315DAE21D005FC66E /* SubBassClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SubBassClef.ai; sourceTree = "<group>"; };
+		484D16B415DAE21D005FC66E /* SubBassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubBassClef.png; sourceTree = "<group>"; };
+		484D16B515DAE21D005FC66E /* TenorClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TenorClef.ai; sourceTree = "<group>"; };
+		484D16B615DAE21D005FC66E /* TenorClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TenorClef.png; sourceTree = "<group>"; };
+		484D16B715DAE21D005FC66E /* TheGrandStaff.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TheGrandStaff.ai; sourceTree = "<group>"; };
+		484D16B815DAE21D005FC66E /* TheGrandStaff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheGrandStaff.png; sourceTree = "<group>"; };
+		484D16B915DAE21D005FC66E /* TrebleClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrebleClef.ai; sourceTree = "<group>"; };
+		484D16BA15DAE21D005FC66E /* TrebleClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrebleClef.png; sourceTree = "<group>"; };
+		484D16BB15DAE21D005FC66E /* welcome.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = welcome.ai; sourceTree = "<group>"; };
+		484D16BC15DAE21D005FC66E /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = "<group>"; };
+		484D16E115DAE259005FC66E /* AltoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AltoClef.png; sourceTree = "<group>"; };
 		486AD37015CE0B7D0054753C /* DGMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGMenuItemCell.h; sourceTree = "<group>"; };
 		486AD37115CE0B7D0054753C /* DGMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGMenuItemCell.m; sourceTree = "<group>"; };
 		486B05ED15BF334A00B3F10D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
@@ -89,9 +152,6 @@
 		489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrandStaffViewController.h; path = MT101/GrandStaffViewController.h; sourceTree = "<group>"; };
 		489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrandStaffViewController.m; path = MT101/GrandStaffViewController.m; sourceTree = "<group>"; };
 		489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GrandStaffViewController.xib; path = MT101/GrandStaffViewController.xib; sourceTree = "<group>"; };
-		489C8BBD15CF141100F15D05 /* sunset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sunset.png; path = MT101/sunset.png; sourceTree = SOURCE_ROOT; };
-		489C8BBE15CF141100F15D05 /* trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trees.png; path = MT101/trees.png; sourceTree = SOURCE_ROOT; };
-		489C8BBF15CF141100F15D05 /* underwater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = underwater.png; path = MT101/underwater.png; sourceTree = SOURCE_ROOT; };
 		48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_0.aiff; path = ../vib_0.aiff; sourceTree = "<group>"; };
 		48BF0C2B15C9AC3400F0F1A0 /* vib_1.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_1.aiff; path = ../vib_1.aiff; sourceTree = "<group>"; };
 		48BF0C2C15C9AC3400F0F1A0 /* vib_2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_2.aiff; path = ../vib_2.aiff; sourceTree = "<group>"; };
@@ -99,14 +159,12 @@
 		48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_4.aiff; path = ../vib_4.aiff; sourceTree = "<group>"; };
 		48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_5.aiff; path = ../vib_5.aiff; sourceTree = "<group>"; };
 		48D50A1A15D87E39009121C3 /* interactiveList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = interactiveList0.plist; sourceTree = "<group>"; };
-		48D50A1D15D886C7009121C3 /* TrebleClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrebleClef.png; path = MT101/Art/ScalePNGs/TrebleClef.png; sourceTree = SOURCE_ROOT; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2215D88779009121C3 /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrebleClefViewController.xib; path = MT101/TrebleClefViewController.xib; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
 		48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeolianViewController.h; path = MT101/AeolianViewController.h; sourceTree = "<group>"; };
 		48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AeolianViewController.m; path = MT101/AeolianViewController.m; sourceTree = "<group>"; };
 		48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AeolianViewController.xib; path = MT101/AeolianViewController.xib; sourceTree = "<group>"; };
-		48FAB52115CB12EA0087DCFA /* CircleOfFifths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CircleOfFifths.png; path = MT101/Art/ScalePNGs/CircleOfFifths.png; sourceTree = SOURCE_ROOT; };
 		48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CircleOfFifthsViewController.xib; path = MT101/CircleOfFifthsViewController.xib; sourceTree = "<group>"; };
 		48FAB52515CB13930087DCFA /* CircleOfFifthsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleOfFifthsViewController.h; path = MT101/CircleOfFifthsViewController.h; sourceTree = "<group>"; };
 		48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleOfFifthsViewController.m; path = MT101/CircleOfFifthsViewController.m; sourceTree = "<group>"; };
@@ -168,18 +226,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		48893ACC15C48F3C00A382BC /* ScalePNGs */ = {
+		484D169815DAE21D005FC66E /* ScalePNGs */ = {
 			isa = PBXGroup;
 			children = (
-				48D50A1D15D886C7009121C3 /* TrebleClef.png */,
-				483BEBEF15D0DFDB00D72F95 /* welcome.png */,
-				483BEBED15D0DF8A00D72F95 /* Aeolian.png */,
-				489C8BBD15CF141100F15D05 /* sunset.png */,
-				489C8BBE15CF141100F15D05 /* trees.png */,
-				489C8BBF15CF141100F15D05 /* underwater.png */,
-				48FAB52115CB12EA0087DCFA /* CircleOfFifths.png */,
+				484D16E115DAE259005FC66E /* AltoClef.png */,
+				484D169915DAE21D005FC66E /* Aeolian.ai */,
+				484D169A15DAE21D005FC66E /* Aeolian.png */,
+				484D169C15DAE21D005FC66E /* AltoClef.ai */,
+				484D169D15DAE21D005FC66E /* BariToneClef.ai */,
+				484D169E15DAE21D005FC66E /* BariToneClef.png */,
+				484D169F15DAE21D005FC66E /* BassClef.ai */,
+				484D16A015DAE21D005FC66E /* BassClef.png */,
+				484D16A115DAE21D005FC66E /* CircleOfFifths.ai */,
+				484D16A215DAE21D005FC66E /* CircleOfFifths.png */,
+				484D16A315DAE21D005FC66E /* Dorian.ai */,
+				484D16A415DAE21D005FC66E /* Dorian.png */,
+				484D16A515DAE21D005FC66E /* Ionian.ai */,
+				484D16A615DAE21D005FC66E /* Ionian.png */,
+				484D16A715DAE21D005FC66E /* Locrian.ai */,
+				484D16A815DAE21D005FC66E /* Locrian.png */,
+				484D16A915DAE21D005FC66E /* Lydian.ai */,
+				484D16AA15DAE21D005FC66E /* Lydian.png */,
+				484D16AB15DAE21D005FC66E /* MezzoSopranoClef.ai */,
+				484D16AC15DAE21D005FC66E /* MezzoSopranoClef.png */,
+				484D16AD15DAE21D005FC66E /* Phrygian.ai */,
+				484D16AE15DAE21D005FC66E /* Phrygian.png */,
+				484D16AF15DAE21D005FC66E /* Soprano.ai */,
+				484D16B015DAE21D005FC66E /* Soprano.png */,
+				484D16B115DAE21D005FC66E /* SopranoClef.ai */,
+				484D16B215DAE21D005FC66E /* SopranoClef.png */,
+				484D16B315DAE21D005FC66E /* SubBassClef.ai */,
+				484D16B415DAE21D005FC66E /* SubBassClef.png */,
+				484D16B515DAE21D005FC66E /* TenorClef.ai */,
+				484D16B615DAE21D005FC66E /* TenorClef.png */,
+				484D16B715DAE21D005FC66E /* TheGrandStaff.ai */,
+				484D16B815DAE21D005FC66E /* TheGrandStaff.png */,
+				484D16B915DAE21D005FC66E /* TrebleClef.ai */,
+				484D16BA15DAE21D005FC66E /* TrebleClef.png */,
+				484D16BB15DAE21D005FC66E /* welcome.ai */,
+				484D16BC15DAE21D005FC66E /* welcome.png */,
 			);
-			path = ScalePNGs;
+			name = ScalePNGs;
+			path = Art/ScalePNGs;
 			sourceTree = "<group>";
 		};
 		48BF0C3715C9AC4000F0F1A0 /* Audio */ = {
@@ -235,7 +323,7 @@
 		48FAB51B15CAF8B30087DCFA /* Art */ = {
 			isa = PBXGroup;
 			children = (
-				48893ACC15C48F3C00A382BC /* ScalePNGs */,
+				484D169815DAE21D005FC66E /* ScalePNGs */,
 				486B05ED15BF334A00B3F10D /* icon@2x.png */,
 				B225A76C1534D27F006FD46F /* greenlights.png */,
 				B225A7581534D110006FD46F /* button1.png */,
@@ -395,17 +483,10 @@
 				48BF0C3415C9AC3400F0F1A0 /* vib_4.aiff in Resources */,
 				48BF0C3515C9AC3400F0F1A0 /* vib_5.aiff in Resources */,
 				48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */,
-				48FAB52215CB12EA0087DCFA /* CircleOfFifths.png in Resources */,
 				48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */,
 				489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */,
 				489C8BB415CF062700F15D05 /* GrandStaffViewController.xib in Resources */,
-				489C8BC015CF141100F15D05 /* sunset.png in Resources */,
-				489C8BC115CF141100F15D05 /* trees.png in Resources */,
-				489C8BC215CF141100F15D05 /* underwater.png in Resources */,
-				483BEBEE15D0DF8A00D72F95 /* Aeolian.png in Resources */,
-				483BEBF015D0DFDB00D72F95 /* welcome.png in Resources */,
 				48D50A1B15D87E39009121C3 /* interactiveList0.plist in Resources */,
-				48D50A1E15D886C7009121C3 /* TrebleClef.png in Resources */,
 				48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */,
 				48FBC8E715D8C1E500011BE9 /* Aeolian.mp4 in Resources */,
 				48FBC8E815D8C1E500011BE9 /* Alto Clef.mp4 in Resources */,
@@ -426,6 +507,42 @@
 				48FBC8F715D8C1E500011BE9 /* Untitled.m4v in Resources */,
 				48FBC8F815D8C1E500011BE9 /* Untitled.mov in Resources */,
 				48FBC8F915D8C1E500011BE9 /* WindyTrees.mp4 in Resources */,
+				484D16BD15DAE21D005FC66E /* Aeolian.ai in Resources */,
+				484D16BE15DAE21D005FC66E /* Aeolian.png in Resources */,
+				484D16C015DAE21D005FC66E /* AltoClef.ai in Resources */,
+				484D16C115DAE21D005FC66E /* BariToneClef.ai in Resources */,
+				484D16C215DAE21D005FC66E /* BariToneClef.png in Resources */,
+				484D16C315DAE21D005FC66E /* BassClef.ai in Resources */,
+				484D16C415DAE21D005FC66E /* BassClef.png in Resources */,
+				484D16C515DAE21D005FC66E /* CircleOfFifths.ai in Resources */,
+				484D16C615DAE21D005FC66E /* CircleOfFifths.png in Resources */,
+				484D16C715DAE21D005FC66E /* Dorian.ai in Resources */,
+				484D16C815DAE21D005FC66E /* Dorian.png in Resources */,
+				484D16C915DAE21D005FC66E /* Ionian.ai in Resources */,
+				484D16CA15DAE21D005FC66E /* Ionian.png in Resources */,
+				484D16CB15DAE21D005FC66E /* Locrian.ai in Resources */,
+				484D16CC15DAE21D005FC66E /* Locrian.png in Resources */,
+				484D16CD15DAE21D005FC66E /* Lydian.ai in Resources */,
+				484D16CE15DAE21D005FC66E /* Lydian.png in Resources */,
+				484D16CF15DAE21D005FC66E /* MezzoSopranoClef.ai in Resources */,
+				484D16D015DAE21D005FC66E /* MezzoSopranoClef.png in Resources */,
+				484D16D115DAE21D005FC66E /* Phrygian.ai in Resources */,
+				484D16D215DAE21D005FC66E /* Phrygian.png in Resources */,
+				484D16D315DAE21D005FC66E /* Soprano.ai in Resources */,
+				484D16D415DAE21D005FC66E /* Soprano.png in Resources */,
+				484D16D515DAE21D005FC66E /* SopranoClef.ai in Resources */,
+				484D16D615DAE21D005FC66E /* SopranoClef.png in Resources */,
+				484D16D715DAE21D005FC66E /* SubBassClef.ai in Resources */,
+				484D16D815DAE21D005FC66E /* SubBassClef.png in Resources */,
+				484D16D915DAE21D005FC66E /* TenorClef.ai in Resources */,
+				484D16DA15DAE21D005FC66E /* TenorClef.png in Resources */,
+				484D16DB15DAE21D005FC66E /* TheGrandStaff.ai in Resources */,
+				484D16DC15DAE21D005FC66E /* TheGrandStaff.png in Resources */,
+				484D16DD15DAE21D005FC66E /* TrebleClef.ai in Resources */,
+				484D16DE15DAE21D005FC66E /* TrebleClef.png in Resources */,
+				484D16DF15DAE21D005FC66E /* welcome.ai in Resources */,
+				484D16E015DAE21D005FC66E /* welcome.png in Resources */,
+				484D16E215DAE259005FC66E /* AltoClef.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
