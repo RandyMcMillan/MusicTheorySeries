@@ -50,12 +50,15 @@
     //for (NSString *str in array2)
       //  NSLog(@"array2 = %@", str);
 
-    
+#pragma mark - Section Headers
+ 
     NSString *sectionHeadersPath = [[NSBundle mainBundle] pathForResource:@"SectionHeaders" ofType:@"plist"];
     sectionHeader = [[NSArray alloc]initWithContentsOfFile:sectionHeadersPath];
     for (NSString *str in sectionHeader)
         NSLog(@"sectionHeader = %@",str);
-    
+   
+#pragma mark - Video Lists
+
     NSString *videoList0Path = [[NSBundle mainBundle] pathForResource:@"videoList0" ofType:@"plist"];
     videoList0 = [[NSArray alloc]initWithContentsOfFile:videoList0Path];
     for (NSString *str in videoList0)
@@ -86,7 +89,9 @@
     for (NSString *str in videoList5)
         NSLog(@"videoList5 = %@",str);
 
-   
+    
+#pragma mark - Image Names
+ 
     
     NSString *imageNameList0Path = [[NSBundle mainBundle] pathForResource:@"imageNameList0" ofType:@"plist"];
     imageNameList0 = [[NSArray alloc]initWithContentsOfFile:imageNameList0Path];
@@ -103,21 +108,39 @@
                   [UIImage imageNamed:[imageNameList0 objectAtIndex:7]],
                   [UIImage imageNamed:[imageNameList0 objectAtIndex:8]],
                  nil];
-    
-    imageList1 = [[NSArray alloc] initWithObjects:
-                  [UIImage imageNamed:@"CircleOfFifths.png"],
-                  [UIImage imageNamed:@"CircleOfFifths.png"],
-                  [UIImage imageNamed:@"CircleOfFifths.png"],
-                  [UIImage imageNamed:@"CircleOfFifths.png"],
+   
+    NSString *imageNameList1Path = [[NSBundle mainBundle] pathForResource:@"imageNameList1" ofType:@"plist"];
+    imageNameList1 = [[NSArray alloc]initWithContentsOfFile:imageNameList1Path];
+    for (NSString *str in imageNameList1)
+        NSLog(@"imageNameList1 = %@",str);
+    imageList1 = [[NSArray alloc] initWithObjects: //Staffs CLefs
+                  [UIImage imageNamed:[imageNameList1 objectAtIndex:0]],
+                  [UIImage imageNamed:[imageNameList1 objectAtIndex:1]],
+                  [UIImage imageNamed:[imageNameList1 objectAtIndex:2]],
+                  [UIImage imageNamed:[imageNameList1 objectAtIndex:3]],
+                  [UIImage imageNamed:[imageNameList1 objectAtIndex:4]],
+                  [UIImage imageNamed:[imageNameList1 objectAtIndex:5]],
+                  [UIImage imageNamed:[imageNameList1 objectAtIndex:6]],
+                  [UIImage imageNamed:[imageNameList1 objectAtIndex:7]],
+                  [UIImage imageNamed:[imageNameList1 objectAtIndex:8]],
                   nil];
     
-    imageList2 = [[NSArray alloc] initWithObjects://modes
-                  [UIImage imageNamed:@"Aeolian.png"],
-                  [UIImage imageNamed:@"Aeolian.png"],
-                  [UIImage imageNamed:@"Aeolian.png"],
-                  [UIImage imageNamed:@"Aeolian.png"],
-                  [UIImage imageNamed:@"Aeolian.png"],
+    NSString *imageNameList2Path = [[NSBundle mainBundle] pathForResource:@"imageNameList2" ofType:@"plist"];
+    imageNameList2 = [[NSArray alloc]initWithContentsOfFile:imageNameList2Path];
+    for (NSString *str in imageNameList2)
+        NSLog(@"imageNameList2 = %@",str);
+    imageList2 = [[NSArray alloc] initWithObjects: //Staffs CLefs
+                  [UIImage imageNamed:[imageNameList2 objectAtIndex:0]],
+                  [UIImage imageNamed:[imageNameList2 objectAtIndex:1]],
+                  [UIImage imageNamed:[imageNameList2 objectAtIndex:2]],
+                  [UIImage imageNamed:[imageNameList2 objectAtIndex:3]],
+                  [UIImage imageNamed:[imageNameList2 objectAtIndex:4]],
+                  [UIImage imageNamed:[imageNameList2 objectAtIndex:5]],
+                  [UIImage imageNamed:[imageNameList2 objectAtIndex:6]],
+                  [UIImage imageNamed:[imageNameList2 objectAtIndex:7]],
+                  [UIImage imageNamed:[imageNameList2 objectAtIndex:8]],
                   nil];
+
     
     imageList3 = [[NSArray alloc] initWithObjects://modes
                   [UIImage imageNamed:@"Aeolian.png"],
@@ -141,6 +164,7 @@
                   nil];
 
     
+#pragma mark - Interactive Lists
 
     
     interactiveList0 = [[NSArray alloc] initWithObjects:
