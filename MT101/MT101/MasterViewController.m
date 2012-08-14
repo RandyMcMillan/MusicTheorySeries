@@ -238,9 +238,9 @@
                         nil];
     
     interactiveList4 = [[NSArray alloc] initWithObjects:
-                        @"aeolianVC",
-                        @"circleOfFifthsVC",
-                        @"circleOfFifthsVC",
+                        @"AeolianViewController",
+                        @"CircleOfFifthsViewController",
+                        @"CircleOfFifthsViewController",
                         @"circleOfFifthsVC",
                         @"circleOfFifthsVC",
                         @"circleOfFifthsVC",
@@ -259,8 +259,8 @@
                         nil];
     
     interactiveList5 = [[NSArray alloc] initWithObjects:
-                        @"aeolianVC",
-                        @"circleOfFifthsVC",
+                        @"AeolianViewController",
+                        @"CircleOfFifthsViewController",
                         @"circleOfFifthsVC",
                         @"circleOfFifthsVC",
                         @"circleOfFifthsVC",
