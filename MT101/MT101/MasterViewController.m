@@ -89,15 +89,9 @@
    
     
     NSString *imageNameList0Path = [[NSBundle mainBundle] pathForResource:@"imageNameList0" ofType:@"plist"];
-    
     imageNameList0 = [[NSArray alloc]initWithContentsOfFile:imageNameList0Path];
-    
-    
     for (NSString *str in imageNameList0)
         NSLog(@"imageNameList0 = %@",str);
-
-    
-    
     imageList0 = [[NSArray alloc] initWithObjects: //Staffs CLefs
                   [UIImage imageNamed:[imageNameList0 objectAtIndex:0]],
                   [UIImage imageNamed:[imageNameList0 objectAtIndex:1]],
