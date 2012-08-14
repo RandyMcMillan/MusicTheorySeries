@@ -71,6 +71,9 @@
 		48FA4C0115DAF68300FF91CA /* imageNameList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4C0015DAF68300FF91CA /* imageNameList0.plist */; };
 		48FA4C0315DB009F00FF91CA /* imageNameList1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4C0215DB009F00FF91CA /* imageNameList1.plist */; };
 		48FA4C0515DB027600FF91CA /* imageNameList2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4C0415DB027600FF91CA /* imageNameList2.plist */; };
+		48FA4C0715DB03A200FF91CA /* imageNameList3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4C0615DB03A200FF91CA /* imageNameList3.plist */; };
+		48FA4C0915DB03AB00FF91CA /* imageNameList4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4C0815DB03AB00FF91CA /* imageNameList4.plist */; };
+		48FA4C0B15DB03B200FF91CA /* imageNameList5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4C0A15DB03B200FF91CA /* imageNameList5.plist */; };
 		48FAB51E15CAF90A0087DCFA /* AeolianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */; };
 		48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */; };
@@ -180,6 +183,9 @@
 		48FA4C0015DAF68300FF91CA /* imageNameList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageNameList0.plist; sourceTree = "<group>"; };
 		48FA4C0215DB009F00FF91CA /* imageNameList1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageNameList1.plist; sourceTree = "<group>"; };
 		48FA4C0415DB027600FF91CA /* imageNameList2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageNameList2.plist; sourceTree = "<group>"; };
+		48FA4C0615DB03A200FF91CA /* imageNameList3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageNameList3.plist; sourceTree = "<group>"; };
+		48FA4C0815DB03AB00FF91CA /* imageNameList4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageNameList4.plist; sourceTree = "<group>"; };
+		48FA4C0A15DB03B200FF91CA /* imageNameList5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageNameList5.plist; sourceTree = "<group>"; };
 		48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeolianViewController.h; path = MT101/AeolianViewController.h; sourceTree = "<group>"; };
 		48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AeolianViewController.m; path = MT101/AeolianViewController.m; sourceTree = "<group>"; };
 		48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AeolianViewController.xib; path = MT101/AeolianViewController.xib; sourceTree = "<group>"; };
@@ -301,6 +307,9 @@
 				48FA4C0015DAF68300FF91CA /* imageNameList0.plist */,
 				48FA4C0215DB009F00FF91CA /* imageNameList1.plist */,
 				48FA4C0415DB027600FF91CA /* imageNameList2.plist */,
+				48FA4C0615DB03A200FF91CA /* imageNameList3.plist */,
+				48FA4C0815DB03AB00FF91CA /* imageNameList4.plist */,
+				48FA4C0A15DB03B200FF91CA /* imageNameList5.plist */,
 			);
 			name = Plists;
 			sourceTree = "<group>";
@@ -587,6 +596,9 @@
 				48FA4C0115DAF68300FF91CA /* imageNameList0.plist in Resources */,
 				48FA4C0315DB009F00FF91CA /* imageNameList1.plist in Resources */,
 				48FA4C0515DB027600FF91CA /* imageNameList2.plist in Resources */,
+				48FA4C0715DB03A200FF91CA /* imageNameList3.plist in Resources */,
+				48FA4C0915DB03AB00FF91CA /* imageNameList4.plist in Resources */,
+				48FA4C0B15DB03B200FF91CA /* imageNameList5.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

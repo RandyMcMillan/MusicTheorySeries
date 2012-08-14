@@ -140,29 +140,59 @@
                   [UIImage imageNamed:[imageNameList2 objectAtIndex:7]],
                   [UIImage imageNamed:[imageNameList2 objectAtIndex:8]],
                   nil];
-
     
-    imageList3 = [[NSArray alloc] initWithObjects://modes
-                  [UIImage imageNamed:@"Aeolian.png"],
-                  [UIImage imageNamed:@"CircleOfFifths.png"],
-                  [UIImage imageNamed:@"sunset.png"],
-                  nil];
     
-    imageList4 = [[NSArray alloc] initWithObjects:
-                  [UIImage imageNamed:@"Aeolian.png"],
-                  [UIImage imageNamed:@"CircleOfFifths.png"],
-                  [UIImage imageNamed:@"sunset.png"],
-                  [UIImage imageNamed:@"underwater.png"],
-                  [UIImage imageNamed:@"trees.png"],
-                  nil];
-    
-    imageList5 = [[NSArray alloc] initWithObjects:
-                  [UIImage imageNamed:@"Aeolian.png"],
-                  [UIImage imageNamed:@"CircleOfFifths.png"],
-                  [UIImage imageNamed:@"sunset.png"],
-                  [UIImage imageNamed:@"underwater.png"],
+    NSString *imageNameList3Path = [[NSBundle mainBundle] pathForResource:@"imageNameList3" ofType:@"plist"];
+    imageNameList3 = [[NSArray alloc]initWithContentsOfFile:imageNameList3Path];
+    for (NSString *str in imageNameList3)
+        NSLog(@"imageNameList3 = %@",str);
+    imageList3 = [[NSArray alloc] initWithObjects: //Staffs CLefs
+                  [UIImage imageNamed:[imageNameList3 objectAtIndex:0]],
+                  [UIImage imageNamed:[imageNameList3 objectAtIndex:1]],
+                  [UIImage imageNamed:[imageNameList3 objectAtIndex:2]],
+                  [UIImage imageNamed:[imageNameList3 objectAtIndex:3]],
+                  [UIImage imageNamed:[imageNameList3 objectAtIndex:4]],
+                  [UIImage imageNamed:[imageNameList3 objectAtIndex:5]],
+                  [UIImage imageNamed:[imageNameList3 objectAtIndex:6]],
+                  [UIImage imageNamed:[imageNameList3 objectAtIndex:7]],
+                  [UIImage imageNamed:[imageNameList3 objectAtIndex:8]],
                   nil];
 
+    NSString *imageNameList4Path = [[NSBundle mainBundle] pathForResource:@"imageNameList4" ofType:@"plist"];
+    imageNameList4 = [[NSArray alloc]initWithContentsOfFile:imageNameList4Path];
+    for (NSString *str in imageNameList4)
+        NSLog(@"imageNameList4 = %@",str);
+    imageList4 = [[NSArray alloc] initWithObjects: //Staffs CLefs
+                  [UIImage imageNamed:[imageNameList4 objectAtIndex:0]],
+                  [UIImage imageNamed:[imageNameList4 objectAtIndex:1]],
+                  [UIImage imageNamed:[imageNameList4 objectAtIndex:2]],
+                  [UIImage imageNamed:[imageNameList4 objectAtIndex:3]],
+                  [UIImage imageNamed:[imageNameList4 objectAtIndex:4]],
+                  [UIImage imageNamed:[imageNameList4 objectAtIndex:5]],
+                  [UIImage imageNamed:[imageNameList4 objectAtIndex:6]],
+                  [UIImage imageNamed:[imageNameList4 objectAtIndex:7]],
+                  [UIImage imageNamed:[imageNameList4 objectAtIndex:8]],
+                  nil];
+
+    
+    NSString *imageNameList5Path = [[NSBundle mainBundle] pathForResource:@"imageNameList5" ofType:@"plist"];
+    imageNameList5 = [[NSArray alloc]initWithContentsOfFile:imageNameList5Path];
+    for (NSString *str in imageNameList5)
+        NSLog(@"imageNameList5 = %@",str);
+    imageList5 = [[NSArray alloc] initWithObjects: //Staffs CLefs
+                  [UIImage imageNamed:[imageNameList5 objectAtIndex:0]],
+                  [UIImage imageNamed:[imageNameList5 objectAtIndex:1]],
+                  [UIImage imageNamed:[imageNameList5 objectAtIndex:2]],
+                  [UIImage imageNamed:[imageNameList5 objectAtIndex:3]],
+                  [UIImage imageNamed:[imageNameList5 objectAtIndex:4]],
+                  [UIImage imageNamed:[imageNameList5 objectAtIndex:5]],
+                  [UIImage imageNamed:[imageNameList5 objectAtIndex:6]],
+                  [UIImage imageNamed:[imageNameList5 objectAtIndex:7]],
+                  [UIImage imageNamed:[imageNameList5 objectAtIndex:8]],
+                  nil];
+
+    
+    
     
 #pragma mark - Interactive Lists
 
