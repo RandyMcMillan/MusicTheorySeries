@@ -39,16 +39,24 @@
     
     
     // Path to the plist (in the application bundle)
-    NSString *path = [[NSBundle mainBundle] pathForResource:
-                      @"interactiveList0" ofType:@"plist"];
+ //   NSString *path = [[NSBundle mainBundle] pathForResource:
+   //                   @"interactiveList0" ofType:@"plist"];
+    
     
     // Build the array from the plist
-    NSArray *array2 = [[NSArray alloc] initWithContentsOfFile:path];
+//    NSArray *array2 = [[NSArray alloc] initWithContentsOfFile:path];
     
     // Show the string values
-    for (NSString *str in array2)
-        NSLog(@"array2 = %@", str);
+    //for (NSString *str in array2)
+      //  NSLog(@"array2 = %@", str);
+
     
+    NSString *sectionHeadersPath = [[NSBundle mainBundle] pathForResource:@"SectionHeaders" ofType:@"plist"];
+    sectionHeader = [[NSArray alloc]initWithContentsOfFile:sectionHeadersPath];
+    for (NSString *str in sectionHeader)
+        NSLog(@"sectionHeader = %@",str);
+
+    /*
     sectionHeader = [[NSArray alloc]initWithObjects:
                      @"Staffs / Clefs",
                      @"Circle of Fifths",
@@ -58,6 +66,7 @@
                      @"section 5"
                      @"working",
                       nil];
+    */
     
     videoList0 = [[NSArray alloc] initWithObjects: //staffs
                   @"The Grand Staff",
@@ -99,7 +108,7 @@
                   @"WindyTrees",
                   nil];
     
-    imageList0 = [[NSArray alloc] initWithObjects:
+    imageList0 = [[NSArray alloc] initWithObjects: //Staffs CLefs
                   [UIImage imageNamed:@"TheGrandStaff.png"],
                   [UIImage imageNamed:@"TrebleClef.png"],
                   [UIImage imageNamed:@"SopranoClef.png"],
@@ -118,7 +127,7 @@
                   [UIImage imageNamed:@"CircleOfFifths.png"],
                   nil];
     
-    imageList2 = [[NSArray alloc] initWithObjects://clefs
+    imageList2 = [[NSArray alloc] initWithObjects://modes
                   [UIImage imageNamed:@"Aeolian.png"],
                   [UIImage imageNamed:@"Aeolian.png"],
                   [UIImage imageNamed:@"Aeolian.png"],
