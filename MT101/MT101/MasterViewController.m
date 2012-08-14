@@ -71,40 +71,43 @@
     for (NSString *str in videoList2)
         NSLog(@"videoList2 = %@",str);
 
-       
-    
-    
+    NSString *videoList3Path = [[NSBundle mainBundle] pathForResource:@"videoList3" ofType:@"plist"];
+    videoList3 = [[NSArray alloc]initWithContentsOfFile:videoList3Path];
+    for (NSString *str in videoList3)
+        NSLog(@"videoList3 = %@",str);
 
-    videoList3 = [[NSArray alloc] initWithObjects: //
-                  @"Aeolian",
-                  nil];
+    NSString *videoList4Path = [[NSBundle mainBundle] pathForResource:@"videoList4" ofType:@"plist"];
+    videoList4 = [[NSArray alloc]initWithContentsOfFile:videoList4Path];
+    for (NSString *str in videoList4)
+        NSLog(@"videoList4 = %@",str);
     
-    videoList4 = [[NSArray alloc] initWithObjects:
-                  @"Aeolian",
-                  @"Circle Of Fifths",
-                  @"SunInClouds",
-                  @"UnderWater",
-                  @"WindyTrees",
-                  nil];
+    NSString *videoList5Path = [[NSBundle mainBundle] pathForResource:@"videoList5" ofType:@"plist"];
+    videoList5 = [[NSArray alloc]initWithContentsOfFile:videoList5Path];
+    for (NSString *str in videoList5)
+        NSLog(@"videoList5 = %@",str);
+
+   
     
-    videoList5 = [[NSArray alloc] initWithObjects:
-                  @"Aeolian",
-                  @"Circle Of Fifths",
-                  @"SunInClouds",
-                  @"UnderWater",
-                  @"WindyTrees",
-                  nil];
+    NSString *imageNameList0Path = [[NSBundle mainBundle] pathForResource:@"imageNameList0" ofType:@"plist"];
+    
+    imageNameList0 = [[NSArray alloc]initWithContentsOfFile:imageNameList0Path];
+    
+    
+    for (NSString *str in imageNameList0)
+        NSLog(@"imageNameList0 = %@",str);
+
+    
     
     imageList0 = [[NSArray alloc] initWithObjects: //Staffs CLefs
-                  [UIImage imageNamed:@"TheGrandStaff.png"],
-                  [UIImage imageNamed:@"TrebleClef.png"],
-                  [UIImage imageNamed:@"SopranoClef.png"],
-                  [UIImage imageNamed:@"MezzoSopranoClef.png"],
-                  [UIImage imageNamed:@"AltoClef.png"],
-                  [UIImage imageNamed:@"TenorClef.png"],
-                  [UIImage imageNamed:@"BariToneClef.png"],
-                  [UIImage imageNamed:@"BassClef.png"],
-                  [UIImage imageNamed:@"SubBassClef.png"],
+                  [UIImage imageNamed:[imageNameList0 objectAtIndex:0]],
+                  [UIImage imageNamed:[imageNameList0 objectAtIndex:1]],
+                  [UIImage imageNamed:[imageNameList0 objectAtIndex:2]],
+                  [UIImage imageNamed:[imageNameList0 objectAtIndex:3]],
+                  [UIImage imageNamed:[imageNameList0 objectAtIndex:4]],
+                  [UIImage imageNamed:[imageNameList0 objectAtIndex:5]],
+                  [UIImage imageNamed:[imageNameList0 objectAtIndex:6]],
+                  [UIImage imageNamed:[imageNameList0 objectAtIndex:7]],
+                  [UIImage imageNamed:[imageNameList0 objectAtIndex:8]],
                  nil];
     
     imageList1 = [[NSArray alloc] initWithObjects:

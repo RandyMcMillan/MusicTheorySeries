@@ -17,6 +17,14 @@
     NSArray *videoList3;
     NSArray *videoList4;
     NSArray *videoList5;
+    
+    NSArray *imageNameList0;
+    NSArray *imageNameList1;
+    NSArray *imageNameList2;
+    NSArray *imageNameList3;
+    NSArray *imageNameList4;
+    NSArray *imageNameList5;
+
 
     NSArray *imageList0;
     NSArray *imageList1;

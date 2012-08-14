@@ -65,7 +65,10 @@
 		48FA4BF015DAE7DA00FF91CA /* videoList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */; };
 		48FA4BF315DAE90D00FF91CA /* videoList1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BF215DAE90D00FF91CA /* videoList1.plist */; };
 		48FA4BF515DAE9A500FF91CA /* videoList2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BF415DAE9A500FF91CA /* videoList2.plist */; };
-		48FA4BF915DAECD500FF91CA /* interactiveList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BF815DAECD500FF91CA /* interactiveList0.plist */; };
+		48FA4BFB15DAF4F200FF91CA /* videoList3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BFA15DAF4F200FF91CA /* videoList3.plist */; };
+		48FA4BFD15DAF57400FF91CA /* videoList4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BFC15DAF57400FF91CA /* videoList4.plist */; };
+		48FA4BFF15DAF62100FF91CA /* videoList5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BFE15DAF62100FF91CA /* videoList5.plist */; };
+		48FA4C0115DAF68300FF91CA /* imageNameList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4C0015DAF68300FF91CA /* imageNameList0.plist */; };
 		48FAB51E15CAF90A0087DCFA /* AeolianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */; };
 		48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */; };
@@ -169,7 +172,10 @@
 		48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList0.plist; sourceTree = "<group>"; };
 		48FA4BF215DAE90D00FF91CA /* videoList1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList1.plist; sourceTree = "<group>"; };
 		48FA4BF415DAE9A500FF91CA /* videoList2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList2.plist; sourceTree = "<group>"; };
-		48FA4BF815DAECD500FF91CA /* interactiveList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = interactiveList0.plist; sourceTree = "<group>"; };
+		48FA4BFA15DAF4F200FF91CA /* videoList3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList3.plist; sourceTree = "<group>"; };
+		48FA4BFC15DAF57400FF91CA /* videoList4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList4.plist; sourceTree = "<group>"; };
+		48FA4BFE15DAF62100FF91CA /* videoList5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList5.plist; sourceTree = "<group>"; };
+		48FA4C0015DAF68300FF91CA /* imageNameList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageNameList0.plist; sourceTree = "<group>"; };
 		48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeolianViewController.h; path = MT101/AeolianViewController.h; sourceTree = "<group>"; };
 		48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AeolianViewController.m; path = MT101/AeolianViewController.m; sourceTree = "<group>"; };
 		48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AeolianViewController.xib; path = MT101/AeolianViewController.xib; sourceTree = "<group>"; };
@@ -281,11 +287,14 @@
 		484D16E315DAE471005FC66E /* Plists */ = {
 			isa = PBXGroup;
 			children = (
-				48FA4BF815DAECD500FF91CA /* interactiveList0.plist */,
 				484D16E415DAE485005FC66E /* SectionHeaders.plist */,
 				48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */,
 				48FA4BF215DAE90D00FF91CA /* videoList1.plist */,
 				48FA4BF415DAE9A500FF91CA /* videoList2.plist */,
+				48FA4BFA15DAF4F200FF91CA /* videoList3.plist */,
+				48FA4BFC15DAF57400FF91CA /* videoList4.plist */,
+				48FA4BFE15DAF62100FF91CA /* videoList5.plist */,
+				48FA4C0015DAF68300FF91CA /* imageNameList0.plist */,
 			);
 			name = Plists;
 			sourceTree = "<group>";
@@ -566,7 +575,10 @@
 				48FA4BF015DAE7DA00FF91CA /* videoList0.plist in Resources */,
 				48FA4BF315DAE90D00FF91CA /* videoList1.plist in Resources */,
 				48FA4BF515DAE9A500FF91CA /* videoList2.plist in Resources */,
-				48FA4BF915DAECD500FF91CA /* interactiveList0.plist in Resources */,
+				48FA4BFB15DAF4F200FF91CA /* videoList3.plist in Resources */,
+				48FA4BFD15DAF57400FF91CA /* videoList4.plist in Resources */,
+				48FA4BFF15DAF62100FF91CA /* videoList5.plist in Resources */,
+				48FA4C0115DAF68300FF91CA /* imageNameList0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
