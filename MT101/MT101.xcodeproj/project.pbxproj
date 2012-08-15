@@ -364,27 +364,9 @@
 			name = Audio;
 			sourceTree = "<group>";
 		};
-		48FAB51815CAF84F0087DCFA /* ViewControllers */ = {
+		48EEEF6715DC527600D15F15 /* ClefVCs */ = {
 			isa = PBXGroup;
 			children = (
-				48EEEF6215DC4BBF00D15F15 /* MezzoSopranoClefViewController.h */,
-				48EEEF6315DC4BBF00D15F15 /* MezzoSopranoClefViewController.m */,
-				48D50A2415D8879D009121C3 /* TrebleClefViewController.m */,
-				48D50A2115D8876D009121C3 /* TrebleClefViewController.h */,
-				489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */,
-				489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */,
-				48FAB52515CB13930087DCFA /* CircleOfFifthsViewController.h */,
-				48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */,
-				48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */,
-				48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */,
-				B225A73C1534CF59006FD46F /* MasterViewController.h */,
-				B225A73D1534CF59006FD46F /* MasterViewController.m */,
-				48EEEF3415DC47DC00D15F15 /* SopranoClefViewController.h */,
-				48EEEF3515DC47DC00D15F15 /* SopranoClefViewController.m */,
-				B225A73F1534CF59006FD46F /* DetailViewController.h */,
-				486AD37015CE0B7D0054753C /* DGMenuItemCell.h */,
-				486AD37115CE0B7D0054753C /* DGMenuItemCell.m */,
-				B225A7401534CF59006FD46F /* DetailViewController.m */,
 				4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */,
 				4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */,
 				48EEEF3F15DC4A1600D15F15 /* AltoClefViewController.h */,
@@ -398,11 +380,36 @@
 				48EEEF5915DC4B6B00D15F15 /* BassClefViewController.m */,
 				48EEEF5D15DC4B7A00D15F15 /* SubBassClefViewController.h */,
 				48EEEF5E15DC4B7A00D15F15 /* SubBassClefViewController.m */,
+				48EEEF3415DC47DC00D15F15 /* SopranoClefViewController.h */,
+				48EEEF3515DC47DC00D15F15 /* SopranoClefViewController.m */,
+				48EEEF6215DC4BBF00D15F15 /* MezzoSopranoClefViewController.h */,
+				48EEEF6315DC4BBF00D15F15 /* MezzoSopranoClefViewController.m */,
+				48D50A2415D8879D009121C3 /* TrebleClefViewController.m */,
+				48D50A2115D8876D009121C3 /* TrebleClefViewController.h */,
+				489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */,
+				489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */,
+				48FAB52515CB13930087DCFA /* CircleOfFifthsViewController.h */,
+				48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */,
+				48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */,
+				48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */,
 			);
-			name = ViewControllers;
+			name = ClefVCs;
 			sourceTree = "<group>";
 		};
-		48FAB51A15CAF8710087DCFA /* XIBs */ = {
+		48EEEF6815DC52BA00D15F15 /* MainVCs */ = {
+			isa = PBXGroup;
+			children = (
+				B225A73C1534CF59006FD46F /* MasterViewController.h */,
+				B225A73D1534CF59006FD46F /* MasterViewController.m */,
+				B225A73F1534CF59006FD46F /* DetailViewController.h */,
+				486AD37015CE0B7D0054753C /* DGMenuItemCell.h */,
+				486AD37115CE0B7D0054753C /* DGMenuItemCell.m */,
+				B225A7401534CF59006FD46F /* DetailViewController.m */,
+			);
+			name = MainVCs;
+			sourceTree = "<group>";
+		};
+		48EEEF6915DC52D700D15F15 /* ClefXIBs */ = {
 			isa = PBXGroup;
 			children = (
 				48EEEF3615DC47DC00D15F15 /* SopranoClefViewController.xib */,
@@ -416,8 +423,33 @@
 				48EEEF5A15DC4B6B00D15F15 /* BassClefViewController.xib */,
 				48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */,
 				4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */,
+			);
+			name = ClefXIBs;
+			sourceTree = "<group>";
+		};
+		48EEEF6A15DC52F400D15F15 /* MainXIBs */ = {
+			isa = PBXGroup;
+			children = (
 				B225A7421534CF59006FD46F /* MasterViewController.xib */,
 				B225A7451534CF59006FD46F /* DetailViewController.xib */,
+			);
+			name = MainXIBs;
+			sourceTree = "<group>";
+		};
+		48FAB51815CAF84F0087DCFA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				48EEEF6815DC52BA00D15F15 /* MainVCs */,
+				48EEEF6715DC527600D15F15 /* ClefVCs */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		48FAB51A15CAF8710087DCFA /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				48EEEF6A15DC52F400D15F15 /* MainXIBs */,
+				48EEEF6915DC52D700D15F15 /* ClefXIBs */,
 			);
 			name = XIBs;
 			sourceTree = "<group>";
