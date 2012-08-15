@@ -209,13 +209,6 @@
                         @"TrebleClefViewController",
                         @"TrebleClefViewController",
                         @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
                         nil];
     
     interactiveList1 = [[NSArray alloc] initWithObjects:
