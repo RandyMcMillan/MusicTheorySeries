@@ -60,6 +60,7 @@
 		48BF0C3315C9AC3400F0F1A0 /* vib_3.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2D15C9AC3400F0F1A0 /* vib_3.aiff */; };
 		48BF0C3415C9AC3400F0F1A0 /* vib_4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */; };
 		48BF0C3515C9AC3400F0F1A0 /* vib_5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */; };
+		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
 		48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A2215D88779009121C3 /* TrebleClefViewController.xib */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48FA4BF015DAE7DA00FF91CA /* videoList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */; };
@@ -171,6 +172,7 @@
 		48BF0C2D15C9AC3400F0F1A0 /* vib_3.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_3.aiff; path = ../vib_3.aiff; sourceTree = "<group>"; };
 		48BF0C2E15C9AC3400F0F1A0 /* vib_4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_4.aiff; path = ../vib_4.aiff; sourceTree = "<group>"; };
 		48BF0C2F15C9AC3400F0F1A0 /* vib_5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_5.aiff; path = ../vib_5.aiff; sourceTree = "<group>"; };
+		48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2215D88779009121C3 /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrebleClefViewController.xib; path = MT101/TrebleClefViewController.xib; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
+				48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */,
 				484D16E315DAE471005FC66E /* Plists */,
 				489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */,
 				48FAB51A15CAF8710087DCFA /* XIBs */,
@@ -599,6 +602,7 @@
 				48FA4C0715DB03A200FF91CA /* imageNameList3.plist in Resources */,
 				48FA4C0915DB03AB00FF91CA /* imageNameList4.plist in Resources */,
 				48FA4C0B15DB03B200FF91CA /* imageNameList5.plist in Resources */,
+				48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

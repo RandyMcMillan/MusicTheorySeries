@@ -185,11 +185,11 @@
     }
     
     if (toInterfaceOrientation == UIInterfaceOrientationPortrait){
-        return NO;
+        return YES;
     }
     
     if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
-        return NO;
+        return YES;
     } else {return NO;}
     
 
@@ -211,7 +211,7 @@
 
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
 {
-    barButtonItem.title = NSLocalizedString(@"Videos", @"Videos");
+    barButtonItem.title = NSLocalizedString(@"Examples", @"Examples");
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.masterPopoverController = popoverController;
 }
