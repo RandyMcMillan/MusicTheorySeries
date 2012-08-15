@@ -7,9 +7,9 @@
 //
 
 #import "DetailViewController.h"
+
 #import "GrandStaffViewController.h"
 #import "AppleXylophoneViewController.h"
-#import "AeolianViewController.h"
 #import "CircleOfFifthsViewController.h"
 #import "TrebleClefViewController.h"
 #import "SopranoClefViewController.h"
@@ -20,15 +20,17 @@
 #import "BassClefViewController.h"
 #import "SubBassClefViewController.h"
 
+#import "AeolianViewController.h"
+
 
 @interface DetailViewController (){
     
     MPMoviePlayerViewController *moviePlayer;
-   // AppleXylophoneViewController *test;
-  //  AeolianViewController *aeolianVC;
-  //  GrandStaffViewController *theGrandStaffVC;
-  //  CircleOfFifthsViewController *circleOfFifthsVC;
-  //  TrebleClefViewController *trebleClefVC;
+ // AppleXylophoneViewController *test;
+ // AeolianViewController *aeolianVC;
+ // GrandStaffViewController *theGrandStaffVC;
+ // CircleOfFifthsViewController *circleOfFifthsVC;
+ // TrebleClefViewController *trebleClefVC;
     
 }
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -151,8 +153,8 @@
     
     //---play partial screen---
     
-    moviePlayer.view.frame =imageView.bounds; 
-    moviePlayer.view.frame = imageView.frame;
+    //moviePlayer.view.frame = imageView.bounds;
+    //moviePlayer.view.frame = imageView.frame;
     //[imageView addSubview:moviePlayer.view];
 
     
@@ -228,7 +230,6 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     self.detailDescriptionLabel = nil;
-  //  aeolianVC = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {

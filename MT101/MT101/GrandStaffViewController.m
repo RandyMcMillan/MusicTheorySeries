@@ -12,8 +12,8 @@
 @synthesize mixerHost;
 
 - (void)dealloc {
-   // [super dealloc];
-   // [mixerHost release];
+    [super dealloc];
+    [mixerHost release];
 }
 
 
@@ -104,6 +104,16 @@
     // e.g. self.myOutlet = nil;
 }
 
+
+- (void)didReceiveMemoryWarning {
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    self.mixerHost = nil;
+    
+    // Release any cached data, images, etc that aren't in use.
+}
+
+
 // Handle a change in the mixer output gain slider.
 - (IBAction) mixerOutputGainChanged: (UISlider *) sender {
     [mixerHost setMixerOutputGain: (AudioUnitParameterValue) sender.value];
@@ -155,13 +165,6 @@
     }
     
     return keyIndex;
-}
-
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {

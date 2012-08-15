@@ -13,8 +13,8 @@
 @synthesize mixerHost;
 
 - (void)dealloc {
-   // [super dealloc];
-   // [mixerHost release];
+    [super dealloc];
+    [mixerHost release];
 }
 
 

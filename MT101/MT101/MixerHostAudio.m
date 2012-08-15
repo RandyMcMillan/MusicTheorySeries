@@ -743,7 +743,7 @@ static OSStatus inputRenderCallback (
         }
     }
     
-//    [super dealloc];
+    [super dealloc];
 }
 
 @end
