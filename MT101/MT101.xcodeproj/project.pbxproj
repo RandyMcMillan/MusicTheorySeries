@@ -63,6 +63,20 @@
 		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
 		48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A2215D88779009121C3 /* TrebleClefViewController.xib */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		48EEEF3715DC47DC00D15F15 /* SopranoClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EEEF3515DC47DC00D15F15 /* SopranoClefViewController.m */; };
+		48EEEF3815DC47DC00D15F15 /* SopranoClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48EEEF3615DC47DC00D15F15 /* SopranoClefViewController.xib */; };
+		48EEEF4215DC4A1600D15F15 /* AltoClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EEEF4015DC4A1600D15F15 /* AltoClefViewController.m */; };
+		48EEEF4315DC4A1600D15F15 /* AltoClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48EEEF4115DC4A1600D15F15 /* AltoClefViewController.xib */; };
+		48EEEF5115DC4B4F00D15F15 /* TenorClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EEEF4F15DC4B4F00D15F15 /* TenorClefViewController.m */; };
+		48EEEF5215DC4B4F00D15F15 /* TenorClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48EEEF5015DC4B4F00D15F15 /* TenorClefViewController.xib */; };
+		48EEEF5615DC4B5E00D15F15 /* BariToneClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EEEF5415DC4B5E00D15F15 /* BariToneClefViewController.m */; };
+		48EEEF5715DC4B5E00D15F15 /* BariToneClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48EEEF5515DC4B5E00D15F15 /* BariToneClefViewController.xib */; };
+		48EEEF5B15DC4B6B00D15F15 /* BassClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EEEF5915DC4B6B00D15F15 /* BassClefViewController.m */; };
+		48EEEF5C15DC4B6B00D15F15 /* BassClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48EEEF5A15DC4B6B00D15F15 /* BassClefViewController.xib */; };
+		48EEEF6015DC4B7A00D15F15 /* SubBassClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EEEF5E15DC4B7A00D15F15 /* SubBassClefViewController.m */; };
+		48EEEF6115DC4B7A00D15F15 /* SubBassClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48EEEF5F15DC4B7A00D15F15 /* SubBassClefViewController.xib */; };
+		48EEEF6515DC4BBF00D15F15 /* MezzoSopranoClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EEEF6315DC4BBF00D15F15 /* MezzoSopranoClefViewController.m */; };
+		48EEEF6615DC4BBF00D15F15 /* MezzoSopranoClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48EEEF6415DC4BBF00D15F15 /* MezzoSopranoClefViewController.xib */; };
 		48FA4BF015DAE7DA00FF91CA /* videoList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */; };
 		48FA4BF315DAE90D00FF91CA /* videoList1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BF215DAE90D00FF91CA /* videoList1.plist */; };
 		48FA4BF515DAE9A500FF91CA /* videoList2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BF415DAE9A500FF91CA /* videoList2.plist */; };
@@ -176,6 +190,27 @@
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2215D88779009121C3 /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrebleClefViewController.xib; path = MT101/TrebleClefViewController.xib; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
+		48EEEF3415DC47DC00D15F15 /* SopranoClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SopranoClefViewController.h; sourceTree = "<group>"; };
+		48EEEF3515DC47DC00D15F15 /* SopranoClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SopranoClefViewController.m; sourceTree = "<group>"; };
+		48EEEF3615DC47DC00D15F15 /* SopranoClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SopranoClefViewController.xib; sourceTree = "<group>"; };
+		48EEEF3F15DC4A1600D15F15 /* AltoClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AltoClefViewController.h; sourceTree = "<group>"; };
+		48EEEF4015DC4A1600D15F15 /* AltoClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AltoClefViewController.m; sourceTree = "<group>"; };
+		48EEEF4115DC4A1600D15F15 /* AltoClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AltoClefViewController.xib; sourceTree = "<group>"; };
+		48EEEF4E15DC4B4F00D15F15 /* TenorClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenorClefViewController.h; sourceTree = "<group>"; };
+		48EEEF4F15DC4B4F00D15F15 /* TenorClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenorClefViewController.m; sourceTree = "<group>"; };
+		48EEEF5015DC4B4F00D15F15 /* TenorClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TenorClefViewController.xib; sourceTree = "<group>"; };
+		48EEEF5315DC4B5E00D15F15 /* BariToneClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BariToneClefViewController.h; sourceTree = "<group>"; };
+		48EEEF5415DC4B5E00D15F15 /* BariToneClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BariToneClefViewController.m; sourceTree = "<group>"; };
+		48EEEF5515DC4B5E00D15F15 /* BariToneClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BariToneClefViewController.xib; sourceTree = "<group>"; };
+		48EEEF5815DC4B6A00D15F15 /* BassClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BassClefViewController.h; sourceTree = "<group>"; };
+		48EEEF5915DC4B6B00D15F15 /* BassClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BassClefViewController.m; sourceTree = "<group>"; };
+		48EEEF5A15DC4B6B00D15F15 /* BassClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BassClefViewController.xib; sourceTree = "<group>"; };
+		48EEEF5D15DC4B7A00D15F15 /* SubBassClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubBassClefViewController.h; sourceTree = "<group>"; };
+		48EEEF5E15DC4B7A00D15F15 /* SubBassClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubBassClefViewController.m; sourceTree = "<group>"; };
+		48EEEF5F15DC4B7A00D15F15 /* SubBassClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubBassClefViewController.xib; sourceTree = "<group>"; };
+		48EEEF6215DC4BBF00D15F15 /* MezzoSopranoClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MezzoSopranoClefViewController.h; sourceTree = "<group>"; };
+		48EEEF6315DC4BBF00D15F15 /* MezzoSopranoClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MezzoSopranoClefViewController.m; sourceTree = "<group>"; };
+		48EEEF6415DC4BBF00D15F15 /* MezzoSopranoClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MezzoSopranoClefViewController.xib; sourceTree = "<group>"; };
 		48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList0.plist; sourceTree = "<group>"; };
 		48FA4BF215DAE90D00FF91CA /* videoList1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList1.plist; sourceTree = "<group>"; };
 		48FA4BF415DAE9A500FF91CA /* videoList2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList2.plist; sourceTree = "<group>"; };
@@ -332,6 +367,8 @@
 		48FAB51815CAF84F0087DCFA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				48EEEF6215DC4BBF00D15F15 /* MezzoSopranoClefViewController.h */,
+				48EEEF6315DC4BBF00D15F15 /* MezzoSopranoClefViewController.m */,
 				48D50A2415D8879D009121C3 /* TrebleClefViewController.m */,
 				48D50A2115D8876D009121C3 /* TrebleClefViewController.h */,
 				489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */,
@@ -342,12 +379,25 @@
 				48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */,
 				B225A73C1534CF59006FD46F /* MasterViewController.h */,
 				B225A73D1534CF59006FD46F /* MasterViewController.m */,
+				48EEEF3415DC47DC00D15F15 /* SopranoClefViewController.h */,
+				48EEEF3515DC47DC00D15F15 /* SopranoClefViewController.m */,
 				B225A73F1534CF59006FD46F /* DetailViewController.h */,
 				486AD37015CE0B7D0054753C /* DGMenuItemCell.h */,
 				486AD37115CE0B7D0054753C /* DGMenuItemCell.m */,
 				B225A7401534CF59006FD46F /* DetailViewController.m */,
 				4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */,
 				4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */,
+				48EEEF3F15DC4A1600D15F15 /* AltoClefViewController.h */,
+				48EEEF4015DC4A1600D15F15 /* AltoClefViewController.m */,
+				48EEEF4E15DC4B4F00D15F15 /* TenorClefViewController.h */,
+				48EEEF4F15DC4B4F00D15F15 /* TenorClefViewController.m */,
+				48EEEF5015DC4B4F00D15F15 /* TenorClefViewController.xib */,
+				48EEEF5315DC4B5E00D15F15 /* BariToneClefViewController.h */,
+				48EEEF5415DC4B5E00D15F15 /* BariToneClefViewController.m */,
+				48EEEF5815DC4B6A00D15F15 /* BassClefViewController.h */,
+				48EEEF5915DC4B6B00D15F15 /* BassClefViewController.m */,
+				48EEEF5D15DC4B7A00D15F15 /* SubBassClefViewController.h */,
+				48EEEF5E15DC4B7A00D15F15 /* SubBassClefViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -355,9 +405,15 @@
 		48FAB51A15CAF8710087DCFA /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				48EEEF3615DC47DC00D15F15 /* SopranoClefViewController.xib */,
+				48EEEF6415DC4BBF00D15F15 /* MezzoSopranoClefViewController.xib */,
 				48D50A2215D88779009121C3 /* TrebleClefViewController.xib */,
 				489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */,
 				48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */,
+				48EEEF4115DC4A1600D15F15 /* AltoClefViewController.xib */,
+				48EEEF5515DC4B5E00D15F15 /* BariToneClefViewController.xib */,
+				48EEEF5F15DC4B7A00D15F15 /* SubBassClefViewController.xib */,
+				48EEEF5A15DC4B6B00D15F15 /* BassClefViewController.xib */,
 				48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */,
 				4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */,
 				B225A7421534CF59006FD46F /* MasterViewController.xib */,
@@ -603,6 +659,13 @@
 				48FA4C0915DB03AB00FF91CA /* imageNameList4.plist in Resources */,
 				48FA4C0B15DB03B200FF91CA /* imageNameList5.plist in Resources */,
 				48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */,
+				48EEEF3815DC47DC00D15F15 /* SopranoClefViewController.xib in Resources */,
+				48EEEF4315DC4A1600D15F15 /* AltoClefViewController.xib in Resources */,
+				48EEEF5215DC4B4F00D15F15 /* TenorClefViewController.xib in Resources */,
+				48EEEF5715DC4B5E00D15F15 /* BariToneClefViewController.xib in Resources */,
+				48EEEF5C15DC4B6B00D15F15 /* BassClefViewController.xib in Resources */,
+				48EEEF6115DC4B7A00D15F15 /* SubBassClefViewController.xib in Resources */,
+				48EEEF6615DC4BBF00D15F15 /* MezzoSopranoClefViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +687,13 @@
 				486AD37215CE0B7D0054753C /* DGMenuItemCell.m in Sources */,
 				489C8BB215CF05DD00F15D05 /* GrandStaffViewController.m in Sources */,
 				48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */,
+				48EEEF3715DC47DC00D15F15 /* SopranoClefViewController.m in Sources */,
+				48EEEF4215DC4A1600D15F15 /* AltoClefViewController.m in Sources */,
+				48EEEF5115DC4B4F00D15F15 /* TenorClefViewController.m in Sources */,
+				48EEEF5615DC4B5E00D15F15 /* BariToneClefViewController.m in Sources */,
+				48EEEF5B15DC4B6B00D15F15 /* BassClefViewController.m in Sources */,
+				48EEEF6015DC4B7A00D15F15 /* SubBassClefViewController.m in Sources */,
+				48EEEF6515DC4BBF00D15F15 /* MezzoSopranoClefViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

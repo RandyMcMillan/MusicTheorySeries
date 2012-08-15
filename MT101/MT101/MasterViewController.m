@@ -200,15 +200,13 @@
     interactiveList0 = [[NSArray alloc] initWithObjects:
                         @"GrandStaffViewController",
                         @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
-                        @"TrebleClefViewController",
+                        @"SopranoClefViewController",
+                        @"MezzoSopranoClefViewController",
+                        @"AltoClefViewController",
+                        @"TenorClefViewController",
+                        @"BariToneClefViewController",
+                        @"BassClefViewController",
+                        @"SubBassClefViewController",
                         nil];
     
     interactiveList1 = [[NSArray alloc] initWithObjects:

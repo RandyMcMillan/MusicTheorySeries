@@ -12,15 +12,23 @@
 #import "AeolianViewController.h"
 #import "CircleOfFifthsViewController.h"
 #import "TrebleClefViewController.h"
+#import "SopranoClefViewController.h"
+#import "MezzoSopranoClefViewController.h"
+#import "AltoClefViewController.h"
+#import "TenorClefViewController.h"
+#import "BariToneClefViewController.h"
+#import "BassClefViewController.h"
+#import "SubBassClefViewController.h"
+
 
 @interface DetailViewController (){
     
     MPMoviePlayerViewController *moviePlayer;
    // AppleXylophoneViewController *test;
-    AeolianViewController *aeolianVC;
-    GrandStaffViewController *theGrandStaffVC;
-    CircleOfFifthsViewController *circleOfFifthsVC;
-    TrebleClefViewController *trebleClefVC;
+  //  AeolianViewController *aeolianVC;
+  //  GrandStaffViewController *theGrandStaffVC;
+  //  CircleOfFifthsViewController *circleOfFifthsVC;
+  //  TrebleClefViewController *trebleClefVC;
     
 }
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -36,6 +44,7 @@
 @synthesize imageView,MovieToPlay,interactiveToDisplay;
 
 #pragma mark - Managing the detail item
+#pragma mark - displayInteractives
 
 -(IBAction)displayInteractive:(id)sender{
     
@@ -61,7 +70,57 @@
         [self presentModalViewController:trebleClefVC animated:YES];
         
     }
+    
+    if (interactiveToDisplay == @"SopranoClefViewController") {
+        
+        SopranoClefViewController *sopranoClefVC = [[SopranoClefViewController alloc]init];
+        [self presentModalViewController:sopranoClefVC animated:YES];
+        
+    }
+  
+    if (interactiveToDisplay == @"MezzoSopranoClefViewController") {
+        
+        MezzoSopranoClefViewController *mezzoSopranoClefVC = [[MezzoSopranoClefViewController alloc]init];
+        [self presentModalViewController:mezzoSopranoClefVC animated:YES];
+        
+    }
+    
+    
+    if (interactiveToDisplay == @"AltoClefViewController") {
+        
+        AltoClefViewController *altoClefVC = [[AltoClefViewController alloc]init];
+        [self presentModalViewController:altoClefVC animated:YES];
+        
+    }
+    
+    if (interactiveToDisplay == @"TenorClefViewController") {
+    
+        TenorClefViewController *tenorClefVC = [[TenorClefViewController alloc]init];
+        [self presentModalViewController:tenorClefVC animated:YES];
+    
+    }
 
+    if (interactiveToDisplay == @"BariToneClefViewController") {
+        
+        BariToneClefViewController *bariToneClefVC = [[BariToneClefViewController alloc]init];
+        [self presentModalViewController:bariToneClefVC animated:YES];
+    }
+
+    if (interactiveToDisplay == @"BassClefViewController") {
+        
+        BassClefViewController *bassClefVC = [[BassClefViewController alloc]init];
+        [self presentModalViewController:bassClefVC animated:YES];
+    }
+   
+    if (interactiveToDisplay == @"SubBassClefViewController") {
+        
+        SubBassClefViewController *subBassClefVC = [[SubBassClefViewController alloc]init];
+        [self presentModalViewController:subBassClefVC animated:YES];
+    }
+    
+
+    
+    
  
     if (interactiveToDisplay == @"AeolianViewController") {
         
@@ -169,7 +228,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     self.detailDescriptionLabel = nil;
-    aeolianVC = nil;
+  //  aeolianVC = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
