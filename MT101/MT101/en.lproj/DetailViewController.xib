@@ -312,7 +312,6 @@
 								<string key="NSFrame">{{393, 8}, {225, 29}}</string>
 								<reference key="NSSuperview" ref="359118249"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -806,28 +805,6 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">CircleOfFifthsViewController</string>
-					<string key="superclassName">UIViewController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="mixerOutputGainChanged:">UISlider</string>
-						<string key="onDoneButtonPress:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="mixerOutputGainChanged:">
-							<string key="name">mixerOutputGainChanged:</string>
-							<string key="candidateClassName">UISlider</string>
-						</object>
-						<object class="IBActionInfo" key="onDoneButtonPress:">
-							<string key="name">onDoneButtonPress:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/CircleOfFifthsViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
 					<string key="className">DetailViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
@@ -845,32 +822,15 @@
 						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="aeolianVC">AeolianViewController</string>
-						<string key="circleOfFifthsVC">CircleOfFifthsViewController</string>
 						<string key="detailDescriptionLabel">UILabel</string>
-						<string key="grandStaffVC">GrandStaffViewController</string>
 						<string key="imageView">UIImageView</string>
 						<string key="interactiveToDisplay">NSString</string>
 						<string key="toolBar">UIToolbar</string>
-						<string key="trebleClefVC">TrebleClefViewController</string>
-						<string key="viewController">AppleXylophoneViewController</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="aeolianVC">
-							<string key="name">aeolianVC</string>
-							<string key="candidateClassName">AeolianViewController</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="circleOfFifthsVC">
-							<string key="name">circleOfFifthsVC</string>
-							<string key="candidateClassName">CircleOfFifthsViewController</string>
-						</object>
 						<object class="IBToOneOutletInfo" key="detailDescriptionLabel">
 							<string key="name">detailDescriptionLabel</string>
 							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="grandStaffVC">
-							<string key="name">grandStaffVC</string>
-							<string key="candidateClassName">GrandStaffViewController</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="imageView">
 							<string key="name">imageView</string>
@@ -883,14 +843,6 @@
 						<object class="IBToOneOutletInfo" key="toolBar">
 							<string key="name">toolBar</string>
 							<string key="candidateClassName">UIToolbar</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="trebleClefVC">
-							<string key="name">trebleClefVC</string>
-							<string key="candidateClassName">TrebleClefViewController</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="viewController">
-							<string key="name">viewController</string>
-							<string key="candidateClassName">AppleXylophoneViewController</string>
 						</object>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">

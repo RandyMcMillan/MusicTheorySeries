@@ -25,11 +25,11 @@
 @property(nonatomic,retain) IBOutlet NSString *interactiveToDisplay;
 @property(nonatomic,retain) IBOutlet UIToolbar *toolBar;
 
-@property(nonatomic,retain) IBOutlet AppleXylophoneViewController *viewController;
-@property(nonatomic,retain) IBOutlet AeolianViewController *aeolianVC;
-@property(nonatomic,retain) IBOutlet GrandStaffViewController *grandStaffVC;
-@property(nonatomic,retain) IBOutlet CircleOfFifthsViewController *circleOfFifthsVC;
-@property(nonatomic,retain) IBOutlet TrebleClefViewController *trebleClefVC;
+//@property(nonatomic,retain) IBOutlet AppleXylophoneViewController *viewController;
+//@property(nonatomic,retain) IBOutlet AeolianViewController *aeolianVC;
+//@property(nonatomic,retain) IBOutlet GrandStaffViewController *grandStaffVC;
+//@property(nonatomic,retain) IBOutlet CircleOfFifthsViewController *circleOfFifthsVC;
+//@property(nonatomic,retain) IBOutlet TrebleClefViewController *trebleClefVC;
 
 
 
