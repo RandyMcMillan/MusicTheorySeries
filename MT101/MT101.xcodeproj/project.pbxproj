@@ -199,7 +199,7 @@
 		4825556715DD76AF00737C61 /* TenorClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TenorClef.png; sourceTree = "<group>"; };
 		4825556915DD76AF00737C61 /* TheGrandStaff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheGrandStaff.png; sourceTree = "<group>"; };
 		4825556B15DD76AF00737C61 /* TrebleClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrebleClef.png; sourceTree = "<group>"; };
-		4825556D15DD76AF00737C61 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = "<group>"; };
+		4825556D15DD76AF00737C61 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome.png; path = Art/ScalePNGs/welcome.png; sourceTree = "<group>"; };
 		4825559215DD773300737C61 /* MixoLydian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MixoLydian.png; sourceTree = "<group>"; };
 		4825559615DD7A3000737C61 /* SolfegeNaturalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeNaturalsViewController.h; sourceTree = "<group>"; };
 		4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolfegeNaturalsViewController.m; sourceTree = "<group>"; };
@@ -409,7 +409,6 @@
 				4825556715DD76AF00737C61 /* TenorClef.png */,
 				4825556915DD76AF00737C61 /* TheGrandStaff.png */,
 				4825556B15DD76AF00737C61 /* TrebleClef.png */,
-				4825556D15DD76AF00737C61 /* welcome.png */,
 			);
 			name = ScalePNGs;
 			path = Art/ScalePNGs;
@@ -567,6 +566,7 @@
 			children = (
 				4825554915DD76AF00737C61 /* ScalePNGs */,
 				486B05ED15BF334A00B3F10D /* icon@2x.png */,
+				4825556D15DD76AF00737C61 /* welcome.png */,
 				B225A76C1534D27F006FD46F /* greenlights.png */,
 				B225A7581534D110006FD46F /* button1.png */,
 				B225A75A1534D1D4006FD46F /* clouds.png */,
