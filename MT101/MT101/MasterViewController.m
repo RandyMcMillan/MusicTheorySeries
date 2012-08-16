@@ -113,7 +113,7 @@
     imageNameList1 = [[NSArray alloc]initWithContentsOfFile:imageNameList1Path];
     for (NSString *str in imageNameList1)
         NSLog(@"imageNameList1 = %@",str);
-    imageList1 = [[NSArray alloc] initWithObjects: //Staffs CLefs
+    imageList1 = [[NSArray alloc] initWithObjects: //
                   [UIImage imageNamed:[imageNameList1 objectAtIndex:0]],
                   [UIImage imageNamed:[imageNameList1 objectAtIndex:1]],
                   [UIImage imageNamed:[imageNameList1 objectAtIndex:2]],
@@ -129,7 +129,7 @@
     imageNameList2 = [[NSArray alloc]initWithContentsOfFile:imageNameList2Path];
     for (NSString *str in imageNameList2)
         NSLog(@"imageNameList2 = %@",str);
-    imageList2 = [[NSArray alloc] initWithObjects: //Staffs CLefs
+    imageList2 = [[NSArray alloc] initWithObjects: //Modes
                   [UIImage imageNamed:[imageNameList2 objectAtIndex:0]],
                   [UIImage imageNamed:[imageNameList2 objectAtIndex:1]],
                   [UIImage imageNamed:[imageNameList2 objectAtIndex:2]],
@@ -215,13 +215,18 @@
                         @"",
                         nil];
 
-    interactiveList2 = [[NSArray alloc] initWithObjects: //clefs
+    interactiveList2 = [[NSArray alloc] initWithObjects: //modes
+                        @"IonianViewController",
+                        @"DorianViewController",
+                        @"PhrygianViewController",
+                        @"LydianViewController",
+                        @"MixoLydianViewController",
                         @"AeolianViewController",
-                        @"",
+                        @"LocrianViewController",
                         @"",
                         nil];
     
-    interactiveList3 = [[NSArray alloc] initWithObjects: //modes
+    interactiveList3 = [[NSArray alloc] initWithObjects: //..
                         @"AeolianViewController",
                         @"",
                         @"",

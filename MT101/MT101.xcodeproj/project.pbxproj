@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480A792515DD59BD005E9C43 /* IonianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A792315DD59BD005E9C43 /* IonianViewController.m */; };
+		480A792615DD59BD005E9C43 /* IonianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A792415DD59BD005E9C43 /* IonianViewController.xib */; };
+		480A792A15DD59DE005E9C43 /* DorianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A792815DD59DE005E9C43 /* DorianViewController.m */; };
+		480A792B15DD59DE005E9C43 /* DorianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A792915DD59DE005E9C43 /* DorianViewController.xib */; };
+		480A792F15DD59EC005E9C43 /* PhrygianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A792D15DD59EC005E9C43 /* PhrygianViewController.m */; };
+		480A793015DD59EC005E9C43 /* PhrygianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A792E15DD59EC005E9C43 /* PhrygianViewController.xib */; };
+		480A793415DD59F7005E9C43 /* LydianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A793215DD59F7005E9C43 /* LydianViewController.m */; };
+		480A793515DD59F7005E9C43 /* LydianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A793315DD59F7005E9C43 /* LydianViewController.xib */; };
+		480A793915DD5A04005E9C43 /* MixoLydianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A793715DD5A04005E9C43 /* MixoLydianViewController.m */; };
+		480A793A15DD5A04005E9C43 /* MixoLydianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A793815DD5A04005E9C43 /* MixoLydianViewController.xib */; };
+		480A793E15DD5A0F005E9C43 /* LocrianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A793C15DD5A0F005E9C43 /* LocrianViewController.m */; };
+		480A793F15DD5A0F005E9C43 /* LocrianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A793D15DD5A0F005E9C43 /* LocrianViewController.xib */; };
 		4825A36115C4DB2D006F0C46 /* AppleXylophoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4825A36215C4DB2D006F0C46 /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */; };
 		4825A36615C4DB43006F0C46 /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A36515C4DB43006F0C46 /* MixerHostAudio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -133,6 +145,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		480A792215DD59BD005E9C43 /* IonianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IonianViewController.h; sourceTree = "<group>"; };
+		480A792315DD59BD005E9C43 /* IonianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IonianViewController.m; sourceTree = "<group>"; };
+		480A792415DD59BD005E9C43 /* IonianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IonianViewController.xib; sourceTree = "<group>"; };
+		480A792715DD59DE005E9C43 /* DorianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DorianViewController.h; sourceTree = "<group>"; };
+		480A792815DD59DE005E9C43 /* DorianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DorianViewController.m; sourceTree = "<group>"; };
+		480A792915DD59DE005E9C43 /* DorianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DorianViewController.xib; sourceTree = "<group>"; };
+		480A792C15DD59EC005E9C43 /* PhrygianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhrygianViewController.h; sourceTree = "<group>"; };
+		480A792D15DD59EC005E9C43 /* PhrygianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhrygianViewController.m; sourceTree = "<group>"; };
+		480A792E15DD59EC005E9C43 /* PhrygianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhrygianViewController.xib; sourceTree = "<group>"; };
+		480A793115DD59F7005E9C43 /* LydianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LydianViewController.h; sourceTree = "<group>"; };
+		480A793215DD59F7005E9C43 /* LydianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LydianViewController.m; sourceTree = "<group>"; };
+		480A793315DD59F7005E9C43 /* LydianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LydianViewController.xib; sourceTree = "<group>"; };
+		480A793615DD5A04005E9C43 /* MixoLydianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixoLydianViewController.h; sourceTree = "<group>"; };
+		480A793715DD5A04005E9C43 /* MixoLydianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixoLydianViewController.m; sourceTree = "<group>"; };
+		480A793815DD5A04005E9C43 /* MixoLydianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixoLydianViewController.xib; sourceTree = "<group>"; };
+		480A793B15DD5A0F005E9C43 /* LocrianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocrianViewController.h; sourceTree = "<group>"; };
+		480A793C15DD5A0F005E9C43 /* LocrianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocrianViewController.m; sourceTree = "<group>"; };
+		480A793D15DD5A0F005E9C43 /* LocrianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocrianViewController.xib; sourceTree = "<group>"; };
 		4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleXylophoneViewController.h; path = MT101/AppleXylophoneViewController.h; sourceTree = "<group>"; };
 		4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppleXylophoneViewController.m; path = MT101/AppleXylophoneViewController.m; sourceTree = "<group>"; };
 		4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AppleXylophoneViewController.xib; path = MT101/AppleXylophoneViewController.xib; sourceTree = "<group>"; };
@@ -295,6 +325,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480A792015DD598B005E9C43 /* ModeVCs */ = {
+			isa = PBXGroup;
+			children = (
+				480A792215DD59BD005E9C43 /* IonianViewController.h */,
+				480A792315DD59BD005E9C43 /* IonianViewController.m */,
+				480A792715DD59DE005E9C43 /* DorianViewController.h */,
+				480A792815DD59DE005E9C43 /* DorianViewController.m */,
+				480A792C15DD59EC005E9C43 /* PhrygianViewController.h */,
+				480A792D15DD59EC005E9C43 /* PhrygianViewController.m */,
+				480A793115DD59F7005E9C43 /* LydianViewController.h */,
+				480A793215DD59F7005E9C43 /* LydianViewController.m */,
+				480A793615DD5A04005E9C43 /* MixoLydianViewController.h */,
+				480A793715DD5A04005E9C43 /* MixoLydianViewController.m */,
+				48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */,
+				48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */,
+				480A793B15DD5A0F005E9C43 /* LocrianViewController.h */,
+				480A793C15DD5A0F005E9C43 /* LocrianViewController.m */,
+			);
+			name = ModeVCs;
+			sourceTree = "<group>";
+		};
+		480A792115DD599C005E9C43 /* ModeXIBs */ = {
+			isa = PBXGroup;
+			children = (
+				480A792415DD59BD005E9C43 /* IonianViewController.xib */,
+				480A792915DD59DE005E9C43 /* DorianViewController.xib */,
+				480A792E15DD59EC005E9C43 /* PhrygianViewController.xib */,
+				48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */,
+				480A793315DD59F7005E9C43 /* LydianViewController.xib */,
+				480A793815DD5A04005E9C43 /* MixoLydianViewController.xib */,
+				480A793D15DD5A0F005E9C43 /* LocrianViewController.xib */,
+			);
+			name = ModeXIBs;
+			sourceTree = "<group>";
+		};
 		484D169815DAE21D005FC66E /* ScalePNGs */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,8 +462,6 @@
 				489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */,
 				48FAB52515CB13930087DCFA /* CircleOfFifthsViewController.h */,
 				48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */,
-				48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */,
-				48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */,
 			);
 			name = ClefVCs;
 			sourceTree = "<group>";
@@ -429,7 +492,6 @@
 				48EEEF5515DC4B5E00D15F15 /* BariToneClefViewController.xib */,
 				48EEEF5F15DC4B7A00D15F15 /* SubBassClefViewController.xib */,
 				48EEEF5A15DC4B6B00D15F15 /* BassClefViewController.xib */,
-				48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */,
 				4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */,
 			);
 			name = ClefXIBs;
@@ -447,6 +509,7 @@
 		48FAB51815CAF84F0087DCFA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				480A792015DD598B005E9C43 /* ModeVCs */,
 				48EEEF6815DC52BA00D15F15 /* MainVCs */,
 				48EEEF6715DC527600D15F15 /* ClefVCs */,
 			);
@@ -456,6 +519,7 @@
 		48FAB51A15CAF8710087DCFA /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				480A792115DD599C005E9C43 /* ModeXIBs */,
 				48EEEF6A15DC52F400D15F15 /* MainXIBs */,
 				48EEEF6915DC52D700D15F15 /* ClefXIBs */,
 			);
@@ -714,6 +778,12 @@
 				48EEEF6E15DC549A00D15F15 /* icon-72@2x.png in Resources */,
 				48EEEF7015DC54D700D15F15 /* Default-Portrait~ipad.png in Resources */,
 				48EEEF7215DC54DF00D15F15 /* Default-Portrait@2x~ipad.png in Resources */,
+				480A792615DD59BD005E9C43 /* IonianViewController.xib in Resources */,
+				480A792B15DD59DE005E9C43 /* DorianViewController.xib in Resources */,
+				480A793015DD59EC005E9C43 /* PhrygianViewController.xib in Resources */,
+				480A793515DD59F7005E9C43 /* LydianViewController.xib in Resources */,
+				480A793A15DD5A04005E9C43 /* MixoLydianViewController.xib in Resources */,
+				480A793F15DD5A0F005E9C43 /* LocrianViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,6 +812,12 @@
 				48EEEF5B15DC4B6B00D15F15 /* BassClefViewController.m in Sources */,
 				48EEEF6015DC4B7A00D15F15 /* SubBassClefViewController.m in Sources */,
 				48EEEF6515DC4BBF00D15F15 /* MezzoSopranoClefViewController.m in Sources */,
+				480A792515DD59BD005E9C43 /* IonianViewController.m in Sources */,
+				480A792A15DD59DE005E9C43 /* DorianViewController.m in Sources */,
+				480A792F15DD59EC005E9C43 /* PhrygianViewController.m in Sources */,
+				480A793415DD59F7005E9C43 /* LydianViewController.m in Sources */,
+				480A793915DD5A04005E9C43 /* MixoLydianViewController.m in Sources */,
+				480A793E15DD5A0F005E9C43 /* LocrianViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

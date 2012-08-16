@@ -20,7 +20,14 @@
 #import "BassClefViewController.h"
 #import "SubBassClefViewController.h"
 
+
+#import "IonianViewController.h"
+#import "DorianViewController.h"
+#import "PhrygianViewController.h"
+#import "LydianViewController.h"
+#import "MixoLydianViewController.h"
 #import "AeolianViewController.h"
+#import "LocrianViewController.h"
 
 
 @interface DetailViewController (){
@@ -120,6 +127,14 @@
         [self presentModalViewController:subBassClefVC animated:YES];
     }
     
+
+    
+    if (interactiveToDisplay == @"IonianViewController") {
+        
+        IonianViewController *ionianVC = [[IonianViewController alloc]init];
+        [self presentModalViewController:ionianVC animated:YES];
+        
+    }
 
     
     
