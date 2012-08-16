@@ -256,7 +256,7 @@
 		48FBC8E415D8C1E500011BE9 /* Untitled.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Untitled.m4v; sourceTree = "<group>"; };
 		48FBC8E515D8C1E500011BE9 /* Untitled.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Untitled.mov; sourceTree = "<group>"; };
 		48FBC8E615D8C1E500011BE9 /* WindyTrees.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WindyTrees.mp4; sourceTree = "<group>"; };
-		B225A7261534CF59006FD46F /* MT101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT101.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B225A7261534CF59006FD46F /* MT101Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT101Debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B225A72A1534CF59006FD46F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B225A72C1534CF59006FD46F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B225A72E1534CF59006FD46F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -515,7 +515,7 @@
 		B225A7271534CF59006FD46F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B225A7261534CF59006FD46F /* MT101.app */,
+				B225A7261534CF59006FD46F /* MT101Debug.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -582,7 +582,7 @@
 			);
 			name = MT101Debug;
 			productName = MT101;
-			productReference = B225A7261534CF59006FD46F /* MT101.app */;
+			productReference = B225A7261534CF59006FD46F /* MT101Debug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
