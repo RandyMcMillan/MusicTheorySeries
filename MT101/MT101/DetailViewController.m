@@ -30,6 +30,11 @@
 #import "LocrianViewController.h"
 
 
+#import "SolfegeNaturalsViewController.h"
+#import "SolfegeSharpsViewController.h"
+#import "SolfegeFlatsViewController.h"
+
+
 @interface DetailViewController (){
     
     MPMoviePlayerViewController *moviePlayer;
@@ -145,6 +150,34 @@
         [self presentModalViewController:aeolianVC animated:YES];
 
     }
+    
+    
+    
+    
+    
+    if (interactiveToDisplay == @"SolfegeNaturalsViewController") {
+        
+        SolfegeNaturalsViewController *solfegeNaturalsVC = [[SolfegeNaturalsViewController alloc]init];
+        [self presentModalViewController:solfegeNaturalsVC animated:YES];
+        
+    }
+    
+    if (interactiveToDisplay == @"SolfegeSharpsViewController") {
+        
+        SolfegeSharpsViewController *solfegeSharpsVC = [[SolfegeSharpsViewController alloc]init];
+        [self presentModalViewController:solfegeSharpsVC animated:YES];
+        
+    }
+    
+    if (interactiveToDisplay == @"SolfegeFlatsViewController") {
+        
+        SolfegeFlatsViewController *solfegeFlatsVC = [[SolfegeFlatsViewController alloc]init];
+        [self presentModalViewController:solfegeFlatsVC animated:YES];
+        
+    }
+
+
+
       
   
    //TrebleClefViewController

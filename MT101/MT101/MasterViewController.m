@@ -234,17 +234,16 @@
                         @"",
                         nil];
     
-    interactiveList3 = [[NSArray alloc] initWithObjects: //..
+    interactiveList3 = [[NSArray alloc] initWithObjects: //Solfege Naturals Sharps Flats
+                        @"SolfegeNaturalsViewController",
+                        @"SolfegeSharpsViewController",
+                        @"SolfegeFlatsViewController",
                         @"AeolianViewController",
                         @"AeolianViewController",
                         @"AeolianViewController",
                         @"AeolianViewController",
                         @"AeolianViewController",
                         @"AeolianViewController",
-                        @"AeolianViewController",
-                        @"",
-                        @"",
-                        @"",
                         nil];
     
     interactiveList4 = [[NSArray alloc] initWithObjects:

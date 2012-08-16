@@ -61,6 +61,15 @@
 		4825558F15DD76AF00737C61 /* TrebleClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556B15DD76AF00737C61 /* TrebleClef.png */; };
 		4825559115DD76AF00737C61 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556D15DD76AF00737C61 /* welcome.png */; };
 		4825559315DD773300737C61 /* MixoLydian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825559215DD773300737C61 /* MixoLydian.png */; };
+		4825559915DD7A3000737C61 /* SolfegeNaturalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */; };
+		4825559A15DD7A3000737C61 /* SolfegeNaturalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4825559815DD7A3000737C61 /* SolfegeNaturalsViewController.xib */; };
+		4825559E15DD7A4C00737C61 /* SolfegeSharpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559C15DD7A4C00737C61 /* SolfegeSharpsViewController.m */; };
+		4825559F15DD7A4C00737C61 /* SolfegeSharpsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4825559D15DD7A4C00737C61 /* SolfegeSharpsViewController.xib */; };
+		482555A315DD7A5400737C61 /* SolfegeFlatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482555A115DD7A5400737C61 /* SolfegeFlatsViewController.m */; };
+		482555A415DD7A5400737C61 /* SolfegeFlatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482555A215DD7A5400737C61 /* SolfegeFlatsViewController.xib */; };
+		482555A815DD7A9C00737C61 /* SolfegeFlats.png in Resources */ = {isa = PBXBuildFile; fileRef = 482555A515DD7A9C00737C61 /* SolfegeFlats.png */; };
+		482555A915DD7A9C00737C61 /* SolfegeNaturals.png in Resources */ = {isa = PBXBuildFile; fileRef = 482555A615DD7A9C00737C61 /* SolfegeNaturals.png */; };
+		482555AA15DD7A9C00737C61 /* SolfegeSharps.png in Resources */ = {isa = PBXBuildFile; fileRef = 482555A715DD7A9C00737C61 /* SolfegeSharps.png */; };
 		4825A36115C4DB2D006F0C46 /* AppleXylophoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4825A36215C4DB2D006F0C46 /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */; };
 		4825A36615C4DB43006F0C46 /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A36515C4DB43006F0C46 /* MixerHostAudio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -192,6 +201,18 @@
 		4825556B15DD76AF00737C61 /* TrebleClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrebleClef.png; sourceTree = "<group>"; };
 		4825556D15DD76AF00737C61 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = "<group>"; };
 		4825559215DD773300737C61 /* MixoLydian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MixoLydian.png; sourceTree = "<group>"; };
+		4825559615DD7A3000737C61 /* SolfegeNaturalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeNaturalsViewController.h; sourceTree = "<group>"; };
+		4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolfegeNaturalsViewController.m; sourceTree = "<group>"; };
+		4825559815DD7A3000737C61 /* SolfegeNaturalsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SolfegeNaturalsViewController.xib; sourceTree = "<group>"; };
+		4825559B15DD7A4C00737C61 /* SolfegeSharpsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeSharpsViewController.h; sourceTree = "<group>"; };
+		4825559C15DD7A4C00737C61 /* SolfegeSharpsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolfegeSharpsViewController.m; sourceTree = "<group>"; };
+		4825559D15DD7A4C00737C61 /* SolfegeSharpsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SolfegeSharpsViewController.xib; sourceTree = "<group>"; };
+		482555A015DD7A5400737C61 /* SolfegeFlatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeFlatsViewController.h; sourceTree = "<group>"; };
+		482555A115DD7A5400737C61 /* SolfegeFlatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolfegeFlatsViewController.m; sourceTree = "<group>"; };
+		482555A215DD7A5400737C61 /* SolfegeFlatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SolfegeFlatsViewController.xib; sourceTree = "<group>"; };
+		482555A515DD7A9C00737C61 /* SolfegeFlats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SolfegeFlats.png; sourceTree = "<group>"; };
+		482555A615DD7A9C00737C61 /* SolfegeNaturals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SolfegeNaturals.png; sourceTree = "<group>"; };
+		482555A715DD7A9C00737C61 /* SolfegeSharps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SolfegeSharps.png; sourceTree = "<group>"; };
 		4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleXylophoneViewController.h; path = MT101/AppleXylophoneViewController.h; sourceTree = "<group>"; };
 		4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppleXylophoneViewController.m; path = MT101/AppleXylophoneViewController.m; sourceTree = "<group>"; };
 		4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AppleXylophoneViewController.xib; path = MT101/AppleXylophoneViewController.xib; sourceTree = "<group>"; };
@@ -367,6 +388,9 @@
 		4825554915DD76AF00737C61 /* ScalePNGs */ = {
 			isa = PBXGroup;
 			children = (
+				482555A515DD7A9C00737C61 /* SolfegeFlats.png */,
+				482555A615DD7A9C00737C61 /* SolfegeNaturals.png */,
+				482555A715DD7A9C00737C61 /* SolfegeSharps.png */,
 				4825554B15DD76AF00737C61 /* Aeolian.png */,
 				4825554D15DD76AF00737C61 /* AltoClef.png */,
 				4825554F15DD76AF00737C61 /* BariToneClef.png */,
@@ -389,6 +413,29 @@
 			);
 			name = ScalePNGs;
 			path = Art/ScalePNGs;
+			sourceTree = "<group>";
+		};
+		4825559415DD7A0600737C61 /* SolfegeXIBs */ = {
+			isa = PBXGroup;
+			children = (
+				4825559815DD7A3000737C61 /* SolfegeNaturalsViewController.xib */,
+				4825559D15DD7A4C00737C61 /* SolfegeSharpsViewController.xib */,
+				482555A215DD7A5400737C61 /* SolfegeFlatsViewController.xib */,
+			);
+			name = SolfegeXIBs;
+			sourceTree = "<group>";
+		};
+		4825559515DD7A1400737C61 /* SolfegeVCs */ = {
+			isa = PBXGroup;
+			children = (
+				4825559615DD7A3000737C61 /* SolfegeNaturalsViewController.h */,
+				4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */,
+				4825559B15DD7A4C00737C61 /* SolfegeSharpsViewController.h */,
+				4825559C15DD7A4C00737C61 /* SolfegeSharpsViewController.m */,
+				482555A015DD7A5400737C61 /* SolfegeFlatsViewController.h */,
+				482555A115DD7A5400737C61 /* SolfegeFlatsViewController.m */,
+			);
+			name = SolfegeVCs;
 			sourceTree = "<group>";
 		};
 		484D16E315DAE471005FC66E /* Plists */ = {
@@ -496,6 +543,7 @@
 		48FAB51815CAF84F0087DCFA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4825559515DD7A1400737C61 /* SolfegeVCs */,
 				480A792015DD598B005E9C43 /* ModeVCs */,
 				48EEEF6815DC52BA00D15F15 /* MainVCs */,
 				48EEEF6715DC527600D15F15 /* ClefVCs */,
@@ -506,6 +554,7 @@
 		48FAB51A15CAF8710087DCFA /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				4825559415DD7A0600737C61 /* SolfegeXIBs */,
 				480A792115DD599C005E9C43 /* ModeXIBs */,
 				48EEEF6A15DC52F400D15F15 /* MainXIBs */,
 				48EEEF6915DC52D700D15F15 /* ClefXIBs */,
@@ -732,6 +781,12 @@
 				4825558F15DD76AF00737C61 /* TrebleClef.png in Resources */,
 				4825559115DD76AF00737C61 /* welcome.png in Resources */,
 				4825559315DD773300737C61 /* MixoLydian.png in Resources */,
+				4825559A15DD7A3000737C61 /* SolfegeNaturalsViewController.xib in Resources */,
+				4825559F15DD7A4C00737C61 /* SolfegeSharpsViewController.xib in Resources */,
+				482555A415DD7A5400737C61 /* SolfegeFlatsViewController.xib in Resources */,
+				482555A815DD7A9C00737C61 /* SolfegeFlats.png in Resources */,
+				482555A915DD7A9C00737C61 /* SolfegeNaturals.png in Resources */,
+				482555AA15DD7A9C00737C61 /* SolfegeSharps.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,6 +821,9 @@
 				480A793415DD59F7005E9C43 /* LydianViewController.m in Sources */,
 				480A793915DD5A04005E9C43 /* MixoLydianViewController.m in Sources */,
 				480A793E15DD5A0F005E9C43 /* LocrianViewController.m in Sources */,
+				4825559915DD7A3000737C61 /* SolfegeNaturalsViewController.m in Sources */,
+				4825559E15DD7A4C00737C61 /* SolfegeSharpsViewController.m in Sources */,
+				482555A315DD7A5400737C61 /* SolfegeFlatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
