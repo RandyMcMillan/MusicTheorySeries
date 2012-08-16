@@ -211,6 +211,10 @@
     
     interactiveList1 = [[NSArray alloc] initWithObjects:
                         @"CircleOfFifthsViewController",
+                        @"CircleOfFifthsViewController",
+                        @"CircleOfFifthsViewController",
+                        @"CircleOfFifthsViewController",
+                        @"CircleOfFifthsViewController",
                         @"",
                         @"",
                         nil];
@@ -223,10 +227,20 @@
                         @"MixoLydianViewController",
                         @"AeolianViewController",
                         @"LocrianViewController",
+                        @"LocrianViewController",
+                        @"LocrianViewController",
+                        @"LocrianViewController",
+                        @"LocrianViewController",
                         @"",
                         nil];
     
     interactiveList3 = [[NSArray alloc] initWithObjects: //..
+                        @"AeolianViewController",
+                        @"AeolianViewController",
+                        @"AeolianViewController",
+                        @"AeolianViewController",
+                        @"AeolianViewController",
+                        @"AeolianViewController",
                         @"AeolianViewController",
                         @"",
                         @"",
