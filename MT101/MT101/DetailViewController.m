@@ -54,7 +54,7 @@
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 @synthesize masterPopoverController = _masterPopoverController;
-@synthesize musicThoery101Label;
+@synthesize musicTheory101Label;
 @synthesize vLabel;
 @synthesize imageView,MovieToPlay,interactiveToDisplay;
 
