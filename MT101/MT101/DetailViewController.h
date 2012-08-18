@@ -19,6 +19,8 @@
 @property (strong,nonatomic) id detailItem;
 
 @property (strong,nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong,nonatomic) IBOutlet UILabel *musicThoery101Label;
+@property (strong,nonatomic) IBOutlet UILabel *vLabel;
 
 @property(nonatomic,retain) NSString *MovieToPlay;
 @property(nonatomic,retain) IBOutlet UIImageView *imageView;

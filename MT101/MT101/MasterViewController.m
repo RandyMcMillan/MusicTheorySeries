@@ -28,6 +28,12 @@
         self.title = NSLocalizedString(@"Examples", @"Examples");
         self.clearsSelectionOnViewWillAppear = NO;
         self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
+        
+        
+     //   NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleVersionKey];
+     //   NSLog(@"%@",version);
+        
+        
     }
     return self;
 }
@@ -550,6 +556,10 @@
     self.detailViewController.toolBar.alpha = 1.0;
 
     self.detailViewController.title = self.detailViewController.MovieToPlay;
+    self.detailViewController.detailDescriptionLabel.text = nil;
+    self.detailViewController.musicThoery101Label.text = nil;
+    self.detailViewController.vLabel.text = nil;
+
 
 }
 

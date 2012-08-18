@@ -54,7 +54,8 @@
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 @synthesize masterPopoverController = _masterPopoverController;
-
+@synthesize musicThoery101Label;
+@synthesize vLabel;
 @synthesize imageView,MovieToPlay,interactiveToDisplay;
 
 #pragma mark - Managing the detail item
@@ -178,7 +179,7 @@
 
 
 
-      
+ 
   
    //TrebleClefViewController
     
@@ -258,6 +259,8 @@
     if (self.detailItem) {
        // MovieToPlay = @"GreenBeam";
     }
+    
+    self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleVersionKey];
 }
 
 - (void)viewDidLoad
