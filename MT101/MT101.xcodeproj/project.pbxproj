@@ -24,7 +24,6 @@
 		480A795A15DD6060005E9C43 /* BariTone Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A794315DD6060005E9C43 /* BariTone Clef.mp4 */; };
 		480A795B15DD6060005E9C43 /* Bass Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A794415DD6060005E9C43 /* Bass Clef.mp4 */; };
 		480A795C15DD6060005E9C43 /* Circle Of Fifths.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A794515DD6060005E9C43 /* Circle Of Fifths.mp4 */; };
-		480A795D15DD6060005E9C43 /* CircleOfFifths.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A794615DD6060005E9C43 /* CircleOfFifths.mp4 */; };
 		480A795E15DD6060005E9C43 /* Dorian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A794715DD6060005E9C43 /* Dorian.mp4 */; };
 		480A795F15DD6060005E9C43 /* GreenBeam.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A794815DD6060005E9C43 /* GreenBeam.mp4 */; };
 		480A796015DD6060005E9C43 /* Ionian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A794915DD6060005E9C43 /* Ionian.mp4 */; };
@@ -78,6 +77,10 @@
 		484D16E515DAE485005FC66E /* SectionHeaders.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484D16E415DAE485005FC66E /* SectionHeaders.plist */; };
 		486AD37215CE0B7D0054753C /* DGMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AD37115CE0B7D0054753C /* DGMenuItemCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05ED15BF334A00B3F10D /* icon@2x.png */; };
+		4882981915E006BB00239B29 /* ChromaticCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4882981715E006BB00239B29 /* ChromaticCircleViewController.m */; };
+		4882981A15E006BB00239B29 /* ChromaticCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4882981815E006BB00239B29 /* ChromaticCircleViewController.xib */; };
+		4882981C15E009B900239B29 /* Chromatic Circle.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4882981B15E009B900239B29 /* Chromatic Circle.mp4 */; };
+		4882981E15E00AE500239B29 /* ChromaticCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4882981D15E00AE500239B29 /* ChromaticCircle.png */; };
 		489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */; };
 		489C8BB215CF05DD00F15D05 /* GrandStaffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		489C8BB415CF062700F15D05 /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */; };
@@ -164,7 +167,6 @@
 		480A794315DD6060005E9C43 /* BariTone Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BariTone Clef.mp4"; sourceTree = "<group>"; };
 		480A794415DD6060005E9C43 /* Bass Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bass Clef.mp4"; sourceTree = "<group>"; };
 		480A794515DD6060005E9C43 /* Circle Of Fifths.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circle Of Fifths.mp4"; sourceTree = "<group>"; };
-		480A794615DD6060005E9C43 /* CircleOfFifths.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CircleOfFifths.mp4; sourceTree = "<group>"; };
 		480A794715DD6060005E9C43 /* Dorian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dorian.mp4; sourceTree = "<group>"; };
 		480A794815DD6060005E9C43 /* GreenBeam.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GreenBeam.mp4; sourceTree = "<group>"; };
 		480A794915DD6060005E9C43 /* Ionian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionian.mp4; sourceTree = "<group>"; };
@@ -224,6 +226,11 @@
 		486AD37015CE0B7D0054753C /* DGMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGMenuItemCell.h; sourceTree = "<group>"; };
 		486AD37115CE0B7D0054753C /* DGMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGMenuItemCell.m; sourceTree = "<group>"; };
 		486B05ED15BF334A00B3F10D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		4882981615E006BB00239B29 /* ChromaticCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromaticCircleViewController.h; sourceTree = "<group>"; };
+		4882981715E006BB00239B29 /* ChromaticCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromaticCircleViewController.m; sourceTree = "<group>"; };
+		4882981815E006BB00239B29 /* ChromaticCircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChromaticCircleViewController.xib; sourceTree = "<group>"; };
+		4882981B15E009B900239B29 /* Chromatic Circle.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chromatic Circle.mp4"; sourceTree = "<group>"; };
+		4882981D15E00AE500239B29 /* ChromaticCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChromaticCircle.png; sourceTree = "<group>"; };
 		489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrandStaffViewController.h; path = MT101/GrandStaffViewController.h; sourceTree = "<group>"; };
 		489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrandStaffViewController.m; path = MT101/GrandStaffViewController.m; sourceTree = "<group>"; };
@@ -363,7 +370,7 @@
 				480A794315DD6060005E9C43 /* BariTone Clef.mp4 */,
 				480A794415DD6060005E9C43 /* Bass Clef.mp4 */,
 				480A794515DD6060005E9C43 /* Circle Of Fifths.mp4 */,
-				480A794615DD6060005E9C43 /* CircleOfFifths.mp4 */,
+				4882981B15E009B900239B29 /* Chromatic Circle.mp4 */,
 				480A794715DD6060005E9C43 /* Dorian.mp4 */,
 				480A794815DD6060005E9C43 /* GreenBeam.mp4 */,
 				480A794915DD6060005E9C43 /* Ionian.mp4 */,
@@ -396,6 +403,7 @@
 				4825554F15DD76AF00737C61 /* BariToneClef.png */,
 				4825555115DD76AF00737C61 /* BassClef.png */,
 				4825555315DD76AF00737C61 /* CircleOfFifths.png */,
+				4882981D15E00AE500239B29 /* ChromaticCircle.png */,
 				4825555515DD76AF00737C61 /* Dorian.png */,
 				4825555715DD76AF00737C61 /* Ionian.png */,
 				4825555915DD76AF00737C61 /* Locrian.png */,
@@ -457,6 +465,26 @@
 			name = Plists;
 			sourceTree = "<group>";
 		};
+		4882981315E005F600239B29 /* CircleVCs */ = {
+			isa = PBXGroup;
+			children = (
+				4882981615E006BB00239B29 /* ChromaticCircleViewController.h */,
+				4882981715E006BB00239B29 /* ChromaticCircleViewController.m */,
+				48FAB52515CB13930087DCFA /* CircleOfFifthsViewController.h */,
+				48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */,
+			);
+			name = CircleVCs;
+			sourceTree = "<group>";
+		};
+		4882981515E0060B00239B29 /* CircleXIBs */ = {
+			isa = PBXGroup;
+			children = (
+				4882981815E006BB00239B29 /* ChromaticCircleViewController.xib */,
+				48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */,
+			);
+			name = CircleXIBs;
+			sourceTree = "<group>";
+		};
 		48BF0C3715C9AC4000F0F1A0 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,8 +521,6 @@
 				48D50A2115D8876D009121C3 /* TrebleClefViewController.h */,
 				489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */,
 				489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */,
-				48FAB52515CB13930087DCFA /* CircleOfFifthsViewController.h */,
-				48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */,
 			);
 			name = ClefVCs;
 			sourceTree = "<group>";
@@ -520,7 +546,6 @@
 				48EEEF6415DC4BBF00D15F15 /* MezzoSopranoClefViewController.xib */,
 				48D50A2215D88779009121C3 /* TrebleClefViewController.xib */,
 				489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */,
-				48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */,
 				48EEEF4115DC4A1600D15F15 /* AltoClefViewController.xib */,
 				48EEEF5515DC4B5E00D15F15 /* BariToneClefViewController.xib */,
 				48EEEF5F15DC4B7A00D15F15 /* SubBassClefViewController.xib */,
@@ -542,6 +567,7 @@
 		48FAB51815CAF84F0087DCFA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4882981315E005F600239B29 /* CircleVCs */,
 				4825559515DD7A1400737C61 /* SolfegeVCs */,
 				480A792015DD598B005E9C43 /* ModeVCs */,
 				48EEEF6815DC52BA00D15F15 /* MainVCs */,
@@ -553,6 +579,7 @@
 		48FAB51A15CAF8710087DCFA /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				4882981515E0060B00239B29 /* CircleXIBs */,
 				4825559415DD7A0600737C61 /* SolfegeXIBs */,
 				480A792115DD599C005E9C43 /* ModeXIBs */,
 				48EEEF6A15DC52F400D15F15 /* MainXIBs */,
@@ -744,7 +771,6 @@
 				480A795A15DD6060005E9C43 /* BariTone Clef.mp4 in Resources */,
 				480A795B15DD6060005E9C43 /* Bass Clef.mp4 in Resources */,
 				480A795C15DD6060005E9C43 /* Circle Of Fifths.mp4 in Resources */,
-				480A795D15DD6060005E9C43 /* CircleOfFifths.mp4 in Resources */,
 				480A795E15DD6060005E9C43 /* Dorian.mp4 in Resources */,
 				480A795F15DD6060005E9C43 /* GreenBeam.mp4 in Resources */,
 				480A796015DD6060005E9C43 /* Ionian.mp4 in Resources */,
@@ -787,6 +813,9 @@
 				482555A815DD7A9C00737C61 /* SolfegeFlats.png in Resources */,
 				482555A915DD7A9C00737C61 /* SolfegeNaturals.png in Resources */,
 				482555AA15DD7A9C00737C61 /* SolfegeSharps.png in Resources */,
+				4882981A15E006BB00239B29 /* ChromaticCircleViewController.xib in Resources */,
+				4882981C15E009B900239B29 /* Chromatic Circle.mp4 in Resources */,
+				4882981E15E00AE500239B29 /* ChromaticCircle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,6 +853,7 @@
 				4825559915DD7A3000737C61 /* SolfegeNaturalsViewController.m in Sources */,
 				4825559E15DD7A4C00737C61 /* SolfegeSharpsViewController.m in Sources */,
 				482555A315DD7A5400737C61 /* SolfegeFlatsViewController.m in Sources */,
+				4882981915E006BB00239B29 /* ChromaticCircleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
