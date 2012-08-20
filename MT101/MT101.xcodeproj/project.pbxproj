@@ -114,6 +114,7 @@
 		48EEEF6E15DC549A00D15F15 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48EEEF6D15DC549A00D15F15 /* icon-72@2x.png */; };
 		48EEEF7015DC54D700D15F15 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48EEEF6F15DC54D700D15F15 /* Default-Portrait~ipad.png */; };
 		48EEEF7215DC54DF00D15F15 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48EEEF7115DC54DF00D15F15 /* Default-Portrait@2x~ipad.png */; };
+		48EFB1E815E2DF4F009A5D43 /* WebView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48EFB1E715E2DF4F009A5D43 /* WebView.bundle */; };
 		48FA4BF015DAE7DA00FF91CA /* videoList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */; };
 		48FA4BF315DAE90D00FF91CA /* videoList1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BF215DAE90D00FF91CA /* videoList1.plist */; };
 		48FA4BF515DAE9A500FF91CA /* videoList2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4BF415DAE9A500FF91CA /* videoList2.plist */; };
@@ -277,6 +278,7 @@
 		48EEEF6D15DC549A00D15F15 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72@2x.png"; path = "../icon-72@2x.png"; sourceTree = "<group>"; };
 		48EEEF6F15DC54D700D15F15 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		48EEEF7115DC54DF00D15F15 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "../Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		48EFB1E715E2DF4F009A5D43 /* WebView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WebView.bundle; sourceTree = "<group>"; };
 		48FA4BEF15DAE7DA00FF91CA /* videoList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList0.plist; sourceTree = "<group>"; };
 		48FA4BF215DAE90D00FF91CA /* videoList1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList1.plist; sourceTree = "<group>"; };
 		48FA4BF415DAE9A500FF91CA /* videoList2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoList2.plist; sourceTree = "<group>"; };
@@ -496,6 +498,7 @@
 		48A3561815E221AE00A3529D /* WikiView */ = {
 			isa = PBXGroup;
 			children = (
+				48EFB1E715E2DF4F009A5D43 /* WebView.bundle */,
 				48A3562D15E2363F00A3529D /* WebViewController.h */,
 				48A3562E15E2363F00A3529D /* WebViewController.m */,
 				48A3563015E2364600A3529D /* WebView.xib */,
@@ -837,6 +840,7 @@
 				4882981E15E00AE500239B29 /* ChromaticCircle.png in Resources */,
 				48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */,
 				48A3563115E2364600A3529D /* WebView.xib in Resources */,
+				48EFB1E815E2DF4F009A5D43 /* WebView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
