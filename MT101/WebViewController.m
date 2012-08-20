@@ -43,6 +43,25 @@
 }
 
 
+
+-(void)closeBrowser {
+    
+    if ([self respondsToSelector:@selector(presentingViewController)]) {
+        [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [[self parentViewController] dismissModalViewControllerAnimated:YES];
+    }
+}
+
+-(IBAction) onDoneButtonPress:(id)sender {
+    
+    [ self closeBrowser];
+}
+
+
+
+
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	// Return YES for supported orientations
 	return YES;//(interfaceOrientation == UIInterfaceOrientationPortrait);
