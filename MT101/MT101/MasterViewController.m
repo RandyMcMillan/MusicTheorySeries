@@ -502,6 +502,8 @@
         self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
         self.detailViewController.imageView.image = [imageList0 objectAtIndex:indexPath.row];
         self.detailViewController.interactiveToDisplay = [interactiveList0 objectAtIndex:indexPath.row];
+        self.detailViewController.wikiToDisplay = [wikiToDiplayList0 objectAtIndex:indexPath.row];
+
         
     }
     

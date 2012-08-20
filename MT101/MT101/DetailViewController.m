@@ -34,6 +34,9 @@
 #import "SolfegeSharpsViewController.h"
 #import "SolfegeFlatsViewController.h"
 
+#import "WebViewController.h"
+
+
 
 @interface DetailViewController (){
     
@@ -57,6 +60,7 @@
 @synthesize musicTheory101Label;
 @synthesize vLabel;
 @synthesize imageView,MovieToPlay,interactiveToDisplay;
+@synthesize wikiToDisplay;
 
 #pragma mark - Managing the detail item
 #pragma mark - displayInteractives
@@ -238,9 +242,48 @@
 }
 
 
+#pragma mark - displayWiki
+
 -(IBAction)displayWiki:(id)sender {
 
-    NSLog(@"displayWiki");
+    NSLog(@"displayWiki = %@", wikiToDisplay);
+    
+    WebViewController *wikiVC = [[WebViewController alloc]init];
+    
+    
+    //Create a URL object.
+    NSURL *url = [NSURL URLWithString:wikiToDisplay];
+    NSLog(@"%@",url);
+    
+    [wikiVC.webView setBackgroundColor:[UIColor clearColor]];
+   // [self hideGradientBackground:webView];
+    
+    
+    
+    //URL Requst Object
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
+    
+    
+    
+    //Load the request in the UIWebView.
+    [wikiVC.webView loadRequest:requestObj];
+    
+    //[webView loadHTMLString:@"This is a completely transparent UIWebView. Notice the missing gradient at the top and bottom as you scroll up and down." baseURL:nil];
+    
+
+    
+    
+    [self presentModalViewController:wikiVC animated:YES];
+
+    
+    
+    
+	
+
+    
+    
+    
 
 }
 

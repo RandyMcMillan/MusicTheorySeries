@@ -25,6 +25,7 @@
 @property(nonatomic,retain) NSString *MovieToPlay;
 @property(nonatomic,retain) IBOutlet UIImageView *imageView;
 @property(nonatomic,retain) IBOutlet NSString *interactiveToDisplay;
+@property(nonatomic,retain) NSString *wikiToDisplay;
 @property(nonatomic,retain) IBOutlet UIToolbar *toolBar;
 
 //@property(nonatomic,retain) IBOutlet AppleXylophoneViewController *viewController;
