@@ -30,22 +30,22 @@
  If you need to do additional setup after loading the view, override viewDidLoad. */
 - (void)viewDidLoad {
 	
-	NSString *urlAddress = @"http://www.google.com";
+//	NSString *urlAddress = @"http://www.google.com";
 	
 	//Create a URL object.
-	NSURL *url = [NSURL URLWithString:urlAddress];
+//	NSURL *url = [NSURL URLWithString:urlAddress];
 	
 	//URL Requst Object
-	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+//	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
 	
 	//Load the request in the UIWebView.
-	[webView loadRequest:requestObj];
+//	[webView loadRequest:requestObj];
 }
 
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	// Return YES for supported orientations
-	return (interfaceOrientation == UIInterfaceOrientationPortrait);
+	return YES;//(interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 

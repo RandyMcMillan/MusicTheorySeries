@@ -72,6 +72,7 @@
     if (interactiveToDisplay == @"GrandStaffViewController") {
         
         GrandStaffViewController *theGrandStaffVC = [[GrandStaffViewController alloc]init];
+        theGrandStaffVC.modalPresentationStyle = UIModalPresentationPageSheet;
         [self presentModalViewController:theGrandStaffVC animated:YES];
         
     }
@@ -217,9 +218,12 @@
                                                  name:MPMoviePlayerPlaybackDidFinishNotification
                                                object:moviePlayer.moviePlayer];
 
-        
-    [self.view addSubview:moviePlayer.view];
+    moviePlayer.modalPresentationStyle = UIModalPresentationPageSheet;
+    
+   // [self.view addSubview:moviePlayer.view];
 
+
+    [self presentModalViewController:moviePlayer animated:YES];
     
 	//[self presentMoviePlayerViewControllerAnimated:moviePlayer];	
 }
@@ -251,7 +255,16 @@
     WebViewController *wikiVC = [[WebViewController alloc]init];
     
     
-    //Create a URL object.
+  
+    wikiVC.modalPresentationStyle = UIModalPresentationPageSheet;
+    
+    [self presentModalViewController:wikiVC animated:YES];
+
+    
+    
+    
+	
+  //Create a URL object.
     NSURL *url = [NSURL URLWithString:wikiToDisplay];
     NSLog(@"%@",url);
     
@@ -274,15 +287,6 @@
 
     
     
-    [self presentModalViewController:wikiVC animated:YES];
-
-    
-    
-    
-	
-
-    
-    
     
 
 }
@@ -300,7 +304,7 @@
 
     if (self.masterPopoverController != nil) {
         [self.masterPopoverController dismissPopoverAnimated:YES];
-    }        
+    }
 }
 
 - (void)configureView
