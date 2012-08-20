@@ -50,6 +50,8 @@
 }
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
+- (void)hideGradientBackground:(UIView*)theView;
+
 @end
 
 @implementation DetailViewController
@@ -269,7 +271,7 @@
     NSLog(@"%@",url);
     
     [wikiVC.webView setBackgroundColor:[UIColor clearColor]];
-   // [self hideGradientBackground:webView];
+    [self hideGradientBackground:wikiVC.webView];
     
     
     
@@ -320,6 +322,18 @@
     self.detailDescriptionLabel.text = appVersion;
 
 }
+
+- (void) hideGradientBackground:(UIView*)theView
+{
+    for (UIView * subview in theView.subviews)
+    {
+        if ([subview isKindOfClass:[UIImageView class]])
+            subview.hidden = YES;
+        
+        [self hideGradientBackground:subview];
+    }
+}
+
 
 - (void)viewDidLoad
 {
