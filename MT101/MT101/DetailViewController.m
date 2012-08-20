@@ -260,7 +260,10 @@
        // MovieToPlay = @"GreenBeam";
     }
     
-    self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleVersionKey];
+    NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleVersionKey];
+    NSLog(@"appVersion = %@",appVersion);
+    self.detailDescriptionLabel.text = appVersion;
+
 }
 
 - (void)viewDidLoad
