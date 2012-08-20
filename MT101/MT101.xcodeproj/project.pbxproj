@@ -84,6 +84,9 @@
 		489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */; };
 		489C8BB215CF05DD00F15D05 /* GrandStaffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		489C8BB415CF062700F15D05 /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */; };
+		48A3561D15E221C300A3529D /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3561B15E221C300A3529D /* WikiViewController.m */; };
+		48A3561E15E221C300A3529D /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A3561C15E221C300A3529D /* WikiViewController.xib */; };
+		48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */; };
 		48BF0C3015C9AC3400F0F1A0 /* vib_0.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */; };
 		48BF0C3115C9AC3400F0F1A0 /* vib_1.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2B15C9AC3400F0F1A0 /* vib_1.aiff */; };
 		48BF0C3215C9AC3400F0F1A0 /* vib_2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0C2C15C9AC3400F0F1A0 /* vib_2.aiff */; };
@@ -235,6 +238,10 @@
 		489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrandStaffViewController.h; path = MT101/GrandStaffViewController.h; sourceTree = "<group>"; };
 		489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrandStaffViewController.m; path = MT101/GrandStaffViewController.m; sourceTree = "<group>"; };
 		489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GrandStaffViewController.xib; path = MT101/GrandStaffViewController.xib; sourceTree = "<group>"; };
+		48A3561A15E221C300A3529D /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
+		48A3561B15E221C300A3529D /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
+		48A3561C15E221C300A3529D /* WikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
+		48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay0.plist; sourceTree = "<group>"; };
 		48BF0C2A15C9AC3400F0F1A0 /* vib_0.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_0.aiff; path = ../vib_0.aiff; sourceTree = "<group>"; };
 		48BF0C2B15C9AC3400F0F1A0 /* vib_1.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_1.aiff; path = ../vib_1.aiff; sourceTree = "<group>"; };
 		48BF0C2C15C9AC3400F0F1A0 /* vib_2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = vib_2.aiff; path = ../vib_2.aiff; sourceTree = "<group>"; };
@@ -461,6 +468,7 @@
 				48FA4C0615DB03A200FF91CA /* imageNameList3.plist */,
 				48FA4C0815DB03AB00FF91CA /* imageNameList4.plist */,
 				48FA4C0A15DB03B200FF91CA /* imageNameList5.plist */,
+				48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */,
 			);
 			name = Plists;
 			sourceTree = "<group>";
@@ -483,6 +491,16 @@
 				48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */,
 			);
 			name = CircleXIBs;
+			sourceTree = "<group>";
+		};
+		48A3561815E221AE00A3529D /* WikiView */ = {
+			isa = PBXGroup;
+			children = (
+				48A3561A15E221C300A3529D /* WikiViewController.h */,
+				48A3561B15E221C300A3529D /* WikiViewController.m */,
+				48A3561C15E221C300A3529D /* WikiViewController.xib */,
+			);
+			name = WikiView;
 			sourceTree = "<group>";
 		};
 		48BF0C3715C9AC4000F0F1A0 /* Audio */ = {
@@ -604,6 +622,7 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
+				48A3561815E221AE00A3529D /* WikiView */,
 				484D16E315DAE471005FC66E /* Plists */,
 				48FAB51A15CAF8710087DCFA /* XIBs */,
 				48FAB51815CAF84F0087DCFA /* ViewControllers */,
@@ -816,6 +835,8 @@
 				4882981A15E006BB00239B29 /* ChromaticCircleViewController.xib in Resources */,
 				4882981C15E009B900239B29 /* Chromatic Circle.mp4 in Resources */,
 				4882981E15E00AE500239B29 /* ChromaticCircle.png in Resources */,
+				48A3561E15E221C300A3529D /* WikiViewController.xib in Resources */,
+				48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,6 +875,7 @@
 				4825559E15DD7A4C00737C61 /* SolfegeSharpsViewController.m in Sources */,
 				482555A315DD7A5400737C61 /* SolfegeFlatsViewController.m in Sources */,
 				4882981915E006BB00239B29 /* ChromaticCircleViewController.m in Sources */,
+				48A3561D15E221C300A3529D /* WikiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

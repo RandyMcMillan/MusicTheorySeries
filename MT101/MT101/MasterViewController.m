@@ -62,6 +62,16 @@
     sectionHeader = [[NSArray alloc]initWithContentsOfFile:sectionHeadersPath];
     for (NSString *str in sectionHeader)
         NSLog(@"sectionHeader = %@",str);
+    
+#pragma mark - WikiToDisplay
+
+    
+    NSString *wikiToDisplayPath = [[NSBundle mainBundle] pathForResource:@"WikiToDisplay0" ofType:@"plist"];
+     wikiToDiplayList0 = [[NSArray alloc]initWithContentsOfFile:wikiToDisplayPath];
+    for (NSString *str in wikiToDiplayList0)
+        NSLog(@"wikiToDiplayList0 = %@",str);
+ 
+    
    
 #pragma mark - Video Lists
 

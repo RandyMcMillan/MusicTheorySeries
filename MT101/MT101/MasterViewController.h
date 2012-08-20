@@ -39,6 +39,14 @@
     NSArray *interactiveList3;
     NSArray *interactiveList4;
     NSArray *interactiveList5;
+    
+    NSArray *wikiToDiplayList0;
+    NSArray *wikiToDiplayList1;
+    NSArray *wikiToDiplayList2;
+    NSArray *wikiToDiplayList3;
+    NSArray *wikiToDiplayList4;
+    NSArray *wikiToDiplayList5;
+
 
     NSArray *sectionHeader;
     

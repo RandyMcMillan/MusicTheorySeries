@@ -238,6 +238,14 @@
 }
 
 
+-(IBAction)displayWiki:(id)sender {
+
+    NSLog(@"displayWiki");
+
+}
+
+
+
 - (void)setDetailItem:(id)newDetailItem
 {
     if (_detailItem != newDetailItem) {

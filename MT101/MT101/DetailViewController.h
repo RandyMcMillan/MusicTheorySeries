@@ -36,6 +36,7 @@
 
 
 -(IBAction)displayInteractive:(id)sender;
+-(IBAction)displayWiki:(id)sender;
 -(IBAction)playMovie:(id)sender;
 
 @end
