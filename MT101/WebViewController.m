@@ -39,7 +39,11 @@
     fwdBtn.image = [UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/arrow_right"]];
     safariBtn.image = [UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/compass"]];
 
-	
+    backBtn.enabled = webView.canGoBack;
+    fwdBtn.enabled = webView.canGoForward;
+
+    webView.delegate = self;
+ 
 //	NSString *urlAddress = @"http://www.google.com";
 	
 	//Create a URL object.
@@ -93,12 +97,14 @@
 
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
 {
+    
+    NSLog(@"wvShuldLoad");
     NSURL *requestURL =[ [ request URL ] retain ];
-    if ( ( [ [ requestURL scheme ] isEqualToString: @"http" ] || [ [ requestURL scheme ] isEqualToString: @"https" ] || [ [ requestURL scheme ] isEqualToString: @"mailto" ] || [ [ requestURL scheme ] isEqualToString: @"tel" ] || [ [ requestURL scheme ] isEqualToString: @"maps" ])
-        && ( /*navigationType == UIWebViewNavigationTypeLinkClicked ||*/ navigationType == UIWebViewNavigationTypeOther ) ) {
-        return ![ [ UIApplication sharedApplication ] openURL: [ requestURL autorelease ] ];
-    }
-    [ requestURL release ];
+ //   if ( ( [ [ requestURL scheme ] isEqualToString: @"http" ] || [ [ requestURL scheme ] isEqualToString: @"https" ] || [ [ requestURL scheme ] isEqualToString: @"mailto" ] || [ [ requestURL scheme ] isEqualToString: @"tel" ] || [ [ requestURL scheme ] isEqualToString: @"maps" ])
+   //     && ( /*navigationType == UIWebViewNavigationTypeLinkClicked ||*/ navigationType == UIWebViewNavigationTypeOther ) ) {
+     //   return ![ [ UIApplication sharedApplication ] openURL: [ requestURL autorelease ] ];
+   // }
+   // [ requestURL release ];
     return YES;
 }
 
@@ -163,7 +169,7 @@
     addressLabel.text = @"Loading...";
     backBtn.enabled = webView.canGoBack;
     fwdBtn.enabled = webView.canGoForward;
-    
+    NSLog(@"webViewDidStartLoad");
     [ spinner startAnimating ];
     
 }
@@ -176,7 +182,8 @@
     backBtn.enabled = webView.canGoBack;
     fwdBtn.enabled = webView.canGoForward;
     [ spinner stopAnimating ];
-    
+    NSLog(@"webViewDidFinLoad");
+ 
     if(delegate != NULL)
     {
         //[delegate onChildLocationChange:request.URL.absoluteString];
