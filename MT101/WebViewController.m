@@ -43,7 +43,10 @@
     fwdBtn.enabled = webView.canGoForward;
 
     webView.delegate = self;
- 
+    
+    
+    
+    
 //	NSString *urlAddress = @"http://www.google.com";
 	
 	//Create a URL object.
