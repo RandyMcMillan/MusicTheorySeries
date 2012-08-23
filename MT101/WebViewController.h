@@ -35,7 +35,6 @@
 @property (nonatomic, retain) UIWebView *webView;
 - (IBAction) onDoneButtonPress:(id)sender;
 - (IBAction)onSafariButtonPress:(id)sender;
-- (IBAction)onSafariButtonPress:(id)sender;
 @property(retain) NSString* imageURL;
 @property(assign) BOOL isImage;
 @property (nonatomic, retain)id <WebViewDelegate> delegate;
