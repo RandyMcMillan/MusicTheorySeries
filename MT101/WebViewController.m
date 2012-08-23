@@ -12,6 +12,9 @@
 @implementation WebViewController
 
 @synthesize webView;
+@synthesize imageURL;
+@synthesize isImage;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
@@ -120,6 +123,65 @@
     }
     
     return resource;//if all else fails
+}
+
+
+
+
+
+- (void)loadURL:(NSString*)url
+{
+    NSLog(@"Opening Url : %@",url);
+    
+    if( [url hasSuffix:@".png" ]  ||
+       [url hasSuffix:@".jpg" ]  ||
+       [url hasSuffix:@".jpeg" ] ||
+       [url hasSuffix:@".bmp" ]  ||
+       [url hasSuffix:@".gif" ]  )
+    {
+        [ imageURL release ];
+        imageURL = [url copy];
+        isImage = YES;
+        NSString* htmlText = @"<html><body style='background-color:#333;margin:0px;padding:0px;'><img style='min-height:200px;margin:0px;padding:0px;width:100%;height:auto;' alt='' src='IMGSRC'/></body></html>";
+        htmlText = [ htmlText stringByReplacingOccurrencesOfString:@"IMGSRC" withString:url ];
+        
+        [webView loadHTMLString:htmlText baseURL:[NSURL URLWithString:@""]];
+        
+    }
+    else
+    {
+        imageURL = @"";
+        isImage = NO;
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+        [webView loadRequest:request];
+    }
+    webView.hidden = NO;
+}
+
+
+- (void)webViewDidStartLoad:(UIWebView *)sender {
+    addressLabel.text = @"Loading...";
+    backBtn.enabled = webView.canGoBack;
+    fwdBtn.enabled = webView.canGoForward;
+    
+    [ spinner startAnimating ];
+    
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)sender
+{
+    NSURLRequest *request = webView.request;
+    NSLog(@"New Address is : %@",request.URL.absoluteString);
+    addressLabel.text = request.URL.absoluteString;
+    backBtn.enabled = webView.canGoBack;
+    fwdBtn.enabled = webView.canGoForward;
+    [ spinner stopAnimating ];
+    
+    if(delegate != NULL)
+    {
+        //[delegate onChildLocationChange:request.URL.absoluteString];
+    }
+    
 }
 
 

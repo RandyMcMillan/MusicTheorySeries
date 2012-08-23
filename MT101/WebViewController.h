@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol WebViewDelegate<NSObject>
+@end
 
-@interface WebViewController : UIViewController {
+
+@interface WebViewController : UIViewController < UIWebViewDelegate > {
 	
 	IBOutlet UIWebView *webView;
     IBOutlet UIBarButtonItem *doneButton;
@@ -21,6 +24,9 @@
     IBOutlet UIBarButtonItem* fwdBtn;
     IBOutlet UIBarButtonItem* safariBtn;
     IBOutlet UIActivityIndicatorView* spinner;
+    BOOL isImage;
+    NSString* imageURL;
+    id <WebViewDelegate> delegate;
 
     
     
@@ -30,6 +36,9 @@
 - (IBAction) onDoneButtonPress:(id)sender;
 - (IBAction)onSafariButtonPress:(id)sender;
 - (IBAction)onSafariButtonPress:(id)sender;
+@property(retain) NSString* imageURL;
+@property(assign) BOOL isImage;
+@property (nonatomic, retain)id <WebViewDelegate> delegate;
 
 
 @end
