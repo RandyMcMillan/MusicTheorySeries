@@ -35,8 +35,8 @@
    
     
 #if TARGET_IPHONE_SIMULATOR
-    [NSClassFromString(@"WebView") _enableRemoteInspector];
-    NSLog(@"MediaBrowserViewController.m Line 76. This makes ChildBrowser debbugging in the desktop browser possible http://localhost:9999/?page=1 or 2 ");
+  //  [NSClassFromString(@"WebView") _enableRemoteInspector];
+    //NSLog(@"MediaBrowserViewController.m Line 76. This makes ChildBrowser debbugging in the desktop browser possible http://localhost:9999/?page=1 or 2 ");
 #endif
     
     
@@ -105,31 +105,10 @@
 }
 
 
--(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
-{
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType; {
     
     NSLog(@"shouldStartLoadWithRequest");
-   // NSURL *requestURL =[ [ request URL ] retain ];
- //   if ( ( [ [ requestURL scheme ] isEqualToString: @"http" ] || [ [ requestURL scheme ] isEqualToString: @"https" ] || [ [ requestURL scheme ] isEqualToString: @"mailto" ] || [ [ requestURL scheme ] isEqualToString: @"tel" ] || [ [ requestURL scheme ] isEqualToString: @"maps" ])
-   //     && ( /*navigationType == UIWebViewNavigationTypeLinkClicked ||*/ navigationType == UIWebViewNavigationTypeOther ) ) {
-     //   return ![ [ UIApplication sharedApplication ] openURL: [ requestURL autorelease ] ];
-   // }
-   // [ requestURL release ];
     
-    NSString *rURL = [NSString stringWithFormat:@"%@",request.URL];
-    
-    if ([rURL hasSuffix:@".png"]) {
-        NSLog(@" %@ ... has .png",rURL);
-        
-        NSString * htmlText = @"<html><body style='background-color:#333;margin:0px;padding:0px;'><img style='min-height:200px;margin:0px;padding:0px;width:100%;height:auto;' alt='' src='IMGSRC'/></body></html>";
-        htmlText = [ htmlText stringByReplacingOccurrencesOfString:@"IMGSRC" withString:rURL ];
-        
-        [self.webView loadHTMLString:htmlText baseURL:[NSURL URLWithString:@""]];
-
-        
-        
-        
-    }
     return YES;
 }
 
