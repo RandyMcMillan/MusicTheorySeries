@@ -32,6 +32,13 @@
 /*
  If you need to do additional setup after loading the view, override viewDidLoad. */
 - (void)viewDidLoad {
+   
+    
+#if TARGET_IPHONE_SIMULATOR
+    [NSClassFromString(@"WebView") _enableRemoteInspector];
+    NSLog(@"MediaBrowserViewController.m Line 76. This makes ChildBrowser debbugging in the desktop browser possible http://localhost:9999/?page=1 or 2 ");
+#endif
+    
     
     
     refreshBtn.image = [UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/but_refresh"]];
@@ -101,13 +108,28 @@
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
 {
     
-    NSLog(@"wvShuldLoad");
-    NSURL *requestURL =[ [ request URL ] retain ];
+    NSLog(@"shouldStartLoadWithRequest");
+   // NSURL *requestURL =[ [ request URL ] retain ];
  //   if ( ( [ [ requestURL scheme ] isEqualToString: @"http" ] || [ [ requestURL scheme ] isEqualToString: @"https" ] || [ [ requestURL scheme ] isEqualToString: @"mailto" ] || [ [ requestURL scheme ] isEqualToString: @"tel" ] || [ [ requestURL scheme ] isEqualToString: @"maps" ])
    //     && ( /*navigationType == UIWebViewNavigationTypeLinkClicked ||*/ navigationType == UIWebViewNavigationTypeOther ) ) {
      //   return ![ [ UIApplication sharedApplication ] openURL: [ requestURL autorelease ] ];
    // }
    // [ requestURL release ];
+    
+    NSString *rURL = [NSString stringWithFormat:@"%@",request.URL];
+    
+    if ([rURL hasSuffix:@".png"]) {
+        NSLog(@" %@ ... has .png",rURL);
+        
+        NSString* htmlText = @"<html><body style='background-color:#333;margin:0px;padding:0px;'><img style='min-height:200px;margin:0px;padding:0px;width:100%;height:auto;' alt='' src='IMGSRC'/></body></html>";
+        htmlText = [ htmlText stringByReplacingOccurrencesOfString:@"IMGSRC" withString:request.URL ];
+        
+        [self.webView loadHTMLString:htmlText baseURL:[NSURL URLWithString:@""]];
+
+        
+        
+        
+    }
     return YES;
 }
 
@@ -138,34 +160,6 @@
 
 
 
-- (void)loadURL:(NSString*)url
-{
-    NSLog(@"Opening Url : %@",url);
-    
-    if( [url hasSuffix:@".png" ]  ||
-       [url hasSuffix:@".jpg" ]  ||
-       [url hasSuffix:@".jpeg" ] ||
-       [url hasSuffix:@".bmp" ]  ||
-       [url hasSuffix:@".gif" ]  )
-    {
-        [ imageURL release ];
-        imageURL = [url copy];
-        isImage = YES;
-        NSString* htmlText = @"<html><body style='background-color:#333;margin:0px;padding:0px;'><img style='min-height:200px;margin:0px;padding:0px;width:100%;height:auto;' alt='' src='IMGSRC'/></body></html>";
-        htmlText = [ htmlText stringByReplacingOccurrencesOfString:@"IMGSRC" withString:url ];
-        
-        [webView loadHTMLString:htmlText baseURL:[NSURL URLWithString:@""]];
-        
-    }
-    else
-    {
-        imageURL = @"";
-        isImage = NO;
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
-        [webView loadRequest:request];
-    }
-    webView.hidden = NO;
-}
 
 
 - (void)webViewDidStartLoad:(UIWebView *)sender {
