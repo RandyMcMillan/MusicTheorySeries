@@ -146,6 +146,7 @@
     backBtn.enabled = webView.canGoBack;
     fwdBtn.enabled = webView.canGoForward;
     NSLog(@"webViewDidStartLoad");
+    spinner.hidden = FALSE;
     [ spinner startAnimating ];
     
 }
@@ -164,6 +165,9 @@
     {
         //[delegate onChildLocationChange:request.URL.absoluteString];
     }
+    
+    spinner.hidden = TRUE;
+
     
 }
 
