@@ -121,8 +121,8 @@
     if ([rURL hasSuffix:@".png"]) {
         NSLog(@" %@ ... has .png",rURL);
         
-        NSString* htmlText = @"<html><body style='background-color:#333;margin:0px;padding:0px;'><img style='min-height:200px;margin:0px;padding:0px;width:100%;height:auto;' alt='' src='IMGSRC'/></body></html>";
-        htmlText = [ htmlText stringByReplacingOccurrencesOfString:@"IMGSRC" withString:request.URL ];
+        NSString * htmlText = @"<html><body style='background-color:#333;margin:0px;padding:0px;'><img style='min-height:200px;margin:0px;padding:0px;width:100%;height:auto;' alt='' src='IMGSRC'/></body></html>";
+        htmlText = [ htmlText stringByReplacingOccurrencesOfString:@"IMGSRC" withString:rURL ];
         
         [self.webView loadHTMLString:htmlText baseURL:[NSURL URLWithString:@""]];
 
