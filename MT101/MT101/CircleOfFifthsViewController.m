@@ -47,12 +47,11 @@
     keyRects[0] = CGRectMake([self view].bounds.size.width * 0.457 + kXOrientationAdjustiPhone,//derive xi
                              [self view].bounds.size.height * 0.08,//derive y
                              [self view].bounds.size.width * 0.1,//span across entire screen
-                             [self view].bounds.size.height * 0.07// 1/6th width of screen
+                             [self view].bounds.size.height * 0.09// 1/6th width of screen
                              );//Do
     
     
 
-    //keyRects[0] = CGRectMake(0, 0, 200, 40);
     keyRects[1] = CGRectMake(0, 40, 200, 40);//Di
     
     
@@ -111,11 +110,16 @@
                              [self view].bounds.size.height * 0.63,//derive y
                              [self view].bounds.size.width * 0.1,//span across entire screen
                              [self view].bounds.size.height * 0.11// 1/6th width of screen
-                             );//Sol
+                             );//Ti
  
     
+    keyRects[12] = CGRectMake([self view].bounds.size.width * 0.470 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.18,//derive y
+                             [self view].bounds.size.width * 0.07,//span across entire screen
+                             [self view].bounds.size.height * 0.027// 1/6th width of screen
+                             );//Do
     
-    keyRects[12] = CGRectMake(0,480,200,40);//Do
+ 
     
     
     keyRects[13] = CGRectMake(0,520,200,40);//Do
@@ -187,7 +191,7 @@
     label11.text = [NSString stringWithFormat: @"keyRect[11]"];
     
     UILabel *label12 = [ [UILabel alloc ] initWithFrame:keyRects[12] ];
-    label12.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label12.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:1.000];
     label12.text = [NSString stringWithFormat: @"keyRect[12]"];
     
     
