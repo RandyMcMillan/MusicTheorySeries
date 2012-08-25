@@ -20,7 +20,6 @@
 #import "BassClefViewController.h"
 #import "SubBassClefViewController.h"
 
-
 #import "IonianViewController.h"
 #import "DorianViewController.h"
 #import "PhrygianViewController.h"
@@ -29,29 +28,25 @@
 #import "AeolianViewController.h"
 #import "LocrianViewController.h"
 
-
 #import "SolfegeNaturalsViewController.h"
 #import "SolfegeSharpsViewController.h"
 #import "SolfegeFlatsViewController.h"
 
 #import "WebViewController.h"
 
-
-
 @interface DetailViewController (){
-    
+
     MPMoviePlayerViewController *moviePlayer;
  // AppleXylophoneViewController *test;
  // AeolianViewController *aeolianVC;
  // GrandStaffViewController *theGrandStaffVC;
  // CircleOfFifthsViewController *circleOfFifthsVC;
  // TrebleClefViewController *trebleClefVC;
-    
+
 }
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 - (void)hideGradientBackground:(UIView*)theView;
-
 @end
 
 @implementation DetailViewController
@@ -68,74 +63,74 @@
 #pragma mark - displayInteractives
 
 -(IBAction)displayInteractive:(id)sender{
-    
+
     NSLog(@"interactiveToDisplay = %@ ",interactiveToDisplay);
 
     if (interactiveToDisplay == @"GrandStaffViewController") {
-        
+
         GrandStaffViewController *theGrandStaffVC = [[GrandStaffViewController alloc]init];
-        theGrandStaffVC.modalPresentationStyle = UIModalPresentationPageSheet;
+        //theGrandStaffVC.modalPresentationStyle = UIModalPresentationPageSheet;
         [self presentModalViewController:theGrandStaffVC animated:YES];
-        
+
     }
-  
+
     if (interactiveToDisplay == @"CircleOfFifthsViewController") {
-        
+
         CircleOfFifthsViewController *circleOfFifthsVC = [[CircleOfFifthsViewController alloc]init];
         [self presentModalViewController:circleOfFifthsVC animated:YES];
-        
+
     }
-    
+
     if (interactiveToDisplay == @"TrebleClefViewController") {
-        
+
         TrebleClefViewController *trebleClefVC = [[TrebleClefViewController alloc]init];
         [self presentModalViewController:trebleClefVC animated:YES];
-        
+
     }
-    
+
     if (interactiveToDisplay == @"SopranoClefViewController") {
-        
+
         SopranoClefViewController *sopranoClefVC = [[SopranoClefViewController alloc]init];
         [self presentModalViewController:sopranoClefVC animated:YES];
-        
+
     }
-  
+
     if (interactiveToDisplay == @"MezzoSopranoClefViewController") {
-        
+
         MezzoSopranoClefViewController *mezzoSopranoClefVC = [[MezzoSopranoClefViewController alloc]init];
         [self presentModalViewController:mezzoSopranoClefVC animated:YES];
-        
+
     }
-    
-    
+
+
     if (interactiveToDisplay == @"AltoClefViewController") {
-        
+
         AltoClefViewController *altoClefVC = [[AltoClefViewController alloc]init];
         [self presentModalViewController:altoClefVC animated:YES];
-        
+
     }
-    
+
     if (interactiveToDisplay == @"TenorClefViewController") {
-    
+
         TenorClefViewController *tenorClefVC = [[TenorClefViewController alloc]init];
         [self presentModalViewController:tenorClefVC animated:YES];
-    
+
     }
 
     if (interactiveToDisplay == @"BariToneClefViewController") {
-        
+
         BariToneClefViewController *bariToneClefVC = [[BariToneClefViewController alloc]init];
         [self presentModalViewController:bariToneClefVC animated:YES];
     }
 
     if (interactiveToDisplay == @"BassClefViewController") {
-        
+
         BassClefViewController *bassClefVC = [[BassClefViewController alloc]init];
         [self presentModalViewController:bassClefVC animated:YES];
     }
-   
+
     if (interactiveToDisplay == @"SubBassClefViewController") {
-        
+
         SubBassClefViewController *subBassClefVC = [[SubBassClefViewController alloc]init];
         [self presentModalViewController:subBassClefVC animated:YES];
     }
@@ -180,13 +175,13 @@
         
     }
 
-    
-  
-    
-    
- 
+
+
+
+
+
     if (interactiveToDisplay == @"AeolianViewController") {
-        
+
         AeolianViewController *aeolianVC = [[AeolianViewController alloc]init];
         [self presentModalViewController:aeolianVC animated:YES];
 
@@ -194,14 +189,14 @@
     
     
     if (interactiveToDisplay == @"LocrianViewController") {
-        
+
         LocrianViewController *locrianVC = [[LocrianViewController alloc]init];
         [self presentModalViewController:locrianVC animated:YES];
-        
+
     }
-    
-    
-    
+
+
+
     if (interactiveToDisplay == @"SolfegeNaturalsViewController") {
         
         SolfegeNaturalsViewController *solfegeNaturalsVC = [[SolfegeNaturalsViewController alloc]init];
@@ -223,36 +218,25 @@
         
     }
 
-
-
- 
-  
-   //TrebleClefViewController
-    
-    
-    
-    
  //   [self presentModalViewController:test animated:YES];
-    
-    
 
 }
 
 -(IBAction)playMovie:(id)sender{
     
    // NSBundle *bundle = [NSBundle mainBundle];
-	
-	NSURL *movieURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:MovieToPlay ofType:@"mp4"]];
-    
+
+    NSURL *movieURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:MovieToPlay ofType:@"mp4"]];
+
    moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:movieURL];
-    
+
     //---play partial screen---
-    
+
     //moviePlayer.view.frame = imageView.bounds;
     //moviePlayer.view.frame = imageView.frame;
     //[imageView addSubview:moviePlayer.view];
 
-    
+
 
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(moviePlayBackDidFinish:)
@@ -265,25 +249,25 @@
 
 
     [self presentModalViewController:moviePlayer animated:YES];
-    
-	//[self presentMoviePlayerViewControllerAnimated:moviePlayer];	
+
+    //[self presentMoviePlayerViewControllerAnimated:moviePlayer];
 }
 
-- (void) moviePlayBackDidFinish:(NSNotification*)notification {  
-    
+- (void) moviePlayBackDidFinish:(NSNotification*)notification {
+
     NSLog(@"In playback Did Finish");
-    
-    MPMoviePlayerController *moviePlayer = [notification object];  
-    [[NSNotificationCenter defaultCenter] removeObserver:self  
-                                                    name:MPMoviePlayerPlaybackDidFinishNotification  
-                                                  object:moviePlayer];  
-    
-    // If the moviePlayer.view was added to the view, it needs to be removed  
-    if ([moviePlayer respondsToSelector:@selector(setFullscreen:animated:)]) {  
-        [moviePlayer.view removeFromSuperview];  
-    }  
-    
-        
+
+    MPMoviePlayerController *moviePlayer = [notification object];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:MPMoviePlayerPlaybackDidFinishNotification
+                                                  object:moviePlayer];
+
+    // If the moviePlayer.view was added to the view, it needs to be removed
+    if ([moviePlayer respondsToSelector:@selector(setFullscreen:animated:)]) {
+        [moviePlayer.view removeFromSuperview];
+    }
+
+
 }
 
 
@@ -297,20 +281,20 @@
     wikiVC.modalPresentationStyle = UIModalPresentationPageSheet;
     [self presentModalViewController:wikiVC animated:YES];
 
-    
+
   //Create a URL object.
     NSURL *url = [NSURL URLWithString:wikiToDisplay];
     NSLog(@"%@",url);
     
     [wikiVC.webView setBackgroundColor:[UIColor clearColor]];
     [self hideGradientBackground:wikiVC.webView];
-    
-    
-    
+
+
+
     //URL Requst Object
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    
-    
+
+
    //This is where more webView controls should go for presentation
     /*example
     
@@ -347,11 +331,7 @@
     //Load the request in the UIWebView.
     [wikiVC.webView loadRequest:requestObj];
     //[webView loadHTMLString:@"This is a completely transparent UIWebView. Notice the missing gradient at the top and bottom as you scroll up and down." baseURL:nil];
-    
 
-    
-    
-    
 
 }
 
@@ -400,11 +380,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
   // self.toolBar.alpha = 1.0;
 
-    
+
     NSLog(@"width = %f",self.view.frame.size.width);
     NSLog(@"height = %f",self.view.frame.size.height);
 
@@ -447,11 +427,11 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Music Theory 101", @"Music Theory 101");
-        
+
     }
     return self;
 }
-							
+
 #pragma mark - Split view
 
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController

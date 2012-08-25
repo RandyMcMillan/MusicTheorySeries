@@ -7,18 +7,12 @@
 //
 
 #import "AppDelegate.h"
-
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
-#import "AppleXylophoneViewController.h"
-#import "AeolianViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize viewController;
-@synthesize aeolianVC;
 @synthesize splitViewController = _splitViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
