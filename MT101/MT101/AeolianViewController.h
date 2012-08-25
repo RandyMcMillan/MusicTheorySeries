@@ -13,7 +13,7 @@
 
 @interface AeolianViewController : UIViewController <UISplitViewControllerDelegate>{
     int                 lastKeyIndex;
-    CGRect              keyRects[KEY_COUNT]; 
+    CGRect              keyRects[KEY_COUNT];
     
 }
 

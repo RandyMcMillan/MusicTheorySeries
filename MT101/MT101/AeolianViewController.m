@@ -24,6 +24,10 @@
     } else {
         [[self parentViewController] dismissModalViewControllerAnimated:YES];
     }
+    [mixerHost stopAUGraph];
+    
+    self.mixerHost = nil;
+    
 }
 
 -(IBAction) onDoneButtonPress:(id)sender {
@@ -36,6 +40,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [mixerHost stopAUGraph];
     
     //define the "key" xylophone note rectangles
     keyRects[0] = CGRectMake(55, 347, 199, 42);
@@ -86,10 +91,10 @@
     [self.view addSubview:label5];
     
 #endif
-
     
     
-        
+    
+    
     //create the mixer
     self.mixerHost = [[MixerHostAudio alloc] init];
     
@@ -99,9 +104,22 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+    [mixerHost stopAUGraph];
+    
+    self.mixerHost = nil;
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
+
+
+- (void)didReceiveMemoryWarning {
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    self.mixerHost = nil;
+    
+    // Release any cached data, images, etc that aren't in use.
+}
+
 
 // Handle a change in the mixer output gain slider.
 - (IBAction) mixerOutputGainChanged: (UISlider *) sender {
@@ -119,7 +137,7 @@
         if ([mixerHost playNote:idx] == YES) {
             lastKeyIndex = idx;
         }
-    }    
+    }
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -134,7 +152,7 @@
         if ([mixerHost playNote:idx] == YES) {
             lastKeyIndex = idx;
         }
-    } 
+    }
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -156,16 +174,9 @@
     return keyIndex;
 }
 
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-
-
+    
+    
     
     // Return YES for supported orientations
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight){
@@ -177,16 +188,16 @@
     }
     
     if (toInterfaceOrientation == UIInterfaceOrientationPortrait){
-        return NO;
+        return YES;
     }
     
     if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
-        return NO;
+        return YES;
     } else {return NO;}
     
-
-
-
+    
+    
+    
 }
 
 
