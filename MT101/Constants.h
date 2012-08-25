@@ -56,3 +56,6 @@
 #define kTweenMargin			6.0
 
 #define kTextFieldHeight		30.0
+
+#define KEY_COUNT 13
+

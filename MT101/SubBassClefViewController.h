@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MixerHostAudio.h"
 
-#define KEY_COUNT 6
+#import "Constants.h"
 
 @interface SubBassClefViewController : UIViewController <UISplitViewControllerDelegate>{
     int                 lastKeyIndex;

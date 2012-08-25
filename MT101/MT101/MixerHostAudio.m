@@ -187,7 +187,7 @@ static OSStatus inputRenderCallback (
 - (void) obtainSoundFileURLs {
     
     for(int i=0; i<FILE_COUNT; i++) {
-        NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"vib_%i",i] withExtension:@"aiff"];
+        NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"vib_%i",i] withExtension:@"aif"];
         
         // ExtAudioFileRef objects expect CFURLRef URLs, so cast to CRURLRef here
         sourceURLArray[i] = (CFURLRef) url;// [url retain];

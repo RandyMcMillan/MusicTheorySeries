@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MixerHostAudio.h"
+#import "Constants.h"
 
-#define KEY_COUNT 6
 
 @interface AltoClefViewController : UIViewController <UISplitViewControllerDelegate>{
     int                 lastKeyIndex;
