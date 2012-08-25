@@ -148,7 +148,40 @@
         [self presentModalViewController:ionianVC animated:YES];
         
     }
+    
+    if (interactiveToDisplay == @"DorianViewController") {
+        
+        DorianViewController *dorianVC = [[DorianViewController alloc]init];
+        [self presentModalViewController:dorianVC animated:YES];
+        
+    }
 
+    
+    if (interactiveToDisplay == @"PhrygianViewController") {
+        
+        PhrygianViewController *phrygianVC = [[PhrygianViewController alloc]init];
+        [self presentModalViewController:phrygianVC animated:YES];
+        
+    }
+
+    
+    if (interactiveToDisplay == @"LydianViewController") {
+        
+        LydianViewController *lydianVC = [[LydianViewController alloc]init];
+        [self presentModalViewController:lydianVC animated:YES];
+        
+    }
+
+    
+    if (interactiveToDisplay == @"MixoLydianViewController") {
+        
+        MixoLydianViewController *mixoLydianVC = [[MixoLydianViewController alloc]init];
+        [self presentModalViewController:mixoLydianVC animated:YES];
+        
+    }
+
+    
+  
     
     
  
@@ -160,6 +193,12 @@
     }
     
     
+    if (interactiveToDisplay == @"LocrianViewController") {
+        
+        LocrianViewController *locrianVC = [[LocrianViewController alloc]init];
+        [self presentModalViewController:locrianVC animated:YES];
+        
+    }
     
     
     
