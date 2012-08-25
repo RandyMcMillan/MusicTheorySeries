@@ -24,7 +24,8 @@
     } else {
         [[self parentViewController] dismissModalViewControllerAnimated:YES];
     }
-    
+    [mixerHost stopAUGraph];
+ 
     self.mixerHost = nil;
 
 }
