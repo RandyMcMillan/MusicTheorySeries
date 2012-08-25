@@ -25,6 +25,11 @@
     } else {
         [[self parentViewController] dismissModalViewControllerAnimated:YES];
     }
+    [mixerHost stopAUGraph];
+ 
+    self.mixerHost = nil;
+
+    
 }
 
 -(IBAction) onDoneButtonPress:(id)sender {
@@ -37,6 +42,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [mixerHost stopAUGraph];
+
     
     //define the "key" xylophone note rectangles
     keyRects[0] = CGRectMake(55, 347, 199, 42);
@@ -100,6 +108,10 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+    [mixerHost stopAUGraph];
+ 
+    self.mixerHost = nil;
+
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
