@@ -44,42 +44,76 @@
     
     //define the "key" xylophone note rectangles
     
-   // keyRects[0] = CGRectMake([self view].bounds.size.width * 0.457 + kXOrientationAdjustiPhone,//derive xi
-     //                        [self view].bounds.size.height * 0.08,//derive y
-       //                      [self view].bounds.size.width * 0.1,//span across entire screen
-         //                    [self view].bounds.size.height * 0.07// 1/6th width of screen
-           //                  );
+    keyRects[0] = CGRectMake([self view].bounds.size.width * 0.457 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.08,//derive y
+                             [self view].bounds.size.width * 0.1,//span across entire screen
+                             [self view].bounds.size.height * 0.07// 1/6th width of screen
+                             );//Do
+    
+    
 
-    keyRects[0] = CGRectMake(0, 0, 200, 40);
-    keyRects[1] = CGRectMake(0, 40, 200, 40);
-    keyRects[2] = CGRectMake(0, 80, 200, 40);
-    keyRects[3] = CGRectMake(0, 120, 200, 40);
-    keyRects[4] = CGRectMake(0, 160, 200, 40);
-    keyRects[5] = CGRectMake(0, 200, 200, 40);
-    keyRects[6] = CGRectMake(0, 240, 200, 40);
-    keyRects[7] = CGRectMake(0, 280, 200, 40);
-    keyRects[8] = CGRectMake(0, 320, 200, 40);
-    keyRects[9] = CGRectMake(0, 360, 200, 40);
-    keyRects[10] = CGRectMake(0, 400, 200, 40);
-    keyRects[11] = CGRectMake(0, 440, 200, 40);
-    keyRects[12] = CGRectMake(0,480,200,40);
+    //keyRects[0] = CGRectMake(0, 0, 200, 40);
+    keyRects[1] = CGRectMake(0, 40, 200, 40);//Di
     
     
-    keyRects[13] = CGRectMake(0,520,200,40);
-    keyRects[14] = CGRectMake(0, 560, 200, 40);
-    keyRects[15] = CGRectMake(0, 600, 200, 40);
-    keyRects[16] = CGRectMake(0, 640, 200, 40);
-    keyRects[17] = CGRectMake(0, 680, 200, 40);
-    keyRects[18] = CGRectMake(0, 720, 200, 40);
-    keyRects[19] = CGRectMake(0, 760, 200, 40);
-    keyRects[20] = CGRectMake(0, 800, 200, 40);
-    keyRects[21] = CGRectMake(0, 840, 200, 40);
-    keyRects[22] = CGRectMake(0, 880, 200, 40);
-    keyRects[23] = CGRectMake(0, 920, 200, 40);
-    keyRects[24] = CGRectMake(0, 960, 200, 40);
-    keyRects[25] = CGRectMake(0, 1000, 200, 40);
+    keyRects[2] = CGRectMake([self view].bounds.size.width * 0.65 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.240,//derive y
+                             [self view].bounds.size.width * 0.1,//span across entire screen
+                             [self view].bounds.size.height * 0.11// 1/6th width of screen
+                             );//Re
+    
+    
+    keyRects[3] = CGRectMake(0, 120, 200, 40);//Ri
+    
+    
+    keyRects[4] = CGRectMake([self view].bounds.size.width * 0.65 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.515,//derive y
+                             [self view].bounds.size.width * 0.1,//span across entire screen
+                             [self view].bounds.size.height * 0.11// 1/6th width of screen
+                             );//Mi
+    
+    
+    keyRects[5] = CGRectMake([self view].bounds.size.width * 0.35 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.13,//derive y
+                             [self view].bounds.size.width * 0.1,//span across entire screen
+                             [self view].bounds.size.height * 0.11// 1/6th width of screen
+                             );//Fa
+    
+    
+    
+    keyRects[6] = CGRectMake(0, 240, 200, 40);//Fi
+    
+    
+    
+    keyRects[7] = CGRectMake([self view].bounds.size.width * 0.56 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.13,//derive y
+                             [self view].bounds.size.width * 0.1,//span across entire screen
+                             [self view].bounds.size.height * 0.11// 1/6th width of screen
+                             );//Sol
+    
+    
+    
+    keyRects[8] = CGRectMake(0, 320, 200, 40);//Si
+    keyRects[9] = CGRectMake(0, 360, 200, 40);//La
+    keyRects[10] = CGRectMake(0, 400, 200, 40);//Li
+    keyRects[11] = CGRectMake(0, 440, 200, 40);//Ti
+    keyRects[12] = CGRectMake(0,480,200,40);//Do
+    
+    
+    keyRects[13] = CGRectMake(0,520,200,40);//Do
+    keyRects[14] = CGRectMake(0, 560, 200, 40);//Di
+    keyRects[15] = CGRectMake(0, 600, 200, 40);//Re
+    keyRects[16] = CGRectMake(0, 640, 200, 40);//Ri
+    keyRects[17] = CGRectMake(0, 680, 200, 40);//Mi
+    keyRects[18] = CGRectMake(0, 720, 200, 40);//Fa
+    keyRects[19] = CGRectMake(0, 760, 200, 40);//Fi
+    keyRects[20] = CGRectMake(0, 800, 200, 40);//Sol
+    keyRects[21] = CGRectMake(0, 840, 200, 40);//Si
+    keyRects[22] = CGRectMake(0, 880, 200, 40);//La
+    keyRects[23] = CGRectMake(0, 920, 200, 40);//Li
+    keyRects[24] = CGRectMake(0, 960, 200, 40);//Ti
+    keyRects[25] = CGRectMake(0, 1000, 200, 40);//Do
 
-    
     
     
 #if TARGET_IPHONE_SIMULATOR
@@ -87,11 +121,11 @@
     //For your convience in configuring keyRects. Pink Transparencies only displayed in Simulator
     
     UILabel *label0 = [ [UILabel alloc ] initWithFrame:keyRects[0] ];
-    label0.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label0.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:1.00];
     label0.text = [NSString stringWithFormat: @"keyRect[0]"];
     
     UILabel *label1 = [ [UILabel alloc ] initWithFrame:keyRects[1] ];
-    label1.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label1.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:1.00];
     label1.text = [NSString stringWithFormat: @"keyRect[1]"];
     
     UILabel *label2 = [ [UILabel alloc ] initWithFrame:keyRects[2] ];
