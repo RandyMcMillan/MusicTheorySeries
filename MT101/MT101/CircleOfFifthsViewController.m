@@ -44,10 +44,10 @@
     
     //define the "key" xylophone note rectangles
     
-    keyRects[0] = CGRectMake([self view].bounds.size.width * 0.46 + kXOrientationAdjustiPhone,//derive xi
+    keyRects[0] = CGRectMake([self view].bounds.size.width * 0.457 + kXOrientationAdjustiPhone,//derive xi
                              [self view].bounds.size.height * 0.08,//derive y
                              [self view].bounds.size.width * 0.1,//span across entire screen
-                             [self view].bounds.size.height * 0.08// 1/6th width of screen
+                             [self view].bounds.size.height * 0.07// 1/6th width of screen
                              );
 
     //keyRects[0] = CGRectMake(0, 0, 200, 40);
@@ -63,7 +63,7 @@
     keyRects[10] = CGRectMake(0, 400, 200, 40);
     keyRects[11] = CGRectMake(0, 440, 200, 40);
     //keyRects[12] = CGRectMake(0, 480, 200, 40);
-    keyRects[12] = CGRectMake([self view].bounds.size.width * 0.46 + kXOrientationAdjustiPhone,//derive xi
+    keyRects[12] = CGRectMake([self view].bounds.size.width * 0.457 + kXOrientationAdjustiPhone,//derive xi
                              [self view].bounds.size.height * 0.15,//derive y
                              [self view].bounds.size.width * 0.1,//span across entire screen
                              [self view].bounds.size.height * 0.06// 1/6th width of screen
