@@ -16,8 +16,6 @@
 	
 	IBOutlet UIWebView *webView;
     IBOutlet UIBarButtonItem *doneButton;
-    
-//    IBOutlet UIBarButtonItem* closeBtn;
     IBOutlet UIBarButtonItem* refreshBtn;
     IBOutlet UILabel* addressLabel;
     IBOutlet UIBarButtonItem* backBtn;
@@ -28,13 +26,11 @@
     NSString* imageURL;
     id <WebViewDelegate> delegate;
 
-    
-    
 }
 
-@property (nonatomic, retain) UIWebView *webView;
 - (IBAction) onDoneButtonPress:(id)sender;
 - (IBAction)onSafariButtonPress:(id)sender;
+@property (nonatomic, retain) UIWebView *webView;
 @property(retain) NSString* imageURL;
 @property(assign) BOOL isImage;
 @property (nonatomic, retain)id <WebViewDelegate> delegate;
