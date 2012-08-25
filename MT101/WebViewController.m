@@ -7,6 +7,7 @@
 //
 
 #import "WebViewController.h"
+#import "Constants.h"
 
 
 @implementation WebViewController
@@ -32,7 +33,13 @@
 /*
  If you need to do additional setup after loading the view, override viewDidLoad. */
 - (void)viewDidLoad {
-   
+  
+    
+    CGRect textFieldFrame = CGRectMake(kLeftMargin, kTweenMargin,
+									   self.view.bounds.size.width - (kLeftMargin * 2.0), kTextFieldHeight);
+	
+    addressLabel.frame = textFieldFrame;
+    
     
 #if TARGET_IPHONE_SIMULATOR
   //  [NSClassFromString(@"WebView") _enableRemoteInspector];
@@ -143,6 +150,7 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)sender {
     addressLabel.text = @"Loading...";
+
     backBtn.enabled = webView.canGoBack;
     fwdBtn.enabled = webView.canGoForward;
     NSLog(@"webViewDidStartLoad");
@@ -156,6 +164,7 @@
     NSURLRequest *request = webView.request;
     NSLog(@"New Address is : %@",request.URL.absoluteString);
     addressLabel.text = request.URL.absoluteString;
+
     backBtn.enabled = webView.canGoBack;
     fwdBtn.enabled = webView.canGoForward;
     [ spinner stopAnimating ];
