@@ -44,13 +44,13 @@
     
     //define the "key" xylophone note rectangles
     
-    keyRects[0] = CGRectMake([self view].bounds.size.width * 0.457 + kXOrientationAdjustiPhone,//derive xi
-                             [self view].bounds.size.height * 0.08,//derive y
-                             [self view].bounds.size.width * 0.1,//span across entire screen
-                             [self view].bounds.size.height * 0.07// 1/6th width of screen
-                             );
+   // keyRects[0] = CGRectMake([self view].bounds.size.width * 0.457 + kXOrientationAdjustiPhone,//derive xi
+     //                        [self view].bounds.size.height * 0.08,//derive y
+       //                      [self view].bounds.size.width * 0.1,//span across entire screen
+         //                    [self view].bounds.size.height * 0.07// 1/6th width of screen
+           //                  );
 
-    //keyRects[0] = CGRectMake(0, 0, 200, 40);
+    keyRects[0] = CGRectMake(0, 0, 200, 40);
     keyRects[1] = CGRectMake(0, 40, 200, 40);
     keyRects[2] = CGRectMake(0, 80, 200, 40);
     keyRects[3] = CGRectMake(0, 120, 200, 40);
@@ -62,12 +62,22 @@
     keyRects[9] = CGRectMake(0, 360, 200, 40);
     keyRects[10] = CGRectMake(0, 400, 200, 40);
     keyRects[11] = CGRectMake(0, 440, 200, 40);
-    //keyRects[12] = CGRectMake(0, 480, 200, 40);
-    keyRects[12] = CGRectMake([self view].bounds.size.width * 0.457 + kXOrientationAdjustiPhone,//derive xi
-                             [self view].bounds.size.height * 0.15,//derive y
-                             [self view].bounds.size.width * 0.1,//span across entire screen
-                             [self view].bounds.size.height * 0.06// 1/6th width of screen
-                             );
+    keyRects[12] = CGRectMake(0,480,200,40);
+    
+    
+    keyRects[13] = CGRectMake(0,520,200,40);
+    keyRects[14] = CGRectMake(0, 560, 200, 40);
+    keyRects[15] = CGRectMake(0, 600, 200, 40);
+    keyRects[16] = CGRectMake(0, 640, 200, 40);
+    keyRects[17] = CGRectMake(0, 680, 200, 40);
+    keyRects[18] = CGRectMake(0, 720, 200, 40);
+    keyRects[19] = CGRectMake(0, 760, 200, 40);
+    keyRects[20] = CGRectMake(0, 800, 200, 40);
+    keyRects[21] = CGRectMake(0, 840, 200, 40);
+    keyRects[22] = CGRectMake(0, 880, 200, 40);
+    keyRects[23] = CGRectMake(0, 920, 200, 40);
+    keyRects[24] = CGRectMake(0, 960, 200, 40);
+    keyRects[25] = CGRectMake(0, 1000, 200, 40);
 
     
     
@@ -130,6 +140,60 @@
     
     
     
+    UILabel *label13 = [ [UILabel alloc ] initWithFrame:keyRects[13] ];
+    label13.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label13.text = [NSString stringWithFormat: @"keyRect[13]"];
+    
+    UILabel *label14 = [ [UILabel alloc ] initWithFrame:keyRects[14] ];
+    label14.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label14.text = [NSString stringWithFormat: @"keyRect[14]"];
+    
+    UILabel *label15 = [ [UILabel alloc ] initWithFrame:keyRects[15] ];
+    label15.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label15.text = [NSString stringWithFormat: @"keyRect[15]"];
+    
+    UILabel *label16 = [ [UILabel alloc ] initWithFrame:keyRects[16] ];
+    label16.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label16.text = [NSString stringWithFormat: @"keyRect[16]"];
+    
+    UILabel *label17 = [ [UILabel alloc ] initWithFrame:keyRects[17] ];
+    label17.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label17.text = [NSString stringWithFormat: @"keyRect[17]"];
+    
+    UILabel *label18 = [ [UILabel alloc ] initWithFrame:keyRects[18] ];
+    label18.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label18.text = [NSString stringWithFormat: @"keyRect[18]"];
+    
+    UILabel *label19 = [ [UILabel alloc ] initWithFrame:keyRects[19] ];
+    label19.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label19.text = [NSString stringWithFormat: @"keyRect[19]"];
+    
+    UILabel *label20 = [ [UILabel alloc ] initWithFrame:keyRects[20] ];
+    label20.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label20.text = [NSString stringWithFormat: @"keyRect[20]"];
+    
+    UILabel *label21 = [ [UILabel alloc ] initWithFrame:keyRects[21] ];
+    label21.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label21.text = [NSString stringWithFormat: @"keyRect[21]"];
+    
+    UILabel *label22 = [ [UILabel alloc ] initWithFrame:keyRects[22] ];
+    label22.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label22.text = [NSString stringWithFormat: @"keyRect[22]"];
+    
+    UILabel *label23 = [ [UILabel alloc ] initWithFrame:keyRects[23] ];
+    label23.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label23.text = [NSString stringWithFormat: @"keyRect[23]"];
+    
+    UILabel *label24 = [ [UILabel alloc ] initWithFrame:keyRects[24] ];
+    label24.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label24.text = [NSString stringWithFormat: @"keyRect[24]"];
+    
+    UILabel *label25 = [ [UILabel alloc ] initWithFrame:keyRects[25] ];
+    label25.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
+    label25.text = [NSString stringWithFormat: @"keyRect[25]"];
+    
+    
+    
     
     
     [self.view addSubview:label0];
@@ -145,6 +209,21 @@
     [self.view addSubview:label10];
     [self.view addSubview:label11];
     [self.view addSubview:label12];
+    
+    [self.view addSubview:label13];
+    [self.view addSubview:label14];
+    [self.view addSubview:label15];
+    [self.view addSubview:label16];
+    [self.view addSubview:label17];
+    [self.view addSubview:label18];
+    [self.view addSubview:label19];
+    [self.view addSubview:label20];
+    [self.view addSubview:label21];
+    [self.view addSubview:label22];
+    [self.view addSubview:label23];
+    [self.view addSubview:label24];
+    [self.view addSubview:label25];
+
     
     
 #endif

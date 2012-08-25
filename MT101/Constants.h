@@ -57,7 +57,7 @@
 
 #define kTextFieldHeight		30.0
 
-#define KEY_COUNT 13
+#define KEY_COUNT 27
 
 
 #ifndef IS_IPAD
