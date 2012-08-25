@@ -94,7 +94,16 @@
     
     
     keyRects[8] = CGRectMake(0, 320, 200, 40);//Si
-    keyRects[9] = CGRectMake(0, 360, 200, 40);//La
+    
+    
+    keyRects[9] = CGRectMake([self view].bounds.size.width * 0.67 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.373,//derive y
+                             [self view].bounds.size.width * 0.1,//span across entire screen
+                             [self view].bounds.size.height * 0.11// 1/6th width of screen
+                             );//La
+    
+    
+    
     keyRects[10] = CGRectMake(0, 400, 200, 40);//Li
     keyRects[11] = CGRectMake(0, 440, 200, 40);//Ti
     keyRects[12] = CGRectMake(0,480,200,40);//Do
