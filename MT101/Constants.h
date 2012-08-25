@@ -59,3 +59,24 @@
 
 #define KEY_COUNT 13
 
+
+#ifndef IS_IPAD
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#endif
+
+#ifndef kXOrientationAdjustiPad
+#define  kXOrientationAdjustiPad  0
+#endif
+
+#ifndef  kYOrientationAdjustiPad
+#define  kYOrientationAdjustiPad  0
+#endif
+
+#ifndef kXOrientationAdjustiPhone
+#define  kXOrientationAdjustiPhone  0
+#endif
+
+#ifndef kYOrientationAdjustiPhone
+#define  kYOrientationAdjustiPhone  0
+#endif
+

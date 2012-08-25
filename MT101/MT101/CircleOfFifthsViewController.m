@@ -43,7 +43,14 @@
     [mixerHost stopAUGraph];
     
     //define the "key" xylophone note rectangles
-    keyRects[0] = CGRectMake(0, 0, 200, 40);
+    
+    keyRects[0] = CGRectMake([self view].bounds.size.width * 0.46 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.08,//derive y
+                             [self view].bounds.size.width * 0.1,//span across entire screen
+                             [self view].bounds.size.height * 0.08// 1/6th width of screen
+                             );
+
+    //keyRects[0] = CGRectMake(0, 0, 200, 40);
     keyRects[1] = CGRectMake(0, 40, 200, 40);
     keyRects[2] = CGRectMake(0, 80, 200, 40);
     keyRects[3] = CGRectMake(0, 120, 200, 40);
@@ -55,8 +62,13 @@
     keyRects[9] = CGRectMake(0, 360, 200, 40);
     keyRects[10] = CGRectMake(0, 400, 200, 40);
     keyRects[11] = CGRectMake(0, 440, 200, 40);
-    keyRects[12] = CGRectMake(0, 480, 200, 40);
-    
+    //keyRects[12] = CGRectMake(0, 480, 200, 40);
+    keyRects[12] = CGRectMake([self view].bounds.size.width * 0.46 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.15,//derive y
+                             [self view].bounds.size.width * 0.1,//span across entire screen
+                             [self view].bounds.size.height * 0.06// 1/6th width of screen
+                             );
+
     
     
     
@@ -65,9 +77,8 @@
     //For your convience in configuring keyRects. Pink Transparencies only displayed in Simulator
     
     UILabel *label0 = [ [UILabel alloc ] initWithFrame:keyRects[0] ];
-    label0.numberOfLines = 3;
     label0.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
-    label0.text = [NSString stringWithFormat: @"keyRect[0]\nOnly displayed in Simulator"];
+    label0.text = [NSString stringWithFormat: @"keyRect[0]"];
     
     UILabel *label1 = [ [UILabel alloc ] initWithFrame:keyRects[1] ];
     label1.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
