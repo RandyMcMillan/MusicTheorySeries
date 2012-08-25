@@ -78,6 +78,29 @@
     for (NSString *str in wikiToDiplayList1)
         NSLog(@"wikiToDiplayList1 = %@",str);
     
+    NSString *wikiToDisplay2Path = [[NSBundle mainBundle] pathForResource:@"WikiToDisplay2" ofType:@"plist"];
+    wikiToDiplayList2 = [[NSArray alloc]initWithContentsOfFile:wikiToDisplay2Path];
+    for (NSString *str in wikiToDiplayList2)
+        NSLog(@"wikiToDiplayList2 = %@",str);
+
+    NSString *wikiToDisplay3Path = [[NSBundle mainBundle] pathForResource:@"WikiToDisplay3" ofType:@"plist"];
+    wikiToDiplayList3 = [[NSArray alloc]initWithContentsOfFile:wikiToDisplay3Path];
+    for (NSString *str in wikiToDiplayList3)
+        NSLog(@"wikiToDiplayList3 = %@",str);
+
+    
+    NSString *wikiToDisplay4Path = [[NSBundle mainBundle] pathForResource:@"WikiToDisplay4" ofType:@"plist"];
+    wikiToDiplayList4 = [[NSArray alloc]initWithContentsOfFile:wikiToDisplay4Path];
+    for (NSString *str in wikiToDiplayList4)
+        NSLog(@"wikiToDiplayList4 = %@",str);
+
+    
+    NSString *wikiToDisplay5Path = [[NSBundle mainBundle] pathForResource:@"WikiToDisplay5" ofType:@"plist"];
+    wikiToDiplayList5 = [[NSArray alloc]initWithContentsOfFile:wikiToDisplay5Path];
+    for (NSString *str in wikiToDiplayList5)
+        NSLog(@"wikiToDiplayList5 = %@",str);
+
+    
     
    
 #pragma mark - Video Lists
@@ -533,6 +556,7 @@
         self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
         self.detailViewController.imageView.image = [imageList2 objectAtIndex:indexPath.row];
         self.detailViewController.interactiveToDisplay = [interactiveList2 objectAtIndex:indexPath.row];
+        self.detailViewController.wikiToDisplay = [wikiToDiplayList2 objectAtIndex:indexPath.row];
 
     }
     
