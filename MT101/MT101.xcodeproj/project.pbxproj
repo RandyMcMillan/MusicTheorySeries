@@ -78,6 +78,10 @@
 		486AD37215CE0B7D0054753C /* DGMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AD37115CE0B7D0054753C /* DGMenuItemCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05ED15BF334A00B3F10D /* icon@2x.png */; };
 		487A1C7F15E84735006C5C59 /* WikiToDisplay1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */; };
+		487A1C9415E86AAD006C5C59 /* WikiToDisplay2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9015E86AAD006C5C59 /* WikiToDisplay2.plist */; };
+		487A1C9515E86AAD006C5C59 /* WikiToDisplay3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9115E86AAD006C5C59 /* WikiToDisplay3.plist */; };
+		487A1C9615E86AAD006C5C59 /* WikiToDisplay4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9215E86AAD006C5C59 /* WikiToDisplay4.plist */; };
+		487A1C9715E86AAD006C5C59 /* WikiToDisplay5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9315E86AAD006C5C59 /* WikiToDisplay5.plist */; };
 		4882981915E006BB00239B29 /* ChromaticCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4882981715E006BB00239B29 /* ChromaticCircleViewController.m */; };
 		4882981A15E006BB00239B29 /* ChromaticCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4882981815E006BB00239B29 /* ChromaticCircleViewController.xib */; };
 		4882981C15E009B900239B29 /* Chromatic Circle.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4882981B15E009B900239B29 /* Chromatic Circle.mp4 */; };
@@ -233,6 +237,10 @@
 		486B05ED15BF334A00B3F10D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay1.plist; sourceTree = "<group>"; };
 		487A1C8915E85115006C5C59 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		487A1C9015E86AAD006C5C59 /* WikiToDisplay2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay2.plist; sourceTree = "<group>"; };
+		487A1C9115E86AAD006C5C59 /* WikiToDisplay3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay3.plist; sourceTree = "<group>"; };
+		487A1C9215E86AAD006C5C59 /* WikiToDisplay4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay4.plist; sourceTree = "<group>"; };
+		487A1C9315E86AAD006C5C59 /* WikiToDisplay5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay5.plist; sourceTree = "<group>"; };
 		4882981615E006BB00239B29 /* ChromaticCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromaticCircleViewController.h; sourceTree = "<group>"; };
 		4882981715E006BB00239B29 /* ChromaticCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromaticCircleViewController.m; sourceTree = "<group>"; };
 		4882981815E006BB00239B29 /* ChromaticCircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChromaticCircleViewController.xib; sourceTree = "<group>"; };
@@ -475,6 +483,10 @@
 				48FA4C0A15DB03B200FF91CA /* imageNameList5.plist */,
 				48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */,
 				487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */,
+				487A1C9015E86AAD006C5C59 /* WikiToDisplay2.plist */,
+				487A1C9115E86AAD006C5C59 /* WikiToDisplay3.plist */,
+				487A1C9215E86AAD006C5C59 /* WikiToDisplay4.plist */,
+				487A1C9315E86AAD006C5C59 /* WikiToDisplay5.plist */,
 			);
 			name = Plists;
 			sourceTree = "<group>";
@@ -847,6 +859,10 @@
 				48A3563115E2364600A3529D /* WebView.xib in Resources */,
 				48EFB1E815E2DF4F009A5D43 /* WebView.bundle in Resources */,
 				487A1C7F15E84735006C5C59 /* WikiToDisplay1.plist in Resources */,
+				487A1C9415E86AAD006C5C59 /* WikiToDisplay2.plist in Resources */,
+				487A1C9515E86AAD006C5C59 /* WikiToDisplay3.plist in Resources */,
+				487A1C9615E86AAD006C5C59 /* WikiToDisplay4.plist in Resources */,
+				487A1C9715E86AAD006C5C59 /* WikiToDisplay5.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
