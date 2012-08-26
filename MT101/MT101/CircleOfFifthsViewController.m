@@ -70,7 +70,7 @@
                              [self view].bounds.size.height * 0.373,//derive y
                              [self view].bounds.size.width * 0.1,//span across entire screen
                              [self view].bounds.size.height * 0.11// 1/6th width of screen
-                             );//Me
+                             );//Ri/Me
     
     
     keyRects[4] = CGRectMake([self view].bounds.size.width * 0.65 + kXOrientationAdjustiPhone,//derive xi
@@ -142,7 +142,12 @@
  
     
     
-    keyRects[13] = CGRectMake(0,520,200,40);//Do
+    keyRects[13] = CGRectMake([self view].bounds.size.width * 0.35 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.39,//derive y
+                             [self view].bounds.size.width * 0.05,//span across entire screen
+                             [self view].bounds.size.height * 0.07// 1/6th width of screen
+                             );//Ri/Me
+    
     keyRects[14] = CGRectMake(0, 560, 200, 40);//Di
     keyRects[15] = CGRectMake(0, 600, 200, 40);//Re
     keyRects[16] = CGRectMake(0, 640, 200, 40);//Ri
