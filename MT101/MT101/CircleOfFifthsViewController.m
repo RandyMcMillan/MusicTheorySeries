@@ -51,8 +51,12 @@
                              );//Do
     
     
+    keyRects[1] = CGRectMake([self view].bounds.size.width * 0.35 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.63,//derive y
+                             [self view].bounds.size.width * 0.1,//span across entire screen
+                             [self view].bounds.size.height * 0.11// 1/6th width of screen
+                             );//Di
 
-    keyRects[1] = CGRectMake(0, 40, 200, 40);//Di
     
     
     keyRects[2] = CGRectMake([self view].bounds.size.width * 0.65 + kXOrientationAdjustiPhone,//derive xi
@@ -62,7 +66,11 @@
                              );//Re
     
     
-    keyRects[3] = CGRectMake(0, 120, 200, 40);//Ri
+    keyRects[3] = CGRectMake([self view].bounds.size.width * 0.25 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.373,//derive y
+                             [self view].bounds.size.width * 0.1,//span across entire screen
+                             [self view].bounds.size.height * 0.11// 1/6th width of screen
+                             );//Me
     
     
     keyRects[4] = CGRectMake([self view].bounds.size.width * 0.65 + kXOrientationAdjustiPhone,//derive xi
@@ -80,7 +88,12 @@
     
     
     
-    keyRects[6] = CGRectMake(0, 240, 200, 40);//Fi
+    keyRects[6] = CGRectMake([self view].bounds.size.width * 0.457 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.68,//derive y
+                             [self view].bounds.size.width * 0.1,//span across entire screen
+                             [self view].bounds.size.height * 0.09// 1/6th width of screen
+                             );//Fi
+ 
     
     
     
@@ -92,8 +105,11 @@
     
     
     
-    keyRects[8] = CGRectMake(0, 320, 200, 40);//Si
-    
+    keyRects[8] = CGRectMake([self view].bounds.size.width * 0.27 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.515,//derive y
+                             [self view].bounds.size.width * 0.1,//span across entire screen
+                             [self view].bounds.size.height * 0.11// 1/6th width of screen
+                             );//Le
     
     keyRects[9] = CGRectMake([self view].bounds.size.width * 0.67 + kXOrientationAdjustiPhone,//derive xi
                              [self view].bounds.size.height * 0.373,//derive y
@@ -103,7 +119,11 @@
     
     
     
-    keyRects[10] = CGRectMake(0, 400, 200, 40);//Li
+    keyRects[10] = CGRectMake([self view].bounds.size.width * 0.25 + kXOrientationAdjustiPhone,//derive xi
+                             [self view].bounds.size.height * 0.240,//derive y
+                             [self view].bounds.size.width * 0.1,//span across entire screen
+                             [self view].bounds.size.height * 0.11// 1/6th width of screen
+                             );//Re
 
     
     keyRects[11] = CGRectMake([self view].bounds.size.width * 0.56 + kXOrientationAdjustiPhone,//derive xi
@@ -143,11 +163,11 @@
     //For your convience in configuring keyRects. Pink Transparencies only displayed in Simulator
     
     UILabel *label0 = [ [UILabel alloc ] initWithFrame:keyRects[0] ];
-    label0.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:1.00];
+    label0.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label0.text = [NSString stringWithFormat: @"keyRect[0]"];
     
     UILabel *label1 = [ [UILabel alloc ] initWithFrame:keyRects[1] ];
-    label1.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:1.00];
+    label1.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label1.text = [NSString stringWithFormat: @"keyRect[1]"];
     
     UILabel *label2 = [ [UILabel alloc ] initWithFrame:keyRects[2] ];
@@ -378,11 +398,11 @@
     }
     
     if (toInterfaceOrientation == UIInterfaceOrientationPortrait){
-        return NO;
+        return YES;
     }
     
     if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
-        return NO;
+        return YES;
     } else {return NO;}
     
     
