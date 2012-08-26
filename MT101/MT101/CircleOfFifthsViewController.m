@@ -146,14 +146,21 @@
                              [self view].bounds.size.height * 0.39,//derive y
                              [self view].bounds.size.width * 0.05,//span across entire screen
                              [self view].bounds.size.height * 0.07// 1/6th width of screen
-                             );//Ri/Me
+                             );//minor Do
     
     keyRects[14] = CGRectMake(0, 560, 200, 40);//Di
     keyRects[15] = CGRectMake(0, 600, 200, 40);//Re
     keyRects[16] = CGRectMake(0, 640, 200, 40);//Ri
     keyRects[17] = CGRectMake(0, 680, 200, 40);//Mi
     keyRects[18] = CGRectMake(0, 720, 200, 40);//Fa
-    keyRects[19] = CGRectMake(0, 760, 200, 40);//Fi
+    
+    keyRects[19] = CGRectMake([self view].bounds.size.width * 0.61 + kXOrientationAdjustiPhone,//derive xi
+                              [self view].bounds.size.height * 0.39,//derive y
+                              [self view].bounds.size.width * 0.05,//span across entire screen
+                              [self view].bounds.size.height * 0.07// 1/6th width of screen
+                              );//minor Do
+
+    
     keyRects[20] = CGRectMake(0, 800, 200, 40);//Sol
     keyRects[21] = CGRectMake(0, 840, 200, 40);//Si
     keyRects[22] = CGRectMake(0, 880, 200, 40);//La
