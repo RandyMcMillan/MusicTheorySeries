@@ -10,7 +10,6 @@
 
 #import "GrandStaffViewController.h"
 #import "AppleXylophoneViewController.h"
-#import "CircleOfFifthsViewController.h"
 #import "TrebleClefViewController.h"
 #import "SopranoClefViewController.h"
 #import "MezzoSopranoClefViewController.h"
@@ -19,6 +18,9 @@
 #import "BariToneClefViewController.h"
 #import "BassClefViewController.h"
 #import "SubBassClefViewController.h"
+
+#import "CircleOfFifthsViewController.h"
+#import "ChromaticCircleViewController.h"
 
 #import "IonianViewController.h"
 #import "DorianViewController.h"
@@ -74,12 +76,6 @@
 
     }
 
-    if (interactiveToDisplay == @"CircleOfFifthsViewController") {
-
-        CircleOfFifthsViewController *circleOfFifthsVC = [[CircleOfFifthsViewController alloc]init];
-        [self presentModalViewController:circleOfFifthsVC animated:YES];
-
-    }
 
     if (interactiveToDisplay == @"TrebleClefViewController") {
 
@@ -136,6 +132,24 @@
     }
     
 
+    
+    //circles
+   if (interactiveToDisplay == @"CircleOfFifthsViewController") {
+
+        CircleOfFifthsViewController *circleOfFifthsVC = [[CircleOfFifthsViewController alloc]init];
+        [self presentModalViewController:circleOfFifthsVC animated:YES];
+
+    }
+
+    if (interactiveToDisplay == @"ChromaticCircleViewController") {
+        
+        ChromaticCircleViewController *chromaticCircleVC = [[ChromaticCircleViewController alloc]init];
+        [self presentModalViewController:chromaticCircleVC animated:YES];
+        
+    }
+    
+    
+//modes
     
     if (interactiveToDisplay == @"IonianViewController") {
         

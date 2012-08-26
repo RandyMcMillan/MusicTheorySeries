@@ -16,7 +16,6 @@
      [mixerHost release];
 }
 
-
 -(void)closeBrowser {
     
     if ([self respondsToSelector:@selector(presentingViewController)]) {
@@ -43,7 +42,6 @@
     [mixerHost stopAUGraph];
     
     //define the "key" xylophone note rectangles
-    
     keyRects[0] = CGRectMake([self view].bounds.size.width * 0.457 + kXOrientationAdjustiPhone,//derive xi
                              [self view].bounds.size.height * 0.08,//derive y
                              [self view].bounds.size.width * 0.1,//span across entire screen
@@ -121,7 +119,7 @@
                              [self view].bounds.size.width * 0.07,//span across entire screen
                              [self view].bounds.size.height * 0.027// 1/6th width of screen
                              );//Do
-   //minors
+//minors
     keyRects[13] = CGRectMake([self view].bounds.size.width * 0.35 + kXOrientationAdjustiPhone,//derive xi
                              [self view].bounds.size.height * 0.39,//derive y
                              [self view].bounds.size.width * 0.05,//span across entire screen
@@ -140,7 +138,6 @@
                               [self view].bounds.size.height * 0.07// 1/6th width of screen
                               );//re
 
-//    keyRects[16] = CGRectMake(0, 40, 200, 40);//Ri
     keyRects[16] = CGRectMake([self view].bounds.size.width * 0.48 + kXOrientationAdjustiPhone,//derive xi
                               [self view].bounds.size.height * 0.57,//derive y
                               [self view].bounds.size.width * 0.05,//span across entire screen
@@ -196,8 +193,6 @@
                               );//ti
 
     keyRects[25] = CGRectMake(0, 120, 200, 40);//Do
-
-    
     
 #if TARGET_IPHONE_SIMULATOR
     
@@ -254,9 +249,7 @@
     UILabel *label12 = [ [UILabel alloc ] initWithFrame:keyRects[12] ];
     label12.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:1.000];
     label12.text = [NSString stringWithFormat: @"keyRect[12]"];
-    
-    
-    
+//minors
     UILabel *label13 = [ [UILabel alloc ] initWithFrame:keyRects[13] ];
     label13.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label13.text = [NSString stringWithFormat: @"keyRect[13]"];
@@ -309,10 +302,6 @@
     label25.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label25.text = [NSString stringWithFormat: @"keyRect[25]"];
     
-    
-    
-    
-    
     [self.view addSubview:label0];
     [self.view addSubview:label1];
     [self.view addSubview:label2];
@@ -326,7 +315,7 @@
     [self.view addSubview:label10];
     [self.view addSubview:label11];
     [self.view addSubview:label12];
-    
+//minors
     [self.view addSubview:label13];
     [self.view addSubview:label14];
     [self.view addSubview:label15];
@@ -341,12 +330,7 @@
     [self.view addSubview:label24];
     [self.view addSubview:label25];
 
-    
-    
 #endif
-    
-    
-    
     
     //create the mixer
     self.mixerHost = [[MixerHostAudio alloc] init];
@@ -427,8 +411,6 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
     
-    
-    
     // Return YES for supported orientations
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight){
         return YES;
@@ -446,11 +428,6 @@
         return YES;
     } else {return NO;}
     
-    
-    
-    
 }
-
-
 
 @end

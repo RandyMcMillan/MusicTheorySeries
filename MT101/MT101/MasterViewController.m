@@ -257,12 +257,7 @@
     
     interactiveList1 = [[NSArray alloc] initWithObjects:
                         @"CircleOfFifthsViewController",
-                        @"CircleOfFifthsViewController",
-                        @"CircleOfFifthsViewController",
-                        @"CircleOfFifthsViewController",
-                        @"CircleOfFifthsViewController",
-                        @"",
-                        @"",
+                        @"ChromaticCircleViewController",
                         nil];
 
     interactiveList2 = [[NSArray alloc] initWithObjects: //modes
