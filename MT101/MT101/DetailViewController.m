@@ -412,24 +412,32 @@
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-
+    
+    
     // Return YES for supported orientations
-    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
-        return YES;
-    }
-
-    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
-        return YES;
-    }
-
-    if (toInterfaceOrientation == UIInterfaceOrientationPortrait) {
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight){
         return YES;
     }
     
-    if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft){
+        return YES;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationPortrait){
+        return YES;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
         return YES;
     } else {return NO;}
+    
+}
 
+- (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)currentInterfaceOrientation {
+    
+    NSLog(@"did auto rotate");
+    return YES;
+    
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
