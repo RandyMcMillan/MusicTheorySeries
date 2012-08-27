@@ -460,8 +460,6 @@ label25 = [ [UILabel alloc ] initWithFrame:keyRects[25] ];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:)
                                                  name:UIDeviceOrientationDidChangeNotification object:nil];
     
- //   [self destroyRects];
-   // [self drawRects];
     //create the mixer
     self.mixerHost = [[MixerHostAudio alloc] init];
     
@@ -469,25 +467,11 @@ label25 = [ [UILabel alloc ] initWithFrame:keyRects[25] ];
     [mixerHost startAUGraph];
 }
 
-- (void)orientationChanged:(NSNotification *)notification
-{
-    
-    
- //   for (int i=0; i<KEY_COUNT; i++) {
-        
-   //     keyRects[i]= CGRectMake(0, 0, 0, 0);
-        
-     //   break;
-    //}
-    
-    //[self destroyRects];
-
-    //[self drawRects];
-    
+- (void)orientationChanged:(NSNotification *)notification {
     
     // We must add a delay here, otherwise we'll swap in the new view
 	// too quickly and we'll get an animation glitch
-//    [self performSelector:@selector(updateLandscapeView) withObject:nil afterDelay:0];
+    // [self performSelector:@selector(updateLandscapeView) withObject:nil afterDelay:0];
 
     NSLog(@"orientationChanged");
 
@@ -495,6 +479,7 @@ label25 = [ [UILabel alloc ] initWithFrame:keyRects[25] ];
 
 
 - (void)viewDidUnload {
+
     [super viewDidUnload];
     [mixerHost stopAUGraph];
     
@@ -592,17 +577,6 @@ label25 = [ [UILabel alloc ] initWithFrame:keyRects[25] ];
 
 - (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)currentInterfaceOrientation {
 
- //   for (int i=0; i<KEY_COUNT; i++) {
-        
-   //     keyRects[i]= CGRectMake(0, 0, 0, 0);
-        
-     //   break;
-   // }
-    
-    //[self destroyRects];
-    
-    //[self drawRects];
- 
     NSLog(@"did auto rotate");
     return YES;
     
