@@ -81,7 +81,6 @@
 
         TrebleClefViewController *trebleClefVC = [[TrebleClefViewController alloc]init];
         trebleClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:trebleClefVC animated:YES];
 
     }
@@ -98,7 +97,6 @@
 
         MezzoSopranoClefViewController *mezzoSopranoClefVC = [[MezzoSopranoClefViewController alloc]init];
         mezzoSopranoClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:mezzoSopranoClefVC animated:YES];
 
     }
@@ -108,7 +106,6 @@
 
         AltoClefViewController *altoClefVC = [[AltoClefViewController alloc]init];
         altoClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:altoClefVC animated:YES];
 
     }
@@ -117,7 +114,6 @@
 
         TenorClefViewController *tenorClefVC = [[TenorClefViewController alloc]init];
         tenorClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:tenorClefVC animated:YES];
 
     }
@@ -126,7 +122,6 @@
 
         BariToneClefViewController *bariToneClefVC = [[BariToneClefViewController alloc]init];
         bariToneClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:bariToneClefVC animated:YES];
     }
 
@@ -134,7 +129,6 @@
 
         BassClefViewController *bassClefVC = [[BassClefViewController alloc]init];
         bassClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:bassClefVC animated:YES];
     }
 
@@ -142,154 +136,133 @@
 
         SubBassClefViewController *subBassClefVC = [[SubBassClefViewController alloc]init];
         subBassClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:subBassClefVC animated:YES];
     }
-    
 
-    
+
+
     //circles
    if (interactiveToDisplay == @"CircleOfFifthsViewController") {
 
         CircleOfFifthsViewController *circleOfFifthsVC = [[CircleOfFifthsViewController alloc]init];
         circleOfFifthsVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
        [self presentModalViewController:circleOfFifthsVC animated:YES];
 
     }
 
     if (interactiveToDisplay == @"ChromaticCircleViewController") {
-        
+
         ChromaticCircleViewController *chromaticCircleVC = [[ChromaticCircleViewController alloc]init];
         chromaticCircleVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:chromaticCircleVC animated:YES];
-        
+
     }
-    
-    
+
+
 //modes
-    
+
     if (interactiveToDisplay == @"IonianViewController") {
-        
+
         IonianViewController *ionianVC = [[IonianViewController alloc]init];
         ionianVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:ionianVC animated:YES];
-        
+
     }
     
     if (interactiveToDisplay == @"DorianViewController") {
-        
+
         DorianViewController *dorianVC = [[DorianViewController alloc]init];
         dorianVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:dorianVC animated:YES];
-        
+
     }
 
     
     if (interactiveToDisplay == @"PhrygianViewController") {
-        
+
         PhrygianViewController *phrygianVC = [[PhrygianViewController alloc]init];
         phrygianVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:phrygianVC animated:YES];
-        
+
     }
 
-    
+
     if (interactiveToDisplay == @"LydianViewController") {
-        
+
         LydianViewController *lydianVC = [[LydianViewController alloc]init];
         lydianVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:lydianVC animated:YES];
-        
+
     }
 
-    
+
     if (interactiveToDisplay == @"MixoLydianViewController") {
-        
+
         MixoLydianViewController *mixoLydianVC = [[MixoLydianViewController alloc]init];
         mixoLydianVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:mixoLydianVC animated:YES];
-        
+
     }
-
-
-
-
 
 
     if (interactiveToDisplay == @"AeolianViewController") {
 
         AeolianViewController *aeolianVC = [[AeolianViewController alloc]init];
         aeolianVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:aeolianVC animated:YES];
 
     }
-    
-    
+
+
     if (interactiveToDisplay == @"LocrianViewController") {
 
         LocrianViewController *locrianVC = [[LocrianViewController alloc]init];
         locrianVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:locrianVC animated:YES];
 
     }
 
 
-
     if (interactiveToDisplay == @"SolfegeNaturalsViewController") {
-        
+
         SolfegeNaturalsViewController *solfegeNaturalsVC = [[SolfegeNaturalsViewController alloc]init];
         solfegeNaturalsVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:solfegeNaturalsVC animated:YES];
-        
+
     }
-    
+
     if (interactiveToDisplay == @"SolfegeSharpsViewController") {
-        
+
         SolfegeSharpsViewController *solfegeSharpsVC = [[SolfegeSharpsViewController alloc]init];
         solfegeSharpsVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:solfegeSharpsVC animated:YES];
-        
+
     }
-    
+
     if (interactiveToDisplay == @"SolfegeFlatsViewController") {
-        
+
         SolfegeFlatsViewController *solfegeFlatsVC = [[SolfegeFlatsViewController alloc]init];
         solfegeFlatsVC.modalPresentationStyle = UIModalPresentationPageSheet;
-
         [self presentModalViewController:solfegeFlatsVC animated:YES];
-        
+
     }
 
  //   [self presentModalViewController:test animated:YES];
 
 }
 
--(IBAction)playMovie:(id)sender{
-    
+-(IBAction)playMovie:(id)sender {
+
    // NSBundle *bundle = [NSBundle mainBundle];
 
     NSURL *movieURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:MovieToPlay ofType:@"mp4"]];
 
-   moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:movieURL];
+    moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:movieURL];
 
     //---play partial screen---
-
     //moviePlayer.view.frame = imageView.bounds;
     //moviePlayer.view.frame = imageView.frame;
     //[imageView addSubview:moviePlayer.view];
-
-
 
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(moviePlayBackDidFinish:)
@@ -297,12 +270,9 @@
                                                object:moviePlayer.moviePlayer];
 
     moviePlayer.modalPresentationStyle = UIModalPresentationPageSheet;
-    
-   // [self.view addSubview:moviePlayer.view];
-
+    // [self.view addSubview:moviePlayer.view];
 
     [self presentModalViewController:moviePlayer animated:YES];
-
     //[self presentMoviePlayerViewControllerAnimated:moviePlayer];
 }
 
@@ -320,7 +290,6 @@
         [moviePlayer.view removeFromSuperview];
     }
 
-
 }
 
 
@@ -329,7 +298,7 @@
 -(IBAction)displayWiki:(id)sender {
 
     NSLog(@"displayWiki = %@", wikiToDisplay);
-    
+
     WebViewController *wikiVC = [[WebViewController alloc]init];
     wikiVC.modalPresentationStyle = UIModalPresentationPageSheet;
     [self presentModalViewController:wikiVC animated:YES];
@@ -338,15 +307,12 @@
   //Create a URL object.
     NSURL *url = [NSURL URLWithString:wikiToDisplay];
     NSLog(@"%@",url);
-    
+
     [wikiVC.webView setBackgroundColor:[UIColor clearColor]];
     [self hideGradientBackground:wikiVC.webView];
 
-
-
     //URL Requst Object
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-
 
    //This is where more webView controls should go for presentation
     /*example
@@ -388,13 +354,11 @@
 
 }
 
+- (void)setDetailItem:(id)newDetailItem {
 
-
-- (void)setDetailItem:(id)newDetailItem
-{
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
-        
+
         // Update the view.
         [self configureView];
     }
@@ -404,14 +368,13 @@
     }
 }
 
-- (void)configureView
-{
-    // Update the user interface for the detail item.
+- (void)configureView {
 
+    // Update the user interface for the detail item.
     if (self.detailItem) {
        // MovieToPlay = @"GreenBeam";
     }
-    
+
     NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleVersionKey];
     NSLog(@"appVersion = %@",appVersion);
     self.detailDescriptionLabel.text = appVersion;
@@ -424,27 +387,25 @@
     {
         if ([subview isKindOfClass:[UIImageView class]])
             subview.hidden = YES;
-        
+
         [self hideGradientBackground:subview];
     }
 }
 
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
+
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
-  // self.toolBar.alpha = 1.0;
-
-
+    // self.toolBar.alpha = 1.0;
     NSLog(@"width = %f",self.view.frame.size.width);
     NSLog(@"height = %f",self.view.frame.size.height);
 
 }
 
-- (void)viewDidUnload
-{
+- (void)viewDidUnload {
+
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     self.detailDescriptionLabel = nil;
@@ -452,50 +413,44 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
 
-
     // Return YES for supported orientations
-    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight){
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+        return YES;
+    }
+
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
+        return YES;
+    }
+
+    if (toInterfaceOrientation == UIInterfaceOrientationPortrait) {
         return YES;
     }
     
-    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft){
-        return YES;
-    }
-    
-    if (toInterfaceOrientation == UIInterfaceOrientationPortrait){
-        return YES;
-    }
-    
-    if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
+    if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
         return YES;
     } else {return NO;}
-    
-
-
 
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Music Theory 101", @"Music Theory 101");
-
     }
+
     return self;
 }
 
 #pragma mark - Split view
 
-- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
-{
+- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController {
     barButtonItem.title = NSLocalizedString(@"Examples", @"Examples");
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.masterPopoverController = popoverController;
 }
 
-- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
-{
+- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;

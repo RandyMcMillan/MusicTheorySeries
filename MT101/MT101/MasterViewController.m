@@ -71,8 +71,6 @@
     for (NSString *str in wikiToDiplayList0)
         NSLog(@"wikiToDiplayList0 = %@",str);
  
-   
-    
     NSString *wikiToDisplay1Path = [[NSBundle mainBundle] pathForResource:@"WikiToDisplay1" ofType:@"plist"];
     wikiToDiplayList1 = [[NSArray alloc]initWithContentsOfFile:wikiToDisplay1Path];
     for (NSString *str in wikiToDiplayList1)
@@ -100,8 +98,6 @@
     for (NSString *str in wikiToDiplayList5)
         NSLog(@"wikiToDiplayList5 = %@",str);
 
-    
-    
    
 #pragma mark - Video Lists
 
@@ -238,8 +234,6 @@
                   nil];
 
     
-    
-    
 #pragma mark - Interactive Lists
 
     
@@ -331,14 +325,12 @@
     
 }
 
-- (void)viewDidUnload
-{
+- (void)viewDidUnload {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return YES;
 }
 

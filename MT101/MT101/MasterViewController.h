@@ -9,7 +9,7 @@
 
 @class DetailViewController;
 
-@interface MasterViewController : UITableViewController{
+@interface MasterViewController : UITableViewController {
    
     NSArray *videoList0;
     NSArray *videoList1;
