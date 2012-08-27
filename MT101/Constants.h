@@ -67,8 +67,8 @@
 
 #define BIGBOXWIDTH 90
 #define BIGBOXHEIGHT 90
-#define SMALLBOXWIDTH 90
-#define SMALLBOXHEIGHT 90
+#define SMALLBOXWIDTH 50
+#define SMALLBOXHEIGHT 50
 
 #ifndef kXOrientationAdjustiPad
 #define  kXOrientationAdjustiPad  0
