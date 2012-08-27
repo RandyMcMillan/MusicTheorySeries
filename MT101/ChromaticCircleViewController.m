@@ -195,7 +195,7 @@
                               SMALLBOXHEIGHT// 1/6th width of screen
                               );//do
      
-#if TARGET_IPHONE_SIMULATOR
+//#if TARGET_IPHONE_SIMULATOR
     
     //For your convience in configuring keyRects. Pink Transparencies only displayed in Simulator
     
@@ -331,7 +331,7 @@ label25 = [ [UILabel alloc ] initWithFrame:keyRects[25] ];
     [self.view addSubview:label24];
     [self.view addSubview:label25];
     
-#endif
+//#endif
 
 
 }
@@ -460,8 +460,8 @@ label25 = [ [UILabel alloc ] initWithFrame:keyRects[25] ];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:)
                                                  name:UIDeviceOrientationDidChangeNotification object:nil];
     
-    
-    [self drawRects];
+ //   [self destroyRects];
+   // [self drawRects];
     //create the mixer
     self.mixerHost = [[MixerHostAudio alloc] init];
     
@@ -473,16 +473,16 @@ label25 = [ [UILabel alloc ] initWithFrame:keyRects[25] ];
 {
     
     
-    for (int i=0; i<KEY_COUNT; i++) {
+ //   for (int i=0; i<KEY_COUNT; i++) {
         
-        keyRects[i]= CGRectMake(0, 0, 0, 0);
+   //     keyRects[i]= CGRectMake(0, 0, 0, 0);
         
-        break;
-    }
+     //   break;
+    //}
     
-    [self destroyRects];
+    //[self destroyRects];
 
-    [self drawRects];
+    //[self drawRects];
     
     
     // We must add a delay here, otherwise we'll swap in the new view
@@ -513,6 +513,10 @@ label25 = [ [UILabel alloc ] initWithFrame:keyRects[25] ];
 #pragma mark Touch events
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+   
+    [self destroyRects];
+    [self drawRects];
+    
     UITouch *aTouch = [touches anyObject];
     int idx = [self keyIndexForTouch:aTouch];
     
@@ -588,7 +592,17 @@ label25 = [ [UILabel alloc ] initWithFrame:keyRects[25] ];
 
 - (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)currentInterfaceOrientation {
 
+ //   for (int i=0; i<KEY_COUNT; i++) {
+        
+   //     keyRects[i]= CGRectMake(0, 0, 0, 0);
+        
+     //   break;
+   // }
     
+    //[self destroyRects];
+    
+    //[self drawRects];
+ 
     NSLog(@"did auto rotate");
     return YES;
     
