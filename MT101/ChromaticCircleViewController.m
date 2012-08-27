@@ -187,6 +187,7 @@
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
                               );//ti
+
     keyRects[25] = CGRectMake(0, 0, 0, 0);
     //keyRects[25] = CGRectMake([self view].center.x + 40,//derive xi
       //                        [self view].center.y + 70,//derive y
