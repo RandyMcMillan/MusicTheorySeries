@@ -59,6 +59,7 @@
 
 #define KEY_COUNT 26
 
+#define VIEWBOUNDS [[UIScreen mainScreen] bounds] 
 
 #ifndef IS_IPAD
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)

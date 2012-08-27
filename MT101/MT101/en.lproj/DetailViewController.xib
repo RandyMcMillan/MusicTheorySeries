@@ -2,7 +2,7 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1296</int>
-		<string key="IBDocument.SystemVersion">12A269</string>
+		<string key="IBDocument.SystemVersion">12B19</string>
 		<string key="IBDocument.InterfaceBuilderVersion">2549</string>
 		<string key="IBDocument.AppKitVersion">1187</string>
 		<string key="IBDocument.HIToolboxVersion">624.00</string>
@@ -307,7 +307,7 @@
 					<object class="IBUIImageView" id="204503168">
 						<reference key="NSNextResponder" ref="647120888"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrameSize">{703, 768}</string>
+						<string key="NSFrame">{{0, -1}, {703, 725}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="619180556"/>
@@ -324,12 +324,12 @@
 					</object>
 					<object class="IBUIToolbar" id="359118249">
 						<reference key="NSNextResponder" ref="647120888"/>
-						<int key="NSvFlags">266</int>
+						<int key="NSvFlags">303</int>
 						<array class="NSMutableArray" key="NSSubviews">
 							<object class="IBUIButton" id="121611704">
 								<reference key="NSNextResponder" ref="359118249"/>
 								<int key="NSvFlags">301</int>
-								<string key="NSFrame">{{41, 8}, {225, 29}}</string>
+								<string key="NSFrame">{{8, 8}, {225, 29}}</string>
 								<reference key="NSSuperview" ref="359118249"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="537938822"/>
@@ -365,7 +365,7 @@
 							<object class="IBUIButton" id="537938822">
 								<reference key="NSNextResponder" ref="359118249"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{304, 5}, {95, 35}}</string>
+								<string key="NSFrame">{{239, 8}, {225, 29}}</string>
 								<reference key="NSSuperview" ref="359118249"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="1013532138"/>
@@ -388,9 +388,10 @@
 							<object class="IBUIButton" id="1013532138">
 								<reference key="NSNextResponder" ref="359118249"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{438, 8}, {225, 29}}</string>
+								<string key="NSFrame">{{470, 8}, {225, 29}}</string>
 								<reference key="NSSuperview" ref="359118249"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -458,7 +459,7 @@
 					</object>
 					<object class="IBUILabel" id="619180556">
 						<reference key="NSNextResponder" ref="647120888"/>
-						<int key="NSvFlags">292</int>
+						<int key="NSvFlags">301</int>
 						<string key="NSFrame">{{188, 574}, {326, 43}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
@@ -497,7 +498,7 @@
 					</object>
 					<object class="IBUILabel" id="906733513">
 						<reference key="NSNextResponder" ref="647120888"/>
-						<int key="NSvFlags">292</int>
+						<int key="NSvFlags">301</int>
 						<string key="NSFrame">{{488, 608}, {42, 21}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
@@ -530,7 +531,7 @@
 					</object>
 					<object class="IBUILabel" id="191681143">
 						<reference key="NSNextResponder" ref="647120888"/>
-						<int key="NSvFlags">292</int>
+						<int key="NSvFlags">301</int>
 						<string key="NSFrame">{{474, 609}, {40, 21}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
@@ -568,6 +569,7 @@
 					<bytes key="NSRGB">MC45MzMzMzMzOTY5IDAuOTMzMzMzMzk2OSAwLjkzMzMzMzM5NjkAA</bytes>
 				</object>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+				<int key="IBUIContentMode">1</int>
 				<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 					<int key="IBUIInterfaceOrientation">3</int>
 					<int key="interfaceOrientation">3</int>
@@ -698,10 +700,10 @@
 						<reference key="object" ref="647120888"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="359118249"/>
-							<reference ref="204503168"/>
 							<reference ref="906733513"/>
 							<reference ref="191681143"/>
 							<reference ref="619180556"/>
+							<reference ref="204503168"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -1009,20 +1011,17 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">AeolianViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="mixerOutputGainChanged:">UISlider</string>
-						<string key="onDoneButtonPress:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="mixerOutputGainChanged:">
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">mixerOutputGainChanged:</string>
+						<string key="NS.object.0">UISlider</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">mixerOutputGainChanged:</string>
+						<object class="IBActionInfo" key="NS.object.0">
 							<string key="name">mixerOutputGainChanged:</string>
 							<string key="candidateClassName">UISlider</string>
 						</object>
-						<object class="IBActionInfo" key="onDoneButtonPress:">
-							<string key="name">onDoneButtonPress:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
+					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/AeolianViewController.h</string>

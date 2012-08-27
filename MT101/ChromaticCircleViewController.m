@@ -34,13 +34,10 @@
     [ self closeBrowser];
 }
 
+- (void)drawRects {
 
-#pragma mark - View lifecycle
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [mixerHost stopAUGraph];
-    
+
     //define the "key" xylophone note rectangles
     keyRects[0] = CGRectMake([self view].bounds.size.width * 0.457 + kXOrientationAdjustiPhone,//derive xi
                              [self view].bounds.size.height * 0.08,//derive y
@@ -198,107 +195,107 @@
     
     //For your convience in configuring keyRects. Pink Transparencies only displayed in Simulator
     
-    UILabel *label0 = [ [UILabel alloc ] initWithFrame:keyRects[0] ];
+    label0 = [ [UILabel alloc ] initWithFrame:keyRects[0] ];
     label0.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label0.text = [NSString stringWithFormat: @"keyRect[0]"];
     
-    UILabel *label1 = [ [UILabel alloc ] initWithFrame:keyRects[1] ];
+ label1 = [ [UILabel alloc ] initWithFrame:keyRects[1] ];
     label1.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label1.text = [NSString stringWithFormat: @"keyRect[1]"];
     
-    UILabel *label2 = [ [UILabel alloc ] initWithFrame:keyRects[2] ];
+label2 = [ [UILabel alloc ] initWithFrame:keyRects[2] ];
     label2.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label2.text = [NSString stringWithFormat: @"keyRect[2]"];
     
-    UILabel *label3 = [ [UILabel alloc ] initWithFrame:keyRects[3] ];
+label3 = [ [UILabel alloc ] initWithFrame:keyRects[3] ];
     label3.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label3.text = [NSString stringWithFormat: @"keyRect[3]"];
     
-    UILabel *label4 = [ [UILabel alloc ] initWithFrame:keyRects[4] ];
+label4 = [ [UILabel alloc ] initWithFrame:keyRects[4] ];
     label4.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label4.text = [NSString stringWithFormat: @"keyRect[4]"];
     
-    UILabel *label5 = [ [UILabel alloc ] initWithFrame:keyRects[5] ];
+label5 = [ [UILabel alloc ] initWithFrame:keyRects[5] ];
     label5.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label5.text = [NSString stringWithFormat: @"keyRect[5]"];
     
-    UILabel *label6 = [ [UILabel alloc ] initWithFrame:keyRects[6] ];
+label6 = [ [UILabel alloc ] initWithFrame:keyRects[6] ];
     label6.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label6.text = [NSString stringWithFormat: @"keyRect[6]"];
     
-    UILabel *label7 = [ [UILabel alloc ] initWithFrame:keyRects[7] ];
+label7 = [ [UILabel alloc ] initWithFrame:keyRects[7] ];
     label7.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label7.text = [NSString stringWithFormat: @"keyRect[7]"];
     
-    UILabel *label8 = [ [UILabel alloc ] initWithFrame:keyRects[8] ];
+label8 = [ [UILabel alloc ] initWithFrame:keyRects[8] ];
     label8.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label8.text = [NSString stringWithFormat: @"keyRect[8]"];
     
-    UILabel *label9 = [ [UILabel alloc ] initWithFrame:keyRects[9] ];
+label9 = [ [UILabel alloc ] initWithFrame:keyRects[9] ];
     label9.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label9.text = [NSString stringWithFormat: @"keyRect[9]"];
     
-    UILabel *label10 = [ [UILabel alloc ] initWithFrame:keyRects[10] ];
+label10 = [ [UILabel alloc ] initWithFrame:keyRects[10] ];
     label10.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label10.text = [NSString stringWithFormat: @"keyRect[10]"];
     
-    UILabel *label11 = [ [UILabel alloc ] initWithFrame:keyRects[11] ];
+label11 = [ [UILabel alloc ] initWithFrame:keyRects[11] ];
     label11.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label11.text = [NSString stringWithFormat: @"keyRect[11]"];
     
-    UILabel *label12 = [ [UILabel alloc ] initWithFrame:keyRects[12] ];
+label12 = [ [UILabel alloc ] initWithFrame:keyRects[12] ];
     label12.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:1.000];
     label12.text = [NSString stringWithFormat: @"keyRect[12]"];
     //minors
-    UILabel *label13 = [ [UILabel alloc ] initWithFrame:keyRects[13] ];
+label13 = [ [UILabel alloc ] initWithFrame:keyRects[13] ];
     label13.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label13.text = [NSString stringWithFormat: @"keyRect[13]"];
     
-    UILabel *label14 = [ [UILabel alloc ] initWithFrame:keyRects[14] ];
+label14 = [ [UILabel alloc ] initWithFrame:keyRects[14] ];
     label14.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label14.text = [NSString stringWithFormat: @"keyRect[14]"];
     
-    UILabel *label15 = [ [UILabel alloc ] initWithFrame:keyRects[15] ];
+label15 = [ [UILabel alloc ] initWithFrame:keyRects[15] ];
     label15.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label15.text = [NSString stringWithFormat: @"keyRect[15]"];
     
-    UILabel *label16 = [ [UILabel alloc ] initWithFrame:keyRects[16] ];
+label16 = [ [UILabel alloc ] initWithFrame:keyRects[16] ];
     label16.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label16.text = [NSString stringWithFormat: @"keyRect[16]"];
     
-    UILabel *label17 = [ [UILabel alloc ] initWithFrame:keyRects[17] ];
+label17 = [ [UILabel alloc ] initWithFrame:keyRects[17] ];
     label17.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label17.text = [NSString stringWithFormat: @"keyRect[17]"];
     
-    UILabel *label18 = [ [UILabel alloc ] initWithFrame:keyRects[18] ];
+label18 = [ [UILabel alloc ] initWithFrame:keyRects[18] ];
     label18.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label18.text = [NSString stringWithFormat: @"keyRect[18]"];
     
-    UILabel *label19 = [ [UILabel alloc ] initWithFrame:keyRects[19] ];
+label19 = [ [UILabel alloc ] initWithFrame:keyRects[19] ];
     label19.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label19.text = [NSString stringWithFormat: @"keyRect[19]"];
     
-    UILabel *label20 = [ [UILabel alloc ] initWithFrame:keyRects[20] ];
+label20 = [ [UILabel alloc ] initWithFrame:keyRects[20] ];
     label20.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label20.text = [NSString stringWithFormat: @"keyRect[20]"];
     
-    UILabel *label21 = [ [UILabel alloc ] initWithFrame:keyRects[21] ];
+label21 = [ [UILabel alloc ] initWithFrame:keyRects[21] ];
     label21.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label21.text = [NSString stringWithFormat: @"keyRect[21]"];
     
-    UILabel *label22 = [ [UILabel alloc ] initWithFrame:keyRects[22] ];
+label22 = [ [UILabel alloc ] initWithFrame:keyRects[22] ];
     label22.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label22.text = [NSString stringWithFormat: @"keyRect[22]"];
     
-    UILabel *label23 = [ [UILabel alloc ] initWithFrame:keyRects[23] ];
+label23 = [ [UILabel alloc ] initWithFrame:keyRects[23] ];
     label23.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label23.text = [NSString stringWithFormat: @"keyRect[23]"];
     
-    UILabel *label24 = [ [UILabel alloc ] initWithFrame:keyRects[24] ];
+label24 = [ [UILabel alloc ] initWithFrame:keyRects[24] ];
     label24.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label24.text = [NSString stringWithFormat: @"keyRect[24]"];
     
-    UILabel *label25 = [ [UILabel alloc ] initWithFrame:keyRects[25] ];
+label25 = [ [UILabel alloc ] initWithFrame:keyRects[25] ];
     label25.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:0.839 alpha:0.500];
     label25.text = [NSString stringWithFormat: @"keyRect[25]"];
     
@@ -331,13 +328,167 @@
     [self.view addSubview:label25];
     
 #endif
+
+
+}
+
+- (void)destroyRects {
+
     
+    for (UIView *subview in [self.view subviews]) {
+        
+        if (subview == label0 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label1 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label2 ) {
+            [subview removeFromSuperview];
+        }
+
+        if (subview == label3 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label4 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label5 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label6 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label7 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label8 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label9 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label10 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label11 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label12 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label13 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label14 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label15 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label16 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label17 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label18 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label19 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label20 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label21 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label22 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label23 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label24 ) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label25 ) {
+            [subview removeFromSuperview];
+        }
+    }
+
+}
+
+
+
+#pragma mark - View lifecycle
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [mixerHost stopAUGraph];
+    
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:)
+                                                 name:UIDeviceOrientationDidChangeNotification object:nil];
+    
+    
+    [self drawRects];
     //create the mixer
     self.mixerHost = [[MixerHostAudio alloc] init];
     
     //start the audio graph
     [mixerHost startAUGraph];
 }
+
+- (void)orientationChanged:(NSNotification *)notification
+{
+    
+    
+    for (int i=0; i<KEY_COUNT; i++) {
+        
+        keyRects[i]= CGRectMake(0, 0, 0, 0);
+        
+        break;
+    }
+    
+    [self destroyRects];
+
+    [self drawRects];
+    
+    
+    // We must add a delay here, otherwise we'll swap in the new view
+	// too quickly and we'll get an animation glitch
+//    [self performSelector:@selector(updateLandscapeView) withObject:nil afterDelay:0];
+
+    NSLog(@"orientationChanged");
+
+}
+
 
 - (void)viewDidUnload {
     [super viewDidUnload];
@@ -410,7 +561,8 @@
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-    
+  
+
     // Return YES for supported orientations
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight){
         return YES;
@@ -427,6 +579,14 @@
     if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
         return YES;
     } else {return NO;}
+    
+}
+
+- (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)currentInterfaceOrientation {
+
+    
+    NSLog(@"did auto rotate");
+    return YES;
     
 }
 
