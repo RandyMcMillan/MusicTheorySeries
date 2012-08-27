@@ -152,7 +152,7 @@
    if (interactiveToDisplay == @"CircleOfFifthsViewController") {
 
         CircleOfFifthsViewController *circleOfFifthsVC = [[CircleOfFifthsViewController alloc]init];
-       circleOfFifthsVC.modalPresentationStyle = UIModalPresentationPageSheet;
+        circleOfFifthsVC.modalPresentationStyle = UIModalPresentationPageSheet;
 
        [self presentModalViewController:circleOfFifthsVC animated:YES];
 
