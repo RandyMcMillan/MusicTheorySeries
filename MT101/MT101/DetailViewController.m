@@ -80,6 +80,8 @@
     if (interactiveToDisplay == @"TrebleClefViewController") {
 
         TrebleClefViewController *trebleClefVC = [[TrebleClefViewController alloc]init];
+        trebleClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:trebleClefVC animated:YES];
 
     }
@@ -87,6 +89,7 @@
     if (interactiveToDisplay == @"SopranoClefViewController") {
 
         SopranoClefViewController *sopranoClefVC = [[SopranoClefViewController alloc]init];
+        sopranoClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
         [self presentModalViewController:sopranoClefVC animated:YES];
 
     }
@@ -94,6 +97,8 @@
     if (interactiveToDisplay == @"MezzoSopranoClefViewController") {
 
         MezzoSopranoClefViewController *mezzoSopranoClefVC = [[MezzoSopranoClefViewController alloc]init];
+        mezzoSopranoClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:mezzoSopranoClefVC animated:YES];
 
     }
@@ -102,6 +107,8 @@
     if (interactiveToDisplay == @"AltoClefViewController") {
 
         AltoClefViewController *altoClefVC = [[AltoClefViewController alloc]init];
+        altoClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:altoClefVC animated:YES];
 
     }
@@ -109,6 +116,8 @@
     if (interactiveToDisplay == @"TenorClefViewController") {
 
         TenorClefViewController *tenorClefVC = [[TenorClefViewController alloc]init];
+        tenorClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:tenorClefVC animated:YES];
 
     }
@@ -116,18 +125,24 @@
     if (interactiveToDisplay == @"BariToneClefViewController") {
 
         BariToneClefViewController *bariToneClefVC = [[BariToneClefViewController alloc]init];
+        bariToneClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:bariToneClefVC animated:YES];
     }
 
     if (interactiveToDisplay == @"BassClefViewController") {
 
         BassClefViewController *bassClefVC = [[BassClefViewController alloc]init];
+        bassClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:bassClefVC animated:YES];
     }
 
     if (interactiveToDisplay == @"SubBassClefViewController") {
 
         SubBassClefViewController *subBassClefVC = [[SubBassClefViewController alloc]init];
+        subBassClefVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:subBassClefVC animated:YES];
     }
     
@@ -137,13 +152,17 @@
    if (interactiveToDisplay == @"CircleOfFifthsViewController") {
 
         CircleOfFifthsViewController *circleOfFifthsVC = [[CircleOfFifthsViewController alloc]init];
-        [self presentModalViewController:circleOfFifthsVC animated:YES];
+       circleOfFifthsVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
+       [self presentModalViewController:circleOfFifthsVC animated:YES];
 
     }
 
     if (interactiveToDisplay == @"ChromaticCircleViewController") {
         
         ChromaticCircleViewController *chromaticCircleVC = [[ChromaticCircleViewController alloc]init];
+        chromaticCircleVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:chromaticCircleVC animated:YES];
         
     }
@@ -154,6 +173,8 @@
     if (interactiveToDisplay == @"IonianViewController") {
         
         IonianViewController *ionianVC = [[IonianViewController alloc]init];
+        ionianVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:ionianVC animated:YES];
         
     }
@@ -161,6 +182,8 @@
     if (interactiveToDisplay == @"DorianViewController") {
         
         DorianViewController *dorianVC = [[DorianViewController alloc]init];
+        dorianVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:dorianVC animated:YES];
         
     }
@@ -169,6 +192,8 @@
     if (interactiveToDisplay == @"PhrygianViewController") {
         
         PhrygianViewController *phrygianVC = [[PhrygianViewController alloc]init];
+        phrygianVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:phrygianVC animated:YES];
         
     }
@@ -177,6 +202,8 @@
     if (interactiveToDisplay == @"LydianViewController") {
         
         LydianViewController *lydianVC = [[LydianViewController alloc]init];
+        lydianVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:lydianVC animated:YES];
         
     }
@@ -185,6 +212,8 @@
     if (interactiveToDisplay == @"MixoLydianViewController") {
         
         MixoLydianViewController *mixoLydianVC = [[MixoLydianViewController alloc]init];
+        mixoLydianVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:mixoLydianVC animated:YES];
         
     }
@@ -197,6 +226,8 @@
     if (interactiveToDisplay == @"AeolianViewController") {
 
         AeolianViewController *aeolianVC = [[AeolianViewController alloc]init];
+        aeolianVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:aeolianVC animated:YES];
 
     }
@@ -205,6 +236,8 @@
     if (interactiveToDisplay == @"LocrianViewController") {
 
         LocrianViewController *locrianVC = [[LocrianViewController alloc]init];
+        locrianVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:locrianVC animated:YES];
 
     }
@@ -214,6 +247,8 @@
     if (interactiveToDisplay == @"SolfegeNaturalsViewController") {
         
         SolfegeNaturalsViewController *solfegeNaturalsVC = [[SolfegeNaturalsViewController alloc]init];
+        solfegeNaturalsVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:solfegeNaturalsVC animated:YES];
         
     }
@@ -221,6 +256,8 @@
     if (interactiveToDisplay == @"SolfegeSharpsViewController") {
         
         SolfegeSharpsViewController *solfegeSharpsVC = [[SolfegeSharpsViewController alloc]init];
+        solfegeSharpsVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:solfegeSharpsVC animated:YES];
         
     }
@@ -228,6 +265,8 @@
     if (interactiveToDisplay == @"SolfegeFlatsViewController") {
         
         SolfegeFlatsViewController *solfegeFlatsVC = [[SolfegeFlatsViewController alloc]init];
+        solfegeFlatsVC.modalPresentationStyle = UIModalPresentationPageSheet;
+
         [self presentModalViewController:solfegeFlatsVC animated:YES];
         
     }

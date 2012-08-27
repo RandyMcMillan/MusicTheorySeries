@@ -65,6 +65,11 @@
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #endif
 
+#define BIGBOXWIDTH 90
+#define BIGBOXHEIGHT 90
+#define SMALLBOXWIDTH 90
+#define SMALLBOXHEIGHT 90
+
 #ifndef kXOrientationAdjustiPad
 #define  kXOrientationAdjustiPad  0
 #endif
