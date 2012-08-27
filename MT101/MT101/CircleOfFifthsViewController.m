@@ -109,11 +109,12 @@
                               BIGBOXHEIGHT// 1/6th width of screen
                               );//Ti
     
-    keyRects[12] = CGRectMake([self view].center.x - 0,//derive xi
-                              [self view].center.y - 0,//derive y
-                              BIGBOXWIDTH,//span across entire screen
-                              BIGBOXHEIGHT// 1/6th width of screen
-                              );//Do
+    keyRects[12] = CGRectMake(0, 0, 0, 0);
+    //keyRects[12] = CGRectMake([self view].center.x - 0,//derive xi
+      //                        [self view].center.y - 0,//derive y
+        //                      BIGBOXWIDTH,//span across entire screen
+          //                    BIGBOXHEIGHT// 1/6th width of screen
+            //                  );//Do
     //minors
     
     //
@@ -190,11 +191,12 @@
                               SMALLBOXHEIGHT// 1/6th width of screen
                               );//di
     
-    keyRects[25] = CGRectMake([self view].center.x + 40,//derive xi
-                              [self view].center.y + 70,//derive y
-                              SMALLBOXWIDTH,//span across entire screen
-                              SMALLBOXHEIGHT// 1/6th width of screen
-                              );//do
+    keyRects[25] = CGRectMake(0, 0, 0, 0);
+    //keyRects[25] = CGRectMake([self view].center.x + 40,//derive xi
+      //                        [self view].center.y + 70,//derive y
+        //                      SMALLBOXWIDTH,//span across entire screen
+          //                    SMALLBOXHEIGHT// 1/6th width of screen
+            //                  );//do
     
     #if TARGET_IPHONE_SIMULATOR
     
@@ -316,7 +318,7 @@
     [self.view addSubview:label9];
     [self.view addSubview:label10];
     [self.view addSubview:label11];
-    //[self.view addSubview:label12];
+    [self.view addSubview:label12];
     //minors
     [self.view addSubview:label13];
     [self.view addSubview:label14];
@@ -330,7 +332,7 @@
     [self.view addSubview:label22];
     [self.view addSubview:label23];
     [self.view addSubview:label24];
-    // [self.view addSubview:label25];
+    [self.view addSubview:label25];
     
     #endif
     

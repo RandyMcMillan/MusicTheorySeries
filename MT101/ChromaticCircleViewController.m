@@ -109,11 +109,12 @@
                              BIGBOXHEIGHT// 1/6th width of screen
                              );//Ti
 
-    keyRects[12] = CGRectMake([self view].center.x - 0,//derive xi
-                             [self view].center.y - 0,//derive y
-                             BIGBOXWIDTH,//span across entire screen
-                             BIGBOXHEIGHT// 1/6th width of screen
-                             );//Do
+    keyRects[12] = CGRectMake(0, 0, 0, 0);
+//    keyRects[12] = CGRectMake([self view].center.x - 0,//derive xi
+  //                           [self view].center.y - 0,//derive y
+    //                         BIGBOXWIDTH,//span across entire screen
+      //                       BIGBOXHEIGHT// 1/6th width of screen
+        //                     );//Do
     //minors
     keyRects[13] = CGRectMake([self view].center.x + 41 ,//derive xi
                               [self view].center.y + 65,//derive y
@@ -186,12 +187,12 @@
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
                               );//ti
-
-    keyRects[25] = CGRectMake([self view].center.x + 40,//derive xi
-                              [self view].center.y + 70,//derive y
-                              SMALLBOXWIDTH,//span across entire screen
-                              SMALLBOXHEIGHT// 1/6th width of screen
-                              );//do
+    keyRects[25] = CGRectMake(0, 0, 0, 0);
+    //keyRects[25] = CGRectMake([self view].center.x + 40,//derive xi
+      //                        [self view].center.y + 70,//derive y
+        //                      SMALLBOXWIDTH,//span across entire screen
+          //                    SMALLBOXHEIGHT// 1/6th width of screen
+            //                  );//do
 
 //#if TARGET_IPHONE_SIMULATOR
 
