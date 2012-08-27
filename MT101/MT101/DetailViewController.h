@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
-#import "AppleXylophoneViewController.h"
-#import "GrandStaffViewController.h"
-#import "AeolianViewController.h"
-#import "CircleOfFifthsViewController.h"
-#import "TrebleClefViewController.h"
+//#import "AppleXylophoneViewController.h"
+//#import "GrandStaffViewController.h"
+//#import "AeolianViewController.h"
+//#import "CircleOfFifthsViewController.h"
+//#import "TrebleClefViewController.h"
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
 
