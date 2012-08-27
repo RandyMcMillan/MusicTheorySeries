@@ -115,77 +115,80 @@
                               BIGBOXHEIGHT// 1/6th width of screen
                               );//Do
     //minors
+    
+    //
+    
     keyRects[13] = CGRectMake([self view].center.x + 41 ,//derive xi
                               [self view].center.y + 65,//derive y
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
-                              );//do
+                              );//si
     
     keyRects[14] = CGRectMake([self view].center.x - 22.5,//derive xi
                               [self view].center.y + 70,//derive y
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
-                              );//di
+                              );//ri
     
     keyRects[15] = CGRectMake([self view].center.x - 85,//derive xi
                               [self view].center.y + 65,//derive y
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
-                              );//re
+                              );//te
     
     keyRects[16] = CGRectMake([self view].center.x - 140,//derive xi
                               [self view].center.y + 20,//derive y
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
-                              );//ri
+                              );//fa
     
     keyRects[17] = CGRectMake([self view].center.x - 150,//derive xi
                               [self view].center.y - 50,//derive y
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
-                              );//mi
+                              );//do
     
     keyRects[18] = CGRectMake([self view].center.x - 140,//derive xi
                               [self view].center.y - 120,//derive y
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
-                              );//fa
+                              );//sol
     
     keyRects[19] = CGRectMake([self view].center.x - 90,//derive xi
                               [self view].center.y - 160,//derive y
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
-                              );//fi
+                              );//re
     
     keyRects[20] = CGRectMake([self view].center.x - 22.5,//derive xi
                               [self view].center.y - 180,//derive y
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
-                              );//sol
+                              );//la
     
     keyRects[21] = CGRectMake([self view].center.x + 40,//derive xi
                               [self view].center.y - 160,//derive y
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
-                              );//si
+                              );//mi
     
     keyRects[22] = CGRectMake([self view].center.x + 90,//derive xi
                               [self view].center.y - 120,//derive y
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
-                              );//la
+                              );//ti
     
     keyRects[23] = CGRectMake([self view].center.x + 110,//derive xi
                               [self view].center.y - 50,//derive y
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
-                              );//li
+                              );//fi
     
     keyRects[24] = CGRectMake([self view].center.x + 90,//derive xi
                               [self view].center.y + 15,//derive y
                               SMALLBOXWIDTH,//span across entire screen
                               SMALLBOXHEIGHT// 1/6th width of screen
-                              );//ti
+                              );//di
     
     keyRects[25] = CGRectMake([self view].center.x + 40,//derive xi
                               [self view].center.y + 70,//derive y
