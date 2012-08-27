@@ -36,8 +36,6 @@
 
 - (void)drawRects {
     
-    
-    
     //define the "key" xylophone note rectangles
     keyRects[0] = CGRectMake([self view].center.x - 42,//derive xi
                              [self view].center.y - 285,//derive y
@@ -338,7 +336,6 @@
 
 - (void)destroyRects {
     
-    
     for (UIView *subview in [self.view subviews]) {
         
         if (subview == label0 ) {
@@ -445,23 +442,20 @@
             [subview removeFromSuperview];
         }
     }
-    
 }
-
 
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     [mixerHost stopAUGraph];
     
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:)
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:)
                                                  name:UIDeviceOrientationDidChangeNotification object:nil];
     
-    //   [self destroyRects];
-    // [self drawRects];
     //create the mixer
     self.mixerHost = [[MixerHostAudio alloc] init];
     
@@ -469,25 +463,11 @@
     [mixerHost startAUGraph];
 }
 
-- (void)orientationChanged:(NSNotification *)notification
-{
-    
-    
-    //   for (int i=0; i<KEY_COUNT; i++) {
-    
-    //     keyRects[i]= CGRectMake(0, 0, 0, 0);
-    
-    //   break;
-    //}
-    
-    //[self destroyRects];
-    
-    //[self drawRects];
-    
+- (void)orientationChanged:(NSNotification *)notification {
     
     // We must add a delay here, otherwise we'll swap in the new view
-	// too quickly and we'll get an animation glitch
-    //    [self performSelector:@selector(updateLandscapeView) withObject:nil afterDelay:0];
+    // too quickly and we'll get an animation glitch
+    // [self performSelector:@selector(updateLandscapeView) withObject:nil afterDelay:0];
     
     NSLog(@"orientationChanged");
     
@@ -495,6 +475,7 @@
 
 
 - (void)viewDidUnload {
+    
     [super viewDidUnload];
     [mixerHost stopAUGraph];
     
@@ -591,17 +572,6 @@
 }
 
 - (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)currentInterfaceOrientation {
-    
-    //   for (int i=0; i<KEY_COUNT; i++) {
-    
-    //     keyRects[i]= CGRectMake(0, 0, 0, 0);
-    
-    //   break;
-    // }
-    
-    //[self destroyRects];
-    
-    //[self drawRects];
     
     NSLog(@"did auto rotate");
     return YES;
