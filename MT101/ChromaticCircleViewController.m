@@ -314,7 +314,7 @@
     [self.view addSubview:label9];
     [self.view addSubview:label10];
     [self.view addSubview:label11];
-    //[self.view addSubview:label12];
+    [self.view addSubview:label12];
     //minors
     [self.view addSubview:label13];
     [self.view addSubview:label14];
@@ -328,7 +328,7 @@
     [self.view addSubview:label22];
     [self.view addSubview:label23];
     [self.view addSubview:label24];
-   // [self.view addSubview:label25];
+    [self.view addSubview:label25];
     
 //#endif
 
