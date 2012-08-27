@@ -196,10 +196,35 @@
 
 
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	// Return YES for supported orientations
-	return YES;//(interfaceOrientation == UIInterfaceOrientationPortrait);
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    
+    
+    // Return YES for supported orientations
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight){
+        return YES;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft){
+        return YES;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationPortrait){
+        return YES;
+    }
+    
+    if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
+        return YES;
+    } else {return NO;}
+    
 }
+
+- (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)currentInterfaceOrientation {
+    
+    NSLog(@"did auto rotate");
+    return YES;
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning {
