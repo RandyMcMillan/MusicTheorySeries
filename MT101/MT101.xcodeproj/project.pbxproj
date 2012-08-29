@@ -42,6 +42,7 @@
 		480A796D15DD6060005E9C43 /* UnderWater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795615DD6060005E9C43 /* UnderWater.mp4 */; };
 		480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795715DD6060005E9C43 /* WindyTrees.mp4 */; };
 		4820B0AA15EDDDC1003768DC /* TheGrandStaff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0A915EDDDC1003768DC /* TheGrandStaff.png */; };
+		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
 		4825556F15DD76AF00737C61 /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825554B15DD76AF00737C61 /* Aeolian.png */; };
 		4825557115DD76AF00737C61 /* AltoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825554D15DD76AF00737C61 /* AltoClef.png */; };
 		4825557315DD76AF00737C61 /* BariToneClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825554F15DD76AF00737C61 /* BariToneClef.png */; };
@@ -88,7 +89,6 @@
 		4882981E15E00AE500239B29 /* ChromaticCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4882981D15E00AE500239B29 /* ChromaticCircle.png */; };
 		489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */; };
 		489C8BB215CF05DD00F15D05 /* GrandStaffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		489C8BB415CF062700F15D05 /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */; };
 		48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */; };
 		48A3562F15E2363F00A3529D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3562E15E2363F00A3529D /* WebViewController.m */; };
 		48A3563115E2364600A3529D /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A3563015E2364600A3529D /* WebView.xib */; };
@@ -214,6 +214,7 @@
 		480A795615DD6060005E9C43 /* UnderWater.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnderWater.mp4; sourceTree = "<group>"; };
 		480A795715DD6060005E9C43 /* WindyTrees.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WindyTrees.mp4; sourceTree = "<group>"; };
 		4820B0A915EDDDC1003768DC /* TheGrandStaff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheGrandStaff.png; sourceTree = "<group>"; };
+		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
 		4825554B15DD76AF00737C61 /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
 		4825554D15DD76AF00737C61 /* AltoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AltoClef.png; sourceTree = "<group>"; };
 		4825554F15DD76AF00737C61 /* BariToneClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BariToneClef.png; sourceTree = "<group>"; };
@@ -269,7 +270,6 @@
 		489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrandStaffViewController.h; path = MT101/GrandStaffViewController.h; sourceTree = "<group>"; };
 		489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrandStaffViewController.m; path = MT101/GrandStaffViewController.m; sourceTree = "<group>"; };
-		489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GrandStaffViewController.xib; path = MT101/GrandStaffViewController.xib; sourceTree = "<group>"; };
 		48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay0.plist; sourceTree = "<group>"; };
 		48A3562D15E2363F00A3529D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		48A3562E15E2363F00A3529D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
@@ -638,11 +638,11 @@
 		48EEEF6915DC52D700D15F15 /* ClefXIBs */ = {
 			isa = PBXGroup;
 			children = (
+				4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */,
 				48EEEF5015DC4B4F00D15F15 /* TenorClefViewController.xib */,
 				48EEEF3615DC47DC00D15F15 /* SopranoClefViewController.xib */,
 				48EEEF6415DC4BBF00D15F15 /* MezzoSopranoClefViewController.xib */,
 				48D50A2215D88779009121C3 /* TrebleClefViewController.xib */,
-				489C8BB315CF062700F15D05 /* GrandStaffViewController.xib */,
 				48EEEF4115DC4A1600D15F15 /* AltoClefViewController.xib */,
 				48EEEF5515DC4B5E00D15F15 /* BariToneClefViewController.xib */,
 				48EEEF5F15DC4B7A00D15F15 /* SubBassClefViewController.xib */,
@@ -826,7 +826,6 @@
 				48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */,
 				48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */,
 				489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */,
-				489C8BB415CF062700F15D05 /* GrandStaffViewController.xib in Resources */,
 				48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */,
 				484D16E515DAE485005FC66E /* SectionHeaders.plist in Resources */,
 				48FA4BF015DAE7DA00FF91CA /* videoList0.plist in Resources */,
@@ -943,6 +942,7 @@
 				48E592D215E9859A00299709 /* vib_8.aif in Resources */,
 				48E592D315E9859A00299709 /* vib_9.aif in Resources */,
 				4820B0AA15EDDDC1003768DC /* TheGrandStaff.png in Resources */,
+				4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
