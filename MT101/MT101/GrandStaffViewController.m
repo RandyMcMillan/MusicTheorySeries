@@ -6,6 +6,24 @@
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 #import "GrandStaffViewController.h"
+#import "QuartzViewController.h"
+
+
+
+#import "QuartzLines.h"
+#import "QuartzPolygons.h"
+#import "QuartzCurves.h"
+#import "QuartzImages.h"
+#import "QuartzRendering.h"
+#import "QuartzBlending.h"
+#import "QuartzClipping.h"
+//#import "QuartzBlendingViewController.h"
+//#import "QuartzPolyViewController.h"
+//#import "QuartzGradientViewController.h"
+//#import "QuartzLineViewController.h"
+//#import "QuartzDashViewController.h"
+
+
 
 @implementation GrandStaffViewController
 
@@ -332,6 +350,18 @@
     [self.view addSubview:label25];
     
     //#endif
+    
+   
+    
+	// Bezier and Quadratic curves
+	QuartzViewController *qvc = [[QuartzViewController alloc] initWithNibName:@"DemoView" viewClass:[QuartzBezierView class]];
+	qvc.title = @"Beziers & Quadratics";
+	qvc.demoInfo = @"QuartzBezierView";
+	
+    
+    [self.view addSubview:qvc.view];
+    //[self addController:qvc toSection:@"QuartzCurves.m"];
+	[qvc release];
     
     
 }
