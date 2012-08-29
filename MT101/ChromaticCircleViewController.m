@@ -454,6 +454,13 @@
     [super viewDidLoad];
     [mixerHost stopAUGraph];
 
+    
+    imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth |
+                                                            UIViewAutoresizingFlexibleHeight);
+    
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    
+    
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:)
                                             name:UIDeviceOrientationDidChangeNotification object:nil];

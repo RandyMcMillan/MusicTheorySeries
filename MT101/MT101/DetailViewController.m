@@ -71,7 +71,7 @@
     if (interactiveToDisplay == @"GrandStaffViewController") {
 
         GrandStaffViewController *theGrandStaffVC = [[GrandStaffViewController alloc]init];
-        //theGrandStaffVC.modalPresentationStyle = UIModalPresentationPageSheet;
+        theGrandStaffVC.modalPresentationStyle = UIModalPresentationPageSheet;
         [self presentModalViewController:theGrandStaffVC animated:YES];
 
     }

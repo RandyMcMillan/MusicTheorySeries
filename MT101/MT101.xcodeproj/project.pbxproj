@@ -41,6 +41,7 @@
 		480A796C15DD6060005E9C43 /* Treble Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795515DD6060005E9C43 /* Treble Clef.mp4 */; };
 		480A796D15DD6060005E9C43 /* UnderWater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795615DD6060005E9C43 /* UnderWater.mp4 */; };
 		480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795715DD6060005E9C43 /* WindyTrees.mp4 */; };
+		4820B0AA15EDDDC1003768DC /* TheGrandStaff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0A915EDDDC1003768DC /* TheGrandStaff.png */; };
 		4825556F15DD76AF00737C61 /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825554B15DD76AF00737C61 /* Aeolian.png */; };
 		4825557115DD76AF00737C61 /* AltoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825554D15DD76AF00737C61 /* AltoClef.png */; };
 		4825557315DD76AF00737C61 /* BariToneClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825554F15DD76AF00737C61 /* BariToneClef.png */; };
@@ -56,7 +57,6 @@
 		4825558715DD76AF00737C61 /* SopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556315DD76AF00737C61 /* SopranoClef.png */; };
 		4825558915DD76AF00737C61 /* SubBassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556515DD76AF00737C61 /* SubBassClef.png */; };
 		4825558B15DD76AF00737C61 /* TenorClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556715DD76AF00737C61 /* TenorClef.png */; };
-		4825558D15DD76AF00737C61 /* TheGrandStaff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556915DD76AF00737C61 /* TheGrandStaff.png */; };
 		4825558F15DD76AF00737C61 /* TrebleClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556B15DD76AF00737C61 /* TrebleClef.png */; };
 		4825559115DD76AF00737C61 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556D15DD76AF00737C61 /* welcome.png */; };
 		4825559315DD773300737C61 /* MixoLydian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825559215DD773300737C61 /* MixoLydian.png */; };
@@ -213,6 +213,7 @@
 		480A795515DD6060005E9C43 /* Treble Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Treble Clef.mp4"; sourceTree = "<group>"; };
 		480A795615DD6060005E9C43 /* UnderWater.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnderWater.mp4; sourceTree = "<group>"; };
 		480A795715DD6060005E9C43 /* WindyTrees.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WindyTrees.mp4; sourceTree = "<group>"; };
+		4820B0A915EDDDC1003768DC /* TheGrandStaff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheGrandStaff.png; sourceTree = "<group>"; };
 		4825554B15DD76AF00737C61 /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
 		4825554D15DD76AF00737C61 /* AltoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AltoClef.png; sourceTree = "<group>"; };
 		4825554F15DD76AF00737C61 /* BariToneClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BariToneClef.png; sourceTree = "<group>"; };
@@ -228,7 +229,6 @@
 		4825556315DD76AF00737C61 /* SopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SopranoClef.png; sourceTree = "<group>"; };
 		4825556515DD76AF00737C61 /* SubBassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubBassClef.png; sourceTree = "<group>"; };
 		4825556715DD76AF00737C61 /* TenorClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TenorClef.png; sourceTree = "<group>"; };
-		4825556915DD76AF00737C61 /* TheGrandStaff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheGrandStaff.png; sourceTree = "<group>"; };
 		4825556B15DD76AF00737C61 /* TrebleClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrebleClef.png; sourceTree = "<group>"; };
 		4825556D15DD76AF00737C61 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome.png; path = Art/ScalePNGs/welcome.png; sourceTree = "<group>"; };
 		4825559215DD773300737C61 /* MixoLydian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MixoLydian.png; sourceTree = "<group>"; };
@@ -455,6 +455,7 @@
 		4825554915DD76AF00737C61 /* ScalePNGs */ = {
 			isa = PBXGroup;
 			children = (
+				4820B0A915EDDDC1003768DC /* TheGrandStaff.png */,
 				482555A515DD7A9C00737C61 /* SolfegeFlats.png */,
 				482555A615DD7A9C00737C61 /* SolfegeNaturals.png */,
 				482555A715DD7A9C00737C61 /* SolfegeSharps.png */,
@@ -475,7 +476,6 @@
 				4825556315DD76AF00737C61 /* SopranoClef.png */,
 				4825556515DD76AF00737C61 /* SubBassClef.png */,
 				4825556715DD76AF00737C61 /* TenorClef.png */,
-				4825556915DD76AF00737C61 /* TheGrandStaff.png */,
 				4825556B15DD76AF00737C61 /* TrebleClef.png */,
 			);
 			name = ScalePNGs;
@@ -896,7 +896,6 @@
 				4825558715DD76AF00737C61 /* SopranoClef.png in Resources */,
 				4825558915DD76AF00737C61 /* SubBassClef.png in Resources */,
 				4825558B15DD76AF00737C61 /* TenorClef.png in Resources */,
-				4825558D15DD76AF00737C61 /* TheGrandStaff.png in Resources */,
 				4825558F15DD76AF00737C61 /* TrebleClef.png in Resources */,
 				4825559115DD76AF00737C61 /* welcome.png in Resources */,
 				4825559315DD773300737C61 /* MixoLydian.png in Resources */,
@@ -943,6 +942,7 @@
 				48E592D115E9859A00299709 /* vib_7.aif in Resources */,
 				48E592D215E9859A00299709 /* vib_8.aif in Resources */,
 				48E592D315E9859A00299709 /* vib_9.aif in Resources */,
+				4820B0AA15EDDDC1003768DC /* TheGrandStaff.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1070,6 +1070,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MT101/MT101-Prefix.pch";
 				INFOPLIST_FILE = "MT101/MT101-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -1082,6 +1083,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MT101/MT101-Prefix.pch";
 				INFOPLIST_FILE = "MT101/MT101-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
