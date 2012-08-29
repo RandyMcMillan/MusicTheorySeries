@@ -41,16 +41,6 @@
 		480A796C15DD6060005E9C43 /* Treble Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795515DD6060005E9C43 /* Treble Clef.mp4 */; };
 		480A796D15DD6060005E9C43 /* UnderWater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795615DD6060005E9C43 /* UnderWater.mp4 */; };
 		480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795715DD6060005E9C43 /* WindyTrees.mp4 */; };
-		48175EA115EE2AE7003EC5B7 /* QuartzBlending.m in Sources */ = {isa = PBXBuildFile; fileRef = 48175E9415EE2AE7003EC5B7 /* QuartzBlending.m */; };
-		48175EA215EE2AE7003EC5B7 /* QuartzClipping.m in Sources */ = {isa = PBXBuildFile; fileRef = 48175E9615EE2AE7003EC5B7 /* QuartzClipping.m */; };
-		48175EA315EE2AE7003EC5B7 /* QuartzCurves.m in Sources */ = {isa = PBXBuildFile; fileRef = 48175E9815EE2AE7003EC5B7 /* QuartzCurves.m */; };
-		48175EA415EE2AE7003EC5B7 /* QuartzImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 48175E9A15EE2AE7003EC5B7 /* QuartzImages.m */; };
-		48175EA515EE2AE7003EC5B7 /* QuartzLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 48175E9C15EE2AE7003EC5B7 /* QuartzLines.m */; };
-		48175EA615EE2AE7003EC5B7 /* QuartzPolygons.m in Sources */ = {isa = PBXBuildFile; fileRef = 48175E9E15EE2AE7003EC5B7 /* QuartzPolygons.m */; };
-		48175EA715EE2AE7003EC5B7 /* QuartzRendering.m in Sources */ = {isa = PBXBuildFile; fileRef = 48175EA015EE2AE7003EC5B7 /* QuartzRendering.m */; };
-		48175EAB15EE2BAD003EC5B7 /* QuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48175EAA15EE2BAD003EC5B7 /* QuartzView.m */; };
-		48175EAD15EE2EF0003EC5B7 /* DemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48175EAC15EE2EF0003EC5B7 /* DemoView.xib */; };
-		48175EB015EE2F15003EC5B7 /* QuartzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48175EAF15EE2F15003EC5B7 /* QuartzViewController.m */; };
 		4820B0AA15EDDDC1003768DC /* TheGrandStaff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0A915EDDDC1003768DC /* TheGrandStaff.png */; };
 		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
 		4820B0AE15EDFE72003768DC /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */; };
@@ -223,25 +213,6 @@
 		480A795515DD6060005E9C43 /* Treble Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Treble Clef.mp4"; sourceTree = "<group>"; };
 		480A795615DD6060005E9C43 /* UnderWater.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnderWater.mp4; sourceTree = "<group>"; };
 		480A795715DD6060005E9C43 /* WindyTrees.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WindyTrees.mp4; sourceTree = "<group>"; };
-		48175E9315EE2AE7003EC5B7 /* QuartzBlending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzBlending.h; sourceTree = "<group>"; };
-		48175E9415EE2AE7003EC5B7 /* QuartzBlending.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzBlending.m; sourceTree = "<group>"; };
-		48175E9515EE2AE7003EC5B7 /* QuartzClipping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzClipping.h; sourceTree = "<group>"; };
-		48175E9615EE2AE7003EC5B7 /* QuartzClipping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzClipping.m; sourceTree = "<group>"; };
-		48175E9715EE2AE7003EC5B7 /* QuartzCurves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzCurves.h; sourceTree = "<group>"; };
-		48175E9815EE2AE7003EC5B7 /* QuartzCurves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzCurves.m; sourceTree = "<group>"; };
-		48175E9915EE2AE7003EC5B7 /* QuartzImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzImages.h; sourceTree = "<group>"; };
-		48175E9A15EE2AE7003EC5B7 /* QuartzImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzImages.m; sourceTree = "<group>"; };
-		48175E9B15EE2AE7003EC5B7 /* QuartzLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzLines.h; sourceTree = "<group>"; };
-		48175E9C15EE2AE7003EC5B7 /* QuartzLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzLines.m; sourceTree = "<group>"; };
-		48175E9D15EE2AE7003EC5B7 /* QuartzPolygons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzPolygons.h; sourceTree = "<group>"; };
-		48175E9E15EE2AE7003EC5B7 /* QuartzPolygons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzPolygons.m; sourceTree = "<group>"; };
-		48175E9F15EE2AE7003EC5B7 /* QuartzRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzRendering.h; sourceTree = "<group>"; };
-		48175EA015EE2AE7003EC5B7 /* QuartzRendering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzRendering.m; sourceTree = "<group>"; };
-		48175EA915EE2BAD003EC5B7 /* QuartzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzView.h; sourceTree = "<group>"; };
-		48175EAA15EE2BAD003EC5B7 /* QuartzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzView.m; sourceTree = "<group>"; };
-		48175EAC15EE2EF0003EC5B7 /* DemoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoView.xib; sourceTree = "<group>"; };
-		48175EAE15EE2F15003EC5B7 /* QuartzViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzViewController.h; sourceTree = "<group>"; };
-		48175EAF15EE2F15003EC5B7 /* QuartzViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzViewController.m; sourceTree = "<group>"; };
 		4820B0A915EDDDC1003768DC /* TheGrandStaff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheGrandStaff.png; sourceTree = "<group>"; };
 		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
 		4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrebleClefViewController.xib; sourceTree = "<group>"; };
@@ -479,32 +450,6 @@
 				480A795715DD6060005E9C43 /* WindyTrees.mp4 */,
 			);
 			path = Movies;
-			sourceTree = "<group>";
-		};
-		48175E9215EE2AE7003EC5B7 /* Quartz */ = {
-			isa = PBXGroup;
-			children = (
-				48175EAE15EE2F15003EC5B7 /* QuartzViewController.h */,
-				48175EAF15EE2F15003EC5B7 /* QuartzViewController.m */,
-				48175EAC15EE2EF0003EC5B7 /* DemoView.xib */,
-				48175EA915EE2BAD003EC5B7 /* QuartzView.h */,
-				48175EAA15EE2BAD003EC5B7 /* QuartzView.m */,
-				48175E9315EE2AE7003EC5B7 /* QuartzBlending.h */,
-				48175E9415EE2AE7003EC5B7 /* QuartzBlending.m */,
-				48175E9515EE2AE7003EC5B7 /* QuartzClipping.h */,
-				48175E9615EE2AE7003EC5B7 /* QuartzClipping.m */,
-				48175E9715EE2AE7003EC5B7 /* QuartzCurves.h */,
-				48175E9815EE2AE7003EC5B7 /* QuartzCurves.m */,
-				48175E9915EE2AE7003EC5B7 /* QuartzImages.h */,
-				48175E9A15EE2AE7003EC5B7 /* QuartzImages.m */,
-				48175E9B15EE2AE7003EC5B7 /* QuartzLines.h */,
-				48175E9C15EE2AE7003EC5B7 /* QuartzLines.m */,
-				48175E9D15EE2AE7003EC5B7 /* QuartzPolygons.h */,
-				48175E9E15EE2AE7003EC5B7 /* QuartzPolygons.m */,
-				48175E9F15EE2AE7003EC5B7 /* QuartzRendering.h */,
-				48175EA015EE2AE7003EC5B7 /* QuartzRendering.m */,
-			);
-			path = Quartz;
 			sourceTree = "<group>";
 		};
 		4825554915DD76AF00737C61 /* ScalePNGs */ = {
@@ -756,7 +701,6 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
-				48175E9215EE2AE7003EC5B7 /* Quartz */,
 				487A1C8915E85115006C5C59 /* Constants.h */,
 				48A3561815E221AE00A3529D /* WikiView */,
 				484D16E315DAE471005FC66E /* Plists */,
@@ -999,7 +943,6 @@
 				4820B0AE15EDFE72003768DC /* TrebleClefViewController.xib in Resources */,
 				4820B0B015EE0414003768DC /* AeolianViewController.xib in Resources */,
 				4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */,
-				48175EAD15EE2EF0003EC5B7 /* DemoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1039,15 +982,6 @@
 				482555A315DD7A5400737C61 /* SolfegeFlatsViewController.m in Sources */,
 				4882981915E006BB00239B29 /* ChromaticCircleViewController.m in Sources */,
 				48A3562F15E2363F00A3529D /* WebViewController.m in Sources */,
-				48175EA115EE2AE7003EC5B7 /* QuartzBlending.m in Sources */,
-				48175EA215EE2AE7003EC5B7 /* QuartzClipping.m in Sources */,
-				48175EA315EE2AE7003EC5B7 /* QuartzCurves.m in Sources */,
-				48175EA415EE2AE7003EC5B7 /* QuartzImages.m in Sources */,
-				48175EA515EE2AE7003EC5B7 /* QuartzLines.m in Sources */,
-				48175EA615EE2AE7003EC5B7 /* QuartzPolygons.m in Sources */,
-				48175EA715EE2AE7003EC5B7 /* QuartzRendering.m in Sources */,
-				48175EAB15EE2BAD003EC5B7 /* QuartzView.m in Sources */,
-				48175EB015EE2F15003EC5B7 /* QuartzViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
