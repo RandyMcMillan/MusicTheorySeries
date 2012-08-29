@@ -17,6 +17,7 @@
     
     IBOutlet UIImageView *imageView;
     IBOutlet UIToolbar *toolBar;
+    IBOutlet UIBarButtonItem *closeButton;
     UILabel *label0;
     UILabel *label1;
     UILabel *label2;
@@ -50,5 +51,6 @@
 
 - (int)keyIndexForTouch:(UITouch *)touch;
 - (IBAction) mixerOutputGainChanged: (UISlider *) sender;
+- (IBAction) onDoneButtonPress:(id)sender;
 
 @end

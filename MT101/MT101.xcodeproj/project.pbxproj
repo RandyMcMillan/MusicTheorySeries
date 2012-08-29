@@ -43,6 +43,9 @@
 		480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795715DD6060005E9C43 /* WindyTrees.mp4 */; };
 		4820B0AA15EDDDC1003768DC /* TheGrandStaff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0A915EDDDC1003768DC /* TheGrandStaff.png */; };
 		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
+		4820B0AE15EDFE72003768DC /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */; };
+		4820B0B015EE0414003768DC /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AF15EE0413003768DC /* AeolianViewController.xib */; };
+		4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */; };
 		4825556F15DD76AF00737C61 /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825554B15DD76AF00737C61 /* Aeolian.png */; };
 		4825557115DD76AF00737C61 /* AltoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825554D15DD76AF00737C61 /* AltoClef.png */; };
 		4825557315DD76AF00737C61 /* BariToneClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825554F15DD76AF00737C61 /* BariToneClef.png */; };
@@ -71,7 +74,6 @@
 		482555A915DD7A9C00737C61 /* SolfegeNaturals.png in Resources */ = {isa = PBXBuildFile; fileRef = 482555A615DD7A9C00737C61 /* SolfegeNaturals.png */; };
 		482555AA15DD7A9C00737C61 /* SolfegeSharps.png in Resources */ = {isa = PBXBuildFile; fileRef = 482555A715DD7A9C00737C61 /* SolfegeSharps.png */; };
 		4825A36115C4DB2D006F0C46 /* AppleXylophoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4825A36215C4DB2D006F0C46 /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */; };
 		4825A36615C4DB43006F0C46 /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A36515C4DB43006F0C46 /* MixerHostAudio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4825A36815C4DBC3006F0C46 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */; };
 		4825A36A15C4DBCF006F0C46 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36915C4DBCF006F0C46 /* AVFoundation.framework */; };
@@ -93,7 +95,6 @@
 		48A3562F15E2363F00A3529D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3562E15E2363F00A3529D /* WebViewController.m */; };
 		48A3563115E2364600A3529D /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A3563015E2364600A3529D /* WebView.xib */; };
 		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
-		48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48D50A2215D88779009121C3 /* TrebleClefViewController.xib */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48E592BA15E9859A00299709 /* vib_0.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48E592A015E9859A00299709 /* vib_0.aif */; };
 		48E592BB15E9859A00299709 /* vib_1.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48E592A115E9859A00299709 /* vib_1.aif */; };
@@ -153,7 +154,6 @@
 		48FA4C0915DB03AB00FF91CA /* imageNameList4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4C0815DB03AB00FF91CA /* imageNameList4.plist */; };
 		48FA4C0B15DB03B200FF91CA /* imageNameList5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FA4C0A15DB03B200FF91CA /* imageNameList5.plist */; };
 		48FAB51E15CAF90A0087DCFA /* AeolianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */; };
 		48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */; };
 		48FAB52715CB13930087DCFA /* CircleOfFifthsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B225A72B1534CF59006FD46F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A72A1534CF59006FD46F /* UIKit.framework */; };
@@ -215,6 +215,9 @@
 		480A795715DD6060005E9C43 /* WindyTrees.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WindyTrees.mp4; sourceTree = "<group>"; };
 		4820B0A915EDDDC1003768DC /* TheGrandStaff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheGrandStaff.png; sourceTree = "<group>"; };
 		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
+		4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrebleClefViewController.xib; sourceTree = "<group>"; };
+		4820B0AF15EE0413003768DC /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AeolianViewController.xib; sourceTree = "<group>"; };
+		4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppleXylophoneViewController.xib; sourceTree = "<group>"; };
 		4825554B15DD76AF00737C61 /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
 		4825554D15DD76AF00737C61 /* AltoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AltoClef.png; sourceTree = "<group>"; };
 		4825554F15DD76AF00737C61 /* BariToneClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BariToneClef.png; sourceTree = "<group>"; };
@@ -247,7 +250,6 @@
 		482555A715DD7A9C00737C61 /* SolfegeSharps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SolfegeSharps.png; sourceTree = "<group>"; };
 		4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleXylophoneViewController.h; path = MT101/AppleXylophoneViewController.h; sourceTree = "<group>"; };
 		4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppleXylophoneViewController.m; path = MT101/AppleXylophoneViewController.m; sourceTree = "<group>"; };
-		4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AppleXylophoneViewController.xib; path = MT101/AppleXylophoneViewController.xib; sourceTree = "<group>"; };
 		4825A36415C4DB43006F0C46 /* MixerHostAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerHostAudio.h; sourceTree = "<group>"; };
 		4825A36515C4DB43006F0C46 /* MixerHostAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixerHostAudio.m; sourceTree = "<group>"; };
 		4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -276,7 +278,6 @@
 		48A3563015E2364600A3529D /* WebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
 		48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
-		48D50A2215D88779009121C3 /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrebleClefViewController.xib; path = MT101/TrebleClefViewController.xib; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
 		48E592A015E9859A00299709 /* vib_0.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_0.aif; sourceTree = "<group>"; };
 		48E592A115E9859A00299709 /* vib_1.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_1.aif; sourceTree = "<group>"; };
@@ -344,7 +345,6 @@
 		48FA4C0A15DB03B200FF91CA /* imageNameList5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageNameList5.plist; sourceTree = "<group>"; };
 		48FAB51C15CAF90A0087DCFA /* AeolianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeolianViewController.h; path = MT101/AeolianViewController.h; sourceTree = "<group>"; };
 		48FAB51D15CAF90A0087DCFA /* AeolianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AeolianViewController.m; path = MT101/AeolianViewController.m; sourceTree = "<group>"; };
-		48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AeolianViewController.xib; path = MT101/AeolianViewController.xib; sourceTree = "<group>"; };
 		48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CircleOfFifthsViewController.xib; path = MT101/CircleOfFifthsViewController.xib; sourceTree = "<group>"; };
 		48FAB52515CB13930087DCFA /* CircleOfFifthsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleOfFifthsViewController.h; path = MT101/CircleOfFifthsViewController.h; sourceTree = "<group>"; };
 		48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleOfFifthsViewController.m; path = MT101/CircleOfFifthsViewController.m; sourceTree = "<group>"; };
@@ -412,9 +412,9 @@
 			isa = PBXGroup;
 			children = (
 				480A792415DD59BD005E9C43 /* IonianViewController.xib */,
+				4820B0AF15EE0413003768DC /* AeolianViewController.xib */,
 				480A792915DD59DE005E9C43 /* DorianViewController.xib */,
 				480A792E15DD59EC005E9C43 /* PhrygianViewController.xib */,
-				48FAB51F15CAF93C0087DCFA /* AeolianViewController.xib */,
 				480A793315DD59F7005E9C43 /* LydianViewController.xib */,
 				480A793815DD5A04005E9C43 /* MixoLydianViewController.xib */,
 				480A793D15DD5A0F005E9C43 /* LocrianViewController.xib */,
@@ -638,16 +638,16 @@
 		48EEEF6915DC52D700D15F15 /* ClefXIBs */ = {
 			isa = PBXGroup;
 			children = (
+				4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */,
 				4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */,
+				4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */,
 				48EEEF5015DC4B4F00D15F15 /* TenorClefViewController.xib */,
 				48EEEF3615DC47DC00D15F15 /* SopranoClefViewController.xib */,
 				48EEEF6415DC4BBF00D15F15 /* MezzoSopranoClefViewController.xib */,
-				48D50A2215D88779009121C3 /* TrebleClefViewController.xib */,
 				48EEEF4115DC4A1600D15F15 /* AltoClefViewController.xib */,
 				48EEEF5515DC4B5E00D15F15 /* BariToneClefViewController.xib */,
 				48EEEF5F15DC4B7A00D15F15 /* SubBassClefViewController.xib */,
 				48EEEF5A15DC4B6B00D15F15 /* BassClefViewController.xib */,
-				4825A36015C4DB2D006F0C46 /* AppleXylophoneViewController.xib */,
 			);
 			name = ClefXIBs;
 			sourceTree = "<group>";
@@ -822,11 +822,8 @@
 				B225A75E1534D1D4006FD46F /* clouds.png in Resources */,
 				B225A76D1534D27F006FD46F /* greenlights.png in Resources */,
 				486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */,
-				4825A36215C4DB2D006F0C46 /* AppleXylophoneViewController.xib in Resources */,
-				48FAB52015CAF93C0087DCFA /* AeolianViewController.xib in Resources */,
 				48FAB52415CB13670087DCFA /* CircleOfFifthsViewController.xib in Resources */,
 				489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */,
-				48D50A2315D88779009121C3 /* TrebleClefViewController.xib in Resources */,
 				484D16E515DAE485005FC66E /* SectionHeaders.plist in Resources */,
 				48FA4BF015DAE7DA00FF91CA /* videoList0.plist in Resources */,
 				48FA4BF315DAE90D00FF91CA /* videoList1.plist in Resources */,
@@ -943,6 +940,9 @@
 				48E592D315E9859A00299709 /* vib_9.aif in Resources */,
 				4820B0AA15EDDDC1003768DC /* TheGrandStaff.png in Resources */,
 				4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */,
+				4820B0AE15EDFE72003768DC /* TrebleClefViewController.xib in Resources */,
+				4820B0B015EE0414003768DC /* AeolianViewController.xib in Resources */,
+				4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

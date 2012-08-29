@@ -38,12 +38,12 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">301</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="175598932">
+					<object class="IBUIImageView" id="599791114">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">301</int>
 						<string key="NSFrame">{{0, -185}, {768, 1152}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSNextKeyView" ref="747744430"/>
+						<reference key="NSNextKeyView" ref="720139391"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<int key="IBUIContentMode">1</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -53,7 +53,7 @@
 							<string key="NSResourceName">TheGrandStaff.png</string>
 						</object>
 					</object>
-					<object class="IBUIToolbar" id="829440482">
+					<object class="IBUIToolbar" id="475762228">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">271</int>
 						<string key="NSFrame">{{0, 724}, {768, 44}}</string>
@@ -63,31 +63,31 @@
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<array class="NSMutableArray" key="IBUIItems">
-							<object class="IBUIBarButtonItem" id="651691666">
+							<object class="IBUIBarButtonItem" id="236472106">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<reference key="IBUIToolbar" ref="829440482"/>
+								<reference key="IBUIToolbar" ref="475762228"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
-							<object class="IBUIBarButtonItem" id="515632802">
+							<object class="IBUIBarButtonItem" id="646057424">
 								<string key="IBUITitle">Close</string>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<float key="IBUIWidth">129</float>
 								<int key="IBUIStyle">1</int>
-								<reference key="IBUIToolbar" ref="829440482"/>
+								<reference key="IBUIToolbar" ref="475762228"/>
 							</object>
-							<object class="IBUIBarButtonItem" id="238174500">
+							<object class="IBUIBarButtonItem" id="1072612248">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<reference key="IBUIToolbar" ref="829440482"/>
+								<reference key="IBUIToolbar" ref="475762228"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
 						</array>
 					</object>
-					<object class="IBUISlider" id="747744430">
+					<object class="IBUISlider" id="720139391">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">268</int>
 						<string key="NSFrame">{{53, 677}, {105, 23}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSNextKeyView" ref="829440482"/>
+						<reference key="NSNextKeyView" ref="475762228"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -98,7 +98,7 @@
 				</array>
 				<string key="NSFrameSize">{768, 768}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSNextKeyView" ref="175598932"/>
+				<reference key="NSNextKeyView" ref="599791114"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -143,7 +143,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">imageView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="175598932"/>
+						<reference key="destination" ref="599791114"/>
 					</object>
 					<int key="connectionID">10</int>
 				</object>
@@ -151,14 +151,22 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">toolBar</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="829440482"/>
+						<reference key="destination" ref="475762228"/>
 					</object>
 					<int key="connectionID">11</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">closeButton</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="646057424"/>
+					</object>
+					<int key="connectionID">15</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">mixerOutputGainChanged:</string>
-						<reference key="source" ref="747744430"/>
+						<reference key="source" ref="720139391"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">13</int>
 					</object>
@@ -167,10 +175,10 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">onDoneButtonPress:</string>
-						<reference key="source" ref="515632802"/>
+						<reference key="source" ref="646057424"/>
 						<reference key="destination" ref="372490531"/>
 					</object>
-					<int key="connectionID">13</int>
+					<int key="connectionID">14</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -185,9 +193,9 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="191373211"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="829440482"/>
-							<reference ref="747744430"/>
-							<reference ref="175598932"/>
+							<reference ref="475762228"/>
+							<reference ref="720139391"/>
+							<reference ref="599791114"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -204,38 +212,38 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">3</int>
-						<reference key="object" ref="175598932"/>
+						<reference key="object" ref="599791114"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
-						<reference key="object" ref="829440482"/>
+						<reference key="object" ref="475762228"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="515632802"/>
-							<reference ref="651691666"/>
-							<reference ref="238174500"/>
+							<reference ref="646057424"/>
+							<reference ref="236472106"/>
+							<reference ref="1072612248"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">5</int>
-						<reference key="object" ref="747744430"/>
+						<reference key="object" ref="720139391"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">6</int>
-						<reference key="object" ref="515632802"/>
-						<reference key="parent" ref="829440482"/>
+						<reference key="object" ref="646057424"/>
+						<reference key="parent" ref="475762228"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">7</int>
-						<reference key="object" ref="651691666"/>
-						<reference key="parent" ref="829440482"/>
+						<reference key="object" ref="236472106"/>
+						<reference key="parent" ref="475762228"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">8</int>
-						<reference key="object" ref="238174500"/>
-						<reference key="parent" ref="829440482"/>
+						<reference key="object" ref="1072612248"/>
+						<reference key="parent" ref="475762228"/>
 					</object>
 				</array>
 			</object>
@@ -256,29 +264,37 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">13</int>
+			<int key="maxID">15</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">GrandStaffViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">mixerOutputGainChanged:</string>
-						<string key="NS.object.0">UISlider</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">mixerOutputGainChanged:</string>
-						<object class="IBActionInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="mixerOutputGainChanged:">UISlider</string>
+						<string key="onDoneButtonPress:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="mixerOutputGainChanged:">
 							<string key="name">mixerOutputGainChanged:</string>
 							<string key="candidateClassName">UISlider</string>
 						</object>
-					</object>
+						<object class="IBActionInfo" key="onDoneButtonPress:">
+							<string key="name">onDoneButtonPress:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="closeButton">UIBarButtonItem</string>
 						<string key="imageView">UIImageView</string>
 						<string key="toolBar">UIToolbar</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="closeButton">
+							<string key="name">closeButton</string>
+							<string key="candidateClassName">UIBarButtonItem</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="imageView">
 							<string key="name">imageView</string>
 							<string key="candidateClassName">UIImageView</string>
