@@ -52,27 +52,13 @@
 		4825557515DD76AF00737C61 /* BassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825555115DD76AF00737C61 /* BassClef.png */; };
 		4825557715DD76AF00737C61 /* CircleOfFifths.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825555315DD76AF00737C61 /* CircleOfFifths.png */; };
 		4825557915DD76AF00737C61 /* Dorian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825555515DD76AF00737C61 /* Dorian.png */; };
-		4825557B15DD76AF00737C61 /* Ionian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825555715DD76AF00737C61 /* Ionian.png */; };
-		4825557D15DD76AF00737C61 /* Locrian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825555915DD76AF00737C61 /* Locrian.png */; };
-		4825557F15DD76AF00737C61 /* Lydian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825555B15DD76AF00737C61 /* Lydian.png */; };
-		4825558115DD76AF00737C61 /* MezzoSopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825555D15DD76AF00737C61 /* MezzoSopranoClef.png */; };
-		4825558315DD76AF00737C61 /* Phrygian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825555F15DD76AF00737C61 /* Phrygian.png */; };
-		4825558515DD76AF00737C61 /* Soprano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556115DD76AF00737C61 /* Soprano.png */; };
-		4825558715DD76AF00737C61 /* SopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556315DD76AF00737C61 /* SopranoClef.png */; };
-		4825558915DD76AF00737C61 /* SubBassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556515DD76AF00737C61 /* SubBassClef.png */; };
-		4825558B15DD76AF00737C61 /* TenorClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556715DD76AF00737C61 /* TenorClef.png */; };
-		4825558F15DD76AF00737C61 /* TrebleClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556B15DD76AF00737C61 /* TrebleClef.png */; };
 		4825559115DD76AF00737C61 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556D15DD76AF00737C61 /* welcome.png */; };
-		4825559315DD773300737C61 /* MixoLydian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825559215DD773300737C61 /* MixoLydian.png */; };
 		4825559915DD7A3000737C61 /* SolfegeNaturalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */; };
 		4825559A15DD7A3000737C61 /* SolfegeNaturalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4825559815DD7A3000737C61 /* SolfegeNaturalsViewController.xib */; };
 		4825559E15DD7A4C00737C61 /* SolfegeSharpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559C15DD7A4C00737C61 /* SolfegeSharpsViewController.m */; };
 		4825559F15DD7A4C00737C61 /* SolfegeSharpsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4825559D15DD7A4C00737C61 /* SolfegeSharpsViewController.xib */; };
 		482555A315DD7A5400737C61 /* SolfegeFlatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482555A115DD7A5400737C61 /* SolfegeFlatsViewController.m */; };
 		482555A415DD7A5400737C61 /* SolfegeFlatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482555A215DD7A5400737C61 /* SolfegeFlatsViewController.xib */; };
-		482555A815DD7A9C00737C61 /* SolfegeFlats.png in Resources */ = {isa = PBXBuildFile; fileRef = 482555A515DD7A9C00737C61 /* SolfegeFlats.png */; };
-		482555A915DD7A9C00737C61 /* SolfegeNaturals.png in Resources */ = {isa = PBXBuildFile; fileRef = 482555A615DD7A9C00737C61 /* SolfegeNaturals.png */; };
-		482555AA15DD7A9C00737C61 /* SolfegeSharps.png in Resources */ = {isa = PBXBuildFile; fileRef = 482555A715DD7A9C00737C61 /* SolfegeSharps.png */; };
 		4825A36115C4DB2D006F0C46 /* AppleXylophoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4825A36615C4DB43006F0C46 /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A36515C4DB43006F0C46 /* MixerHostAudio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4825A36815C4DBC3006F0C46 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */; };
@@ -98,6 +84,11 @@
 		48A3563115E2364600A3529D /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A3563015E2364600A3529D /* WebView.xib */; };
 		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		48E0C4BF15EFF1AB001A2748 /* TrebleClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4BE15EFF1AB001A2748 /* TrebleClef.png */; };
+		48E0C4C215EFF221001A2748 /* SopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4C115EFF221001A2748 /* SopranoClef.png */; };
+		48E0C4C415EFF2B9001A2748 /* MezzoSopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4C315EFF2B9001A2748 /* MezzoSopranoClef.png */; };
+		48E0C4C615EFF3D4001A2748 /* TenorClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4C515EFF3D4001A2748 /* TenorClef.png */; };
+		48E0C4C815EFF4D3001A2748 /* SubBassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4C715EFF4D3001A2748 /* SubBassClef.png */; };
 		48E592BA15E9859A00299709 /* vib_0.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48E592A015E9859A00299709 /* vib_0.aif */; };
 		48E592BB15E9859A00299709 /* vib_1.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48E592A115E9859A00299709 /* vib_1.aif */; };
 		48E592BC15E9859A00299709 /* vib_10.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48E592A215E9859A00299709 /* vib_10.aif */; };
@@ -226,18 +217,7 @@
 		4825555115DD76AF00737C61 /* BassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BassClef.png; sourceTree = "<group>"; };
 		4825555315DD76AF00737C61 /* CircleOfFifths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleOfFifths.png; sourceTree = "<group>"; };
 		4825555515DD76AF00737C61 /* Dorian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dorian.png; sourceTree = "<group>"; };
-		4825555715DD76AF00737C61 /* Ionian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ionian.png; sourceTree = "<group>"; };
-		4825555915DD76AF00737C61 /* Locrian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locrian.png; sourceTree = "<group>"; };
-		4825555B15DD76AF00737C61 /* Lydian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lydian.png; sourceTree = "<group>"; };
-		4825555D15DD76AF00737C61 /* MezzoSopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MezzoSopranoClef.png; sourceTree = "<group>"; };
-		4825555F15DD76AF00737C61 /* Phrygian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phrygian.png; sourceTree = "<group>"; };
-		4825556115DD76AF00737C61 /* Soprano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Soprano.png; sourceTree = "<group>"; };
-		4825556315DD76AF00737C61 /* SopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SopranoClef.png; sourceTree = "<group>"; };
-		4825556515DD76AF00737C61 /* SubBassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubBassClef.png; sourceTree = "<group>"; };
-		4825556715DD76AF00737C61 /* TenorClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TenorClef.png; sourceTree = "<group>"; };
-		4825556B15DD76AF00737C61 /* TrebleClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrebleClef.png; sourceTree = "<group>"; };
 		4825556D15DD76AF00737C61 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome.png; path = Art/ScalePNGs/welcome.png; sourceTree = "<group>"; };
-		4825559215DD773300737C61 /* MixoLydian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MixoLydian.png; sourceTree = "<group>"; };
 		4825559615DD7A3000737C61 /* SolfegeNaturalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeNaturalsViewController.h; sourceTree = "<group>"; };
 		4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolfegeNaturalsViewController.m; sourceTree = "<group>"; };
 		4825559815DD7A3000737C61 /* SolfegeNaturalsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SolfegeNaturalsViewController.xib; sourceTree = "<group>"; };
@@ -247,9 +227,6 @@
 		482555A015DD7A5400737C61 /* SolfegeFlatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeFlatsViewController.h; sourceTree = "<group>"; };
 		482555A115DD7A5400737C61 /* SolfegeFlatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolfegeFlatsViewController.m; sourceTree = "<group>"; };
 		482555A215DD7A5400737C61 /* SolfegeFlatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SolfegeFlatsViewController.xib; sourceTree = "<group>"; };
-		482555A515DD7A9C00737C61 /* SolfegeFlats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SolfegeFlats.png; sourceTree = "<group>"; };
-		482555A615DD7A9C00737C61 /* SolfegeNaturals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SolfegeNaturals.png; sourceTree = "<group>"; };
-		482555A715DD7A9C00737C61 /* SolfegeSharps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SolfegeSharps.png; sourceTree = "<group>"; };
 		4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleXylophoneViewController.h; path = MT101/AppleXylophoneViewController.h; sourceTree = "<group>"; };
 		4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppleXylophoneViewController.m; path = MT101/AppleXylophoneViewController.m; sourceTree = "<group>"; };
 		4825A36415C4DB43006F0C46 /* MixerHostAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerHostAudio.h; sourceTree = "<group>"; };
@@ -284,6 +261,11 @@
 		48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
+		48E0C4BE15EFF1AB001A2748 /* TrebleClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrebleClef.png; sourceTree = "<group>"; };
+		48E0C4C115EFF221001A2748 /* SopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SopranoClef.png; sourceTree = "<group>"; };
+		48E0C4C315EFF2B9001A2748 /* MezzoSopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MezzoSopranoClef.png; sourceTree = "<group>"; };
+		48E0C4C515EFF3D4001A2748 /* TenorClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TenorClef.png; sourceTree = "<group>"; };
+		48E0C4C715EFF4D3001A2748 /* SubBassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubBassClef.png; sourceTree = "<group>"; };
 		48E592A015E9859A00299709 /* vib_0.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_0.aif; sourceTree = "<group>"; };
 		48E592A115E9859A00299709 /* vib_1.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_1.aif; sourceTree = "<group>"; };
 		48E592A215E9859A00299709 /* vib_10.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_10.aif; sourceTree = "<group>"; };
@@ -460,28 +442,19 @@
 		4825554915DD76AF00737C61 /* ScalePNGs */ = {
 			isa = PBXGroup;
 			children = (
+				48E0C4C715EFF4D3001A2748 /* SubBassClef.png */,
 				4820B0A915EDDDC1003768DC /* TheGrandStaff.png */,
-				482555A515DD7A9C00737C61 /* SolfegeFlats.png */,
-				482555A615DD7A9C00737C61 /* SolfegeNaturals.png */,
-				482555A715DD7A9C00737C61 /* SolfegeSharps.png */,
+				48E0C4C515EFF3D4001A2748 /* TenorClef.png */,
+				48E0C4BE15EFF1AB001A2748 /* TrebleClef.png */,
 				4825554B15DD76AF00737C61 /* Aeolian.png */,
+				48E0C4C115EFF221001A2748 /* SopranoClef.png */,
+				48E0C4C315EFF2B9001A2748 /* MezzoSopranoClef.png */,
 				4825554D15DD76AF00737C61 /* AltoClef.png */,
 				4825554F15DD76AF00737C61 /* BariToneClef.png */,
 				4825555115DD76AF00737C61 /* BassClef.png */,
 				4825555315DD76AF00737C61 /* CircleOfFifths.png */,
 				4882981D15E00AE500239B29 /* ChromaticCircle.png */,
 				4825555515DD76AF00737C61 /* Dorian.png */,
-				4825555715DD76AF00737C61 /* Ionian.png */,
-				4825555915DD76AF00737C61 /* Locrian.png */,
-				4825555B15DD76AF00737C61 /* Lydian.png */,
-				4825559215DD773300737C61 /* MixoLydian.png */,
-				4825555D15DD76AF00737C61 /* MezzoSopranoClef.png */,
-				4825555F15DD76AF00737C61 /* Phrygian.png */,
-				4825556115DD76AF00737C61 /* Soprano.png */,
-				4825556315DD76AF00737C61 /* SopranoClef.png */,
-				4825556515DD76AF00737C61 /* SubBassClef.png */,
-				4825556715DD76AF00737C61 /* TenorClef.png */,
-				4825556B15DD76AF00737C61 /* TrebleClef.png */,
 			);
 			name = ScalePNGs;
 			path = Art/ScalePNGs;
@@ -891,24 +864,10 @@
 				4825557515DD76AF00737C61 /* BassClef.png in Resources */,
 				4825557715DD76AF00737C61 /* CircleOfFifths.png in Resources */,
 				4825557915DD76AF00737C61 /* Dorian.png in Resources */,
-				4825557B15DD76AF00737C61 /* Ionian.png in Resources */,
-				4825557D15DD76AF00737C61 /* Locrian.png in Resources */,
-				4825557F15DD76AF00737C61 /* Lydian.png in Resources */,
-				4825558115DD76AF00737C61 /* MezzoSopranoClef.png in Resources */,
-				4825558315DD76AF00737C61 /* Phrygian.png in Resources */,
-				4825558515DD76AF00737C61 /* Soprano.png in Resources */,
-				4825558715DD76AF00737C61 /* SopranoClef.png in Resources */,
-				4825558915DD76AF00737C61 /* SubBassClef.png in Resources */,
-				4825558B15DD76AF00737C61 /* TenorClef.png in Resources */,
-				4825558F15DD76AF00737C61 /* TrebleClef.png in Resources */,
 				4825559115DD76AF00737C61 /* welcome.png in Resources */,
-				4825559315DD773300737C61 /* MixoLydian.png in Resources */,
 				4825559A15DD7A3000737C61 /* SolfegeNaturalsViewController.xib in Resources */,
 				4825559F15DD7A4C00737C61 /* SolfegeSharpsViewController.xib in Resources */,
 				482555A415DD7A5400737C61 /* SolfegeFlatsViewController.xib in Resources */,
-				482555A815DD7A9C00737C61 /* SolfegeFlats.png in Resources */,
-				482555A915DD7A9C00737C61 /* SolfegeNaturals.png in Resources */,
-				482555AA15DD7A9C00737C61 /* SolfegeSharps.png in Resources */,
 				4882981A15E006BB00239B29 /* ChromaticCircleViewController.xib in Resources */,
 				4882981C15E009B900239B29 /* Chromatic Circle.mp4 in Resources */,
 				4882981E15E00AE500239B29 /* ChromaticCircle.png in Resources */,
@@ -952,6 +911,11 @@
 				4820B0B015EE0414003768DC /* AeolianViewController.xib in Resources */,
 				4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */,
 				484B93B215EF003D0021F939 /* error.html in Resources */,
+				48E0C4BF15EFF1AB001A2748 /* TrebleClef.png in Resources */,
+				48E0C4C215EFF221001A2748 /* SopranoClef.png in Resources */,
+				48E0C4C415EFF2B9001A2748 /* MezzoSopranoClef.png in Resources */,
+				48E0C4C615EFF3D4001A2748 /* TenorClef.png in Resources */,
+				48E0C4C815EFF4D3001A2748 /* SubBassClef.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
