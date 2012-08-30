@@ -67,6 +67,7 @@
 						<string key="NSFrame">{{0, 276}, {480, 44}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -99,7 +100,8 @@
 							<object class="IBUIBarButtonItem" id="58891358">
 								<string key="IBUITitle">Done</string>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<int key="IBUIStyle">2</int>
+								<float key="IBUIWidth">128</float>
+								<int key="IBUIStyle">1</int>
 								<reference key="IBUIToolbar" ref="293929079"/>
 							</object>
 							<object class="IBUIBarButtonItem" id="590212015">
