@@ -268,8 +268,8 @@
 		48E0C4C315EFF2B9001A2748 /* MezzoSopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MezzoSopranoClef.png; sourceTree = "<group>"; };
 		48E0C4C515EFF3D4001A2748 /* TenorClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TenorClef.png; sourceTree = "<group>"; };
 		48E0C4C715EFF4D3001A2748 /* SubBassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubBassClef.png; sourceTree = "<group>"; };
-		48E0C4CD15F0054F001A2748 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
-		48E0C4D015F00561001A2748 /* Default@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~ipad.png"; sourceTree = "<group>"; };
+		48E0C4CD15F0054F001A2748 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		48E0C4D015F00561001A2748 /* Default@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x~ipad.png"; path = "../Default@2x~ipad.png"; sourceTree = "<group>"; };
 		48E592A015E9859A00299709 /* vib_0.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_0.aif; sourceTree = "<group>"; };
 		48E592A115E9859A00299709 /* vib_1.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_1.aif; sourceTree = "<group>"; };
 		48E592A215E9859A00299709 /* vib_10.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_10.aif; sourceTree = "<group>"; };
@@ -686,8 +686,6 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
-				48E0C4D015F00561001A2748 /* Default@2x~ipad.png */,
-				48E0C4CD15F0054F001A2748 /* Default-Landscape@2x~ipad.png */,
 				487A1C8915E85115006C5C59 /* Constants.h */,
 				48A3561815E221AE00A3529D /* WikiView */,
 				484D16E315DAE471005FC66E /* Plists */,
@@ -736,11 +734,13 @@
 				48E5929F15E9859A00299709 /* Audio */,
 				480A794015DD6060005E9C43 /* Movies */,
 				489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */,
+				48E0C4CD15F0054F001A2748 /* Default-Landscape@2x~ipad.png */,
+				48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */,
 				48EEEF7115DC54DF00D15F15 /* Default-Portrait@2x~ipad.png */,
 				48EEEF6F15DC54D700D15F15 /* Default-Portrait~ipad.png */,
+				48E0C4D015F00561001A2748 /* Default@2x~ipad.png */,
 				48EEEF6D15DC549A00D15F15 /* icon-72@2x.png */,
 				48EEEF6B15DC549300D15F15 /* icon-72.png */,
-				48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */,
 				48FAB51B15CAF8B30087DCFA /* Art */,
 				4825A36415C4DB43006F0C46 /* MixerHostAudio.h */,
 				4825A36515C4DB43006F0C46 /* MixerHostAudio.m */,
