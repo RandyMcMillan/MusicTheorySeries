@@ -79,7 +79,7 @@
 #endif
 
 #ifndef kXOrientationAdjustiPhone
-#define kXOrientationAdjustiPhone   0
+#define kXOrientationAdjustiPhone  0
 #endif
 
 #ifndef kYOrientationAdjustiPhone
