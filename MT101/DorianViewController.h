@@ -14,7 +14,7 @@
 @interface DorianViewController : UIViewController <UISplitViewControllerDelegate>{
     int                 lastKeyIndex;
     CGRect              keyRects[KEY_COUNT];
-    
+
     IBOutlet UIImageView *imageView;
     IBOutlet UIToolbar *toolBar;
     IBOutlet UIBarButtonItem *closeButton;
@@ -44,7 +44,7 @@
     UILabel *label23;
     UILabel *label24;
     UILabel *label25;
-    
+
 }
 
 @property (nonatomic, assign) MixerHostAudio *mixerHost;

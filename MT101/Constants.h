@@ -50,40 +50,40 @@
 // padding for margins
 
 // for general screen
-#define kLeftMargin				20.0
-#define kTopMargin				20.0
-#define kRightMargin			20.0
-#define kTweenMargin			6.0
+#define kLeftMargin             20.0
+#define kTopMargin              20.0
+#define kRightMargin            20.0
+#define kTweenMargin            6.0
 
-#define kTextFieldHeight		30.0
+#define kTextFieldHeight        30.0
 
-#define KEY_COUNT 26
+#define KEY_COUNT               26
 
-#define VIEWBOUNDS [[UIScreen mainScreen] bounds] 
+#define VIEWBOUNDS [[UIScreen mainScreen] bounds]
 
 #ifndef IS_IPAD
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #endif
 
-#define BIGBOXWIDTH 90
-#define BIGBOXHEIGHT 90
-#define SMALLBOXWIDTH 50
-#define SMALLBOXHEIGHT 50
+#define BIGBOXWIDTH             90
+#define BIGBOXHEIGHT            90
+#define SMALLBOXWIDTH           50
+#define SMALLBOXHEIGHT          50
 
 #ifndef kXOrientationAdjustiPad
-#define  kXOrientationAdjustiPad  0
+#define kXOrientationAdjustiPad 0
 #endif
 
-#ifndef  kYOrientationAdjustiPad
-#define  kYOrientationAdjustiPad  0
+#ifndef kYOrientationAdjustiPad
+#define kYOrientationAdjustiPad 0
 #endif
 
 #ifndef kXOrientationAdjustiPhone
-#define  kXOrientationAdjustiPhone  0
+#define kXOrientationAdjustiPhone   0
 #endif
 
 #ifndef kYOrientationAdjustiPhone
-#define  kYOrientationAdjustiPhone  0
+#define kYOrientationAdjustiPhone  0
 #endif
 
 #define DO  [UIColor colorWithRed:1.000 green:1.000 blue:0.043 alpha:1.000]

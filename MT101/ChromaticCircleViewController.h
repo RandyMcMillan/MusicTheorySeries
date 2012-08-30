@@ -14,19 +14,19 @@
 @interface ChromaticCircleViewController : UIViewController <UISplitViewControllerDelegate>{
     int                 lastKeyIndex;
     CGRect              keyRects[KEY_COUNT];
-    
+
     IBOutlet UIImageView *imageView;
     IBOutlet UIToolbar *toolBar;
-     UILabel *label0;
-     UILabel *label1;
-     UILabel *label2;
-     UILabel *label3;
-     UILabel *label4;
-     UILabel *label5;
-     UILabel *label6;
-     UILabel *label7;
-     UILabel *label8;
-     UILabel *label9;
+    UILabel *label0;
+    UILabel *label1;
+    UILabel *label2;
+    UILabel *label3;
+    UILabel *label4;
+    UILabel *label5;
+    UILabel *label6;
+    UILabel *label7;
+    UILabel *label8;
+    UILabel *label9;
     UILabel *label10;
     UILabel *label11;
     UILabel *label12;

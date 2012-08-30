@@ -316,7 +316,7 @@
     [self.view addSubview:label10];
     [self.view addSubview:label11];
     [self.view addSubview:label12];
-    //minors
+//minors
     [self.view addSubview:label13];
     [self.view addSubview:label14];
     [self.view addSubview:label15];
