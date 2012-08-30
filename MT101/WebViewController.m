@@ -180,10 +180,13 @@
     //[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 
     // report the error inside the webview
-    NSString* errorString = [NSString stringWithFormat:
-                                 @"<html><center><font size=+5 color='red'>An error occurred:<br>%@</font></center></html>",
-                             error.localizedDescription];
-    [self.webView loadHTMLString:errorString baseURL:nil];
+ //   NSString* errorString = [NSString stringWithFormat:
+   //                              @"<html><center><font size=+5 color='red'>An error occurred:<br>%@</font></center></html>",
+     //                        error.localizedDescription];
+    //[self.webView loadHTMLString:errorString baseURL:nil];
+    
+    //from RESOURCES,
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"error" ofType:@"html"]isDirectory:NO]]];
 }
 
 
