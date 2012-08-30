@@ -8,6 +8,7 @@
 
 #import "WebViewController.h"
 #import "Constants.h"
+#import "iScrollPlugin_JS.h"
 
 
 @implementation WebViewController
@@ -186,7 +187,26 @@
     //[self.webView loadHTMLString:errorString baseURL:nil];
     
     //from RESOURCES,
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"error" ofType:@"html"]isDirectory:NO]]];
+    //[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"error" ofType:@"html"]isDirectory:NO]]];
+    
+    NSString *page = @"index.html";//(NSString*) [arguments objectAtIndex:0];//recieve page from cordovaRef.exec("iScrollPlugin.init", page);
+    NSLog(@"page = %@", page);
+    //CDVViewController* cont = (CDVViewController*)[ super viewController ];//create pointer to the app's MainViewController
+    NSString *pagePath = [NSString stringWithFormat:@"%@", page];//format pagePath to be usable
+    NSLog(@"indexPath = %@",pagePath);
+    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@", pagePath] ofType:nil];//path becomes full URI to page
+    NSFileHandle *bodyHandle = [NSFileHandle fileHandleForReadingAtPath:path];
+    NSString *bodyString = [[NSString alloc] initWithData: [bodyHandle readDataToEndOfFile] encoding:NSUTF8StringEncoding];//bodyString contains page
+    NSString* endBodyTag = @"</body>";
+    NSString* htmlTextFloat = [ bodyString stringByReplacingOccurrencesOfString:@"</body>" withString:kISCROLL_JS];
+    NSString* htmlText = [NSString stringWithFormat:@"%@%@", htmlTextFloat,endBodyTag];//concat htmlFloat and endBodyTag
+ //   self.view.backgroundColor = [UIColor colorWithRed:0.043 green:0.125 blue:0.157 alpha:1.000];
+   // self.webView.backgroundColor = [UIColor colorWithRed:0.043 green:0.125 blue:0.157 alpha:1.000];
+    //[self hideGradientBackground:cont.webView];
+    [self.webView loadHTMLString:htmlText baseURL:[NSURL URLWithString:path]];
+
+    
+    
 }
 
 
