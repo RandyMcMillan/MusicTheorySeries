@@ -198,7 +198,7 @@
           //                    SMALLBOXHEIGHT// 1/6th width of screen
             //                  );//do
 
-    #if TARGET_IPHONE_SIMULATOR
+//    #if TARGET_IPHONE_SIMULATOR
 
     //For your convience in configuring keyRects. Pink Transparencies only displayed in Simulator
 
@@ -334,7 +334,7 @@
     [self.view addSubview:label24];
     [self.view addSubview:label25];
 
-    #endif
+//    #endif
 
 
 }

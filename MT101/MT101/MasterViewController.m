@@ -343,11 +343,11 @@
     }
     
     if (toInterfaceOrientation == UIInterfaceOrientationPortrait){
-        return YES;
+        return NO;//YES;
     }
     
     if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
-        return YES;
+        return NO;//YES;
     } else {return NO;}
     
 }
