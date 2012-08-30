@@ -74,6 +74,7 @@
 						<string key="NSFrame">{{-97, 724}, {960, 44}}</string>
 						<reference key="NSSuperview" ref="31743512"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -87,7 +88,7 @@
 							<object class="IBUIBarButtonItem" id="528961679">
 								<string key="IBUITitle">Close</string>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<float key="IBUIWidth">129</float>
+								<float key="IBUIWidth">216</float>
 								<int key="IBUIStyle">1</int>
 								<reference key="IBUIToolbar" ref="466441944"/>
 							</object>

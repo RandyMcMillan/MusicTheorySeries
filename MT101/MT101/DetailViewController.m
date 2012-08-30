@@ -72,6 +72,9 @@
 
         GrandStaffViewController *theGrandStaffVC = [[GrandStaffViewController alloc]init];
         theGrandStaffVC.modalPresentationStyle = UIModalPresentationPageSheet;
+        
+        //[self.view addSubview:theGrandStaffVC.view];//fot future consoderation
+        
         [self presentModalViewController:theGrandStaffVC animated:YES];
 
     }

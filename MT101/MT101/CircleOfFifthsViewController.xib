@@ -87,7 +87,7 @@
 							<object class="IBUIBarButtonItem" id="961735096">
 								<string key="IBUITitle">Close</string>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<float key="IBUIWidth">129</float>
+								<float key="IBUIWidth">216</float>
 								<int key="IBUIStyle">1</int>
 								<reference key="IBUIToolbar" ref="620074846"/>
 							</object>
@@ -251,17 +251,20 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">CircleOfFifthsViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">mixerOutputGainChanged:</string>
-						<string key="NS.object.0">UISlider</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">mixerOutputGainChanged:</string>
-						<object class="IBActionInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="mixerOutputGainChanged:">UISlider</string>
+						<string key="onDoneButtonPress:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="mixerOutputGainChanged:">
 							<string key="name">mixerOutputGainChanged:</string>
 							<string key="candidateClassName">UISlider</string>
 						</object>
-					</object>
+						<object class="IBActionInfo" key="onDoneButtonPress:">
+							<string key="name">onDoneButtonPress:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="imageView">UIImageView</string>
 						<string key="toolBar">UIToolbar</string>
