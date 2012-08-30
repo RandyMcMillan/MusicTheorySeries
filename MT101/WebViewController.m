@@ -54,6 +54,8 @@
     fwdBtn.image = [UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/arrow_right"]];
     safariBtn.image = [UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/compass"]];
 
+    refreshBtn.enabled = TRUE;
+    safariBtn.enabled = TRUE;
     backBtn.enabled = webView.canGoBack;
     fwdBtn.enabled = webView.canGoForward;
 
@@ -159,7 +161,17 @@
 
     NSURLRequest *request = webView.request;
     NSLog(@"New Address is : %@",request.URL.absoluteString);
-    addressLabel.text = request.URL.absoluteString;
+    
+    if ([request.URL.absoluteString hasPrefix:@"file:///"]) {
+        
+        addressLabel.text = @"Music Theory 101 appears to be offline.";
+    
+    
+    } else {
+        
+       addressLabel.text = request.URL.absoluteString;
+    
+    }
 
     backBtn.enabled = webView.canGoBack;
     fwdBtn.enabled = webView.canGoForward;
@@ -189,7 +201,7 @@
     //from RESOURCES,
     //[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"error" ofType:@"html"]isDirectory:NO]]];
     
-    NSString *page = @"index.html";//(NSString*) [arguments objectAtIndex:0];//recieve page from cordovaRef.exec("iScrollPlugin.init", page);
+    NSString *page = @"error.html";//(NSString*) [arguments objectAtIndex:0];//recieve page from cordovaRef.exec("iScrollPlugin.init", page);
     NSLog(@"page = %@", page);
     //CDVViewController* cont = (CDVViewController*)[ super viewController ];//create pointer to the app's MainViewController
     NSString *pagePath = [NSString stringWithFormat:@"%@", page];//format pagePath to be usable
@@ -205,7 +217,8 @@
     //[self hideGradientBackground:cont.webView];
     [self.webView loadHTMLString:htmlText baseURL:[NSURL URLWithString:path]];
 
-    
+    refreshBtn.enabled = FALSE;
+    safariBtn.enabled = FALSE;
     
 }
 
