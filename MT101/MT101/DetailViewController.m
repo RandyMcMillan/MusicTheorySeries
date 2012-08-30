@@ -374,6 +374,9 @@
     if (self.detailItem) {
        // MovieToPlay = @"GreenBeam";
     }
+    
+    self.imageView.backgroundColor = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
+    [self.imageView.layer setCornerRadius:8.0f];
 
     NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleVersionKey];
     NSLog(@"appVersion = %@",appVersion);
