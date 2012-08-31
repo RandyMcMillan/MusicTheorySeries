@@ -7,38 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4809062615F03C66003115F3 /* Aeolian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809060615F03C66003115F3 /* Aeolian.ai */; };
-		4809062715F03C66003115F3 /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809060715F03C66003115F3 /* Aeolian.png */; };
-		4809062815F03C66003115F3 /* AltoClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809060815F03C66003115F3 /* AltoClef.ai */; };
-		4809062915F03C66003115F3 /* AltoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809060915F03C66003115F3 /* AltoClef.png */; };
-		4809062A15F03C66003115F3 /* BariToneClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809060A15F03C66003115F3 /* BariToneClef.ai */; };
-		4809062B15F03C66003115F3 /* BariToneClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809060B15F03C66003115F3 /* BariToneClef.png */; };
-		4809062C15F03C66003115F3 /* BassClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809060C15F03C66003115F3 /* BassClef.ai */; };
-		4809062D15F03C66003115F3 /* BassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809060D15F03C66003115F3 /* BassClef.png */; };
-		4809062E15F03C66003115F3 /* ChromaticCircle.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809060E15F03C66003115F3 /* ChromaticCircle.ai */; };
-		4809062F15F03C66003115F3 /* ChromaticCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809060F15F03C66003115F3 /* ChromaticCircle.png */; };
-		4809063015F03C66003115F3 /* CircleOfFifths.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061015F03C66003115F3 /* CircleOfFifths.ai */; };
-		4809063115F03C66003115F3 /* CircleOfFifths.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061115F03C66003115F3 /* CircleOfFifths.png */; };
-		4809063215F03C66003115F3 /* Dorian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061215F03C66003115F3 /* Dorian.ai */; };
-		4809063315F03C66003115F3 /* Dorian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061315F03C66003115F3 /* Dorian.png */; };
-		4809063415F03C66003115F3 /* Ionian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061415F03C66003115F3 /* Ionian.ai */; };
-		4809063515F03C66003115F3 /* Ionian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061515F03C66003115F3 /* Ionian.png */; };
-		4809063615F03C66003115F3 /* MezzoSopranoClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061615F03C66003115F3 /* MezzoSopranoClef.ai */; };
-		4809063715F03C66003115F3 /* MezzoSopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061715F03C66003115F3 /* MezzoSopranoClef.png */; };
-		4809063815F03C66003115F3 /* Phrygian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061815F03C66003115F3 /* Phrygian.ai */; };
-		4809063915F03C66003115F3 /* Phrygian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061915F03C66003115F3 /* Phrygian.png */; };
-		4809063A15F03C66003115F3 /* SopranoClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061A15F03C66003115F3 /* SopranoClef.ai */; };
-		4809063B15F03C66003115F3 /* SopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061B15F03C66003115F3 /* SopranoClef.png */; };
-		4809063C15F03C66003115F3 /* SubBassClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061C15F03C66003115F3 /* SubBassClef.ai */; };
-		4809063D15F03C66003115F3 /* SubBassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061D15F03C66003115F3 /* SubBassClef.png */; };
-		4809063E15F03C66003115F3 /* TenorClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061E15F03C66003115F3 /* TenorClef.ai */; };
-		4809063F15F03C66003115F3 /* TenorClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061F15F03C66003115F3 /* TenorClef.png */; };
-		4809064015F03C66003115F3 /* TheGrandStaff.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809062015F03C66003115F3 /* TheGrandStaff.ai */; };
-		4809064115F03C66003115F3 /* TheGrandStaff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809062115F03C66003115F3 /* TheGrandStaff.png */; };
-		4809064215F03C66003115F3 /* TrebleClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809062215F03C66003115F3 /* TrebleClef.ai */; };
-		4809064315F03C66003115F3 /* TrebleClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809062315F03C66003115F3 /* TrebleClef.png */; };
-		4809064415F03C66003115F3 /* welcome.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809062415F03C66003115F3 /* welcome.ai */; };
-		4809064515F03C66003115F3 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809062515F03C66003115F3 /* welcome.png */; };
+		4809066D15F03DFD003115F3 /* Aeolian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809064715F03DFD003115F3 /* Aeolian.ai */; };
+		4809066E15F03DFD003115F3 /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809064815F03DFD003115F3 /* Aeolian.png */; };
+		4809066F15F03DFD003115F3 /* AltoClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809064915F03DFD003115F3 /* AltoClef.ai */; };
+		4809067015F03DFD003115F3 /* AltoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809064A15F03DFD003115F3 /* AltoClef.png */; };
+		4809067115F03DFD003115F3 /* BariToneClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809064B15F03DFD003115F3 /* BariToneClef.ai */; };
+		4809067215F03DFD003115F3 /* BariToneClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809064C15F03DFD003115F3 /* BariToneClef.png */; };
+		4809067315F03DFD003115F3 /* BassClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809064D15F03DFD003115F3 /* BassClef.ai */; };
+		4809067415F03DFD003115F3 /* BassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809064E15F03DFD003115F3 /* BassClef.png */; };
+		4809067515F03DFD003115F3 /* ChromaticCircle.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809064F15F03DFD003115F3 /* ChromaticCircle.ai */; };
+		4809067615F03DFD003115F3 /* ChromaticCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809065015F03DFD003115F3 /* ChromaticCircle.png */; };
+		4809067715F03DFD003115F3 /* CircleOfFifths.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809065115F03DFD003115F3 /* CircleOfFifths.ai */; };
+		4809067815F03DFD003115F3 /* CircleOfFifths.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809065215F03DFD003115F3 /* CircleOfFifths.png */; };
+		4809067915F03DFD003115F3 /* Dorian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809065315F03DFD003115F3 /* Dorian.ai */; };
+		4809067A15F03DFD003115F3 /* Dorian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809065415F03DFD003115F3 /* Dorian.png */; };
+		4809067B15F03DFD003115F3 /* Ionian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809065515F03DFD003115F3 /* Ionian.ai */; };
+		4809067C15F03DFD003115F3 /* Ionian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809065615F03DFD003115F3 /* Ionian.png */; };
+		4809067D15F03DFD003115F3 /* Locrian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809065715F03DFD003115F3 /* Locrian.ai */; };
+		4809067E15F03DFD003115F3 /* Locrian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809065815F03DFD003115F3 /* Locrian.png */; };
+		4809067F15F03DFD003115F3 /* Lydian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809065915F03DFD003115F3 /* Lydian.ai */; };
+		4809068015F03DFD003115F3 /* Lydian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809065A15F03DFD003115F3 /* Lydian.png */; };
+		4809068115F03DFD003115F3 /* MezzoSopranoClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809065B15F03DFD003115F3 /* MezzoSopranoClef.ai */; };
+		4809068215F03DFD003115F3 /* MezzoSopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809065C15F03DFD003115F3 /* MezzoSopranoClef.png */; };
+		4809068315F03DFD003115F3 /* MixoLydian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809065D15F03DFD003115F3 /* MixoLydian.ai */; };
+		4809068415F03DFD003115F3 /* MixoLydian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809065E15F03DFD003115F3 /* MixoLydian.png */; };
+		4809068515F03DFD003115F3 /* Phrygian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809065F15F03DFD003115F3 /* Phrygian.ai */; };
+		4809068615F03DFD003115F3 /* Phrygian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809066015F03DFD003115F3 /* Phrygian.png */; };
+		4809068715F03DFD003115F3 /* SopranoClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809066115F03DFD003115F3 /* SopranoClef.ai */; };
+		4809068815F03DFD003115F3 /* SopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809066215F03DFD003115F3 /* SopranoClef.png */; };
+		4809068915F03DFD003115F3 /* SubBassClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809066315F03DFD003115F3 /* SubBassClef.ai */; };
+		4809068A15F03DFD003115F3 /* SubBassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809066415F03DFD003115F3 /* SubBassClef.png */; };
+		4809068B15F03DFD003115F3 /* TenorClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809066515F03DFD003115F3 /* TenorClef.ai */; };
+		4809068C15F03DFD003115F3 /* TenorClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809066615F03DFD003115F3 /* TenorClef.png */; };
+		4809068D15F03DFD003115F3 /* TheGrandStaff.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809066715F03DFD003115F3 /* TheGrandStaff.ai */; };
+		4809068E15F03DFD003115F3 /* TheGrandStaff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809066815F03DFD003115F3 /* TheGrandStaff.png */; };
+		4809068F15F03DFD003115F3 /* TrebleClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809066915F03DFD003115F3 /* TrebleClef.ai */; };
+		4809069015F03DFD003115F3 /* TrebleClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809066A15F03DFD003115F3 /* TrebleClef.png */; };
+		4809069115F03DFD003115F3 /* welcome.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809066B15F03DFD003115F3 /* welcome.ai */; };
+		4809069215F03DFD003115F3 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809066C15F03DFD003115F3 /* welcome.png */; };
 		480A792515DD59BD005E9C43 /* IonianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A792315DD59BD005E9C43 /* IonianViewController.m */; };
 		480A792615DD59BD005E9C43 /* IonianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A792415DD59BD005E9C43 /* IonianViewController.xib */; };
 		480A792A15DD59DE005E9C43 /* DorianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A792815DD59DE005E9C43 /* DorianViewController.m */; };
@@ -187,38 +193,44 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4809060615F03C66003115F3 /* Aeolian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aeolian.ai; sourceTree = "<group>"; };
-		4809060715F03C66003115F3 /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
-		4809060815F03C66003115F3 /* AltoClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AltoClef.ai; sourceTree = "<group>"; };
-		4809060915F03C66003115F3 /* AltoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AltoClef.png; sourceTree = "<group>"; };
-		4809060A15F03C66003115F3 /* BariToneClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BariToneClef.ai; sourceTree = "<group>"; };
-		4809060B15F03C66003115F3 /* BariToneClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BariToneClef.png; sourceTree = "<group>"; };
-		4809060C15F03C66003115F3 /* BassClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BassClef.ai; sourceTree = "<group>"; };
-		4809060D15F03C66003115F3 /* BassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BassClef.png; sourceTree = "<group>"; };
-		4809060E15F03C66003115F3 /* ChromaticCircle.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChromaticCircle.ai; sourceTree = "<group>"; };
-		4809060F15F03C66003115F3 /* ChromaticCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChromaticCircle.png; sourceTree = "<group>"; };
-		4809061015F03C66003115F3 /* CircleOfFifths.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CircleOfFifths.ai; sourceTree = "<group>"; };
-		4809061115F03C66003115F3 /* CircleOfFifths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleOfFifths.png; sourceTree = "<group>"; };
-		4809061215F03C66003115F3 /* Dorian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dorian.ai; sourceTree = "<group>"; };
-		4809061315F03C66003115F3 /* Dorian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dorian.png; sourceTree = "<group>"; };
-		4809061415F03C66003115F3 /* Ionian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ionian.ai; sourceTree = "<group>"; };
-		4809061515F03C66003115F3 /* Ionian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ionian.png; sourceTree = "<group>"; };
-		4809061615F03C66003115F3 /* MezzoSopranoClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MezzoSopranoClef.ai; sourceTree = "<group>"; };
-		4809061715F03C66003115F3 /* MezzoSopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MezzoSopranoClef.png; sourceTree = "<group>"; };
-		4809061815F03C66003115F3 /* Phrygian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Phrygian.ai; sourceTree = "<group>"; };
-		4809061915F03C66003115F3 /* Phrygian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phrygian.png; sourceTree = "<group>"; };
-		4809061A15F03C66003115F3 /* SopranoClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SopranoClef.ai; sourceTree = "<group>"; };
-		4809061B15F03C66003115F3 /* SopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SopranoClef.png; sourceTree = "<group>"; };
-		4809061C15F03C66003115F3 /* SubBassClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SubBassClef.ai; sourceTree = "<group>"; };
-		4809061D15F03C66003115F3 /* SubBassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubBassClef.png; sourceTree = "<group>"; };
-		4809061E15F03C66003115F3 /* TenorClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TenorClef.ai; sourceTree = "<group>"; };
-		4809061F15F03C66003115F3 /* TenorClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TenorClef.png; sourceTree = "<group>"; };
-		4809062015F03C66003115F3 /* TheGrandStaff.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TheGrandStaff.ai; sourceTree = "<group>"; };
-		4809062115F03C66003115F3 /* TheGrandStaff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheGrandStaff.png; sourceTree = "<group>"; };
-		4809062215F03C66003115F3 /* TrebleClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrebleClef.ai; sourceTree = "<group>"; };
-		4809062315F03C66003115F3 /* TrebleClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrebleClef.png; sourceTree = "<group>"; };
-		4809062415F03C66003115F3 /* welcome.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = welcome.ai; sourceTree = "<group>"; };
-		4809062515F03C66003115F3 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = "<group>"; };
+		4809064715F03DFD003115F3 /* Aeolian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aeolian.ai; sourceTree = "<group>"; };
+		4809064815F03DFD003115F3 /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
+		4809064915F03DFD003115F3 /* AltoClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AltoClef.ai; sourceTree = "<group>"; };
+		4809064A15F03DFD003115F3 /* AltoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AltoClef.png; sourceTree = "<group>"; };
+		4809064B15F03DFD003115F3 /* BariToneClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BariToneClef.ai; sourceTree = "<group>"; };
+		4809064C15F03DFD003115F3 /* BariToneClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BariToneClef.png; sourceTree = "<group>"; };
+		4809064D15F03DFD003115F3 /* BassClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BassClef.ai; sourceTree = "<group>"; };
+		4809064E15F03DFD003115F3 /* BassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BassClef.png; sourceTree = "<group>"; };
+		4809064F15F03DFD003115F3 /* ChromaticCircle.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChromaticCircle.ai; sourceTree = "<group>"; };
+		4809065015F03DFD003115F3 /* ChromaticCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChromaticCircle.png; sourceTree = "<group>"; };
+		4809065115F03DFD003115F3 /* CircleOfFifths.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CircleOfFifths.ai; sourceTree = "<group>"; };
+		4809065215F03DFD003115F3 /* CircleOfFifths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleOfFifths.png; sourceTree = "<group>"; };
+		4809065315F03DFD003115F3 /* Dorian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dorian.ai; sourceTree = "<group>"; };
+		4809065415F03DFD003115F3 /* Dorian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dorian.png; sourceTree = "<group>"; };
+		4809065515F03DFD003115F3 /* Ionian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ionian.ai; sourceTree = "<group>"; };
+		4809065615F03DFD003115F3 /* Ionian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ionian.png; sourceTree = "<group>"; };
+		4809065715F03DFD003115F3 /* Locrian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Locrian.ai; sourceTree = "<group>"; };
+		4809065815F03DFD003115F3 /* Locrian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locrian.png; sourceTree = "<group>"; };
+		4809065915F03DFD003115F3 /* Lydian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lydian.ai; sourceTree = "<group>"; };
+		4809065A15F03DFD003115F3 /* Lydian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lydian.png; sourceTree = "<group>"; };
+		4809065B15F03DFD003115F3 /* MezzoSopranoClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MezzoSopranoClef.ai; sourceTree = "<group>"; };
+		4809065C15F03DFD003115F3 /* MezzoSopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MezzoSopranoClef.png; sourceTree = "<group>"; };
+		4809065D15F03DFD003115F3 /* MixoLydian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MixoLydian.ai; sourceTree = "<group>"; };
+		4809065E15F03DFD003115F3 /* MixoLydian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MixoLydian.png; sourceTree = "<group>"; };
+		4809065F15F03DFD003115F3 /* Phrygian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Phrygian.ai; sourceTree = "<group>"; };
+		4809066015F03DFD003115F3 /* Phrygian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phrygian.png; sourceTree = "<group>"; };
+		4809066115F03DFD003115F3 /* SopranoClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SopranoClef.ai; sourceTree = "<group>"; };
+		4809066215F03DFD003115F3 /* SopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SopranoClef.png; sourceTree = "<group>"; };
+		4809066315F03DFD003115F3 /* SubBassClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SubBassClef.ai; sourceTree = "<group>"; };
+		4809066415F03DFD003115F3 /* SubBassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubBassClef.png; sourceTree = "<group>"; };
+		4809066515F03DFD003115F3 /* TenorClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TenorClef.ai; sourceTree = "<group>"; };
+		4809066615F03DFD003115F3 /* TenorClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TenorClef.png; sourceTree = "<group>"; };
+		4809066715F03DFD003115F3 /* TheGrandStaff.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TheGrandStaff.ai; sourceTree = "<group>"; };
+		4809066815F03DFD003115F3 /* TheGrandStaff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheGrandStaff.png; sourceTree = "<group>"; };
+		4809066915F03DFD003115F3 /* TrebleClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrebleClef.ai; sourceTree = "<group>"; };
+		4809066A15F03DFD003115F3 /* TrebleClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrebleClef.png; sourceTree = "<group>"; };
+		4809066B15F03DFD003115F3 /* welcome.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = welcome.ai; sourceTree = "<group>"; };
+		4809066C15F03DFD003115F3 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = "<group>"; };
 		480A792215DD59BD005E9C43 /* IonianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IonianViewController.h; sourceTree = "<group>"; };
 		480A792315DD59BD005E9C43 /* IonianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IonianViewController.m; sourceTree = "<group>"; };
 		480A792415DD59BD005E9C43 /* IonianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IonianViewController.xib; sourceTree = "<group>"; };
@@ -416,41 +428,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4809060515F03C66003115F3 /* ScalePNGs */ = {
+		4809064615F03DFD003115F3 /* ScalePNGs */ = {
 			isa = PBXGroup;
 			children = (
-				4809060615F03C66003115F3 /* Aeolian.ai */,
-				4809060715F03C66003115F3 /* Aeolian.png */,
-				4809060815F03C66003115F3 /* AltoClef.ai */,
-				4809060915F03C66003115F3 /* AltoClef.png */,
-				4809060A15F03C66003115F3 /* BariToneClef.ai */,
-				4809060B15F03C66003115F3 /* BariToneClef.png */,
-				4809060C15F03C66003115F3 /* BassClef.ai */,
-				4809060D15F03C66003115F3 /* BassClef.png */,
-				4809060E15F03C66003115F3 /* ChromaticCircle.ai */,
-				4809060F15F03C66003115F3 /* ChromaticCircle.png */,
-				4809061015F03C66003115F3 /* CircleOfFifths.ai */,
-				4809061115F03C66003115F3 /* CircleOfFifths.png */,
-				4809061215F03C66003115F3 /* Dorian.ai */,
-				4809061315F03C66003115F3 /* Dorian.png */,
-				4809061415F03C66003115F3 /* Ionian.ai */,
-				4809061515F03C66003115F3 /* Ionian.png */,
-				4809061615F03C66003115F3 /* MezzoSopranoClef.ai */,
-				4809061715F03C66003115F3 /* MezzoSopranoClef.png */,
-				4809061815F03C66003115F3 /* Phrygian.ai */,
-				4809061915F03C66003115F3 /* Phrygian.png */,
-				4809061A15F03C66003115F3 /* SopranoClef.ai */,
-				4809061B15F03C66003115F3 /* SopranoClef.png */,
-				4809061C15F03C66003115F3 /* SubBassClef.ai */,
-				4809061D15F03C66003115F3 /* SubBassClef.png */,
-				4809061E15F03C66003115F3 /* TenorClef.ai */,
-				4809061F15F03C66003115F3 /* TenorClef.png */,
-				4809062015F03C66003115F3 /* TheGrandStaff.ai */,
-				4809062115F03C66003115F3 /* TheGrandStaff.png */,
-				4809062215F03C66003115F3 /* TrebleClef.ai */,
-				4809062315F03C66003115F3 /* TrebleClef.png */,
-				4809062415F03C66003115F3 /* welcome.ai */,
-				4809062515F03C66003115F3 /* welcome.png */,
+				4809064715F03DFD003115F3 /* Aeolian.ai */,
+				4809064815F03DFD003115F3 /* Aeolian.png */,
+				4809064915F03DFD003115F3 /* AltoClef.ai */,
+				4809064A15F03DFD003115F3 /* AltoClef.png */,
+				4809064B15F03DFD003115F3 /* BariToneClef.ai */,
+				4809064C15F03DFD003115F3 /* BariToneClef.png */,
+				4809064D15F03DFD003115F3 /* BassClef.ai */,
+				4809064E15F03DFD003115F3 /* BassClef.png */,
+				4809064F15F03DFD003115F3 /* ChromaticCircle.ai */,
+				4809065015F03DFD003115F3 /* ChromaticCircle.png */,
+				4809065115F03DFD003115F3 /* CircleOfFifths.ai */,
+				4809065215F03DFD003115F3 /* CircleOfFifths.png */,
+				4809065315F03DFD003115F3 /* Dorian.ai */,
+				4809065415F03DFD003115F3 /* Dorian.png */,
+				4809065515F03DFD003115F3 /* Ionian.ai */,
+				4809065615F03DFD003115F3 /* Ionian.png */,
+				4809065715F03DFD003115F3 /* Locrian.ai */,
+				4809065815F03DFD003115F3 /* Locrian.png */,
+				4809065915F03DFD003115F3 /* Lydian.ai */,
+				4809065A15F03DFD003115F3 /* Lydian.png */,
+				4809065B15F03DFD003115F3 /* MezzoSopranoClef.ai */,
+				4809065C15F03DFD003115F3 /* MezzoSopranoClef.png */,
+				4809065D15F03DFD003115F3 /* MixoLydian.ai */,
+				4809065E15F03DFD003115F3 /* MixoLydian.png */,
+				4809065F15F03DFD003115F3 /* Phrygian.ai */,
+				4809066015F03DFD003115F3 /* Phrygian.png */,
+				4809066115F03DFD003115F3 /* SopranoClef.ai */,
+				4809066215F03DFD003115F3 /* SopranoClef.png */,
+				4809066315F03DFD003115F3 /* SubBassClef.ai */,
+				4809066415F03DFD003115F3 /* SubBassClef.png */,
+				4809066515F03DFD003115F3 /* TenorClef.ai */,
+				4809066615F03DFD003115F3 /* TenorClef.png */,
+				4809066715F03DFD003115F3 /* TheGrandStaff.ai */,
+				4809066815F03DFD003115F3 /* TheGrandStaff.png */,
+				4809066915F03DFD003115F3 /* TrebleClef.ai */,
+				4809066A15F03DFD003115F3 /* TrebleClef.png */,
+				4809066B15F03DFD003115F3 /* welcome.ai */,
+				4809066C15F03DFD003115F3 /* welcome.png */,
 			);
 			name = ScalePNGs;
 			path = Art/ScalePNGs;
@@ -730,7 +748,7 @@
 		48FAB51B15CAF8B30087DCFA /* Art */ = {
 			isa = PBXGroup;
 			children = (
-				4809060515F03C66003115F3 /* ScalePNGs */,
+				4809064615F03DFD003115F3 /* ScalePNGs */,
 				486B05ED15BF334A00B3F10D /* icon@2x.png */,
 				4825556D15DD76AF00737C61 /* welcome.png */,
 				B225A76C1534D27F006FD46F /* greenlights.png */,
@@ -968,38 +986,44 @@
 				484B93B215EF003D0021F939 /* error.html in Resources */,
 				48E0C4CE15F0054F001A2748 /* Default-Landscape@2x~ipad.png in Resources */,
 				48E0C4D115F00561001A2748 /* Default@2x~ipad.png in Resources */,
-				4809062615F03C66003115F3 /* Aeolian.ai in Resources */,
-				4809062715F03C66003115F3 /* Aeolian.png in Resources */,
-				4809062815F03C66003115F3 /* AltoClef.ai in Resources */,
-				4809062915F03C66003115F3 /* AltoClef.png in Resources */,
-				4809062A15F03C66003115F3 /* BariToneClef.ai in Resources */,
-				4809062B15F03C66003115F3 /* BariToneClef.png in Resources */,
-				4809062C15F03C66003115F3 /* BassClef.ai in Resources */,
-				4809062D15F03C66003115F3 /* BassClef.png in Resources */,
-				4809062E15F03C66003115F3 /* ChromaticCircle.ai in Resources */,
-				4809062F15F03C66003115F3 /* ChromaticCircle.png in Resources */,
-				4809063015F03C66003115F3 /* CircleOfFifths.ai in Resources */,
-				4809063115F03C66003115F3 /* CircleOfFifths.png in Resources */,
-				4809063215F03C66003115F3 /* Dorian.ai in Resources */,
-				4809063315F03C66003115F3 /* Dorian.png in Resources */,
-				4809063415F03C66003115F3 /* Ionian.ai in Resources */,
-				4809063515F03C66003115F3 /* Ionian.png in Resources */,
-				4809063615F03C66003115F3 /* MezzoSopranoClef.ai in Resources */,
-				4809063715F03C66003115F3 /* MezzoSopranoClef.png in Resources */,
-				4809063815F03C66003115F3 /* Phrygian.ai in Resources */,
-				4809063915F03C66003115F3 /* Phrygian.png in Resources */,
-				4809063A15F03C66003115F3 /* SopranoClef.ai in Resources */,
-				4809063B15F03C66003115F3 /* SopranoClef.png in Resources */,
-				4809063C15F03C66003115F3 /* SubBassClef.ai in Resources */,
-				4809063D15F03C66003115F3 /* SubBassClef.png in Resources */,
-				4809063E15F03C66003115F3 /* TenorClef.ai in Resources */,
-				4809063F15F03C66003115F3 /* TenorClef.png in Resources */,
-				4809064015F03C66003115F3 /* TheGrandStaff.ai in Resources */,
-				4809064115F03C66003115F3 /* TheGrandStaff.png in Resources */,
-				4809064215F03C66003115F3 /* TrebleClef.ai in Resources */,
-				4809064315F03C66003115F3 /* TrebleClef.png in Resources */,
-				4809064415F03C66003115F3 /* welcome.ai in Resources */,
-				4809064515F03C66003115F3 /* welcome.png in Resources */,
+				4809066D15F03DFD003115F3 /* Aeolian.ai in Resources */,
+				4809066E15F03DFD003115F3 /* Aeolian.png in Resources */,
+				4809066F15F03DFD003115F3 /* AltoClef.ai in Resources */,
+				4809067015F03DFD003115F3 /* AltoClef.png in Resources */,
+				4809067115F03DFD003115F3 /* BariToneClef.ai in Resources */,
+				4809067215F03DFD003115F3 /* BariToneClef.png in Resources */,
+				4809067315F03DFD003115F3 /* BassClef.ai in Resources */,
+				4809067415F03DFD003115F3 /* BassClef.png in Resources */,
+				4809067515F03DFD003115F3 /* ChromaticCircle.ai in Resources */,
+				4809067615F03DFD003115F3 /* ChromaticCircle.png in Resources */,
+				4809067715F03DFD003115F3 /* CircleOfFifths.ai in Resources */,
+				4809067815F03DFD003115F3 /* CircleOfFifths.png in Resources */,
+				4809067915F03DFD003115F3 /* Dorian.ai in Resources */,
+				4809067A15F03DFD003115F3 /* Dorian.png in Resources */,
+				4809067B15F03DFD003115F3 /* Ionian.ai in Resources */,
+				4809067C15F03DFD003115F3 /* Ionian.png in Resources */,
+				4809067D15F03DFD003115F3 /* Locrian.ai in Resources */,
+				4809067E15F03DFD003115F3 /* Locrian.png in Resources */,
+				4809067F15F03DFD003115F3 /* Lydian.ai in Resources */,
+				4809068015F03DFD003115F3 /* Lydian.png in Resources */,
+				4809068115F03DFD003115F3 /* MezzoSopranoClef.ai in Resources */,
+				4809068215F03DFD003115F3 /* MezzoSopranoClef.png in Resources */,
+				4809068315F03DFD003115F3 /* MixoLydian.ai in Resources */,
+				4809068415F03DFD003115F3 /* MixoLydian.png in Resources */,
+				4809068515F03DFD003115F3 /* Phrygian.ai in Resources */,
+				4809068615F03DFD003115F3 /* Phrygian.png in Resources */,
+				4809068715F03DFD003115F3 /* SopranoClef.ai in Resources */,
+				4809068815F03DFD003115F3 /* SopranoClef.png in Resources */,
+				4809068915F03DFD003115F3 /* SubBassClef.ai in Resources */,
+				4809068A15F03DFD003115F3 /* SubBassClef.png in Resources */,
+				4809068B15F03DFD003115F3 /* TenorClef.ai in Resources */,
+				4809068C15F03DFD003115F3 /* TenorClef.png in Resources */,
+				4809068D15F03DFD003115F3 /* TheGrandStaff.ai in Resources */,
+				4809068E15F03DFD003115F3 /* TheGrandStaff.png in Resources */,
+				4809068F15F03DFD003115F3 /* TrebleClef.ai in Resources */,
+				4809069015F03DFD003115F3 /* TrebleClef.png in Resources */,
+				4809069115F03DFD003115F3 /* welcome.ai in Resources */,
+				4809069215F03DFD003115F3 /* welcome.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
