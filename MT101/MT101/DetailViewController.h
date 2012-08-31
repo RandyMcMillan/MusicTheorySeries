@@ -13,6 +13,7 @@
 //#import "AeolianViewController.h"
 //#import "CircleOfFifthsViewController.h"
 //#import "TrebleClefViewController.h"
+@class ColorUIButton;
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
 
@@ -34,7 +35,16 @@
 //@property(nonatomic,retain) IBOutlet CircleOfFifthsViewController *circleOfFifthsVC;
 //@property(nonatomic,retain) IBOutlet TrebleClefViewController *trebleClefVC;
 
+@property (retain, nonatomic) IBOutlet ColorUIButton *testButton;
+@property (retain, nonatomic) IBOutlet ColorUIButton *redButton;
+@property (retain, nonatomic) IBOutlet ColorUIButton *greenButton;
+@property (retain, nonatomic) IBOutlet ColorUIButton *blueButton;
+@property (retain, nonatomic) IBOutlet ColorUIButton *brownRedButton;
+@property (retain, nonatomic) IBOutlet ColorUIButton *cornerRadiusButton;
+@property (retain, nonatomic) IBOutlet ColorUIButton *border5Button;
+@property (retain, nonatomic) IBOutlet ColorUIButton *crazyButton;
 
+-(IBAction)clickMe:(UIButton *)sender;
 
 -(IBAction)displayInteractive:(id)sender;
 -(IBAction)displayWiki:(id)sender;

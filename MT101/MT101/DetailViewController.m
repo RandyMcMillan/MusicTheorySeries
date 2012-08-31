@@ -36,6 +36,8 @@
 
 #import "WebViewController.h"
 
+#import "ColorUIButton.h"
+
 @interface DetailViewController (){
 
     MPMoviePlayerViewController *moviePlayer;
@@ -53,6 +55,15 @@
 
 @implementation DetailViewController
 
+@synthesize testButton;
+@synthesize redButton;
+@synthesize greenButton;
+@synthesize blueButton;
+@synthesize brownRedButton;
+@synthesize cornerRadiusButton;
+@synthesize border5Button;
+@synthesize crazyButton;
+
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 @synthesize masterPopoverController = _masterPopoverController;
@@ -63,6 +74,11 @@
 
 #pragma mark - Managing the detail item
 #pragma mark - displayInteractives
+
+
+-(IBAction)clickMe:(UIButton *)sender {
+    NSLog(@"clickMe!"); // I just put this in to verify that the IBAction was firing;
+}
 
 -(IBAction)displayInteractive:(id)sender{
 
@@ -378,8 +394,27 @@
        // MovieToPlay = @"GreenBeam";
     }
     
+    
+    self.redButton.fillColor = [UIColor redColor];
+    self.greenButton.fillColor = [UIColor greenColor];
+    self.blueButton.fillColor = [UIColor blueColor];
+    self.blueButton.tapColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];
+    self.brownRedButton.fillColor = [UIColor brownColor];
+    self.brownRedButton.tapColor = [UIColor redColor];
+    self.cornerRadiusButton.radius = 18;
+    self.border5Button.lineWidth = 5;
+    self.crazyButton.radius = 40;
+    self.crazyButton.strokeColor = [UIColor greenColor];
+    self.crazyButton.lineWidth = 10;
+    self.crazyButton.fillColor = [UIColor brownColor];
+    self.crazyButton.tapColor = [UIColor purpleColor];
+    self.crazyButton.tapStrokeColor = [UIColor yellowColor];
+
+    
     self.imageView.backgroundColor = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
     [self.imageView.layer setCornerRadius:8.0f];
+    [self.toolBar.layer setCornerRadius:18.0f];
+    [self hideGradientBackground:self.toolBar];
 
     NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleVersionKey];
     NSLog(@"appVersion = %@",appVersion);
@@ -394,7 +429,7 @@
         if ([subview isKindOfClass:[UIImageView class]])
             subview.hidden = YES;
 
-        [self hideGradientBackground:subview];
+        [self hideGradientBackground:subview];   
     }
 }
 
@@ -415,6 +450,17 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     self.detailDescriptionLabel = nil;
+    
+    [self setTestButton:nil];
+    [self setRedButton:nil];
+    [self setGreenButton:nil];
+    [self setBlueButton:nil];
+    [self setBrownRedButton:nil];
+    [self setCornerRadiusButton:nil];
+    [self setBorder5Button:nil];
+    [self setCrazyButton:nil];
+
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
