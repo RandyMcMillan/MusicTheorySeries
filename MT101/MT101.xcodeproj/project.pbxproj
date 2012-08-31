@@ -80,6 +80,12 @@
 		480A796D15DD6060005E9C43 /* UnderWater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795615DD6060005E9C43 /* UnderWater.mp4 */; };
 		480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795715DD6060005E9C43 /* WindyTrees.mp4 */; };
 		481A431215F0F52C006EDF46 /* ColorUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A431115F0F52C006EDF46 /* ColorUIButton.m */; };
+		481A431A15F0FE8A006EDF46 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 481A431715F0FE8A006EDF46 /* button1.png */; };
+		481A431C15F0FE8A006EDF46 /* tbButton.ai in Resources */ = {isa = PBXBuildFile; fileRef = 481A431915F0FE8A006EDF46 /* tbButton.ai */; };
+		481A431E15F0FEA8006EDF46 /* tbButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 481A431D15F0FEA8006EDF46 /* tbButton.png */; };
+		481A432715F0FFF8006EDF46 /* NavBarBackgroundGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A432415F0FFF7006EDF46 /* NavBarBackgroundGradientView.m */; };
+		481A432815F0FFF8006EDF46 /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A432615F0FFF7006EDF46 /* GradientButton.m */; };
+		481A432A15F101C5006EDF46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481A432915F101C5006EDF46 /* QuartzCore.framework */; };
 		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
 		4820B0AE15EDFE72003768DC /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */; };
 		4820B0B015EE0414003768DC /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AF15EE0413003768DC /* AeolianViewController.xib */; };
@@ -187,7 +193,6 @@
 		B225A7411534CF59006FD46F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B225A7401534CF59006FD46F /* DetailViewController.m */; };
 		B225A7441534CF59006FD46F /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B225A7421534CF59006FD46F /* MasterViewController.xib */; };
 		B225A7471534CF59006FD46F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B225A7451534CF59006FD46F /* DetailViewController.xib */; };
-		B225A7591534D110006FD46F /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = B225A7581534D110006FD46F /* button1.png */; };
 		B225A75E1534D1D4006FD46F /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = B225A75A1534D1D4006FD46F /* clouds.png */; };
 		B225A76D1534D27F006FD46F /* greenlights.png in Resources */ = {isa = PBXBuildFile; fileRef = B225A76C1534D27F006FD46F /* greenlights.png */; };
 		B225A77B1534D6D7006FD46F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B225A77A1534D6D7006FD46F /* MediaPlayer.framework */; };
@@ -274,6 +279,14 @@
 		480A795715DD6060005E9C43 /* WindyTrees.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WindyTrees.mp4; sourceTree = "<group>"; };
 		481A431015F0F52C006EDF46 /* ColorUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUIButton.h; sourceTree = "<group>"; };
 		481A431115F0F52C006EDF46 /* ColorUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUIButton.m; sourceTree = "<group>"; };
+		481A431715F0FE8A006EDF46 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
+		481A431915F0FE8A006EDF46 /* tbButton.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tbButton.ai; sourceTree = "<group>"; };
+		481A431D15F0FEA8006EDF46 /* tbButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tbButton.png; sourceTree = "<group>"; };
+		481A432315F0FFF7006EDF46 /* NavBarBackgroundGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavBarBackgroundGradientView.h; sourceTree = "<group>"; };
+		481A432415F0FFF7006EDF46 /* NavBarBackgroundGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavBarBackgroundGradientView.m; sourceTree = "<group>"; };
+		481A432515F0FFF7006EDF46 /* GradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
+		481A432615F0FFF7006EDF46 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
+		481A432915F101C5006EDF46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
 		4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrebleClefViewController.xib; sourceTree = "<group>"; };
 		4820B0AF15EE0413003768DC /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AeolianViewController.xib; sourceTree = "<group>"; };
@@ -408,7 +421,6 @@
 		B225A7401534CF59006FD46F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = MT101/DetailViewController.m; sourceTree = "<group>"; };
 		B225A7431534CF59006FD46F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
 		B225A7461534CF59006FD46F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
-		B225A7581534D110006FD46F /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = SOURCE_ROOT; };
 		B225A75A1534D1D4006FD46F /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = SOURCE_ROOT; };
 		B225A76C1534D27F006FD46F /* greenlights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenlights.png; sourceTree = SOURCE_ROOT; };
 		B225A77A1534D6D7006FD46F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -419,6 +431,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				481A432A15F101C5006EDF46 /* QuartzCore.framework in Frameworks */,
 				4825A36A15C4DBCF006F0C46 /* AVFoundation.framework in Frameworks */,
 				4825A36815C4DBC3006F0C46 /* AudioToolbox.framework in Frameworks */,
 				B225A77B1534D6D7006FD46F /* MediaPlayer.framework in Frameworks */,
@@ -540,6 +553,16 @@
 				480A795715DD6060005E9C43 /* WindyTrees.mp4 */,
 			);
 			path = Movies;
+			sourceTree = "<group>";
+		};
+		481A431615F0FE8A006EDF46 /* buttonArt */ = {
+			isa = PBXGroup;
+			children = (
+				481A431D15F0FEA8006EDF46 /* tbButton.png */,
+				481A431715F0FE8A006EDF46 /* button1.png */,
+				481A431915F0FE8A006EDF46 /* tbButton.ai */,
+			);
+			path = buttonArt;
 			sourceTree = "<group>";
 		};
 		4825559415DD7A0600737C61 /* SolfegeXIBs */ = {
@@ -755,7 +778,6 @@
 				486B05ED15BF334A00B3F10D /* icon@2x.png */,
 				4825556D15DD76AF00737C61 /* welcome.png */,
 				B225A76C1534D27F006FD46F /* greenlights.png */,
-				B225A7581534D110006FD46F /* button1.png */,
 				B225A75A1534D1D4006FD46F /* clouds.png */,
 			);
 			name = Art;
@@ -764,6 +786,12 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
+				481A432915F101C5006EDF46 /* QuartzCore.framework */,
+				481A432315F0FFF7006EDF46 /* NavBarBackgroundGradientView.h */,
+				481A432415F0FFF7006EDF46 /* NavBarBackgroundGradientView.m */,
+				481A432515F0FFF7006EDF46 /* GradientButton.h */,
+				481A432615F0FFF7006EDF46 /* GradientButton.m */,
+				481A431615F0FE8A006EDF46 /* buttonArt */,
 				481A431015F0F52C006EDF46 /* ColorUIButton.h */,
 				481A431115F0F52C006EDF46 /* ColorUIButton.m */,
 				487A1C8915E85115006C5C59 /* Constants.h */,
@@ -885,7 +913,6 @@
 				B225A7351534CF59006FD46F /* InfoPlist.strings in Resources */,
 				B225A7441534CF59006FD46F /* MasterViewController.xib in Resources */,
 				B225A7471534CF59006FD46F /* DetailViewController.xib in Resources */,
-				B225A7591534D110006FD46F /* button1.png in Resources */,
 				B225A75E1534D1D4006FD46F /* clouds.png in Resources */,
 				B225A76D1534D27F006FD46F /* greenlights.png in Resources */,
 				486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */,
@@ -1029,6 +1056,9 @@
 				4809069015F03DFD003115F3 /* TrebleClef.png in Resources */,
 				4809069115F03DFD003115F3 /* welcome.ai in Resources */,
 				4809069215F03DFD003115F3 /* welcome.png in Resources */,
+				481A431A15F0FE8A006EDF46 /* button1.png in Resources */,
+				481A431C15F0FE8A006EDF46 /* tbButton.ai in Resources */,
+				481A431E15F0FEA8006EDF46 /* tbButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1070,6 +1100,8 @@
 				48A3562F15E2363F00A3529D /* WebViewController.m in Sources */,
 				484B93B515EF01810021F939 /* iScrollPlugin_JS.m in Sources */,
 				481A431215F0F52C006EDF46 /* ColorUIButton.m in Sources */,
+				481A432715F0FFF8006EDF46 /* NavBarBackgroundGradientView.m in Sources */,
+				481A432815F0FFF8006EDF46 /* GradientButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

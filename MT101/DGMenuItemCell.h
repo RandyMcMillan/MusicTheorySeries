@@ -1,4 +1,5 @@
 //
+
 //  DGMenuItemCell.h
 //  Newsfeed
 //
@@ -7,15 +8,18 @@
 //
 
 #import <UIKit/UIKit.h>
+
 //#import "DGMenuViewItem.h"
 
 @interface DGMenuItemCell : UITableViewCell {
-    UILabel             *cellTitleLabel;
-    UIImageView         *cellImageView;
-    UIImageView         *cellBadgeImageView;
-    UILabel             *cellBadgeTitle;
- //   DGMenuViewItem      *subject;
-    UIView              *selectedColoredView; // THE SELECTION INDICATOR ON THE RIGHT SIDE
+  UILabel             *cellTitleLabel;
+  UIImageView         *cellImageView;
+  UIImageView         *cellBadgeImageView;
+  UILabel             *cellBadgeTitle;
+
+  //   DGMenuViewItem      *subject;
+  UIView              *selectedColoredView;   // THE SELECTION INDICATOR
+                                              // ON THE RIGHT SIDE
 }
 
 @property (nonatomic, retain) NSObject      *subject;

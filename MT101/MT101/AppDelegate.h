@@ -1,4 +1,5 @@
 //
+
 //  AppDelegate.h
 //  MT101
 //
@@ -10,6 +11,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UISplitViewController *splitViewController;
+@property (strong,
+  nonatomic) UISplitViewController *splitViewController;
 
 @end

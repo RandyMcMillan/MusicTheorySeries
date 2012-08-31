@@ -1,4 +1,5 @@
 //
+
 //  WebViewController.h
 //  WebViewTutorial
 //
@@ -13,27 +14,27 @@
 
 
 @interface WebViewController : UIViewController < UIWebViewDelegate > {
-	
-	IBOutlet UIWebView *webView;
-    IBOutlet UIBarButtonItem *doneButton;
-    IBOutlet UIBarButtonItem* refreshBtn;
-    IBOutlet UILabel* addressLabel;
-    IBOutlet UIBarButtonItem* backBtn;
-    IBOutlet UIBarButtonItem* fwdBtn;
-    IBOutlet UIBarButtonItem* safariBtn;
-    IBOutlet UIActivityIndicatorView* spinner;
-    BOOL isImage;
-    NSString* imageURL;
-    id <WebViewDelegate> delegate;
+
+  IBOutlet UIWebView *webView;
+  IBOutlet UIBarButtonItem *doneButton;
+  IBOutlet UIBarButtonItem* refreshBtn;
+  IBOutlet UILabel* addressLabel;
+  IBOutlet UIBarButtonItem* backBtn;
+  IBOutlet UIBarButtonItem* fwdBtn;
+  IBOutlet UIBarButtonItem* safariBtn;
+  IBOutlet UIActivityIndicatorView* spinner;
+  BOOL isImage;
+  NSString* imageURL;
+  id <WebViewDelegate> delegate;
 
 }
 
 - (IBAction) onDoneButtonPress:(id)sender;
 - (IBAction)onSafariButtonPress:(id)sender;
 @property (nonatomic, retain) UIWebView *webView;
-@property(retain) NSString* imageURL;
-@property(assign) BOOL isImage;
-@property (nonatomic, retain)id <WebViewDelegate> delegate;
+@property (retain) NSString* imageURL;
+@property (assign) BOOL isImage;
+@property (nonatomic, retain) id <WebViewDelegate> delegate;
 
 
 @end
