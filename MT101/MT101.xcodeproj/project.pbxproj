@@ -7,6 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4809062615F03C66003115F3 /* Aeolian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809060615F03C66003115F3 /* Aeolian.ai */; };
+		4809062715F03C66003115F3 /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809060715F03C66003115F3 /* Aeolian.png */; };
+		4809062815F03C66003115F3 /* AltoClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809060815F03C66003115F3 /* AltoClef.ai */; };
+		4809062915F03C66003115F3 /* AltoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809060915F03C66003115F3 /* AltoClef.png */; };
+		4809062A15F03C66003115F3 /* BariToneClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809060A15F03C66003115F3 /* BariToneClef.ai */; };
+		4809062B15F03C66003115F3 /* BariToneClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809060B15F03C66003115F3 /* BariToneClef.png */; };
+		4809062C15F03C66003115F3 /* BassClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809060C15F03C66003115F3 /* BassClef.ai */; };
+		4809062D15F03C66003115F3 /* BassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809060D15F03C66003115F3 /* BassClef.png */; };
+		4809062E15F03C66003115F3 /* ChromaticCircle.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809060E15F03C66003115F3 /* ChromaticCircle.ai */; };
+		4809062F15F03C66003115F3 /* ChromaticCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809060F15F03C66003115F3 /* ChromaticCircle.png */; };
+		4809063015F03C66003115F3 /* CircleOfFifths.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061015F03C66003115F3 /* CircleOfFifths.ai */; };
+		4809063115F03C66003115F3 /* CircleOfFifths.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061115F03C66003115F3 /* CircleOfFifths.png */; };
+		4809063215F03C66003115F3 /* Dorian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061215F03C66003115F3 /* Dorian.ai */; };
+		4809063315F03C66003115F3 /* Dorian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061315F03C66003115F3 /* Dorian.png */; };
+		4809063415F03C66003115F3 /* Ionian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061415F03C66003115F3 /* Ionian.ai */; };
+		4809063515F03C66003115F3 /* Ionian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061515F03C66003115F3 /* Ionian.png */; };
+		4809063615F03C66003115F3 /* MezzoSopranoClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061615F03C66003115F3 /* MezzoSopranoClef.ai */; };
+		4809063715F03C66003115F3 /* MezzoSopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061715F03C66003115F3 /* MezzoSopranoClef.png */; };
+		4809063815F03C66003115F3 /* Phrygian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061815F03C66003115F3 /* Phrygian.ai */; };
+		4809063915F03C66003115F3 /* Phrygian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061915F03C66003115F3 /* Phrygian.png */; };
+		4809063A15F03C66003115F3 /* SopranoClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061A15F03C66003115F3 /* SopranoClef.ai */; };
+		4809063B15F03C66003115F3 /* SopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061B15F03C66003115F3 /* SopranoClef.png */; };
+		4809063C15F03C66003115F3 /* SubBassClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061C15F03C66003115F3 /* SubBassClef.ai */; };
+		4809063D15F03C66003115F3 /* SubBassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061D15F03C66003115F3 /* SubBassClef.png */; };
+		4809063E15F03C66003115F3 /* TenorClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809061E15F03C66003115F3 /* TenorClef.ai */; };
+		4809063F15F03C66003115F3 /* TenorClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809061F15F03C66003115F3 /* TenorClef.png */; };
+		4809064015F03C66003115F3 /* TheGrandStaff.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809062015F03C66003115F3 /* TheGrandStaff.ai */; };
+		4809064115F03C66003115F3 /* TheGrandStaff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809062115F03C66003115F3 /* TheGrandStaff.png */; };
+		4809064215F03C66003115F3 /* TrebleClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809062215F03C66003115F3 /* TrebleClef.ai */; };
+		4809064315F03C66003115F3 /* TrebleClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809062315F03C66003115F3 /* TrebleClef.png */; };
+		4809064415F03C66003115F3 /* welcome.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809062415F03C66003115F3 /* welcome.ai */; };
+		4809064515F03C66003115F3 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809062515F03C66003115F3 /* welcome.png */; };
 		480A792515DD59BD005E9C43 /* IonianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A792315DD59BD005E9C43 /* IonianViewController.m */; };
 		480A792615DD59BD005E9C43 /* IonianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A792415DD59BD005E9C43 /* IonianViewController.xib */; };
 		480A792A15DD59DE005E9C43 /* DorianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A792815DD59DE005E9C43 /* DorianViewController.m */; };
@@ -41,17 +73,10 @@
 		480A796C15DD6060005E9C43 /* Treble Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795515DD6060005E9C43 /* Treble Clef.mp4 */; };
 		480A796D15DD6060005E9C43 /* UnderWater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795615DD6060005E9C43 /* UnderWater.mp4 */; };
 		480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795715DD6060005E9C43 /* WindyTrees.mp4 */; };
-		4820B0AA15EDDDC1003768DC /* TheGrandStaff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0A915EDDDC1003768DC /* TheGrandStaff.png */; };
 		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
 		4820B0AE15EDFE72003768DC /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */; };
 		4820B0B015EE0414003768DC /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AF15EE0413003768DC /* AeolianViewController.xib */; };
 		4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */; };
-		4825556F15DD76AF00737C61 /* Aeolian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825554B15DD76AF00737C61 /* Aeolian.png */; };
-		4825557115DD76AF00737C61 /* AltoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825554D15DD76AF00737C61 /* AltoClef.png */; };
-		4825557315DD76AF00737C61 /* BariToneClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825554F15DD76AF00737C61 /* BariToneClef.png */; };
-		4825557515DD76AF00737C61 /* BassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825555115DD76AF00737C61 /* BassClef.png */; };
-		4825557715DD76AF00737C61 /* CircleOfFifths.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825555315DD76AF00737C61 /* CircleOfFifths.png */; };
-		4825557915DD76AF00737C61 /* Dorian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825555515DD76AF00737C61 /* Dorian.png */; };
 		4825559115DD76AF00737C61 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556D15DD76AF00737C61 /* welcome.png */; };
 		4825559915DD7A3000737C61 /* SolfegeNaturalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */; };
 		4825559A15DD7A3000737C61 /* SolfegeNaturalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4825559815DD7A3000737C61 /* SolfegeNaturalsViewController.xib */; };
@@ -76,7 +101,6 @@
 		4882981915E006BB00239B29 /* ChromaticCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4882981715E006BB00239B29 /* ChromaticCircleViewController.m */; };
 		4882981A15E006BB00239B29 /* ChromaticCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4882981815E006BB00239B29 /* ChromaticCircleViewController.xib */; };
 		4882981C15E009B900239B29 /* Chromatic Circle.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4882981B15E009B900239B29 /* Chromatic Circle.mp4 */; };
-		4882981E15E00AE500239B29 /* ChromaticCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4882981D15E00AE500239B29 /* ChromaticCircle.png */; };
 		489C8BAD15CF029400F15D05 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */; };
 		489C8BB215CF05DD00F15D05 /* GrandStaffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */; };
@@ -84,11 +108,6 @@
 		48A3563115E2364600A3529D /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A3563015E2364600A3529D /* WebView.xib */; };
 		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		48E0C4BF15EFF1AB001A2748 /* TrebleClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4BE15EFF1AB001A2748 /* TrebleClef.png */; };
-		48E0C4C215EFF221001A2748 /* SopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4C115EFF221001A2748 /* SopranoClef.png */; };
-		48E0C4C415EFF2B9001A2748 /* MezzoSopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4C315EFF2B9001A2748 /* MezzoSopranoClef.png */; };
-		48E0C4C615EFF3D4001A2748 /* TenorClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4C515EFF3D4001A2748 /* TenorClef.png */; };
-		48E0C4C815EFF4D3001A2748 /* SubBassClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4C715EFF4D3001A2748 /* SubBassClef.png */; };
 		48E0C4CE15F0054F001A2748 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4CD15F0054F001A2748 /* Default-Landscape@2x~ipad.png */; };
 		48E0C4D115F00561001A2748 /* Default@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4D015F00561001A2748 /* Default@2x~ipad.png */; };
 		48E592BA15E9859A00299709 /* vib_0.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48E592A015E9859A00299709 /* vib_0.aif */; };
@@ -168,6 +187,38 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4809060615F03C66003115F3 /* Aeolian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aeolian.ai; sourceTree = "<group>"; };
+		4809060715F03C66003115F3 /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
+		4809060815F03C66003115F3 /* AltoClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AltoClef.ai; sourceTree = "<group>"; };
+		4809060915F03C66003115F3 /* AltoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AltoClef.png; sourceTree = "<group>"; };
+		4809060A15F03C66003115F3 /* BariToneClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BariToneClef.ai; sourceTree = "<group>"; };
+		4809060B15F03C66003115F3 /* BariToneClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BariToneClef.png; sourceTree = "<group>"; };
+		4809060C15F03C66003115F3 /* BassClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BassClef.ai; sourceTree = "<group>"; };
+		4809060D15F03C66003115F3 /* BassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BassClef.png; sourceTree = "<group>"; };
+		4809060E15F03C66003115F3 /* ChromaticCircle.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChromaticCircle.ai; sourceTree = "<group>"; };
+		4809060F15F03C66003115F3 /* ChromaticCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChromaticCircle.png; sourceTree = "<group>"; };
+		4809061015F03C66003115F3 /* CircleOfFifths.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CircleOfFifths.ai; sourceTree = "<group>"; };
+		4809061115F03C66003115F3 /* CircleOfFifths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleOfFifths.png; sourceTree = "<group>"; };
+		4809061215F03C66003115F3 /* Dorian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dorian.ai; sourceTree = "<group>"; };
+		4809061315F03C66003115F3 /* Dorian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dorian.png; sourceTree = "<group>"; };
+		4809061415F03C66003115F3 /* Ionian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ionian.ai; sourceTree = "<group>"; };
+		4809061515F03C66003115F3 /* Ionian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ionian.png; sourceTree = "<group>"; };
+		4809061615F03C66003115F3 /* MezzoSopranoClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MezzoSopranoClef.ai; sourceTree = "<group>"; };
+		4809061715F03C66003115F3 /* MezzoSopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MezzoSopranoClef.png; sourceTree = "<group>"; };
+		4809061815F03C66003115F3 /* Phrygian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Phrygian.ai; sourceTree = "<group>"; };
+		4809061915F03C66003115F3 /* Phrygian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phrygian.png; sourceTree = "<group>"; };
+		4809061A15F03C66003115F3 /* SopranoClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SopranoClef.ai; sourceTree = "<group>"; };
+		4809061B15F03C66003115F3 /* SopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SopranoClef.png; sourceTree = "<group>"; };
+		4809061C15F03C66003115F3 /* SubBassClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SubBassClef.ai; sourceTree = "<group>"; };
+		4809061D15F03C66003115F3 /* SubBassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubBassClef.png; sourceTree = "<group>"; };
+		4809061E15F03C66003115F3 /* TenorClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TenorClef.ai; sourceTree = "<group>"; };
+		4809061F15F03C66003115F3 /* TenorClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TenorClef.png; sourceTree = "<group>"; };
+		4809062015F03C66003115F3 /* TheGrandStaff.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TheGrandStaff.ai; sourceTree = "<group>"; };
+		4809062115F03C66003115F3 /* TheGrandStaff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheGrandStaff.png; sourceTree = "<group>"; };
+		4809062215F03C66003115F3 /* TrebleClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrebleClef.ai; sourceTree = "<group>"; };
+		4809062315F03C66003115F3 /* TrebleClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrebleClef.png; sourceTree = "<group>"; };
+		4809062415F03C66003115F3 /* welcome.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = welcome.ai; sourceTree = "<group>"; };
+		4809062515F03C66003115F3 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = "<group>"; };
 		480A792215DD59BD005E9C43 /* IonianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IonianViewController.h; sourceTree = "<group>"; };
 		480A792315DD59BD005E9C43 /* IonianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IonianViewController.m; sourceTree = "<group>"; };
 		480A792415DD59BD005E9C43 /* IonianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IonianViewController.xib; sourceTree = "<group>"; };
@@ -208,17 +259,10 @@
 		480A795515DD6060005E9C43 /* Treble Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Treble Clef.mp4"; sourceTree = "<group>"; };
 		480A795615DD6060005E9C43 /* UnderWater.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnderWater.mp4; sourceTree = "<group>"; };
 		480A795715DD6060005E9C43 /* WindyTrees.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WindyTrees.mp4; sourceTree = "<group>"; };
-		4820B0A915EDDDC1003768DC /* TheGrandStaff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheGrandStaff.png; sourceTree = "<group>"; };
 		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
 		4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrebleClefViewController.xib; sourceTree = "<group>"; };
 		4820B0AF15EE0413003768DC /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AeolianViewController.xib; sourceTree = "<group>"; };
 		4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppleXylophoneViewController.xib; sourceTree = "<group>"; };
-		4825554B15DD76AF00737C61 /* Aeolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aeolian.png; sourceTree = "<group>"; };
-		4825554D15DD76AF00737C61 /* AltoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AltoClef.png; sourceTree = "<group>"; };
-		4825554F15DD76AF00737C61 /* BariToneClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BariToneClef.png; sourceTree = "<group>"; };
-		4825555115DD76AF00737C61 /* BassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BassClef.png; sourceTree = "<group>"; };
-		4825555315DD76AF00737C61 /* CircleOfFifths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleOfFifths.png; sourceTree = "<group>"; };
-		4825555515DD76AF00737C61 /* Dorian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dorian.png; sourceTree = "<group>"; };
 		4825556D15DD76AF00737C61 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome.png; path = Art/ScalePNGs/welcome.png; sourceTree = "<group>"; };
 		4825559615DD7A3000737C61 /* SolfegeNaturalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeNaturalsViewController.h; sourceTree = "<group>"; };
 		4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolfegeNaturalsViewController.m; sourceTree = "<group>"; };
@@ -252,7 +296,6 @@
 		4882981715E006BB00239B29 /* ChromaticCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromaticCircleViewController.m; sourceTree = "<group>"; };
 		4882981815E006BB00239B29 /* ChromaticCircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChromaticCircleViewController.xib; sourceTree = "<group>"; };
 		4882981B15E009B900239B29 /* Chromatic Circle.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chromatic Circle.mp4"; sourceTree = "<group>"; };
-		4882981D15E00AE500239B29 /* ChromaticCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChromaticCircle.png; sourceTree = "<group>"; };
 		489C8BAC15CF029400F15D05 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrandStaffViewController.h; path = MT101/GrandStaffViewController.h; sourceTree = "<group>"; };
 		489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrandStaffViewController.m; path = MT101/GrandStaffViewController.m; sourceTree = "<group>"; };
@@ -263,11 +306,6 @@
 		48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
-		48E0C4BE15EFF1AB001A2748 /* TrebleClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrebleClef.png; sourceTree = "<group>"; };
-		48E0C4C115EFF221001A2748 /* SopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SopranoClef.png; sourceTree = "<group>"; };
-		48E0C4C315EFF2B9001A2748 /* MezzoSopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MezzoSopranoClef.png; sourceTree = "<group>"; };
-		48E0C4C515EFF3D4001A2748 /* TenorClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TenorClef.png; sourceTree = "<group>"; };
-		48E0C4C715EFF4D3001A2748 /* SubBassClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubBassClef.png; sourceTree = "<group>"; };
 		48E0C4CD15F0054F001A2748 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		48E0C4D015F00561001A2748 /* Default@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x~ipad.png"; path = "../Default@2x~ipad.png"; sourceTree = "<group>"; };
 		48E592A015E9859A00299709 /* vib_0.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_0.aif; sourceTree = "<group>"; };
@@ -378,6 +416,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4809060515F03C66003115F3 /* ScalePNGs */ = {
+			isa = PBXGroup;
+			children = (
+				4809060615F03C66003115F3 /* Aeolian.ai */,
+				4809060715F03C66003115F3 /* Aeolian.png */,
+				4809060815F03C66003115F3 /* AltoClef.ai */,
+				4809060915F03C66003115F3 /* AltoClef.png */,
+				4809060A15F03C66003115F3 /* BariToneClef.ai */,
+				4809060B15F03C66003115F3 /* BariToneClef.png */,
+				4809060C15F03C66003115F3 /* BassClef.ai */,
+				4809060D15F03C66003115F3 /* BassClef.png */,
+				4809060E15F03C66003115F3 /* ChromaticCircle.ai */,
+				4809060F15F03C66003115F3 /* ChromaticCircle.png */,
+				4809061015F03C66003115F3 /* CircleOfFifths.ai */,
+				4809061115F03C66003115F3 /* CircleOfFifths.png */,
+				4809061215F03C66003115F3 /* Dorian.ai */,
+				4809061315F03C66003115F3 /* Dorian.png */,
+				4809061415F03C66003115F3 /* Ionian.ai */,
+				4809061515F03C66003115F3 /* Ionian.png */,
+				4809061615F03C66003115F3 /* MezzoSopranoClef.ai */,
+				4809061715F03C66003115F3 /* MezzoSopranoClef.png */,
+				4809061815F03C66003115F3 /* Phrygian.ai */,
+				4809061915F03C66003115F3 /* Phrygian.png */,
+				4809061A15F03C66003115F3 /* SopranoClef.ai */,
+				4809061B15F03C66003115F3 /* SopranoClef.png */,
+				4809061C15F03C66003115F3 /* SubBassClef.ai */,
+				4809061D15F03C66003115F3 /* SubBassClef.png */,
+				4809061E15F03C66003115F3 /* TenorClef.ai */,
+				4809061F15F03C66003115F3 /* TenorClef.png */,
+				4809062015F03C66003115F3 /* TheGrandStaff.ai */,
+				4809062115F03C66003115F3 /* TheGrandStaff.png */,
+				4809062215F03C66003115F3 /* TrebleClef.ai */,
+				4809062315F03C66003115F3 /* TrebleClef.png */,
+				4809062415F03C66003115F3 /* welcome.ai */,
+				4809062515F03C66003115F3 /* welcome.png */,
+			);
+			name = ScalePNGs;
+			path = Art/ScalePNGs;
+			sourceTree = "<group>";
+		};
 		480A792015DD598B005E9C43 /* ModeVCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,27 +519,6 @@
 				480A795715DD6060005E9C43 /* WindyTrees.mp4 */,
 			);
 			path = Movies;
-			sourceTree = "<group>";
-		};
-		4825554915DD76AF00737C61 /* ScalePNGs */ = {
-			isa = PBXGroup;
-			children = (
-				48E0C4C715EFF4D3001A2748 /* SubBassClef.png */,
-				4820B0A915EDDDC1003768DC /* TheGrandStaff.png */,
-				48E0C4C515EFF3D4001A2748 /* TenorClef.png */,
-				48E0C4BE15EFF1AB001A2748 /* TrebleClef.png */,
-				4825554B15DD76AF00737C61 /* Aeolian.png */,
-				48E0C4C115EFF221001A2748 /* SopranoClef.png */,
-				48E0C4C315EFF2B9001A2748 /* MezzoSopranoClef.png */,
-				4825554D15DD76AF00737C61 /* AltoClef.png */,
-				4825554F15DD76AF00737C61 /* BariToneClef.png */,
-				4825555115DD76AF00737C61 /* BassClef.png */,
-				4825555315DD76AF00737C61 /* CircleOfFifths.png */,
-				4882981D15E00AE500239B29 /* ChromaticCircle.png */,
-				4825555515DD76AF00737C61 /* Dorian.png */,
-			);
-			name = ScalePNGs;
-			path = Art/ScalePNGs;
 			sourceTree = "<group>";
 		};
 		4825559415DD7A0600737C61 /* SolfegeXIBs */ = {
@@ -673,7 +730,7 @@
 		48FAB51B15CAF8B30087DCFA /* Art */ = {
 			isa = PBXGroup;
 			children = (
-				4825554915DD76AF00737C61 /* ScalePNGs */,
+				4809060515F03C66003115F3 /* ScalePNGs */,
 				486B05ED15BF334A00B3F10D /* icon@2x.png */,
 				4825556D15DD76AF00737C61 /* welcome.png */,
 				B225A76C1534D27F006FD46F /* greenlights.png */,
@@ -864,19 +921,12 @@
 				480A796C15DD6060005E9C43 /* Treble Clef.mp4 in Resources */,
 				480A796D15DD6060005E9C43 /* UnderWater.mp4 in Resources */,
 				480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */,
-				4825556F15DD76AF00737C61 /* Aeolian.png in Resources */,
-				4825557115DD76AF00737C61 /* AltoClef.png in Resources */,
-				4825557315DD76AF00737C61 /* BariToneClef.png in Resources */,
-				4825557515DD76AF00737C61 /* BassClef.png in Resources */,
-				4825557715DD76AF00737C61 /* CircleOfFifths.png in Resources */,
-				4825557915DD76AF00737C61 /* Dorian.png in Resources */,
 				4825559115DD76AF00737C61 /* welcome.png in Resources */,
 				4825559A15DD7A3000737C61 /* SolfegeNaturalsViewController.xib in Resources */,
 				4825559F15DD7A4C00737C61 /* SolfegeSharpsViewController.xib in Resources */,
 				482555A415DD7A5400737C61 /* SolfegeFlatsViewController.xib in Resources */,
 				4882981A15E006BB00239B29 /* ChromaticCircleViewController.xib in Resources */,
 				4882981C15E009B900239B29 /* Chromatic Circle.mp4 in Resources */,
-				4882981E15E00AE500239B29 /* ChromaticCircle.png in Resources */,
 				48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */,
 				48A3563115E2364600A3529D /* WebView.xib in Resources */,
 				48EFB1E815E2DF4F009A5D43 /* WebView.bundle in Resources */,
@@ -911,19 +961,45 @@
 				48E592D115E9859A00299709 /* vib_7.aif in Resources */,
 				48E592D215E9859A00299709 /* vib_8.aif in Resources */,
 				48E592D315E9859A00299709 /* vib_9.aif in Resources */,
-				4820B0AA15EDDDC1003768DC /* TheGrandStaff.png in Resources */,
 				4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */,
 				4820B0AE15EDFE72003768DC /* TrebleClefViewController.xib in Resources */,
 				4820B0B015EE0414003768DC /* AeolianViewController.xib in Resources */,
 				4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */,
 				484B93B215EF003D0021F939 /* error.html in Resources */,
-				48E0C4BF15EFF1AB001A2748 /* TrebleClef.png in Resources */,
-				48E0C4C215EFF221001A2748 /* SopranoClef.png in Resources */,
-				48E0C4C415EFF2B9001A2748 /* MezzoSopranoClef.png in Resources */,
-				48E0C4C615EFF3D4001A2748 /* TenorClef.png in Resources */,
-				48E0C4C815EFF4D3001A2748 /* SubBassClef.png in Resources */,
 				48E0C4CE15F0054F001A2748 /* Default-Landscape@2x~ipad.png in Resources */,
 				48E0C4D115F00561001A2748 /* Default@2x~ipad.png in Resources */,
+				4809062615F03C66003115F3 /* Aeolian.ai in Resources */,
+				4809062715F03C66003115F3 /* Aeolian.png in Resources */,
+				4809062815F03C66003115F3 /* AltoClef.ai in Resources */,
+				4809062915F03C66003115F3 /* AltoClef.png in Resources */,
+				4809062A15F03C66003115F3 /* BariToneClef.ai in Resources */,
+				4809062B15F03C66003115F3 /* BariToneClef.png in Resources */,
+				4809062C15F03C66003115F3 /* BassClef.ai in Resources */,
+				4809062D15F03C66003115F3 /* BassClef.png in Resources */,
+				4809062E15F03C66003115F3 /* ChromaticCircle.ai in Resources */,
+				4809062F15F03C66003115F3 /* ChromaticCircle.png in Resources */,
+				4809063015F03C66003115F3 /* CircleOfFifths.ai in Resources */,
+				4809063115F03C66003115F3 /* CircleOfFifths.png in Resources */,
+				4809063215F03C66003115F3 /* Dorian.ai in Resources */,
+				4809063315F03C66003115F3 /* Dorian.png in Resources */,
+				4809063415F03C66003115F3 /* Ionian.ai in Resources */,
+				4809063515F03C66003115F3 /* Ionian.png in Resources */,
+				4809063615F03C66003115F3 /* MezzoSopranoClef.ai in Resources */,
+				4809063715F03C66003115F3 /* MezzoSopranoClef.png in Resources */,
+				4809063815F03C66003115F3 /* Phrygian.ai in Resources */,
+				4809063915F03C66003115F3 /* Phrygian.png in Resources */,
+				4809063A15F03C66003115F3 /* SopranoClef.ai in Resources */,
+				4809063B15F03C66003115F3 /* SopranoClef.png in Resources */,
+				4809063C15F03C66003115F3 /* SubBassClef.ai in Resources */,
+				4809063D15F03C66003115F3 /* SubBassClef.png in Resources */,
+				4809063E15F03C66003115F3 /* TenorClef.ai in Resources */,
+				4809063F15F03C66003115F3 /* TenorClef.png in Resources */,
+				4809064015F03C66003115F3 /* TheGrandStaff.ai in Resources */,
+				4809064115F03C66003115F3 /* TheGrandStaff.png in Resources */,
+				4809064215F03C66003115F3 /* TrebleClef.ai in Resources */,
+				4809064315F03C66003115F3 /* TrebleClef.png in Resources */,
+				4809064415F03C66003115F3 /* welcome.ai in Resources */,
+				4809064515F03C66003115F3 /* welcome.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
