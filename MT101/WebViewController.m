@@ -78,6 +78,7 @@
   backBtn.enabled = webView.canGoBack;
   fwdBtn.enabled = webView.canGoForward;
 
+    [doneButton useDoneButtonStyle];
   webView.delegate = self;
 
 

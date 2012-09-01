@@ -55,5 +55,5 @@
 - (void)useWikiStyle;
 - (void)useInteractiveStyle;
 - (void)useTBStyle;
-
+- (void)useDoneButtonStyle;
 @end
