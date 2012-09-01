@@ -8,7 +8,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GradientButton.h"
 @protocol WebViewDelegate<NSObject>
 @end
 
@@ -16,7 +16,8 @@
 @interface WebViewController : UIViewController < UIWebViewDelegate > {
 
   IBOutlet UIWebView *webView;
-  IBOutlet UIBarButtonItem *doneButton;
+  IBOutlet UIBarButtonItem *doneBarButtonItem;
+    IBOutlet GradientButton *doneButton;
   IBOutlet UIBarButtonItem* refreshBtn;
   IBOutlet UILabel* addressLabel;
   IBOutlet UIBarButtonItem* backBtn;
@@ -35,6 +36,6 @@
 @property (retain) NSString* imageURL;
 @property (assign) BOOL isImage;
 @property (nonatomic, retain) id <WebViewDelegate> delegate;
-
+@property (nonatomic,retain) GradientButton *doneButton;
 
 @end

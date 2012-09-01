@@ -9,6 +9,7 @@
 
 #import "WebViewController.h"
 #import "Constants.h"
+#import "GradientButton.h"
 #import "iScrollPlugin_JS.h"
 
 
@@ -17,7 +18,7 @@
 @synthesize webView;
 @synthesize imageURL;
 @synthesize isImage;
-
+@synthesize doneButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)
  nibBundleOrNil {
