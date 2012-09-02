@@ -7,7 +7,8 @@
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 #import "TenorClefViewController.h"
-
+#import "GradientButton.h"
+#import "GradientToolBar.h"
 @implementation TenorClefViewController
 
 @synthesize mixerHost;

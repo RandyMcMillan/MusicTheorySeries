@@ -200,7 +200,7 @@
 {
 	NSMutableArray	*colors = [NSMutableArray arrayWithCapacity:3];
 	UIColor			*color	= [UIColor lightGrayColor];	// [UIColor
-
+    
 	// colorWithRed:0.864
 	// green:0.864 blue:0.864
 	// alpha:1.0];
@@ -211,11 +211,11 @@
 	[colors addObject:(id)[color CGColor]];
 	self.normalGradientColors		= colors;
 	self.normalGradientLocations	= [NSMutableArray arrayWithObjects:
-		[NSNumber numberWithFloat:0.0f],
-		[NSNumber numberWithFloat:1.0f],
-		[NSNumber numberWithFloat:0.601f],
-		nil];
-
+                                       [NSNumber numberWithFloat:0.0f],
+                                       [NSNumber numberWithFloat:1.0f],
+                                       [NSNumber numberWithFloat:0.601f],
+                                       nil];
+    
 	NSMutableArray *colors2 = [NSMutableArray arrayWithCapacity:3];
 	color = [UIColor colorWithRed:0.692 green:0.692 blue:0.691 alpha:1.0];
 	[colors2 addObject:(id)[color CGColor]];
@@ -225,25 +225,28 @@
 	[colors2 addObject:(id)[color CGColor]];
 	self.highlightGradientColors	= colors2;
 	self.highlightGradientLocations = [NSMutableArray arrayWithObjects:
-		[NSNumber numberWithFloat:0.0f],
-		[NSNumber numberWithFloat:1.0f],
-		[NSNumber numberWithFloat:0.601f],
-		nil];
-
+                                       [NSNumber numberWithFloat:0.0f],
+                                       [NSNumber numberWithFloat:1.0f],
+                                       [NSNumber numberWithFloat:0.601f],
+                                       nil];
+    
 	self.cornerRadius	= 5.0f;
 	self.strokeColor	= [UIColor lightGrayColor];
 	self.strokeWeight	= 0.1f;
 	[self setTitleColor:[UIColor darkGrayColor] forState:
-		UIControlStateNormal];
+     UIControlStateNormal];
 	[self setTitleColor:[UIColor darkGrayColor] forState:
-		UIControlStateHighlighted];
+     UIControlStateHighlighted];
+
+
 }	/* useWikiStyle */
 
 - (void)useInteractiveStyle
 {
+    NSLog(@"Use useInteractiveStyle");
 	NSMutableArray	*colors = [NSMutableArray arrayWithCapacity:3];
 	UIColor			*color	= [UIColor lightGrayColor];	// [UIColor
-
+    
 	// colorWithRed:0.864
 	// green:0.864 blue:0.864
 	// alpha:1.0];
@@ -254,11 +257,11 @@
 	[colors addObject:(id)[color CGColor]];
 	self.normalGradientColors		= colors;
 	self.normalGradientLocations	= [NSMutableArray arrayWithObjects:
-		[NSNumber numberWithFloat:0.0f],
-		[NSNumber numberWithFloat:1.0f],
-		[NSNumber numberWithFloat:0.601f],
-		nil];
-
+                                       [NSNumber numberWithFloat:0.0f],
+                                       [NSNumber numberWithFloat:1.0f],
+                                       [NSNumber numberWithFloat:0.601f],
+                                       nil];
+    
 	NSMutableArray *colors2 = [NSMutableArray arrayWithCapacity:3];
 	color = [UIColor colorWithRed:0.692 green:0.692 blue:0.691 alpha:1.0];
 	[colors2 addObject:(id)[color CGColor]];
@@ -268,19 +271,23 @@
 	[colors2 addObject:(id)[color CGColor]];
 	self.highlightGradientColors	= colors2;
 	self.highlightGradientLocations = [NSMutableArray arrayWithObjects:
-		[NSNumber numberWithFloat:0.0f],
-		[NSNumber numberWithFloat:1.0f],
-		[NSNumber numberWithFloat:0.601f],
-		nil];
-
+                                       [NSNumber numberWithFloat:0.0f],
+                                       [NSNumber numberWithFloat:1.0f],
+                                       [NSNumber numberWithFloat:0.601f],
+                                       nil];
+    
 	self.cornerRadius	= 5.0f;
 	self.strokeColor	= [UIColor lightGrayColor];
 	self.strokeWeight	= 0.1f;
 	[self setTitleColor:[UIColor darkGrayColor] forState:
-		UIControlStateNormal];
+     UIControlStateNormal];
 	[self setTitleColor:[UIColor darkGrayColor] forState:
-		UIControlStateHighlighted];
+     UIControlStateHighlighted];
+    
+    
 }	/* useInteractiveStyle */
+
+
 
 - (void)useTBStyle
 {

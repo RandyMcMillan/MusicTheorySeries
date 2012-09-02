@@ -7,7 +7,8 @@
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 #import "SolfegeNaturalsViewController.h"
-
+#import "GradientButton.h"
+#import "GradientToolBar.h"
 @implementation SolfegeNaturalsViewController
 
 @synthesize mixerHost;

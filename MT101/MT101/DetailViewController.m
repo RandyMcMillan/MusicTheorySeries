@@ -47,11 +47,6 @@
 
   MPMoviePlayerViewController *moviePlayer;
 
-  // AppleXylophoneViewController *test;
-  // AeolianViewController *aeolianVC;
-  // GrandStaffViewController *theGrandStaffVC;
-  // CircleOfFifthsViewController *circleOfFifthsVC;
-  // TrebleClefViewController *trebleClefVC;
 
 }
 @property (strong,
@@ -63,27 +58,11 @@
 @implementation DetailViewController
 
 
-@synthesize blackButton;
-@synthesize whiteButton;
-@synthesize alertButton;
-@synthesize orangeButton;
-@synthesize redButton;
-@synthesize greenButton;
-@synthesize blackActionButton;
-@synthesize whiteActionButton;
 @synthesize videoButton;
-@synthesize navView;
+@synthesize wikiButton;
+@synthesize interActiveButton;
+@synthesize toolBar;
 
-@synthesize testButton;
-
-//@synthesize redButton;
-//@synthesize greenButton;
-@synthesize blueButton;
-@synthesize brownRedButton;
-@synthesize cornerRadiusButton;
-@synthesize border5Button;
-@synthesize crazyButton;
-@synthesize tbButton;
 
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
@@ -482,40 +461,11 @@
       }
 
 
-  [blackButton useBlackStyle];
-  [whiteButton useWhiteStyle];
-  [alertButton useAlertStyle];
-  [orangeButton useSimpleOrangeStyle];
-
-  // [redButton useRedDeleteStyle];
-  // [greenButton useGreenConfirmStyle];
-  [whiteActionButton useWhiteActionSheetStyle];
-  [blackActionButton useBlackActionSheetStyle];
-
   [videoButton useVideoStyle];
   [wikiButton useWikiStyle];
   [interActiveButton useInteractiveStyle];
-  [navView useTBStyle];
+  [toolBar useTBStyle];
 
-//    self.redButton.fillColor = [UIColor redColor];
-//  self.greenButton.fillColor = [UIColor greenColor];
-//    self.blueButton.fillColor = [UIColor blueColor];
-//    self.blueButton.tapColor = [UIColor colorWithRed:0 green:0 blue:0
-// alpha:1.0];
-//   self.brownRedButton.fillColor = [UIColor brownColor];
-//    self.brownRedButton.tapColor = [UIColor redColor];
-//    self.cornerRadiusButton.radius = 18;
-//    self.border5Button.lineWidth = 5;
-//    self.crazyButton.radius = 40;
-//    self.crazyButton.strokeColor = [UIColor greenColor];
-//    self.crazyButton.lineWidth = 10;
-//    self.crazyButton.fillColor = [UIColor brownColor];
-//    self.crazyButton.tapColor = [UIColor purpleColor];
-//    self.crazyButton.tapStrokeColor = [UIColor yellowColor];
-
-//    self.tbButton.radius = 5;
-//    self.tbButton.strokeColor = [UIColor colorWithRed:0.494
-// green:0.510 blue:0.576 alpha:1.000];//[UIColor clearColor];
 
   self.imageView.backgroundColor =
     [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
@@ -549,14 +499,7 @@
 - (void)viewDidLoad {
 
   [super viewDidLoad];
-
-  // Do any additional setup after loading the view, typically from a
-  // nib.
   [self configureView];
-
-  // self.toolBar.alpha = 1.0;
-  NSLog(@"width = %f",self.view.frame.size.width);
-  NSLog(@"height = %f",self.view.frame.size.height);
 
 } /* viewDidLoad */
 
@@ -569,7 +512,9 @@
   // Release any retained subviews of the main view.
   self.detailDescriptionLabel = nil;
 
-  [self setTestButton:nil];
+ 
+/*
+[self setTestButton:nil];
   [self setRedButton:nil];
   [self setGreenButton:nil];
   [self setBlueButton:nil];
@@ -578,6 +523,8 @@
   [self setBorder5Button:nil];
   [self setCrazyButton:nil];
 
+ */
+    
 
 } /* viewDidUnload */
 

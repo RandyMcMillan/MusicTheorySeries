@@ -7,6 +7,8 @@
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 #import "SolfegeFlatsViewController.h"
+#import "GradientButton.h"
+#import "GradientToolBar.h"
 
 @implementation SolfegeFlatsViewController
 

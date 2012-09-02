@@ -7,7 +7,8 @@
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 #import "BassClefViewController.h"
-
+#import "GradientButton.h"
+#import "GradientToolBar.h"
 @implementation BassClefViewController
 
 @synthesize mixerHost;

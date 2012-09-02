@@ -9,7 +9,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MixerHostAudio.h"
-
+#import "GradientButton.h"
+#import "GradientToolBar.h"
 #import "Constants.h"
 
 @interface BariToneClefViewController : UIViewController <

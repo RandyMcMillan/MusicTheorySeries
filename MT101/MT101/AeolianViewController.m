@@ -7,6 +7,8 @@
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 #import "AeolianViewController.h"
+#import "GradientButton.h"
+#import "GradientToolBar.h"
 
 @implementation AeolianViewController
 

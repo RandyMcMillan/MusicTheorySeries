@@ -39,7 +39,6 @@
 - (void)useDoneButtonStyle;
 - (void)useSafariStyle;
 - (void)useRefreshStyle;
-- (void)useRefreshImage;
 - (void)useBackStyle;
 - (void)useForwardStyle;
 
