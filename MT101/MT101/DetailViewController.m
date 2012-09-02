@@ -8,6 +8,8 @@
 //
 
 #import "DetailViewController.h"
+#import "GradientButton.h"
+#import "GradientToolBar.h"
 
 #import "GrandStaffViewController.h"
 #import "AppleXylophoneViewController.h"

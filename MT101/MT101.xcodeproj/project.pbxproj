@@ -119,6 +119,7 @@
 		48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */; };
 		48A3562F15E2363F00A3529D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3562E15E2363F00A3529D /* WebViewController.m */; };
 		48A3563115E2364600A3529D /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A3563015E2364600A3529D /* WebView.xib */; };
+		48B67BC815F411DA00B0C6F2 /* GradientToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */; };
 		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48E0C4CE15F0054F001A2748 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4CD15F0054F001A2748 /* Default-Landscape@2x~ipad.png */; };
@@ -331,6 +332,8 @@
 		48A3562D15E2363F00A3529D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		48A3562E15E2363F00A3529D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		48A3563015E2364600A3529D /* WebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
+		48B67BC615F411DA00B0C6F2 /* GradientToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientToolBar.h; sourceTree = "<group>"; };
+		48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientToolBar.m; sourceTree = "<group>"; };
 		48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
@@ -786,7 +789,8 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
-				481A432915F101C5006EDF46 /* QuartzCore.framework */,
+				48B67BC615F411DA00B0C6F2 /* GradientToolBar.h */,
+				48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */,
 				481A432315F0FFF7006EDF46 /* NavBarBackgroundGradientView.h */,
 				481A432415F0FFF7006EDF46 /* NavBarBackgroundGradientView.m */,
 				481A432515F0FFF7006EDF46 /* GradientButton.h */,
@@ -816,6 +820,7 @@
 		B225A7291534CF59006FD46F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				481A432915F101C5006EDF46 /* QuartzCore.framework */,
 				4825A36915C4DBCF006F0C46 /* AVFoundation.framework */,
 				4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */,
 				B225A77A1534D6D7006FD46F /* MediaPlayer.framework */,
@@ -1102,6 +1107,7 @@
 				481A431215F0F52C006EDF46 /* ColorUIButton.m in Sources */,
 				481A432715F0FFF8006EDF46 /* NavBarBackgroundGradientView.m in Sources */,
 				481A432815F0FFF8006EDF46 /* GradientButton.m in Sources */,
+				48B67BC815F411DA00B0C6F2 /* GradientToolBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GradientButton.h"
+#import "GradientToolBar.h"
 #import "NavBarBackgroundGradientView.h"
 
 @protocol WebViewDelegate <NSObject>
@@ -17,7 +18,9 @@
 @interface WebViewController : UIViewController <UIWebViewDelegate>{
 	IBOutlet UIWebView *webView;
 
-	IBOutlet NavBarBackgroundGradientView	*navBar;
+    
+    IBOutlet GradientToolBar *toolBar;
+	IBOutlet GradientToolBar	*navBar;
 	IBOutlet UILabel						*addressLabel;
 
 	IBOutlet UIBarButtonItem	*doneBarButtonItem;

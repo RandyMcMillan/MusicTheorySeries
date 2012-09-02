@@ -9,14 +9,15 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "GradientButton.h"
+#import "GradientToolBar.h"
+#import "NavBarBackgroundGradientView.h"
 
 //#import "AppleXylophoneViewController.h"
 //#import "GrandStaffViewController.h"
 //#import "AeolianViewController.h"
 //#import "CircleOfFifthsViewController.h"
 //#import "TrebleClefViewController.h"
-#import "GradientButton.h"
-#import "NavBarBackgroundGradientView.h"
 
 @class ColorUIButton;
 
