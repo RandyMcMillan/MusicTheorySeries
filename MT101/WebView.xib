@@ -172,7 +172,6 @@
 								<string key="NSFrame">{{387, 6}, {72, 33}}</string>
 								<reference key="NSSuperview" ref="293929079"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -769,6 +768,14 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">NavBarBackgroundGradientView</string>
+					<string key="superclassName">UIView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/NavBarBackgroundGradientView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">WebViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
@@ -814,6 +821,7 @@
 							<string>doneButton</string>
 							<string>forwardButton</string>
 							<string>fwdBarButtonItem</string>
+							<string>navBar</string>
 							<string>refreshBarButtonItem</string>
 							<string>refreshButton</string>
 							<string>safariBarButtonItem</string>
@@ -830,6 +838,7 @@
 							<string>GradientButton</string>
 							<string>GradientButton</string>
 							<string>UIBarButtonItem</string>
+							<string>NavBarBackgroundGradientView</string>
 							<string>UIBarButtonItem</string>
 							<string>GradientButton</string>
 							<string>UIBarButtonItem</string>
@@ -849,6 +858,7 @@
 							<string>doneButton</string>
 							<string>forwardButton</string>
 							<string>fwdBarButtonItem</string>
+							<string>navBar</string>
 							<string>refreshBarButtonItem</string>
 							<string>refreshButton</string>
 							<string>safariBarButtonItem</string>
@@ -885,6 +895,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">fwdBarButtonItem</string>
 								<string key="candidateClassName">UIBarButtonItem</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">navBar</string>
+								<string key="candidateClassName">NavBarBackgroundGradientView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">refreshBarButtonItem</string>

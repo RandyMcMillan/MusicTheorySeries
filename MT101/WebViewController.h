@@ -9,19 +9,23 @@
 
 #import <UIKit/UIKit.h>
 #import "GradientButton.h"
+#import "NavBarBackgroundGradientView.h"
+
 @protocol WebViewDelegate <NSObject>
 @end
 
 @interface WebViewController : UIViewController <UIWebViewDelegate>{
+
 	IBOutlet UIWebView					*webView;
     
+    IBOutlet NavBarBackgroundGradientView *navBar;
+   	IBOutlet UILabel					*addressLabel;
+ 
 	IBOutlet UIBarButtonItem			*doneBarButtonItem;
 	IBOutlet GradientButton				*doneButton;
 	
     IBOutlet UIBarButtonItem			*refreshBarButtonItem;
     IBOutlet GradientButton *refreshButton;
-    
-	IBOutlet UILabel					*addressLabel;
     
 	IBOutlet UIBarButtonItem			*backBarButtonItem;
     IBOutlet GradientButton *backButton;
@@ -32,7 +36,6 @@
     IBOutlet UIBarButtonItem			*safariBarButtonItem;
 	IBOutlet GradientButton *safariButton;
     
-    
     IBOutlet UIActivityIndicatorView	*spinner;
 	BOOL								isImage;
 	NSString							*imageURL;
@@ -41,6 +44,7 @@
 
 - (IBAction)onDoneButtonPress:(id)sender;
 - (IBAction)onSafariButtonPress:(id)sender;
+
 @property (nonatomic, retain) UIWebView				*webView;
 @property (retain) NSString							*imageURL;
 @property (assign) BOOL								isImage;

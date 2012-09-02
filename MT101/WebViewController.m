@@ -10,6 +10,8 @@
 #import "WebViewController.h"
 #import "Constants.h"
 #import "GradientButton.h"
+#import "NavBarBackgroundGradientView.h"
+
 #import "iScrollPlugin_JS.h"
 
 @implementation WebViewController
@@ -73,6 +75,7 @@
 	fwdBtn.enabled		= webView.canGoForward;
 */
     
+
     
 	[doneButton useDoneButtonStyle];
 	[safariButton useSafariStyle];
