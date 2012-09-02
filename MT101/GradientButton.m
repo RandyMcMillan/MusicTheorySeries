@@ -124,13 +124,34 @@
 		UIControlStateHighlighted];
 }	/* useDoneButtonStyle */
 
-- (void)useSafariStyle {}
+- (void)useSafariStyle {
 
-- (void)useRefreshStyle {}
+    
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/compass"]] forState:UIControlStateNormal];
+    
+     
+     }
 
-- (void)useBackStyle {}
+- (void)useRefreshStyle {
 
-- (void)useForwardStyle {}
+
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/but_refresh"]] forState:UIControlStateNormal];
+
+
+}
+
+- (void)useBackStyle {
+
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/arrow_left"]] forState:UIControlStateNormal];
+
+
+}
+
+- (void)useForwardStyle {
+
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/arrow_right"]] forState:UIControlStateNormal];
+
+}
 
 - (void)useVideoStyle
 {
