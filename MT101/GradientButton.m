@@ -958,6 +958,25 @@
 	return self;
 }	/* initWithCoder */
 
++ (NSString *)resolveImageResource:(NSString *)resource
+{
+	NSString	*systemVersion	= [[UIDevice currentDevice] systemVersion];
+	BOOL		isLessThaniOS4	=
+		([systemVersion compare:@"4.0" options:NSNumericSearch] ==
+		NSOrderedAscending);
+
+	if (isLessThaniOS4) {
+		return [NSString stringWithFormat:@"%@.png", resource];
+	} else {
+		if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)]
+				== YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
+			return [NSString stringWithFormat:@"%@@2x.png", resource];
+		}
+	}
+
+	return resource;	// if all else fails
+}						/* resolveImageResource */
+
 #pragma mark -
 - (void)dealloc
 {

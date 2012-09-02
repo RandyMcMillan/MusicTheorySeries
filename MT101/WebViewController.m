@@ -54,35 +54,33 @@
 		// http://localhost:9999/?page=1 or 2 ");
 #endif
 
-/*	refreshBtn.image =
-		[UIImage imageNamed:[[self class] resolveImageResource:
-			@"WebView.bundle/but_refresh"]];
-	backBtn.image =
-		[UIImage imageNamed:[[self class] resolveImageResource:
-			@"WebView.bundle/arrow_left"]];
-	fwdBtn.image =
-		[UIImage imageNamed:[[self class] resolveImageResource:
-			@"WebView.bundle/arrow_right"]];
-	safariBtn.image =
-		[UIImage imageNamed:[[self class] resolveImageResource:
-			@"WebView.bundle/compass"]];
+	/*	refreshBtn.image =
+	 *        [UIImage imageNamed:[[self class] resolveImageResource:
+	 *            @"WebView.bundle/but_refresh"]];
+	 *    backBtn.image =
+	 *        [UIImage imageNamed:[[self class] resolveImageResource:
+	 *            @"WebView.bundle/arrow_left"]];
+	 *    fwdBtn.image =
+	 *        [UIImage imageNamed:[[self class] resolveImageResource:
+	 *            @"WebView.bundle/arrow_right"]];
+	 *    safariBtn.image =
+	 *        [UIImage imageNamed:[[self class] resolveImageResource:
+	 *            @"WebView.bundle/compass"]];
+	 *
+	 *
+	 *
+	 *    refreshBtn.enabled	= TRUE;
+	 *    safariBtn.enabled	= TRUE;
+	 *    backBtn.enabled		= webView.canGoBack;
+	 *    fwdBtn.enabled		= webView.canGoForward;
+	 */
 
- 
-    
-	refreshBtn.enabled	= TRUE;
-	safariBtn.enabled	= TRUE;
-	backBtn.enabled		= webView.canGoBack;
-	fwdBtn.enabled		= webView.canGoForward;
-*/
-    
-
-    
 	[doneButton useDoneButtonStyle];
 	[safariButton useSafariStyle];
 	[backButton useBackStyle];
 	[forwardButton useForwardStyle];
 	[refreshButton useRefreshStyle];
-    
+
 	webView.delegate = self;
 
 	//	NSString *urlAddress = @"http://www.google.com";
@@ -165,7 +163,7 @@
 {
 	addressLabel.text = @"Loading...";
 
-	backButton.enabled = webView.canGoBack;
+	backButton.enabled		= webView.canGoBack;
 	forwardButton.enabled	= webView.canGoForward;
 	NSLog(@"webViewDidStartLoad");
 	spinner.hidden = FALSE;
@@ -184,7 +182,7 @@
 		addressLabel.text = request.URL.absoluteString;
 	}
 
-	backButton.enabled = webView.canGoBack;
+	backButton.enabled		= webView.canGoBack;
 	forwardButton.enabled	= webView.canGoForward;
 	[spinner stopAnimating];
 	NSLog(@"webViewDidFinLoad");
