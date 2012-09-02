@@ -9,10 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface NavBarBackgroundGradientView : UIView
-{
-
-}
+{}
 
 @end

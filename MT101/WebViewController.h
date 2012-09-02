@@ -9,33 +9,30 @@
 
 #import <UIKit/UIKit.h>
 #import "GradientButton.h"
-@protocol WebViewDelegate<NSObject>
+@protocol WebViewDelegate <NSObject>
 @end
 
-
-@interface WebViewController : UIViewController < UIWebViewDelegate > {
-
-  IBOutlet UIWebView *webView;
-  IBOutlet UIBarButtonItem *doneBarButtonItem;
-    IBOutlet GradientButton *doneButton;
-  IBOutlet UIBarButtonItem* refreshBtn;
-  IBOutlet UILabel* addressLabel;
-  IBOutlet UIBarButtonItem* backBtn;
-  IBOutlet UIBarButtonItem* fwdBtn;
-  IBOutlet UIBarButtonItem* safariBtn;
-  IBOutlet UIActivityIndicatorView* spinner;
-  BOOL isImage;
-  NSString* imageURL;
-  id <WebViewDelegate> delegate;
-
+@interface WebViewController : UIViewController <UIWebViewDelegate>{
+	IBOutlet UIWebView					*webView;
+	IBOutlet UIBarButtonItem			*doneBarButtonItem;
+	IBOutlet GradientButton				*doneButton;
+	IBOutlet UIBarButtonItem			*refreshBtn;
+	IBOutlet UILabel					*addressLabel;
+	IBOutlet UIBarButtonItem			*backBtn;
+	IBOutlet UIBarButtonItem			*fwdBtn;
+	IBOutlet UIBarButtonItem			*safariBtn;
+	IBOutlet UIActivityIndicatorView	*spinner;
+	BOOL								isImage;
+	NSString							*imageURL;
+	id <WebViewDelegate>				delegate;
 }
 
-- (IBAction) onDoneButtonPress:(id)sender;
+- (IBAction)onDoneButtonPress:(id)sender;
 - (IBAction)onSafariButtonPress:(id)sender;
-@property (nonatomic, retain) UIWebView *webView;
-@property (retain) NSString* imageURL;
-@property (assign) BOOL isImage;
-@property (nonatomic, retain) id <WebViewDelegate> delegate;
-@property (nonatomic,retain) GradientButton *doneButton;
+@property (nonatomic, retain) UIWebView				*webView;
+@property (retain) NSString							*imageURL;
+@property (assign) BOOL								isImage;
+@property (nonatomic, retain) id <WebViewDelegate>	delegate;
+@property (nonatomic, retain) GradientButton		*doneButton;
 
 @end

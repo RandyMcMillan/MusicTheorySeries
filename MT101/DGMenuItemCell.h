@@ -9,18 +9,18 @@
 
 #import <UIKit/UIKit.h>
 
-//#import "DGMenuViewItem.h"
+// #import "DGMenuViewItem.h"
 
 @interface DGMenuItemCell : UITableViewCell {
-  UILabel             *cellTitleLabel;
-  UIImageView         *cellImageView;
-  UIImageView         *cellBadgeImageView;
-  UILabel             *cellBadgeTitle;
+	UILabel		*cellTitleLabel;
+	UIImageView *cellImageView;
+	UIImageView *cellBadgeImageView;
+	UILabel		*cellBadgeTitle;
 
-  //   DGMenuViewItem      *subject;
-  UIView              *selectedColoredView;   // THE SELECTION INDICATOR
-                                              // ON THE RIGHT SIDE
+	//   DGMenuViewItem      *subject;
+	UIView *selectedColoredView;				// THE SELECTION INDICATOR
+												// ON THE RIGHT SIDE
 }
 
-@property (nonatomic, retain) NSObject      *subject;
+@property (nonatomic, retain) NSObject *subject;
 @end
