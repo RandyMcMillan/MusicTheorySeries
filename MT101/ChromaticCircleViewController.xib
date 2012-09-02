@@ -73,7 +73,7 @@
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">271</int>
 						<array class="NSMutableArray" key="NSSubviews">
-							<object class="IBUIButton" id="84148557">
+							<object class="IBUIButton" id="732903140">
 								<reference key="NSNextResponder" ref="192337562"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{444, 5}, {72, 35}}</string>
@@ -113,7 +113,7 @@
 						<string key="NSFrame">{{-97, 724}, {960, 44}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="84148557"/>
+						<reference key="NSNextKeyView" ref="732903140"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -124,9 +124,9 @@
 								<reference key="IBUIToolbar" ref="192337562"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
-							<object class="IBUIBarButtonItem" id="845145653">
+							<object class="IBUIBarButtonItem" id="680060992">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<reference key="IBUICustomView" ref="84148557"/>
+								<reference key="IBUICustomView" ref="732903140"/>
 								<reference key="IBUIToolbar" ref="192337562"/>
 							</object>
 							<object class="IBUIBarButtonItem" id="251505092">
@@ -210,7 +210,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">onDoneButtonPress:</string>
-						<reference key="source" ref="84148557"/>
+						<reference key="source" ref="732903140"/>
 						<reference key="destination" ref="841351856"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -262,7 +262,7 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="251505092"/>
 							<reference ref="927765629"/>
-							<reference ref="845145653"/>
+							<reference ref="680060992"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -278,16 +278,16 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">23</int>
-						<reference key="object" ref="845145653"/>
+						<reference key="object" ref="680060992"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="84148557"/>
+							<reference ref="732903140"/>
 						</array>
 						<reference key="parent" ref="192337562"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">22</int>
-						<reference key="object" ref="84148557"/>
-						<reference key="parent" ref="845145653"/>
+						<reference key="object" ref="732903140"/>
+						<reference key="parent" ref="680060992"/>
 					</object>
 				</array>
 			</object>
