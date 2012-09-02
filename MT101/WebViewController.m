@@ -52,7 +52,7 @@
 		// http://localhost:9999/?page=1 or 2 ");
 #endif
 
-	refreshBtn.image =
+/*	refreshBtn.image =
 		[UIImage imageNamed:[[self class] resolveImageResource:
 			@"WebView.bundle/but_refresh"]];
 	backBtn.image =
@@ -65,12 +65,21 @@
 		[UIImage imageNamed:[[self class] resolveImageResource:
 			@"WebView.bundle/compass"]];
 
+ 
+    
 	refreshBtn.enabled	= TRUE;
 	safariBtn.enabled	= TRUE;
 	backBtn.enabled		= webView.canGoBack;
 	fwdBtn.enabled		= webView.canGoForward;
-
+*/
+    
+    
 	[doneButton useDoneButtonStyle];
+	[safariButton useSafariStyle];
+	[backButton useBackStyle];
+	[forwardButton useForwardStyle];
+	[refreshButton useRefreshStyle];
+    
 	webView.delegate = self;
 
 	//	NSString *urlAddress = @"http://www.google.com";
@@ -146,15 +155,15 @@
 		}
 	}
 
-	return resource;// if all else fails
-}	/* resolveImageResource */
+	return resource;	// if all else fails
+}						/* resolveImageResource */
 
 - (void)webViewDidStartLoad:(UIWebView *)sender
 {
 	addressLabel.text = @"Loading...";
 
-	backBtn.enabled = webView.canGoBack;
-	fwdBtn.enabled	= webView.canGoForward;
+	backButton.enabled = webView.canGoBack;
+	forwardButton.enabled	= webView.canGoForward;
 	NSLog(@"webViewDidStartLoad");
 	spinner.hidden = FALSE;
 	[spinner startAnimating];
@@ -172,8 +181,8 @@
 		addressLabel.text = request.URL.absoluteString;
 	}
 
-	backBtn.enabled = webView.canGoBack;
-	fwdBtn.enabled	= webView.canGoForward;
+	backButton.enabled = webView.canGoBack;
+	forwardButton.enabled	= webView.canGoForward;
 	[spinner stopAnimating];
 	NSLog(@"webViewDidFinLoad");
 
@@ -251,8 +260,8 @@
 	[self.webView loadHTMLString:htmlText baseURL:[NSURL URLWithString:
 			path]];
 
-	refreshBtn.enabled	= FALSE;
-	safariBtn.enabled	= FALSE;
+	refreshButton.enabled	= FALSE;
+	safariButton.enabled	= FALSE;
 }	/* webView */
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)

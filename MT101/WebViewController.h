@@ -14,14 +14,26 @@
 
 @interface WebViewController : UIViewController <UIWebViewDelegate>{
 	IBOutlet UIWebView					*webView;
+    
 	IBOutlet UIBarButtonItem			*doneBarButtonItem;
 	IBOutlet GradientButton				*doneButton;
-	IBOutlet UIBarButtonItem			*refreshBtn;
+	
+    IBOutlet UIBarButtonItem			*refreshBarButtonItem;
+    IBOutlet GradientButton *refreshButton;
+    
 	IBOutlet UILabel					*addressLabel;
-	IBOutlet UIBarButtonItem			*backBtn;
-	IBOutlet UIBarButtonItem			*fwdBtn;
-	IBOutlet UIBarButtonItem			*safariBtn;
-	IBOutlet UIActivityIndicatorView	*spinner;
+    
+	IBOutlet UIBarButtonItem			*backBarButtonItem;
+    IBOutlet GradientButton *backButton;
+    
+	IBOutlet UIBarButtonItem			*fwdBarButtonItem;
+	IBOutlet GradientButton *forwardButton;
+    
+    IBOutlet UIBarButtonItem			*safariBarButtonItem;
+	IBOutlet GradientButton *safariButton;
+    
+    
+    IBOutlet UIActivityIndicatorView	*spinner;
 	BOOL								isImage;
 	NSString							*imageURL;
 	id <WebViewDelegate>				delegate;
