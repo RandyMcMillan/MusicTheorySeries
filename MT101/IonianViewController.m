@@ -482,7 +482,7 @@
 {
 	[super viewDidLoad];
     
-    [toolBar useTBStyle];
+    //    [toolBar useTBStyle];
 	[closeButton useDoneButtonStyle];
     
     

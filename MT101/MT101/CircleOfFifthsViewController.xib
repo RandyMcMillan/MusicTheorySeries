@@ -295,7 +295,6 @@
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="13.CustomClassName">GradientToolBar</string>
 				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="15.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -316,20 +315,17 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">CircleOfFifthsViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="mixerOutputGainChanged:">UISlider</string>
-						<string key="onDoneButtonPress:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="mixerOutputGainChanged:">
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">mixerOutputGainChanged:</string>
+						<string key="NS.object.0">UISlider</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">mixerOutputGainChanged:</string>
+						<object class="IBActionInfo" key="NS.object.0">
 							<string key="name">mixerOutputGainChanged:</string>
 							<string key="candidateClassName">UISlider</string>
 						</object>
-						<object class="IBActionInfo" key="onDoneButtonPress:">
-							<string key="name">onDoneButtonPress:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
+					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="closeButton">GradientButton</string>
 						<string key="toolBar">GradientToolBar</string>

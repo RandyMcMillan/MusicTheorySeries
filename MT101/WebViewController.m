@@ -78,8 +78,8 @@
 	 */
 
    
-    [navBar useTBStyle];
-    [toolBar useTBStyle];
+    //[navBar useTBStyle];
+    //[toolBar useTBStyle];
 	[doneButton useDoneButtonStyle];
 
     [safariButton useDoneButtonStyle];

@@ -493,7 +493,7 @@
 - (void)viewDidLoad {
 
   [super viewDidLoad];
-    [toolBar useTBStyle];
+    //    [toolBar useTBStyle];
 	[closeButton useDoneButtonStyle];
     
   [mixerHost stopAUGraph];

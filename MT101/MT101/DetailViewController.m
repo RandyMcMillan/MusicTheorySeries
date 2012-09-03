@@ -464,14 +464,14 @@
   [videoButton useVideoStyle];
   [wikiButton useWikiStyle];
   [interActiveButton useInteractiveStyle];
-  [toolBar useTBStyle];
+  //[toolBar useTBStyle];
 
 
   self.imageView.backgroundColor =
     [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
   [self.imageView.layer setCornerRadius:8.0f];
-  [self.toolBar.layer setCornerRadius:18.0f];
-  [self hideGradientBackground:self.toolBar];
+//  [self.toolBar.layer setCornerRadius:18.0f];
+//  [self hideGradientBackground:self.toolBar];
 
   NSString *appVersion =
     [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)

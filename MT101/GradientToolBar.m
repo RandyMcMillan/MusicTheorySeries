@@ -401,7 +401,7 @@
 		self.strokeWeight = 1.0;
 
 		if (self.normalGradientColors == nil) {
-		//	[self useWhiteStyle];
+			//[self useWhiteStyle];
 		}
 
 		[self setOpaque:NO];
