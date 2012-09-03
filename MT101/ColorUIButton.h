@@ -10,14 +10,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ColorUIButton : UIButton {
-	float	radius;
-	float	lineWidth;
-	UIColor *fillColor;
-	UIColor *strokeColor;
-	UIColor *tapColor;
-	UIColor *tapStrokeColor;
-	BOOL	tap;
-	BOOL	noGradient;
+    float	radius;
+    float	lineWidth;
+    UIColor *fillColor;
+    UIColor *strokeColor;
+    UIColor *tapColor;
+    UIColor *tapStrokeColor;
+    BOOL	tap;
+    BOOL	noGradient;
 }
 
 @property float							radius;

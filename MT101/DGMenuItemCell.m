@@ -33,7 +33,7 @@
 @property (nonatomic, retain) UIImageView	*cellBadgeImageView;
 @property (nonatomic, retain) UILabel		*cellBadgeTitle;
 @property (nonatomic,
-	retain) UIImageView					*cellSeperatorImageView;
+    retain) UIImageView					*cellSeperatorImageView;
 @property (nonatomic, retain) UIView	*selectedColoredView;
 
 // - (void)postSetSubject;
@@ -50,74 +50,74 @@
 @synthesize selectedColoredView;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(
-	NSString *)reuseIdentifier
+    NSString *)reuseIdentifier
 {
-	self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
 
-	if (self) {
-		self.cellTitleLabel =
-			[[UILabel alloc] initWithFrame:CGRectMake(TITLE_LABEL_ORIGIN_X,
-				TITLE_LABEL_ORIGIN_Y, TITLE_LABEL_SIZE_WIDTH,
-				TITLE_LABEL_SIZE_HEIGHT)];
-		cellTitleLabel.textColor	= [UIColor blackColor];
-		cellTitleLabel.font			=
-			[UIFont fontWithName:@"Helvetica" size:18.0];
-		cellTitleLabel.shadowColor		= [UIColor whiteColor];
-		cellTitleLabel.shadowOffset		= CGSizeMake(1, 1);
-		cellTitleLabel.backgroundColor	= [UIColor clearColor];
-		[self.contentView addSubview:cellTitleLabel];
-		[cellTitleLabel release];
+    if (self) {
+        self.cellTitleLabel =
+            [[UILabel alloc] initWithFrame:CGRectMake(TITLE_LABEL_ORIGIN_X,
+                TITLE_LABEL_ORIGIN_Y, TITLE_LABEL_SIZE_WIDTH,
+                TITLE_LABEL_SIZE_HEIGHT)];
+        cellTitleLabel.textColor	= [UIColor blackColor];
+        cellTitleLabel.font			=
+            [UIFont fontWithName:@"Helvetica" size:18.0];
+        cellTitleLabel.shadowColor		= [UIColor whiteColor];
+        cellTitleLabel.shadowOffset		= CGSizeMake(1, 1);
+        cellTitleLabel.backgroundColor	= [UIColor clearColor];
+        [self.contentView addSubview:cellTitleLabel];
+        [cellTitleLabel release];
 
-		self.cellImageView =
-			[[UIImageView alloc] initWithFrame:CGRectMake(IMAGE_ICON_ORIGIN_X,
-				IMAGE_ICON_ORIGIN_Y, IMAGE_ICON_SIZE_WIDTH,
-				IMAGE_ICON_SIZE_HEIGHT)];
-		[self.contentView addSubview:cellImageView];
-		[cellImageView release];
+        self.cellImageView =
+            [[UIImageView alloc] initWithFrame:CGRectMake(IMAGE_ICON_ORIGIN_X,
+                IMAGE_ICON_ORIGIN_Y, IMAGE_ICON_SIZE_WIDTH,
+                IMAGE_ICON_SIZE_HEIGHT)];
+        [self.contentView addSubview:cellImageView];
+        [cellImageView release];
 
-		self.cellBadgeImageView =
-			[[UIImageView alloc] initWithFrame:CGRectMake(
-				IMAGE_BADGE_ORIGIN_X,
-				0, IMAGE_BADGE_SIZE_WIDTH, IMAGE_BADGE_SIZE_HEIGHT)];
+        self.cellBadgeImageView =
+            [[UIImageView alloc] initWithFrame:CGRectMake(
+                IMAGE_BADGE_ORIGIN_X,
+                0, IMAGE_BADGE_SIZE_WIDTH, IMAGE_BADGE_SIZE_HEIGHT)];
 
-		NSLog(
-			@"Configure the badge icon here or remove everything associated with badge");
+        NSLog(
+            @"Configure the badge icon here or remove everything associated with badge");
 
-		//        cellBadgeImageView.image = [UIImage
-		// imageNamed:@"NotificationICON"];
-		cellBadgeImageView.hidden = YES;
-		[self.contentView addSubview:cellBadgeImageView];
-		[cellBadgeImageView release];
+        //        cellBadgeImageView.image = [UIImage
+        // imageNamed:@"NotificationICON"];
+        cellBadgeImageView.hidden = YES;
+        [self.contentView addSubview:cellBadgeImageView];
+        [cellBadgeImageView release];
 
-		self.cellBadgeTitle =
-			[[UILabel alloc] initWithFrame:CGRectMake(IMAGE_BADGE_ORIGIN_X -
-				1,
-				6, IMAGE_BADGE_SIZE_WIDTH, 12.0)];
-		cellBadgeTitle.textColor		= [UIColor whiteColor];
-		cellBadgeTitle.backgroundColor	= [UIColor clearColor];
-		cellBadgeTitle.textAlignment	= UITextAlignmentCenter;
-		cellBadgeTitle.font				=
-			[UIFont fontWithName:@"Helvetica-Bold" size:12.0];
-		[self.contentView addSubview:cellBadgeTitle];
-		[cellBadgeTitle release];
+        self.cellBadgeTitle =
+            [[UILabel alloc] initWithFrame:CGRectMake(IMAGE_BADGE_ORIGIN_X -
+                1,
+                6, IMAGE_BADGE_SIZE_WIDTH, 12.0)];
+        cellBadgeTitle.textColor		= [UIColor whiteColor];
+        cellBadgeTitle.backgroundColor	= [UIColor clearColor];
+        cellBadgeTitle.textAlignment	= UITextAlignmentCenter;
+        cellBadgeTitle.font				=
+            [UIFont fontWithName:@"Helvetica-Bold" size:12.0];
+        [self.contentView addSubview:cellBadgeTitle];
+        [cellBadgeTitle release];
 
-		//        UIImageView *selectedBGImageView = [[UIImageView alloc]
-		// initWithImage:[UIImage imageNamed:@"menu_selected_cell"]];
-		//        selectedBGImageView.frame = self.frame;
-		//        self.selectedBackgroundView = selectedBGImageView;
-		//        [selectedBGImageView autorelease];
+        //        UIImageView *selectedBGImageView = [[UIImageView alloc]
+        // initWithImage:[UIImage imageNamed:@"menu_selected_cell"]];
+        //        selectedBGImageView.frame = self.frame;
+        //        self.selectedBackgroundView = selectedBGImageView;
+        //        [selectedBGImageView autorelease];
 
-		self.selectedColoredView =
-			[[UIView alloc] initWithFrame:CGRectMake(280 -
-				SELECTED_CELL_INDICATOR_WIDTH, 0, SELECTED_CELL_INDICATOR_WIDTH,
-				self.frame.size.height)];
-		selectedColoredView.hidden = YES;
-		[self.contentView addSubview:selectedColoredView];
-		[selectedColoredView release];
-	}
+        self.selectedColoredView =
+            [[UIView alloc] initWithFrame:CGRectMake(280 -
+                SELECTED_CELL_INDICATOR_WIDTH, 0, SELECTED_CELL_INDICATOR_WIDTH,
+                self.frame.size.height)];
+        selectedColoredView.hidden = YES;
+        [self.contentView addSubview:selectedColoredView];
+        [selectedColoredView release];
+    }
 
-	return self;
-}	/* initWithStyle */
+    return self;
+}   /* initWithStyle */
 
 /*
  *   - (void)setSubject:(DGMenuViewItem *)aSubject {
@@ -154,14 +154,14 @@
 
 - (void)dealloc
 {
-	self.cellTitleLabel			= nil;
-	self.cellImageView			= nil;
-	self.cellBadgeImageView		= nil;
-	self.cellBadgeTitle			= nil;
-	self.cellSeperatorImageView = nil;
-	self.subject				= nil;
-	self.selectedColoredView	= nil;
-	[super dealloc];
+    self.cellTitleLabel			= nil;
+    self.cellImageView			= nil;
+    self.cellBadgeImageView		= nil;
+    self.cellBadgeTitle			= nil;
+    self.cellSeperatorImageView = nil;
+    self.subject				= nil;
+    self.selectedColoredView	= nil;
+    [super dealloc];
 }
 
 /*
@@ -186,36 +186,36 @@
 
 - (void)triggerBalloonAnimation
 {
-	cellBadgeImageView.transform = CGAffineTransformScale(
-		CGAffineTransformIdentity, 0.001, 0.001);
-	[UIView beginAnimations:nil context:nil];
-	[UIView setAnimationDuration:0.3 / 1.5];
-	[UIView setAnimationDelegate:self];
-	[UIView setAnimationDidStopSelector:@selector(bounce1AnimationStopped)
-	];
-	cellBadgeImageView.transform = CGAffineTransformScale(
-		CGAffineTransformIdentity, 1.1, 1.1);
-	[UIView commitAnimations];
+    cellBadgeImageView.transform = CGAffineTransformScale(
+        CGAffineTransformIdentity, 0.001, 0.001);
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.3 / 1.5];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDidStopSelector:@selector(bounce1AnimationStopped)
+    ];
+    cellBadgeImageView.transform = CGAffineTransformScale(
+        CGAffineTransformIdentity, 1.1, 1.1);
+    [UIView commitAnimations];
 }
 
 - (void)bounce1AnimationStopped
 {
-	[UIView beginAnimations:nil context:nil];
-	[UIView setAnimationDuration:0.3 / 2];
-	[UIView setAnimationDelegate:self];
-	[UIView setAnimationDidStopSelector:@selector(bounce2AnimationStopped)
-	];
-	cellBadgeImageView.transform = CGAffineTransformScale(
-		CGAffineTransformIdentity, 0.9, 0.9);
-	[UIView commitAnimations];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.3 / 2];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDidStopSelector:@selector(bounce2AnimationStopped)
+    ];
+    cellBadgeImageView.transform = CGAffineTransformScale(
+        CGAffineTransformIdentity, 0.9, 0.9);
+    [UIView commitAnimations];
 }
 
 - (void)bounce2AnimationStopped
 {
-	[UIView beginAnimations:nil context:nil];
-	[UIView setAnimationDuration:0.3 / 2];
-	cellBadgeImageView.transform = CGAffineTransformIdentity;
-	[UIView commitAnimations];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.3 / 2];
+    cellBadgeImageView.transform = CGAffineTransformIdentity;
+    [UIView commitAnimations];
 }
 
 @end
