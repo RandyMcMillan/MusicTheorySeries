@@ -461,9 +461,9 @@
       }
 
 
-  [videoButton useVideoStyle];
-  [wikiButton useWikiStyle];
-  [interActiveButton useInteractiveStyle];
+  [videoButton useDoneButtonStyle];
+  [wikiButton useDoneButtonStyle];
+  [interActiveButton useDoneButtonStyle];
   //[toolBar useTBStyle];
 
 
