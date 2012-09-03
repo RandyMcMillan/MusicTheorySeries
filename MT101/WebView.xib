@@ -272,7 +272,7 @@
 							<bytes key="NSRGB">MC41MTc2NDcwODc2IDAuNTE3NjQ3MDg3NiAwLjUxNzY0NzA4NzYAA</bytes>
 						</object>
 					</object>
-					<object class="IBUIToolbar" id="824680415">
+					<object class="IBUIToolbar" id="630962085">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">290</int>
 						<string key="NSFrameSize">{480, 44}</string>
@@ -326,7 +326,7 @@
 				<string key="NSFrameSize">{480, 320}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="824680415"/>
+				<reference key="NSNextKeyView" ref="630962085"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -444,7 +444,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">navBar</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="824680415"/>
+						<reference key="destination" ref="630962085"/>
 					</object>
 					<int key="connectionID">66</int>
 				</object>
@@ -513,7 +513,7 @@
 							<reference ref="812956706"/>
 							<reference ref="293929079"/>
 							<reference ref="106000698"/>
-							<reference ref="824680415"/>
+							<reference ref="630962085"/>
 							<reference ref="637080242"/>
 						</object>
 						<reference key="parent" ref="360949347"/>
@@ -665,7 +665,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">64</int>
-						<reference key="object" ref="824680415"/>
+						<reference key="object" ref="630962085"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 						</object>
@@ -790,14 +790,6 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">NavBarBackgroundGradientView</string>
-					<string key="superclassName">UIView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/NavBarBackgroundGradientView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
 					<string key="className">WebViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
@@ -861,7 +853,7 @@
 							<string>GradientButton</string>
 							<string>GradientButton</string>
 							<string>UIBarButtonItem</string>
-							<string>NavBarBackgroundGradientView</string>
+							<string>GradientToolBar</string>
 							<string>UIBarButtonItem</string>
 							<string>GradientButton</string>
 							<string>UIBarButtonItem</string>
@@ -923,7 +915,7 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">navBar</string>
-								<string key="candidateClassName">NavBarBackgroundGradientView</string>
+								<string key="candidateClassName">GradientToolBar</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">refreshBarButtonItem</string>

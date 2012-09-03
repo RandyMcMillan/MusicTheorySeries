@@ -39,15 +39,46 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">319</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIToolbar" id="740172806">
+					<object class="IBUIImageView" id="1028406998">
+						<reference key="NSNextResponder" ref="85075123"/>
+						<int key="NSvFlags">319</int>
+						<string key="NSFrame">{{21, 0}, {725, 725}}</string>
+						<reference key="NSSuperview" ref="85075123"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="406800258"/>
+						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<int key="IBUIContentMode">1</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">ChromaticCircle.png</string>
+						</object>
+					</object>
+					<object class="IBUISlider" id="406800258">
+						<reference key="NSNextResponder" ref="85075123"/>
+						<int key="NSvFlags">268</int>
+						<string key="NSFrame">{{55, 687}, {105, 23}}</string>
+						<reference key="NSSuperview" ref="85075123"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
+						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<float key="IBUIValue">0.10000000149011612</float>
+					</object>
+					<object class="IBUIToolbar" id="831642576">
 						<reference key="NSNextResponder" ref="85075123"/>
 						<int key="NSvFlags">271</int>
 						<array class="NSMutableArray" key="NSSubviews">
-							<object class="IBUIButton" id="480990098">
-								<reference key="NSNextResponder" ref="740172806"/>
+							<object class="IBUIButton" id="597908545">
+								<reference key="NSNextResponder" ref="831642576"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{444, 5}, {72, 35}}</string>
-								<reference key="NSSuperview" ref="740172806"/>
+								<string key="NSFrame">{{348, 5}, {72, 35}}</string>
+								<reference key="NSSuperview" ref="831642576"/>
+								<reference key="NSWindow"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -78,62 +109,36 @@
 								</object>
 							</object>
 						</array>
-						<string key="NSFrame">{{-96, 362}, {960, 44}}</string>
+						<string key="NSFrame">{{0, 724}, {768, 44}}</string>
 						<reference key="NSSuperview" ref="85075123"/>
-						<reference key="NSNextKeyView" ref="480990098"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="597908545"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<array class="NSMutableArray" key="IBUIItems">
-							<object class="IBUIBarButtonItem" id="1056504448">
+							<object class="IBUIBarButtonItem" id="310962079">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<reference key="IBUIToolbar" ref="740172806"/>
+								<reference key="IBUIToolbar" ref="831642576"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
-							<object class="IBUIBarButtonItem" id="732351974">
+							<object class="IBUIBarButtonItem" id="262717513">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<reference key="IBUICustomView" ref="480990098"/>
-								<reference key="IBUIToolbar" ref="740172806"/>
+								<reference key="IBUICustomView" ref="597908545"/>
+								<reference key="IBUIToolbar" ref="831642576"/>
 							</object>
-							<object class="IBUIBarButtonItem" id="1047846178">
+							<object class="IBUIBarButtonItem" id="550973235">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<reference key="IBUIToolbar" ref="740172806"/>
+								<reference key="IBUIToolbar" ref="831642576"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
 						</array>
 					</object>
-					<object class="IBUIImageView" id="1028406998">
-						<reference key="NSNextResponder" ref="85075123"/>
-						<int key="NSvFlags">319</int>
-						<string key="NSFrame">{{21, 0}, {725, 725}}</string>
-						<reference key="NSSuperview" ref="85075123"/>
-						<reference key="NSNextKeyView" ref="406800258"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<int key="IBUIContentMode">1</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">ChromaticCircle.png</string>
-						</object>
-					</object>
-					<object class="IBUISlider" id="406800258">
-						<reference key="NSNextResponder" ref="85075123"/>
-						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{55, 687}, {105, 23}}</string>
-						<reference key="NSSuperview" ref="85075123"/>
-						<reference key="NSNextKeyView"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<float key="IBUIValue">0.10000000149011612</float>
-					</object>
 				</array>
 				<string key="NSFrameSize">{768, 768}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="1028406998"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
@@ -185,6 +190,22 @@
 					<int key="connectionID">21</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">closeButton</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="262717513"/>
+					</object>
+					<int key="connectionID">31</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">toolBar</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="831642576"/>
+					</object>
+					<int key="connectionID">32</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">mixerOutputGainChanged:</string>
 						<reference key="source" ref="406800258"/>
@@ -196,7 +217,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">onDoneButtonPress:</string>
-						<reference key="source" ref="480990098"/>
+						<reference key="source" ref="597908545"/>
 						<reference key="destination" ref="841351856"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -228,7 +249,7 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="1028406998"/>
 							<reference ref="406800258"/>
-							<reference ref="740172806"/>
+							<reference ref="831642576"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -244,36 +265,36 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">25</int>
-						<reference key="object" ref="740172806"/>
+						<reference key="object" ref="831642576"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="1047846178"/>
-							<reference ref="1056504448"/>
-							<reference ref="732351974"/>
+							<reference ref="550973235"/>
+							<reference ref="310962079"/>
+							<reference ref="262717513"/>
 						</array>
 						<reference key="parent" ref="85075123"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">28</int>
-						<reference key="object" ref="1047846178"/>
-						<reference key="parent" ref="740172806"/>
+						<reference key="object" ref="550973235"/>
+						<reference key="parent" ref="831642576"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">27</int>
-						<reference key="object" ref="1056504448"/>
-						<reference key="parent" ref="740172806"/>
+						<reference key="object" ref="310962079"/>
+						<reference key="parent" ref="831642576"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">26</int>
-						<reference key="object" ref="732351974"/>
+						<reference key="object" ref="262717513"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="480990098"/>
+							<reference ref="597908545"/>
 						</array>
-						<reference key="parent" ref="740172806"/>
+						<reference key="parent" ref="831642576"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">29</int>
-						<reference key="object" ref="480990098"/>
-						<reference key="parent" ref="732351974"/>
+						<reference key="object" ref="597908545"/>
+						<reference key="parent" ref="262717513"/>
 					</object>
 				</array>
 			</object>
@@ -297,9 +318,69 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">30</int>
+			<int key="maxID">32</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">GradientButton</string>
+					<string key="superclassName">UIButton</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/GradientButton.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">GradientToolBar</string>
+					<string key="superclassName">UIToolbar</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/GradientToolBar.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">SolfegeSharpsViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="mixerOutputGainChanged:">UISlider</string>
+						<string key="onDoneButtonPress:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="mixerOutputGainChanged:">
+							<string key="name">mixerOutputGainChanged:</string>
+							<string key="candidateClassName">UISlider</string>
+						</object>
+						<object class="IBActionInfo" key="onDoneButtonPress:">
+							<string key="name">onDoneButtonPress:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="closeButton">UIBarButtonItem</string>
+						<string key="imageView">UIImageView</string>
+						<string key="toolBar">UIToolbar</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="closeButton">
+							<string key="name">closeButton</string>
+							<string key="candidateClassName">UIBarButtonItem</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="imageView">
+							<string key="name">imageView</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="toolBar">
+							<string key="name">toolBar</string>
+							<string key="candidateClassName">UIToolbar</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/SolfegeSharpsViewController.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">

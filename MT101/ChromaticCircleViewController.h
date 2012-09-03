@@ -19,8 +19,11 @@
 	CGRect	keyRects[KEY_COUNT];
 
 	IBOutlet UIImageView	*imageView;
-	IBOutlet UIToolbar		*toolBar;
-	UILabel					*label0;
+        IBOutlet GradientToolBar			*toolBar;
+        IBOutlet GradientButton	*closeButton;
+
+
+        UILabel					*label0;
 	UILabel					*label1;
 	UILabel					*label2;
 	UILabel					*label3;

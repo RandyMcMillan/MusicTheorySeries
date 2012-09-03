@@ -81,10 +81,18 @@
     [navBar useTBStyle];
     [toolBar useTBStyle];
 	[doneButton useDoneButtonStyle];
-	[safariButton useSafariStyle];
-	[backButton useBackStyle];
-	[forwardButton useForwardStyle];
-	[refreshButton useRefreshStyle];
+
+    [safariButton useDoneButtonStyle];
+    [safariButton useSafariStyle];
+	
+    [backButton useDoneButtonStyle];
+    [backButton useBackStyle];
+	
+    [forwardButton useDoneButtonStyle];
+    [forwardButton useForwardStyle];
+	
+    [refreshButton useDoneButtonStyle];
+    [refreshButton useRefreshStyle];
 
 	webView.delegate = self;
 

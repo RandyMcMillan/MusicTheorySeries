@@ -481,7 +481,10 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-	[mixerHost stopAUGraph];
+    [toolBar useTBStyle];
+	[closeButton useDoneButtonStyle];
+    
+[mixerHost stopAUGraph];
 	imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth |
 		UIViewAutoresizingFlexibleHeight);
 
