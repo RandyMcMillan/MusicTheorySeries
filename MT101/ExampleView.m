@@ -85,11 +85,12 @@
 
 - (void)useWelcomeStyle
 {
-    
+    CGRect rect = self.superview.frame;
+ 
     self.alpha = 1.0;
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
     [self setBounds:CGRectMake(0,0, WELCOMEHEIGHT,WELCOMEWIDTH)];
-    [self setCenter:CGPointMake(350,350)];
+    [self setCenter:CGPointMake(rect.size.width/2,rect.size.height/2.18)];
  
     
 }   /* useGrandStaffStyle */
@@ -97,12 +98,13 @@
 
 - (void)useGrandStaffStyle
 {
-    
+    CGRect rect = self.superview.frame;
+ 
     self.alpha = 1.0;
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
     [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
     [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)];
-    [self setCenter:CGPointMake(350,350)];
+    [self setCenter:CGPointMake(rect.size.width/2,rect.size.height/2.18)];
  
     //self.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
  
@@ -110,12 +112,15 @@
 
 - (void)useCircleStyle
 {
+   
     
+    CGRect rect = self.superview.frame;
+
     self.alpha = 1.0;
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
     [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
     [self setBounds:CGRectMake(0, 0, CIRCLEHEIGHT, CIRCLEWIDTH)];
-    [self setCenter:CGPointMake(350,330)];
+    [self setCenter:CGPointMake(rect.size.width/2,rect.size.height/2.18)];
     
     //self.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
     

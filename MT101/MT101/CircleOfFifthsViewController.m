@@ -8,6 +8,7 @@
 //
 #import "CircleOfFifthsViewController.h"
 #import "GradientButton.h"
+#import "ExampleView.h"
 #import "GradientToolBar.h"
 @implementation CircleOfFifthsViewController
 
@@ -473,7 +474,7 @@
 - (void)viewDidLoad {
 
   [super viewDidLoad];
-    //    [toolBar useTBStyle];
+        [imageView useCircleStyle];
 	[closeButton useDoneButtonStyle];
     
   [mixerHost stopAUGraph];

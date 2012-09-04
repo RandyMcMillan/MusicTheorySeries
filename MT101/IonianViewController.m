@@ -9,6 +9,7 @@
 #import "IonianViewController.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
+#import "ExampleView.h"
 @implementation IonianViewController
 
 @synthesize mixerHost;
@@ -481,15 +482,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    [imageView useGrandStaffStyle];
     //    [toolBar useTBStyle];
     [closeButton useDoneButtonStyle];
-
     [mixerHost stopAUGraph];
-    imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth |
-        UIViewAutoresizingFlexibleHeight);
 
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
     [[UIDevice currentDevice]
         beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]	addObserver :self selector:

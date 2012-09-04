@@ -8,6 +8,7 @@
 //
 #import "ChromaticCircleViewController.h"
 #import "GradientButton.h"
+#import "ExampleView.h"
 #import "GradientToolBar.h"
 @implementation ChromaticCircleViewController
 
@@ -481,7 +482,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //    [toolBar useTBStyle];
+    [imageView useCircleStyle];
     [closeButton useDoneButtonStyle];
 
     [mixerHost stopAUGraph];

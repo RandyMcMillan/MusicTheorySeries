@@ -11,6 +11,7 @@
 #import "MixerHostAudio.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
+#import "ExampleView.h"
 #import "Constants.h"
 
 @interface CircleOfFifthsViewController : UIViewController <
@@ -20,6 +21,7 @@
 
       IBOutlet GradientToolBar			*toolBar;
       IBOutlet GradientButton	*closeButton;
+      IBOutlet ExampleView *imageView;
   UILabel *label0;
   UILabel *label1;
   UILabel *label2;
