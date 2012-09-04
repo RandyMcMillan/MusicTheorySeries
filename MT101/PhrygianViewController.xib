@@ -51,7 +51,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">ChromaticCircle.png</string>
+							<string key="NSResourceName">Phrygian.png</string>
 						</object>
 					</object>
 					<object class="IBUISlider" id="1049025814">
@@ -76,6 +76,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{294, 5}, {180, 35}}</string>
 								<reference key="NSSuperview" ref="803193090"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -300,6 +301,7 @@
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="12.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="13.CustomClassName">ExampleView</string>
 				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="25.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -325,7 +327,7 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">ChromaticCircle.png</string>
+			<string key="NS.key.0">Phrygian.png</string>
 			<string key="NS.object.0">{1406, 1536}</string>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">1498</string>

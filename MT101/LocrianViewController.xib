@@ -44,6 +44,7 @@
 						<int key="NSvFlags">301</int>
 						<string key="NSFrame">{{20, -206}, {728, 1152}}</string>
 						<reference key="NSSuperview" ref="267189246"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="507358548"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<int key="IBUIContentMode">1</int>
@@ -51,7 +52,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">ChromaticCircle.png</string>
+							<string key="NSResourceName">Locrian.png</string>
 						</object>
 					</object>
 					<object class="IBUISlider" id="507358548">
@@ -59,6 +60,7 @@
 						<int key="NSvFlags">268</int>
 						<string key="NSFrame">{{55, 687}, {105, 23}}</string>
 						<reference key="NSSuperview" ref="267189246"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="93217702"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -76,6 +78,8 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{294, 5}, {180, 35}}</string>
 								<reference key="NSSuperview" ref="93217702"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -108,6 +112,7 @@
 						</array>
 						<string key="NSFrame">{{0, 724}, {768, 44}}</string>
 						<reference key="NSSuperview" ref="267189246"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="499326198"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -135,6 +140,7 @@
 				</array>
 				<string key="NSFrameSize">{768, 768}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="816518345"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
@@ -300,6 +306,7 @@
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="12.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="13.CustomClassName">ExampleView</string>
 				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="25.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -315,7 +322,75 @@
 			<nil key="sourceID"/>
 			<int key="maxID">33</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">ExampleView</string>
+					<string key="superclassName">UIImageView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/ExampleView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">GradientButton</string>
+					<string key="superclassName">UIButton</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/GradientButton.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">GradientToolBar</string>
+					<string key="superclassName">UIToolbar</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/GradientToolBar.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">LocrianViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="mixerOutputGainChanged:">UISlider</string>
+						<string key="onDoneButtonPress:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="mixerOutputGainChanged:">
+							<string key="name">mixerOutputGainChanged:</string>
+							<string key="candidateClassName">UISlider</string>
+						</object>
+						<object class="IBActionInfo" key="onDoneButtonPress:">
+							<string key="name">onDoneButtonPress:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="closeButton">GradientButton</string>
+						<string key="imageView">UIImageView</string>
+						<string key="toolBar">GradientToolBar</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="closeButton">
+							<string key="name">closeButton</string>
+							<string key="candidateClassName">GradientButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="imageView">
+							<string key="name">imageView</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="toolBar">
+							<string key="name">toolBar</string>
+							<string key="candidateClassName">GradientToolBar</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/LocrianViewController.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
@@ -325,7 +400,7 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">ChromaticCircle.png</string>
+			<string key="NS.key.0">Locrian.png</string>
 			<string key="NS.object.0">{1406, 1536}</string>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">1498</string>

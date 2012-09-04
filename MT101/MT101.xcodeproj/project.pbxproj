@@ -32,7 +32,6 @@
 		4809068315F03DFD003115F3 /* MixoLydian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809065D15F03DFD003115F3 /* MixoLydian.ai */; };
 		4809068415F03DFD003115F3 /* MixoLydian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809065E15F03DFD003115F3 /* MixoLydian.png */; };
 		4809068515F03DFD003115F3 /* Phrygian.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809065F15F03DFD003115F3 /* Phrygian.ai */; };
-		4809068615F03DFD003115F3 /* Phrygian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809066015F03DFD003115F3 /* Phrygian.png */; };
 		4809068715F03DFD003115F3 /* SopranoClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809066115F03DFD003115F3 /* SopranoClef.ai */; };
 		4809068815F03DFD003115F3 /* SopranoClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809066215F03DFD003115F3 /* SopranoClef.png */; };
 		4809068915F03DFD003115F3 /* SubBassClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809066315F03DFD003115F3 /* SubBassClef.ai */; };
@@ -85,6 +84,7 @@
 		481A432715F0FFF8006EDF46 /* NavBarBackgroundGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A432415F0FFF7006EDF46 /* NavBarBackgroundGradientView.m */; };
 		481A432815F0FFF8006EDF46 /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A432615F0FFF7006EDF46 /* GradientButton.m */; };
 		481A432A15F101C5006EDF46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481A432915F101C5006EDF46 /* QuartzCore.framework */; };
+		481DE8AC15F689AA0002736D /* Phrygian.png in Resources */ = {isa = PBXBuildFile; fileRef = 481DE8AB15F689AA0002736D /* Phrygian.png */; };
 		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
 		4820B0AE15EDFE72003768DC /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */; };
 		4820B0B015EE0414003768DC /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AF15EE0413003768DC /* AeolianViewController.xib */; };
@@ -224,7 +224,6 @@
 		4809065D15F03DFD003115F3 /* MixoLydian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MixoLydian.ai; sourceTree = "<group>"; };
 		4809065E15F03DFD003115F3 /* MixoLydian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MixoLydian.png; sourceTree = "<group>"; };
 		4809065F15F03DFD003115F3 /* Phrygian.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Phrygian.ai; sourceTree = "<group>"; };
-		4809066015F03DFD003115F3 /* Phrygian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phrygian.png; sourceTree = "<group>"; };
 		4809066115F03DFD003115F3 /* SopranoClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SopranoClef.ai; sourceTree = "<group>"; };
 		4809066215F03DFD003115F3 /* SopranoClef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SopranoClef.png; sourceTree = "<group>"; };
 		4809066315F03DFD003115F3 /* SubBassClef.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SubBassClef.ai; sourceTree = "<group>"; };
@@ -286,6 +285,7 @@
 		481A432515F0FFF7006EDF46 /* GradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
 		481A432615F0FFF7006EDF46 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
 		481A432915F101C5006EDF46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		481DE8AB15F689AA0002736D /* Phrygian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phrygian.png; sourceTree = "<group>"; };
 		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
 		4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrebleClefViewController.xib; sourceTree = "<group>"; };
 		4820B0AF15EE0413003768DC /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AeolianViewController.xib; sourceTree = "<group>"; };
@@ -474,7 +474,7 @@
 				4809065D15F03DFD003115F3 /* MixoLydian.ai */,
 				4809065E15F03DFD003115F3 /* MixoLydian.png */,
 				4809065F15F03DFD003115F3 /* Phrygian.ai */,
-				4809066015F03DFD003115F3 /* Phrygian.png */,
+				481DE8AB15F689AA0002736D /* Phrygian.png */,
 				4809066115F03DFD003115F3 /* SopranoClef.ai */,
 				4809066215F03DFD003115F3 /* SopranoClef.png */,
 				4809066315F03DFD003115F3 /* SubBassClef.ai */,
@@ -1046,7 +1046,6 @@
 				4809068315F03DFD003115F3 /* MixoLydian.ai in Resources */,
 				4809068415F03DFD003115F3 /* MixoLydian.png in Resources */,
 				4809068515F03DFD003115F3 /* Phrygian.ai in Resources */,
-				4809068615F03DFD003115F3 /* Phrygian.png in Resources */,
 				4809068715F03DFD003115F3 /* SopranoClef.ai in Resources */,
 				4809068815F03DFD003115F3 /* SopranoClef.png in Resources */,
 				4809068915F03DFD003115F3 /* SubBassClef.ai in Resources */,
@@ -1061,6 +1060,7 @@
 				4809069215F03DFD003115F3 /* welcome.png in Resources */,
 				481A431A15F0FE8A006EDF46 /* button1.png in Resources */,
 				481A431E15F0FEA8006EDF46 /* tbButton.png in Resources */,
+				481DE8AC15F689AA0002736D /* Phrygian.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
