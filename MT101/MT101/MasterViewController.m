@@ -47,21 +47,7 @@
 {
   [super viewDidLoad];
 
-  // Do any additional setup after loading the view, typically from a
-  // nib.
-
-
-  // Path to the plist (in the application bundle)
-  //   NSString *path = [[NSBundle mainBundle] pathForResource:
-  //                   @"interactiveList0" ofType:@"plist"];
-
-
-  // Build the array from the plist
-//    NSArray *array2 = [[NSArray alloc] initWithContentsOfFile:path];
-
-  // Show the string values
-  //for (NSString *str in array2)
-  //  NSLog(@"array2 = %@", str);
+    [self.detailViewController.imageView useWelcomeStyle];
 
 #pragma mark - Section Headers
 
@@ -640,20 +626,13 @@
 
         self.detailViewController.MovieToPlay =
       [videoList0 objectAtIndex:indexPath.row];
-
-        //self.detailViewController.imageView.frame =
-        // self.detailViewController.view.frame;
-        self.detailViewController.imageView.autoresizingMask =
-      (UIViewAutoresizingFlexibleWidth |
-      UIViewAutoresizingFlexibleHeight |
-      UIViewAutoresizingFlexibleLeftMargin |
-      UIViewAutoresizingFlexibleRightMargin);
         self.detailViewController.imageView.image =
       [imageList0 objectAtIndex:indexPath.row];
         self.detailViewController.interactiveToDisplay =
       [interactiveList0 objectAtIndex:indexPath.row];
         self.detailViewController.wikiToDisplay =
       [wikiToDiplayList0 objectAtIndex:indexPath.row];
+      [self.detailViewController.imageView useGrandStaffStyle];
 
 
       }
@@ -663,20 +642,15 @@
 
         self.detailViewController.MovieToPlay =
       [videoList1 objectAtIndex:indexPath.row];
-
-        //self.detailViewController.imageView.frame =
-        // self.detailViewController.view.frame;
-        self.detailViewController.imageView.autoresizingMask =
-      (UIViewAutoresizingFlexibleWidth |
-      UIViewAutoresizingFlexibleHeight |
-      UIViewAutoresizingFlexibleLeftMargin |
-      UIViewAutoresizingFlexibleRightMargin);
         self.detailViewController.imageView.image =
       [imageList1 objectAtIndex:indexPath.row];
         self.detailViewController.interactiveToDisplay =
       [interactiveList1 objectAtIndex:indexPath.row];
         self.detailViewController.wikiToDisplay =
       [wikiToDiplayList1 objectAtIndex:indexPath.row];
+      
+      [self.detailViewController.imageView useCircleStyle];
+
       }
 
   if (indexPath.section == 2) {
@@ -684,14 +658,6 @@
 
         self.detailViewController.MovieToPlay =
       [videoList2 objectAtIndex:indexPath.row];
-
-        //self.detailViewController.imageView.frame =
-        // self.detailViewController.view.frame;
-        self.detailViewController.imageView.autoresizingMask =
-      (UIViewAutoresizingFlexibleWidth |
-      UIViewAutoresizingFlexibleHeight |
-      UIViewAutoresizingFlexibleLeftMargin |
-      UIViewAutoresizingFlexibleRightMargin);
         self.detailViewController.imageView.image =
       [imageList2 objectAtIndex:indexPath.row];
         self.detailViewController.interactiveToDisplay =
@@ -699,6 +665,9 @@
         self.detailViewController.wikiToDisplay =
       [wikiToDiplayList2 objectAtIndex:indexPath.row];
 
+      [self.detailViewController.imageView useGrandStaffStyle];
+
+      
       }
 
   if (indexPath.section == 3) {
@@ -709,16 +678,14 @@
 
         //self.detailViewController.imageView.frame =
         // self.detailViewController.view.frame;
-        self.detailViewController.imageView.autoresizingMask =
-      (UIViewAutoresizingFlexibleWidth |
-      UIViewAutoresizingFlexibleHeight |
-      UIViewAutoresizingFlexibleLeftMargin |
-      UIViewAutoresizingFlexibleRightMargin);
-        self.detailViewController.imageView.image =
+       self.detailViewController.imageView.image =
       [imageList3 objectAtIndex:indexPath.row];
         self.detailViewController.interactiveToDisplay =
       [interactiveList3 objectAtIndex:indexPath.row];
 
+      [self.detailViewController.imageView useGrandStaffStyle];
+
+      
       }
 
   if (indexPath.section == 4) {
@@ -739,6 +706,9 @@
         self.detailViewController.interactiveToDisplay =
       [interactiveList4 objectAtIndex:indexPath.row];
 
+      [self.detailViewController.imageView useGrandStaffStyle];
+
+      
       }
 
   if (indexPath.section == 5) {
@@ -759,6 +729,10 @@
         self.detailViewController.interactiveToDisplay =
       [interactiveList5 objectAtIndex:indexPath.row];
 
+      
+      [self.detailViewController.imageView useGrandStaffStyle];
+
+      
       }
 
   if (indexPath.section == 6) {}
@@ -766,12 +740,12 @@
 
 
 
-  self.detailViewController.imageView.autoresizingMask =
-    (UIViewAutoresizingFlexibleWidth |
-    UIViewAutoresizingFlexibleHeight);
+ // self.detailViewController.imageView.autoresizingMask =
+   // (UIViewAutoresizingFlexibleWidth |
+   // UIViewAutoresizingFlexibleHeight);
 
-  self.detailViewController.imageView.contentMode =
-    UIViewContentModeScaleAspectFit;
+//  self.detailViewController.imageView.contentMode =
+  //  UIViewContentModeScaleAspectFit;
 
 
   self.detailViewController.toolBar.alpha = 1.0;
@@ -781,6 +755,7 @@
   self.detailViewController.musicTheory101Label.text = nil;
   self.detailViewController.vLabel.text = nil;
 
+  //  [self.detailViewController.imageView useGrandStaffStyle];
 
 } /* tableView */
 

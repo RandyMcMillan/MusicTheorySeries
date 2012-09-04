@@ -95,9 +95,6 @@
         theGrandStaffVC.modalPresentationStyle =
       UIModalPresentationPageSheet;
 
-        //[self.view addSubview:theGrandStaffVC.view];//fot future
-        // consoderation
-
         [self presentModalViewController:theGrandStaffVC animated:YES];
 
       }
@@ -457,7 +454,7 @@
 - (void)configureView {
 
     
-    [imageView useGrandStaffStyle];
+    [imageView useWelcomeStyle];
   // Update the user interface for the detail item.
   if (self.detailItem) {
         // MovieToPlay = @"GreenBeam";

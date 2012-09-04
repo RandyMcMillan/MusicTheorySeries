@@ -71,6 +71,16 @@
 #define SMALLBOXWIDTH				50
 #define SMALLBOXHEIGHT				50
 
+#define WELCOMEWIDTH 400
+#define WELCOMEHEIGHT 400
+
+#define GRANDSTAFFEXAMPLEWIDTH 725
+#define GRANDSTAFFEXAMPLEHEIGHT 725
+
+#define CIRCLEWIDTH 725
+#define CIRCLEHEIGHT 725
+
+
 #ifndef kXOrientationAdjustiPad
   #define kXOrientationAdjustiPad	0
 #endif

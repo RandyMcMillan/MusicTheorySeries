@@ -36,7 +36,9 @@
 @property (nonatomic) CGFloat			strokeWeight;
 @property (nonatomic, retain) UIColor	*strokeColor;
 
+- (void)useWelcomeStyle;
 - (void)useGrandStaffStyle;
+- (void)useCircleStyle;
 
 
 @end

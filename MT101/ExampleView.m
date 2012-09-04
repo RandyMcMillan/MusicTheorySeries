@@ -2,6 +2,7 @@
 //
 
 #import "ExampleView.h"
+#import "Constants.h"
 
 @interface ExampleView ()
 @property (nonatomic, readonly) CGGradientRef	normalGradient;
@@ -68,12 +69,13 @@
 #pragma mark -
 - (id)initWithFrame:(CGRect)frame
 {
-    //self = [super initWithFrame:frame];
+   // self = [super initWithFrame:frame];
 
-    //if (self) {
+    if (self) {
         //[self setOpaque:NO];
         //self.backgroundColor = [UIColor clearColor];
-    //}
+    }
+    
 
     return self;
 }
@@ -81,12 +83,45 @@
 #pragma mark -
 #pragma mark Appearances
 
+- (void)useWelcomeStyle
+{
+    
+    self.alpha = 1.0;
+    [self setContentMode:(UIViewContentModeScaleAspectFit)];
+    [self setBounds:CGRectMake(0,0, WELCOMEHEIGHT,WELCOMEWIDTH)];
+    [self setCenter:CGPointMake(350,350)];
+ 
+    
+}   /* useGrandStaffStyle */
+
+
 - (void)useGrandStaffStyle
 {
     
-//    self.alpha = 0.5;
+    self.alpha = 1.0;
+    [self setContentMode:(UIViewContentModeScaleAspectFit)];
+    [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
+    [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)];
+    [self setCenter:CGPointMake(350,350)];
+ 
+    //self.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+ 
+}   /* useGrandStaffStyle */
+
+- (void)useCircleStyle
+{
+    
+    self.alpha = 1.0;
+    [self setContentMode:(UIViewContentModeScaleAspectFit)];
+    [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
+    [self setBounds:CGRectMake(0, 0, CIRCLEHEIGHT, CIRCLEWIDTH)];
+    [self setCenter:CGPointMake(350,330)];
+    
+    //self.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
     
 }   /* useGrandStaffStyle */
+
+
 
 
 #pragma mark -
