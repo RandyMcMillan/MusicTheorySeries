@@ -89,8 +89,8 @@
  
     self.alpha = 1.0;
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
-    [self setBounds:CGRectMake(0,0, WELCOMEHEIGHT,WELCOMEWIDTH)];
-    [self setCenter:CGPointMake(rect.size.width/2,rect.size.height/2.18)];
+    [self setBounds:CGRectMake(rect.size.width/2,rect.size.height/2, WELCOMEHEIGHT,WELCOMEWIDTH)];
+    [self setCenter:CGPointMake(rect.size.width/2.10,rect.size.height/2.18)];
  
     
 }   /* useGrandStaffStyle */

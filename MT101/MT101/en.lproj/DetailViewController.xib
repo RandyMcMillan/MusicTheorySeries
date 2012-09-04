@@ -325,7 +325,7 @@
 					<object class="IBUILabel" id="619180556">
 						<reference key="NSNextResponder" ref="647120888"/>
 						<int key="NSvFlags">293</int>
-						<string key="NSFrame">{{188, 574}, {326, 43}}</string>
+						<string key="NSFrame">{{188, 566}, {326, 43}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="191681143"/>
@@ -364,7 +364,7 @@
 					<object class="IBUILabel" id="906733513">
 						<reference key="NSNextResponder" ref="647120888"/>
 						<int key="NSvFlags">293</int>
-						<string key="NSFrame">{{488, 608}, {42, 21}}</string>
+						<string key="NSFrame">{{491, 598}, {42, 21}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="841819309"/>
@@ -397,7 +397,7 @@
 					<object class="IBUILabel" id="191681143">
 						<reference key="NSNextResponder" ref="647120888"/>
 						<int key="NSvFlags">293</int>
-						<string key="NSFrame">{{474, 609}, {40, 21}}</string>
+						<string key="NSFrame">{{474, 598}, {40, 21}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="906733513"/>
@@ -1449,7 +1449,7 @@
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="closeButton">GradientButton</string>
-						<string key="imageView">UIImageView</string>
+						<string key="imageView">ExampleView</string>
 						<string key="toolBar">GradientToolBar</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -1459,7 +1459,7 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="imageView">
 							<string key="name">imageView</string>
-							<string key="candidateClassName">UIImageView</string>
+							<string key="candidateClassName">ExampleView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="toolBar">
 							<string key="name">toolBar</string>
