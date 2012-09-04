@@ -113,6 +113,7 @@
 		4882981915E006BB00239B29 /* ChromaticCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4882981715E006BB00239B29 /* ChromaticCircleViewController.m */; };
 		4882981A15E006BB00239B29 /* ChromaticCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4882981815E006BB00239B29 /* ChromaticCircleViewController.xib */; };
 		4882981C15E009B900239B29 /* Chromatic Circle.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4882981B15E009B900239B29 /* Chromatic Circle.mp4 */; };
+		4887524F15F59731006FBD28 /* ExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887524E15F59731006FBD28 /* ExampleView.m */; };
 		489C8BB215CF05DD00F15D05 /* GrandStaffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */; };
 		48A3562F15E2363F00A3529D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3562E15E2363F00A3529D /* WebViewController.m */; };
@@ -322,6 +323,8 @@
 		4882981715E006BB00239B29 /* ChromaticCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromaticCircleViewController.m; sourceTree = "<group>"; };
 		4882981815E006BB00239B29 /* ChromaticCircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChromaticCircleViewController.xib; sourceTree = "<group>"; };
 		4882981B15E009B900239B29 /* Chromatic Circle.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chromatic Circle.mp4"; sourceTree = "<group>"; };
+		4887524D15F59731006FBD28 /* ExampleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleView.h; sourceTree = "<group>"; };
+		4887524E15F59731006FBD28 /* ExampleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleView.m; sourceTree = "<group>"; };
 		489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrandStaffViewController.h; path = MT101/GrandStaffViewController.h; sourceTree = "<group>"; };
 		489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrandStaffViewController.m; path = MT101/GrandStaffViewController.m; sourceTree = "<group>"; };
 		48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay0.plist; sourceTree = "<group>"; };
@@ -784,6 +787,8 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
+				4887524D15F59731006FBD28 /* ExampleView.h */,
+				4887524E15F59731006FBD28 /* ExampleView.m */,
 				48B67BC615F411DA00B0C6F2 /* GradientToolBar.h */,
 				48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */,
 				481A432315F0FFF7006EDF46 /* NavBarBackgroundGradientView.h */,
@@ -1100,6 +1105,7 @@
 				481A432715F0FFF8006EDF46 /* NavBarBackgroundGradientView.m in Sources */,
 				481A432815F0FFF8006EDF46 /* GradientButton.m in Sources */,
 				48B67BC815F411DA00B0C6F2 /* GradientToolBar.m in Sources */,
+				4887524F15F59731006FBD28 /* ExampleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

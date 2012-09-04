@@ -10,6 +10,7 @@
 #import "DetailViewController.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
+#import "ExampleView.h"
 
 #import "GrandStaffViewController.h"
 #import "AppleXylophoneViewController.h"
@@ -455,6 +456,8 @@
 
 - (void)configureView {
 
+    
+    [imageView useGrandStaffStyle];
   // Update the user interface for the detail item.
   if (self.detailItem) {
         // MovieToPlay = @"GreenBeam";
@@ -467,9 +470,6 @@
   //[toolBar useTBStyle];
 
 
-  self.imageView.backgroundColor =
-    [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
-  [self.imageView.layer setCornerRadius:8.0f];
 //  [self.toolBar.layer setCornerRadius:18.0f];
 //  [self hideGradientBackground:self.toolBar];
 

@@ -11,6 +11,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "GradientButton.h"
 #import "GradientToolBar.h"
+#import "ExampleView.h"
 
 
 @interface DetailViewController : UIViewController <
@@ -20,6 +21,7 @@
   GradientButton    *wikiButton;
   GradientButton    *interActiveButton;
   GradientToolBar   *toolBar;
+      ExampleView *imageView;
 
 }
 
@@ -30,7 +32,7 @@
 @property (strong,nonatomic) IBOutlet UILabel *vLabel;
 
 @property (nonatomic,retain) NSString *MovieToPlay;
-@property (nonatomic,retain) IBOutlet UIImageView *imageView;
+@property (nonatomic,retain) IBOutlet ExampleView *imageView;
 @property (nonatomic,retain) IBOutlet NSString *interactiveToDisplay;
 @property (nonatomic,retain) NSString *wikiToDisplay;
 
