@@ -90,9 +90,9 @@
     // green:0.864 blue:0.864
     // alpha:1.0];
     [colors addObject:(id)[color CGColor]];
-    color = [UIColor clearColor];//[UIColor colorWithRed:0.995 green:0.995 blue:0.995 alpha:1.0];
+    color = [UIColor clearColor];   // [UIColor colorWithRed:0.995 green:0.995 blue:0.995 alpha:1.0];
     [colors addObject:(id)[color CGColor]];
-    color = [UIColor clearColor];//[UIColor colorWithRed:0.956 green:0.956 blue:0.955 alpha:1.0];
+    color = [UIColor clearColor];   // [UIColor colorWithRed:0.956 green:0.956 blue:0.955 alpha:1.0];
     [colors addObject:(id)[color CGColor]];
     self.normalGradientColors       = colors;
     self.normalGradientLocations    = [NSMutableArray arrayWithObjects:
@@ -104,9 +104,9 @@
     NSMutableArray *colors2 = [NSMutableArray arrayWithCapacity:3];
     color = [UIColor colorWithRed:0.692 green:0.692 blue:0.691 alpha:0.2];
     [colors2 addObject:(id)[color CGColor]];
-    color = [UIColor clearColor];//[UIColor colorWithRed:0.995 green:0.995 blue:0.995 alpha:1.0];
+    color = [UIColor clearColor];   // [UIColor colorWithRed:0.995 green:0.995 blue:0.995 alpha:1.0];
     [colors2 addObject:(id)[color CGColor]];
-    color = [UIColor clearColor];//[UIColor colorWithRed:0.83 green:0.83 blue:0.83 alpha:1.0];
+    color = [UIColor clearColor];   // [UIColor colorWithRed:0.83 green:0.83 blue:0.83 alpha:1.0];
     [colors2 addObject:(id)[color CGColor]];
     self.highlightGradientColors    = colors2;
     self.highlightGradientLocations = [NSMutableArray arrayWithObjects:
@@ -116,7 +116,7 @@
         nil];
 
     self.cornerRadius   = 5.0f;
-    self.strokeColor    = [UIColor colorWithRed:0.620 green:0.647 blue:0.698 alpha:0.300];//[UIColor lightGrayColor];
+    self.strokeColor    = [UIColor colorWithRed:0.620 green:0.647 blue:0.698 alpha:0.300]; // [UIColor lightGrayColor];
     self.strokeWeight   = 0.1f;
     [self setTitleColor:[UIColor darkGrayColor] forState:
         UIControlStateNormal];

@@ -24,7 +24,7 @@
 - (CGGradientRef)normalGradient
 {
     if (normalGradient == NULL) {
-        int    locCount = [normalGradientLocations count];
+        int     locCount = [normalGradientLocations count];
         CGFloat locations[locCount];
 
         for (int i = 0; i < [normalGradientLocations count]; i++) {
@@ -69,13 +69,12 @@
 #pragma mark -
 - (id)initWithFrame:(CGRect)frame
 {
-   // self = [super initWithFrame:frame];
+    // self = [super initWithFrame:frame];
 
     if (self) {
-        //[self setOpaque:NO];
-        //self.backgroundColor = [UIColor clearColor];
+        // [self setOpaque:NO];
+        // self.backgroundColor = [UIColor clearColor];
     }
-
 
     return self;
 }
@@ -89,12 +88,9 @@
 
     self.alpha = 1.0;
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
-    [self setBounds:CGRectMake(rect.size.width/2,rect.size.height/2, WELCOMEHEIGHT,WELCOMEWIDTH)];
-    [self setCenter:CGPointMake(rect.size.width/2.10,rect.size.height/2.18)];
- 
-
+    [self setBounds:CGRectMake(rect.size.width / 2, rect.size.height / 2, WELCOMEHEIGHT, WELCOMEWIDTH)];
+    [self setCenter:CGPointMake(rect.size.width / 2.10, rect.size.height / 2.18)];
 }   /* useGrandStaffStyle */
-
 
 - (void)useGrandStaffStyle
 {
@@ -104,30 +100,23 @@
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
     [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
     [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)];
-    [self setCenter:CGPointMake(rect.size.width/2,rect.size.height/2.18)];
+    [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.18)];
 
-    //self.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
-
+    // self.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
 }   /* useGrandStaffStyle */
 
 - (void)useCircleStyle
 {
-
-
     CGRect rect = self.superview.frame;
 
     self.alpha = 1.0;
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
     [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
     [self setBounds:CGRectMake(0, 0, CIRCLEHEIGHT, CIRCLEWIDTH)];
-    [self setCenter:CGPointMake(rect.size.width/2,rect.size.height/2.18)];
+    [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.18)];
 
-    //self.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
-
+    // self.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
 }   /* useGrandStaffStyle */
-
-
-
 
 #pragma mark -
 - (void)drawRect:(CGRect)rect
@@ -314,16 +303,16 @@
     CGPathAddLineToPoint(path, NULL, point.x, point.y);
     CGPathCloseSubpath(path);
 
-
     /*
-    if (self.state == UIControlStateHighlighted) {
-        gradient = self.highlightGradient;
-    } else {
-
+     *   if (self.state == UIControlStateHighlighted) {
+     *    gradient = self.highlightGradient;
+     *   } else {
+     *
      */
-        gradient = self.normalGradient;
-    /*}
+    gradient = self.normalGradient;
 
+    /*}
+     *
      */
 
     CGContextAddPath(context, path);
@@ -410,7 +399,7 @@
         self.strokeWeight = 1.0;
 
         if (self.normalGradientColors == nil) {
-          //  [self useWhiteStyle];
+            //  [self useWhiteStyle];
         }
 
         [self setOpaque:NO];
