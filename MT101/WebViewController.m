@@ -56,7 +56,7 @@
         // http://localhost:9999/?page=1 or 2 ");
 #endif
 
-    /*	refreshBtn.image =
+    /*  refreshBtn.image =
      *        [UIImage imageNamed:[[self class] resolveImageResource:
      *            @"WebView.bundle/but_refresh"]];
      *    backBtn.image =
@@ -71,10 +71,10 @@
      *
      *
      *
-     *    refreshBtn.enabled	= TRUE;
-     *    safariBtn.enabled	= TRUE;
-     *    backBtn.enabled		= webView.canGoBack;
-     *    fwdBtn.enabled		= webView.canGoForward;
+     *    refreshBtn.enabled    = TRUE;
+     *    safariBtn.enabled = TRUE;
+     *    backBtn.enabled       = webView.canGoBack;
+     *    fwdBtn.enabled        = webView.canGoForward;
      */
 
     // [navBar useTBStyle];
@@ -95,7 +95,7 @@
 
     webView.delegate = self;
 
-    //	NSString *urlAddress = @"http://www.google.com";
+    //  NSString *urlAddress = @"http://www.google.com";
 
     // Create a URL object.
     // SURL *url = [NSURL URLWithString:urlAddress];
@@ -131,8 +131,8 @@
 - (void)closeBrowser
 {
     if ([self respondsToSelector:@selector(presentingViewController)]) {
-        [[self presentingViewController]	dismissViewControllerAnimated	:
-            YES								completion						:nil];
+        [[self presentingViewController]    dismissViewControllerAnimated   :
+            YES                             completion                      :nil];
     } else {
         [[self parentViewController] dismissModalViewControllerAnimated
             :YES];
@@ -144,8 +144,8 @@
     [self closeBrowser];
 }
 
-- (BOOL)webView								:(UIWebView *)webView shouldStartLoadWithRequest:(
-    NSURLRequest *)request navigationType	:(UIWebViewNavigationType)
+- (BOOL)webView                             :(UIWebView *)webView shouldStartLoadWithRequest:(
+    NSURLRequest *)request navigationType   :(UIWebViewNavigationType)
    navigationType; {
     NSLog(@"shouldStartLoadWithRequest");
 
@@ -154,8 +154,8 @@
 
 + (NSString *)resolveImageResource:(NSString *)resource
 {
-    NSString	*systemVersion	= [[UIDevice currentDevice] systemVersion];
-    BOOL		isLessThaniOS4	=
+    NSString    *systemVersion  = [[UIDevice currentDevice] systemVersion];
+    BOOL        isLessThaniOS4  =
         ([systemVersion compare:@"4.0" options:NSNumericSearch] ==
         NSOrderedAscending);
 
@@ -175,8 +175,8 @@
 {
     addressLabel.text = @"Loading...";
 
-    backButton.enabled		= webView.canGoBack;
-    forwardButton.enabled	= webView.canGoForward;
+    backButton.enabled      = webView.canGoBack;
+    forwardButton.enabled   = webView.canGoForward;
     NSLog(@"webViewDidStartLoad");
     spinner.hidden = FALSE;
     [spinner startAnimating];
@@ -194,8 +194,8 @@
         addressLabel.text = request.URL.absoluteString;
     }
 
-    backButton.enabled		= webView.canGoBack;
-    forwardButton.enabled	= webView.canGoForward;
+    backButton.enabled      = webView.canGoBack;
+    forwardButton.enabled   = webView.canGoForward;
     [spinner stopAnimating];
     NSLog(@"webViewDidFinLoad");
 
@@ -252,14 +252,14 @@
     NSFileHandle *bodyHandle =
         [NSFileHandle fileHandleForReadingAtPath:path];
     NSString *bodyString =
-        [[NSString alloc]	initWithData:[bodyHandle readDataToEndOfFile]
-                            encoding	:NSUTF8StringEncoding];                                                             // bodyString
+        [[NSString alloc]   initWithData:[bodyHandle readDataToEndOfFile]
+                            encoding    :NSUTF8StringEncoding];                                                             // bodyString
                                                                                                                             // contains
                                                                                                                             // page
-    NSString	*endBodyTag		= @"</body>";
-    NSString	*htmlTextFloat	=
+    NSString    *endBodyTag     = @"</body>";
+    NSString    *htmlTextFloat  =
         [bodyString stringByReplacingOccurrencesOfString:@"</body>"
-                    withString							:kISCROLL_JS];
+                    withString                          :kISCROLL_JS];
     NSString *htmlText =
         [NSString stringWithFormat:@"%@%@", htmlTextFloat, endBodyTag];                 // concat
                                                                                         // htmlFloat
@@ -273,8 +273,8 @@
     [self.webView loadHTMLString:htmlText baseURL:[NSURL URLWithString:
             path]];
 
-    refreshButton.enabled	= FALSE;
-    safariButton.enabled	= FALSE;
+    refreshButton.enabled   = FALSE;
+    safariButton.enabled    = FALSE;
 }   /* webView */
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)

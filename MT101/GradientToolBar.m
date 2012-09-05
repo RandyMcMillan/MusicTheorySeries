@@ -4,8 +4,8 @@
 #import "GradientToolBar.h"
 
 @interface GradientToolBar ()
-@property (nonatomic, readonly) CGGradientRef	normalGradient;
-@property (nonatomic, readonly) CGGradientRef	highlightGradient;
+@property (nonatomic, readonly) CGGradientRef   normalGradient;
+@property (nonatomic, readonly) CGGradientRef   highlightGradient;
 - (void)hesitateUpdate; // Used to catch and fix problem where quick
                         // taps don't get updated back to normal state
 @end
@@ -23,7 +23,7 @@
 - (CGGradientRef)normalGradient
 {
     if (normalGradient == NULL) {
-        int		locCount = [normalGradientLocations count];
+        int     locCount = [normalGradientLocations count];
         CGFloat locations[locCount];
 
         for (int i = 0; i < [normalGradientLocations count]; i++) {
@@ -83,9 +83,9 @@
 
 - (void)useTBStyle
 {
-    //	self.enabled = FALSE;
-    NSMutableArray	*colors = [NSMutableArray arrayWithCapacity:3];
-    UIColor			*color	= [UIColor lightGrayColor]; // [UIColor
+    //  self.enabled = FALSE;
+    NSMutableArray  *colors = [NSMutableArray arrayWithCapacity:3];
+    UIColor         *color  = [UIColor lightGrayColor]; // [UIColor
 
     // colorWithRed:0.864
     // green:0.864 blue:0.864
@@ -95,8 +95,8 @@
     [colors addObject:(id)[color CGColor]];
     color = [UIColor colorWithRed:0.956 green:0.956 blue:0.955 alpha:1.0];
     [colors addObject:(id)[color CGColor]];
-    self.normalGradientColors		= colors;
-    self.normalGradientLocations	= [NSMutableArray arrayWithObjects:
+    self.normalGradientColors       = colors;
+    self.normalGradientLocations    = [NSMutableArray arrayWithObjects:
         [NSNumber numberWithFloat:0.0f],
         [NSNumber numberWithFloat:1.0f],
         [NSNumber numberWithFloat:0.601f],
@@ -109,20 +109,20 @@
     [colors2 addObject:(id)[color CGColor]];
     color = [UIColor colorWithRed:0.83 green:0.83 blue:0.83 alpha:1.0];
     [colors2 addObject:(id)[color CGColor]];
-    self.highlightGradientColors	= colors2;
+    self.highlightGradientColors    = colors2;
     self.highlightGradientLocations = [NSMutableArray arrayWithObjects:
         [NSNumber numberWithFloat:0.0f],
         [NSNumber numberWithFloat:1.0f],
         [NSNumber numberWithFloat:0.601f],
         nil];
 
-    self.cornerRadius	= 5.0f;
-    self.strokeColor	= [UIColor lightGrayColor];
-    self.strokeWeight	= 0.1f;
-    //	[self setTitleColor:[UIColor darkGrayColor] forState:
-    //		UIControlStateNormal];
-    //	[self setTitleColor:[UIColor darkGrayColor] forState:
-    //		UIControlStateHighlighted];
+    self.cornerRadius   = 5.0f;
+    self.strokeColor    = [UIColor lightGrayColor];
+    self.strokeWeight   = 0.1f;
+    //  [self setTitleColor:[UIColor darkGrayColor] forState:
+    //      UIControlStateNormal];
+    //  [self setTitleColor:[UIColor darkGrayColor] forState:
+    //      UIControlStateHighlighted];
 }   /* useTBStyle */
 
 #pragma mark -
@@ -133,9 +133,9 @@
         CGRectMake(0.0, 0.0, self.bounds.size.width - 0.5,
         self.bounds.size.height);
 
-    CGGradientRef	gradient;
-    CGContextRef	context = UIGraphicsGetCurrentContext();
-    CGPoint			point2;
+    CGGradientRef   gradient;
+    CGContextRef    context = UIGraphicsGetCurrentContext();
+    CGPoint         point2;
 
     CGFloat resolution = 0.5 *
         (self.bounds.size.width / imageBounds.size.width +
@@ -150,9 +150,9 @@
     }
 
     stroke /= resolution;
-    CGFloat				alignStroke = fmod(0.5 * stroke * resolution, 1.0);
-    CGMutablePathRef	path		= CGPathCreateMutable();
-    CGPoint				point		=
+    CGFloat             alignStroke = fmod(0.5 * stroke * resolution, 1.0);
+    CGMutablePathRef    path        = CGPathCreateMutable();
+    CGPoint             point       =
         CGPointMake((self.bounds.size.width - [self cornerRadius]),
         self.bounds.size.height - 0.5f);
     point.x =
@@ -230,7 +230,7 @@
     CGPathAddCurveToPoint(path, NULL, controlPoint1.x, controlPoint1.y,
         controlPoint2.x, controlPoint2.y, point.x,
         point.y);
-    point	= CGPointMake([self cornerRadius], 0.0);
+    point   = CGPointMake([self cornerRadius], 0.0);
     point.x =
         (round(resolution * point.x +
             alignStroke) - alignStroke) / resolution;
@@ -238,21 +238,21 @@
         (round(resolution * point.y +
             alignStroke) - alignStroke) / resolution;
     CGPathAddLineToPoint(path, NULL, point.x, point.y);
-    point	= CGPointMake(0.0, [self cornerRadius]);
+    point   = CGPointMake(0.0, [self cornerRadius]);
     point.x =
         (round(resolution * point.x +
             alignStroke) - alignStroke) / resolution;
     point.y =
         (round(resolution * point.y +
             alignStroke) - alignStroke) / resolution;
-    controlPoint1	= CGPointMake(([self cornerRadius] / 2.f), 0.0);
+    controlPoint1   = CGPointMake(([self cornerRadius] / 2.f), 0.0);
     controlPoint1.x =
         (round(resolution * controlPoint1.x +
             alignStroke) - alignStroke) / resolution;
     controlPoint1.y =
         (round(resolution * controlPoint1.y +
             alignStroke) - alignStroke) / resolution;
-    controlPoint2	= CGPointMake(0.0, ([self cornerRadius] / 2.f));
+    controlPoint2   = CGPointMake(0.0, ([self cornerRadius] / 2.f));
     controlPoint2.x =
         (round(resolution * controlPoint2.x +
             alignStroke) - alignStroke) / resolution;
@@ -310,11 +310,11 @@
     CGPathAddLineToPoint(path, NULL, point.x, point.y);
     CGPathCloseSubpath(path);
 
-    //	if (self.state == UIControlStateHighlighted) {
-    //		gradient = self.highlightGradient;
-    //	} else {
+    //  if (self.state == UIControlStateHighlighted) {
+    //      gradient = self.highlightGradient;
+    //  } else {
     gradient = self.normalGradient;
-    //	}
+    //  }
 
     CGContextAddPath(context, path);
     CGContextSaveGState(context);
@@ -351,8 +351,8 @@
 {
     [super touchesCancelled:touches withEvent:event];
     [self setNeedsDisplay];
-    [self	performSelector :@selector(hesitateUpdate) withObject:nil
-            afterDelay		:0.1];
+    [self   performSelector :@selector(hesitateUpdate) withObject:nil
+            afterDelay      :0.1];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -365,8 +365,8 @@
 {
     [super touchesEnded:touches withEvent:event];
     [self setNeedsDisplay];
-    [self	performSelector :@selector(hesitateUpdate) withObject:nil
-            afterDelay		:0.1];
+    [self   performSelector :@selector(hesitateUpdate) withObject:nil
+            afterDelay      :0.1];
 }
 
 #pragma mark -
@@ -413,8 +413,8 @@
 
 + (NSString *)resolveImageResource:(NSString *)resource
 {
-    NSString	*systemVersion	= [[UIDevice currentDevice] systemVersion];
-    BOOL		isLessThaniOS4	=
+    NSString    *systemVersion  = [[UIDevice currentDevice] systemVersion];
+    BOOL        isLessThaniOS4  =
         ([systemVersion compare:@"4.0" options:NSNumericSearch] ==
         NSOrderedAscending);
 

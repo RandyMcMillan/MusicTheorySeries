@@ -9,32 +9,32 @@
 
 #import "DGMenuItemCell.h"
 
-#define TITLE_LABEL_ORIGIN_X			40
-#define TITLE_LABEL_ORIGIN_Y			0
-#define TITLE_LABEL_SIZE_WIDTH			200
-#define TITLE_LABEL_SIZE_HEIGHT			20
+#define TITLE_LABEL_ORIGIN_X            40
+#define TITLE_LABEL_ORIGIN_Y            0
+#define TITLE_LABEL_SIZE_WIDTH          200
+#define TITLE_LABEL_SIZE_HEIGHT         20
 
-#define IMAGE_ICON_ORIGIN_X				10
-#define IMAGE_ICON_ORIGIN_Y				10
-#define IMAGE_ICON_SIZE_WIDTH			40
-#define IMAGE_ICON_SIZE_HEIGHT			40
+#define IMAGE_ICON_ORIGIN_X             10
+#define IMAGE_ICON_ORIGIN_Y             10
+#define IMAGE_ICON_SIZE_WIDTH           40
+#define IMAGE_ICON_SIZE_HEIGHT          40
 
-#define IMAGE_BADGE_ORIGIN_X			250
-#define IMAGE_BADGE_ORIGIN_Y			10
-#define IMAGE_BADGE_SIZE_WIDTH			25
-#define IMAGE_BADGE_SIZE_HEIGHT			29
+#define IMAGE_BADGE_ORIGIN_X            250
+#define IMAGE_BADGE_ORIGIN_Y            10
+#define IMAGE_BADGE_SIZE_WIDTH          25
+#define IMAGE_BADGE_SIZE_HEIGHT         29
 
-#define SELECTED_CELL_INDICATOR_WIDTH	5
+#define SELECTED_CELL_INDICATOR_WIDTH   5
 
 @interface DGMenuItemCell ()
 
-@property (nonatomic, retain) UILabel		*cellTitleLabel;
-@property (nonatomic, retain) UIImageView	*cellImageView;
-@property (nonatomic, retain) UIImageView	*cellBadgeImageView;
-@property (nonatomic, retain) UILabel		*cellBadgeTitle;
+@property (nonatomic, retain) UILabel       *cellTitleLabel;
+@property (nonatomic, retain) UIImageView   *cellImageView;
+@property (nonatomic, retain) UIImageView   *cellBadgeImageView;
+@property (nonatomic, retain) UILabel       *cellBadgeTitle;
 @property (nonatomic,
-    retain) UIImageView					*cellSeperatorImageView;
-@property (nonatomic, retain) UIView	*selectedColoredView;
+    retain) UIImageView                 *cellSeperatorImageView;
+@property (nonatomic, retain) UIView    *selectedColoredView;
 
 // - (void)postSetSubject;
 // - (void)triggerBalloonAnimation;
@@ -59,12 +59,12 @@
             [[UILabel alloc] initWithFrame:CGRectMake(TITLE_LABEL_ORIGIN_X,
                 TITLE_LABEL_ORIGIN_Y, TITLE_LABEL_SIZE_WIDTH,
                 TITLE_LABEL_SIZE_HEIGHT)];
-        cellTitleLabel.textColor	= [UIColor blackColor];
-        cellTitleLabel.font			=
+        cellTitleLabel.textColor    = [UIColor blackColor];
+        cellTitleLabel.font         =
             [UIFont fontWithName:@"Helvetica" size:18.0];
-        cellTitleLabel.shadowColor		= [UIColor whiteColor];
-        cellTitleLabel.shadowOffset		= CGSizeMake(1, 1);
-        cellTitleLabel.backgroundColor	= [UIColor clearColor];
+        cellTitleLabel.shadowColor      = [UIColor whiteColor];
+        cellTitleLabel.shadowOffset     = CGSizeMake(1, 1);
+        cellTitleLabel.backgroundColor  = [UIColor clearColor];
         [self.contentView addSubview:cellTitleLabel];
         [cellTitleLabel release];
 
@@ -93,10 +93,10 @@
             [[UILabel alloc] initWithFrame:CGRectMake(IMAGE_BADGE_ORIGIN_X -
                 1,
                 6, IMAGE_BADGE_SIZE_WIDTH, 12.0)];
-        cellBadgeTitle.textColor		= [UIColor whiteColor];
-        cellBadgeTitle.backgroundColor	= [UIColor clearColor];
-        cellBadgeTitle.textAlignment	= UITextAlignmentCenter;
-        cellBadgeTitle.font				=
+        cellBadgeTitle.textColor        = [UIColor whiteColor];
+        cellBadgeTitle.backgroundColor  = [UIColor clearColor];
+        cellBadgeTitle.textAlignment    = UITextAlignmentCenter;
+        cellBadgeTitle.font             =
             [UIFont fontWithName:@"Helvetica-Bold" size:12.0];
         [self.contentView addSubview:cellBadgeTitle];
         [cellBadgeTitle release];
@@ -154,13 +154,13 @@
 
 - (void)dealloc
 {
-    self.cellTitleLabel			= nil;
-    self.cellImageView			= nil;
-    self.cellBadgeImageView		= nil;
-    self.cellBadgeTitle			= nil;
+    self.cellTitleLabel         = nil;
+    self.cellImageView          = nil;
+    self.cellBadgeImageView     = nil;
+    self.cellBadgeTitle         = nil;
     self.cellSeperatorImageView = nil;
-    self.subject				= nil;
-    self.selectedColoredView	= nil;
+    self.subject                = nil;
+    self.selectedColoredView    = nil;
     [super dealloc];
 }
 

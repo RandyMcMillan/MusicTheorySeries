@@ -79,25 +79,25 @@ static inline float radians(double degrees)
                                     // hack and could be improved.
     float y = lineWidth / 2 + .5;
 
-    float	width	= self.frame.size.width - x;
-    float	height	= self.frame.size.height - y;
+    float   width   = self.frame.size.width - x;
+    float   height  = self.frame.size.height - y;
 
     // x = 0; y = 0; width = self.frame.size.width; height =
     // self.frame.size.height;
 
-    const CGFloat	*cgFillColor;
-    const CGFloat	*cgStrokeColor;
+    const CGFloat   *cgFillColor;
+    const CGFloat   *cgStrokeColor;
 
     CGContextRef myContext = UIGraphicsGetCurrentContext();
 
     // Check to see if it is being tapped and adjust the fill color
     // accordingly;
     if (tap) {
-        cgFillColor		= CGColorGetComponents([tapColor CGColor]);
-        cgStrokeColor	= CGColorGetComponents([tapStrokeColor CGColor]);
+        cgFillColor     = CGColorGetComponents([tapColor CGColor]);
+        cgStrokeColor   = CGColorGetComponents([tapStrokeColor CGColor]);
     } else {
-        cgFillColor		= CGColorGetComponents([fillColor CGColor]);
-        cgStrokeColor	= CGColorGetComponents([strokeColor CGColor]);
+        cgFillColor     = CGColorGetComponents([fillColor CGColor]);
+        cgStrokeColor   = CGColorGetComponents([strokeColor CGColor]);
     }
 
     // Create a path ref that we can use multiple times:
@@ -132,13 +132,13 @@ static inline float radians(double degrees)
     CGContextDrawPath(myContext, kCGPathFill);
 
     if (!noGradient) {
-        CGGradientRef	myGradient;
+        CGGradientRef   myGradient;
         CGColorSpaceRef myColorspace;
-        size_t			num_locations	= 2;
-        CGFloat			locations[2]	= {0.0, 1.0};
-        CGFloat			components[8]	= {1.0, 1.0, 1.0, 0.0,              // Start color
+        size_t          num_locations   = 2;
+        CGFloat         locations[2]    = {0.0, 1.0};
+        CGFloat         components[8]   = {1.0, 1.0, 1.0, 0.0,              // Start color
 
-                                           1.0,			  1.0, 1.0, 0.3};   // End color
+                                           1.0,           1.0, 1.0, 0.3};   // End color
 
         myColorspace = CGColorSpaceCreateDeviceRGB();
 
@@ -151,10 +151,10 @@ static inline float radians(double degrees)
         CGContextAddPath(myContext, myPath);
         CGContextClip(myContext);
         CGPoint myStartPoint, myEndPoint;
-        myStartPoint.x	= x;
-        myStartPoint.y	= height - y;
-        myEndPoint.x	= x;
-        myEndPoint.y	= y;
+        myStartPoint.x  = x;
+        myStartPoint.y  = height - y;
+        myEndPoint.x    = x;
+        myEndPoint.y    = y;
         CGContextDrawLinearGradient(myContext, myGradient,
             myStartPoint, myEndPoint,
             0);
@@ -187,9 +187,9 @@ static inline float radians(double degrees)
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    float	distance	= 70.0;
-    CGPoint touchPoint	= [[touches anyObject] locationInView:self];
-    CGRect	testRect	=
+    float   distance    = 70.0;
+    CGPoint touchPoint  = [[touches anyObject] locationInView:self];
+    CGRect  testRect    =
         CGRectMake(-distance, -distance, self.frame.size.width + distance *
         2,
         self.frame.size.height + distance * 2);

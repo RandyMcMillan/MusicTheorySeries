@@ -15,12 +15,12 @@
 
 @interface SolfegeSharpsViewController : UIViewController <
     UISplitViewControllerDelegate>{
-    int		lastKeyIndex;
-    CGRect	keyRects[KEY_COUNT];
+    int     lastKeyIndex;
+    CGRect  keyRects[KEY_COUNT];
 
-    IBOutlet UIImageView		*imageView;
-    IBOutlet GradientToolBar	*toolBar;
-    IBOutlet GradientButton		*closeButton;
+    IBOutlet UIImageView        *imageView;
+    IBOutlet GradientToolBar    *toolBar;
+    IBOutlet GradientButton     *closeButton;
 
     UILabel *label0;
     UILabel *label1;

@@ -12,10 +12,10 @@
 // #import "DGMenuViewItem.h"
 
 @interface DGMenuItemCell : UITableViewCell {
-    UILabel		*cellTitleLabel;
+    UILabel     *cellTitleLabel;
     UIImageView *cellImageView;
     UIImageView *cellBadgeImageView;
-    UILabel		*cellBadgeTitle;
+    UILabel     *cellBadgeTitle;
 
     //   DGMenuViewItem      *subject;
     UIView *selectedColoredView;                // THE SELECTION INDICATOR

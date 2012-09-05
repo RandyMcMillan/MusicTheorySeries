@@ -16,12 +16,12 @@
 
 @interface ChromaticCircleViewController : UIViewController <
     UISplitViewControllerDelegate>{
-    int		lastKeyIndex;
-    CGRect	keyRects[KEY_COUNT];
+    int     lastKeyIndex;
+    CGRect  keyRects[KEY_COUNT];
 
-    IBOutlet ExampleView		*imageView;
-    IBOutlet GradientToolBar	*toolBar;
-    IBOutlet GradientButton		*closeButton;
+    IBOutlet ExampleView        *imageView;
+    IBOutlet GradientToolBar    *toolBar;
+    IBOutlet GradientButton     *closeButton;
 
     UILabel *label0;
     UILabel *label1;

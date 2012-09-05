@@ -22,8 +22,8 @@
 - (void)closeBrowser
 {
     if ([self respondsToSelector:@selector(presentingViewController)]) {
-        [[self presentingViewController]	dismissViewControllerAnimated	:
-            YES								completion						:nil];
+        [[self presentingViewController]    dismissViewControllerAnimated   :
+            YES                             completion                      :nil];
     } else {
         [[self parentViewController] dismissModalViewControllerAnimated
             :YES];
@@ -208,20 +208,20 @@
     // displayed in Simulator
 
     label0 = [[UILabel alloc] initWithFrame:keyRects[0]];
-    label0.backgroundColor	= DO;
-    label0.text				= [NSString stringWithFormat:@"keyRect[0]"];
+    label0.backgroundColor  = DO;
+    label0.text             = [NSString stringWithFormat:@"keyRect[0]"];
 
     label1 = [[UILabel alloc] initWithFrame:keyRects[1]];
-    label1.backgroundColor	= DI;
-    label1.text				= [NSString stringWithFormat:@"keyRect[1]"];
+    label1.backgroundColor  = DI;
+    label1.text             = [NSString stringWithFormat:@"keyRect[1]"];
 
     label2 = [[UILabel alloc] initWithFrame:keyRects[2]];
-    label2.backgroundColor	= RE;
-    label2.text				= [NSString stringWithFormat:@"keyRect[2]"];
+    label2.backgroundColor  = RE;
+    label2.text             = [NSString stringWithFormat:@"keyRect[2]"];
 
     label3 = [[UILabel alloc] initWithFrame:keyRects[3]];
-    label3.backgroundColor	= RI;
-    label3.text				= [NSString stringWithFormat:@"keyRect[3]"];
+    label3.backgroundColor  = RI;
+    label3.text             = [NSString stringWithFormat:@"keyRect[3]"];
 
     label4 = [[UILabel alloc] initWithFrame:keyRects[4]];
     label4.backgroundColor = MI;    // [UIColor colorWithRed:0.024
@@ -491,9 +491,9 @@
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     [[UIDevice currentDevice]
         beginGeneratingDeviceOrientationNotifications];
-    [[NSNotificationCenter defaultCenter]	addObserver :self selector:
+    [[NSNotificationCenter defaultCenter]   addObserver :self selector:
         @selector(orientationChanged:)
-                                            name		:UIDeviceOrientationDidChangeNotification object:nil];
+                                            name        :UIDeviceOrientationDidChangeNotification object:nil];
 
     // create the mixer
     self.mixerHost = [[MixerHostAudio alloc] init];
@@ -539,7 +539,7 @@
     [self drawRects];
 
     UITouch *aTouch = [touches anyObject];
-    int		idx		= [self keyIndexForTouch:aTouch];
+    int     idx     = [self keyIndexForTouch:aTouch];
 
     if (idx >= 0) {
         if ([mixerHost playNote:idx] == YES) {
@@ -556,7 +556,7 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *aTouch = [touches anyObject];
-    int		idx		= [self keyIndexForTouch:aTouch];
+    int     idx     = [self keyIndexForTouch:aTouch];
 
     if ((idx >= 0) && (idx != lastKeyIndex)) {
         if ([mixerHost playNote:idx] == YES) {
@@ -572,8 +572,8 @@
 
 - (int)keyIndexForTouch:(UITouch *)touch
 {
-    int		keyIndex	= -1;
-    CGPoint pt			= [touch locationInView:self.view];
+    int     keyIndex    = -1;
+    CGPoint pt          = [touch locationInView:self.view];
 
     for (int i = 0; i < KEY_COUNT; i++) {
         CGRect rect = keyRects[i];
