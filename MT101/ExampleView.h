@@ -25,16 +25,16 @@
     UIColor *strokeColor;
 
     @private
-    CGGradientRef	normalGradient;
-    CGGradientRef	highlightGradient;
+    CGGradientRef   normalGradient;
+    CGGradientRef   highlightGradient;
 }
-@property (nonatomic, retain) NSArray	*normalGradientColors;
-@property (nonatomic, retain) NSArray	*normalGradientLocations;
-@property (nonatomic, retain) NSArray	*highlightGradientColors;
-@property (nonatomic, retain) NSArray	*highlightGradientLocations;
-@property (nonatomic) CGFloat			cornerRadius;
-@property (nonatomic) CGFloat			strokeWeight;
-@property (nonatomic, retain) UIColor	*strokeColor;
+@property (nonatomic, retain) NSArray   *normalGradientColors;
+@property (nonatomic, retain) NSArray   *normalGradientLocations;
+@property (nonatomic, retain) NSArray   *highlightGradientColors;
+@property (nonatomic, retain) NSArray   *highlightGradientLocations;
+@property (nonatomic) CGFloat           cornerRadius;
+@property (nonatomic) CGFloat           strokeWeight;
+@property (nonatomic, retain) UIColor   *strokeColor;
 
 - (void)useWelcomeStyle;
 - (void)useGrandStaffStyle;
