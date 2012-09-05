@@ -105,7 +105,6 @@
 		484D16E515DAE485005FC66E /* SectionHeaders.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484D16E415DAE485005FC66E /* SectionHeaders.plist */; };
 		486AD37215CE0B7D0054753C /* DGMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AD37115CE0B7D0054753C /* DGMenuItemCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05ED15BF334A00B3F10D /* icon@2x.png */; };
-		4875624215F7C02100BDF060 /* myCGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4875624115F7C02100BDF060 /* myCGRect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		487A1C7F15E84735006C5C59 /* WikiToDisplay1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */; };
 		487A1C9415E86AAD006C5C59 /* WikiToDisplay2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9015E86AAD006C5C59 /* WikiToDisplay2.plist */; };
 		487A1C9515E86AAD006C5C59 /* WikiToDisplay3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9115E86AAD006C5C59 /* WikiToDisplay3.plist */; };
@@ -314,8 +313,6 @@
 		486AD37015CE0B7D0054753C /* DGMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGMenuItemCell.h; sourceTree = "<group>"; };
 		486AD37115CE0B7D0054753C /* DGMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGMenuItemCell.m; sourceTree = "<group>"; };
 		486B05ED15BF334A00B3F10D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		4875624015F7C02100BDF060 /* myCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myCGRect.h; sourceTree = "<group>"; };
-		4875624115F7C02100BDF060 /* myCGRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myCGRect.m; sourceTree = "<group>"; };
 		487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay1.plist; sourceTree = "<group>"; };
 		487A1C8915E85115006C5C59 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		487A1C9015E86AAD006C5C59 /* WikiToDisplay2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay2.plist; sourceTree = "<group>"; };
@@ -790,8 +787,6 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
-				4875624015F7C02100BDF060 /* myCGRect.h */,
-				4875624115F7C02100BDF060 /* myCGRect.m */,
 				4887524D15F59731006FBD28 /* ExampleView.h */,
 				4887524E15F59731006FBD28 /* ExampleView.m */,
 				48B67BC615F411DA00B0C6F2 /* GradientToolBar.h */,
@@ -1111,7 +1106,6 @@
 				481A432815F0FFF8006EDF46 /* GradientButton.m in Sources */,
 				48B67BC815F411DA00B0C6F2 /* GradientToolBar.m in Sources */,
 				4887524F15F59731006FBD28 /* ExampleView.m in Sources */,
-				4875624215F7C02100BDF060 /* myCGRect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
