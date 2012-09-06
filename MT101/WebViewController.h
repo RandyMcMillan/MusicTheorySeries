@@ -15,7 +15,7 @@
 @protocol WebViewDelegate <NSObject>
 @end
 
-@interface WebViewController : UIViewController <UIWebViewDelegate>{
+@interface WebViewController : UIViewController <UIWebViewDelegate, UIGestureRecognizerDelegate>{
     IBOutlet UIWebView *webView;
 
     IBOutlet GradientToolBar    *toolBar;
@@ -41,15 +41,27 @@
     BOOL                                isImage;
     NSString                            *imageURL;
     id <WebViewDelegate>                delegate;
+
+    BOOL scaleEnabled;
+
+    id <UIGestureRecognizerDelegate>    uigr;
+    CGFloat                             tx;     // x translation
+    CGFloat                             ty;     // y translation
+    CGFloat                             scale;  // zoom scale
+    CGFloat                             theta;  // rotation angle
 }
 
 - (IBAction)onDoneButtonPress:(id)sender;
 - (IBAction)onSafariButtonPress:(id)sender;
 
-@property (nonatomic, retain) UIWebView             *webView;
-@property (retain) NSString                         *imageURL;
-@property (assign) BOOL                             isImage;
-@property (nonatomic, retain) id <WebViewDelegate>  delegate;
-@property (nonatomic, retain) GradientButton        *doneButton;
+@property (nonatomic, retain) UIWebView                         *webView;
+@property (retain) NSString                                     *imageURL;
+@property (assign) BOOL                                         isImage;
+@property (nonatomic, retain) id <WebViewDelegate>              delegate;
+@property (nonatomic, retain) GradientButton                    *doneButton;
+@property (nonatomic, retain) id <UIGestureRecognizerDelegate>  uigr;
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation;
+- (WebViewController *)initWithScale:(BOOL)enabled;
 
 @end

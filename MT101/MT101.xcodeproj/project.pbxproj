@@ -117,10 +117,10 @@
 		489C8BB215CF05DD00F15D05 /* GrandStaffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */; };
 		48A3562F15E2363F00A3529D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3562E15E2363F00A3529D /* WebViewController.m */; };
-		48A3563115E2364600A3529D /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A3563015E2364600A3529D /* WebView.xib */; };
 		48B67BC815F411DA00B0C6F2 /* GradientToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */; };
 		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		48DDB5CF15F963D100E684CA /* WebViewFullScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48DDB5CE15F963D100E684CA /* WebViewFullScreen.xib */; };
 		48E0C4CE15F0054F001A2748 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4CD15F0054F001A2748 /* Default-Landscape@2x~ipad.png */; };
 		48E0C4D115F00561001A2748 /* Default@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4D015F00561001A2748 /* Default@2x~ipad.png */; };
 		48E592BA15E9859A00299709 /* vib_0.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48E592A015E9859A00299709 /* vib_0.aif */; };
@@ -330,12 +330,12 @@
 		48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay0.plist; sourceTree = "<group>"; };
 		48A3562D15E2363F00A3529D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		48A3562E15E2363F00A3529D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		48A3563015E2364600A3529D /* WebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
 		48B67BC615F411DA00B0C6F2 /* GradientToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientToolBar.h; sourceTree = "<group>"; };
 		48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientToolBar.m; sourceTree = "<group>"; };
 		48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
+		48DDB5CE15F963D100E684CA /* WebViewFullScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewFullScreen.xib; sourceTree = "<group>"; };
 		48E0C4CD15F0054F001A2748 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		48E0C4D015F00561001A2748 /* Default@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x~ipad.png"; path = "../Default@2x~ipad.png"; sourceTree = "<group>"; };
 		48E592A015E9859A00299709 /* vib_0.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_0.aif; sourceTree = "<group>"; };
@@ -644,7 +644,7 @@
 				48EFB1E715E2DF4F009A5D43 /* WebView.bundle */,
 				48A3562D15E2363F00A3529D /* WebViewController.h */,
 				48A3562E15E2363F00A3529D /* WebViewController.m */,
-				48A3563015E2364600A3529D /* WebView.xib */,
+				48DDB5CE15F963D100E684CA /* WebViewFullScreen.xib */,
 			);
 			name = WikiView;
 			sourceTree = "<group>";
@@ -981,7 +981,6 @@
 				4882981A15E006BB00239B29 /* ChromaticCircleViewController.xib in Resources */,
 				4882981C15E009B900239B29 /* Chromatic Circle.mp4 in Resources */,
 				48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */,
-				48A3563115E2364600A3529D /* WebView.xib in Resources */,
 				48EFB1E815E2DF4F009A5D43 /* WebView.bundle in Resources */,
 				487A1C7F15E84735006C5C59 /* WikiToDisplay1.plist in Resources */,
 				487A1C9415E86AAD006C5C59 /* WikiToDisplay2.plist in Resources */,
@@ -1061,6 +1060,7 @@
 				481A431A15F0FE8A006EDF46 /* button1.png in Resources */,
 				481A431E15F0FEA8006EDF46 /* tbButton.png in Resources */,
 				481DE8AC15F689AA0002736D /* Phrygian.png in Resources */,
+				48DDB5CF15F963D100E684CA /* WebViewFullScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

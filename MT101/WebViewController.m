@@ -22,6 +22,8 @@
 @synthesize imageURL;
 @synthesize isImage;
 @synthesize doneButton;
+@synthesize uigr;
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)
    nibBundleOrNil
@@ -42,6 +44,19 @@
 
 /*
  *   If you need to do additional setup after loading the view, override viewDidLoad. */
+
+- (WebViewController *)initWithScale:(BOOL)enabled
+{
+    self            = [super init];
+    scaleEnabled    = enabled;
+
+    // UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleTap:)];
+    // self.view.gestureRecognizers = [NSArray arrayWithObjects: tap, nil];
+    // for (UIGestureRecognizer *recognizer in self.view.gestureRecognizers) recognizer.delegate = self;
+
+    return self;
+}
+
 - (void)viewDidLoad
 {
     CGRect textFieldFrame = CGRectMake(kLeftMargin, kTweenMargin,
@@ -93,19 +108,187 @@
     [refreshButton useDoneButtonStyle];
     [refreshButton useRefreshStyle];
 
-    webView.delegate = self;
+    webView.delegate        = self;
+    webView.scalesPageToFit = TRUE;
 
-    //  NSString *urlAddress = @"http://www.google.com";
+    UITapGestureRecognizer  *tap            = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+    UITapGestureRecognizer  *twoFingerTap   = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTwoFingerTap:)];
+    twoFingerTap.numberOfTouchesRequired = 2;
+    UITapGestureRecognizer *dtap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];
+    dtap.numberOfTapsRequired = 2;
+    // UISwipeGestureRecognizer *swipeAll = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAll:)];
+    // swipeAll.direction = (UISwipeGestureRecognizerDirectionUp | UISwipeGestureRecognizerDirectionDown | UISwipeGestureRecognizerDirectionLeft | UISwipeGestureRecognizerDirectionRight);
+    // swipeAll.numberOfTouchesRequired = 1;
 
-    // Create a URL object.
-    // SURL *url = [NSURL URLWithString:urlAddress];
+    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeft:)];
+    swipeLeft.direction = (UISwipeGestureRecognizerDirectionLeft);
+    swipeLeft.numberOfTouchesRequired = 1;
+    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeRight:)];
+    swipeRight.direction = (UISwipeGestureRecognizerDirectionRight);
+    swipeRight.numberOfTouchesRequired = 1;
+    UISwipeGestureRecognizer *swipeUp = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeUp:)];
+    swipeUp.direction = (UISwipeGestureRecognizerDirectionUp);
+    swipeUp.numberOfTouchesRequired = 1;
+    UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDown:)];
+    swipeDown.direction = (UISwipeGestureRecognizerDirectionDown);
+    swipeDown.numberOfTouchesRequired = 1;
+    
+    
+    UISwipeGestureRecognizer *twoFingerSwipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeft:)];
+    twoFingerSwipeLeft.direction = (UISwipeGestureRecognizerDirectionLeft);
+    twoFingerSwipeLeft.numberOfTouchesRequired = 1;
+    UISwipeGestureRecognizer *twoFingerSwipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeRight:)];
+    twoFingerSwipeRight.direction = (UISwipeGestureRecognizerDirectionRight);
+    twoFingerSwipeRight.numberOfTouchesRequired = 1;
 
-    // URL Requst Object
-    // NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
 
-    // Load the request in the UIWebView.
-    // [webView loadRequest:requestObj];
+    webView.gestureRecognizers = [NSArray arrayWithObjects:tap, twoFingerTap, dtap, /*swipeAll,*/ swipeLeft, swipeRight, swipeUp, swipeDown, nil];
+
+    for (UIGestureRecognizer *recognizer in webView.gestureRecognizers) {
+        recognizer.delegate = self;
+    }
+
 }   /* viewDidLoad */
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    // Promote the touched view
+    // [self.superview bringubviewToFront:self];
+
+    // initialize translation offsets
+    // tx = self.transform.tx;
+    // ty = self.transform.ty;
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+
+    if (touch.tapCount == 3) {
+        // Reset geometry upon double-tap
+         webView.transform = CGAffineTransformIdentity;
+        tx = 0.0f; ty = 0.0f; scale = 1.0f; theta = 0.0f;
+    }
+}
+
+- (void)hideToolBar
+{
+    
+    CGRect newRectangle = CGRectMake(0,
+                                     0,
+                                     toolBar.frame.size.width,
+                                     [self view].frame.size.height
+                                     );
+    
+    
+    [webView setFrame:newRectangle];
+
+    toolBar.hidden      = YES;
+    navBar.hidden       = toolBar.hidden;
+    addressLabel.hidden = navBar.hidden;
+}
+
+- (void)showToolBar
+{
+
+    
+    CGRect newRectangle = CGRectMake(0,
+                                     44,
+                                     toolBar.frame.size.width,
+                                     [self view].frame.size.height - 88
+                                     );
+    
+
+    [webView setFrame:newRectangle];
+    
+    toolBar.hidden      = NO;
+    navBar.hidden       = toolBar.hidden;
+    addressLabel.hidden = navBar.hidden;
+    
+}
+
+- (void)handleTap:(UITapGestureRecognizer *)uigr
+{
+    if (toolBar.hidden) {
+        // [self   performSelector :@selector(showToolBar) withObject:nil
+        //       afterDelay      :10.0];
+    } else {
+        [self   performSelector :@selector(hideToolBar) withObject:nil
+                afterDelay      :0.3];
+    }
+
+    NSLog(@"Tapped!!");
+}
+
+- (void)handleTwoFingerTap:(UITapGestureRecognizer *)uigr
+{
+    if (toolBar.hidden) {
+        [self   performSelector :@selector(showToolBar) withObject:nil
+                afterDelay      :0.0];
+    } else {
+       // [self   performSelector :@selector(hideToolBar) withObject:nil
+         //       afterDelay      :0.0];
+    }
+
+    NSLog(@"handleTwoFingerTap!!");
+}
+
+- (void)handleDoubleTap:(UIGestureRecognizer *)uigr
+{
+    NSLog(@"================= double tap ============");
+
+    if (toolBar.hidden) {
+        [self   performSelector :@selector(showToolBar) withObject:nil
+                afterDelay      :0.0];
+    } else {
+        [self   performSelector :@selector(hideToolBar) withObject:nil
+                afterDelay      :0.0];
+    }
+}
+
+- (void)swipeAll:(UIGestureRecognizer *)uigr {}
+
+- (void)swipeLeft:(UIGestureRecognizer *)uigr
+{
+    NSLog(@"swipteLeft \n To handle Swiptes in WebView");
+    [webView goForward];
+}
+
+- (void)swipeRight:(UIGestureRecognizer *)uigr
+{
+    NSLog(@"swipteRight \n To handle Swiptes in WebView");
+    [webView goBack];
+}
+
+- (void)twoFingerSwipeLeft:(UIGestureRecognizer *)uigr
+{
+    NSLog(@"twoFingerSwipeLeft \n To handle Swiptes in WebView");
+    [webView goForward];
+}
+
+- (void)twoFingerSwipeRight:(UIGestureRecognizer *)uigr
+{
+    NSLog(@"twoFingerSwipeRight \n To handle Swiptes in WebView");
+    [webView goBack];
+}
+
+
+- (void)swipeUp:(UIGestureRecognizer *)uigr
+{
+    NSLog(@"swipteUp \n To handle Swiptes in WebView");
+}
+
+- (void)swipeDown:(UIGestureRecognizer *)uigr
+{
+    NSLog(@"swipteDown \n To handle Swiptes in WebView");
+}
+
+- (BOOL)gestureRecognizer                                   :(UIGestureRecognizer *)gestureRecognizer
+        shouldRecognizeSimultaneouslyWithGestureRecognizer  :(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return YES;
+    // return NO;
+}
 
 - (IBAction)onSafariButtonPress:(id)sender
 {
@@ -173,10 +356,21 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)sender
 {
+    
+  //  CGRect newRectangle = CGRectMake(320,
+    //                                 44,
+      //                               600,
+        //                             [self view].frame.size.height - 88
+          //                           );
+    
+    
+    //[self.view setFrame:newRectangle];
     addressLabel.text = @"Loading...";
 
     backButton.enabled      = webView.canGoBack;
     forwardButton.enabled   = webView.canGoForward;
+    refreshButton.highlighted = FALSE;
+
     NSLog(@"webViewDidStartLoad");
     spinner.hidden = FALSE;
     [spinner startAnimating];
@@ -196,6 +390,12 @@
 
     backButton.enabled      = webView.canGoBack;
     forwardButton.enabled   = webView.canGoForward;
+    doneButton.highlighted = FALSE;
+    refreshButton.highlighted = FALSE;
+    safariButton.highlighted = FALSE;
+    backButton.highlighted = FALSE;
+    forwardButton.highlighted= FALSE;
+    
     [spinner stopAnimating];
     NSLog(@"webViewDidFinLoad");
 

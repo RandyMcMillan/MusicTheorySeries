@@ -373,8 +373,9 @@
   NSLog(@"displayWiki = %@", wikiToDisplay);
 
   WebViewController *wikiVC = [[WebViewController alloc] init];
-  wikiVC.modalPresentationStyle = UIModalPresentationPageSheet;
-  [self presentModalViewController:wikiVC animated:YES];
+ // wikiVC.modalPresentationStyle = UIModalPresentationPageSheet;
+    wikiVC.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentModalViewController:wikiVC animated:YES];
 
 
   //Create a URL object.
