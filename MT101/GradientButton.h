@@ -46,6 +46,8 @@
 - (void)useWikiStyle;
 - (void)useInteractiveStyle;
 - (void)useTBStyle;
+- (void)useEmailStyle;
+
 
 - (void)useAlertStyle;
 - (void)useRedDeleteStyle;

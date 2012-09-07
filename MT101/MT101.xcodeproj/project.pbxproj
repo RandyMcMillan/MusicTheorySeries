@@ -78,6 +78,8 @@
 		480A796D15DD6060005E9C43 /* UnderWater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795615DD6060005E9C43 /* UnderWater.mp4 */; };
 		480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795715DD6060005E9C43 /* WindyTrees.mp4 */; };
 		480D185415F9E3E90086C3EF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480D185315F9E3E90086C3EF /* MessageUI.framework */; };
+		480D185915F9F7CF0086C3EF /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 480D185815F9F7CF0086C3EF /* email.png */; };
+		480D185B15F9FA9D0086C3EF /* email@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 480D185A15F9FA9D0086C3EF /* email@2x.png */; };
 		481A431215F0F52C006EDF46 /* ColorUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A431115F0F52C006EDF46 /* ColorUIButton.m */; };
 		481A431A15F0FE8A006EDF46 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 481A431715F0FE8A006EDF46 /* button1.png */; };
 		481A431E15F0FEA8006EDF46 /* tbButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 481A431D15F0FEA8006EDF46 /* tbButton.png */; };
@@ -277,6 +279,8 @@
 		480A795615DD6060005E9C43 /* UnderWater.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnderWater.mp4; sourceTree = "<group>"; };
 		480A795715DD6060005E9C43 /* WindyTrees.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WindyTrees.mp4; sourceTree = "<group>"; };
 		480D185315F9E3E90086C3EF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		480D185815F9F7CF0086C3EF /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		480D185A15F9FA9D0086C3EF /* email@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email@2x.png"; sourceTree = "<group>"; };
 		481A431015F0F52C006EDF46 /* ColorUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUIButton.h; sourceTree = "<group>"; };
 		481A431115F0F52C006EDF46 /* ColorUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUIButton.m; sourceTree = "<group>"; };
 		481A431715F0FE8A006EDF46 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
@@ -562,6 +566,8 @@
 		481A431615F0FE8A006EDF46 /* buttonArt */ = {
 			isa = PBXGroup;
 			children = (
+				480D185A15F9FA9D0086C3EF /* email@2x.png */,
+				480D185815F9F7CF0086C3EF /* email.png */,
 				481A431D15F0FEA8006EDF46 /* tbButton.png */,
 				481A431715F0FE8A006EDF46 /* button1.png */,
 			);
@@ -1064,6 +1070,8 @@
 				481A431E15F0FEA8006EDF46 /* tbButton.png in Resources */,
 				481DE8AC15F689AA0002736D /* Phrygian.png in Resources */,
 				48DDB5CF15F963D100E684CA /* WebViewFullScreen.xib in Resources */,
+				480D185915F9F7CF0086C3EF /* email.png in Resources */,
+				480D185B15F9FA9D0086C3EF /* email@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -144,6 +144,12 @@
     [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/arrow_right"]] forState:UIControlStateNormal];
 }
 
+- (void)useEmailStyle
+{
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"email"]] forState:UIControlStateNormal];
+}
+
+
 - (void)useVideoStyle
 {
     NSMutableArray  *colors = [NSMutableArray arrayWithCapacity:3];

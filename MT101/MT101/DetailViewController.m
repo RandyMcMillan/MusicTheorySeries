@@ -465,8 +465,10 @@
   [videoButton useDoneButtonStyle];
   [wikiButton useDoneButtonStyle];
   [interActiveButton useDoneButtonStyle];
-    [emailButton useDoneButtonStyle];
-    [self.view bringSubviewToFront:emailButton];
+  [emailButton useDoneButtonStyle];
+  [emailButton useEmailStyle];
+
+  [self.view bringSubviewToFront:emailButton];
   //[toolBar useTBStyle];
 
 
