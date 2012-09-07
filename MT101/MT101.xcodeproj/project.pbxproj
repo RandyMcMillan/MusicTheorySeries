@@ -43,7 +43,6 @@
 		4809068F15F03DFD003115F3 /* TrebleClef.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809066915F03DFD003115F3 /* TrebleClef.ai */; };
 		4809069015F03DFD003115F3 /* TrebleClef.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809066A15F03DFD003115F3 /* TrebleClef.png */; };
 		4809069115F03DFD003115F3 /* welcome.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4809066B15F03DFD003115F3 /* welcome.ai */; };
-		4809069215F03DFD003115F3 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 4809066C15F03DFD003115F3 /* welcome.png */; };
 		480A792515DD59BD005E9C43 /* IonianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A792315DD59BD005E9C43 /* IonianViewController.m */; };
 		480A792615DD59BD005E9C43 /* IonianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A792415DD59BD005E9C43 /* IonianViewController.xib */; };
 		480A792A15DD59DE005E9C43 /* DorianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A792815DD59DE005E9C43 /* DorianViewController.m */; };
@@ -78,6 +77,7 @@
 		480A796C15DD6060005E9C43 /* Treble Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795515DD6060005E9C43 /* Treble Clef.mp4 */; };
 		480A796D15DD6060005E9C43 /* UnderWater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795615DD6060005E9C43 /* UnderWater.mp4 */; };
 		480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795715DD6060005E9C43 /* WindyTrees.mp4 */; };
+		480D185415F9E3E90086C3EF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480D185315F9E3E90086C3EF /* MessageUI.framework */; };
 		481A431215F0F52C006EDF46 /* ColorUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A431115F0F52C006EDF46 /* ColorUIButton.m */; };
 		481A431A15F0FE8A006EDF46 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 481A431715F0FE8A006EDF46 /* button1.png */; };
 		481A431E15F0FEA8006EDF46 /* tbButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 481A431D15F0FEA8006EDF46 /* tbButton.png */; };
@@ -276,6 +276,7 @@
 		480A795515DD6060005E9C43 /* Treble Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Treble Clef.mp4"; sourceTree = "<group>"; };
 		480A795615DD6060005E9C43 /* UnderWater.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnderWater.mp4; sourceTree = "<group>"; };
 		480A795715DD6060005E9C43 /* WindyTrees.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WindyTrees.mp4; sourceTree = "<group>"; };
+		480D185315F9E3E90086C3EF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		481A431015F0F52C006EDF46 /* ColorUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUIButton.h; sourceTree = "<group>"; };
 		481A431115F0F52C006EDF46 /* ColorUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUIButton.m; sourceTree = "<group>"; };
 		481A431715F0FE8A006EDF46 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
@@ -433,6 +434,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480D185415F9E3E90086C3EF /* MessageUI.framework in Frameworks */,
 				481A432A15F101C5006EDF46 /* QuartzCore.framework in Frameworks */,
 				4825A36A15C4DBCF006F0C46 /* AVFoundation.framework in Frameworks */,
 				4825A36815C4DBC3006F0C46 /* AudioToolbox.framework in Frameworks */,
@@ -787,6 +789,7 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
+				480D185315F9E3E90086C3EF /* MessageUI.framework */,
 				4887524D15F59731006FBD28 /* ExampleView.h */,
 				4887524E15F59731006FBD28 /* ExampleView.m */,
 				48B67BC615F411DA00B0C6F2 /* GradientToolBar.h */,
@@ -874,6 +877,7 @@
 				B225A7221534CF59006FD46F /* Sources */,
 				B225A7231534CF59006FD46F /* Frameworks */,
 				B225A7241534CF59006FD46F /* Resources */,
+				48E369C815F9C07600EBE7CF /* Kill Phone */,
 			);
 			buildRules = (
 			);
@@ -890,7 +894,7 @@
 		B225A71D1534CF58006FD46F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = B225A7201534CF58006FD46F /* Build configuration list for PBXProject "MT101" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1056,7 +1060,6 @@
 				4809068F15F03DFD003115F3 /* TrebleClef.ai in Resources */,
 				4809069015F03DFD003115F3 /* TrebleClef.png in Resources */,
 				4809069115F03DFD003115F3 /* welcome.ai in Resources */,
-				4809069215F03DFD003115F3 /* welcome.png in Resources */,
 				481A431A15F0FE8A006EDF46 /* button1.png in Resources */,
 				481A431E15F0FEA8006EDF46 /* tbButton.png in Resources */,
 				481DE8AC15F689AA0002736D /* Phrygian.png in Resources */,
@@ -1065,6 +1068,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48E369C815F9C07600EBE7CF /* Kill Phone */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Kill Phone";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B225A7221534CF59006FD46F /* Sources */ = {

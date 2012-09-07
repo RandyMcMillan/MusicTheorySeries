@@ -63,7 +63,7 @@
 @synthesize wikiButton;
 @synthesize interActiveButton;
 @synthesize toolBar;
-
+@synthesize emailButton;
 
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
@@ -465,6 +465,8 @@
   [videoButton useDoneButtonStyle];
   [wikiButton useDoneButtonStyle];
   [interActiveButton useDoneButtonStyle];
+    [emailButton useDoneButtonStyle];
+    [self.view bringSubviewToFront:emailButton];
   //[toolBar useTBStyle];
 
 
@@ -478,6 +480,81 @@
   self.detailDescriptionLabel.text = appVersion;
 
 } /* configureView */
+
+
+
+#pragma mark - Open the mail interface
+
+- (IBAction)openMail:(id)sender
+{
+    if ([MFMailComposeViewController canSendMail])
+    {
+        MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+        
+        mailer.mailComposeDelegate = self;
+        
+        [mailer setSubject:@"A Message from a Music Theory 101 user."];
+        
+        NSArray *toRecipients = [NSArray arrayWithObjects:@"randy.lee.mcmillan@gmail.com", @"", nil];
+        [mailer setToRecipients:toRecipients];
+        
+        UIImage *myImage = imageView.image;
+        NSData *imageData = UIImagePNGRepresentation(myImage);
+        NSString *imageName = @"Music Theory 101 for iOS Created by Randy McMillan Copyright (c) 2012 Randy McMillan. All rights reserved.";
+        [mailer addAttachmentData:imageData mimeType:@"image/png" fileName:imageName];
+        
+        NSString *emailBody = @"Thank you for your interest in Music Theory 101 for iOS \n All questions are welcome.\n All constructive feed back is welcome.\n Images in this app may be used for educational purposes.\n These images may NEVER be reused/redistributed in any commercial way including other mobile applications. \n\nMusic Theory 101 for iOS \nCreated by Randy McMillan \nCopyright (c) 2012 Randy McMillan. All rights reserved.";
+        
+        [mailer setMessageBody:emailBody isHTML:NO];
+ 
+        // only for iPad
+        // mailer.modalPresentationStyle = UIModalPresentationPageSheet;
+        
+        [self presentModalViewController:mailer animated:YES];
+        
+        [mailer release];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure"
+                                                        message:@"Your device doesn't support the composer sheet"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        [alert show];
+        [alert release];
+    }
+    
+}
+
+
+
+#pragma mark - MFMailComposeController delegate
+
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+{
+	switch (result)
+	{
+		case MFMailComposeResultCancelled:
+			NSLog(@"Mail cancelled: you cancelled the operation and no email message was queued");
+			break;
+		case MFMailComposeResultSaved:
+			NSLog(@"Mail saved: you saved the email message in the Drafts folder");
+			break;
+		case MFMailComposeResultSent:
+			NSLog(@"Mail send: the email message is queued in the outbox. It is ready to send the next time the user connects to email");
+			break;
+		case MFMailComposeResultFailed:
+			NSLog(@"Mail failed: the email message was nog saved or queued, possibly due to an error");
+			break;
+		default:
+			NSLog(@"Mail not sent");
+			break;
+	}
+    
+	[self dismissModalViewControllerAnimated:YES];
+}
 
 
 
@@ -571,6 +648,7 @@
   if (self) {
         self.title = NSLocalizedString(@"Music Theory 101",
       @"Music Theory 101");
+      [self.navigationController.view addSubview:emailButton];
       }
 
   return self;

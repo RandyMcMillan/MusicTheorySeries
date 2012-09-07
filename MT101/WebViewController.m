@@ -226,8 +226,8 @@
         [self   performSelector :@selector(showToolBar) withObject:nil
                 afterDelay      :0.0];
     } else {
-       // [self   performSelector :@selector(hideToolBar) withObject:nil
-         //       afterDelay      :0.0];
+        [self   performSelector :@selector(hideToolBar) withObject:nil
+                afterDelay      :0.0];
     }
 
     NSLog(@"handleTwoFingerTap!!");

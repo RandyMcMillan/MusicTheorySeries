@@ -8,6 +8,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "GradientButton.h"
 #import "GradientToolBar.h"
@@ -15,13 +16,14 @@
 
 
 @interface DetailViewController : UIViewController <
-  UISplitViewControllerDelegate> {
+  UISplitViewControllerDelegate,MFMailComposeViewControllerDelegate> {
 
   GradientButton    *videoButton;
   GradientButton    *wikiButton;
   GradientButton    *interActiveButton;
   GradientToolBar   *toolBar;
       ExampleView *imageView;
+      GradientButton *emailButton;
 
 }
 
@@ -40,11 +42,14 @@
 @property (nonatomic,retain) IBOutlet  GradientButton *wikiButton;
 @property (nonatomic,retain) IBOutlet  GradientButton *interActiveButton;
 @property (nonatomic, retain) IBOutlet GradientToolBar *toolBar;
+@property (nonatomic,retain) IBOutlet  GradientButton *emailButton;
+
 
 -(IBAction)clickMe:(UIButton *)sender;
 
 -(IBAction)displayInteractive:(id)sender;
 -(IBAction)displayWiki:(id)sender;
 -(IBAction)playMovie:(id)sender;
+- (IBAction)openMail:(id)sender;
 
 @end
