@@ -122,6 +122,8 @@
 		48B67BC815F411DA00B0C6F2 /* GradientToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */; };
 		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		48DBC8C615FBF46400CEE854 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC8C515FBF46400CEE854 /* Twitter.framework */; };
+		48DBC8C915FBF46800CEE854 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC8C815FBF46800CEE854 /* Accounts.framework */; };
 		48DDB5CF15F963D100E684CA /* WebViewFullScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48DDB5CE15F963D100E684CA /* WebViewFullScreen.xib */; };
 		48E0C4CE15F0054F001A2748 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4CD15F0054F001A2748 /* Default-Landscape@2x~ipad.png */; };
 		48E0C4D115F00561001A2748 /* Default@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4D015F00561001A2748 /* Default@2x~ipad.png */; };
@@ -340,6 +342,8 @@
 		48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
+		48DBC8C515FBF46400CEE854 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		48DBC8C815FBF46800CEE854 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		48DDB5CE15F963D100E684CA /* WebViewFullScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewFullScreen.xib; sourceTree = "<group>"; };
 		48E0C4CD15F0054F001A2748 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		48E0C4D015F00561001A2748 /* Default@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x~ipad.png"; path = "../Default@2x~ipad.png"; sourceTree = "<group>"; };
@@ -438,6 +442,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48DBC8C915FBF46800CEE854 /* Accounts.framework in Frameworks */,
+				48DBC8C615FBF46400CEE854 /* Twitter.framework in Frameworks */,
 				480D185415F9E3E90086C3EF /* MessageUI.framework in Frameworks */,
 				481A432A15F101C5006EDF46 /* QuartzCore.framework in Frameworks */,
 				4825A36A15C4DBCF006F0C46 /* AVFoundation.framework in Frameworks */,
@@ -795,6 +801,8 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
+				48DBC8C815FBF46800CEE854 /* Accounts.framework */,
+				48DBC8C515FBF46400CEE854 /* Twitter.framework */,
 				480D185315F9E3E90086C3EF /* MessageUI.framework */,
 				4887524D15F59731006FBD28 /* ExampleView.h */,
 				4887524E15F59731006FBD28 /* ExampleView.m */,

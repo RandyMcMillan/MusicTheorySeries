@@ -52,4 +52,9 @@
 -(IBAction)playMovie:(id)sender;
 - (IBAction)openMail:(id)sender;
 
+
+- (void) isTwitterAvailable:(id)sender;
+- (void) isTwitterSetup:(id)sender;
+- (IBAction)composeTweet:(id)sender;
+
 @end

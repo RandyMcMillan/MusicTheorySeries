@@ -7,6 +7,10 @@
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 
+
+#import <Twitter/Twitter.h>
+#import <Accounts/Accounts.h>
+
 #import "DetailViewController.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
@@ -451,9 +455,14 @@
 } /* setDetailItem */
 
 
+#pragma mark - configureView
+
 
 - (void)configureView {
 
+    
+    [self isTwitterAvailable];
+    [self isTwitterSetup];
     
     [imageView useWelcomeStyle];
   // Update the user interface for the detail item.
@@ -557,6 +566,101 @@
     
 	[self dismissModalViewControllerAnimated:YES];
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma mark - isTwitterAvailable
+
+
+
+- (void) isTwitterAvailable
+{
+
+    NSLog(@"is Twitter Avail?");
+ 
+    TWTweetComposeViewController *tweetViewController = [[TWTweetComposeViewController alloc] init];
+    BOOL twitterSDKAvailable = tweetViewController != nil;
+    
+    // http://brianistech.wordpress.com/2011/10/13/ios-5-twitter-integration/
+    if(tweetViewController != nil){
+        
+        NSLog(@"Twitter is Avail! = %i",twitterSDKAvailable);
+
+        [tweetViewController release];
+    }
+
+
+}
+
+- (void) isTwitterSetup
+{
+
+    BOOL canTweet = [TWTweetComposeViewController canSendTweet];
+    NSLog(@"Twitter is setup = %i",canTweet);
+    
+}
+
+
+
+
+- (IBAction)composeTweet:(id)sender
+{
+
+    NSString *tweetText = @"";//[options objectForKey:@"text"];
+    NSString *urlAttach = @"";//[options objectForKey:@"urlAttach"];
+    NSString *imageAttach = @"icon.png";//[options objectForKey:@"imageAttach"];
+    
+    TWTweetComposeViewController *tweetViewController = [[TWTweetComposeViewController alloc] init];
+    
+    BOOL ok = YES;
+    NSString *errorMessage;
+    
+    if(tweetText != nil){
+        ok = [tweetViewController setInitialText:tweetText];
+        if(!ok){
+            errorMessage = @"Tweet is too long";
+        }
+
+    
+    }
+    
+    ok = [tweetViewController addImage:[UIImage imageNamed:imageAttach]];
+
+    
+    [self presentModalViewController:tweetViewController animated:YES];
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
