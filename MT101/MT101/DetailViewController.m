@@ -621,9 +621,9 @@
 - (IBAction)composeTweet:(id)sender
 {
 
-    NSString *tweetText = @"";//[options objectForKey:@"text"];
-    NSString *urlAttach = @"";//[options objectForKey:@"urlAttach"];
-    NSString *imageAttach = @"icon.png";//[options objectForKey:@"imageAttach"];
+    NSString *tweetText = @"I am learning music theory with Music Theory 101 for iOS! @MT101App #MT101";//[options objectForKey:@"text"];
+    NSString *urlAttach = @"http://itunes.apple.com/us/app/music-theory-101/id322256596?mt=8";//[options objectForKey:@"urlAttach"];
+    NSString *imageAttach = @"Default-Landscape@2x~ipad.png";//[options objectForKey:@"imageAttach"];
     
     TWTweetComposeViewController *tweetViewController = [[TWTweetComposeViewController alloc] init];
     
@@ -632,6 +632,9 @@
     
     if(tweetText != nil){
         ok = [tweetViewController setInitialText:tweetText];
+         ok = [tweetViewController addImage:[UIImage imageNamed:imageAttach]];
+    ok = [tweetViewController addURL:[NSURL URLWithString:urlAttach]];
+ 
         if(!ok){
             errorMessage = @"Tweet is too long";
         }
@@ -639,8 +642,7 @@
     
     }
     
-    ok = [tweetViewController addImage:[UIImage imageNamed:imageAttach]];
-
+  
     
     [self presentModalViewController:tweetViewController animated:YES];
 
