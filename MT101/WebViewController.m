@@ -143,10 +143,20 @@
 
 
     webView.gestureRecognizers = [NSArray arrayWithObjects:tap, twoFingerTap, dtap, /*swipeAll,*/ swipeLeft, swipeRight, swipeUp, swipeDown, nil];
-
+    [swipeRight release];
+    [swipeLeft release];
+    [swipeUp release];
+    [swipeDown release];
+    [twoFingerTap release];
+    [twoFingerSwipeLeft release];
+    [twoFingerSwipeRight release];
+    
+    
     for (UIGestureRecognizer *recognizer in webView.gestureRecognizers) {
         recognizer.delegate = self;
     }
+    
+
 
 }   /* viewDidLoad */
 
@@ -320,10 +330,15 @@
         [[self parentViewController] dismissModalViewControllerAnimated
             :YES];
     }
+    
+    [webView release];
 }
 
 - (IBAction)onDoneButtonPress:(id)sender
 {
+    
+    [webView release];
+
     [self closeBrowser];
 }
 
@@ -460,10 +475,11 @@
     NSString    *htmlTextFloat  =
         [bodyString stringByReplacingOccurrencesOfString:@"</body>"
                     withString                          :kISCROLL_JS];
+    [bodyString release];
     NSString *htmlText =
         [NSString stringWithFormat:@"%@%@", htmlTextFloat, endBodyTag];                 // concat
                                                                                         // htmlFloat
-                                                                                        // and
+                                                                          // and
                                                                                         // endBodyTag
     //   self.view.backgroundColor = [UIColor colorWithRed:0.043
     // green:0.125 blue:0.157 alpha:1.000];
@@ -472,6 +488,10 @@
     // [self hideGradientBackground:cont.webView];
     [self.webView loadHTMLString:htmlText baseURL:[NSURL URLWithString:
             path]];
+    
+   // [htmlText release];
+    
+               //   [htmlTextFloat release ];
 
     refreshButton.enabled   = FALSE;
     safariButton.enabled    = FALSE;
@@ -515,8 +535,17 @@
 
 - (void)dealloc
 {
-    [webView release];
+//    [webView release];
     [super dealloc];
+}
+
+- (void)viewDidUnload
+{
+
+   // [webView.gestureRecognizers release];
+    [webView release];
+    
+
 }
 
 @end

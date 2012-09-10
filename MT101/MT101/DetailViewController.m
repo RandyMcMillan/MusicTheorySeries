@@ -101,7 +101,7 @@
       UIModalPresentationPageSheet;
 
         [self presentModalViewController:theGrandStaffVC animated:YES];
-
+      [theGrandStaffVC  release];
       }
 
 
@@ -112,7 +112,7 @@
         trebleClefVC.modalPresentationStyle =
       UIModalPresentationPageSheet;
         [self presentModalViewController:trebleClefVC animated:YES];
-
+      [trebleClefVC release];
       }
 
   if (interactiveToDisplay == @"SopranoClefViewController") {
@@ -122,7 +122,7 @@
         sopranoClefVC.modalPresentationStyle =
       UIModalPresentationPageSheet;
         [self presentModalViewController:sopranoClefVC animated:YES];
-
+      [sopranoClefVC release];
       }
 
   if (interactiveToDisplay == @"MezzoSopranoClefViewController") {
@@ -133,7 +133,7 @@
       UIModalPresentationPageSheet;
         [self presentModalViewController:mezzoSopranoClefVC animated:
       YES];
-
+      [mezzoSopranoClefVC release];
       }
 
 
@@ -144,7 +144,7 @@
         altoClefVC.modalPresentationStyle =
       UIModalPresentationPageSheet;
         [self presentModalViewController:altoClefVC animated:YES];
-
+      [altoClefVC release];
       }
 
   if (interactiveToDisplay == @"TenorClefViewController") {
@@ -154,7 +154,7 @@
         tenorClefVC.modalPresentationStyle =
       UIModalPresentationPageSheet;
         [self presentModalViewController:tenorClefVC animated:YES];
-
+      [tenorClefVC release];
       }
 
   if (interactiveToDisplay == @"BariToneClefViewController") {
@@ -164,8 +164,10 @@
         bariToneClefVC.modalPresentationStyle =
       UIModalPresentationPageSheet;
         [self presentModalViewController:bariToneClefVC animated:YES];
+         [ bariToneClefVC release];
+ 
       }
-
+    
   if (interactiveToDisplay == @"BassClefViewController") {
 
         BassClefViewController *bassClefVC =
@@ -173,7 +175,8 @@
         bassClefVC.modalPresentationStyle =
       UIModalPresentationPageSheet;
         [self presentModalViewController:bassClefVC animated:YES];
-      }
+      [bassClefVC release];
+  }
 
   if (interactiveToDisplay == @"SubBassClefViewController") {
 
@@ -182,7 +185,8 @@
         subBassClefVC.modalPresentationStyle =
       UIModalPresentationPageSheet;
         [self presentModalViewController:subBassClefVC animated:YES];
-      }
+      [subBassClefVC release];
+  }
 
 
 
@@ -194,7 +198,7 @@
         circleOfFifthsVC.modalPresentationStyle =
       UIModalPresentationPageSheet;
         [self presentModalViewController:circleOfFifthsVC animated:YES];
-
+      [circleOfFifthsVC release];
       }
 
   if (interactiveToDisplay == @"ChromaticCircleViewController") {
@@ -205,7 +209,7 @@
       UIModalPresentationPageSheet;
         [self presentModalViewController:chromaticCircleVC animated:YES
         ];
-
+      [chromaticCircleVC release];
       }
 
 
@@ -217,7 +221,7 @@
       [[IonianViewController alloc] init];
         ionianVC.modalPresentationStyle = UIModalPresentationPageSheet;
         [self presentModalViewController:ionianVC animated:YES];
-
+      [ionianVC release];
       }
 
   if (interactiveToDisplay == @"DorianViewController") {
@@ -226,7 +230,7 @@
       [[DorianViewController alloc] init];
         dorianVC.modalPresentationStyle = UIModalPresentationPageSheet;
         [self presentModalViewController:dorianVC animated:YES];
-
+      [dorianVC release];
       }
 
 
@@ -237,7 +241,7 @@
         phrygianVC.modalPresentationStyle =
       UIModalPresentationPageSheet;
         [self presentModalViewController:phrygianVC animated:YES];
-
+      [phrygianVC release];
       }
 
 
@@ -247,7 +251,7 @@
       [[LydianViewController alloc] init];
         lydianVC.modalPresentationStyle = UIModalPresentationPageSheet;
         [self presentModalViewController:lydianVC animated:YES];
-
+      [lydianVC release];
       }
 
 
@@ -258,7 +262,7 @@
         mixoLydianVC.modalPresentationStyle =
       UIModalPresentationPageSheet;
         [self presentModalViewController:mixoLydianVC animated:YES];
-
+      [mixoLydianVC release];
       }
 
 
@@ -268,7 +272,7 @@
       [[AeolianViewController alloc] init];
         aeolianVC.modalPresentationStyle = UIModalPresentationPageSheet;
         [self presentModalViewController:aeolianVC animated:YES];
-
+      [aeolianVC release];
       }
 
 
@@ -278,7 +282,7 @@
       [[LocrianViewController alloc] init];
         locrianVC.modalPresentationStyle = UIModalPresentationPageSheet;
         [self presentModalViewController:locrianVC animated:YES];
-
+      [locrianVC release];
       }
 
 
@@ -290,7 +294,7 @@
       UIModalPresentationPageSheet;
         [self presentModalViewController:solfegeNaturalsVC animated:YES
         ];
-
+      [solfegeNaturalsVC release];
       }
 
   if (interactiveToDisplay == @"SolfegeSharpsViewController") {
@@ -300,7 +304,7 @@
         solfegeSharpsVC.modalPresentationStyle =
       UIModalPresentationPageSheet;
         [self presentModalViewController:solfegeSharpsVC animated:YES];
-
+      [solfegeSharpsVC release];
       }
 
   if (interactiveToDisplay == @"SolfegeFlatsViewController") {
@@ -310,11 +314,12 @@
         solfegeFlatsVC.modalPresentationStyle =
       UIModalPresentationPageSheet;
         [self presentModalViewController:solfegeFlatsVC animated:YES];
-
+      [solfegeFlatsVC release];
       }
 
   //   [self presentModalViewController:test animated:YES];
 
+    
 } /* displayInteractive */
 
 
@@ -462,8 +467,8 @@
 - (void)configureView {
 
     
-    [self isTwitterAvailable];
-    [self isTwitterSetup];
+   // [self isTwitterAvailable];
+   // [self isTwitterSetup];
     
     [imageView useWelcomeStyle];
   // Update the user interface for the detail item.
@@ -582,9 +587,9 @@
         
         NSLog(@"Twitter is Avail! = %i",twitterSDKAvailable);
 
-        [tweetViewController release];
+        //[tweetViewController release];
     }
-
+    [tweetViewController release];
 
 }
 
@@ -628,6 +633,7 @@
         }
         
 	    [self presentModalViewController:tweetSheet animated:YES];
+        [tweetSheet release];
     }
     else
     {
@@ -637,9 +643,9 @@
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
         [alertView show];
+        [alertView release];
     }
 
-    
 
 }
 
@@ -671,11 +677,14 @@
 - (void)viewDidUnload {
 
   [super viewDidUnload];
+    [interactiveToDisplay release];
 
+    
+    
   // Release any retained subviews of the main view.
   self.detailDescriptionLabel = nil;
+    interactiveToDisplay = nil;
 
- 
 /*
 [self setTestButton:nil];
   [self setRedButton:nil];

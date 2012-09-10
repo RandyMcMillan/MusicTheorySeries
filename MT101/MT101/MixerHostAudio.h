@@ -9,8 +9,8 @@ Abstract: Audio object: Handles all audio tasks for the application.
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
 
-#define FILE_COUNT  26
-#define BUS_COUNT   18  //Reduce this to low number to see how available
+#define FILE_COUNT  24
+#define BUS_COUNT   24  //Reduce this to low number to see how available
                         // busses affects playing multiple notes
                         // simultaneously.
 
@@ -23,8 +23,8 @@ typedef struct {
                                             // file
   UInt32               frameCount;          // the total number of
                                             // frames in the audio data
-  int                  noteIdx;              // note index (i.e., a
-                                             // single key)
+  int                  noteIdx;             // note index (i.e., a
+                                            // single key)
 } fileStruct;
 
 // Data structure for mono or stereo sound, to pass to the application's
