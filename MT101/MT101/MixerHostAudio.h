@@ -9,8 +9,8 @@ Abstract: Audio object: Handles all audio tasks for the application.
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
 
-#define FILE_COUNT  24
-#define BUS_COUNT   24  //Reduce this to low number to see how available
+#define FILE_COUNT  37
+#define BUS_COUNT   37  //Reduce this to low number to see how available
                         // busses affects playing multiple notes
                         // simultaneously.
 
