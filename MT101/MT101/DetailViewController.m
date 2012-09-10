@@ -621,45 +621,42 @@
 - (IBAction)composeTweet:(id)sender
 {
 
-    NSString *tweetText = @"";//[options objectForKey:@"text"];
-    NSString *urlAttach = @"";//[options objectForKey:@"urlAttach"];
-    NSString *imageAttach = @"icon.png";//[options objectForKey:@"imageAttach"];
+    NSString *tweetText = @"I am learning music theory with Music Theory 101 for iOS! @MT101App #MT101";
+    NSString *urlAttach = @"http://itunes.apple.com/us/app/music-theory-101/id322256596?mt=8";
+    NSString *imageAttach = @"icon-72@2x.png";
     
-    TWTweetComposeViewController *tweetViewController = [[TWTweetComposeViewController alloc] init];
     
-    BOOL ok = YES;
-    NSString *errorMessage;
     
-    if(tweetText != nil){
-        ok = [tweetViewController setInitialText:tweetText];
-        if(!ok){
-            errorMessage = @"Tweet is too long";
+    if ([TWTweetComposeViewController canSendTweet])
+    {
+        TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
+        [tweetSheet setInitialText:tweetText];
+        
+        if (imageAttach)
+        {
+            [tweetSheet addImage:[UIImage imageNamed:imageAttach]];
         }
-
-    
+        
+        if (urlAttach)
+        {
+            [tweetSheet addURL:[NSURL URLWithString:urlAttach]];
+        }
+        
+	    [self presentModalViewController:tweetSheet animated:YES];
     }
-    
-    ok = [tweetViewController addImage:[UIImage imageNamed:imageAttach]];
+    else
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Sorry"
+                                                            message:@"You can't send a tweet right now, make sure your device has an internet connection and you have at least one Twitter account setup"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+        [alertView show];
+    }
 
     
-    [self presentModalViewController:tweetViewController animated:YES];
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
