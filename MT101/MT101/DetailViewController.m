@@ -68,6 +68,7 @@
 @synthesize interActiveButton;
 @synthesize toolBar;
 @synthesize emailButton;
+@synthesize composeTweetButton;
 
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
@@ -470,19 +471,12 @@
         // MovieToPlay = @"GreenBeam";
       }
 
-
-  [videoButton useDoneButtonStyle];
-  [wikiButton useDoneButtonStyle];
-  [interActiveButton useDoneButtonStyle];
-  [emailButton useDoneButtonStyle];
-  [emailButton useEmailStyle];
-
-  [self.view bringSubviewToFront:emailButton];
-  //[toolBar useTBStyle];
-
-
-//  [self.toolBar.layer setCornerRadius:18.0f];
-//  [self hideGradientBackground:self.toolBar];
+    [videoButton useDoneButtonStyle];
+    [wikiButton useDoneButtonStyle];
+    [interActiveButton useDoneButtonStyle];
+    [emailButton useDoneButtonStyle];
+    [emailButton useEmailStyle];
+    [composeTweetButton useDoneButtonStyle];
 
   NSString *appVersion =
     [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)
@@ -571,19 +565,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #pragma mark - isTwitterAvailable
 
 
@@ -607,6 +588,9 @@
 
 }
 
+
+#pragma mark - isTwitterSetup
+
 - (void) isTwitterSetup
 {
 
@@ -616,6 +600,7 @@
 }
 
 
+#pragma mark - compseTweet
 
 
 - (IBAction)composeTweet:(id)sender

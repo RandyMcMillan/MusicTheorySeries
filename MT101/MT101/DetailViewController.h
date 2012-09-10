@@ -24,6 +24,7 @@
   GradientToolBar   *toolBar;
       ExampleView *imageView;
       GradientButton *emailButton;
+      GradientButton *composeTweetButton;
 
 }
 
@@ -43,7 +44,7 @@
 @property (nonatomic,retain) IBOutlet  GradientButton *interActiveButton;
 @property (nonatomic, retain) IBOutlet GradientToolBar *toolBar;
 @property (nonatomic,retain) IBOutlet  GradientButton *emailButton;
-
+@property (nonatomic,retain) IBOutlet  GradientButton *composeTweetButton;
 
 -(IBAction)clickMe:(UIButton *)sender;
 
