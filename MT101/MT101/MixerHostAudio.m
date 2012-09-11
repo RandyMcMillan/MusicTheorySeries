@@ -222,7 +222,18 @@ static OSStatus inputRenderCallback (
   return self;
 } /* init */
 
+- (void) destroyAudioData {
 
+// [self stopAUGraph];
+// for(int i=0; i<FILE_COUNT; i++) {
+// NSLog(@"before = %ld",fileStructArray[i].audioData);
+// fileStructArray[i].audioData = nil;
+// NSLog(@"after = %ld",fileStructArray[i].audioData);
+// ExtAudioFileDispose (audioFileObject);
+// audioFileObject = nil;
+// }
+
+}
 
 #pragma mark -
 #pragma mark Audio set up
@@ -810,6 +821,7 @@ static OSStatus inputRenderCallback (
                return;}
         self.playing = NO;
       }
+    
 } /* stopAUGraph */
 
 

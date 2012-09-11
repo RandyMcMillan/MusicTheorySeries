@@ -80,7 +80,7 @@ typedef struct {
 - (BOOL) playNote:(int)noteIdx;
 
 - (void) readAudioFilesIntoMemory;
-
+- (void) destroyAudioData;
 - (void) configureAndInitializeAudioProcessingGraph;
 - (void) startAUGraph;
 - (void) stopAUGraph;
