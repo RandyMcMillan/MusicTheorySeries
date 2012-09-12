@@ -30,7 +30,8 @@
       :YES];
       }
   [mixerHost stopAUGraph];
-
+    [mixerHost destroyAudioData];
+    
   self.mixerHost = nil;
 
 } /* closeBrowser */

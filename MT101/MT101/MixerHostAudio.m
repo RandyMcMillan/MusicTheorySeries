@@ -216,6 +216,20 @@ static OSStatus inputRenderCallback (
 
   //[self setupStereoStreamFormat];
   [self setupMonoStreamFormat];
+ 
+    /*
+    for(int i=0; i<FILE_COUNT; i++) {
+        NSLog(@"before = %ld",fileStructArray[i].audioData);
+        
+        
+        fileStructArray[i].audioData = (AudioUnitSampleType *) calloc(0, sizeof(AudioUnitSampleType));
+        
+        
+        NSLog(@"after  = %ld",fileStructArray[i].audioData);
+        
+    }
+*/
+    
   [self readAudioFilesIntoMemory];
   [self configureAndInitializeAudioProcessingGraph];
 
@@ -224,15 +238,25 @@ static OSStatus inputRenderCallback (
 
 - (void) destroyAudioData {
 
-// [self stopAUGraph];
-// for(int i=0; i<FILE_COUNT; i++) {
-// NSLog(@"before = %ld",fileStructArray[i].audioData);
-// fileStructArray[i].audioData = nil;
-// NSLog(@"after = %ld",fileStructArray[i].audioData);
-// ExtAudioFileDispose (audioFileObject);
-// audioFileObject = nil;
-// }
+ [self stopAUGraph];
+ for(int i=0; i<FILE_COUNT; i++) {
+ NSLog(@"before = %ld",fileStructArray[i].audioData);
+   
+     
+     fileStructArray[i].audioData = (AudioUnitSampleType *) realloc(0, sizeof(AudioUnitSampleType));
 
+     
+ NSLog(@"after  = %ld",fileStructArray[i].audioData);
+
+}
+   
+    
+    for (int audioFile = 0; audioFile < FILE_COUNT; ++audioFile)  {
+
+ 
+    }
+    
+    
 }
 
 #pragma mark -
@@ -401,11 +425,27 @@ static OSStatus inputRenderCallback (
         // Allocate memory in the fileStructArray instance variable to
         // hold the left channel,
         //    or mono, audio data
-        fileStructArray[audioFile].audioData =
-      (AudioUnitSampleType *) calloc(totalFramesInFile,
-      sizeof(AudioUnitSampleType));
+     
+      
+      
+      for(int i=0; i<FILE_COUNT; i++) {
 
-        AudioStreamBasicDescription importFormat = {0};
+            NSLog(@"before = %ld",fileStructArray[i].audioData);
+            fileStructArray[i].audioData = (AudioUnitSampleType *) calloc(totalFramesInFile, sizeof(AudioUnitSampleType));
+            NSLog(@"after  = %ld",fileStructArray[i].audioData);
+            NSLog(@"%ld",fileStructArray[audioFile].audioData);
+              long iLong = 941000000;
+              if(fileStructArray[audioFile].audioData < iLong){
+                  NSLog(@"<<<<<");
+                  fileStructArray[audioFile].audioData = (AudioUnitSampleType *) reallocf(totalFramesInFile, sizeof(AudioUnitSampleType));
+              }
+ 
+          }
+
+      
+      
+
+      AudioStreamBasicDescription importFormat = {0};
         if (1 == channelCount) {
               importFormat = monoStreamFormat;
             } else {
