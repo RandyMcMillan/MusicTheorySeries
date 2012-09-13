@@ -30,7 +30,6 @@
       :YES];
       }
   [mixerHost stopAUGraph];
-    [mixerHost destroyAudioData];
     
   self.mixerHost = nil;
 
@@ -534,7 +533,7 @@
 
   [super viewDidUnload];
   [mixerHost stopAUGraph];
-
+    [mixerHost release];
   self.mixerHost = nil;
 
   // Release any retained subviews of the main view.
