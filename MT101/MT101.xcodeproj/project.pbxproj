@@ -52,7 +52,6 @@
 		481A432A15F101C5006EDF46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481A432915F101C5006EDF46 /* QuartzCore.framework */; };
 		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
 		4820B0AE15EDFE72003768DC /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */; };
-		4820B0B015EE0414003768DC /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AF15EE0413003768DC /* AeolianViewController.xib */; };
 		4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */; };
 		4825559115DD76AF00737C61 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556D15DD76AF00737C61 /* welcome.png */; };
 		4825559915DD7A3000737C61 /* SolfegeNaturalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */; };
@@ -145,6 +144,7 @@
 		48A3562F15E2363F00A3529D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3562E15E2363F00A3529D /* WebViewController.m */; };
 		48B67BC815F411DA00B0C6F2 /* GradientToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */; };
 		48B6FEC61604A56D00B941C2 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B6FEC51604A56C00B941C2 /* Default-Landscape@2x~ipad.png */; };
+		48C848F51605412C00200BEE /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48C848F41605412B00200BEE /* AeolianViewController.xib */; };
 		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48DBC8C615FBF46400CEE854 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC8C515FBF46400CEE854 /* Twitter.framework */; };
@@ -256,7 +256,6 @@
 		481A432915F101C5006EDF46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
 		4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrebleClefViewController.xib; sourceTree = "<group>"; };
-		4820B0AF15EE0413003768DC /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AeolianViewController.xib; sourceTree = "<group>"; };
 		4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppleXylophoneViewController.xib; sourceTree = "<group>"; };
 		4825556D15DD76AF00737C61 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome.png; path = Art/ScalePNGs/welcome.png; sourceTree = "<group>"; };
 		4825559615DD7A3000737C61 /* SolfegeNaturalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeNaturalsViewController.h; sourceTree = "<group>"; };
@@ -365,6 +364,7 @@
 		48B67BC615F411DA00B0C6F2 /* GradientToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientToolBar.h; path = ../GradientToolBar.h; sourceTree = "<group>"; };
 		48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientToolBar.m; path = ../GradientToolBar.m; sourceTree = "<group>"; };
 		48B6FEC51604A56C00B941C2 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		48C848F41605412B00200BEE /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AeolianViewController.xib; sourceTree = "<group>"; };
 		48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
@@ -483,11 +483,11 @@
 			isa = PBXGroup;
 			children = (
 				480A792415DD59BD005E9C43 /* IonianViewController.xib */,
-				4820B0AF15EE0413003768DC /* AeolianViewController.xib */,
 				480A792915DD59DE005E9C43 /* DorianViewController.xib */,
 				480A792E15DD59EC005E9C43 /* PhrygianViewController.xib */,
 				480A793315DD59F7005E9C43 /* LydianViewController.xib */,
 				480A793815DD5A04005E9C43 /* MixoLydianViewController.xib */,
+				48C848F41605412B00200BEE /* AeolianViewController.xib */,
 				480A793D15DD5A0F005E9C43 /* LocrianViewController.xib */,
 			);
 			name = ModeXIBs;
@@ -531,7 +531,8 @@
 				481A431D15F0FEA8006EDF46 /* tbButton.png */,
 				481A431715F0FE8A006EDF46 /* button1.png */,
 			);
-			path = buttonArt;
+			name = buttonArt;
+			path = ../buttonArt;
 			sourceTree = "<group>";
 		};
 		4825559415DD7A0600737C61 /* SolfegeXIBs */ = {
@@ -809,7 +810,6 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
-				481A431615F0FE8A006EDF46 /* buttonArt */,
 				48A3561815E221AE00A3529D /* WikiView */,
 				484D16E315DAE471005FC66E /* Plists */,
 				48FAB51A15CAF8710087DCFA /* XIBs */,
@@ -858,6 +858,7 @@
 		B225A7311534CF59006FD46F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				481A431615F0FE8A006EDF46 /* buttonArt */,
 				481A431015F0F52C006EDF46 /* ColorUIButton.h */,
 				481A431115F0F52C006EDF46 /* ColorUIButton.m */,
 				487A1C8915E85115006C5C59 /* Constants.h */,
@@ -1017,7 +1018,6 @@
 				487A1C9715E86AAD006C5C59 /* WikiToDisplay5.plist in Resources */,
 				4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */,
 				4820B0AE15EDFE72003768DC /* TrebleClefViewController.xib in Resources */,
-				4820B0B015EE0414003768DC /* AeolianViewController.xib in Resources */,
 				4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */,
 				484B93B215EF003D0021F939 /* error.html in Resources */,
 				48E0C4CE15F0054F001A2748 /* Default-Landscape@2x~ipad.png in Resources */,
@@ -1086,6 +1086,7 @@
 				48584A7B16045DE10020DB00 /* TrebleClef.pdf in Resources */,
 				48584A7C16045DE10020DB00 /* welcome.pdf in Resources */,
 				48B6FEC61604A56D00B941C2 /* Default-Landscape@2x~ipad.png in Resources */,
+				48C848F51605412C00200BEE /* AeolianViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 #import "MixerHostAudio.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
+#import "ExampleView.h"
 #import "Constants.h"
 #import "UIImage+PDF.h"
 
@@ -19,7 +20,7 @@
     int     lastKeyIndex;
     CGRect  keyRects[KEY_COUNT];
 
-    IBOutlet UIImageView        *imageView;
+    IBOutlet ExampleView        *imageView;
     IBOutlet GradientToolBar    *toolBar;
     IBOutlet GradientButton     *closeButton;
     UILabel                     *label0;
