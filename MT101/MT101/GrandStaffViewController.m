@@ -491,10 +491,6 @@
 
     [imageView useGrandStaffStyle];
 
-    // imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth |
-    // UIViewAutoresizingFlexibleHeight);
-
-    // imageView.contentMode = UIViewContentModeScaleAspectFit;
     [[UIDevice currentDevice]
         beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]   addObserver :self selector:
