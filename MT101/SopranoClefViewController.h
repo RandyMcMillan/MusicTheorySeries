@@ -12,6 +12,7 @@
 #import "GradientButton.h"
 #import "GradientToolBar.h"
 #import "Constants.h"
+#import "UIImage+PDF.h"
 
 @interface SopranoClefViewController : UIViewController <
     UISplitViewControllerDelegate>{
