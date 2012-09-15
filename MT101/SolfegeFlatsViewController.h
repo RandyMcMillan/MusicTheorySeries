@@ -9,10 +9,10 @@
 
 #import <UIKit/UIKit.h>
 #import "MixerHostAudio.h"
-
 #import "GradientButton.h"
 #import "GradientToolBar.h"
 #import "Constants.h"
+#import "UIImage+PDF.h"
 
 @interface SolfegeFlatsViewController : UIViewController <
     UISplitViewControllerDelegate>{

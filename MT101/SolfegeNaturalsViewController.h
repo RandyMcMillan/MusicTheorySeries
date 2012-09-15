@@ -13,6 +13,7 @@
 #import "GradientToolBar.h"
 #import "Constants.h"
 
+#import "UIImage+PDF.h"
 @interface SolfegeNaturalsViewController : UIViewController <
     UISplitViewControllerDelegate>{
     int     lastKeyIndex;
