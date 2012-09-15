@@ -121,5 +121,4 @@
 #define TI                          [UIColor colorWithRed : 0.992 green : 0.518 blue : 0.129 \
         alpha : 1.000]
 
-#define TWITTER_URL @"http://api.twitter.com/1/"
-
+#define TWITTER_URL                 @ "http://api.twitter.com/1/"
