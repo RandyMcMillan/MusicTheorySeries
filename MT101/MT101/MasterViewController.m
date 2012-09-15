@@ -205,15 +205,15 @@
   for (NSString *str in imageNameList2)
     NSLog(@"imageNameList2 = %@",str);
   imageList2 = [[NSArray alloc] initWithObjects:   //Modes
-    [UIImage imageNamed:[imageNameList2 objectAtIndex:0]],
-    [UIImage imageNamed:[imageNameList2 objectAtIndex:1]],
-    [UIImage imageNamed:[imageNameList2 objectAtIndex:2]],
-    [UIImage imageNamed:[imageNameList2 objectAtIndex:3]],
-    [UIImage imageNamed:[imageNameList2 objectAtIndex:4]],
-    [UIImage imageNamed:[imageNameList2 objectAtIndex:5]],
-    [UIImage imageNamed:[imageNameList2 objectAtIndex:6]],
-    [UIImage imageNamed:[imageNameList2 objectAtIndex:7]],
-    [UIImage imageNamed:[imageNameList2 objectAtIndex:8]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList2 objectAtIndex:0]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList2 objectAtIndex:1]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList2 objectAtIndex:2]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList2 objectAtIndex:3]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList2 objectAtIndex:4]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList2 objectAtIndex:5]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList2 objectAtIndex:6]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList2 objectAtIndex:7]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList2 objectAtIndex:8]],
     nil];
 
 
