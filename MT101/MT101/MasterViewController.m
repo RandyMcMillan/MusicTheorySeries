@@ -47,8 +47,6 @@
 {
   [super viewDidLoad];
 
-    [self.detailViewController.imageView useWelcomeStyle];
-
 #pragma mark - Section Headers
 
   NSString *sectionHeadersPath =
@@ -754,7 +752,7 @@
   self.detailViewController.detailDescriptionLabel.text = nil;
   self.detailViewController.musicTheory101Label.text = nil;
   self.detailViewController.vLabel.text = nil;
-
+    
   //  [self.detailViewController.imageView useGrandStaffStyle];
 
 } /* tableView */

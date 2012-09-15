@@ -469,6 +469,13 @@
     
    // [self isTwitterAvailable];
    // [self isTwitterSetup];
+   
+    
+    UIImageView *welcomeIV = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"welcome.pdf"  ]];
+    self.imageView.image = welcomeIV.image;
+    [ welcomeIV release ];
+
+    
     
     [imageView useWelcomeStyle];
   // Update the user interface for the detail item.

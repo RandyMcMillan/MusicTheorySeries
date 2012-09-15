@@ -24,6 +24,7 @@
   GradientButton    *interActiveButton;
   GradientToolBar   *toolBar;
       ExampleView *imageView;
+
       GradientButton *emailButton;
       GradientButton *composeTweetButton;
 
