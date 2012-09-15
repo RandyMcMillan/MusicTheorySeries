@@ -478,6 +478,9 @@
 	[closeButton useDoneButtonStyle];
     
   [mixerHost stopAUGraph];
+    ExampleView *exampleImageView = [[ExampleView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"CircleOfFifths.pdf"]];
+    imageView.image = exampleImageView.image;
+    [exampleImageView release];
 
   [[UIDevice currentDevice]
     beginGeneratingDeviceOrientationNotifications];

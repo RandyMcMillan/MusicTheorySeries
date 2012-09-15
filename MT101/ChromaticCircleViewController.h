@@ -13,6 +13,7 @@
 #import "GradientToolBar.h"
 #import "ExampleView.h"
 #import "Constants.h"
+#import "UIImage+PDF.h"
 
 @interface ChromaticCircleViewController : UIViewController <
     UISplitViewControllerDelegate>{
