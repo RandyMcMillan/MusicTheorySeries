@@ -7,38 +7,31 @@
 
 #import "UIView+Image.h"
 
+@implementation UIView (Image)
 
-@implementation UIView( Image )
-
--(UIImage *)image
+- (UIImage *)image
 {
-	if( [ self.layer respondsToSelector:@selector(setShouldRasterize:)])
-	{
-		UIGraphicsBeginImageContextWithOptions( self.bounds.size, NO, self.contentScaleFactor );
-	}
-	else
-	{
-		UIGraphicsBeginImageContext( self.bounds.size );
-	}
-	
-	[ self.layer renderInContext:UIGraphicsGetCurrentContext() ];
-	UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-	UIGraphicsEndImageContext();
-	
-	return image;
+    if ([self.layer respondsToSelector:@selector(setShouldRasterize:)]) {
+        UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, self.contentScaleFactor);
+    } else {
+        UIGraphicsBeginImageContext(self.bounds.size);
+    }
+
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    return image;
 }
 
-
-
--(void) savePNG:(NSString *)filePath
+- (void)savePNG:(NSString *)filePath
 {
-	[ UIImagePNGRepresentation(self.image) writeToFile:filePath atomically:NO ];
+    [UIImagePNGRepresentation (self.image) writeToFile:filePath atomically:NO];
 }
 
-
--(void) saveJPEG:(NSString *)filePath :(float)quality
+- (void)saveJPEG:(NSString *)filePath:(float)quality
 {
-	[ UIImageJPEGRepresentation(self.image, quality) writeToFile:filePath atomically:NO ];
+    [UIImageJPEGRepresentation (self.image, quality) writeToFile:filePath atomically:NO];
 }
 
 @end

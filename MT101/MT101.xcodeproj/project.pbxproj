@@ -105,6 +105,25 @@
 		484B93B215EF003D0021F939 /* error.html in Resources */ = {isa = PBXBuildFile; fileRef = 484B93B115EF003D0021F939 /* error.html */; };
 		484B93B515EF01810021F939 /* iScrollPlugin_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 484B93B415EF01810021F939 /* iScrollPlugin_JS.m */; };
 		484D16E515DAE485005FC66E /* SectionHeaders.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484D16E415DAE485005FC66E /* SectionHeaders.plist */; };
+		48584A6A16045DE10020DB00 /* Aeolian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A5716045DE10020DB00 /* Aeolian.pdf */; };
+		48584A6B16045DE10020DB00 /* AltoClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A5816045DE10020DB00 /* AltoClef.pdf */; };
+		48584A6C16045DE10020DB00 /* BariToneClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A5916045DE10020DB00 /* BariToneClef.pdf */; };
+		48584A6D16045DE10020DB00 /* BassClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A5A16045DE10020DB00 /* BassClef.pdf */; };
+		48584A6E16045DE10020DB00 /* ChromaticCircle.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A5B16045DE10020DB00 /* ChromaticCircle.pdf */; };
+		48584A6F16045DE10020DB00 /* CircleOfFifths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A5C16045DE10020DB00 /* CircleOfFifths.pdf */; };
+		48584A7016045DE10020DB00 /* Dorian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A5D16045DE10020DB00 /* Dorian.pdf */; };
+		48584A7116045DE10020DB00 /* Ionian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A5E16045DE10020DB00 /* Ionian.pdf */; };
+		48584A7216045DE10020DB00 /* Locrian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A5F16045DE10020DB00 /* Locrian.pdf */; };
+		48584A7316045DE10020DB00 /* Lydian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A6016045DE10020DB00 /* Lydian.pdf */; };
+		48584A7416045DE10020DB00 /* MezzoSopranoClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A6116045DE10020DB00 /* MezzoSopranoClef.pdf */; };
+		48584A7516045DE10020DB00 /* MixoLydian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A6216045DE10020DB00 /* MixoLydian.pdf */; };
+		48584A7616045DE10020DB00 /* Phrygian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A6316045DE10020DB00 /* Phrygian.pdf */; };
+		48584A7716045DE10020DB00 /* SopranoClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A6416045DE10020DB00 /* SopranoClef.pdf */; };
+		48584A7816045DE10020DB00 /* SubBassClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A6516045DE10020DB00 /* SubBassClef.pdf */; };
+		48584A7916045DE10020DB00 /* TenorClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A6616045DE10020DB00 /* TenorClef.pdf */; };
+		48584A7A16045DE10020DB00 /* TheGrandStaff.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A6716045DE10020DB00 /* TheGrandStaff.pdf */; };
+		48584A7B16045DE10020DB00 /* TrebleClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A6816045DE10020DB00 /* TrebleClef.pdf */; };
+		48584A7C16045DE10020DB00 /* welcome.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A6916045DE10020DB00 /* welcome.pdf */; };
 		485AE3D315FE91200050FADA /* _readme_and_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 485AE38815FE91200050FADA /* _readme_and_license.txt */; };
 		485AE3D515FE91200050FADA /* vib_0.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 485AE38A15FE91200050FADA /* vib_0.m4a */; };
 		485AE3D715FE91200050FADA /* vib_1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 485AE38C15FE91200050FADA /* vib_1.m4a */; };
@@ -148,7 +167,6 @@
 		485D15BD16040B4C00B401D2 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D15B816040B4C00B401D2 /* UIImage+PDF.m */; };
 		485D15BE16040B4C00B401D2 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D15BA16040B4C00B401D2 /* UIView+Image.m */; };
 		485D15C116040D5A00B401D2 /* YingYang.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 485D15C016040D5A00B401D2 /* YingYang.pdf */; };
-		485D15C416040F0400B401D2 /* TheGrandStaff.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 485D15C316040F0400B401D2 /* TheGrandStaff.pdf */; };
 		486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05ED15BF334A00B3F10D /* icon@2x.png */; };
 		487A1C7F15E84735006C5C59 /* WikiToDisplay1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */; };
 		487A1C9415E86AAD006C5C59 /* WikiToDisplay2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9015E86AAD006C5C59 /* WikiToDisplay2.plist */; };
@@ -334,6 +352,25 @@
 		484B93B315EF01810021F939 /* iScrollPlugin_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iScrollPlugin_JS.h; sourceTree = "<group>"; };
 		484B93B415EF01810021F939 /* iScrollPlugin_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iScrollPlugin_JS.m; sourceTree = "<group>"; };
 		484D16E415DAE485005FC66E /* SectionHeaders.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SectionHeaders.plist; sourceTree = "<group>"; };
+		48584A5716045DE10020DB00 /* Aeolian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Aeolian.pdf; sourceTree = "<group>"; };
+		48584A5816045DE10020DB00 /* AltoClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AltoClef.pdf; sourceTree = "<group>"; };
+		48584A5916045DE10020DB00 /* BariToneClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = BariToneClef.pdf; sourceTree = "<group>"; };
+		48584A5A16045DE10020DB00 /* BassClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = BassClef.pdf; sourceTree = "<group>"; };
+		48584A5B16045DE10020DB00 /* ChromaticCircle.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ChromaticCircle.pdf; sourceTree = "<group>"; };
+		48584A5C16045DE10020DB00 /* CircleOfFifths.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CircleOfFifths.pdf; sourceTree = "<group>"; };
+		48584A5D16045DE10020DB00 /* Dorian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Dorian.pdf; sourceTree = "<group>"; };
+		48584A5E16045DE10020DB00 /* Ionian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Ionian.pdf; sourceTree = "<group>"; };
+		48584A5F16045DE10020DB00 /* Locrian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Locrian.pdf; sourceTree = "<group>"; };
+		48584A6016045DE10020DB00 /* Lydian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Lydian.pdf; sourceTree = "<group>"; };
+		48584A6116045DE10020DB00 /* MezzoSopranoClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MezzoSopranoClef.pdf; sourceTree = "<group>"; };
+		48584A6216045DE10020DB00 /* MixoLydian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MixoLydian.pdf; sourceTree = "<group>"; };
+		48584A6316045DE10020DB00 /* Phrygian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Phrygian.pdf; sourceTree = "<group>"; };
+		48584A6416045DE10020DB00 /* SopranoClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SopranoClef.pdf; sourceTree = "<group>"; };
+		48584A6516045DE10020DB00 /* SubBassClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SubBassClef.pdf; sourceTree = "<group>"; };
+		48584A6616045DE10020DB00 /* TenorClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TenorClef.pdf; sourceTree = "<group>"; };
+		48584A6716045DE10020DB00 /* TheGrandStaff.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TheGrandStaff.pdf; sourceTree = "<group>"; };
+		48584A6816045DE10020DB00 /* TrebleClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TrebleClef.pdf; sourceTree = "<group>"; };
+		48584A6916045DE10020DB00 /* welcome.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = welcome.pdf; sourceTree = "<group>"; };
 		485AE38815FE91200050FADA /* _readme_and_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _readme_and_license.txt; sourceTree = "<group>"; };
 		485AE38A15FE91200050FADA /* vib_0.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_0.m4a; sourceTree = "<group>"; };
 		485AE38C15FE91200050FADA /* vib_1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_1.m4a; sourceTree = "<group>"; };
@@ -381,7 +418,6 @@
 		485D15B916040B4C00B401D2 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		485D15BA16040B4C00B401D2 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
 		485D15C016040D5A00B401D2 /* YingYang.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = YingYang.pdf; sourceTree = "<group>"; };
-		485D15C316040F0400B401D2 /* TheGrandStaff.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TheGrandStaff.pdf; sourceTree = "<group>"; };
 		486B05ED15BF334A00B3F10D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay1.plist; sourceTree = "<group>"; };
 		487A1C8915E85115006C5C59 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -666,6 +702,33 @@
 			name = Plists;
 			sourceTree = "<group>";
 		};
+		48584A5616045DE10020DB00 /* ScalePDFs */ = {
+			isa = PBXGroup;
+			children = (
+				48584A5716045DE10020DB00 /* Aeolian.pdf */,
+				48584A5816045DE10020DB00 /* AltoClef.pdf */,
+				48584A5916045DE10020DB00 /* BariToneClef.pdf */,
+				48584A5A16045DE10020DB00 /* BassClef.pdf */,
+				48584A5B16045DE10020DB00 /* ChromaticCircle.pdf */,
+				48584A5C16045DE10020DB00 /* CircleOfFifths.pdf */,
+				48584A5D16045DE10020DB00 /* Dorian.pdf */,
+				48584A5E16045DE10020DB00 /* Ionian.pdf */,
+				48584A5F16045DE10020DB00 /* Locrian.pdf */,
+				48584A6016045DE10020DB00 /* Lydian.pdf */,
+				48584A6116045DE10020DB00 /* MezzoSopranoClef.pdf */,
+				48584A6216045DE10020DB00 /* MixoLydian.pdf */,
+				48584A6316045DE10020DB00 /* Phrygian.pdf */,
+				48584A6416045DE10020DB00 /* SopranoClef.pdf */,
+				48584A6516045DE10020DB00 /* SubBassClef.pdf */,
+				48584A6616045DE10020DB00 /* TenorClef.pdf */,
+				48584A6716045DE10020DB00 /* TheGrandStaff.pdf */,
+				48584A6816045DE10020DB00 /* TrebleClef.pdf */,
+				48584A6916045DE10020DB00 /* welcome.pdf */,
+			);
+			name = ScalePDFs;
+			path = Art/ScalePDFs;
+			sourceTree = "<group>";
+		};
 		485AE38715FE91200050FADA /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -724,15 +787,6 @@
 				485D15BA16040B4C00B401D2 /* UIView+Image.m */,
 			);
 			path = "UIImage+PDF";
-			sourceTree = "<group>";
-		};
-		485D15C216040F0400B401D2 /* ScalePDFs */ = {
-			isa = PBXGroup;
-			children = (
-				485D15C316040F0400B401D2 /* TheGrandStaff.pdf */,
-			);
-			name = ScalePDFs;
-			path = Art/ScalePDFs;
 			sourceTree = "<group>";
 		};
 		4882981315E005F600239B29 /* CircleVCs */ = {
@@ -860,7 +914,7 @@
 		48FAB51B15CAF8B30087DCFA /* Art */ = {
 			isa = PBXGroup;
 			children = (
-				485D15C216040F0400B401D2 /* ScalePDFs */,
+				48584A5616045DE10020DB00 /* ScalePDFs */,
 				485D15C016040D5A00B401D2 /* YingYang.pdf */,
 				4809064615F03DFD003115F3 /* ScalePNGs */,
 				486B05ED15BF334A00B3F10D /* icon@2x.png */,
@@ -1167,7 +1221,25 @@
 				485AE41B15FE91200050FADA /* vib_8.m4a in Resources */,
 				485AE41D15FE91200050FADA /* vib_9.m4a in Resources */,
 				485D15C116040D5A00B401D2 /* YingYang.pdf in Resources */,
-				485D15C416040F0400B401D2 /* TheGrandStaff.pdf in Resources */,
+				48584A6A16045DE10020DB00 /* Aeolian.pdf in Resources */,
+				48584A6B16045DE10020DB00 /* AltoClef.pdf in Resources */,
+				48584A6C16045DE10020DB00 /* BariToneClef.pdf in Resources */,
+				48584A6D16045DE10020DB00 /* BassClef.pdf in Resources */,
+				48584A6E16045DE10020DB00 /* ChromaticCircle.pdf in Resources */,
+				48584A6F16045DE10020DB00 /* CircleOfFifths.pdf in Resources */,
+				48584A7016045DE10020DB00 /* Dorian.pdf in Resources */,
+				48584A7116045DE10020DB00 /* Ionian.pdf in Resources */,
+				48584A7216045DE10020DB00 /* Locrian.pdf in Resources */,
+				48584A7316045DE10020DB00 /* Lydian.pdf in Resources */,
+				48584A7416045DE10020DB00 /* MezzoSopranoClef.pdf in Resources */,
+				48584A7516045DE10020DB00 /* MixoLydian.pdf in Resources */,
+				48584A7616045DE10020DB00 /* Phrygian.pdf in Resources */,
+				48584A7716045DE10020DB00 /* SopranoClef.pdf in Resources */,
+				48584A7816045DE10020DB00 /* SubBassClef.pdf in Resources */,
+				48584A7916045DE10020DB00 /* TenorClef.pdf in Resources */,
+				48584A7A16045DE10020DB00 /* TheGrandStaff.pdf in Resources */,
+				48584A7B16045DE10020DB00 /* TrebleClef.pdf in Resources */,
+				48584A7C16045DE10020DB00 /* welcome.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

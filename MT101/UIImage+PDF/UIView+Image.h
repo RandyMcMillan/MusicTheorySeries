@@ -8,10 +8,10 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface UIView( Image )
+@interface UIView (Image)
 
--(UIImage *) image;
--(void) savePNG:(NSString *)filePath;
--(void) saveJPEG:(NSString *)filePath :(float)quality;
+- (UIImage *)image;
+- (void)savePNG:(NSString *)filePath;
+- (void)saveJPEG:(NSString *)filePath:(float)quality;
 
 @end
