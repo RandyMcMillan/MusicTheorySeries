@@ -13,6 +13,7 @@
 #import "GradientButton.h"
 #import "GradientToolBar.h"
 #import "ExampleView.h"
+#import "UIImage+PDF.h"
 
 
 @interface DetailViewController : UIViewController <

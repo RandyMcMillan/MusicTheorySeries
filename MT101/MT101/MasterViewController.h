@@ -7,6 +7,7 @@
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 #import <UIKit/UIKit.h>
+#import "UIImage+PDF.h"
 
 @class DetailViewController;
 

@@ -169,15 +169,15 @@
   for (NSString *str in imageNameList0)
     NSLog(@"imageNameList0 = %@",str);
   imageList0 = [[NSArray alloc] initWithObjects:   //Staffs CLefs
-    [UIImage imageNamed:[imageNameList0 objectAtIndex:0]],
-    [UIImage imageNamed:[imageNameList0 objectAtIndex:1]],
-    [UIImage imageNamed:[imageNameList0 objectAtIndex:2]],
-    [UIImage imageNamed:[imageNameList0 objectAtIndex:3]],
-    [UIImage imageNamed:[imageNameList0 objectAtIndex:4]],
-    [UIImage imageNamed:[imageNameList0 objectAtIndex:5]],
-    [UIImage imageNamed:[imageNameList0 objectAtIndex:6]],
-    [UIImage imageNamed:[imageNameList0 objectAtIndex:7]],
-    [UIImage imageNamed:[imageNameList0 objectAtIndex:8]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList0 objectAtIndex:0]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList0 objectAtIndex:1]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList0 objectAtIndex:2]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList0 objectAtIndex:3]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList0 objectAtIndex:4]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList0 objectAtIndex:5]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList0 objectAtIndex:6]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList0 objectAtIndex:7]],
+    [UIImage originalSizeImageWithPDFNamed:[imageNameList0 objectAtIndex:8]],
     nil];
 
   NSString *imageNameList1Path =

@@ -143,6 +143,12 @@
 		485AE41915FE91200050FADA /* vib_7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 485AE3CE15FE91200050FADA /* vib_7.m4a */; };
 		485AE41B15FE91200050FADA /* vib_8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 485AE3D015FE91200050FADA /* vib_8.m4a */; };
 		485AE41D15FE91200050FADA /* vib_9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 485AE3D215FE91200050FADA /* vib_9.m4a */; };
+		485D15BB16040B4C00B401D2 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D15B416040B4C00B401D2 /* NSString+MD5.m */; };
+		485D15BC16040B4C00B401D2 /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D15B616040B4C00B401D2 /* PDFView.m */; };
+		485D15BD16040B4C00B401D2 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D15B816040B4C00B401D2 /* UIImage+PDF.m */; };
+		485D15BE16040B4C00B401D2 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D15BA16040B4C00B401D2 /* UIView+Image.m */; };
+		485D15C116040D5A00B401D2 /* YingYang.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 485D15C016040D5A00B401D2 /* YingYang.pdf */; };
+		485D15C416040F0400B401D2 /* TheGrandStaff.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 485D15C316040F0400B401D2 /* TheGrandStaff.pdf */; };
 		486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05ED15BF334A00B3F10D /* icon@2x.png */; };
 		487A1C7F15E84735006C5C59 /* WikiToDisplay1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */; };
 		487A1C9415E86AAD006C5C59 /* WikiToDisplay2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9015E86AAD006C5C59 /* WikiToDisplay2.plist */; };
@@ -366,6 +372,16 @@
 		485AE3CE15FE91200050FADA /* vib_7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_7.m4a; sourceTree = "<group>"; };
 		485AE3D015FE91200050FADA /* vib_8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_8.m4a; sourceTree = "<group>"; };
 		485AE3D215FE91200050FADA /* vib_9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vib_9.m4a; sourceTree = "<group>"; };
+		485D15B316040B4C00B401D2 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		485D15B416040B4C00B401D2 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		485D15B516040B4C00B401D2 /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
+		485D15B616040B4C00B401D2 /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
+		485D15B716040B4C00B401D2 /* UIImage+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDF.h"; sourceTree = "<group>"; };
+		485D15B816040B4C00B401D2 /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
+		485D15B916040B4C00B401D2 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
+		485D15BA16040B4C00B401D2 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+		485D15C016040D5A00B401D2 /* YingYang.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = YingYang.pdf; sourceTree = "<group>"; };
+		485D15C316040F0400B401D2 /* TheGrandStaff.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TheGrandStaff.pdf; sourceTree = "<group>"; };
 		486B05ED15BF334A00B3F10D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay1.plist; sourceTree = "<group>"; };
 		487A1C8915E85115006C5C59 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -695,6 +711,30 @@
 			path = Audio;
 			sourceTree = "<group>";
 		};
+		485D15B216040B4C00B401D2 /* UIImage+PDF */ = {
+			isa = PBXGroup;
+			children = (
+				485D15B316040B4C00B401D2 /* NSString+MD5.h */,
+				485D15B416040B4C00B401D2 /* NSString+MD5.m */,
+				485D15B516040B4C00B401D2 /* PDFView.h */,
+				485D15B616040B4C00B401D2 /* PDFView.m */,
+				485D15B716040B4C00B401D2 /* UIImage+PDF.h */,
+				485D15B816040B4C00B401D2 /* UIImage+PDF.m */,
+				485D15B916040B4C00B401D2 /* UIView+Image.h */,
+				485D15BA16040B4C00B401D2 /* UIView+Image.m */,
+			);
+			path = "UIImage+PDF";
+			sourceTree = "<group>";
+		};
+		485D15C216040F0400B401D2 /* ScalePDFs */ = {
+			isa = PBXGroup;
+			children = (
+				485D15C316040F0400B401D2 /* TheGrandStaff.pdf */,
+			);
+			name = ScalePDFs;
+			path = Art/ScalePDFs;
+			sourceTree = "<group>";
+		};
 		4882981315E005F600239B29 /* CircleVCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -820,6 +860,8 @@
 		48FAB51B15CAF8B30087DCFA /* Art */ = {
 			isa = PBXGroup;
 			children = (
+				485D15C216040F0400B401D2 /* ScalePDFs */,
+				485D15C016040D5A00B401D2 /* YingYang.pdf */,
 				4809064615F03DFD003115F3 /* ScalePNGs */,
 				486B05ED15BF334A00B3F10D /* icon@2x.png */,
 				4825556D15DD76AF00737C61 /* welcome.png */,
@@ -832,6 +874,7 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
+				485D15B216040B4C00B401D2 /* UIImage+PDF */,
 				48DBC8C815FBF46800CEE854 /* Accounts.framework */,
 				48DBC8C515FBF46400CEE854 /* Twitter.framework */,
 				480D185315F9E3E90086C3EF /* MessageUI.framework */,
@@ -1123,6 +1166,8 @@
 				485AE41915FE91200050FADA /* vib_7.m4a in Resources */,
 				485AE41B15FE91200050FADA /* vib_8.m4a in Resources */,
 				485AE41D15FE91200050FADA /* vib_9.m4a in Resources */,
+				485D15C116040D5A00B401D2 /* YingYang.pdf in Resources */,
+				485D15C416040F0400B401D2 /* TheGrandStaff.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1184,6 +1229,10 @@
 				481A432815F0FFF8006EDF46 /* GradientButton.m in Sources */,
 				48B67BC815F411DA00B0C6F2 /* GradientToolBar.m in Sources */,
 				4887524F15F59731006FBD28 /* ExampleView.m in Sources */,
+				485D15BB16040B4C00B401D2 /* NSString+MD5.m in Sources */,
+				485D15BC16040B4C00B401D2 /* PDFView.m in Sources */,
+				485D15BD16040B4C00B401D2 /* UIImage+PDF.m in Sources */,
+				485D15BE16040B4C00B401D2 /* UIView+Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
