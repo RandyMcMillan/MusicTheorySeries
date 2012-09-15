@@ -74,8 +74,8 @@
 #define WELCOMEWIDTH                800
 #define WELCOMEHEIGHT               800
 
-#define GRANDSTAFFEXAMPLEWIDTH      725
-#define GRANDSTAFFEXAMPLEHEIGHT     725
+#define GRANDSTAFFEXAMPLEWIDTH      703
+#define GRANDSTAFFEXAMPLEHEIGHT     768
 
 #define CIRCLEWIDTH                 725
 #define CIRCLEHEIGHT                725

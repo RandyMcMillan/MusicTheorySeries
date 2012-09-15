@@ -99,10 +99,17 @@
     self.alpha = 1.0;
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
     [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
-    [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)];
-    [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.18)];
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES && [[UIScreen mainScreen] scale] == 2.00) {
 
-    // self.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+        [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)];///not being used but in here as a que to support retina
+    
+    } else {
+   
+        [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)];
+
+    }
+        [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.18)];
+    
 }   /* useGrandStaffStyle */
 
 - (void)useCircleStyle
