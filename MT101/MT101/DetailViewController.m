@@ -631,7 +631,10 @@
         
         if (imageAttach)
         {
-            [tweetSheet addImage:[UIImage imageNamed:imageAttach]];
+            
+            //    [UIImage originalSizeImageWithPDFNamed:[imageNameList1 objectAtIndex:0]],
+
+            [tweetSheet addImage:[UIImage originalSizeImageWithPDFNamed:@"welcome.pdf"]];
         }
         
         if (urlAttach)

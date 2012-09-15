@@ -71,8 +71,8 @@
 #define SMALLBOXWIDTH               50
 #define SMALLBOXHEIGHT              50
 
-#define WELCOMEWIDTH                800
-#define WELCOMEHEIGHT               800
+#define WELCOMEWIDTH                400
+#define WELCOMEHEIGHT               400
 
 #define GRANDSTAFFEXAMPLEWIDTH      703
 #define GRANDSTAFFEXAMPLEHEIGHT     768
