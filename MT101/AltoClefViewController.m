@@ -526,8 +526,7 @@
 // Handle a change in the mixer output gain slider.
 - (IBAction)mixerOutputGainChanged:(UISlider *)sender
 {
-    [mixerHost setMixerOutputGain:(AudioUnitParameterValue)sender.value
-    ];
+    [mixerHost setMixerOutputGain:(AudioUnitParameterValue)sender.value];
 }
 
 #pragma mark -

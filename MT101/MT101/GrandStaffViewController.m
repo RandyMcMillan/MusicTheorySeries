@@ -485,11 +485,10 @@
     [closeButton useDoneButtonStyle];
     [mixerHost stopAUGraph];
 
-    UIImageView *exampleImageView = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"  ]];
+    UIImageView *exampleImageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"]];
     imageView.image = exampleImageView.image;
-    [ exampleImageView release ];
+    [exampleImageView release];
 
-    
     [imageView useGrandStaffStyle];
 
     // imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth |
