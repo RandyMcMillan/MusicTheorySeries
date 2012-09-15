@@ -245,14 +245,14 @@
 		480D185315F9E3E90086C3EF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		480D185815F9F7CF0086C3EF /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
 		480D185A15F9FA9D0086C3EF /* email@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email@2x.png"; sourceTree = "<group>"; };
-		481A431015F0F52C006EDF46 /* ColorUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUIButton.h; sourceTree = "<group>"; };
-		481A431115F0F52C006EDF46 /* ColorUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUIButton.m; sourceTree = "<group>"; };
+		481A431015F0F52C006EDF46 /* ColorUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorUIButton.h; path = ../ColorUIButton.h; sourceTree = "<group>"; };
+		481A431115F0F52C006EDF46 /* ColorUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorUIButton.m; path = ../ColorUIButton.m; sourceTree = "<group>"; };
 		481A431715F0FE8A006EDF46 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
 		481A431D15F0FEA8006EDF46 /* tbButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tbButton.png; sourceTree = "<group>"; };
-		481A432315F0FFF7006EDF46 /* NavBarBackgroundGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavBarBackgroundGradientView.h; sourceTree = "<group>"; };
-		481A432415F0FFF7006EDF46 /* NavBarBackgroundGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavBarBackgroundGradientView.m; sourceTree = "<group>"; };
-		481A432515F0FFF7006EDF46 /* GradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
-		481A432615F0FFF7006EDF46 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
+		481A432315F0FFF7006EDF46 /* NavBarBackgroundGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavBarBackgroundGradientView.h; path = ../NavBarBackgroundGradientView.h; sourceTree = "<group>"; };
+		481A432415F0FFF7006EDF46 /* NavBarBackgroundGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavBarBackgroundGradientView.m; path = ../NavBarBackgroundGradientView.m; sourceTree = "<group>"; };
+		481A432515F0FFF7006EDF46 /* GradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientButton.h; path = ../GradientButton.h; sourceTree = "<group>"; };
+		481A432615F0FFF7006EDF46 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientButton.m; path = ../GradientButton.m; sourceTree = "<group>"; };
 		481A432915F101C5006EDF46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
 		4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrebleClefViewController.xib; sourceTree = "<group>"; };
@@ -346,7 +346,7 @@
 		485D15C016040D5A00B401D2 /* YingYang.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = YingYang.pdf; sourceTree = "<group>"; };
 		486B05ED15BF334A00B3F10D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay1.plist; sourceTree = "<group>"; };
-		487A1C8915E85115006C5C59 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		487A1C8915E85115006C5C59 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
 		487A1C9015E86AAD006C5C59 /* WikiToDisplay2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay2.plist; sourceTree = "<group>"; };
 		487A1C9115E86AAD006C5C59 /* WikiToDisplay3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay3.plist; sourceTree = "<group>"; };
 		487A1C9215E86AAD006C5C59 /* WikiToDisplay4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay4.plist; sourceTree = "<group>"; };
@@ -355,16 +355,16 @@
 		4882981715E006BB00239B29 /* ChromaticCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromaticCircleViewController.m; sourceTree = "<group>"; };
 		4882981815E006BB00239B29 /* ChromaticCircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChromaticCircleViewController.xib; sourceTree = "<group>"; };
 		4882981B15E009B900239B29 /* Chromatic Circle.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chromatic Circle.mp4"; sourceTree = "<group>"; };
-		4887524D15F59731006FBD28 /* ExampleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleView.h; sourceTree = "<group>"; };
-		4887524E15F59731006FBD28 /* ExampleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleView.m; sourceTree = "<group>"; };
+		4887524D15F59731006FBD28 /* ExampleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleView.h; path = ../ExampleView.h; sourceTree = "<group>"; };
+		4887524E15F59731006FBD28 /* ExampleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleView.m; path = ../ExampleView.m; sourceTree = "<group>"; };
 		489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrandStaffViewController.h; path = MT101/GrandStaffViewController.h; sourceTree = "<group>"; };
 		489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrandStaffViewController.m; path = MT101/GrandStaffViewController.m; sourceTree = "<group>"; };
 		48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay0.plist; sourceTree = "<group>"; };
 		48A3562D15E2363F00A3529D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		48A3562E15E2363F00A3529D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		48B67BC615F411DA00B0C6F2 /* GradientToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientToolBar.h; sourceTree = "<group>"; };
-		48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientToolBar.m; sourceTree = "<group>"; };
-		48B6FEC51604A56C00B941C2 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		48B67BC615F411DA00B0C6F2 /* GradientToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientToolBar.h; path = ../GradientToolBar.h; sourceTree = "<group>"; };
+		48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientToolBar.m; path = ../GradientToolBar.m; sourceTree = "<group>"; };
+		48B6FEC51604A56C00B941C2 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
@@ -667,7 +667,8 @@
 				485D15B916040B4C00B401D2 /* UIView+Image.h */,
 				485D15BA16040B4C00B401D2 /* UIView+Image.m */,
 			);
-			path = "UIImage+PDF";
+			name = "UIImage+PDF";
+			path = "../UIImage+PDF";
 			sourceTree = "<group>";
 		};
 		4882981315E005F600239B29 /* CircleVCs */ = {
@@ -808,23 +809,7 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
-				48B6FEC51604A56C00B941C2 /* Default-Landscape@2x~ipad.png */,
-				485D15B216040B4C00B401D2 /* UIImage+PDF */,
-				48DBC8C815FBF46800CEE854 /* Accounts.framework */,
-				48DBC8C515FBF46400CEE854 /* Twitter.framework */,
-				480D185315F9E3E90086C3EF /* MessageUI.framework */,
-				4887524D15F59731006FBD28 /* ExampleView.h */,
-				4887524E15F59731006FBD28 /* ExampleView.m */,
-				48B67BC615F411DA00B0C6F2 /* GradientToolBar.h */,
-				48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */,
-				481A432315F0FFF7006EDF46 /* NavBarBackgroundGradientView.h */,
-				481A432415F0FFF7006EDF46 /* NavBarBackgroundGradientView.m */,
-				481A432515F0FFF7006EDF46 /* GradientButton.h */,
-				481A432615F0FFF7006EDF46 /* GradientButton.m */,
 				481A431615F0FE8A006EDF46 /* buttonArt */,
-				481A431015F0F52C006EDF46 /* ColorUIButton.h */,
-				481A431115F0F52C006EDF46 /* ColorUIButton.m */,
-				487A1C8915E85115006C5C59 /* Constants.h */,
 				48A3561815E221AE00A3529D /* WikiView */,
 				484D16E315DAE471005FC66E /* Plists */,
 				48FAB51A15CAF8710087DCFA /* XIBs */,
@@ -846,6 +831,9 @@
 		B225A7291534CF59006FD46F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				48DBC8C815FBF46800CEE854 /* Accounts.framework */,
+				48DBC8C515FBF46400CEE854 /* Twitter.framework */,
+				480D185315F9E3E90086C3EF /* MessageUI.framework */,
 				481A432915F101C5006EDF46 /* QuartzCore.framework */,
 				4825A36915C4DBCF006F0C46 /* AVFoundation.framework */,
 				4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */,
@@ -870,9 +858,22 @@
 		B225A7311534CF59006FD46F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				481A431015F0F52C006EDF46 /* ColorUIButton.h */,
+				481A431115F0F52C006EDF46 /* ColorUIButton.m */,
+				487A1C8915E85115006C5C59 /* Constants.h */,
+				4887524D15F59731006FBD28 /* ExampleView.h */,
+				4887524E15F59731006FBD28 /* ExampleView.m */,
+				48B67BC615F411DA00B0C6F2 /* GradientToolBar.h */,
+				48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */,
+				481A432315F0FFF7006EDF46 /* NavBarBackgroundGradientView.h */,
+				481A432415F0FFF7006EDF46 /* NavBarBackgroundGradientView.m */,
+				481A432515F0FFF7006EDF46 /* GradientButton.h */,
+				481A432615F0FFF7006EDF46 /* GradientButton.m */,
+				485D15B216040B4C00B401D2 /* UIImage+PDF */,
 				485AE38715FE91200050FADA /* Audio */,
 				480A794015DD6060005E9C43 /* Movies */,
 				48E0C4CD15F0054F001A2748 /* Default-Landscape@2x~ipad.png */,
+				48B6FEC51604A56C00B941C2 /* Default-Landscape@2x~ipad.png */,
 				48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */,
 				48EEEF7115DC54DF00D15F15 /* Default-Portrait@2x~ipad.png */,
 				48EEEF6F15DC54D700D15F15 /* Default-Portrait~ipad.png */,

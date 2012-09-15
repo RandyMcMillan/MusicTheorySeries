@@ -487,6 +487,12 @@
     [closeButton useDoneButtonStyle];
     [mixerHost stopAUGraph];
 
+    UIImageView *exampleImageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"Ionian.pdf"]];
+    imageView.image = exampleImageView.image;
+    [exampleImageView release];
+
+    [imageView useGrandStaffStyle];
+
     [[UIDevice currentDevice]
         beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]   addObserver :self selector:
