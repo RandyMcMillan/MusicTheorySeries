@@ -383,7 +383,7 @@
 
     // Load the request in the UIWebView.
     [wikiVC.webView loadRequest:requestObj];
-
+    self.wikiButton.highlighted = FALSE;
     // [webView loadHTMLString:@"This is a completely transparent
     // UIWebView. Notice the missing gradient at the top and bottom as you
     // scroll up and down." baseURL:nil];
