@@ -191,7 +191,7 @@
                                      );
     
     
-    [webView setFrame:newRectangle];
+    //   [webView setFrame:newRectangle];
 
     toolBar.hidden      = YES;
     navBar.hidden       = toolBar.hidden;
