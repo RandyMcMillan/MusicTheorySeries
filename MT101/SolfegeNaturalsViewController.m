@@ -1,8 +1,4 @@
 //
-
-//  AppleXylophone.m
-//  AudioMeetupDemo
-//
 //  Created by Randy McMillan on 8/2/12.
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
@@ -481,11 +477,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [closeButton useDoneButtonStyle];
     [mixerHost stopAUGraph];
-    imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth |
-        UIViewAutoresizingFlexibleHeight);
 
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    UIImageView *exampleImageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"SolfegeNaturals.pdf"]];
+    imageView.image = exampleImageView.image;
+    [exampleImageView release];
+
+    [imageView useGrandStaffStyle];
+
     [[UIDevice currentDevice]
         beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]   addObserver :self selector:
