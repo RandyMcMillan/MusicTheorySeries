@@ -2,12 +2,9 @@
 //  MasterViewController.m
 //  MT101
 //
-//  Created by David McMahon on 4/10/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
 
 @interface MasterViewController () {

@@ -1,10 +1,8 @@
 //
-
-//  WebViewController.h
-//  WebViewTutorial
 //
-//  Created by iPhone SDK Articles on 8/19/08.
-//  Copyright 2008 www.iPhoneSDKArticles.com. All rights reserved.
+//  Created by Randy McMillan on 8/2/12.
+//  Copyright (c) 2012 Randy McMillan. All rights reserved.
+//
 //
 
 #import <UIKit/UIKit.h>

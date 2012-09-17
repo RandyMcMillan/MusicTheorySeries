@@ -1,8 +1,4 @@
 //
-
-//  AppleXylophone.m
-//  AudioMeetupDemo
-//
 //  Created by Randy McMillan on 8/2/12.
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //

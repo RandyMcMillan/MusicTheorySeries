@@ -1,8 +1,4 @@
 //
-
-//  AppDelegate.h
-//  MT101
-//
 //  Created by Randy McMillan on 8/2/12.
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
@@ -12,6 +8,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong,
-  nonatomic) UISplitViewController *splitViewController;
+    nonatomic) UISplitViewController *splitViewController;
 
 @end

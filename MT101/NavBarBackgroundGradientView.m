@@ -1,10 +1,7 @@
 //
-
-//  NavBarBackgroundGradientView.m
-//  CG Test
 //
-//  Created by jeff on 5/18/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by Randy McMillan on 8/2/12.
+//  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 
 #import "NavBarBackgroundGradientView.h"

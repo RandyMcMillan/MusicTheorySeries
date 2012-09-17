@@ -1,12 +1,5 @@
 //
 
-//  MyUIButton.m
-//  UIButtonTest
-//
-//  Created by John Barnhart on 11/2/11.
-//  Copyright (c) 2011 John Barnhart. All rights reserved.
-//
-
 #import "ColorUIButton.h"
 
 @implementation ColorUIButton
