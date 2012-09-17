@@ -8,6 +8,7 @@
 #import "GradientButton.h"
 #import "GradientToolBar.h"
 #import "Constants.h"
+#import "ExampleView.h"
 #import "UIImage+PDF.h"
 
 @interface BariToneClefViewController : UIViewController <
@@ -15,7 +16,7 @@
     int     lastKeyIndex;
     CGRect  keyRects[KEY_COUNT];
 
-    IBOutlet UIImageView        *imageView;
+    IBOutlet ExampleView        *imageView;
     IBOutlet GradientToolBar    *toolBar;
     IBOutlet GradientButton     *closeButton;
     UILabel                     *label0;
