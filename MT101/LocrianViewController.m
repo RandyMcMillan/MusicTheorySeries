@@ -488,9 +488,8 @@
     UIImageView *exampleImageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"Locrian.pdf"]];
     imageView.image = exampleImageView.image;
     [exampleImageView release];
-    
+
     [imageView useGrandStaffStyle];
-    
 
     [[UIDevice currentDevice]
         beginGeneratingDeviceOrientationNotifications];

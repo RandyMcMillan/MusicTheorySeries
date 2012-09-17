@@ -10,12 +10,10 @@
 
 @class DetailViewController;
 
-@interface MasterViewController : UITableViewController{
-    
+@interface MasterViewController : UITableViewController {
     NSArray *videoList;
     NSArray *imageList;
     NSArray *interactiveList;
-    
 }
 
 @property (strong, nonatomic) DetailViewController *detailViewController;

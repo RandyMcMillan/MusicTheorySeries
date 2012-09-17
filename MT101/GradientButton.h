@@ -48,7 +48,6 @@
 - (void)useTBStyle;
 - (void)useEmailStyle;
 
-
 - (void)useAlertStyle;
 - (void)useRedDeleteStyle;
 - (void)useWhiteStyle;

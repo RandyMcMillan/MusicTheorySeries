@@ -146,11 +146,9 @@
 
 - (void)useEmailStyle
 {
-    
-    //[self.title setTitle:@"EMAIL" forState:(UIControlStateNormal | UIControlStateHighlighted | UIControlStateSelected)];
-   // [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"email"]] forState:UIControlStateNormal];
+    // [self.title setTitle:@"EMAIL" forState:(UIControlStateNormal | UIControlStateHighlighted | UIControlStateSelected)];
+    // [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"email"]] forState:UIControlStateNormal];
 }
-
 
 - (void)useVideoStyle
 {

@@ -490,7 +490,7 @@
     ExampleView *exampleImageView = [[ExampleView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"ChromaticCircle.pdf"]];
     imageView.image = exampleImageView.image;
     [exampleImageView release];
-    
+
     [[UIDevice currentDevice]
         beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]   addObserver :self selector:

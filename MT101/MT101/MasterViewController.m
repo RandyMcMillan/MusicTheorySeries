@@ -260,7 +260,6 @@
                   [UIImage originalSizeImageWithPDFNamed:[imageNameList3 objectAtIndex:0]],
                   [UIImage originalSizeImageWithPDFNamed:[imageNameList3 objectAtIndex:1]],
                   [UIImage originalSizeImageWithPDFNamed:[imageNameList3 objectAtIndex:2]],
-                 
                   nil];
 
     

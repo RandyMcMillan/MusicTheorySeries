@@ -132,15 +132,13 @@
     UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDown:)];
     swipeDown.direction = (UISwipeGestureRecognizerDirectionDown);
     swipeDown.numberOfTouchesRequired = 1;
-    
-    
+
     UISwipeGestureRecognizer *twoFingerSwipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeft:)];
     twoFingerSwipeLeft.direction = (UISwipeGestureRecognizerDirectionLeft);
     twoFingerSwipeLeft.numberOfTouchesRequired = 1;
     UISwipeGestureRecognizer *twoFingerSwipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeRight:)];
     twoFingerSwipeRight.direction = (UISwipeGestureRecognizerDirectionRight);
     twoFingerSwipeRight.numberOfTouchesRequired = 1;
-
 
     webView.gestureRecognizers = [NSArray arrayWithObjects:tap, twoFingerTap, dtap, /*swipeAll,*/ swipeLeft, swipeRight, swipeUp, swipeDown, nil];
     [swipeRight release];
@@ -150,14 +148,10 @@
     [twoFingerTap release];
     [twoFingerSwipeLeft release];
     [twoFingerSwipeRight release];
-    
-    
+
     for (UIGestureRecognizer *recognizer in webView.gestureRecognizers) {
         recognizer.delegate = self;
     }
-    
-
-
 }   /* viewDidLoad */
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -176,21 +170,19 @@
 
     if (touch.tapCount == 3) {
         // Reset geometry upon double-tap
-         webView.transform = CGAffineTransformIdentity;
+        webView.transform = CGAffineTransformIdentity;
         tx = 0.0f; ty = 0.0f; scale = 1.0f; theta = 0.0f;
     }
 }
 
 - (void)hideToolBar
 {
-    
     CGRect newRectangle = CGRectMake(0,
-                                     0,
-                                     toolBar.frame.size.width,
-                                     [self view].frame.size.height
-                                     );
-    
-    
+        0,
+        toolBar.frame.size.width,
+        [self view].frame.size.height
+        );
+
     //   [webView setFrame:newRectangle];
 
     toolBar.hidden      = YES;
@@ -200,21 +192,17 @@
 
 - (void)showToolBar
 {
-
-    
     CGRect newRectangle = CGRectMake(0,
-                                     44,
-                                     toolBar.frame.size.width,
-                                     [self view].frame.size.height - 88
-                                     );
-    
+        44,
+        toolBar.frame.size.width,
+        [self view].frame.size.height - 88
+        );
 
     [webView setFrame:newRectangle];
-    
+
     toolBar.hidden      = NO;
     navBar.hidden       = toolBar.hidden;
     addressLabel.hidden = navBar.hidden;
-    
 }
 
 - (void)handleTap:(UITapGestureRecognizer *)uigr
@@ -282,7 +270,6 @@
     [webView goBack];
 }
 
-
 - (void)swipeUp:(UIGestureRecognizer *)uigr
 {
     NSLog(@"swipteUp \n To handle Swiptes in WebView");
@@ -330,13 +317,12 @@
         [[self parentViewController] dismissModalViewControllerAnimated
             :YES];
     }
-    
+
     [webView release];
 }
 
 - (IBAction)onDoneButtonPress:(id)sender
 {
-    
     [webView release];
 
     [self closeBrowser];
@@ -371,20 +357,18 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)sender
 {
-    
-  //  CGRect newRectangle = CGRectMake(320,
+    //  CGRect newRectangle = CGRectMake(320,
     //                                 44,
-      //                               600,
-        //                             [self view].frame.size.height - 88
-          //                           );
-    
-    
-    //[self.view setFrame:newRectangle];
+    //                               600,
+    //                             [self view].frame.size.height - 88
+    //                           );
+
+    // [self.view setFrame:newRectangle];
     addressLabel.text = @"Loading...";
 
-    backButton.enabled      = webView.canGoBack;
-    forwardButton.enabled   = webView.canGoForward;
-    refreshButton.highlighted = FALSE;
+    backButton.enabled          = webView.canGoBack;
+    forwardButton.enabled       = webView.canGoForward;
+    refreshButton.highlighted   = FALSE;
 
     NSLog(@"webViewDidStartLoad");
     spinner.hidden = FALSE;
@@ -403,14 +387,14 @@
         addressLabel.text = request.URL.absoluteString;
     }
 
-    backButton.enabled      = webView.canGoBack;
-    forwardButton.enabled   = webView.canGoForward;
-    doneButton.highlighted = FALSE;
-    refreshButton.highlighted = FALSE;
-    safariButton.highlighted = FALSE;
-    backButton.highlighted = FALSE;
-    forwardButton.highlighted= FALSE;
-    
+    backButton.enabled          = webView.canGoBack;
+    forwardButton.enabled       = webView.canGoForward;
+    doneButton.highlighted      = FALSE;
+    refreshButton.highlighted   = FALSE;
+    safariButton.highlighted    = FALSE;
+    backButton.highlighted      = FALSE;
+    forwardButton.highlighted   = FALSE;
+
     [spinner stopAnimating];
     NSLog(@"webViewDidFinLoad");
 
@@ -479,8 +463,8 @@
     NSString *htmlText =
         [NSString stringWithFormat:@"%@%@", htmlTextFloat, endBodyTag];                 // concat
                                                                                         // htmlFloat
-                                                                          // and
-                                                                                        // endBodyTag
+    // and
+    // endBodyTag
     //   self.view.backgroundColor = [UIColor colorWithRed:0.043
     // green:0.125 blue:0.157 alpha:1.000];
     // self.webView.backgroundColor = [UIColor colorWithRed:0.043
@@ -488,10 +472,10 @@
     // [self hideGradientBackground:cont.webView];
     [self.webView loadHTMLString:htmlText baseURL:[NSURL URLWithString:
             path]];
-    
-   // [htmlText release];
-    
-               //   [htmlTextFloat release ];
+
+    // [htmlText release];
+
+    //   [htmlTextFloat release ];
 
     refreshButton.enabled   = FALSE;
     safariButton.enabled    = FALSE;
@@ -535,17 +519,14 @@
 
 - (void)dealloc
 {
-//    [webView release];
+    //    [webView release];
     [super dealloc];
 }
 
 - (void)viewDidUnload
 {
-
-   // [webView.gestureRecognizers release];
+    // [webView.gestureRecognizers release];
     [webView release];
-    
-
 }
 
 @end

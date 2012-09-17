@@ -22,36 +22,38 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
     if (self) {
         self.title = NSLocalizedString(@"Videos", @"Videos");
-        self.clearsSelectionOnViewWillAppear = NO;
-        self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
+        self.clearsSelectionOnViewWillAppear    = NO;
+        self.contentSizeForViewInPopover        = CGSizeMake(320.0, 600.0);
     }
+
     return self;
 }
-							
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-       
+    // Do any additional setup after loading the view, typically from a nib.
+
     videoList = [[NSArray alloc] initWithObjects:
-                 @"Aeolian",
-                 @"RollingClouds",
-                 @"SunInClouds",
-                 @"UnderWater",
-                 @"WindyTrees", 
-                 nil];
-    
+        @"Aeolian",
+        @"RollingClouds",
+        @"SunInClouds",
+        @"UnderWater",
+        @"WindyTrees",
+        nil];
+
     imageList = [[NSArray alloc] initWithObjects:
-                 [UIImage imageNamed: @"Aeolian.png"],
-                 [UIImage imageNamed:@"clouds.png"],
-                 [UIImage imageNamed:@"sunset.png"],
-                 [UIImage imageNamed:@"underwater.png"], 
-                 [UIImage imageNamed: @"trees.png"],
-                 nil];
-    
-    interactiveList = [[NSArray alloc] initWithObjects:@"",@"",nil];
+        [UIImage imageNamed:@"Aeolian.png"],
+        [UIImage imageNamed:@"clouds.png"],
+        [UIImage imageNamed:@"sunset.png"],
+        [UIImage imageNamed:@"underwater.png"],
+        [UIImage imageNamed:@"trees.png"],
+        nil];
+
+    interactiveList = [[NSArray alloc] initWithObjects:@"", @"", nil];
 }
 
 - (void)viewDidUnload
@@ -64,7 +66,6 @@
 {
     return YES;
 }
-
 
 #pragma mark - Table View
 
@@ -82,21 +83,19 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    
+
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
 
-
-    tableView.backgroundColor = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
-    tableView.separatorColor = [UIColor lightGrayColor];
-
+    tableView.backgroundColor   = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
+    tableView.separatorColor    = [UIColor lightGrayColor];
 
     cell.textLabel.text = [videoList objectAtIndex:indexPath.row];
-    
-    return cell;                      
-                           
+
+    return cell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -105,14 +104,12 @@
     return NO;
 }
 
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.detailViewController.MovieToPlay = [videoList objectAtIndex:indexPath.row];
-    //self.detailViewController.imageView.frame = self.detailViewController.view.frame;
-    self.detailViewController.imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
-    self.detailViewController.imageView.image = [imageList objectAtIndex:indexPath.row];
-    
+    // self.detailViewController.imageView.frame = self.detailViewController.view.frame;
+    self.detailViewController.imageView.autoresizingMask    = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+    self.detailViewController.imageView.image               = [imageList objectAtIndex:indexPath.row];
 }
 
 @end

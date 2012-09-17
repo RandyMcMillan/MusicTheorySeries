@@ -53,7 +53,6 @@
 		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
 		4820B0AE15EDFE72003768DC /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */; };
 		4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */; };
-		4825559115DD76AF00737C61 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825556D15DD76AF00737C61 /* welcome.png */; };
 		4825559915DD7A3000737C61 /* SolfegeNaturalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */; };
 		4825559A15DD7A3000737C61 /* SolfegeNaturalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4825559815DD7A3000737C61 /* SolfegeNaturalsViewController.xib */; };
 		4825559E15DD7A4C00737C61 /* SolfegeSharpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559C15DD7A4C00737C61 /* SolfegeSharpsViewController.m */; };
@@ -258,7 +257,6 @@
 		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
 		4820B0AD15EDFE71003768DC /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrebleClefViewController.xib; sourceTree = "<group>"; };
 		4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppleXylophoneViewController.xib; sourceTree = "<group>"; };
-		4825556D15DD76AF00737C61 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome.png; path = Art/ScalePNGs/welcome.png; sourceTree = "<group>"; };
 		4825559615DD7A3000737C61 /* SolfegeNaturalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeNaturalsViewController.h; sourceTree = "<group>"; };
 		4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolfegeNaturalsViewController.m; sourceTree = "<group>"; };
 		4825559815DD7A3000737C61 /* SolfegeNaturalsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SolfegeNaturalsViewController.xib; sourceTree = "<group>"; };
@@ -803,7 +801,6 @@
 				48584A5616045DE10020DB00 /* ScalePDFs */,
 				485D15C016040D5A00B401D2 /* YingYang.pdf */,
 				486B05ED15BF334A00B3F10D /* icon@2x.png */,
-				4825556D15DD76AF00737C61 /* welcome.png */,
 				B225A76C1534D27F006FD46F /* greenlights.png */,
 				B225A75A1534D1D4006FD46F /* clouds.png */,
 			);
@@ -1006,7 +1003,6 @@
 				480A796C15DD6060005E9C43 /* Treble Clef.mp4 in Resources */,
 				480A796D15DD6060005E9C43 /* UnderWater.mp4 in Resources */,
 				480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */,
-				4825559115DD76AF00737C61 /* welcome.png in Resources */,
 				4825559A15DD7A3000737C61 /* SolfegeNaturalsViewController.xib in Resources */,
 				4825559F15DD7A4C00737C61 /* SolfegeSharpsViewController.xib in Resources */,
 				482555A415DD7A5400737C61 /* SolfegeFlatsViewController.xib in Resources */,
