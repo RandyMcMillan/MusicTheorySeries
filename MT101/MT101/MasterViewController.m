@@ -644,6 +644,8 @@
             [imageList3 objectAtIndex:indexPath.row];
         self.detailViewController.interactiveToDisplay =
             [interactiveList3 objectAtIndex:indexPath.row];
+        self.detailViewController.wikiToDisplay =
+        [wikiToDiplayList3 objectAtIndex:indexPath.row];
         [self.detailViewController.imageView useGrandStaffStyle];
     }
 
