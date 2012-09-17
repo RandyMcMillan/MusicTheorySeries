@@ -220,6 +220,9 @@
         [UIImage originalSizeImageWithPDFNamed:[imageNameList1 objectAtIndex:8]],
         nil];
 
+    
+    
+    
     NSString *imageNameList2Path =
         [[NSBundle mainBundle] pathForResource:@"imageNameList2" ofType:
         @"plist"];
@@ -241,29 +244,29 @@
         [UIImage originalSizeImageWithPDFNamed:[imageNameList2 objectAtIndex:7]],
         [UIImage originalSizeImageWithPDFNamed:[imageNameList2 objectAtIndex:8]],
         nil];
-
+    
+    
     NSString *imageNameList3Path =
-        [[NSBundle mainBundle] pathForResource:@"imageNameList3" ofType:
-        @"plist"];
+    [[NSBundle mainBundle] pathForResource:@"imageNameList3" ofType:
+     @"plist"];
     imageNameList3 =
-        [[NSArray alloc] initWithContentsOfFile:imageNameList3Path];
-
+    [[NSArray alloc] initWithContentsOfFile:imageNameList3Path];
+    
     for (NSString *str in imageNameList3) {
-        NSLog(@"imageNameList3 = %@", str);
+        NSLog(@"imageNameList2 = %@", str);
     }
+    
+    imageList3 = [[NSArray alloc] initWithObjects: // Modes
+                  [UIImage originalSizeImageWithPDFNamed:[imageNameList3 objectAtIndex:0]],
+                  [UIImage originalSizeImageWithPDFNamed:[imageNameList3 objectAtIndex:1]],
+                  [UIImage originalSizeImageWithPDFNamed:[imageNameList3 objectAtIndex:2]],
+                 
+                  nil];
 
-    imageList3 = [[NSArray alloc] initWithObjects: // Staffs CLefs
-        [UIImage imageNamed:[imageNameList3 objectAtIndex:0]],
-        [UIImage imageNamed:[imageNameList3 objectAtIndex:1]],
-        [UIImage imageNamed:[imageNameList3 objectAtIndex:2]],
-        [UIImage imageNamed:[imageNameList3 objectAtIndex:3]],
-        [UIImage imageNamed:[imageNameList3 objectAtIndex:4]],
-        [UIImage imageNamed:[imageNameList3 objectAtIndex:5]],
-        [UIImage imageNamed:[imageNameList3 objectAtIndex:6]],
-        [UIImage imageNamed:[imageNameList3 objectAtIndex:7]],
-        [UIImage imageNamed:[imageNameList3 objectAtIndex:8]],
-        nil];
+    
 
+    
+    
     NSString *imageNameList4Path =
         [[NSBundle mainBundle] pathForResource:@"imageNameList4" ofType:
         @"plist"];
