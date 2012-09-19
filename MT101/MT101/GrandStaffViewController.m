@@ -520,7 +520,7 @@
         imageView.image = exampleImageView.image;
     [exampleImageView release];
 
-    // [imageView useGrandStaffStyle];
+     [imageView useGrandStaffStyle];
 
     [[UIDevice currentDevice]
         beginGeneratingDeviceOrientationNotifications];
