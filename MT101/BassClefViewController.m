@@ -473,30 +473,30 @@
 }   /* destroyRects */
 
 #pragma mark - View lifecycle
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //    [toolBar useTBStyle];
     [closeButton useDoneButtonStyle];
-
     [mixerHost stopAUGraph];
-    imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth |
-        UIViewAutoresizingFlexibleHeight);
-
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    
+    UIImageView *exampleImageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"BassClef.pdf"]];
+    imageView.image = exampleImageView.image;
+    [exampleImageView release];
+    
+    [imageView useGrandStaffStyle];
+    
     [[UIDevice currentDevice]
-        beginGeneratingDeviceOrientationNotifications];
+     beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]   addObserver :self selector:
-        @selector(orientationChanged:)
+     @selector(orientationChanged:)
                                             name        :UIDeviceOrientationDidChangeNotification object:nil];
-
+    
     // create the mixer
     self.mixerHost = [[MixerHostAudio alloc] init];
-
+    
     // start the audio graph
     [mixerHost startAUGraph];
-}   /* viewDidLoad */
+} /* viewDidLoad */
 
 - (void)orientationChanged:(NSNotification *)notification
 {

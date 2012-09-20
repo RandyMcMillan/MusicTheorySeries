@@ -9,7 +9,7 @@
 #import "GradientToolBar.h"
 #import "Constants.h"
 #import "UIImage+PDF.h"
-
+#import "ExampleView.h"
 @interface MezzoSopranoClefViewController : UIViewController <
     UISplitViewControllerDelegate>{
     int     lastKeyIndex;

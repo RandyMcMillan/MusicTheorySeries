@@ -5,7 +5,6 @@
 #import "IonianViewController.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
-#import "ExampleView.h"
 @implementation IonianViewController
 
 @synthesize mixerHost;
