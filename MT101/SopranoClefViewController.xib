@@ -42,18 +42,14 @@
 					<object class="IBUIImageView" id="890073032">
 						<reference key="NSNextResponder" ref="483941265"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{20, -206}, {728, 1152}}</string>
+						<string key="NSFrame">{{143, 199}, {482, 369}}</string>
 						<reference key="NSSuperview" ref="483941265"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="108392767"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<int key="IBUIContentMode">1</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">TheGrandStaff.png</string>
-						</object>
 					</object>
 					<object class="IBUISlider" id="108392767">
 						<reference key="NSNextResponder" ref="483941265"/>
@@ -79,6 +75,7 @@
 								<string key="NSFrame">{{294, 5}, {180, 35}}</string>
 								<reference key="NSSuperview" ref="107099484"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="890073032"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -140,7 +137,7 @@
 				<string key="NSFrameSize">{768, 768}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="890073032"/>
+				<reference key="NSNextKeyView" ref="108392767"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -247,9 +244,9 @@
 						<int key="objectID">20</int>
 						<reference key="object" ref="483941265"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="890073032"/>
 							<reference ref="108392767"/>
 							<reference ref="107099484"/>
+							<reference ref="890073032"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -397,10 +394,6 @@
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">TheGrandStaff.png</string>
-			<string key="NS.object.0">{1406, 1536}</string>
-		</object>
 		<string key="IBCocoaTouchPluginVersion">1926</string>
 	</data>
 </archive>

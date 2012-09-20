@@ -42,7 +42,7 @@
 					<object class="IBUIImageView" id="1046598920">
 						<reference key="NSNextResponder" ref="1001409321"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{20, -206}, {728, 1152}}</string>
+						<string key="NSFrame">{{163, 165}, {442, 437}}</string>
 						<reference key="NSSuperview" ref="1001409321"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="827995904"/>
@@ -50,10 +50,6 @@
 						<int key="IBUIContentMode">1</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">TheGrandStaff.png</string>
-						</object>
 					</object>
 					<object class="IBUISlider" id="827995904">
 						<reference key="NSNextResponder" ref="1001409321"/>
@@ -79,6 +75,7 @@
 								<string key="NSFrame">{{294, 5}, {180, 35}}</string>
 								<reference key="NSSuperview" ref="572014058"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -247,9 +244,9 @@
 						<int key="objectID">19</int>
 						<reference key="object" ref="1001409321"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="1046598920"/>
 							<reference ref="827995904"/>
 							<reference ref="572014058"/>
+							<reference ref="1046598920"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -397,10 +394,6 @@
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">TheGrandStaff.png</string>
-			<string key="NS.object.0">{1406, 1536}</string>
-		</object>
 		<string key="IBCocoaTouchPluginVersion">1926</string>
 	</data>
 </archive>
