@@ -478,22 +478,22 @@
     [super viewDidLoad];
     [closeButton useDoneButtonStyle];
     [mixerHost stopAUGraph];
-    
+
     UIImageView *exampleImageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"BassClef.pdf"]];
     imageView.image = exampleImageView.image;
     [exampleImageView release];
-    
+
     [imageView useGrandStaffStyle];
-    
+
     [[UIDevice currentDevice]
-     beginGeneratingDeviceOrientationNotifications];
+        beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]   addObserver :self selector:
-     @selector(orientationChanged:)
+        @selector(orientationChanged:)
                                             name        :UIDeviceOrientationDidChangeNotification object:nil];
-    
+
     // create the mixer
     self.mixerHost = [[MixerHostAudio alloc] init];
-    
+
     // start the audio graph
     [mixerHost startAUGraph];
 } /* viewDidLoad */

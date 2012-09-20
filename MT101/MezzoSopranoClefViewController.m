@@ -481,12 +481,11 @@
     [closeButton useDoneButtonStyle];
 
     [mixerHost stopAUGraph];
-    imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth |
-        UIViewAutoresizingFlexibleHeight);
+        UIImageView *exampleImageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"MezzoSopranoClef.pdf"]];
+        imageView.image = exampleImageView.image;
+        [exampleImageView release];
 
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [[UIDevice currentDevice]
-        beginGeneratingDeviceOrientationNotifications];
+        [imageView useGrandStaffStyle];
     [[NSNotificationCenter defaultCenter]   addObserver :self selector:
         @selector(orientationChanged:)
                                             name        :UIDeviceOrientationDidChangeNotification object:nil];

@@ -484,7 +484,7 @@
     UIImageView *exampleImageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"BariToneClef.pdf"]];
     imageView.image = exampleImageView.image;
     [exampleImageView release];
-    
+
     [imageView useGrandStaffStyle];
     [[UIDevice currentDevice]
         beginGeneratingDeviceOrientationNotifications];

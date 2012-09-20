@@ -481,10 +481,13 @@
     [closeButton useDoneButtonStyle];
 
     [mixerHost stopAUGraph];
-    imageView.autoresizingMask = (UIViewAutoresizingFlexibleWidth |
-        UIViewAutoresizingFlexibleHeight);
-
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
+   
+    
+    UIImageView *exampleImageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"AltoClef.pdf"]];
+    imageView.image = exampleImageView.image;
+    [exampleImageView release];
+    [imageView useGrandStaffStyle];
+    
     [[UIDevice currentDevice]
         beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]   addObserver :self selector:
