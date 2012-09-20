@@ -9,13 +9,14 @@
 #import "GradientToolBar.h"
 #import "Constants.h"
 #import "UIImage+PDF.h"
+#import "ExampleView.h"
 
 @interface TrebleClefViewController : UIViewController <
     UISplitViewControllerDelegate>{
     int     lastKeyIndex;
     CGRect  keyRects[KEY_COUNT];
 
-    IBOutlet UIImageView        *imageView;
+    IBOutlet ExampleView        *imageView;
     IBOutlet GradientToolBar    *toolBar;
     IBOutlet GradientButton     *closeButton;
 
