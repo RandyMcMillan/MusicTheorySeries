@@ -481,7 +481,7 @@
     [closeButton useDoneButtonStyle];
     [mixerHost stopAUGraph];
 
-    UIImageView *exampleImageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"SolfegeNaturals.pdf"]];
+    UIImageView *exampleImageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"SolfegeFlats.pdf"]];
     imageView.image = exampleImageView.image;
     [exampleImageView release];
 

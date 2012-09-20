@@ -63,6 +63,11 @@
 		4825A36815C4DBC3006F0C46 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */; };
 		4825A36A15C4DBCF006F0C46 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36915C4DBCF006F0C46 /* AVFoundation.framework */; };
 		483F4C771606F41C00BB6744 /* SolfegeNaturals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 483F4C761606F41C00BB6744 /* SolfegeNaturals.pdf */; };
+		4849AD0C160AE1DB002B5E40 /* SolfegeFlats.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD0B160AE1DB002B5E40 /* SolfegeFlats.pdf */; };
+		4849AD0F160AE1E7002B5E40 /* SolfegeSharps.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD0E160AE1E7002B5E40 /* SolfegeSharps.pdf */; };
+		4849AD13160AE2E7002B5E40 /* Solfege Flats.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD10160AE2E7002B5E40 /* Solfege Flats.mp4 */; };
+		4849AD14160AE2E7002B5E40 /* Solfege Naturals.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD11160AE2E7002B5E40 /* Solfege Naturals.mp4 */; };
+		4849AD15160AE2E7002B5E40 /* Solfege Sharps.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD12160AE2E7002B5E40 /* Solfege Sharps.mp4 */; };
 		484B93B215EF003D0021F939 /* error.html in Resources */ = {isa = PBXBuildFile; fileRef = 484B93B115EF003D0021F939 /* error.html */; };
 		484B93B515EF01810021F939 /* iScrollPlugin_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 484B93B415EF01810021F939 /* iScrollPlugin_JS.m */; };
 		484D16E515DAE485005FC66E /* SectionHeaders.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484D16E415DAE485005FC66E /* SectionHeaders.plist */; };
@@ -271,6 +276,11 @@
 		4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4825A36915C4DBCF006F0C46 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		483F4C761606F41C00BB6744 /* SolfegeNaturals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeNaturals.pdf; sourceTree = "<group>"; };
+		4849AD0B160AE1DB002B5E40 /* SolfegeFlats.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeFlats.pdf; sourceTree = "<group>"; };
+		4849AD0E160AE1E7002B5E40 /* SolfegeSharps.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeSharps.pdf; sourceTree = "<group>"; };
+		4849AD10160AE2E7002B5E40 /* Solfege Flats.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solfege Flats.mp4"; sourceTree = "<group>"; };
+		4849AD11160AE2E7002B5E40 /* Solfege Naturals.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solfege Naturals.mp4"; sourceTree = "<group>"; };
+		4849AD12160AE2E7002B5E40 /* Solfege Sharps.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solfege Sharps.mp4"; sourceTree = "<group>"; };
 		484B93B115EF003D0021F939 /* error.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = error.html; sourceTree = "<group>"; };
 		484B93B315EF01810021F939 /* iScrollPlugin_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iScrollPlugin_JS.h; sourceTree = "<group>"; };
 		484B93B415EF01810021F939 /* iScrollPlugin_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iScrollPlugin_JS.m; sourceTree = "<group>"; };
@@ -495,6 +505,9 @@
 		480A794015DD6060005E9C43 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				4849AD10160AE2E7002B5E40 /* Solfege Flats.mp4 */,
+				4849AD11160AE2E7002B5E40 /* Solfege Naturals.mp4 */,
+				4849AD12160AE2E7002B5E40 /* Solfege Sharps.mp4 */,
 				480A794115DD6060005E9C43 /* Aeolian.mp4 */,
 				480A794215DD6060005E9C43 /* Alto Clef.mp4 */,
 				480A794315DD6060005E9C43 /* BariTone Clef.mp4 */,
@@ -601,6 +614,8 @@
 				48584A6316045DE10020DB00 /* Phrygian.pdf */,
 				48584A6416045DE10020DB00 /* SopranoClef.pdf */,
 				483F4C761606F41C00BB6744 /* SolfegeNaturals.pdf */,
+				4849AD0E160AE1E7002B5E40 /* SolfegeSharps.pdf */,
+				4849AD0B160AE1DB002B5E40 /* SolfegeFlats.pdf */,
 				48584A6516045DE10020DB00 /* SubBassClef.pdf */,
 				48584A6616045DE10020DB00 /* TenorClef.pdf */,
 				48584A6716045DE10020DB00 /* TheGrandStaff.pdf */,
@@ -1085,6 +1100,11 @@
 				48C848F51605412C00200BEE /* AeolianViewController.xib in Resources */,
 				483F4C771606F41C00BB6744 /* SolfegeNaturals.pdf in Resources */,
 				48C2E762160A86CD009BD8FE /* TrebleClefViewController.xib in Resources */,
+				4849AD0C160AE1DB002B5E40 /* SolfegeFlats.pdf in Resources */,
+				4849AD0F160AE1E7002B5E40 /* SolfegeSharps.pdf in Resources */,
+				4849AD13160AE2E7002B5E40 /* Solfege Flats.mp4 in Resources */,
+				4849AD14160AE2E7002B5E40 /* Solfege Naturals.mp4 in Resources */,
+				4849AD15160AE2E7002B5E40 /* Solfege Sharps.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
