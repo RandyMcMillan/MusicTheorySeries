@@ -7,6 +7,9 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 
+
+#define IS_IPAD	(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -17,9 +20,16 @@
 {
     self.window =
         [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [application setStatusBarHidden:YES];
 
     // Override point for customization after application launch.
 
+   
+    
+    
+    if (IS_IPAD) {
+
+    
     MasterViewController *masterViewController =
         [[MasterViewController alloc]   initWithNibName :
         @"MasterViewController"
@@ -43,7 +53,28 @@
     self.splitViewController.viewControllers    =
         @[masterNavigationController, detailNavigationController];
     self.window.rootViewController = self.splitViewController;
+    }
+    
+    else {
+   
+        
+        MasterViewController *masterViewController =
+        [[MasterViewController alloc]   initWithNibName :
+         @"MasterViewController"
+                                        bundle          :nil];
+        UINavigationController *masterNavigationController =
+        [[UINavigationController alloc] initWithRootViewController:
+         masterViewController];
+
+        self.window.rootViewController = masterNavigationController;
+ 
+    
+    }
+    
+    
     [self.window makeKeyAndVisible];
+        
+        
     return YES;
 } /* application */
 

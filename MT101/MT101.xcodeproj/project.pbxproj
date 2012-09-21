@@ -1017,9 +1017,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B225A7251534CF59006FD46F /* MT101112358 */ = {
+		B225A7251534CF59006FD46F /* MT101 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B225A74A1534CF59006FD46F /* Build configuration list for PBXNativeTarget "MT101112358" */;
+			buildConfigurationList = B225A74A1534CF59006FD46F /* Build configuration list for PBXNativeTarget "MT101" */;
 			buildPhases = (
 				B225A7221534CF59006FD46F /* Sources */,
 				B225A7231534CF59006FD46F /* Frameworks */,
@@ -1030,7 +1030,7 @@
 			);
 			dependencies = (
 			);
-			name = MT101112358;
+			name = MT101;
 			productName = MT101;
 			productReference = B225A7261534CF59006FD46F /* MT101112358.app */;
 			productType = "com.apple.product-type.application";
@@ -1055,7 +1055,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B225A7251534CF59006FD46F /* MT101112358 */,
+				B225A7251534CF59006FD46F /* MT101 */,
 			);
 		};
 /* End PBXProject section */
@@ -1404,7 +1404,7 @@
 				INFOPLIST_FILE = "MT101/MT101-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1417,7 +1417,7 @@
 				INFOPLIST_FILE = "MT101/MT101-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1434,7 +1434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B225A74A1534CF59006FD46F /* Build configuration list for PBXNativeTarget "MT101112358" */ = {
+		B225A74A1534CF59006FD46F /* Build configuration list for PBXNativeTarget "MT101" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B225A74B1534CF59006FD46F /* Debug */,
