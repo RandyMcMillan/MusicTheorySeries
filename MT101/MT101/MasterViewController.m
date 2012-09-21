@@ -693,6 +693,14 @@
     self.detailViewController.detailDescriptionLabel.text   = nil;
     self.detailViewController.musicTheory101Label.text      = nil;
     self.detailViewController.vLabel.text = nil;
+    
+    //        self.window.rootViewController = masterNavigationController;
+
+#define IS_IPAD	(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    if  (IS_IPAD){}else{
+    [self.navigationController pushViewController:self.detailViewController animated:YES];
+    }
+    
 } /* tableView */
 
 @end

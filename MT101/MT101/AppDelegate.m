@@ -7,8 +7,7 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 
-
-#define IS_IPAD	(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 @implementation AppDelegate
 
@@ -24,12 +23,6 @@
 
     // Override point for customization after application launch.
 
-   
-    
-    
-    if (IS_IPAD) {
-
-    
     MasterViewController *masterViewController =
         [[MasterViewController alloc]   initWithNibName :
         @"MasterViewController"
@@ -48,33 +41,21 @@
 
     masterViewController.detailViewController = detailViewController;
 
-    self.splitViewController                    = [[UISplitViewController alloc] init];
-    self.splitViewController.delegate           = detailViewController;
-    self.splitViewController.viewControllers    =
-        @[masterNavigationController, detailNavigationController];
-    self.window.rootViewController = self.splitViewController;
-    }
-    
-    else {
-   
+    if (IS_IPAD) {
         
-        MasterViewController *masterViewController =
-        [[MasterViewController alloc]   initWithNibName :
-         @"MasterViewController"
-                                        bundle          :nil];
-        UINavigationController *masterNavigationController =
-        [[UINavigationController alloc] initWithRootViewController:
-         masterViewController];
-
+        self.splitViewController                    = [[UISplitViewController alloc] init];
+        self.splitViewController.delegate           = detailViewController;
+        self.splitViewController.viewControllers    = @[masterNavigationController, detailNavigationController];
+        self.window.rootViewController              = self.splitViewController;
+    
+        } else {
+        
         self.window.rootViewController = masterNavigationController;
- 
-    
-    }
-    
-    
+        
+        }
+
     [self.window makeKeyAndVisible];
-        
-        
+
     return YES;
 } /* application */
 
