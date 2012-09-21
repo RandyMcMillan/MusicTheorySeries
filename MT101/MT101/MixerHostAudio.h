@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 #define FILE_COUNT  36
-#define BUS_COUNT   18  //Reduce this to low number to see how available busses affects playing multiple notes simultaneously.
+#define BUS_COUNT   36  //Reduce this to low number to see how available busses affects playing multiple notes simultaneously.
 
 // Data structure that defines a single audio file, related to a given tone
 typedef struct {
