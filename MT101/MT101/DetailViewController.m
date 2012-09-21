@@ -37,7 +37,7 @@
 #import "SolfegeSharpsViewController.h"
 #import "SolfegeFlatsViewController.h"
 
-#import "WebViewController.h"
+#import "WikiViewController.h"
 
 #import "ColorUIButton.h"
 #import "GradientButton.h"
@@ -329,7 +329,7 @@
 {
     NSLog(@"displayWiki = %@", wikiToDisplay);
 
-    WebViewController *wikiVC = [[WebViewController alloc] init];
+    WikiViewController *wikiVC = [[WikiViewController alloc] init];
     // wikiVC.modalPresentationStyle = UIModalPresentationPageSheet;
     wikiVC.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentModalViewController:wikiVC animated:YES];

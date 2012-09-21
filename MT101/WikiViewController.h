@@ -13,7 +13,7 @@
 @protocol WebViewDelegate <NSObject>
 @end
 
-@interface WebViewController : UIViewController <UIWebViewDelegate, UIGestureRecognizerDelegate>{
+@interface WikiViewController : UIViewController <UIWebViewDelegate, UIGestureRecognizerDelegate>{
     IBOutlet UIWebView *webView;
 
     IBOutlet GradientToolBar    *toolBar;
@@ -60,6 +60,6 @@
 @property (nonatomic, retain) id <UIGestureRecognizerDelegate>  uigr;
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation;
-- (WebViewController *)initWithScale:(BOOL)enabled;
+- (WikiViewController *)initWithScale:(BOOL)enabled;
 
 @end

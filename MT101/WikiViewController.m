@@ -5,7 +5,7 @@
 //
 //
 
-#import "WebViewController.h"
+#import "WikiViewController.h"
 #import "Constants.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
@@ -14,7 +14,7 @@
 
 #import "iScrollPlugin_JS.h"
 
-@implementation WebViewController
+@implementation WikiViewController
 
 @synthesize webView;
 @synthesize imageURL;
@@ -43,7 +43,7 @@
 /*
  *   If you need to do additional setup after loading the view, override viewDidLoad. */
 
-- (WebViewController *)initWithScale:(BOOL)enabled
+- (WikiViewController *)initWithScale:(BOOL)enabled
 {
     self            = [super init];
     scaleEnabled    = enabled;
