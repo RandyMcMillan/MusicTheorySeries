@@ -411,6 +411,8 @@
         
     }
    
+    if (IS_IPAD) {
+        
     
     [videoButton useDoneButtonStyle];
     [wikiButton useDoneButtonStyle];
@@ -418,7 +420,10 @@
     [emailButton useDoneButtonStyle];
     [emailButton useEmailStyle];
     [composeTweetButton useDoneButtonStyle];
-
+    
+    }
+    
+    
     ExampleView *welcomeIV = [[ExampleView alloc] initWithImage:
                               [UIImage originalSizeImageWithPDFNamed:@"welcome.pdf"]];
     
@@ -428,17 +433,33 @@
     [imageView useWelcomeStyle];///bypass here for imageView issues on welcom screen iPhone
 
     self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+   
+#if TARGET_IPHONE_SIMULATOR
+    //self.musicTheory101Label.backgroundColor = [UIColor redColor];
+    // self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
+    //self.vLabel.backgroundColor = [UIColor yellowColor];
+#endif
     
+    if (IS_IPAD){
+   
+        //ipad landscape welcome screen formatting
+        self.musicTheory101Label.hidden = FALSE;
+        self.musicTheory101Label.frame = CGRectMake(self.view.frame.size.width/3.9, 530, 350, 50);
+        self.interActiveButton.hidden = FALSE;
+        self.vLabel.frame = CGRectMake(self.view.frame.size.width/1.44,578.0, 40, 27);
+        self.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width/1.38,577, 30, 30);
+        self.interActiveButton.frame = CGRectMake(0, 0,0,0);
+
     
-    if (IS_IPAD){} else {
+        } else {
         
         //iphone landscape welcome screen formatting
         self.musicTheory101Label.text = @"MT101";
         self.musicTheory101Label.hidden = FALSE;
-        self.musicTheory101Label.frame = CGRectMake(self.view.frame.size.width/3.2, 145, 300, 200);
+        self.musicTheory101Label.frame = CGRectMake(self.view.frame.size.width/2.3, 219, 100, 50);
         self.interActiveButton.hidden = TRUE;
-        self.vLabel.frame = CGRectMake(self.view.frame.size.width/2.09, 158, 300, 200);
-        self.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width/1.93, 164, 300, 200);
+        self.vLabel.frame = CGRectMake(self.view.frame.size.width/1.65,254, 7, 7);
+        self.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width/1.60,254, 20, 20);
         self.interActiveButton.frame = CGRectMake(0, 0,0,0);
         
     }

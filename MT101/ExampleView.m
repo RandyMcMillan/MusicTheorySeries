@@ -110,14 +110,14 @@
 
             //  [self setBounds:VIEWBOUNDS];
             [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT+170, WELCOMEWIDTH+170)];
-            [self setCenter:CGPointMake(rect.size.width / 2.6, rect.size.height / 2.0)];
+            [self setCenter:CGPointMake(rect.size.width / 2.0, rect.size.height / 2.0)];
             //  [self setCenter:CGPointMake(0,0)];
             
         } else {
            
             //[self setBounds:VIEWBOUNDS];
             [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT+170, WELCOMEWIDTH+170)];
-            [self setCenter:CGPointMake(rect.size.width / 2.6, rect.size.height / 2.0)];
+            [self setCenter:CGPointMake(rect.size.width / 2.0, rect.size.height / 2.1)];
             //[self setCenter:CGPointMake(0,0)];
  
         }

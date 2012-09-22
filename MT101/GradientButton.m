@@ -86,7 +86,7 @@
 {
     NSMutableArray  *colors = [NSMutableArray arrayWithCapacity:3];
     UIColor         *color  = [UIColor clearColor]; // [UIColor
-
+self.titleLabel.text = @"DONE";
     // colorWithRed:0.864
     // green:0.864 blue:0.864
     // alpha:1.0];
@@ -119,8 +119,17 @@
     self.cornerRadius   = 5.0f;
     self.strokeColor    = [UIColor colorWithRed:0.620 green:0.647 blue:0.698 alpha:0.300]; // [UIColor lightGrayColor];
     self.strokeWeight   = 0.1f;
+
+    if (IS_IPAD) {
+    
     [self setTitleColor:[UIColor darkGrayColor] forState:
         UIControlStateNormal];
+        
+    } else {
+    
+        [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    }
+    
     [self setTitleColor:[UIColor darkGrayColor] forState:
         UIControlStateHighlighted];
 }   /* useDoneButtonStyle */
