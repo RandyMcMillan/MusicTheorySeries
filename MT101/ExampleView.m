@@ -87,7 +87,9 @@
     CGRect rect = self.superview.frame;
 
     self.alpha = 1.0;
-     [self setContentMode:(UIViewContentModeScaleAspectFit)];
+    [self setContentMode:(UIViewContentModeScaleAspectFit)];
+    [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
+
     if (IS_IPAD) {
         
         if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
@@ -171,17 +173,19 @@
     
     self.alpha = 1.0;
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
+    [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
+
     if (IS_IPAD) {
         
         if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
             
             [self setBounds:CGRectMake(0, 0, CIRCLEHEIGHT, CIRCLEWIDTH)];
-            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.16)];
             
         } else {
             
             [self setBounds:CGRectMake(0, 0, CIRCLEHEIGHT, CIRCLEWIDTH)];
-            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.16)];
             
         }
         
