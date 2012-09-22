@@ -104,7 +104,7 @@
 
     self.alpha = 1.0;
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
-    [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
+    // [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
 
     
     if (IS_IPAD) {
@@ -117,9 +117,9 @@
     } else {//not ipad
    
         if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
-            [self setBounds:CGRectMake(0, -40, GRANDSTAFFEXAMPLEHEIGHT-350, GRANDSTAFFEXAMPLEWIDTH-400)]; // /not being used but in here as a que to support retina
+            [self setBounds:CGRectMake(0, -40, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)]; // /not being used but in here as a que to support retina
         } else {
-            [self setBounds:CGRectMake(0, -80, GRANDSTAFFEXAMPLEHEIGHT-850, GRANDSTAFFEXAMPLEWIDTH-500)];
+            [self setBounds:CGRectMake(0, -80, GRANDSTAFFEXAMPLEHEIGHT*0.48, GRANDSTAFFEXAMPLEWIDTH*0.48)];
         }
     
     }

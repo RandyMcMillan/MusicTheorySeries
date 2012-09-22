@@ -607,18 +607,19 @@
     }
 
     if (toInterfaceOrientation == UIInterfaceOrientationPortrait) {
-        return YES;
+        return NO;
     }
 
     if (toInterfaceOrientation ==
         UIInterfaceOrientationPortraitUpsideDown) {
-        return YES;
+        return NO;
     } else {return NO; }
 } /* shouldAutorotateToInterfaceOrientation */
 
 - (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
    currentInterfaceOrientation
 {
+    [self drawRects];
     NSLog(@"did auto rotate");
     return YES;
 }

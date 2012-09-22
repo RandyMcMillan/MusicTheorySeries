@@ -18,6 +18,8 @@
   #define IS_IPAD                   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #endif
 
+#define ORIENTATION = [[UIDevice currentDevice] orientation]
+
 #define BIGBOXWIDTH                 90
 #define BIGBOXHEIGHT                90
 #define SMALLBOXWIDTH               50
@@ -31,6 +33,7 @@
 
 #define CIRCLEWIDTH                 725
 #define CIRCLEHEIGHT                725
+
 
 #ifndef kXOrientationAdjustiPad
   #define kXOrientationAdjustiPad   0
