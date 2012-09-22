@@ -21,7 +21,8 @@
         [[self presentingViewController]    dismissViewControllerAnimated   :
             YES                             completion                      :nil];
     } else {
-        [[self parentViewController] dismissModalViewControllerAnimated: YES];
+        [[self parentViewController] dismissModalViewControllerAnimated
+            :YES];
     }
 
     [mixerHost stopAUGraph];

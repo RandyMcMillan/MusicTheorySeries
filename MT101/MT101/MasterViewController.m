@@ -409,24 +409,24 @@
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
-toInterfaceOrientation
+   toInterfaceOrientation
 {
     // Return YES for supported orientations
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
         return YES;
     }
-    
+
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
         return YES;
     }
-    
+
     if (toInterfaceOrientation == UIInterfaceOrientationPortrait) {
-        return NO;
+        return NO; // YES;
     }
-    
+
     if (toInterfaceOrientation ==
         UIInterfaceOrientationPortraitUpsideDown) {
-        return NO;
+        return NO; // YES;
     } else {return NO; }
 } /* shouldAutorotateToInterfaceOrientation */
 
