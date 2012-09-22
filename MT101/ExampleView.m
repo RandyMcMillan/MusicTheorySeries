@@ -108,13 +108,13 @@
         
         if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
             
-            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH-260)];
-            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 5.0)];
+            // [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH-260)];
+            //[self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 5.0)];
             
         } else {
             
-            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH-260)];
-            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 5.0)];
+            //[self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH-260)];
+            //[self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 5.0)];
             
         }
         

@@ -306,12 +306,16 @@
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIImageView" id="204503168">
 						<reference key="NSNextResponder" ref="647120888"/>
-						<int key="NSvFlags">293</int>
-						<string key="NSFrame">{{111, 137}, {367, 263}}</string>
+						<int key="NSvFlags">301</int>
+						<string key="NSFrame">{{95.5, 128.5}, {512, 512}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="619180556"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<object class="NSColor" key="IBUIBackgroundColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC45OTYxMDg5NDkyIDAuODczMTY2NTYxMSAwAA</bytes>
+						</object>
 						<bool key="IBUIAutoresizesSubviews">NO</bool>
 						<int key="IBUIContentMode">4</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -2113,107 +2117,6 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/TrebleClefViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">WebViewController</string>
-					<string key="superclassName">UIViewController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="onDoneButtonPress:">id</string>
-						<string key="onSafariButtonPress:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="onDoneButtonPress:">
-							<string key="name">onDoneButtonPress:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="onSafariButtonPress:">
-							<string key="name">onSafariButtonPress:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="addressLabel">UILabel</string>
-						<string key="backBarButtonItem">UIBarButtonItem</string>
-						<string key="backButton">GradientButton</string>
-						<string key="doneBarButtonItem">UIBarButtonItem</string>
-						<string key="doneButton">GradientButton</string>
-						<string key="forwardButton">GradientButton</string>
-						<string key="fwdBarButtonItem">UIBarButtonItem</string>
-						<string key="navBar">GradientToolBar</string>
-						<string key="refreshBarButtonItem">UIBarButtonItem</string>
-						<string key="refreshButton">GradientButton</string>
-						<string key="safariBarButtonItem">UIBarButtonItem</string>
-						<string key="safariButton">GradientButton</string>
-						<string key="spinner">UIActivityIndicatorView</string>
-						<string key="toolBar">GradientToolBar</string>
-						<string key="webView">UIWebView</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="addressLabel">
-							<string key="name">addressLabel</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="backBarButtonItem">
-							<string key="name">backBarButtonItem</string>
-							<string key="candidateClassName">UIBarButtonItem</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="backButton">
-							<string key="name">backButton</string>
-							<string key="candidateClassName">GradientButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="doneBarButtonItem">
-							<string key="name">doneBarButtonItem</string>
-							<string key="candidateClassName">UIBarButtonItem</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="doneButton">
-							<string key="name">doneButton</string>
-							<string key="candidateClassName">GradientButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="forwardButton">
-							<string key="name">forwardButton</string>
-							<string key="candidateClassName">GradientButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="fwdBarButtonItem">
-							<string key="name">fwdBarButtonItem</string>
-							<string key="candidateClassName">UIBarButtonItem</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="navBar">
-							<string key="name">navBar</string>
-							<string key="candidateClassName">GradientToolBar</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="refreshBarButtonItem">
-							<string key="name">refreshBarButtonItem</string>
-							<string key="candidateClassName">UIBarButtonItem</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="refreshButton">
-							<string key="name">refreshButton</string>
-							<string key="candidateClassName">GradientButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="safariBarButtonItem">
-							<string key="name">safariBarButtonItem</string>
-							<string key="candidateClassName">UIBarButtonItem</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="safariButton">
-							<string key="name">safariButton</string>
-							<string key="candidateClassName">GradientButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="spinner">
-							<string key="name">spinner</string>
-							<string key="candidateClassName">UIActivityIndicatorView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="toolBar">
-							<string key="name">toolBar</string>
-							<string key="candidateClassName">GradientToolBar</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="webView">
-							<string key="name">webView</string>
-							<string key="candidateClassName">UIWebView</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/WebViewController.h</string>
 					</object>
 				</object>
 			</array>

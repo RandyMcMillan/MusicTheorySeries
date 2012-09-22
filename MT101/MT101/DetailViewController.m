@@ -404,18 +404,14 @@
 
 - (void)configureView
 {
-    // [self isTwitterAvailable];
-    // [self isTwitterSetup];
-
-
 
     // Update the user interface for the detail item.
     if (self.detailItem) {
         // MovieToPlay = @"GreenBeam";
+        
     }
    
     
-    [imageView useWelcomeStyle];
     [videoButton useDoneButtonStyle];
     [wikiButton useDoneButtonStyle];
     [interActiveButton useDoneButtonStyle];
@@ -423,10 +419,14 @@
     [emailButton useEmailStyle];
     [composeTweetButton useDoneButtonStyle];
 
-    UIImageView *welcomeIV = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"welcome.pdf"]];
+    ExampleView *welcomeIV = [[ExampleView alloc] initWithImage:
+                              [UIImage originalSizeImageWithPDFNamed:@"welcome.pdf"]];
+    
     self.imageView.image = welcomeIV.image;
-    [self.imageView useWelcomeStyle];
     [welcomeIV release];
+   
+    [imageView useWelcomeStyle];///bypass here for imageView issues on welcom screen iPhone
+
     self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
     
     
