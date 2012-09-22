@@ -420,8 +420,12 @@
     [emailButton useDoneButtonStyle];
     [emailButton useEmailStyle];
     [composeTweetButton useDoneButtonStyle];
-    
-    }
+        //useDoneButtonIPad
+        //useEmailButtonIPad etc...
+        //All styles start with "Basic Style" then augment the style with the secondary styling
+        //each style calls basic style first then continues with extra styling in its individual methods
+        
+    }else{}//build for iPhone
     
     
     ExampleView *welcomeIV = [[ExampleView alloc] initWithImage:
