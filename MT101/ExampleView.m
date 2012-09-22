@@ -89,17 +89,42 @@
     self.alpha = 1.0;
      [self setContentMode:(UIViewContentModeScaleAspectFit)];
     if (IS_IPAD) {
-    
-        [self setContentMode:(UIViewContentModeScaleAspectFit)];
-        [self setBounds:CGRectMake(rect.size.width / 2, rect.size.height / 2, WELCOMEHEIGHT, WELCOMEWIDTH)];
-    
-    }else{}
-    
-    [self setCenter:CGPointMake(rect.size.width / 2.0, rect.size.height / 2.2)];
+        
+        if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
+            
+            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+            
+        } else {
+            
+            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+            
+        }
+        
+    } else {//not ipad
+        
+        if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
+            
+            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH-260)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 5.0)];
+            
+        } else {
+            
+            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH-260)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 5.0)];
+            
+        }
+        
+    }
+
 }   /* useGrandStaffStyle */
 
 - (void)useGrandStaffStyle
 {
+    
+    
+    //NSLog(@"%f",[[UIScreen mainScreen] scale]);
     CGRect rect = self.superview.frame;
 
     self.alpha = 1.0;
@@ -109,35 +134,72 @@
     
     if (IS_IPAD) {
 
-    if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
-        [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)]; // /not being used but in here as a que to support retina
-    } else {
-        [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)];
-    }
+        if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
+        
+            [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+
+        } else {
+        
+            [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+
+        }
+    
     } else {//not ipad
    
         if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
-            [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)]; // /not being used but in here as a que to support retina
-        } else {
+            
             [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH-260)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+ 
+        } else {
+            
+            [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH-260)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+
         }
     
     }
     
-    [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.18)];
+    //    [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
 }   /* useGrandStaffStyle */
 
 - (void)useCircleStyle
 {
     CGRect rect = self.superview.frame;
-
+    
     self.alpha = 1.0;
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
-    [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
-    [self setBounds:CGRectMake(0, 0, CIRCLEHEIGHT, CIRCLEWIDTH)];
-    [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.18)];
-
-    // self.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+    if (IS_IPAD) {
+        
+        if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
+            
+            [self setBounds:CGRectMake(0, 0, CIRCLEHEIGHT, CIRCLEWIDTH)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+            
+        } else {
+            
+            [self setBounds:CGRectMake(0, 0, CIRCLEHEIGHT, CIRCLEWIDTH)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+            
+        }
+        
+    } else {//not ipad
+        
+        if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
+            
+            [self setBounds:CGRectMake(0, 0, CIRCLEHEIGHT, CIRCLEWIDTH-260)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 5.0)];
+            
+        } else {
+            
+            [self setBounds:CGRectMake(0, 0, CIRCLEHEIGHT, CIRCLEWIDTH-260)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 5.0)];
+            
+        }
+        
+    }
 }   /* useGrandStaffStyle */
 
 #pragma mark -
