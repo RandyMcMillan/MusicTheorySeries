@@ -708,13 +708,8 @@ toInterfaceOrientation
 
 #define IS_IPAD	(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
     if  (IS_IPAD){}else{
-      
-        
-        [self.detailViewController.imageView useWelcomeStyle];
- 
         
     [self.navigationController pushViewController:self.detailViewController animated:YES];
-    
     
     }
     

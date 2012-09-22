@@ -107,15 +107,19 @@
     } else {//not ipad
         
         if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
-            
-            // [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH-260)];
-            //[self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 5.0)];
+
+            //  [self setBounds:VIEWBOUNDS];
+            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT+170, WELCOMEWIDTH+170)];
+            [self setCenter:CGPointMake(rect.size.width / 2.6, rect.size.height / 2.0)];
+            //  [self setCenter:CGPointMake(0,0)];
             
         } else {
-            
-            //[self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH-260)];
-            //[self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 5.0)];
-            
+           
+            //[self setBounds:VIEWBOUNDS];
+            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT+170, WELCOMEWIDTH+170)];
+            [self setCenter:CGPointMake(rect.size.width / 2.6, rect.size.height / 2.0)];
+            //[self setCenter:CGPointMake(0,0)];
+ 
         }
         
     }
