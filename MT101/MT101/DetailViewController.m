@@ -406,18 +406,15 @@
     // [self isTwitterAvailable];
     // [self isTwitterSetup];
 
-    UIImageView *welcomeIV = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"welcome.pdf"]];
 
-    self.imageView.image = welcomeIV.image;
-    [welcomeIV release];
-
-    [imageView useWelcomeStyle];
 
     // Update the user interface for the detail item.
     if (self.detailItem) {
         // MovieToPlay = @"GreenBeam";
     }
-
+   
+    
+    [imageView useWelcomeStyle];
     [videoButton useDoneButtonStyle];
     [wikiButton useDoneButtonStyle];
     [interActiveButton useDoneButtonStyle];
@@ -425,11 +422,22 @@
     [emailButton useEmailStyle];
     [composeTweetButton useDoneButtonStyle];
 
-    NSString *appVersion =
-        [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)
-        kCFBundleVersionKey];
-    NSLog(@"appVersion = %@", appVersion);
-    self.detailDescriptionLabel.text = appVersion;
+    UIImageView *welcomeIV = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"welcome.pdf"]];
+    self.imageView.image = welcomeIV.image;
+    [self.imageView useWelcomeStyle];
+    [welcomeIV release];
+    self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+    
+    
+    if (IS_IPAD){} else {
+    
+        self.interActiveButton.hidden = TRUE;
+        self.interActiveButton.frame = CGRectMake(0, 0,0,0);
+        
+    }
+    
+    
+
 } /* configureView */
 
 #pragma mark - Open the mail interface
@@ -579,6 +587,7 @@
 {
     [super viewDidLoad];
     [self configureView];
+    
 } /* viewDidLoad */
 
 - (void)viewDidUnload

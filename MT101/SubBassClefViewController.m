@@ -5,6 +5,8 @@
 #import "SubBassClefViewController.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
+#import "Constants.h"
+
 @implementation SubBassClefViewController
 
 @synthesize mixerHost;

@@ -5,6 +5,8 @@
 #import "BariToneClefViewController.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
+#import "Constants.h"
+
 @implementation BariToneClefViewController
 
 @synthesize mixerHost;

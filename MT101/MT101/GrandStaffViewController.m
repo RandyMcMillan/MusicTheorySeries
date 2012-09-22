@@ -5,6 +5,8 @@
 #import "GrandStaffViewController.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
+#import "Constants.h"
+
 @implementation GrandStaffViewController
 
 @synthesize mixerHost;

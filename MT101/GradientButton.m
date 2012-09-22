@@ -2,6 +2,7 @@
 //
 
 #import "GradientButton.h"
+#import "Constants.h"
 
 @interface GradientButton ()
 @property (nonatomic, readonly) CGGradientRef   normalGradient;

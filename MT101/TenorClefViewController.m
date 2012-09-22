@@ -5,6 +5,8 @@
 #import "TenorClefViewController.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
+#import "Constants.h"
+
 @implementation TenorClefViewController
 
 @synthesize mixerHost;

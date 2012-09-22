@@ -5,6 +5,8 @@
 #import "SopranoClefViewController.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
+#import "Constants.h"
+
 @implementation SopranoClefViewController
 
 @synthesize mixerHost;

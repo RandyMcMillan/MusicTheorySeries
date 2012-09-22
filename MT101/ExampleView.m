@@ -87,8 +87,14 @@
     CGRect rect = self.superview.frame;
 
     self.alpha = 1.0;
-    [self setContentMode:(UIViewContentModeScaleAspectFit)];
-    [self setBounds:CGRectMake(rect.size.width / 2, rect.size.height / 2, WELCOMEHEIGHT, WELCOMEWIDTH)];
+     [self setContentMode:(UIViewContentModeScaleAspectFit)];
+    if (IS_IPAD) {
+    
+        [self setContentMode:(UIViewContentModeScaleAspectFit)];
+        [self setBounds:CGRectMake(rect.size.width / 2, rect.size.height / 2, WELCOMEHEIGHT, WELCOMEWIDTH)];
+    
+    }else{}
+    
     [self setCenter:CGPointMake(rect.size.width / 2.0, rect.size.height / 2.2)];
 }   /* useGrandStaffStyle */
 
@@ -100,12 +106,24 @@
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
     [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
 
+    
+    if (IS_IPAD) {
+
     if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
         [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)]; // /not being used but in here as a que to support retina
     } else {
         [self setBounds:CGRectMake(0, 0, GRANDSTAFFEXAMPLEHEIGHT, GRANDSTAFFEXAMPLEWIDTH)];
     }
-
+    } else {//not ipad
+   
+        if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
+            [self setBounds:CGRectMake(0, -40, GRANDSTAFFEXAMPLEHEIGHT-350, GRANDSTAFFEXAMPLEWIDTH-400)]; // /not being used but in here as a que to support retina
+        } else {
+            [self setBounds:CGRectMake(0, -80, GRANDSTAFFEXAMPLEHEIGHT-850, GRANDSTAFFEXAMPLEWIDTH-500)];
+        }
+    
+    }
+    
     [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.18)];
 }   /* useGrandStaffStyle */
 
