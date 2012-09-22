@@ -431,8 +431,14 @@
     
     
     if (IS_IPAD){} else {
-    
+        
+        //iphone landscape welcome screen formatting
+        self.musicTheory101Label.text = @"MT101";
+        self.musicTheory101Label.hidden = FALSE;
+        self.musicTheory101Label.frame = CGRectMake(self.view.frame.size.width/3.2, 145, 300, 200);
         self.interActiveButton.hidden = TRUE;
+        self.vLabel.frame = CGRectMake(self.view.frame.size.width/2.09, 158, 300, 200);
+        self.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width/1.93, 164, 300, 200);
         self.interActiveButton.frame = CGRectMake(0, 0,0,0);
         
     }
