@@ -9,6 +9,8 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "Constants.h"
+
 #define MAINLABEL_TAG   1
 #define SECONDLABEL_TAG 2
 #define PHOTO_TAG       3
@@ -308,6 +310,9 @@
         [UIImage imageNamed:[imageNameList5 objectAtIndex:6]],
         [UIImage imageNamed:[imageNameList5 objectAtIndex:7]],
         [UIImage imageNamed:[imageNameList5 objectAtIndex:8]],
+        [UIImage imageNamed:[imageNameList5 objectAtIndex:9]],
+        [UIImage imageNamed:[imageNameList5 objectAtIndex:10]],
+
         nil];
 
 #pragma mark - Interactive Lists
@@ -399,6 +404,10 @@
         @"",
         @"",
         nil];
+    
+
+    if (IS_IPAD) {} else { [self.navigationController pushViewController:self.detailViewController animated:YES]; }
+    
 } /* viewDidLoad */
 
 - (void)viewDidUnload
@@ -699,7 +708,14 @@ toInterfaceOrientation
 
 #define IS_IPAD	(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
     if  (IS_IPAD){}else{
+      
+        
+        [self.detailViewController.imageView useWelcomeStyle];
+ 
+        
     [self.navigationController pushViewController:self.detailViewController animated:YES];
+    
+    
     }
     
 } /* tableView */

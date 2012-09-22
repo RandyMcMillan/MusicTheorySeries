@@ -10,6 +10,7 @@
 #import "GradientButton.h"
 #import "GradientToolBar.h"
 #import "ExampleView.h"
+#import "Constants.h"
 
 #import "GrandStaffViewController.h"
 #import "AppleXylophoneViewController.h"
