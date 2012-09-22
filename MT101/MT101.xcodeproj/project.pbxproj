@@ -507,7 +507,7 @@
 		48FAB52315CB13670087DCFA /* CircleOfFifthsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CircleOfFifthsViewController.xib; path = MT101/CircleOfFifthsViewController.xib; sourceTree = "<group>"; };
 		48FAB52515CB13930087DCFA /* CircleOfFifthsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleOfFifthsViewController.h; path = MT101/CircleOfFifthsViewController.h; sourceTree = "<group>"; };
 		48FAB52615CB13930087DCFA /* CircleOfFifthsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleOfFifthsViewController.m; path = MT101/CircleOfFifthsViewController.m; sourceTree = "<group>"; };
-		B225A7261534CF59006FD46F /* MT101112358.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT101112358.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B225A7261534CF59006FD46F /* MT101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B225A72A1534CF59006FD46F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B225A72C1534CF59006FD46F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B225A72E1534CF59006FD46F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -960,7 +960,7 @@
 		B225A7271534CF59006FD46F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B225A7261534CF59006FD46F /* MT101112358.app */,
+				B225A7261534CF59006FD46F /* MT101.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1047,7 +1047,7 @@
 			);
 			name = MT101;
 			productName = MT101;
-			productReference = B225A7261534CF59006FD46F /* MT101112358.app */;
+			productReference = B225A7261534CF59006FD46F /* MT101.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1419,11 +1419,13 @@
 		B225A74B1534CF59006FD46F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MT101/MT101-Prefix.pch";
 				INFOPLIST_FILE = "MT101/MT101-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1432,11 +1434,15 @@
 		B225A74C1534CF59006FD46F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Randy McMillan";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MT101/MT101-Prefix.pch";
 				INFOPLIST_FILE = "MT101/MT101-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A3006B1F-03C6-437A-9FE6-85087B1BD162";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
