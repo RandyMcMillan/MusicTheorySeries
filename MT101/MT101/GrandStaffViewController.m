@@ -498,7 +498,8 @@
     self.mixerHost = [[MixerHostAudio alloc] init];
 
     // start the audio graph
-    [mixerHost startAUGraph];
+    [self.mixerHost startAUGraph];
+    
 } /* viewDidLoad */
 
 - (void)orientationChanged:(NSNotification *)notification
@@ -514,8 +515,8 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    [mixerHost stopAUGraph];
-    [mixerHost release];
+    [self.mixerHost stopAUGraph];
+    [self.mixerHost release];
     self.mixerHost = nil;
 
     // Release any retained subviews of the main view.
