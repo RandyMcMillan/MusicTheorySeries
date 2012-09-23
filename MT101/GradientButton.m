@@ -130,8 +130,8 @@ self.titleLabel.text = @"DONE";
         [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }
     
-    [self setTitleColor:[UIColor darkGrayColor] forState:
-        UIControlStateHighlighted];
+    // [self setTitleColor:[UIColor darkGrayColor] forState:
+    //  UIControlStateHighlighted];
 }   /* useDoneButtonStyle */
 
 - (void)useSafariStyle

@@ -453,9 +453,7 @@
         self.interActiveButton.hidden = FALSE;
         self.vLabel.frame = CGRectMake(self.view.frame.size.width/1.44,578.0, 40, 27);
         self.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width/1.38,577, 30, 30);
-        self.interActiveButton.frame = CGRectMake(0, 0,0,0);
 
-    
         } else {
         
         //iphone landscape welcome screen formatting
