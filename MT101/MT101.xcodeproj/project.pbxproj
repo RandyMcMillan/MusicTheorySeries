@@ -50,6 +50,7 @@
 		481A432715F0FFF8006EDF46 /* NavBarBackgroundGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A432415F0FFF7006EDF46 /* NavBarBackgroundGradientView.m */; };
 		481A432815F0FFF8006EDF46 /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A432615F0FFF7006EDF46 /* GradientButton.m */; };
 		481A432A15F101C5006EDF46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481A432915F101C5006EDF46 /* QuartzCore.framework */; };
+		481C3B58161074390010028D /* SVWebViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 481C3B57161074390010028D /* SVWebViewController.bundle */; };
 		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
 		4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */; };
 		4825559915DD7A3000737C61 /* SolfegeNaturalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */; };
@@ -262,6 +263,7 @@
 		481A432515F0FFF7006EDF46 /* GradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientButton.h; path = ../GradientButton.h; sourceTree = "<group>"; };
 		481A432615F0FFF7006EDF46 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientButton.m; path = ../GradientButton.m; sourceTree = "<group>"; };
 		481A432915F101C5006EDF46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		481C3B57161074390010028D /* SVWebViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVWebViewController.bundle; sourceTree = "<group>"; };
 		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
 		4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppleXylophoneViewController.xib; sourceTree = "<group>"; };
 		4825559615DD7A3000737C61 /* SolfegeNaturalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeNaturalsViewController.h; sourceTree = "<group>"; };
@@ -717,6 +719,7 @@
 		48A3561815E221AE00A3529D /* WikiView */ = {
 			isa = PBXGroup;
 			children = (
+				481C3B57161074390010028D /* SVWebViewController.bundle */,
 				484B93B315EF01810021F939 /* iScrollPlugin_JS.h */,
 				4835F29E160CCAF100DA9B13 /* WikiView.bundle */,
 				4835F29F160CCAF100DA9B13 /* WikiView.xib */,
@@ -1121,6 +1124,7 @@
 				48F228DE160D34A3005B1D1E /* Default.png in Resources */,
 				48F228E0160D34C4005B1D1E /* Default-568h@2x.png in Resources */,
 				48F228E2160D354E005B1D1E /* icon.png in Resources */,
+				481C3B58161074390010028D /* SVWebViewController.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

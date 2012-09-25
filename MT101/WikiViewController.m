@@ -147,9 +147,7 @@
     [twoFingerSwipeLeft release];
     [twoFingerSwipeRight release];
 
-    for (UIGestureRecognizer *recognizer in webView.gestureRecognizers) {
-        recognizer.delegate = self;
-    }
+    for (UIGestureRecognizer *recognizer in webView.gestureRecognizers) { recognizer.delegate = self; }
 }   /* viewDidLoad */
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -478,6 +476,19 @@
     refreshButton.enabled   = FALSE;
     safariButton.enabled    = FALSE;
 }   /* webView */
+
+///When UIWebView bounces this disables the subtle gradient
+- (void) hideGradientBackground:(UIView*)theView
+{
+    for (UIView * subview in theView.subviews)
+    {
+        if ([subview isKindOfClass:[UIImageView class]])
+            subview.hidden = YES;
+        
+        [self hideGradientBackground:subview];
+    }
+}
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
    toInterfaceOrientation

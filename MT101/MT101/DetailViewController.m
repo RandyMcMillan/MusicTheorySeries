@@ -90,6 +90,8 @@
             UIModalPresentationPageSheet;
 
         [self presentModalViewController:theGrandStaffVC animated:YES];
+        //[self.navigationController pushViewController:theGrandStaffVC animated:YES];
+
         [theGrandStaffVC  release];
     }
 
