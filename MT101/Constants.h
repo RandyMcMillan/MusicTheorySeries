@@ -6,6 +6,7 @@
 
 
 #define E2 CGRectMake([self view].center.x-242,[self view].center.y+54,NOTEWIDTH,NOTEHEIGHT)
+
 #define kLeftMargin                 20.0
 #define kTopMargin                  20.0
 #define kRightMargin                20.0
