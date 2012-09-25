@@ -3,9 +3,9 @@
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 //
-
+// -44   -14 slopex
 #define E2                          CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
-#define F2                          CGRectMake([self view].center.x - 198, [self view].center.y + 42, NOTEWIDTH, NOTEHEIGHT)
+#define F2                          CGRectMake([self view].center.x - 198, [self view].center.y + 40, NOTEWIDTH, NOTEHEIGHT)
 #define F2sharp                     CGRectMake([self view].center.x - 98, [self view].center.y + 34, NOTEWIDTH, NOTEHEIGHT)
 #define G2                          CGRectMake([self view].center.x - 50, [self view].center.y + 24, NOTEWIDTH, NOTEHEIGHT)
 #define G2sharp                     CGRectMake([self view].center.x + 46, [self view].center.y + 14, NOTEWIDTH, NOTEHEIGHT)
