@@ -1,5 +1,4 @@
 //
-
 //  main.m
 //  MT101
 //
@@ -7,7 +6,6 @@
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 #import <UIKit/UIKit.h>
-
 #import "AppDelegate.h"
 
 int main(int argc, char *argv[])
@@ -17,6 +15,3 @@ int main(int argc, char *argv[])
       NSStringFromClass([AppDelegate class]));
   }
 }
-
-
-
