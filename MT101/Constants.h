@@ -3,6 +3,9 @@
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 //
+
+
+#define E2 CGRectMake([self view].center.x-242,[self view].center.y+54,NOTEWIDTH,NOTEHEIGHT)
 #define kLeftMargin                 20.0
 #define kTopMargin                  20.0
 #define kRightMargin                20.0
@@ -23,8 +26,11 @@
 #define SMALLBOXWIDTH               50
 #define SMALLBOXHEIGHT              50
 
-#define WELCOMEWIDTH                512
-#define WELCOMEHEIGHT               512
+#define NOTEWIDTH                   30
+#define NOTEHEIGHT                  30
+
+#define WELCOMEWIDTH                412
+#define WELCOMEHEIGHT               412
 
 #define GRANDSTAFFEXAMPLEWIDTH      703
 #define GRANDSTAFFEXAMPLEHEIGHT     768

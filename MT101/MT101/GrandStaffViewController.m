@@ -40,36 +40,48 @@
 - (void)drawRects
 {
     // define the "key" xylophone note rectangles
-    keyRects[0] = CGRectMake([self view].center.x - 42,     // derive xi
-        [self view].center.y - 285,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Do
+    keyRects[0] = CGRectMake([self view].center.x - 42,
+        [self view].center.y - 285,
+        BIGBOXWIDTH,
+        BIGBOXHEIGHT
+        );
 
-    keyRects[1] = CGRectMake([self view].center.x + 70,     // derive xi
-        [self view].center.y - 255,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Di
+    keyRects[1] = CGRectMake([self view].center.x + 70,
+        [self view].center.y - 255,
+        BIGBOXWIDTH,
+        BIGBOXHEIGHT
+        );
 
-    keyRects[2] = CGRectMake([self view].center.x + 150,    // derive xi
-        [self view].center.y - 175,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Re
+    keyRects[2] = CGRectMake([self view].center.x + 150,
+        [self view].center.y - 175,
+        BIGBOXWIDTH,
+        BIGBOXHEIGHT
+        );
 
-    keyRects[3] = CGRectMake([self view].center.x + 174,    // derive xi
-        [self view].center.y - 67,                          // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Ri
+    keyRects[3] = CGRectMake([self view].center.x + 174,
+        [self view].center.y - 67,
+        BIGBOXWIDTH,
+        BIGBOXHEIGHT
+        );
 
-    keyRects[4] = CGRectMake([self view].center.x + 150,    // derive xi
-        [self view].center.y + 57,                          // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Mi
+    
+    
+    //E2
+    //keyRects[4] = CGRectMake([self view].center.x - 242,
+    //  [self view].center.y + 54,
+    //  NOTEWIDTH,
+    //  NOTEHEIGHT
+    //  );
 
+   
+    
+    //E2
+    keyRects[4] = E2;
+    
+    
+    
+    
+    
     keyRects[5] = CGRectMake([self view].center.x + 65,     // derive xi
         [self view].center.y + 120,                         // derive y
         BIGBOXWIDTH,                                        // span across entire screen
@@ -333,34 +345,34 @@
                                     // green:0.820 blue:0.839 alpha:0.500];
     label25.text = [NSString stringWithFormat:@"keyRect[25]"];
 
-    [self.view addSubview:label0];
-    [self.view addSubview:label1];
-    [self.view addSubview:label2];
-    [self.view addSubview:label3];
+    //    [self.view addSubview:label0];
+    //[self.view addSubview:label1];
+    //[self.view addSubview:label2];
+    //[self.view addSubview:label3];
     [self.view addSubview:label4];
-    [self.view addSubview:label5];
-    [self.view addSubview:label6];
-    [self.view addSubview:label7];
-    [self.view addSubview:label8];
-    [self.view addSubview:label9];
-    [self.view addSubview:label10];
-    [self.view addSubview:label11];
-    [self.view addSubview:label12];
+    //[self.view addSubview:label5];
+    //[self.view addSubview:label6];
+    //[self.view addSubview:label7];
+    //[self.view addSubview:label8];
+    //[self.view addSubview:label9];
+    //[self.view addSubview:label10];
+    //[self.view addSubview:label11];
+    //[self.view addSubview:label12];
 
     // minors
-    [self.view addSubview:label13];
-    [self.view addSubview:label14];
-    [self.view addSubview:label15];
-    [self.view addSubview:label16];
-    [self.view addSubview:label17];
-    [self.view addSubview:label18];
-    [self.view addSubview:label19];
-    [self.view addSubview:label20];
-    [self.view addSubview:label21];
-    [self.view addSubview:label22];
-    [self.view addSubview:label23];
-    [self.view addSubview:label24];
-    [self.view addSubview:label25];
+    //[self.view addSubview:label13];
+    //[self.view addSubview:label14];
+    //[self.view addSubview:label15];
+    //[self.view addSubview:label16];
+    //[self.view addSubview:label17];
+    //[self.view addSubview:label18];
+    //[self.view addSubview:label19];
+    //[self.view addSubview:label20];
+    //[self.view addSubview:label21];
+    //[self.view addSubview:label22];
+    //[self.view addSubview:label23];
+    //[self.view addSubview:label24];
+    //[self.view addSubview:label25];
 
     // #endif
 } /* drawRects */
