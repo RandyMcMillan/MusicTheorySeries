@@ -201,10 +201,8 @@
         nil];
 
     NSString *imageNameList1Path =
-        [[NSBundle mainBundle] pathForResource:@"imageNameList1" ofType:
-        @"plist"];
-    imageNameList1 =
-        [[NSArray alloc] initWithContentsOfFile:imageNameList1Path];
+        [[NSBundle mainBundle] pathForResource:@"imageNameList1" ofType:@"plist"];
+    imageNameList1 = [[NSArray alloc] initWithContentsOfFile:imageNameList1Path];
 
     for (NSString *str in imageNameList1) {
         NSLog(@"imageNameList1 = %@", str);
@@ -222,9 +220,6 @@
         [UIImage originalSizeImageWithPDFNamed:[imageNameList1 objectAtIndex:8]],
         nil];
 
-    
-    
-    
     NSString *imageNameList2Path =
         [[NSBundle mainBundle] pathForResource:@"imageNameList2" ofType:
         @"plist"];
@@ -246,28 +241,23 @@
         [UIImage originalSizeImageWithPDFNamed:[imageNameList2 objectAtIndex:7]],
         [UIImage originalSizeImageWithPDFNamed:[imageNameList2 objectAtIndex:8]],
         nil];
-    
-    
+
     NSString *imageNameList3Path =
-    [[NSBundle mainBundle] pathForResource:@"imageNameList3" ofType:
-     @"plist"];
+        [[NSBundle mainBundle] pathForResource:@"imageNameList3" ofType:
+        @"plist"];
     imageNameList3 =
-    [[NSArray alloc] initWithContentsOfFile:imageNameList3Path];
-    
+        [[NSArray alloc] initWithContentsOfFile:imageNameList3Path];
+
     for (NSString *str in imageNameList3) {
         NSLog(@"imageNameList2 = %@", str);
     }
-    
+
     imageList3 = [[NSArray alloc] initWithObjects: // Modes
-                  [UIImage originalSizeImageWithPDFNamed:[imageNameList3 objectAtIndex:0]],
-                  [UIImage originalSizeImageWithPDFNamed:[imageNameList3 objectAtIndex:1]],
-                  [UIImage originalSizeImageWithPDFNamed:[imageNameList3 objectAtIndex:2]],
-                  nil];
+        [UIImage originalSizeImageWithPDFNamed:[imageNameList3 objectAtIndex:0]],
+        [UIImage originalSizeImageWithPDFNamed:[imageNameList3 objectAtIndex:1]],
+        [UIImage originalSizeImageWithPDFNamed:[imageNameList3 objectAtIndex:2]],
+        nil];
 
-    
-
-    
-    
     NSString *imageNameList4Path =
         [[NSBundle mainBundle] pathForResource:@"imageNameList4" ofType:
         @"plist"];
@@ -404,10 +394,8 @@
         @"",
         @"",
         nil];
-    
 
-    if (IS_IPAD) {} else { [self.navigationController pushViewController:self.detailViewController animated:YES]; }
-    
+    if (IS_IPAD) {} else {[self.navigationController pushViewController:self.detailViewController animated:YES]; }
 } /* viewDidLoad */
 
 - (void)viewDidUnload
@@ -418,27 +406,26 @@
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
-toInterfaceOrientation
+   toInterfaceOrientation
 {
     // Return YES for supported orientations
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
         return YES;
     }
-    
+
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
         return YES;
     }
-    
+
     if (toInterfaceOrientation == UIInterfaceOrientationPortrait) {
         return NO;
     }
-    
+
     if (toInterfaceOrientation ==
         UIInterfaceOrientationPortraitUpsideDown) {
         return NO;
     } else {return NO; }
 } /* shouldAutorotateToInterfaceOrientation */
-
 
 - (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
    currentInterfaceOrientation
@@ -488,9 +475,9 @@ toInterfaceOrientation
 - (NSString *)  tableView               :(UITableView *)tableView
                 titleForHeaderInSection :(NSInteger)section
 {
-    // The header for the section is the region name -- get this from the
-    // region at the section index.
-    //	Region *region = [regions objectAtIndex:section];
+    //  The header for the section is the region name -- get this from the
+    //  region at the section index.
+    //  Region *region = [regions objectAtIndex:section];
 
     return [sectionHeader objectAtIndex:section]; // sectionHeaders;
 }
@@ -500,7 +487,6 @@ toInterfaceOrientation
                         cellForRowAtIndexPath   :(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-
 
     UITableViewCell *cell =
         [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -512,11 +498,9 @@ toInterfaceOrientation
                                         reuseIdentifier :CellIdentifier];
     }
 
-
     tableView.backgroundColor =
         [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
     tableView.separatorColor = [UIColor lightGrayColor];
-
 
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:18.0];
 
@@ -631,7 +615,7 @@ toInterfaceOrientation
         self.detailViewController.interactiveToDisplay =
             [interactiveList3 objectAtIndex:indexPath.row];
         self.detailViewController.wikiToDisplay =
-        [wikiToDiplayList3 objectAtIndex:indexPath.row];
+            [wikiToDiplayList3 objectAtIndex:indexPath.row];
         [self.detailViewController.imageView useGrandStaffStyle];
     }
 
@@ -679,16 +663,14 @@ toInterfaceOrientation
     self.detailViewController.detailDescriptionLabel.text   = nil;
     self.detailViewController.musicTheory101Label.text      = nil;
     self.detailViewController.vLabel.text = nil;
-    
+
     //        self.window.rootViewController = masterNavigationController;
 
-#define IS_IPAD	(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-    if  (IS_IPAD){}else{
-        
-    [self.navigationController pushViewController:self.detailViewController animated:YES];
-    
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+    if (IS_IPAD) {} else {
+        [self.navigationController pushViewController:self.detailViewController animated:YES];
     }
-    
 } /* tableView */
 
 @end
