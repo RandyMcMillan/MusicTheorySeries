@@ -46,7 +46,6 @@
 
 @interface DetailViewController () {
     MPMoviePlayerViewController *moviePlayer;
-    MixerHostAudio *mixerHost;
 }
 @property (strong,
     nonatomic) UIPopoverController *masterPopoverController;
@@ -56,7 +55,6 @@
 
 @implementation DetailViewController
 
-@synthesize mixerHost;
 @synthesize videoButton;
 @synthesize wikiButton;
 @synthesize interActiveButton;
@@ -623,14 +621,6 @@
     [super viewDidLoad];
     [self configureView];
     
-    // create the mixer
-    self.mixerHost = [[MixerHostAudio alloc] init];
-    
-    // start the audio graph
-    [self.mixerHost startAUGraph];
-
-    
-    
 } /* viewDidLoad */
 
 - (void)viewDidUnload
@@ -642,12 +632,6 @@
     self.detailDescriptionLabel = nil;
     interactiveToDisplay        = nil;
 
-    
-    [self.mixerHost stopAUGraph];
-    [self.mixerHost release];
-    self.mixerHost = nil;
-    
-    
     /*
      *   [self setTestButton:nil];
      *   [self setRedButton:nil];
