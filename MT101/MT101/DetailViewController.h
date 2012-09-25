@@ -11,6 +11,10 @@
 #import "ExampleView.h"
 #import "UIImage+PDF.h"
 
+#import "Constants.h"
+
+#import "MixerHostAudio.h"
+
 @interface DetailViewController : UIViewController <
     UISplitViewControllerDelegate, MFMailComposeViewControllerDelegate>{
     GradientButton  *videoButton;
@@ -21,6 +25,10 @@
 
     GradientButton  *emailButton;
     GradientButton  *composeTweetButton;
+        
+        int     lastKeyIndex;
+        CGRect  keyRects[KEY_COUNT];
+
 }
 
 @property (strong, nonatomic) id detailItem;
@@ -40,6 +48,9 @@
 @property (nonatomic, retain) IBOutlet GradientToolBar  *toolBar;
 @property (nonatomic, retain) IBOutlet GradientButton   *emailButton;
 @property (nonatomic, retain) IBOutlet GradientButton   *composeTweetButton;
+
+
+@property (nonatomic, assign) MixerHostAudio *mixerHost;
 
 - (IBAction)clickMe:(UIButton *)sender;
 
