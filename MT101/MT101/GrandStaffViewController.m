@@ -5,7 +5,7 @@
 #import "GrandStaffViewController.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
-#import "Constants.h"
+#import "GrandStaffMacros.h"
 
 @implementation GrandStaffViewController
 
@@ -90,12 +90,7 @@
         BIGBOXHEIGHT                                        // 1/6th width of screen
         );                                                  // Fi
 
-    keyRects[7] = CGRectMake([self view].center.x - 150,    // derive xi
-        [self view].center.y + 120,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Sol
-
+    keyRects[7] = G2;
     keyRects[8] = CGRectMake([self view].center.x - 240,    // derive xi
         [self view].center.y + 37,                          // derive y
         BIGBOXWIDTH,                                        // span across entire screen
@@ -347,8 +342,8 @@
     //[self.view addSubview:label3];
     [self.view addSubview:label4];
     [self.view addSubview:label5];
-    //[self.view addSubview:label6];
-    //[self.view addSubview:label7];
+    [self.view addSubview:label6];
+    [self.view addSubview:label7];
     //[self.view addSubview:label8];
     //[self.view addSubview:label9];
     //[self.view addSubview:label10];

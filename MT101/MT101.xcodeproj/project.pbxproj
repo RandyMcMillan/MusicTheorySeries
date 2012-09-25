@@ -330,6 +330,8 @@
 		484B93B315EF01810021F939 /* iScrollPlugin_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iScrollPlugin_JS.h; sourceTree = "<group>"; };
 		484B93B415EF01810021F939 /* iScrollPlugin_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iScrollPlugin_JS.m; sourceTree = "<group>"; };
 		484D16E415DAE485005FC66E /* SectionHeaders.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SectionHeaders.plist; sourceTree = "<group>"; };
+		484D3A04161257F700E6551C /* GrandStaffMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrandStaffMacros.h; sourceTree = "<group>"; };
+		484D3A061612586400E6551C /* Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = SOURCE_ROOT; };
 		48584A5716045DE10020DB00 /* Aeolian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Aeolian.pdf; sourceTree = "<group>"; };
 		48584A5816045DE10020DB00 /* AltoClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AltoClef.pdf; sourceTree = "<group>"; };
 		48584A5916045DE10020DB00 /* BariToneClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = BariToneClef.pdf; sourceTree = "<group>"; };
@@ -754,6 +756,7 @@
 				48D50A2415D8879D009121C3 /* TrebleClefViewController.m */,
 				489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */,
 				489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */,
+				484D3A04161257F700E6551C /* GrandStaffMacros.h */,
 			);
 			name = ClefVCs;
 			sourceTree = "<group>";
@@ -891,6 +894,7 @@
 				481A431615F0FE8A006EDF46 /* buttonArt */,
 				481A431015F0F52C006EDF46 /* ColorUIButton.h */,
 				481A431115F0F52C006EDF46 /* ColorUIButton.m */,
+				484D3A061612586400E6551C /* Colors.h */,
 				487A1C8915E85115006C5C59 /* Constants.h */,
 				4887524D15F59731006FBD28 /* ExampleView.h */,
 				4887524E15F59731006FBD28 /* ExampleView.m */,
