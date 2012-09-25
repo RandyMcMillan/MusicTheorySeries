@@ -501,14 +501,6 @@ toInterfaceOrientation
 {
     static NSString *CellIdentifier = @"Cell";
 
-    /*
-     *   UILabel *mainLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, 220.0, 15.0)];
-     *   mainLabel.font = [UIFont systemFontOfSize:34.0];
-     *   mainLabel.textAlignment = UITextAlignmentRight;
-     *   mainLabel.textColor = [UIColor blackColor];
-     *   mainLabel.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight;
-     *   mainLabel.tag = MAINLABEL_TAG;
-     */
 
     UITableViewCell *cell =
         [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -520,27 +512,11 @@ toInterfaceOrientation
                                         reuseIdentifier :CellIdentifier];
     }
 
-    //   NSString *mainLabelText;
-    //  mainLabelText = @"test";
-    //  mainLabel.text = mainLabelText;
-    //  [cell.contentView addSubview:mainLabel];
 
     tableView.backgroundColor =
         [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
     tableView.separatorColor = [UIColor lightGrayColor];
 
-    //  NSString *imagePath = [[NSBundle mainBundle]
-    // pathForResource:[videoList1 objectAtIndex:indexPath.row]
-    // ofType:@"png"];
-    //  UIImage *theImage = [UIImage imageWithContentsOfFile:imagePath];
-    //  UIImageView *photo = [[UIImageView alloc]
-    // initWithFrame:CGRectMake(225.0, 0.0, 80.0, 45.0)];
-    //  photo.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin |
-    // UIViewAutoresizingFlexibleHeight;
-    //  photo.tag = PHOTO_TAG;
-
-    // photo.image = theImage;
-    //    [cell.contentView addSubview:photo];
 
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:18.0];
 
