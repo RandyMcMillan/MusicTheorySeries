@@ -34,10 +34,7 @@
         self.clearsSelectionOnViewWillAppear    = NO;
         self.contentSizeForViewInPopover        = CGSizeMake(320.0, 600.0);
 
-        //   NSString *version = [[[NSBundle mainBundle] infoDictionary]
-        // objectForKey:(NSString*)kCFBundleVersionKey];
-        //   NSLog(@"%@",version);
-    }
+}
 
     return self;
 } /* initWithNibName */
