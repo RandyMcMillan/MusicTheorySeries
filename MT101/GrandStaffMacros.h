@@ -3,34 +3,28 @@
 //  Copyright (c) 2012 Randy McMillan. All rights reserved.
 //
 //
-
-#ifndef GRANDSTAFFMACROS
-#define SLOPEX 47
-#define SLOPEY 10
-
-#define E2                          CGRectMake([self view].center.x - (5*SLOPEX), [self view].center.y + (5*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define F2                          CGRectMake([self view].center.x - (4*SLOPEX), [self view].center.y + (4*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+// -44   -14 slopex
+#define E2                          CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
+#define F2                          CGRectMake([self view].center.x - 196, [self view].center.y + 42, NOTEWIDTH, NOTEHEIGHT)
 //#define F2sharp                     CGRectMake([self view].center.x - 98, [self view].center.y + 34, NOTEWIDTH, NOTEHEIGHT)
-#define G2                          CGRectMake([self view].center.x - (3*SLOPEX), [self view].center.y + (3*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define G2                          CGRectMake([self view].center.x - 150, [self view].center.y + 34, NOTEWIDTH, NOTEHEIGHT)
 //#define G2sharp                     CGRectMake([self view].center.x + 46, [self view].center.y + 14, NOTEWIDTH, NOTEHEIGHT)
-#define A2                          CGRectMake([self view].center.x - (2*SLOPEX), [self view].center.y + (2*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define A2                          CGRectMake([self view].center.x + 94, [self view].center.y + 4, NOTEWIDTH, NOTEHEIGHT)
 //#define A2sharp                     CGRectMake([self view].center.x + 142, [self view].center.y - 6, NOTEWIDTH, NOTEHEIGHT)
-#define B2                          CGRectMake([self view].center.x - (1*SLOPEX), [self view].center.y + (1*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-
-#define C                           CGRectMake([self view].center.x - 0, [self view].center.y + 0, NOTEWIDTH, NOTEHEIGHT)
-//#define Csharp                      CGRectMake([self view].center.x + 0, [self view].center.y - 0, NOTEWIDTH, NOTEHEIGHT)
-
-#define D                           CGRectMake([self view].center.x + (1*SLOPEX), [self view].center.y - (1*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define B2                          CGRectMake([self view].center.x + 190, [self view].center.y - 16, NOTEWIDTH, NOTEHEIGHT)
+#define C                           CGRectMake([self view].center.x + 238, [self view].center.y - 26, NOTEWIDTH, NOTEHEIGHT)
+//#define Csharp                      CGRectMake([self view].center.x + 286, [self view].center.y - 26, NOTEWIDTH, NOTEHEIGHT)
+#define D                           CGRectMake([self view].center.x + 334, [self view].center.y - 36, NOTEWIDTH, NOTEHEIGHT)
 //#define Dsharp                      CGRectMake([self view].center.x + 382, [self view].center.y - 46, NOTEWIDTH, NOTEHEIGHT)
-#define E                           CGRectMake([self view].center.x + (2*SLOPEX), [self view].center.y - (2*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define F                           CGRectMake([self view].center.x + (3*SLOPEX), [self view].center.y - (3*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define E                           CGRectMake([self view].center.x + 430, [self view].center.y - 56, NOTEWIDTH, NOTEHEIGHT)
+#define F                           CGRectMake([self view].center.x + 478, [self view].center.y - 66, NOTEWIDTH, NOTEHEIGHT)
 //#define Fsharp                      CGRectMake([self view].center.x + 526, [self view].center.y - 76, NOTEWIDTH, NOTEHEIGHT)
-#define G                           CGRectMake([self view].center.x + (4*SLOPEX), [self view].center.y - (4*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define G                           CGRectMake([self view].center.x + 526, [self view].center.y + -86, NOTEWIDTH, NOTEHEIGHT)
 //#define Gsharp                      CGRectMake([self view].center.x - 574, [self view].center.y + -96, NOTEWIDTH, NOTEHEIGHT)
-#define A                           CGRectMake([self view].center.x + (5*SLOPEX), [self view].center.y - (5*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define A                           CGRectMake([self view].center.x - 622, [self view].center.y + -106, NOTEWIDTH, NOTEHEIGHT)
 //#define Asharp                      CGRectMake([self view].center.x - 242, [self view].center.y + -116, NOTEWIDTH, NOTEHEIGHT)
-#define B                           CGRectMake([self view].center.x + (6*SLOPEX), [self view].center.y - (6*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define c                           CGRectMake([self view].center.x - (5*SLOPEX), [self view].center.y - (12*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define B                           CGRectMake([self view].center.x - 242, [self view].center.y + -126, NOTEWIDTH, NOTEHEIGHT)
+#define c                           CGRectMake([self view].center.x - 242, [self view].center.y + -136, NOTEWIDTH, NOTEHEIGHT)
 //#define csharp                      CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
 #define d                           CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
 //#define dsharp                      CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
@@ -48,7 +42,7 @@
 //#define ddsharp                     CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
 #define ee                          CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
 #define ff                          CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
-//#define ffsharp                     CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
+//#define ffsharp                          CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
 #define gg                          CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
 //#define ggsharp                     CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
 #define aa                          CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
@@ -63,6 +57,4 @@
 //#define fffsharp                    CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
 #define ggg                         CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
 //#define gggsharp                    CGRectMake([self view].center.x - 242, [self view].center.y + 54, NOTEWIDTH, NOTEHEIGHT)
-
-#endif
 
