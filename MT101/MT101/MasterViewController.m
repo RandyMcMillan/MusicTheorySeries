@@ -557,9 +557,30 @@
     return NO;
 }
 
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+    
+        NSLog(@"indexPath.section = %i",indexPath.section);
+        
+        if (indexPath.row < 10 ) {
+        
+            NSLog(@"indexPath.row = %i",indexPath.row);
+        
+        }
+        
+    }
+ 
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(
     NSIndexPath *)indexPath
 {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    
     if (indexPath.section == 0) {
         //
 
