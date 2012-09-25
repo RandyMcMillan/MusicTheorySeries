@@ -82,12 +82,8 @@
     
     
     
-    keyRects[5] = CGRectMake([self view].center.x + 65,     // derive xi
-        [self view].center.y + 120,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Fa
-
+    keyRects[5] = F2;
+    
     keyRects[6] = CGRectMake([self view].center.x - 42,     // derive xi
         [self view].center.y + 145,                         // derive y
         BIGBOXWIDTH,                                        // span across entire screen
@@ -350,7 +346,7 @@
     //[self.view addSubview:label2];
     //[self.view addSubview:label3];
     [self.view addSubview:label4];
-    //[self.view addSubview:label5];
+    [self.view addSubview:label5];
     //[self.view addSubview:label6];
     //[self.view addSubview:label7];
     //[self.view addSubview:label8];
