@@ -136,22 +136,22 @@ self.titleLabel.text = @"DONE";
 
 - (void)useSafariStyle
 {
-    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/compass"]] forState:UIControlStateNormal];
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WikiView.bundle/compass"]] forState:UIControlStateNormal];
 }
 
 - (void)useRefreshStyle
 {
-    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/but_refresh"]] forState:UIControlStateNormal];
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WikiView.bundle/but_refresh"]] forState:UIControlStateNormal];
 }
 
 - (void)useBackStyle
 {
-    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/arrow_left"]] forState:UIControlStateNormal];
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WikiView.bundle/arrow_left"]] forState:UIControlStateNormal];
 }
 
 - (void)useForwardStyle
 {
-    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WebView.bundle/arrow_right"]] forState:UIControlStateNormal];
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WikiView.bundle/arrow_right"]] forState:UIControlStateNormal];
 }
 
 - (void)useEmailStyle
