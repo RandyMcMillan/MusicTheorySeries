@@ -25,7 +25,7 @@
 #define SMALLBOXHEIGHT              50
 
 #define NOTEWIDTH                   30
-#define NOTEHEIGHT                  30
+#define NOTEHEIGHT                  40
 
 #define WELCOMEWIDTH                412
 #define WELCOMEHEIGHT               412
