@@ -99,6 +99,18 @@
 
     keyRects[25] = C4sharp;
     keyRects[26] = D4;
+    
+    keyRects[27] = D4sharp;
+
+    
+    keyRects[28] = E4;
+
+    
+    keyRects[29] = F4;
+
+    
+    keyRects[30] = F4sharp;
+
     // keyRects[25] = CGRectMake([self view].center.x + 40,//derive xi
     //                        [self view].center.y + 70,//derive y
     //                      SMALLBOXWIDTH,//span across entire screen
@@ -220,12 +232,20 @@
     label26.text            = [NSString stringWithFormat:@"26"];
     
     label27 = [[UILabel alloc] initWithFrame:keyRects[27]];
-    label27.backgroundColor = RE;   // [UIColor colorWithRed:1.000
+    label27.backgroundColor = RI;   // [UIColor colorWithRed:1.000
     label27.text            = [NSString stringWithFormat:@"27"];
     
     label28 = [[UILabel alloc] initWithFrame:keyRects[28]];
-    label28.backgroundColor = RE;   // [UIColor colorWithRed:1.000
+    label28.backgroundColor = MI;   // [UIColor colorWithRed:1.000
     label28.text            = [NSString stringWithFormat:@"28"];
+    
+    label29 = [[UILabel alloc] initWithFrame:keyRects[29]];
+    label29.backgroundColor = FA;   // [UIColor colorWithRed:1.000
+    label29.text            = [NSString stringWithFormat:@"29"];
+    
+    label30 = [[UILabel alloc] initWithFrame:keyRects[30]];
+    label30.backgroundColor = FI;   // [UIColor colorWithRed:1.000
+    label30.text            = [NSString stringWithFormat:@"30"];
 
     [self.view addSubview:label1];
     [self.view addSubview:label2];
@@ -257,6 +277,8 @@
     [self.view addSubview:label26];
     //[self.view addSubview:label27];
     [self.view addSubview:label28];
+    //[self.view addSubview:label29];
+    [self.view addSubview:label30];
 
     // #endif
 } /* drawRects */
