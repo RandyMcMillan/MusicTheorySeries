@@ -18,18 +18,20 @@
 #define A2sharp                     CGRectMake([self view].center.x - 142, [self view].center.y - 6, NOTEWIDTH, NOTEHEIGHT)
 #define B2                          CGRectMake([self view].center.x - (1*SLOPEX), [self view].center.y + (1*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 
-#define C                           CGRectMake([self view].center.x + (0*SLOPEX), [self view].center.y + (0*SLOPEY), NOTEWIDTH, NOTEHEIGHT)//center of view
-#define Csharp                      CGRectMake([self view].center.x + (0*SLOPEX), [self view].center.y + (0*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define C                           CGRectMake([self view].center.x + (0*SLOPEX), [self view].center.y + (0*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+
+#define Csharp                      CGRectMake([self view].center.x + (0*SLOPEX), [self view].center.y - (0*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+
 #define D                           CGRectMake([self view].center.x + (1*SLOPEX), [self view].center.y - (1*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 #define Dsharp                      CGRectMake([self view].center.x + (0*SLOPEX), [self view].center.y - (0*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 #define E                           CGRectMake([self view].center.x + (2*SLOPEX), [self view].center.y - (2*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 #define F                           CGRectMake([self view].center.x + (3*SLOPEX), [self view].center.y - (3*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 #define Fsharp                      CGRectMake([self view].center.x + (0*SLOPEX), [self view].center.y - (0*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 #define G                           CGRectMake([self view].center.x + (4*SLOPEX), [self view].center.y - (4*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define Gsharp                      CGRectMake([self view].center.x - (0*SLOPEX), [self view].center.y - (0*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define A                           CGRectMake([self view].center.x - (5*SLOPEX), [self view].center.y - (5*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define Asharp                      CGRectMake([self view].center.x - (0*SLOPEX), [self view].center.y - (0*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define B                           CGRectMake([self view].center.x - (6*SLOPEX), [self view].center.y - (6*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define Gsharp                      CGRectMake([self view].center.x + (0*SLOPEX), [self view].center.y - (0*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define A                           CGRectMake([self view].center.x + (5*SLOPEX), [self view].center.y - (5*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define Asharp                      CGRectMake([self view].center.x + (0*SLOPEX), [self view].center.y - (0*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define B                           CGRectMake([self view].center.x + (6*SLOPEX), [self view].center.y - (6*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 
 #define c                           CGRectMake([self view].center.x - (11*SLOPEX),[self view].center.y + (0*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 #define csharp                      CGRectMake([self view].center.x - (0*SLOPEX), [self view].center.y + (0*SLOPEY), NOTEWIDTH, NOTEHEIGHT)
