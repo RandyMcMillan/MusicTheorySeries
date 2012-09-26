@@ -77,108 +77,29 @@
     
     //E2
     keyRects[4] = E2;
-    
-    
-    
-    
-    
     keyRects[5] = F2;
-    
-    keyRects[6] = CGRectMake([self view].center.x - 42,     // derive xi
-        [self view].center.y + 145,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Fi
-
+    keyRects[6] = F2sharp;
     keyRects[7] = G2;
-    keyRects[8] = CGRectMake([self view].center.x - 240,    // derive xi
-        [self view].center.y + 37,                          // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Si
-
+    keyRects[8] = G2sharp;
     keyRects[9] = A2;
 
-    keyRects[10] = CGRectMake([self view].center.x - 230,   // derive xi
-        [self view].center.y - 170,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Li
-
+    keyRects[10] = A2sharp;
     keyRects[11] = B2;
     keyRects[12] = C;
     
-    keyRects[13] = CGRectMake([self view].center.x + 41,    // derive xi
-        [self view].center.y + 65,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // do
+    keyRects[13] = Csharp;
+    keyRects[14] = D;
+    keyRects[15] = Dsharp;
+    keyRects[16] = E;
+    keyRects[17] = F;
+    keyRects[18] = Fsharp;
+    keyRects[19] = G;
+    keyRects[20] = Gsharp;
+    keyRects[21] = A;
+    keyRects[22] = Asharp;
+    keyRects[23] = B;
 
-    keyRects[14] = CGRectMake([self view].center.x - 22.5,  // derive xi
-        [self view].center.y + 70,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // di
-
-    keyRects[15] = CGRectMake([self view].center.x - 85,    // derive xi
-        [self view].center.y + 65,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // re
-
-    keyRects[16] = CGRectMake([self view].center.x - 140,   // derive xi
-        [self view].center.y + 20,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // ri
-
-    keyRects[17] = CGRectMake([self view].center.x - 150,   // derive xi
-        [self view].center.y - 50,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // mi
-
-    keyRects[18] = CGRectMake([self view].center.x - 140,   // derive xi
-        [self view].center.y - 120,                         // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // fa
-
-    keyRects[19] = CGRectMake([self view].center.x - 90,    // derive xi
-        [self view].center.y - 160,                         // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // fi
-
-    keyRects[20] = CGRectMake([self view].center.x - 22.5,  // derive xi
-        [self view].center.y - 180,                         // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // sol
-
-    keyRects[21] = CGRectMake([self view].center.x + 40,    // derive xi
-        [self view].center.y - 160,                         // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // si
-
-    keyRects[22] = CGRectMake([self view].center.x + 90,    // derive xi
-        [self view].center.y - 120,                         // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // la
-
-    keyRects[23] = CGRectMake([self view].center.x + 110,   // derive xi
-        [self view].center.y - 50,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // li
-
-    keyRects[24] = CGRectMake([self view].center.x + 90,    // derive xi
-        [self view].center.y + 15,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // ti
+    keyRects[24] = c;
 
     keyRects[25] = CGRectMake(0, 0, 0, 0);
 
@@ -321,35 +242,34 @@
                                     // green:0.820 blue:0.839 alpha:0.500];
     label25.text = [NSString stringWithFormat:@"keyRect[25]"];
 
-    //    [self.view addSubview:label0];
-    //[self.view addSubview:label1];
-    //[self.view addSubview:label2];
-    //[self.view addSubview:label3];
+    [self.view addSubview:label1];
+    [self.view addSubview:label2];
+    [self.view addSubview:label3];
     [self.view addSubview:label4];
     [self.view addSubview:label5];
-    //[self.view addSubview:label6];
+    [self.view addSubview:label6];
     [self.view addSubview:label7];
-    //[self.view addSubview:label8];
+    [self.view addSubview:label8];
     [self.view addSubview:label9];
-    //[self.view addSubview:label10];
+    [self.view addSubview:label10];
     [self.view addSubview:label11];
     [self.view addSubview:label12];
 
-    // minors
-    //[self.view addSubview:label13];
-    //[self.view addSubview:label14];
-    //[self.view addSubview:label15];
-    //[self.view addSubview:label16];
-    //[self.view addSubview:label17];
-    //[self.view addSubview:label18];
-    //[self.view addSubview:label19];
-    //[self.view addSubview:label20];
-    //[self.view addSubview:label21];
-    //[self.view addSubview:label22];
-    //[self.view addSubview:label23];
-    //[self.view addSubview:label24];
-    //[self.view addSubview:label25];
+    [self.view addSubview:label13];
+    [self.view addSubview:label14];
+    [self.view addSubview:label15];
+    [self.view addSubview:label16];
+    [self.view addSubview:label17];
+    [self.view addSubview:label18];
+    [self.view addSubview:label19];
+    [self.view addSubview:label20];
+    [self.view addSubview:label21];
+    [self.view addSubview:label22];
+    [self.view addSubview:label23];
+    [self.view addSubview:label24];
+    [self.view addSubview:label25];
 
+    
     // #endif
 } /* drawRects */
 
