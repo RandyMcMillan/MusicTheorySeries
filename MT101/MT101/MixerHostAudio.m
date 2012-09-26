@@ -530,7 +530,7 @@ static OSStatus inputRenderCallback(
         }
 
         if (i == 43) {
-            NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"gg"] withExtension:@"L.aif"];
+            NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"G5"] withExtension:@"L.aif"];
             sourceURLArray[i] = (CFURLRef) [url retain];
 
             // ExtAudioFileRef objects expect CFURLRef URLs, so cast to CRURLRef here
@@ -538,7 +538,7 @@ static OSStatus inputRenderCallback(
         }
 
         if (i == 44) {
-            NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"gg#"] withExtension:@"L.aif"];
+            NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"G#5"] withExtension:@"L.aif"];
             sourceURLArray[i] = (CFURLRef) [url retain];
 
             // ExtAudioFileRef objects expect CFURLRef URLs, so cast to CRURLRef here
@@ -546,7 +546,7 @@ static OSStatus inputRenderCallback(
         }
 
         if (i == 45) {
-            NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"aa"] withExtension:@"L.aif"];
+            NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"A5"] withExtension:@"L.aif"];
             sourceURLArray[i] = (CFURLRef) [url retain];
 
             // ExtAudioFileRef objects expect CFURLRef URLs, so cast to CRURLRef here
@@ -554,7 +554,7 @@ static OSStatus inputRenderCallback(
         }
 
         if (i == 46) {
-            NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"aa#"] withExtension:@"L.aif"];
+            NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"A#5"] withExtension:@"L.aif"];
             sourceURLArray[i] = (CFURLRef) [url retain];
 
             // ExtAudioFileRef objects expect CFURLRef URLs, so cast to CRURLRef here
@@ -562,7 +562,7 @@ static OSStatus inputRenderCallback(
         }
 
         if (i == 47) {
-            NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"bb"] withExtension:@"L.aif"];
+            NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"B5"] withExtension:@"L.aif"];
             sourceURLArray[i] = (CFURLRef) [url retain];
 
             // ExtAudioFileRef objects expect CFURLRef URLs, so cast to CRURLRef here
@@ -570,7 +570,7 @@ static OSStatus inputRenderCallback(
         }
 
         if (i == 48) {
-            NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"ccc"] withExtension:@"L.aif"];
+            NSURL *url = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"C6"] withExtension:@"L.aif"];
             sourceURLArray[i] = (CFURLRef) [url retain];
 
             // ExtAudioFileRef objects expect CFURLRef URLs, so cast to CRURLRef here
