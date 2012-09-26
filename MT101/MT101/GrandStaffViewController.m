@@ -110,7 +110,11 @@
 
     
     keyRects[30] = F4sharp;
-
+    keyRects[31] = G4;
+    keyRects[32] = G4sharp;
+    keyRects[33] = A4;
+    keyRects[34] = A4sharp;
+    keyRects[35] = B4;
     // keyRects[25] = CGRectMake([self view].center.x + 40,//derive xi
     //                        [self view].center.y + 70,//derive y
     //                      SMALLBOXWIDTH,//span across entire screen
@@ -246,7 +250,37 @@
     label30 = [[UILabel alloc] initWithFrame:keyRects[30]];
     label30.backgroundColor = FI;   // [UIColor colorWithRed:1.000
     label30.text            = [NSString stringWithFormat:@"30"];
+    
+    label31 = [[UILabel alloc] initWithFrame:keyRects[31]];
+    label31.backgroundColor = SOL;   // [UIColor colorWithRed:1.000
+    label31.text            = [NSString stringWithFormat:@"31"];
+    
+    label32 = [[UILabel alloc] initWithFrame:keyRects[32]];
+    label32.backgroundColor = SI;   // [UIColor colorWithRed:1.000
+    label32.text            = [NSString stringWithFormat:@"32"];
+    
+    label33 = [[UILabel alloc] initWithFrame:keyRects[33]];
+    label33.backgroundColor = LA;   // [UIColor colorWithRed:1.000
+    label33.text            = [NSString stringWithFormat:@"33"];
+    
+    label34 = [[UILabel alloc] initWithFrame:keyRects[34]];
+    label34.backgroundColor = LI;   // [UIColor colorWithRed:1.000
+    label34.text            = [NSString stringWithFormat:@"34"];
+    
+    label35 = [[UILabel alloc] initWithFrame:keyRects[35]];
+    label35.backgroundColor = TI;   // [UIColor colorWithRed:1.000
+    label35.text            = [NSString stringWithFormat:@"35"];
+    
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
     [self.view addSubview:label1];
     [self.view addSubview:label2];
     [self.view addSubview:label3];
@@ -277,9 +311,19 @@
     [self.view addSubview:label26];
     //[self.view addSubview:label27];
     [self.view addSubview:label28];
-    //[self.view addSubview:label29];
+    [self.view addSubview:label29];
     [self.view addSubview:label30];
-
+    [self.view addSubview:label31];
+    [self.view addSubview:label32];
+    [self.view addSubview:label33];
+    [self.view addSubview:label34];
+    [self.view addSubview:label35];
+ 
+    
+    
+    
+    
+    
     // #endif
 } /* drawRects */
 
@@ -389,6 +433,41 @@
         if (subview == label25) {
             [subview removeFromSuperview];
         }
+        
+        if (subview == label25) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label26) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label27) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label28) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label29) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label30) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label31) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label32) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label33) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label34) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label35) {
+            [subview removeFromSuperview];
+        }
+
     }
 } /* destroyRects */
 

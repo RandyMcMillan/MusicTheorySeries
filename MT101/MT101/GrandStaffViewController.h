@@ -51,7 +51,17 @@
         UILabel *label28;
         UILabel *label29;
         UILabel *label30;
-
+        UILabel *label31;
+        UILabel *label32;
+        UILabel *label33;
+        UILabel *label34;
+        UILabel *label35;
+ 
+        
+        
+        
+        
+        
 }
 
 @property (nonatomic, assign) MixerHostAudio *mixerHost;
