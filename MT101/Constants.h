@@ -11,7 +11,7 @@
 
 #define kTextFieldHeight            30.0
 
-#define KEY_COUNT                   36
+#define KEY_COUNT                   45
 
 #define VIEWBOUNDS                  [[UIScreen mainScreen] bounds]
 
@@ -24,7 +24,7 @@
 #define SMALLBOXWIDTH               50
 #define SMALLBOXHEIGHT              50
 
-#define NOTEWIDTH                   30
+#define NOTEWIDTH                   40
 #define NOTEHEIGHT                  40
 
 #define WELCOMEWIDTH                412

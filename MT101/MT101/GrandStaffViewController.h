@@ -56,6 +56,15 @@
         UILabel *label33;
         UILabel *label34;
         UILabel *label35;
+        UILabel *label36;
+        UILabel *label37;
+        UILabel *label38;
+        UILabel *label39;
+        UILabel *label40;
+        UILabel *label41;
+        UILabel *label42;
+        UILabel *label43;
+        UILabel *label44;
  
         
         

@@ -39,31 +39,12 @@
 
 - (void)drawRects
 {
-    // define the "key" xylophone note rectangles
-    keyRects[0] = CGRectMake(0,
-        0,
-        0,
-        0
-        );
-
-    keyRects[1] = CGRectMake(0,
-        0,
-        BIGBOXWIDTH,
-        BIGBOXHEIGHT
-        );
-
-    keyRects[2] = CGRectMake(0,
-        0,
-        BIGBOXWIDTH,
-        BIGBOXHEIGHT
-        );
-
-    keyRects[3] = CGRectMake(0,
-        0,
-        BIGBOXWIDTH,
-        BIGBOXHEIGHT
-        );
-
+    // define the note rectangles
+    keyRects[0]     = C2;
+    
+    keyRects[1]     = C2sharp;
+    keyRects[2]     = D2;
+    keyRects[3]     = D2sharp;
     keyRects[4]     = E2;
     keyRects[5]     = F2;
     keyRects[6]     = F2sharp;
@@ -72,8 +53,9 @@
     keyRects[9]     = A2;
     keyRects[10]    = A2sharp;
     keyRects[11]    = B2;
+    
     keyRects[12]    = C3;
-
+    
     keyRects[13]    = C3sharp;
     keyRects[14]    = D3;
     keyRects[15]    = D3sharp;
@@ -90,19 +72,26 @@
 
     keyRects[25]    = C4sharp;
     keyRects[26]    = D4;
-
-    keyRects[27] = D4sharp;
-
-    keyRects[28] = E4;
-
-    keyRects[29] = F4;
-
+    keyRects[27]    = D4sharp;
+    keyRects[28]    = E4;
+    keyRects[29]    = F4;
     keyRects[30]    = F4sharp;
     keyRects[31]    = G4;
     keyRects[32]    = G4sharp;
     keyRects[33]    = A4;
     keyRects[34]    = A4sharp;
     keyRects[35]    = B4;
+
+    keyRects[36]    = C5;
+    
+    keyRects[37]    = C5sharp;
+    keyRects[38]    = D5;
+    keyRects[39]    = D5sharp;
+    keyRects[40]    = E5;
+    keyRects[41]    = F5;
+    keyRects[42]    = F5sharp;
+    keyRects[43]    = G5;
+    keyRects[44]    = G5sharp;
 
 #if TARGET_IPHONE_SIMULATOR
         // displayed in Simulator
@@ -250,9 +239,46 @@
         label35.backgroundColor = TI;
         label35.text            = [NSString stringWithFormat:@"35"];
 
-    //        [self.view addSubview:label1];
-    //  [self.view addSubview:label2];
-    //  [self.view addSubview:label3];
+        label36 = [[UILabel alloc] initWithFrame:keyRects[36]];
+        label36.backgroundColor = DO;
+        label36.text            = [NSString stringWithFormat:@"36"];
+
+        label37 = [[UILabel alloc] initWithFrame:keyRects[37]];
+        label37.backgroundColor = DI;
+        label37.text            = [NSString stringWithFormat:@"37"];
+
+        label38 = [[UILabel alloc] initWithFrame:keyRects[38]];
+        label38.backgroundColor = RE;
+        label38.text            = [NSString stringWithFormat:@"38"];
+
+        label39 = [[UILabel alloc] initWithFrame:keyRects[39]];
+        label39.backgroundColor = RI;
+        label39.text            = [NSString stringWithFormat:@"39"];
+
+        label40 = [[UILabel alloc] initWithFrame:keyRects[40]];
+        label40.backgroundColor = MI;
+        label40.text            = [NSString stringWithFormat:@"40"];
+
+        label41 = [[UILabel alloc] initWithFrame:keyRects[41]];
+        label41.backgroundColor = FA;
+        label41.text            = [NSString stringWithFormat:@"41"];
+
+        label42 = [[UILabel alloc] initWithFrame:keyRects[42]];
+        label42.backgroundColor = FI;
+        label42.text            = [NSString stringWithFormat:@"42"];
+
+        label43 = [[UILabel alloc] initWithFrame:keyRects[43]];
+        label43.backgroundColor = SOL;
+        label43.text            = [NSString stringWithFormat:@"43"];
+
+        label44 = [[UILabel alloc] initWithFrame:keyRects[44]];
+        label44.backgroundColor = SI;
+        label44.text            = [NSString stringWithFormat:@"44"];
+
+        [self.view addSubview:label0];
+        [self.view addSubview:label1];
+        [self.view addSubview:label2];
+        [self.view addSubview:label3];
         [self.view addSubview:label4];
         [self.view addSubview:label5];
         // [self.view addSubview:label6];
@@ -266,7 +292,7 @@
         //    [self.view addSubview:label13];
 
         [self.view addSubview:label14];
-    //        [self.view addSubview:label15];
+        //        [self.view addSubview:label15];
         [self.view addSubview:label16];
         [self.view addSubview:label17];
         // [self.view addSubview:label18];
@@ -281,16 +307,21 @@
         // [self.view addSubview:label27];
         [self.view addSubview:label28];
         [self.view addSubview:label29];
-    //  [self.view addSubview:label30];
+        //  [self.view addSubview:label30];
         [self.view addSubview:label31];
-    //  [self.view addSubview:label32];
+        //  [self.view addSubview:label32];
         [self.view addSubview:label33];
-    //  [self.view addSubview:label34];
+        //  [self.view addSubview:label34];
         [self.view addSubview:label35];
-    
-    
-    
-    
+        [self.view addSubview:label36];
+        // [self.view addSubview:label37];
+        [self.view addSubview:label38];
+        // [self.view addSubview:label39];
+        [self.view addSubview:label40];
+        [self.view addSubview:label41];
+        // [self.view addSubview:label42];
+        [self.view addSubview:label43];
+        [self.view addSubview:label44];
 #endif /* if TARGET_IPHONE_SIMULATOR */
 } /* drawRects */
 
