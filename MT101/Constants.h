@@ -11,7 +11,7 @@
 
 #define kTextFieldHeight            30.0
 
-#define KEY_COUNT                   26
+#define KEY_COUNT                   28
 
 #define VIEWBOUNDS                  [[UIScreen mainScreen] bounds]
 
