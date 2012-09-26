@@ -18,7 +18,7 @@
 #define A2sharp     CGRectMake([self view].center.x - (0 * SLOPEX), [self view].center.y + (0 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 #define B2          CGRectMake([self view].center.x - (1 * SLOPEX), [self view].center.y + (1 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 
-#define C3           CGRectMake([self view].center.x + (0.2 * SLOPEX), [self view].center.y + (0.2 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define C3           CGRectMake([self view].center.x + (0 * SLOPEX), [self view].center.y + (0 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 
 #define C3sharp      CGRectMake([self view].center.x + (0 * SLOPEX), [self view].center.y - (0 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 
