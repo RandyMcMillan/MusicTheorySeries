@@ -146,12 +146,12 @@ self.titleLabel.text = @"DONE";
 
 - (void)useBackStyle
 {
-    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WikiView.bundle/arrow_left"]] forState:UIControlStateNormal];
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WikiView.bundle/LeftArrow"]] forState:UIControlStateNormal];
 }
 
 - (void)useForwardStyle
 {
-    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WikiView.bundle/arrow_right"]] forState:UIControlStateNormal];
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"WikiView.bundle/RightArrow"]] forState:UIControlStateNormal];
 }
 
 - (void)useEmailStyle
