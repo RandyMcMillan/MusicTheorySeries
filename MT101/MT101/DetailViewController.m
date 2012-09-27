@@ -406,19 +406,12 @@
 
 - (void)configureView
 {
-    if (self.detailItem) {
-        // MovieToPlay = @"GreenBeam";
-    }
-    
-    //    ExampleView *welcomeIV = [[ExampleView alloc] initWithImage:
-    //                      [UIImage originalSizeImageWithPDFNamed:@"welcome.pdf"]];
+    if (self.detailItem) {}
 
-    //self.imageView.image = welcomeIV.image;
-    //[welcomeIV release];
-
-      [imageView useWelcomeStyle];///bypass here for imageView issues on welcom screen iPhone
+      [imageView useWelcomeStyle];
     
-    self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+    self.detailDescriptionLabel.text =
+    [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
 
     if (IS_IPAD) {
 
@@ -444,20 +437,20 @@
     } else {
     
         // iphone landscape welcome screen formatting
-        //self.musicTheory101Label.text   = @"MT101";
-        //self.musicTheory101Label.hidden = FALSE;
-        //self.musicTheory101Label.frame  = CGRectMake(self.view.frame.size.width / 2.3, 219, 100, 50);
-        //self.interActiveButton.hidden   = TRUE;
-        //self.vLabel.frame = CGRectMake(self.view.frame.size.width / 1.65, 254, 7, 7);
-        //self.detailDescriptionLabel.frame   = CGRectMake(self.view.frame.size.width / 1.60, 254, 20, 20);
-        //self.interActiveButton.frame        = CGRectMake(0, 0, 0, 0);
+        self.musicTheory101Label.text   = @"MT101";
+        self.musicTheory101Label.hidden = FALSE;
+        self.musicTheory101Label.frame  = CGRectMake(self.view.frame.size.width / 2.3, 219, 100, 50);
+        self.interActiveButton.hidden   = TRUE;
+        self.interActiveButton.frame        = CGRectMake(0, 0, 0, 0);
+        self.vLabel.frame = CGRectMake(self.view.frame.size.width / 1.65, 254, 7, 7);
+        self.detailDescriptionLabel.frame   = CGRectMake(self.view.frame.size.width / 1.60, 254, 20, 20);
 
-        //[videoButton useDoneButtonStyle];
-        //[wikiButton useDoneButtonStyle];
+        [videoButton useDoneButtonStyle];
+        [wikiButton useDoneButtonStyle];
         //[interActiveButton useDoneButtonStyle];
-        //[emailButton useDoneButtonStyle];
-        //[emailButton useEmailStyle];
-        //[composeTweetButton useDoneButtonStyle];
+        [emailButton useDoneButtonStyle];
+        [emailButton useEmailStyle];
+        [composeTweetButton useDoneButtonStyle];
         //[imageView useWelcomeStyle];
         // useDoneButtonIPad
         // useEmailButtonIPad etc...

@@ -57,6 +57,21 @@
 	//  update the last update date
 	[_refreshHeaderView refreshLastUpdatedDate];
 
+    
+    // prime iphone landscape welcome screen formatting
+    self.detailViewController.musicTheory101Label.text   = @"MT101";
+    self.detailViewController.musicTheory101Label.hidden = FALSE;
+    self.detailViewController.musicTheory101Label.frame  = CGRectMake(self.view.frame.size.width / 2.3, 219, 100, 50);
+    self.detailViewController.interActiveButton.hidden   = TRUE;
+    self.detailViewController.interActiveButton.frame        = CGRectMake(0, 0, 0, 0);
+    self.detailViewController.vLabel.frame = CGRectMake(self.view.frame.size.width / 1.65, 254, 7, 7);
+    self.detailViewController.detailDescriptionLabel.frame   = CGRectMake(self.view.frame.size.width / 1.60, 254, 20, 20);
+    [self.detailViewController.videoButton useDoneButtonStyle];
+    [self.detailViewController.wikiButton useDoneButtonStyle];
+    [self.detailViewController.emailButton useDoneButtonStyle];
+    [self.detailViewController.emailButton useEmailStyle];
+    [self.detailViewController.composeTweetButton useDoneButtonStyle];
+    
    
     
     
@@ -771,6 +786,7 @@
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
     if (IS_IPAD) {} else {
+        self.detailViewController.toolBar.hidden = TRUE;;
         [self.navigationController pushViewController:self.detailViewController animated:YES];
     }
 } /* tableView */
