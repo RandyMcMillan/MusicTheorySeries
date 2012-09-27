@@ -428,7 +428,26 @@
         //All styles start with "Basic Style" then augment the style with the secondary styling
         //each style calls basic style first then continues with extra styling in its individual methods
         
-    }else{}//build for iPhone
+    }else{
+    
+    
+        [videoButton useDoneButtonStyle];
+        [wikiButton useDoneButtonStyle];
+        [interActiveButton useDoneButtonStyle];
+        [emailButton useDoneButtonStyle];
+        [emailButton useEmailStyle];
+        [composeTweetButton useDoneButtonStyle];
+        
+        //useDoneButtonIPad
+        //useEmailButtonIPad etc...
+        //All styles start with "Basic Style" then augment the style with the secondary styling
+        //each style calls basic style first then continues with extra styling in its individual methods
+        
+        
+    
+    
+    
+    }//build for iPhone
     
     
     ExampleView *welcomeIV = [[ExampleView alloc] initWithImage:
@@ -437,9 +456,8 @@
     self.imageView.image = welcomeIV.image;
     [welcomeIV release];
    
-    [imageView useWelcomeStyle];///bypass here for imageView issues on welcom screen iPhone
+    /// [imageView useWelcomeStyle];///bypass here for imageView issues on welcom screen iPhone
 
-    self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
    
 #if TARGET_IPHONE_SIMULATOR
     //self.musicTheory101Label.backgroundColor = [UIColor redColor];
@@ -469,7 +487,8 @@
         
     }
     
-    
+       self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+ 
 
 } /* configureView */
 

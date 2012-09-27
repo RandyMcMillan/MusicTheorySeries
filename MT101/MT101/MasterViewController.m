@@ -430,86 +430,18 @@
 	_reloading = NO;
 	[_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
     
-   
+    [self.detailViewController configureView];
+    [self.detailViewController.imageView useWelcomeStyle];
     
-    // Update the user interface for the detail item.
-    if (self.detailViewController.detailItem) {
-        // MovieToPlay = @"GreenBeam";
-        
-    
-    
-    }
-    
-     [self.detailViewController configureView];
-
     if (IS_IPAD) {
-        
+    
     } else {
     
     [self.navigationController pushViewController:self.detailViewController animated:YES];
     
     }
     
-/*    if (IS_IPAD) {
-        
-           [self.detailViewController configureView:self.detailViewController ];
-        // [self.detailViewController.videoButton useDoneButtonStyle];
-        //[self.detailViewController.wikiButton useDoneButtonStyle];
-        //[self.detailViewController.interActiveButton useDoneButtonStyle];
-        //[self.detailViewController.emailButton useDoneButtonStyle];
-        //[self.detailViewController.emailButton useEmailStyle];
-        //[self.detailViewController.composeTweetButton useDoneButtonStyle];
-        
-        //useDoneButtonIPad
-        //useEmailButtonIPad etc...
-        //All styles start with "Basic Style" then augment the style with the secondary styling
-        //each style calls basic style first then continues with extra styling in its individual methods
-        
-    }else{}//build for iPhone
-    
-    
-    ExampleView *welcomeIV = [[ExampleView alloc] initWithImage:
-                              [UIImage originalSizeImageWithPDFNamed:@"welcome.pdf"]];
-    
-    self.detailViewController.imageView.image = welcomeIV.image;
-    [welcomeIV release];
-    
-    [self.detailViewController.imageView useWelcomeStyle];///bypass here for imageView issues on welcom screen iPhone
-    
-    self.detailViewController.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
-    
-#if TARGET_IPHONE_SIMULATOR
-    //self.musicTheory101Label.backgroundColor = [UIColor redColor];
-    // self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
-    //self.vLabel.backgroundColor = [UIColor yellowColor];
-#endif
-    
-    if (IS_IPAD){
-        
-        //ipad landscape welcome screen formatting
-        self.detailViewController.musicTheory101Label.hidden = FALSE;
-        self.detailViewController.musicTheory101Label.frame = CGRectMake(self.view.frame.size.width/3.9, 530, 350, 50);
-        self.detailViewController.interActiveButton.hidden = FALSE;
-        self.detailViewController.vLabel.frame = CGRectMake(self.view.frame.size.width/1.44,578.0, 40, 27);
-        self.detailViewController.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width/1.38,577, 30, 30);
-        
-    } else {
-        
-        
-          //iphone landscape welcome screen formatting
-        self.detailViewController.musicTheory101Label.text = @"MT101";
-        self.detailViewController.musicTheory101Label.hidden = FALSE;
-        self.detailViewController.musicTheory101Label.frame = CGRectMake(self.view.frame.size.width/2.3, 219, 100, 50);
-        self.detailViewController.interActiveButton.hidden = TRUE;
-        self.detailViewController.vLabel.frame = CGRectMake(self.view.frame.size.width/1.65,254, 7, 7);
-        self.detailViewController.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width/1.60,254, 20, 20);
-        self.detailViewController.interActiveButton.frame = CGRectMake(0, 0,0,0);
-        
-        [self.navigationController pushViewController:self.detailViewController animated:YES];
-    }
 
-  */  
-    
 	
 }
 
