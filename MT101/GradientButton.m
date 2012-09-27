@@ -156,6 +156,18 @@ self.titleLabel.text = @"DONE";
 
 - (void)useEmailStyle
 {
+    
+    self.titleLabel.text = @"";
+    if (IS_IPAD) {
+        
+    
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"UIButtonBarCompose"]] forState:UIControlStateNormal];
+    
+    } else {
+        
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"UIButtonBarCompose"]] forState:UIControlStateNormal];
+ 
+    }
     // [self.title setTitle:@"EMAIL" forState:(UIControlStateNormal | UIControlStateHighlighted | UIControlStateSelected)];
     // [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"email"]] forState:UIControlStateNormal];
 }
