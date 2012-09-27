@@ -408,65 +408,58 @@
 {
     if (self.detailItem) {}
 
-      [imageView useWelcomeStyle];
-    
+    [imageView useWelcomeStyle];
+
     self.detailDescriptionLabel.text =
-    [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+        [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
 
     if (IS_IPAD) {
-
         // ipad landscape welcome screen formatting
-        //self.musicTheory101Label.hidden = FALSE;
-        //self.musicTheory101Label.frame  = CGRectMake(self.view.frame.size.width / 3.9, 530, 350, 50);
-        //self.interActiveButton.hidden   = FALSE;
-        //self.vLabel.frame = CGRectMake(self.view.frame.size.width / 1.44, 578.0, 40, 27);
-        //self.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width / 1.38, 577, 30, 30);
+        // self.musicTheory101Label.hidden = FALSE;
+        // self.musicTheory101Label.frame  = CGRectMake(self.view.frame.size.width / 3.9, 530, 350, 50);
+        // self.interActiveButton.hidden   = FALSE;
+        // self.vLabel.frame = CGRectMake(self.view.frame.size.width / 1.44, 578.0, 40, 27);
+        // self.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width / 1.38, 577, 30, 30);
 
-        //[videoButton useDoneButtonStyle];
-        //[wikiButton useDoneButtonStyle];
-        //[interActiveButton useDoneButtonStyle];
-        //[emailButton useDoneButtonStyle];
-        //[emailButton useEmailStyle];
-        //[composeTweetButton useDoneButtonStyle];
-        //[imageView useWelcomeStyle];
+        // [videoButton useDoneButtonStyle];
+        // [wikiButton useDoneButtonStyle];
+        // [interActiveButton useDoneButtonStyle];
+        // [emailButton useDoneButtonStyle];
+        // [emailButton useEmailStyle];
+        // [composeTweetButton useDoneButtonStyle];
+        // [imageView useWelcomeStyle];
         // useDoneButtonIPad
         // useEmailButtonIPad etc...
         // All styles start with "Basic Style" then augment the style with the secondary styling
         // each style calls basic style first then continues with extra styling in its individual methods
-    
     } else {
-    
         // iphone landscape welcome screen formatting
         self.musicTheory101Label.text   = @"MT101";
         self.musicTheory101Label.hidden = FALSE;
         self.musicTheory101Label.frame  = CGRectMake(self.view.frame.size.width / 2.3, 219, 100, 50);
         self.interActiveButton.hidden   = TRUE;
-        self.interActiveButton.frame        = CGRectMake(0, 0, 0, 0);
+        self.interActiveButton.frame    = CGRectMake(0, 0, 0, 0);
         self.vLabel.frame = CGRectMake(self.view.frame.size.width / 1.65, 254, 7, 7);
-        self.detailDescriptionLabel.frame   = CGRectMake(self.view.frame.size.width / 1.60, 254, 20, 20);
+        self.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width / 1.60, 254, 20, 20);
 
         [videoButton useDoneButtonStyle];
         [wikiButton useDoneButtonStyle];
-        //[interActiveButton useDoneButtonStyle];
+        // [interActiveButton useDoneButtonStyle];
         [emailButton useDoneButtonStyle];
         [emailButton useEmailStyle];
         [composeTweetButton useDoneButtonStyle];
-        //[imageView useWelcomeStyle];
+        // [imageView useWelcomeStyle];
         // useDoneButtonIPad
         // useEmailButtonIPad etc...
         // All styles start with "Basic Style" then augment the style with the secondary styling
         // each style calls basic style first then continues with extra styling in its individual methods
-    
     } // build for iPhone
-
-
 
 #if TARGET_IPHONE_SIMULATOR
         // self.musicTheory101Label.backgroundColor = [UIColor redColor];
         // self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
         // self.vLabel.backgroundColor = [UIColor yellowColor];
 #endif
-
 } /* configureView */
 
 #pragma mark - Open the mail interface
@@ -701,8 +694,8 @@
 {
     // Called when the view is shown again in the split view, invalidating
     // the button and popover controller.
-     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
-     self.masterPopoverController = nil;
+    [self.navigationItem setLeftBarButtonItem:nil animated:YES];
+    self.masterPopoverController = nil;
 }
 
 @end

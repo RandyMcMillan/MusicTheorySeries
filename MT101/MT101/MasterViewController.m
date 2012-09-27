@@ -33,8 +33,7 @@
         self.title = NSLocalizedString(@"Examples", @"Examples");
         self.clearsSelectionOnViewWillAppear    = NO;
         self.contentSizeForViewInPopover        = CGSizeMake(320.0, 600.0);
-
-}
+    }
 
     return self;
 } /* initWithNibName */
@@ -43,40 +42,33 @@
 {
     [super viewDidLoad];
 
-    
     if (_refreshHeaderView == nil) {
-		
-		EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.tableView.bounds.size.height, self.view.frame.size.width, self.tableView.bounds.size.height)];
-		view.delegate = self;
-		[self.tableView addSubview:view];
-		_refreshHeaderView = view;
-		[view release];
-		
-	}
-	
-	//  update the last update date
-	[_refreshHeaderView refreshLastUpdatedDate];
-
-    if (IS_IPAD) {
-        
-    }else{
-    // prime iphone landscape welcome screen formatting
-    self.detailViewController.musicTheory101Label.text   = @"MT101";
-    self.detailViewController.musicTheory101Label.hidden = FALSE;
-    self.detailViewController.musicTheory101Label.frame  = CGRectMake(self.view.frame.size.width / 2.3, 219, 100, 50);
-    self.detailViewController.interActiveButton.hidden   = TRUE;
-    self.detailViewController.interActiveButton.frame        = CGRectMake(0, 0, 0, 0);
-    self.detailViewController.vLabel.frame = CGRectMake(self.view.frame.size.width / 1.65, 254, 7, 7);
-    self.detailViewController.detailDescriptionLabel.frame   = CGRectMake(self.view.frame.size.width / 1.60, 254, 20, 20);
-    [self.detailViewController.videoButton useDoneButtonStyle];
-    [self.detailViewController.wikiButton useDoneButtonStyle];
-    [self.detailViewController.emailButton useDoneButtonStyle];
-    [self.detailViewController.emailButton useEmailStyle];
-    [self.detailViewController.composeTweetButton useDoneButtonStyle];
+        EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.tableView.bounds.size.height, self.view.frame.size.width, self.tableView.bounds.size.height)];
+        view.delegate = self;
+        [self.tableView addSubview:view];
+        _refreshHeaderView = view;
+        [view release];
     }
-   
-    
-    
+
+    //  update the last update date
+    [_refreshHeaderView refreshLastUpdatedDate];
+
+    if (IS_IPAD) {} else {
+        // prime iphone landscape welcome screen formatting
+        self.detailViewController.musicTheory101Label.text      = @"MT101";
+        self.detailViewController.musicTheory101Label.hidden    = FALSE;
+        self.detailViewController.musicTheory101Label.frame     = CGRectMake(self.view.frame.size.width / 2.3, 219, 100, 50);
+        self.detailViewController.interActiveButton.hidden      = TRUE;
+        self.detailViewController.interActiveButton.frame       = CGRectMake(0, 0, 0, 0);
+        self.detailViewController.vLabel.frame = CGRectMake(self.view.frame.size.width / 1.65, 254, 7, 7);
+        self.detailViewController.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width / 1.60, 254, 20, 20);
+        [self.detailViewController.videoButton useDoneButtonStyle];
+        [self.detailViewController.wikiButton useDoneButtonStyle];
+        [self.detailViewController.emailButton useDoneButtonStyle];
+        [self.detailViewController.emailButton useEmailStyle];
+        [self.detailViewController.composeTweetButton useDoneButtonStyle];
+    }
+
 #pragma mark - Section Headers
 
     NSString *sectionHeadersPath =
@@ -426,82 +418,65 @@
         @"",
         nil];
 
-    
     [self.detailViewController configureView];
-    
+
     if (IS_IPAD) {} else {[self.navigationController pushViewController:self.detailViewController animated:YES]; }
 } /* viewDidLoad */
-
 
 #pragma mark -
 #pragma mark Data Source Loading / Reloading Methods
 
-- (void)reloadTableViewDataSource{
-	
-	//  should be calling your tableviews data source model to reload
-	//  put here just for demo
-	_reloading = YES;
-	
+- (void)reloadTableViewDataSource
+{
+    //  should be calling your tableviews data source model to reload
+    //  put here just for demo
+    _reloading = YES;
 }
 
-- (void)doneLoadingTableViewData{
-	
-	//  model should call this when its done loading
-	_reloading = NO;
-	[_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
-    
+- (void)doneLoadingTableViewData
+{
+    //  model should call this when its done loading
+    _reloading = NO;
+    [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
+
     [self.detailViewController configureView];
-    
+
     if (IS_IPAD) {} else {
-    
-    [self.navigationController pushViewController:self.detailViewController animated:YES];
-    
+        [self.navigationController pushViewController:self.detailViewController animated:YES];
     }
-    
-
-	
 }
-
 
 #pragma mark -
 #pragma mark UIScrollViewDelegate Methods
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-	
-	[_refreshHeaderView egoRefreshScrollViewDidScroll:scrollView];
-    
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [_refreshHeaderView egoRefreshScrollViewDidScroll:scrollView];
 }
 
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-	
-	[_refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
-	
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    [_refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
 }
-
 
 #pragma mark -
 #pragma mark EGORefreshTableHeaderDelegate Methods
 
-- (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view{
-	
-	[self reloadTableViewDataSource];
-	[self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:3.0];
-	
+- (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView *)view
+{
+    [self reloadTableViewDataSource];
+    [self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:3.0];
 }
 
-- (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view{
-	
-	return _reloading; // should return if data source model is reloading
-	
+- (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView *)view
+{
+    return _reloading; // should return if data source model is reloading
 }
 
-- (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView*)view{
-	
-	return [NSDate date]; // should return date data source was last changed
-	
+- (NSDate *)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView *)view
+{
+    return [NSDate date]; // should return date data source was last changed
 }
-
-
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
    toInterfaceOrientation
@@ -658,30 +633,22 @@
     return NO;
 }
 
-
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
-    
-        NSLog(@"indexPath.section = %i",indexPath.section);
-        
-        if (indexPath.row < 10 ) {
-        
-            NSLog(@"indexPath.row = %i",indexPath.row);
-        
+        NSLog(@"indexPath.section = %i", indexPath.section);
+
+        if (indexPath.row < 10) {
+            NSLog(@"indexPath.row = %i", indexPath.row);
         }
-        
     }
- 
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(
     NSIndexPath *)indexPath
 {
-    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-    
     if (indexPath.section == 0) {
         //
 
@@ -781,39 +748,33 @@
         self.detailViewController.MovieToPlay;
     self.detailViewController.detailDescriptionLabel.text   = nil;
     self.detailViewController.musicTheory101Label.text      = nil;
-    self.detailViewController.vLabel.text = nil;
-
+    self.detailViewController.vLabel.text       = nil;
+    self.detailViewController.toolBar.hidden    = TRUE;
 
     if (IS_IPAD) {} else {
-        self.detailViewController.toolBar.hidden = TRUE;;
         [self.navigationController pushViewController:self.detailViewController animated:YES];
     }
 } /* tableView */
 
-
 #pragma mark -
 #pragma mark Memory Management
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
 }
 
-
-
-- (void)viewDidUnload {
-    
+- (void)viewDidUnload
+{
     [super viewDidUnload];
- 
-	_refreshHeaderView=nil;
+
+    _refreshHeaderView = nil;
 }
 
-- (void)dealloc {
-	
-	_refreshHeaderView = nil;
+- (void)dealloc
+{
+    _refreshHeaderView = nil;
     [super dealloc];
 }
-
-
-
 
 @end
