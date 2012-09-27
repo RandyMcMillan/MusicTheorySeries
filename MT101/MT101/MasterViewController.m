@@ -409,6 +409,9 @@
         @"",
         nil];
 
+    
+    [self.detailViewController configureView];
+    
     if (IS_IPAD) {} else {[self.navigationController pushViewController:self.detailViewController animated:YES]; }
 } /* viewDidLoad */
 
@@ -431,11 +434,8 @@
 	[_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
     
     [self.detailViewController configureView];
-    [self.detailViewController.imageView useWelcomeStyle];
     
-    if (IS_IPAD) {
-    
-    } else {
+    if (IS_IPAD) {} else {
     
     [self.navigationController pushViewController:self.detailViewController animated:YES];
     

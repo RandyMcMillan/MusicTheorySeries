@@ -90,7 +90,7 @@
             UIModalPresentationPageSheet;
 
         [self presentModalViewController:theGrandStaffVC animated:YES];
-        //[self.navigationController pushViewController:theGrandStaffVC animated:YES];
+        // [self.navigationController pushViewController:theGrandStaffVC animated:YES];
 
         [theGrandStaffVC  release];
     }
@@ -406,89 +406,73 @@
 
 - (void)configureView
 {
-
-    // Update the user interface for the detail item.
     if (self.detailItem) {
         // MovieToPlay = @"GreenBeam";
-        
     }
-   
+    
+    //    ExampleView *welcomeIV = [[ExampleView alloc] initWithImage:
+    //                      [UIImage originalSizeImageWithPDFNamed:@"welcome.pdf"]];
+
+    //self.imageView.image = welcomeIV.image;
+    //[welcomeIV release];
+
+      [imageView useWelcomeStyle];///bypass here for imageView issues on welcom screen iPhone
+    
+    self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+
     if (IS_IPAD) {
-        
-    
-    [videoButton useDoneButtonStyle];
-    [wikiButton useDoneButtonStyle];
-    [interActiveButton useDoneButtonStyle];
-    [emailButton useDoneButtonStyle];
-    [emailButton useEmailStyle];
-    [composeTweetButton useDoneButtonStyle];
-       
-        //useDoneButtonIPad
-        //useEmailButtonIPad etc...
-        //All styles start with "Basic Style" then augment the style with the secondary styling
-        //each style calls basic style first then continues with extra styling in its individual methods
-        
-    }else{
-    
-    
-        [videoButton useDoneButtonStyle];
-        [wikiButton useDoneButtonStyle];
-        [interActiveButton useDoneButtonStyle];
-        [emailButton useDoneButtonStyle];
-        [emailButton useEmailStyle];
-        [composeTweetButton useDoneButtonStyle];
-        
-        //useDoneButtonIPad
-        //useEmailButtonIPad etc...
-        //All styles start with "Basic Style" then augment the style with the secondary styling
-        //each style calls basic style first then continues with extra styling in its individual methods
-        
-        
-    
-    
-    
-    }//build for iPhone
-    
-    
-    ExampleView *welcomeIV = [[ExampleView alloc] initWithImage:
-                              [UIImage originalSizeImageWithPDFNamed:@"welcome.pdf"]];
-    
-    self.imageView.image = welcomeIV.image;
-    [welcomeIV release];
-   
-    /// [imageView useWelcomeStyle];///bypass here for imageView issues on welcom screen iPhone
 
-   
+        // ipad landscape welcome screen formatting
+        //self.musicTheory101Label.hidden = FALSE;
+        //self.musicTheory101Label.frame  = CGRectMake(self.view.frame.size.width / 3.9, 530, 350, 50);
+        //self.interActiveButton.hidden   = FALSE;
+        //self.vLabel.frame = CGRectMake(self.view.frame.size.width / 1.44, 578.0, 40, 27);
+        //self.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width / 1.38, 577, 30, 30);
+
+        //[videoButton useDoneButtonStyle];
+        //[wikiButton useDoneButtonStyle];
+        //[interActiveButton useDoneButtonStyle];
+        //[emailButton useDoneButtonStyle];
+        //[emailButton useEmailStyle];
+        //[composeTweetButton useDoneButtonStyle];
+        //[imageView useWelcomeStyle];
+        // useDoneButtonIPad
+        // useEmailButtonIPad etc...
+        // All styles start with "Basic Style" then augment the style with the secondary styling
+        // each style calls basic style first then continues with extra styling in its individual methods
+    
+    } else {
+    
+        // iphone landscape welcome screen formatting
+        //self.musicTheory101Label.text   = @"MT101";
+        //self.musicTheory101Label.hidden = FALSE;
+        //self.musicTheory101Label.frame  = CGRectMake(self.view.frame.size.width / 2.3, 219, 100, 50);
+        //self.interActiveButton.hidden   = TRUE;
+        //self.vLabel.frame = CGRectMake(self.view.frame.size.width / 1.65, 254, 7, 7);
+        //self.detailDescriptionLabel.frame   = CGRectMake(self.view.frame.size.width / 1.60, 254, 20, 20);
+        //self.interActiveButton.frame        = CGRectMake(0, 0, 0, 0);
+
+        //[videoButton useDoneButtonStyle];
+        //[wikiButton useDoneButtonStyle];
+        //[interActiveButton useDoneButtonStyle];
+        //[emailButton useDoneButtonStyle];
+        //[emailButton useEmailStyle];
+        //[composeTweetButton useDoneButtonStyle];
+        //[imageView useWelcomeStyle];
+        // useDoneButtonIPad
+        // useEmailButtonIPad etc...
+        // All styles start with "Basic Style" then augment the style with the secondary styling
+        // each style calls basic style first then continues with extra styling in its individual methods
+    
+    } // build for iPhone
+
+
+
 #if TARGET_IPHONE_SIMULATOR
-    //self.musicTheory101Label.backgroundColor = [UIColor redColor];
-    // self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
-    //self.vLabel.backgroundColor = [UIColor yellowColor];
+        // self.musicTheory101Label.backgroundColor = [UIColor redColor];
+        // self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
+        // self.vLabel.backgroundColor = [UIColor yellowColor];
 #endif
-    
-    if (IS_IPAD){
-   
-        //ipad landscape welcome screen formatting
-        self.musicTheory101Label.hidden = FALSE;
-        self.musicTheory101Label.frame = CGRectMake(self.view.frame.size.width/3.9, 530, 350, 50);
-        self.interActiveButton.hidden = FALSE;
-        self.vLabel.frame = CGRectMake(self.view.frame.size.width/1.44,578.0, 40, 27);
-        self.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width/1.38,577, 30, 30);
-
-        } else {
-        
-        //iphone landscape welcome screen formatting
-        self.musicTheory101Label.text = @"MT101";
-        self.musicTheory101Label.hidden = FALSE;
-        self.musicTheory101Label.frame = CGRectMake(self.view.frame.size.width/2.3, 219, 100, 50);
-        self.interActiveButton.hidden = TRUE;
-        self.vLabel.frame = CGRectMake(self.view.frame.size.width/1.65,254, 7, 7);
-        self.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width/1.60,254, 20, 20);
-        self.interActiveButton.frame = CGRectMake(0, 0,0,0);
-        
-    }
-    
-       self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
- 
 
 } /* configureView */
 
@@ -639,7 +623,6 @@
 {
     [super viewDidLoad];
     [self configureView];
-    
 } /* viewDidLoad */
 
 - (void)viewDidUnload
@@ -665,27 +648,26 @@
 } /* viewDidUnload */
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
-toInterfaceOrientation
+   toInterfaceOrientation
 {
     // Return YES for supported orientations
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
         return YES;
     }
-    
+
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
         return YES;
     }
-    
+
     if (toInterfaceOrientation == UIInterfaceOrientationPortrait) {
         return NO;
     }
-    
+
     if (toInterfaceOrientation ==
         UIInterfaceOrientationPortraitUpsideDown) {
         return NO;
     } else {return NO; }
 } /* shouldAutorotateToInterfaceOrientation */
-
 
 - (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
    currentInterfaceOrientation

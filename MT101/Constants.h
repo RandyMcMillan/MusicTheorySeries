@@ -27,8 +27,11 @@
 #define NOTEWIDTH                   40
 #define NOTEHEIGHT                  40
 
-#define WELCOMEWIDTH                412
-#define WELCOMEHEIGHT               412
+#define WELCOMEWIDTH                512
+#define WELCOMEHEIGHT               512
+
+#define IPHONEWELCOMEWIDTH          128
+#define IPHONEWELCOMEHEIGHT         128
 
 #define GRANDSTAFFEXAMPLEWIDTH      703
 #define GRANDSTAFFEXAMPLEHEIGHT     768

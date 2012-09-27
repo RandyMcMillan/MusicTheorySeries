@@ -295,8 +295,8 @@
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIImageView" id="204503168">
 						<reference key="NSNextResponder" ref="647120888"/>
-						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{95.5, 128.5}, {512, 512}}</string>
+						<int key="NSvFlags">274</int>
+						<string key="NSFrameSize">{124, 124}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="619180556"/>
@@ -314,7 +314,7 @@
 					<object class="IBUILabel" id="619180556">
 						<reference key="NSNextResponder" ref="647120888"/>
 						<int key="NSvFlags">293</int>
-						<string key="NSFrame">{{188, 202}, {326, 43}}</string>
+						<string key="NSFrame">{{-29, 132}, {326, 43}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="191681143"/>
@@ -324,7 +324,7 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<string key="IBUIText"> MUSIC THEORY 101</string>
+						<string key="IBUIText">...</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC4zMzMzMzMzMzMzAA</bytes>
@@ -349,7 +349,7 @@
 					<object class="IBUILabel" id="906733513">
 						<reference key="NSNextResponder" ref="647120888"/>
 						<int key="NSvFlags">293</int>
-						<string key="NSFrame">{{472, 253}, {42, 21}}</string>
+						<string key="NSFrame">{{154, 178}, {42, 21}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="841819309"/>
@@ -360,7 +360,7 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<string key="IBUIText">2.0</string>
+						<string key="IBUIText">...</string>
 						<object class="NSColor" key="IBUITextColor" id="34244913">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -383,7 +383,7 @@
 					<object class="IBUILabel" id="191681143">
 						<reference key="NSNextResponder" ref="647120888"/>
 						<int key="NSvFlags">293</int>
-						<string key="NSFrame">{{455, 253}, {40, 21}}</string>
+						<string key="NSFrame">{{137, 178}, {40, 21}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="906733513"/>
@@ -394,7 +394,7 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<string key="IBUIText">    v    </string>
+						<string key="IBUIText">...</string>
 						<reference key="IBUITextColor" ref="34244913"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
@@ -555,7 +555,6 @@
 								<string key="NSFrame">{{621, 5}, {70, 34}}</string>
 								<reference key="NSSuperview" ref="841819309"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -643,32 +642,12 @@
 					<int key="NSColorSpace">2</int>
 					<bytes key="NSRGB">MC45MzMzMzMzOTY5IDAuOTMzMzMzMzk2OSAwLjkzMzMzMzM5NjkAA</bytes>
 				</object>
+				<bool key="IBUIAutoresizesSubviews">NO</bool>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<int key="IBUIContentMode">1</int>
 				<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 					<int key="IBUIInterfaceOrientation">3</int>
 					<int key="interfaceOrientation">3</int>
-				</object>
-				<object class="IBUISimulatedSizeMetrics" key="IBUISimulatedDestinationMetrics">
-					<string key="IBUISimulatedSizeMetricsClass">IBUISplitViewDetailSimulatedSizeMetrics</string>
-					<object class="NSMutableDictionary" key="IBUINormalizedOrientationToSizeMap">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<array key="dict.sortedKeys">
-							<integer value="1"/>
-							<integer value="3"/>
-						</array>
-						<array key="dict.values">
-							<string>{768, 1024}</string>
-							<string>{703, 768}</string>
-						</array>
-					</object>
-					<string key="IBUITargetRuntime">IBIPadFramework</string>
-					<string key="IBUIDisplayName">Detail</string>
-					<string key="IBUIDestinationClass">IBUISplitViewController</string>
-					<object class="NSDictionary" key="IBUIDestinationContext">
-						<string key="NS.key.0">IBUISplitViewControllerContentSizeLocation</string>
-						<string key="NS.object.0">IBUISplitViewControllerContentSizeLocationDetail</string>
-					</object>
 				</object>
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 			</object>

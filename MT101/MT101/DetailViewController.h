@@ -51,5 +51,6 @@
 //- (void)isTwitterAvailable:(id)sender;
 //- (void)isTwitterSetup:(id)sender;
 - (IBAction)composeTweet:(id)sender;
+- (void)configureView:(id)sender;
 
 @end

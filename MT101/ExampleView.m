@@ -84,23 +84,32 @@
 
 - (void)useWelcomeStyle
 {
-    CGRect rect = self.superview.frame;
+      CGRect rect = CGRectMake(0, 0, 703, 768);//self.superview.frame;
+    //CGRect rect = VIEWBOUNDS;//self.superview.frame;
+    self.alpha = 0.8;
+     [self setContentMode:(UIViewContentModeScaleAspectFit)];
+    [self setAutoresizingMask:(UIViewAutoresizingNone)];
 
-    self.alpha = 1.0;
-    [self setContentMode:(UIViewContentModeScaleAspectFit)];
-    [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
+    
+        ExampleView *welcomeIV = [[ExampleView alloc] initWithImage:
+                          [UIImage originalSizeImageWithPDFNamed:@"welcome.pdf"]];
+    
+    self.image = welcomeIV.image;
+    [welcomeIV release];
 
+    
+    
     if (IS_IPAD) {
         
         if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
             
-            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH)];
-            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+            //[self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH)];
+            //[self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)];
             
         } else {
             
-            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH)];
-            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+            //[self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH)];
+            //[self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)];
             
         }
         
@@ -108,16 +117,18 @@
         
         if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
 
+            
+            
             //  [self setBounds:VIEWBOUNDS];
-            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT+170, WELCOMEWIDTH+170)];
-            [self setCenter:CGPointMake(rect.size.width / 2.0, rect.size.height / 2.0)];
+             [self setBounds:CGRectMake(-256, -256, IPHONEWELCOMEHEIGHT, IPHONEWELCOMEWIDTH)];
+            /// [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)];
             //  [self setCenter:CGPointMake(0,0)];
             
         } else {
            
             //[self setBounds:VIEWBOUNDS];
-            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT+170, WELCOMEWIDTH+170)];
-            [self setCenter:CGPointMake(rect.size.width / 2.0, rect.size.height / 2.1)];
+            [self setBounds:CGRectMake(-256, -256, IPHONEWELCOMEHEIGHT, IPHONEWELCOMEWIDTH)];
+            //[self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)];
             //[self setCenter:CGPointMake(0,0)];
  
         }
