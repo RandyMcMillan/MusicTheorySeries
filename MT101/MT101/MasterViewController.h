@@ -8,11 +8,20 @@
 //
 #import <UIKit/UIKit.h>
 #import "UIImage+PDF.h"
+#import "EGORefreshTableHeaderView.h"
 
 @class DetailViewController;
 
-@interface MasterViewController : UITableViewController {
+@interface MasterViewController : UITableViewController <EGORefreshTableHeaderDelegate> {
 
+    
+    EGORefreshTableHeaderView *_refreshHeaderView;
+
+	//  Reloading var should really be your tableviews datasource
+	//  Putting it here for demo purposes
+	BOOL _reloading;
+
+    
   NSArray *videoList0;
   NSArray *videoList1;
   NSArray *videoList2;
@@ -56,5 +65,9 @@
 
 @property (strong,
   nonatomic) DetailViewController *detailViewController;
+
+
+- (void)reloadTableViewDataSource;
+- (void)doneLoadingTableViewData;
 
 @end
