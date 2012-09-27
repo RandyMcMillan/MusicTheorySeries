@@ -158,18 +158,9 @@ self.titleLabel.text = @"DONE";
 {
     
     self.titleLabel.text = @"";
-    if (IS_IPAD) {
-        
-    
-    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"UIButtonBarCompose"]] forState:UIControlStateNormal];
-    
-    } else {
-        
-    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"UIButtonBarCompose"]] forState:UIControlStateNormal];
+    //    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"UIButtonBarCompose"]] forState:UIControlStateNormal];
+    //[self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"UIButtonBarCompose"]] forState:UIControlStateNormal];
  
-    }
-    // [self.title setTitle:@"EMAIL" forState:(UIControlStateNormal | UIControlStateHighlighted | UIControlStateSelected)];
-    // [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"email"]] forState:UIControlStateNormal];
 }
 
 - (void)useVideoStyle
@@ -256,6 +247,10 @@ self.titleLabel.text = @"DONE";
         UIControlStateNormal];
     [self setTitleColor:[UIColor darkGrayColor] forState:
         UIControlStateHighlighted];
+    
+    // [self.titleLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:13.0]];
+
+    self.titleLabel.font = @"Hoefler Text";
 }   /* useWikiStyle */
 
 - (void)useInteractiveStyle
