@@ -57,7 +57,9 @@
 	//  update the last update date
 	[_refreshHeaderView refreshLastUpdatedDate];
 
-    
+    if (IS_IPAD) {
+        
+    }else{
     // prime iphone landscape welcome screen formatting
     self.detailViewController.musicTheory101Label.text   = @"MT101";
     self.detailViewController.musicTheory101Label.hidden = FALSE;
@@ -71,7 +73,7 @@
     [self.detailViewController.emailButton useDoneButtonStyle];
     [self.detailViewController.emailButton useEmailStyle];
     [self.detailViewController.composeTweetButton useDoneButtonStyle];
-    
+    }
    
     
     
@@ -781,9 +783,6 @@
     self.detailViewController.musicTheory101Label.text      = nil;
     self.detailViewController.vLabel.text = nil;
 
-    //        self.window.rootViewController = masterNavigationController;
-
-#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
     if (IS_IPAD) {} else {
         self.detailViewController.toolBar.hidden = TRUE;;

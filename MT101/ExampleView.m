@@ -3,6 +3,7 @@
 
 #import "ExampleView.h"
 #import "Constants.h"
+#import "UIImage+PDF.h"
 
 @interface ExampleView ()
 @property (nonatomic, readonly) CGGradientRef   normalGradient;
@@ -103,13 +104,13 @@
         
         if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
             
-            //[self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH)];
-            //[self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)];
+            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)];
             
         } else {
             
-            //[self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH)];
-            //[self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)];
+            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH)];
+            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)];
             
         }
         
