@@ -754,6 +754,11 @@
     self.detailViewController.detailDescriptionLabel.text   = nil;
     self.detailViewController.musicTheory101Label.text      = nil;
     self.detailViewController.vLabel.text       = nil;
+    
+    self.detailViewController.vLabel.hidden = TRUE;
+    self.detailViewController.detailDescriptionLabel.hidden = TRUE;
+    self.detailViewController.musicTheory101Label.hidden = TRUE;
+    
     self.detailViewController.toolBar.hidden    = FALSE;
 
     if (IS_IPAD) {} else {

@@ -406,6 +406,17 @@
 
 - (void)configureView
 {
+    
+    for (UIView *subview in self.view.subviews) {
+        
+        if ([subview isKindOfClass:[UITextView class]]) {
+            
+            ((UITextView *)subview).font = [UIFont fontWithName:@"Helvetica-Bold" size:1];
+        }
+        
+    }
+    
+    
     if (self.detailItem) {}
 
     [imageView useWelcomeStyle];
@@ -415,12 +426,24 @@
 
     if (IS_IPAD) {
         // ipad landscape welcome screen formatting
-        // self.musicTheory101Label.hidden = FALSE;
-        // self.musicTheory101Label.frame  = CGRectMake(self.view.frame.size.width / 3.9, 530, 350, 50);
-        // self.interActiveButton.hidden   = FALSE;
-        // self.vLabel.frame = CGRectMake(self.view.frame.size.width / 1.44, 578.0, 40, 27);
-        // self.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width / 1.38, 577, 30, 30);
+        self.musicTheory101Label.text = @"Music Theory 101";
+        self.musicTheory101Label.frame
+        = CGRectMake([self view].center.x-163,[self view].center.y+31, 326, 53);
+        [self.musicTheory101Label setFont:[UIFont fontWithName:@"Helvetica-Bold" size:39.0]];
+        self.musicTheory101Label.hidden = FALSE;
+        
+        self.vLabel.text = @"vv";
+        self.vLabel.frame 
+        = CGRectMake([self view].center.x,[self view].center.y, 350, 50);
+        [self.musicTheory101Label setFont:[UIFont fontWithName:@"Helvetica-Bold" size:39.0]];
+        self.vLabel.hidden = FALSE;
 
+        self.detailDescriptionLabel.text = @"description";
+        self.detailDescriptionLabel.frame
+        = CGRectMake([self view].center.x,[self view].center.y, 350, 50);
+        self.detailDescriptionLabel.hidden = FALSE;
+        
+        self.interActiveButton.hidden   = FALSE;
         [videoButton useDoneButtonStyle];
         [wikiButton useDoneButtonStyle];
         [interActiveButton useDoneButtonStyle];
@@ -456,9 +479,9 @@
     } // build for iPhone
 
 #if TARGET_IPHONE_SIMULATOR
-        // self.musicTheory101Label.backgroundColor = [UIColor redColor];
-        // self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
-        // self.vLabel.backgroundColor = [UIColor yellowColor];
+         self.musicTheory101Label.backgroundColor = [UIColor redColor];
+         self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
+         self.vLabel.backgroundColor = [UIColor yellowColor];
 #endif
 } /* configureView */
 
