@@ -40,8 +40,8 @@
 - (void)drawRects
 {
     // define the note rectangles
-    keyRects[0]     = C2;
-    
+    keyRects[0] = C2;
+
     keyRects[1]     = C2sharp;
     keyRects[2]     = D2;
     keyRects[3]     = D2sharp;
@@ -53,9 +53,9 @@
     keyRects[9]     = A2;
     keyRects[10]    = A2sharp;
     keyRects[11]    = B2;
-    
-    keyRects[12]    = C3;
-    
+
+    keyRects[12] = C3;
+
     keyRects[13]    = C3sharp;
     keyRects[14]    = D3;
     keyRects[15]    = D3sharp;
@@ -82,8 +82,8 @@
     keyRects[34]    = A4sharp;
     keyRects[35]    = B4;
 
-    keyRects[36]    = C5;
-    
+    keyRects[36] = C5;
+
     keyRects[37]    = C5sharp;
     keyRects[38]    = D5;
     keyRects[39]    = D5sharp;
@@ -115,6 +115,7 @@
         label4 = [[UILabel alloc] initWithFrame:keyRects[4]];
         label4.backgroundColor  = MI;
         label4.text             = [NSString stringWithFormat:@"4"];
+
         label5 = [[UILabel alloc] initWithFrame:keyRects[5]];
         label5.backgroundColor  = FA;
         label5.text             = [NSString stringWithFormat:@"5"];
@@ -147,7 +148,7 @@
         label12.backgroundColor = DO;
         label12.text            = [NSString stringWithFormat:@"12"];
 
-        label13 = [[UILabel alloc] initWithFrame:keyRects[0]];
+        label13 = [[UILabel alloc] initWithFrame:keyRects[13]];
         label13.backgroundColor = DI;
         label13.text            = [NSString stringWithFormat:@"13"];
 
@@ -155,7 +156,7 @@
         label14.backgroundColor = RE;
         label14.text            = [NSString stringWithFormat:@"14"];
 
-        label15 = [[UILabel alloc] initWithFrame:keyRects[0]];
+        label15 = [[UILabel alloc] initWithFrame:keyRects[15]];
         label15.backgroundColor = RI;
         label15.text            = [NSString stringWithFormat:@"15"];
 
@@ -167,7 +168,7 @@
         label17.backgroundColor = FA;
         label17.text            = [NSString stringWithFormat:@"17"];
 
-        label18 = [[UILabel alloc] initWithFrame:keyRects[0]];
+        label18 = [[UILabel alloc] initWithFrame:keyRects[18]];
         label18.backgroundColor = FI;
         label18.text            = [NSString stringWithFormat:@"18"];
 
@@ -175,7 +176,7 @@
         label19.backgroundColor = SOL;
         label19.text            = [NSString stringWithFormat:@"19"];
 
-        label20 = [[UILabel alloc] initWithFrame:keyRects[0]];
+        label20 = [[UILabel alloc] initWithFrame:keyRects[20]];
         label20.backgroundColor = SI;
         label20.text            = [NSString stringWithFormat:@"20"];
 
@@ -183,7 +184,7 @@
         label21.backgroundColor = LA;
         label21.text            = [NSString stringWithFormat:@"21"];
 
-        label22 = [[UILabel alloc] initWithFrame:keyRects[0]];
+        label22 = [[UILabel alloc] initWithFrame:keyRects[22]];
         label22.backgroundColor = LI;
         label22.text            = [NSString stringWithFormat:@"22"];
 
@@ -275,53 +276,53 @@
         label44.backgroundColor = SI;
         label44.text            = [NSString stringWithFormat:@"44"];
 
-        [self.view addSubview:label0];
-        [self.view addSubview:label1];
-        [self.view addSubview:label2];
-        [self.view addSubview:label3];
+        // [self.view addSubview:label0];
+        // [self.view addSubview:label1];
+        // [self.view addSubview:label2];
+        // [self.view addSubview:label3];
         [self.view addSubview:label4];
         [self.view addSubview:label5];
-        // [self.view addSubview:label6];
+        [self.view addSubview:label6];
         [self.view addSubview:label7];
-        // [self.view addSubview:label8];
+        [self.view addSubview:label8];
         [self.view addSubview:label9];
-        // [self.view addSubview:label10];
+        [self.view addSubview:label10];
         [self.view addSubview:label11];
         [self.view addSubview:label12];
 
-        //    [self.view addSubview:label13];
+        [self.view addSubview:label13];
 
         [self.view addSubview:label14];
-        //        [self.view addSubview:label15];
+        [self.view addSubview:label15];
         [self.view addSubview:label16];
         [self.view addSubview:label17];
-        // [self.view addSubview:label18];
+        [self.view addSubview:label18];
         [self.view addSubview:label19];
-        // [self.view addSubview:label20];
+        [self.view addSubview:label20];
         [self.view addSubview:label21];
-        // [self.view addSubview:label22];
+        [self.view addSubview:label22];
         [self.view addSubview:label23];
         [self.view addSubview:label24];
-        //  [self.view addSubview:label25];
+        [self.view addSubview:label25];
         [self.view addSubview:label26];
-        // [self.view addSubview:label27];
+        [self.view addSubview:label27];
         [self.view addSubview:label28];
         [self.view addSubview:label29];
-        //  [self.view addSubview:label30];
+        [self.view addSubview:label30];
         [self.view addSubview:label31];
-        //  [self.view addSubview:label32];
+        [self.view addSubview:label32];
         [self.view addSubview:label33];
-        //  [self.view addSubview:label34];
+        [self.view addSubview:label34];
         [self.view addSubview:label35];
         [self.view addSubview:label36];
-        // [self.view addSubview:label37];
+        [self.view addSubview:label37];
         [self.view addSubview:label38];
-        // [self.view addSubview:label39];
-        [self.view addSubview:label40];
-        [self.view addSubview:label41];
-        // [self.view addSubview:label42];
-        [self.view addSubview:label43];
-        [self.view addSubview:label44];
+        [self.view addSubview:label39];
+        //  [self.view addSubview:label40];
+        //  [self.view addSubview:label41];
+        //   [self.view addSubview:label42];
+        //  [self.view addSubview:label43];
+        //  [self.view addSubview:label44];
 #endif /* if TARGET_IPHONE_SIMULATOR */
 } /* drawRects */
 
