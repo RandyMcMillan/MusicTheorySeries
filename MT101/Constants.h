@@ -4,6 +4,11 @@
 //
 //
 
+
+
+#define BARBUTTON(TITLE, SELECTOR) [[UIBarButtonItem alloc] initWithTitle:TITLE style:UIBarButtonItemStylePlain target:self action:SELECTOR]
+
+
 #define kLeftMargin                 20.0
 #define kTopMargin                  20.0
 #define kRightMargin                20.0
