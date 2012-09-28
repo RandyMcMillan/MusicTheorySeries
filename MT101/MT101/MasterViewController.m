@@ -46,6 +46,10 @@
         EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.tableView.bounds.size.height, self.view.frame.size.width, self.tableView.bounds.size.height)];
         view.delegate = self;
 
+        view.alpha = 0.0;
+       
+        
+        
         [self.tableView addSubview:view];
         _refreshHeaderView = view;
         [view release];
@@ -441,12 +445,12 @@
     _reloading = NO;
     [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
 
-    [self.detailViewController configureView];
-    [self.detailViewController.toolBar setHidden:TRUE];
+    //[self.detailViewController configureView];
+    //[self.detailViewController.toolBar setHidden:TRUE];
 
 
     if (IS_IPAD) {} else {
-        [self.navigationController pushViewController:self.detailViewController animated:YES];
+        //[self.navigationController pushViewController:self.detailViewController animated:YES];
     }
 }
 
