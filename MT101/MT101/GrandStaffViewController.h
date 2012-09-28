@@ -11,8 +11,7 @@
 #import "ExampleView.h"
 #import "UIImage+PDF.h"
 
-@interface GrandStaffViewController : UIViewController <
-    UISplitViewControllerDelegate>{
+@interface GrandStaffViewController : UIViewController <UISplitViewControllerDelegate>{
     int     lastKeyIndex;
     CGRect  keyRects[KEY_COUNT];
 
@@ -46,31 +45,25 @@
     UILabel *label23;
     UILabel *label24;
     UILabel *label25;
-        UILabel *label26;
-        UILabel *label27;
-        UILabel *label28;
-        UILabel *label29;
-        UILabel *label30;
-        UILabel *label31;
-        UILabel *label32;
-        UILabel *label33;
-        UILabel *label34;
-        UILabel *label35;
-        UILabel *label36;
-        UILabel *label37;
-        UILabel *label38;
-        UILabel *label39;
-        UILabel *label40;
-        UILabel *label41;
-        UILabel *label42;
-        UILabel *label43;
-        UILabel *label44;
- 
-        
-        
-        
-        
-        
+    UILabel *label26;
+    UILabel *label27;
+    UILabel *label28;
+    UILabel *label29;
+    UILabel *label30;
+    UILabel *label31;
+    UILabel *label32;
+    UILabel *label33;
+    UILabel *label34;
+    UILabel *label35;
+    UILabel *label36;
+    UILabel *label37;
+    UILabel *label38;
+    UILabel *label39;
+    UILabel *label40;
+    UILabel *label41;
+    UILabel *label42;
+    UILabel *label43;
+    UILabel *label44;
 }
 
 @property (nonatomic, assign) MixerHostAudio *mixerHost;
