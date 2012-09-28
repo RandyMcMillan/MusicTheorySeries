@@ -205,8 +205,9 @@ self.titleLabel.text = @"DONE";
         UIControlStateHighlighted];
     
     // [self.titleLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:13.0]];
+    // [self.titleLabel setFont:[UIFont fontWithName:@"Hoefler Text" size:13.0]];
+    // self.titleLabel.font = @"Hoefler Text";
 
-    self.titleLabel.font = @"Hoefler Text";
 }   /* useWikiStyle */
 
 - (void)useInteractiveStyle

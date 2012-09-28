@@ -420,7 +420,7 @@
         nil];
 
     [self.detailViewController configureView];
-
+    [self.detailViewController.toolBar setHidden:TRUE];
     // SHOW DETAILVIEW ON IPHONE DURING APP LAUNCH
     //  if (IS_IPAD) {} else {[self.navigationController pushViewController:self.detailViewController animated:YES]; }
 } /* viewDidLoad */
@@ -442,6 +442,8 @@
     [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
 
     [self.detailViewController configureView];
+    [self.detailViewController.toolBar setHidden:TRUE];
+
 
     if (IS_IPAD) {} else {
         [self.navigationController pushViewController:self.detailViewController animated:YES];
