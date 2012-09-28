@@ -48,8 +48,6 @@
 
         view.alpha = 0.0;
        
-        
-        
         [self.tableView addSubview:view];
         _refreshHeaderView = view;
         [view release];
