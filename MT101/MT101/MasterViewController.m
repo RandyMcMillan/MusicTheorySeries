@@ -45,6 +45,7 @@
     if (_refreshHeaderView == nil) {
         EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.tableView.bounds.size.height, self.view.frame.size.width, self.tableView.bounds.size.height)];
         view.delegate = self;
+
         [self.tableView addSubview:view];
         _refreshHeaderView = view;
         [view release];
@@ -420,10 +421,8 @@
 
     [self.detailViewController configureView];
 
-    //SHOW DETAILVIEW ON IPHONE DURING APP LAUNCH
+    // SHOW DETAILVIEW ON IPHONE DURING APP LAUNCH
     //  if (IS_IPAD) {} else {[self.navigationController pushViewController:self.detailViewController animated:YES]; }
-    
-    
 } /* viewDidLoad */
 
 #pragma mark -
