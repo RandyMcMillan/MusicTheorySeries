@@ -122,17 +122,15 @@ self.titleLabel.text = @"DONE";
 
     if (IS_IPAD) {
     
-    [self setTitleColor:[UIColor darkGrayColor] forState:
-        UIControlStateNormal];
+    [self setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         
     } else {
     
-        [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+
     }
     
-    // [self setTitleColor:[UIColor darkGrayColor] forState:
-    //  UIControlStateHighlighted];
-}   /* useDoneButtonStyle */
+}
 
 - (void)useSafariStyle
 {
@@ -156,20 +154,13 @@ self.titleLabel.text = @"DONE";
 
 - (void)useEmailStyle
 {
-    
     [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"UIButtonBarCompose"]] forState:UIControlStateNormal];
-
-    //    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"UIButtonBarCompose"]] forState:UIControlStateNormal];
-    //[self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"UIButtonBarCompose"]] forState:UIControlStateNormal];
- 
 }
 
 - (void)useVideoStyle
 {
-    
     [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"PLVideoCameraPreviewStack"]] forState:UIControlStateNormal];
-
-}   /* useVideoStyle */
+}
 
 - (void)useWikiStyle
 {
