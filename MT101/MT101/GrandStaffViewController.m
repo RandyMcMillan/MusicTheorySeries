@@ -91,9 +91,9 @@
     keyRects[41]    = F5;
     keyRects[42]    = F5sharp;
     keyRects[43]    = G5;
-    keyRects[44]    = G5sharp;
+    // keyRects[44]    = G5sharp;
 
-#if TARGET_IPHONE_SIMULATOR
+    //#if TARGET_IPHONE_SIMULATOR
         // displayed in Simulator
 
         label0 = [[UILabel alloc] initWithFrame:keyRects[0]];
@@ -146,7 +146,7 @@
 
         label12 = [[UILabel alloc] initWithFrame:keyRects[12]];
         label12.backgroundColor = DO;
-        label12.text            = [NSString stringWithFormat:@"12"];
+        label12.text            = [NSString stringWithFormat:@"•"];
 
         label13 = [[UILabel alloc] initWithFrame:keyRects[13]];
         label13.backgroundColor = DI;
@@ -323,7 +323,7 @@
            [self.view addSubview:label42];
           [self.view addSubview:label43];
           [self.view addSubview:label44];
-#endif /* if TARGET_IPHONE_SIMULATOR */
+    //#endif /* if TARGET_IPHONE_SIMULATOR */
 } /* drawRects */
 
 - (void)destroyRects
@@ -476,6 +476,35 @@
         if (subview == label35) {
             [subview removeFromSuperview];
         }
+        
+        if (subview == label36) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label37) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label38) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label39) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label40) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label41) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label42) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label43) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label44) {
+            [subview removeFromSuperview];
+        }
+
     }
 } /* destroyRects */
 
