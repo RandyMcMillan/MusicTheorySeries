@@ -420,7 +420,10 @@
 
     [self.detailViewController configureView];
 
-    if (IS_IPAD) {} else {[self.navigationController pushViewController:self.detailViewController animated:YES]; }
+    //SHOW DETAILVIEW ON IPHONE DURING APP LAUNCH
+    //  if (IS_IPAD) {} else {[self.navigationController pushViewController:self.detailViewController animated:YES]; }
+    
+    
 } /* viewDidLoad */
 
 #pragma mark -
@@ -749,7 +752,7 @@
     self.detailViewController.detailDescriptionLabel.text   = nil;
     self.detailViewController.musicTheory101Label.text      = nil;
     self.detailViewController.vLabel.text       = nil;
-    self.detailViewController.toolBar.hidden    = TRUE;
+    self.detailViewController.toolBar.hidden    = FALSE;
 
     if (IS_IPAD) {} else {
         [self.navigationController pushViewController:self.detailViewController animated:YES];

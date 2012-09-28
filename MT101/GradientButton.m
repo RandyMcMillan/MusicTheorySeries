@@ -157,7 +157,8 @@ self.titleLabel.text = @"DONE";
 - (void)useEmailStyle
 {
     
-    self.titleLabel.text = @"";
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"UIButtonBarCompose"]] forState:UIControlStateNormal];
+
     //    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"UIButtonBarCompose"]] forState:UIControlStateNormal];
     //[self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"UIButtonBarCompose"]] forState:UIControlStateNormal];
  
@@ -165,45 +166,9 @@ self.titleLabel.text = @"DONE";
 
 - (void)useVideoStyle
 {
-    NSMutableArray  *colors = [NSMutableArray arrayWithCapacity:3];
-    UIColor         *color  = [UIColor lightGrayColor]; // [UIColor
+    
+    [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"PLVideoCameraPreviewStack"]] forState:UIControlStateNormal];
 
-    // colorWithRed:0.864
-    // green:0.864 blue:0.864
-    // alpha:1.0];
-    [colors addObject:(id)[color CGColor]];
-    color = [UIColor colorWithRed:0.995 green:0.995 blue:0.995 alpha:1.0];
-    [colors addObject:(id)[color CGColor]];
-    color = [UIColor colorWithRed:0.956 green:0.956 blue:0.955 alpha:1.0];
-    [colors addObject:(id)[color CGColor]];
-    self.normalGradientColors       = colors;
-    self.normalGradientLocations    = [NSMutableArray arrayWithObjects:
-        [NSNumber numberWithFloat:0.0f],
-        [NSNumber numberWithFloat:1.0f],
-        [NSNumber numberWithFloat:0.601f],
-        nil];
-
-    NSMutableArray *colors2 = [NSMutableArray arrayWithCapacity:3];
-    color = [UIColor colorWithRed:0.692 green:0.692 blue:0.691 alpha:1.0];
-    [colors2 addObject:(id)[color CGColor]];
-    color = [UIColor colorWithRed:0.995 green:0.995 blue:0.995 alpha:1.0];
-    [colors2 addObject:(id)[color CGColor]];
-    color = [UIColor colorWithRed:0.83 green:0.83 blue:0.83 alpha:1.0];
-    [colors2 addObject:(id)[color CGColor]];
-    self.highlightGradientColors    = colors2;
-    self.highlightGradientLocations = [NSMutableArray arrayWithObjects:
-        [NSNumber numberWithFloat:0.0f],
-        [NSNumber numberWithFloat:1.0f],
-        [NSNumber numberWithFloat:0.601f],
-        nil];
-
-    self.cornerRadius   = 5.0f;
-    self.strokeColor    = [UIColor lightGrayColor];
-    self.strokeWeight   = 0.1f;
-    [self setTitleColor:[UIColor darkGrayColor] forState:
-        UIControlStateNormal];
-    [self setTitleColor:[UIColor darkGrayColor] forState:
-        UIControlStateHighlighted];
 }   /* useVideoStyle */
 
 - (void)useWikiStyle
@@ -996,11 +961,23 @@ self.titleLabel.text = @"DONE";
         NSOrderedAscending);
 
     if (isLessThaniOS4) {
+        
         return [NSString stringWithFormat:@"%@.png", resource];
+    
     } else {
-        if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)]
-                == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
-            return [NSString stringWithFormat:@"%@@2x.png", resource];
+        
+        if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
+            
+            if (IS_IPAD) {
+               
+                return [NSString stringWithFormat:@"%@@2x~ipad.png", resource];
+                
+            } else {
+            
+                    return [NSString stringWithFormat:@"%@@2x~iphone.png", resource];
+    
+            }
+            
         }
     }
 

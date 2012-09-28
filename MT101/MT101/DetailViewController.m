@@ -421,13 +421,13 @@
         // self.vLabel.frame = CGRectMake(self.view.frame.size.width / 1.44, 578.0, 40, 27);
         // self.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width / 1.38, 577, 30, 30);
 
-        // [videoButton useDoneButtonStyle];
-        // [wikiButton useDoneButtonStyle];
-        // [interActiveButton useDoneButtonStyle];
-        // [emailButton useDoneButtonStyle];
-        // [emailButton useEmailStyle];
-        // [composeTweetButton useDoneButtonStyle];
-        // [imageView useWelcomeStyle];
+        [videoButton useDoneButtonStyle];
+        [wikiButton useDoneButtonStyle];
+        [interActiveButton useDoneButtonStyle];
+        [emailButton useDoneButtonStyle];
+        [emailButton useEmailStyle];
+        [composeTweetButton useDoneButtonStyle];
+        [imageView useWelcomeStyle];
         // useDoneButtonIPad
         // useEmailButtonIPad etc...
         // All styles start with "Basic Style" then augment the style with the secondary styling

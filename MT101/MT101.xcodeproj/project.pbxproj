@@ -8,13 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4801D4A5161450BC00512EA6 /* twitterglyph.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4A4161450BC00512EA6 /* twitterglyph.png */; };
-		4801D4AC1614554400512EA6 /* PLVideoCameraPreviewStack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4AB1614554400512EA6 /* PLVideoCameraPreviewStack@2x.png */; };
-		4801D4AE1614556C00512EA6 /* PLVideoCameraPreviewStack.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4AD1614556C00512EA6 /* PLVideoCameraPreviewStack.png */; };
-		4801D4B016145C1700512EA6 /* W.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4AF16145C1700512EA6 /* W.png */; };
 		4801D4B21614645500512EA6 /* Interactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4B11614645500512EA6 /* Interactive.png */; };
 		4801D4B4161464F100512EA6 /* Interactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4B3161464F100512EA6 /* Interactive@2x.png */; };
-		4801D4B71614685100512EA6 /* Twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4B51614685100512EA6 /* Twitter.png */; };
-		4801D4B81614685100512EA6 /* Twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4B61614685100512EA6 /* Twitter@2x.png */; };
 		4809454A161317A800A600C3 /* A#.L.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48094500161317A800A600C3 /* A#.L.aif */; };
 		4809454B161317A800A600C3 /* A#.R.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48094501161317A800A600C3 /* A#.R.aif */; };
 		4809454C161317A800A600C3 /* A#2.L.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48094502161317A800A600C3 /* A#2.L.aif */; };
@@ -193,6 +188,14 @@
 		4882981A15E006BB00239B29 /* ChromaticCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4882981815E006BB00239B29 /* ChromaticCircleViewController.xib */; };
 		4882981C15E009B900239B29 /* Chromatic Circle.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4882981B15E009B900239B29 /* Chromatic Circle.mp4 */; };
 		4887524F15F59731006FBD28 /* ExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887524E15F59731006FBD28 /* ExampleView.m */; };
+		4895422816157BB4003E95CE /* Twitter@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4895422716157BB4003E95CE /* Twitter@2x~ipad.png */; };
+		4895422A16157BBB003E95CE /* Twitter@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4895422916157BBB003E95CE /* Twitter@2x~iphone.png */; };
+		4895422D16157C57003E95CE /* W@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4895422B16157C57003E95CE /* W@2x~ipad.png */; };
+		4895422E16157C57003E95CE /* W@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4895422C16157C57003E95CE /* W@2x~iphone.png */; };
+		4895423116157D09003E95CE /* UIButtonBarCompose@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4895422F16157D09003E95CE /* UIButtonBarCompose@2x~ipad.png */; };
+		4895423216157D09003E95CE /* UIButtonBarCompose@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4895423016157D09003E95CE /* UIButtonBarCompose@2x~iphone.png */; };
+		4895423516157DD9003E95CE /* PLVideoCameraPreviewStack@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4895423316157DD9003E95CE /* PLVideoCameraPreviewStack@2x~ipad.png */; };
+		4895423616157DD9003E95CE /* PLVideoCameraPreviewStack@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4895423416157DD9003E95CE /* PLVideoCameraPreviewStack@2x~iphone.png */; };
 		489C8BB215CF05DD00F15D05 /* GrandStaffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */; };
 		48A3562F15E2363F00A3529D /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3562E15E2363F00A3529D /* WikiViewController.m */; };
@@ -207,8 +210,6 @@
 		48E0C4D115F00561001A2748 /* Default@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0C4D015F00561001A2748 /* Default@2x~ipad.png */; };
 		48E2E9B51613D183000A05D3 /* hook-icon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E2E9B31613D183000A05D3 /* hook-icon~ipad.png */; };
 		48E2E9B61613D183000A05D3 /* hook-icon~ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E2E9B41613D183000A05D3 /* hook-icon~ipad@2x.png */; };
-		48E2E9BA1613D3BE000A05D3 /* UIButtonBarCompose.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E2E9B81613D3BE000A05D3 /* UIButtonBarCompose.png */; };
-		48E2E9BB1613D3BE000A05D3 /* UIButtonBarComposeLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E2E9B91613D3BE000A05D3 /* UIButtonBarComposeLandscape.png */; };
 		48E2E9CE1613DD2E000A05D3 /* twitterglyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E2E9CD1613DD2E000A05D3 /* twitterglyph@2x.png */; };
 		48EEEF3715DC47DC00D15F15 /* SopranoClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EEEF3515DC47DC00D15F15 /* SopranoClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48EEEF3815DC47DC00D15F15 /* SopranoClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48EEEF3615DC47DC00D15F15 /* SopranoClefViewController.xib */; };
@@ -265,13 +266,8 @@
 
 /* Begin PBXFileReference section */
 		4801D4A4161450BC00512EA6 /* twitterglyph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitterglyph.png; path = "../../../Desktop/iPad Simulator 6.0 artwork/SocialWeeApp bundle/twitterglyph.png"; sourceTree = "<group>"; };
-		4801D4AB1614554400512EA6 /* PLVideoCameraPreviewStack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PLVideoCameraPreviewStack@2x.png"; path = "../../../Desktop/iPad Simulator 6.0 artwork/PhotoLibraryServices framework/PLVideoCameraPreviewStack@2x.png"; sourceTree = "<group>"; };
-		4801D4AD1614556C00512EA6 /* PLVideoCameraPreviewStack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PLVideoCameraPreviewStack.png; sourceTree = "<group>"; };
-		4801D4AF16145C1700512EA6 /* W.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = W.png; sourceTree = "<group>"; };
 		4801D4B11614645500512EA6 /* Interactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interactive.png; sourceTree = "<group>"; };
 		4801D4B3161464F100512EA6 /* Interactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Interactive@2x.png"; sourceTree = "<group>"; };
-		4801D4B51614685100512EA6 /* Twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter.png; sourceTree = "<group>"; };
-		4801D4B61614685100512EA6 /* Twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter@2x.png"; sourceTree = "<group>"; };
 		48094500161317A800A600C3 /* A#.L.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A#.L.aif"; sourceTree = "<group>"; };
 		48094501161317A800A600C3 /* A#.R.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A#.R.aif"; sourceTree = "<group>"; };
 		48094502161317A800A600C3 /* A#2.L.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A#2.L.aif"; sourceTree = "<group>"; };
@@ -475,6 +471,14 @@
 		4882981B15E009B900239B29 /* Chromatic Circle.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chromatic Circle.mp4"; sourceTree = "<group>"; };
 		4887524D15F59731006FBD28 /* ExampleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleView.h; path = ../ExampleView.h; sourceTree = "<group>"; };
 		4887524E15F59731006FBD28 /* ExampleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleView.m; path = ../ExampleView.m; sourceTree = "<group>"; };
+		4895422716157BB4003E95CE /* Twitter@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter@2x~ipad.png"; sourceTree = "<group>"; };
+		4895422916157BBB003E95CE /* Twitter@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter@2x~iphone.png"; sourceTree = "<group>"; };
+		4895422B16157C57003E95CE /* W@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "W@2x~ipad.png"; sourceTree = "<group>"; };
+		4895422C16157C57003E95CE /* W@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "W@2x~iphone.png"; sourceTree = "<group>"; };
+		4895422F16157D09003E95CE /* UIButtonBarCompose@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarCompose@2x~ipad.png"; sourceTree = "<group>"; };
+		4895423016157D09003E95CE /* UIButtonBarCompose@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarCompose@2x~iphone.png"; sourceTree = "<group>"; };
+		4895423316157DD9003E95CE /* PLVideoCameraPreviewStack@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLVideoCameraPreviewStack@2x~ipad.png"; sourceTree = "<group>"; };
+		4895423416157DD9003E95CE /* PLVideoCameraPreviewStack@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLVideoCameraPreviewStack@2x~iphone.png"; sourceTree = "<group>"; };
 		489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrandStaffViewController.h; path = MT101/GrandStaffViewController.h; sourceTree = "<group>"; };
 		489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrandStaffViewController.m; path = MT101/GrandStaffViewController.m; sourceTree = "<group>"; };
 		48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay0.plist; sourceTree = "<group>"; };
@@ -494,8 +498,6 @@
 		48E0C4D015F00561001A2748 /* Default@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x~ipad.png"; path = "../Default@2x~ipad.png"; sourceTree = "<group>"; };
 		48E2E9B31613D183000A05D3 /* hook-icon~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hook-icon~ipad.png"; sourceTree = "<group>"; };
 		48E2E9B41613D183000A05D3 /* hook-icon~ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hook-icon~ipad@2x.png"; sourceTree = "<group>"; };
-		48E2E9B81613D3BE000A05D3 /* UIButtonBarCompose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarCompose.png; sourceTree = "<group>"; };
-		48E2E9B91613D3BE000A05D3 /* UIButtonBarComposeLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarComposeLandscape.png; sourceTree = "<group>"; };
 		48E2E9CD1613DD2E000A05D3 /* twitterglyph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitterglyph@2x.png"; sourceTree = "<group>"; };
 		48EEEF3415DC47DC00D15F15 /* SopranoClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SopranoClefViewController.h; sourceTree = "<group>"; };
 		48EEEF3515DC47DC00D15F15 /* SopranoClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SopranoClefViewController.m; sourceTree = "<group>"; };
@@ -1025,18 +1027,19 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
-				4801D4AF16145C1700512EA6 /* W.png */,
-				4801D4B51614685100512EA6 /* Twitter.png */,
-				4801D4B61614685100512EA6 /* Twitter@2x.png */,
+				4895422B16157C57003E95CE /* W@2x~ipad.png */,
+				4895422C16157C57003E95CE /* W@2x~iphone.png */,
+				4895422716157BB4003E95CE /* Twitter@2x~ipad.png */,
+				4895422916157BBB003E95CE /* Twitter@2x~iphone.png */,
 				4801D4B11614645500512EA6 /* Interactive.png */,
 				4801D4B3161464F100512EA6 /* Interactive@2x.png */,
-				4801D4AD1614556C00512EA6 /* PLVideoCameraPreviewStack.png */,
-				4801D4AB1614554400512EA6 /* PLVideoCameraPreviewStack@2x.png */,
+				4895423316157DD9003E95CE /* PLVideoCameraPreviewStack@2x~ipad.png */,
+				4895423416157DD9003E95CE /* PLVideoCameraPreviewStack@2x~iphone.png */,
 				4801D4A4161450BC00512EA6 /* twitterglyph.png */,
 				48E2E9CD1613DD2E000A05D3 /* twitterglyph@2x.png */,
 				48E2E9B31613D183000A05D3 /* hook-icon~ipad.png */,
-				48E2E9B81613D3BE000A05D3 /* UIButtonBarCompose.png */,
-				48E2E9B91613D3BE000A05D3 /* UIButtonBarComposeLandscape.png */,
+				4895422F16157D09003E95CE /* UIButtonBarCompose@2x~ipad.png */,
+				4895423016157D09003E95CE /* UIButtonBarCompose@2x~iphone.png */,
 				48E2E9B41613D183000A05D3 /* hook-icon~ipad@2x.png */,
 				48F228E1160D354E005B1D1E /* icon.png */,
 				48F228DF160D34C4005B1D1E /* Default-568h@2x.png */,
@@ -1363,17 +1366,10 @@
 				4809458F161317A800A600C3 /* G5.R.aif in Resources */,
 				48E2E9B51613D183000A05D3 /* hook-icon~ipad.png in Resources */,
 				48E2E9B61613D183000A05D3 /* hook-icon~ipad@2x.png in Resources */,
-				48E2E9BA1613D3BE000A05D3 /* UIButtonBarCompose.png in Resources */,
-				48E2E9BB1613D3BE000A05D3 /* UIButtonBarComposeLandscape.png in Resources */,
 				48E2E9CE1613DD2E000A05D3 /* twitterglyph@2x.png in Resources */,
 				4801D4A5161450BC00512EA6 /* twitterglyph.png in Resources */,
-				4801D4AC1614554400512EA6 /* PLVideoCameraPreviewStack@2x.png in Resources */,
-				4801D4AE1614556C00512EA6 /* PLVideoCameraPreviewStack.png in Resources */,
-				4801D4B016145C1700512EA6 /* W.png in Resources */,
 				4801D4B21614645500512EA6 /* Interactive.png in Resources */,
 				4801D4B4161464F100512EA6 /* Interactive@2x.png in Resources */,
-				4801D4B71614685100512EA6 /* Twitter.png in Resources */,
-				4801D4B81614685100512EA6 /* Twitter@2x.png in Resources */,
 				4817CD8716149CA50014517A /* grayArrow.png in Resources */,
 				4817CD8816149CA50014517A /* grayArrow@2x.png in Resources */,
 				4817CD8916149CA50014517A /* blackArrow.png in Resources */,
@@ -1382,6 +1378,14 @@
 				4817CD8C16149CA50014517A /* blueArrow@2x.png in Resources */,
 				4817CD8D16149CA50014517A /* whiteArrow.png in Resources */,
 				4817CD8E16149CA50014517A /* whiteArrow@2x.png in Resources */,
+				4895422816157BB4003E95CE /* Twitter@2x~ipad.png in Resources */,
+				4895422A16157BBB003E95CE /* Twitter@2x~iphone.png in Resources */,
+				4895422D16157C57003E95CE /* W@2x~ipad.png in Resources */,
+				4895422E16157C57003E95CE /* W@2x~iphone.png in Resources */,
+				4895423116157D09003E95CE /* UIButtonBarCompose@2x~ipad.png in Resources */,
+				4895423216157D09003E95CE /* UIButtonBarCompose@2x~iphone.png in Resources */,
+				4895423516157DD9003E95CE /* PLVideoCameraPreviewStack@2x~ipad.png in Resources */,
+				4895423616157DD9003E95CE /* PLVideoCameraPreviewStack@2x~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
