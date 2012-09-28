@@ -5,6 +5,7 @@
 #import "SolfegeFlatsViewController.h"
 #import "GradientButton.h"
 #import "GradientToolBar.h"
+#import "GrandStaffMacros.h"
 
 @implementation SolfegeFlatsViewController
 
@@ -38,304 +39,247 @@
 
 - (void)drawRects
 {
-    // define the "key" xylophone note rectangles
-    keyRects[0] = CGRectMake([self view].center.x - 42,     // derive xi
-        [self view].center.y - 285,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Do
-
-    keyRects[1] = CGRectMake([self view].center.x + 70,     // derive xi
-        [self view].center.y - 255,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Di
-
-    keyRects[2] = CGRectMake([self view].center.x + 150,    // derive xi
-        [self view].center.y - 175,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Re
-
-    keyRects[3] = CGRectMake([self view].center.x + 174,    // derive xi
-        [self view].center.y - 67,                          // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Ri
-
-    keyRects[4] = CGRectMake([self view].center.x + 150,    // derive xi
-        [self view].center.y + 57,                          // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Mi
-
-    keyRects[5] = CGRectMake([self view].center.x + 65,     // derive xi
-        [self view].center.y + 120,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Fa
-
-    keyRects[6] = CGRectMake([self view].center.x - 42,     // derive xi
-        [self view].center.y + 145,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Fi
-
-    keyRects[7] = CGRectMake([self view].center.x - 150,    // derive xi
-        [self view].center.y + 120,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Sol
-
-    keyRects[8] = CGRectMake([self view].center.x - 240,    // derive xi
-        [self view].center.y + 37,                          // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Si
-
-    keyRects[9] = CGRectMake([self view].center.x - 250,    // derive xi
-        [self view].center.y - 67,                          // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // La
-
-    keyRects[10] = CGRectMake([self view].center.x - 230,   // derive xi
-        [self view].center.y - 170,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Li
-
-    keyRects[11] = CGRectMake([self view].center.x - 155,   // derive xi
-        [self view].center.y - 255,                         // derive y
-        BIGBOXWIDTH,                                        // span across entire screen
-        BIGBOXHEIGHT                                        // 1/6th width of screen
-        );                                                  // Ti
-
-    keyRects[12] = CGRectMake(0, 0, 0, 0);
-
-    //    keyRects[12] = CGRectMake([self view].center.x - 0,//derive xi
-    //                           [self view].center.y - 0,//derive y
-    //                         BIGBOXWIDTH,//span across entire screen
-    //                       BIGBOXHEIGHT// 1/6th width of screen
-    //                     );//Do
-    // minors
-    keyRects[13] = CGRectMake([self view].center.x + 41,    // derive xi
-        [self view].center.y + 65,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // do
-
-    keyRects[14] = CGRectMake([self view].center.x - 22.5,  // derive xi
-        [self view].center.y + 70,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // di
-
-    keyRects[15] = CGRectMake([self view].center.x - 85,    // derive xi
-        [self view].center.y + 65,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // re
-
-    keyRects[16] = CGRectMake([self view].center.x - 140,   // derive xi
-        [self view].center.y + 20,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // ri
-
-    keyRects[17] = CGRectMake([self view].center.x - 150,   // derive xi
-        [self view].center.y - 50,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // mi
-
-    keyRects[18] = CGRectMake([self view].center.x - 140,   // derive xi
-        [self view].center.y - 120,                         // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // fa
-
-    keyRects[19] = CGRectMake([self view].center.x - 90,    // derive xi
-        [self view].center.y - 160,                         // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // fi
-
-    keyRects[20] = CGRectMake([self view].center.x - 22.5,  // derive xi
-        [self view].center.y - 180,                         // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // sol
-
-    keyRects[21] = CGRectMake([self view].center.x + 40,    // derive xi
-        [self view].center.y - 160,                         // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // si
-
-    keyRects[22] = CGRectMake([self view].center.x + 90,    // derive xi
-        [self view].center.y - 120,                         // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // la
-
-    keyRects[23] = CGRectMake([self view].center.x + 110,   // derive xi
-        [self view].center.y - 50,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // li
-
-    keyRects[24] = CGRectMake([self view].center.x + 90,    // derive xi
-        [self view].center.y + 15,                          // derive y
-        SMALLBOXWIDTH,                                      // span across entire screen
-        SMALLBOXHEIGHT                                      // 1/6th width of screen
-        );                                                  // ti
-
-    keyRects[25] = CGRectMake(0, 0, 0, 0);
-
-    // keyRects[25] = CGRectMake([self view].center.x + 40,//derive xi
-    //                        [self view].center.y + 70,//derive y
-    //                      SMALLBOXWIDTH,//span across entire screen
-    //                    SMALLBOXHEIGHT// 1/6th width of screen
-    //                  );//do
-
-    // #if TARGET_IPHONE_SIMULATOR
-
-    // For your convience in configuring keyRects. Pink Transparencies only
+    // define the note rectangles
+    keyRects[0] = C2;
+    
+    keyRects[1]     = CGRectZero;//C2sharp;
+    keyRects[2]     = D2;
+    keyRects[3]     = CGRectZero;//D2sharp;
+    keyRects[4]     = E2;
+    keyRects[5]     = F2;
+    keyRects[6]     = CGRectZero;//F2sharp;
+    keyRects[7]     = G2;
+    keyRects[8]     = CGRectZero;//G2sharp;
+    keyRects[9]     = A2;
+    keyRects[10]    = CGRectZero;//A2sharp;
+    keyRects[11]    = B2;
+    
+    keyRects[12] = C3;
+    
+    keyRects[13]    = CGRectZero;//C3sharp;
+    keyRects[14]    = D3;
+    keyRects[15]    = CGRectZero;//D3sharp;
+    keyRects[16]    = E3;
+    keyRects[17]    = F3;
+    keyRects[18]    = CGRectZero;//F3sharp;
+    keyRects[19]    = G3;
+    keyRects[20]    = CGRectZero;//G3sharp;
+    keyRects[21]    = A3;
+    keyRects[22]    = CGRectZero;//A3sharp;
+    keyRects[23]    = B3;
+    
+    keyRects[24] = C4;
+    
+    keyRects[25]    = CGRectZero;//C4sharp;
+    keyRects[26]    = D4;
+    keyRects[27]    = CGRectZero;//D4sharp;
+    keyRects[28]    = E4;
+    keyRects[29]    = F4;
+    keyRects[30]    = CGRectZero;//F4sharp;
+    keyRects[31]    = G4;
+    keyRects[32]    = CGRectZero;//G4sharp;
+    keyRects[33]    = A4;
+    keyRects[34]    = CGRectZero;//A4sharp;
+    keyRects[35]    = B4;
+    
+    keyRects[36] = C5;
+    
+    keyRects[37]    = CGRectZero;//C5sharp;
+    keyRects[38]    = D5;
+    keyRects[39]    = CGRectZero;//D5sharp;
+    keyRects[40]    = E5;
+    keyRects[41]    = F5;
+    keyRects[42]    = CGRectZero;//F5sharp;
+    keyRects[43]    = G5;
+    // keyRects[44]    = G5sharp;
+    
+    //#if TARGET_IPHONE_SIMULATOR
     // displayed in Simulator
-
+    
     label0 = [[UILabel alloc] initWithFrame:keyRects[0]];
     label0.backgroundColor  = DO;
-    label0.text             = [NSString stringWithFormat:@"keyRect[0]"];
-
+    label0.text             = [NSString stringWithFormat:@"0"];
+    
     label1 = [[UILabel alloc] initWithFrame:keyRects[1]];
     label1.backgroundColor  = DI;
-    label1.text             = [NSString stringWithFormat:@"keyRect[1]"];
-
+    label1.text             = [NSString stringWithFormat:@"1"];
+    
     label2 = [[UILabel alloc] initWithFrame:keyRects[2]];
     label2.backgroundColor  = RE;
-    label2.text             = [NSString stringWithFormat:@"keyRect[2]"];
-
+    label2.text             = [NSString stringWithFormat:@"2"];
+    
     label3 = [[UILabel alloc] initWithFrame:keyRects[3]];
     label3.backgroundColor  = RI;
-    label3.text             = [NSString stringWithFormat:@"keyRect[3]"];
-
+    label3.text             = [NSString stringWithFormat:@"3"];
+    
     label4 = [[UILabel alloc] initWithFrame:keyRects[4]];
-    label4.backgroundColor = MI;    // [UIColor colorWithRed:0.024
-                                    // green:0.000 blue:1.000 alpha:1.000];
-    label4.text = [NSString stringWithFormat:@"keyRect[4]"];
-
+    label4.backgroundColor  = MI;
+    label4.text             = [NSString stringWithFormat:@"4"];
+    
     label5 = [[UILabel alloc] initWithFrame:keyRects[5]];
-    label5.backgroundColor = FA;    // [UIColor colorWithRed:0.255
-                                    // green:0.000 blue:0.663 alpha:1.000];
-    label5.text = [NSString stringWithFormat:@"keyRect[5]"];
-
+    label5.backgroundColor  = FA;
+    label5.text             = [NSString stringWithFormat:@"5"];
+    
     label6 = [[UILabel alloc] initWithFrame:keyRects[6]];
-    label6.backgroundColor = FI;    // [UIColor colorWithRed:0.357
-                                    // green:0.000 blue:0.663 alpha:1.000];
-    label6.text = [NSString stringWithFormat:@"keyRect[6]"];
-
+    label6.backgroundColor  = FI;
+    label6.text             = [NSString stringWithFormat:@"6"];
+    
     label7 = [[UILabel alloc] initWithFrame:keyRects[7]];
-    label7.backgroundColor = SOL;   // [UIColor colorWithRed:0.541
-                                    // green:0.000 blue:0.796 alpha:1.000];
-    label7.text = [NSString stringWithFormat:@"keyRect[7]"];
-
+    label7.backgroundColor  = SOL;
+    label7.text             = [NSString stringWithFormat:@"7"];
+    
     label8 = [[UILabel alloc] initWithFrame:keyRects[8]];
-    label8.backgroundColor = SI;    // [UIColor colorWithRed:0.702
-                                    // green:0.000 blue:0.486 alpha:1.000];
-    label8.text = [NSString stringWithFormat:@"keyRect[8]"];
-
+    label8.backgroundColor  = SI;
+    label8.text             = [NSString stringWithFormat:@"8"];
+    
     label9 = [[UILabel alloc] initWithFrame:keyRects[9]];
-    label9.backgroundColor = LA;    // [UIColor colorWithRed:0.788
-                                    // green:0.043 blue:0.102 alpha:1.000];
-    label9.text = [NSString stringWithFormat:@"keyRect[9]"];
-
+    label9.backgroundColor  = LA;
+    label9.text             = [NSString stringWithFormat:@"9"];
+    
     label10 = [[UILabel alloc] initWithFrame:keyRects[10]];
-    label10.backgroundColor = LI;   // [UIColor colorWithRed:0.788
-                                    // green:0.043 blue:0.102 alpha:1.000];
-    label10.text = [NSString stringWithFormat:@"keyRect[10]"];
-
+    label10.backgroundColor = LI;
+    label10.text            = [NSString stringWithFormat:@"10"];
+    
     label11 = [[UILabel alloc] initWithFrame:keyRects[11]];
-    label11.backgroundColor = TI;   // [UIColor colorWithRed:0.992
-                                    // green:0.518 blue:0.129 alpha:1.000];
-    label11.text = [NSString stringWithFormat:@"keyRect[11]"];
-
+    label11.backgroundColor = TI;
+    label11.text            = [NSString stringWithFormat:@"11"];
+    
     label12 = [[UILabel alloc] initWithFrame:keyRects[12]];
-    label12.backgroundColor = DO;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:1.000];
-    label12.text = [NSString stringWithFormat:@"keyRect[12]"];
-
-    // minors
+    label12.backgroundColor = DO;
+    label12.text            = [NSString stringWithFormat:@"•"];
+    
     label13 = [[UILabel alloc] initWithFrame:keyRects[13]];
-    label13.backgroundColor = DO;   // [UIColor colorWithRed:1.000
-                                    // green:1.000 blue:0.043 alpha:1.000];
-    label13.text = [NSString stringWithFormat:@"keyRect[13]"];
-
+    label13.backgroundColor = DI;
+    label13.text            = [NSString stringWithFormat:@"13"];
+    
     label14 = [[UILabel alloc] initWithFrame:keyRects[14]];
-    label14.backgroundColor = DI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label14.text = [NSString stringWithFormat:@"keyRect[14]"];
-
+    label14.backgroundColor = RE;
+    label14.text            = [NSString stringWithFormat:@"14"];
+    
     label15 = [[UILabel alloc] initWithFrame:keyRects[15]];
-    label15.backgroundColor = RE;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label15.text = [NSString stringWithFormat:@"keyRect[15]"];
-
+    label15.backgroundColor = RI;
+    label15.text            = [NSString stringWithFormat:@"15"];
+    
     label16 = [[UILabel alloc] initWithFrame:keyRects[16]];
-    label16.backgroundColor = RI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label16.text = [NSString stringWithFormat:@"keyRect[16]"];
-
+    label16.backgroundColor = MI;
+    label16.text            = [NSString stringWithFormat:@"16"];
+    
     label17 = [[UILabel alloc] initWithFrame:keyRects[17]];
-    label17.backgroundColor = MI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label17.text = [NSString stringWithFormat:@"keyRect[17]"];
-
+    label17.backgroundColor = FA;
+    label17.text            = [NSString stringWithFormat:@"17"];
+    
     label18 = [[UILabel alloc] initWithFrame:keyRects[18]];
-    label18.backgroundColor = FA;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label18.text = [NSString stringWithFormat:@"keyRect[18]"];
-
+    label18.backgroundColor = FI;
+    label18.text            = [NSString stringWithFormat:@"18"];
+    
     label19 = [[UILabel alloc] initWithFrame:keyRects[19]];
-    label19.backgroundColor = FI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label19.text = [NSString stringWithFormat:@"keyRect[19]"];
-
+    label19.backgroundColor = SOL;
+    label19.text            = [NSString stringWithFormat:@"19"];
+    
     label20 = [[UILabel alloc] initWithFrame:keyRects[20]];
-    label20.backgroundColor = SOL;  // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839
-                                    // alpha:0.500];
-    label20.text = [NSString stringWithFormat:@"keyRect[20]"];
-
+    label20.backgroundColor = SI;
+    label20.text            = [NSString stringWithFormat:@"20"];
+    
     label21 = [[UILabel alloc] initWithFrame:keyRects[21]];
-    label21.backgroundColor = SI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label21.text = [NSString stringWithFormat:@"keyRect[21]"];
-
+    label21.backgroundColor = LA;
+    label21.text            = [NSString stringWithFormat:@"21"];
+    
     label22 = [[UILabel alloc] initWithFrame:keyRects[22]];
-    label22.backgroundColor = LA;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label22.text = [NSString stringWithFormat:@"keyRect[22]"];
-
+    label22.backgroundColor = LI;
+    label22.text            = [NSString stringWithFormat:@"22"];
+    
     label23 = [[UILabel alloc] initWithFrame:keyRects[23]];
-    label23.backgroundColor = LI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label23.text = [NSString stringWithFormat:@"keyRect[23]"];
-
+    label23.backgroundColor = TI;
+    label23.text            = [NSString stringWithFormat:@"23"];
+    
     label24 = [[UILabel alloc] initWithFrame:keyRects[24]];
-    label24.backgroundColor = TI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label24.text = [NSString stringWithFormat:@"keyRect[24]"];
-
+    label24.backgroundColor = DO;
+    label24.text            = [NSString stringWithFormat:@"24"];
+    
     label25 = [[UILabel alloc] initWithFrame:keyRects[25]];
-    label25.backgroundColor = DO;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label25.text = [NSString stringWithFormat:@"keyRect[25]"];
-
-    [self.view addSubview:label0];
-    [self.view addSubview:label1];
-    [self.view addSubview:label2];
-    [self.view addSubview:label3];
+    label25.backgroundColor = DI;
+    label25.text            = [NSString stringWithFormat:@"25"];
+    
+    label26 = [[UILabel alloc] initWithFrame:keyRects[26]];
+    label26.backgroundColor = RE;
+    label26.text            = [NSString stringWithFormat:@"26"];
+    
+    label27 = [[UILabel alloc] initWithFrame:keyRects[27]];
+    label27.backgroundColor = RI;
+    label27.text            = [NSString stringWithFormat:@"27"];
+    
+    label28 = [[UILabel alloc] initWithFrame:keyRects[28]];
+    label28.backgroundColor = MI;
+    label28.text            = [NSString stringWithFormat:@"28"];
+    
+    label29 = [[UILabel alloc] initWithFrame:keyRects[29]];
+    label29.backgroundColor = FA;
+    label29.text            = [NSString stringWithFormat:@"29"];
+    
+    label30 = [[UILabel alloc] initWithFrame:keyRects[30]];
+    label30.backgroundColor = FI;
+    label30.text            = [NSString stringWithFormat:@"30"];
+    
+    label31 = [[UILabel alloc] initWithFrame:keyRects[31]];
+    label31.backgroundColor = SOL;
+    label31.text            = [NSString stringWithFormat:@"31"];
+    
+    label32 = [[UILabel alloc] initWithFrame:keyRects[32]];
+    label32.backgroundColor = SI;
+    label32.text            = [NSString stringWithFormat:@"32"];
+    
+    label33 = [[UILabel alloc] initWithFrame:keyRects[33]];
+    label33.backgroundColor = LA;
+    label33.text            = [NSString stringWithFormat:@"33"];
+    
+    label34 = [[UILabel alloc] initWithFrame:keyRects[34]];
+    label34.backgroundColor = LI;
+    label34.text            = [NSString stringWithFormat:@"34"];
+    
+    label35 = [[UILabel alloc] initWithFrame:keyRects[35]];
+    label35.backgroundColor = TI;
+    label35.text            = [NSString stringWithFormat:@"35"];
+    
+    label36 = [[UILabel alloc] initWithFrame:keyRects[36]];
+    label36.backgroundColor = DO;
+    label36.text            = [NSString stringWithFormat:@"36"];
+    
+    label37 = [[UILabel alloc] initWithFrame:keyRects[37]];
+    label37.backgroundColor = DI;
+    label37.text            = [NSString stringWithFormat:@"37"];
+    
+    label38 = [[UILabel alloc] initWithFrame:keyRects[38]];
+    label38.backgroundColor = RE;
+    label38.text            = [NSString stringWithFormat:@"38"];
+    
+    label39 = [[UILabel alloc] initWithFrame:keyRects[39]];
+    label39.backgroundColor = RI;
+    label39.text            = [NSString stringWithFormat:@"39"];
+    
+    label40 = [[UILabel alloc] initWithFrame:keyRects[40]];
+    label40.backgroundColor = MI;
+    label40.text            = [NSString stringWithFormat:@"40"];
+    
+    label41 = [[UILabel alloc] initWithFrame:keyRects[41]];
+    label41.backgroundColor = FA;
+    label41.text            = [NSString stringWithFormat:@"41"];
+    
+    label42 = [[UILabel alloc] initWithFrame:keyRects[42]];
+    label42.backgroundColor = FI;
+    label42.text            = [NSString stringWithFormat:@"42"];
+    
+    label43 = [[UILabel alloc] initWithFrame:keyRects[43]];
+    label43.backgroundColor = SOL;
+    label43.text            = [NSString stringWithFormat:@"43"];
+    
+    label44 = [[UILabel alloc] initWithFrame:keyRects[44]];
+    label44.backgroundColor = SI;
+    label44.text            = [NSString stringWithFormat:@"44"];
+    
+    // [self.view addSubview:label0];
+    // [self.view addSubview:label1];
+    // [self.view addSubview:label2];
+    // [self.view addSubview:label3];
     [self.view addSubview:label4];
     [self.view addSubview:label5];
     [self.view addSubview:label6];
@@ -345,9 +289,9 @@
     [self.view addSubview:label10];
     [self.view addSubview:label11];
     [self.view addSubview:label12];
-
-    // minors
+    
     [self.view addSubview:label13];
+    
     [self.view addSubview:label14];
     [self.view addSubview:label15];
     [self.view addSubview:label16];
@@ -360,9 +304,27 @@
     [self.view addSubview:label23];
     [self.view addSubview:label24];
     [self.view addSubview:label25];
-
-    // #endif
-}   /* drawRects */
+    [self.view addSubview:label26];
+    [self.view addSubview:label27];
+    [self.view addSubview:label28];
+    [self.view addSubview:label29];
+    [self.view addSubview:label30];
+    [self.view addSubview:label31];
+    [self.view addSubview:label32];
+    [self.view addSubview:label33];
+    [self.view addSubview:label34];
+    [self.view addSubview:label35];
+    [self.view addSubview:label36];
+    [self.view addSubview:label37];
+    [self.view addSubview:label38];
+    [self.view addSubview:label39];
+    [self.view addSubview:label40];
+    [self.view addSubview:label41];
+    [self.view addSubview:label42];
+    [self.view addSubview:label43];
+    [self.view addSubview:label44];
+    //#endif /* if TARGET_IPHONE_SIMULATOR */
+} /* drawRects */
 
 - (void)destroyRects
 {
@@ -370,108 +332,182 @@
         if (subview == label0) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label1) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label2) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label3) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label4) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label5) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label6) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label7) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label8) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label9) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label10) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label11) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label12) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label13) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label14) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label15) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label16) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label17) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label18) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label19) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label20) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label21) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label22) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label23) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label24) {
             [subview removeFromSuperview];
         }
-
+        
         if (subview == label25) {
             [subview removeFromSuperview];
         }
+        
+        if (subview == label25) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label26) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label27) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label28) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label29) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label30) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label31) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label32) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label33) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label34) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label35) {
+            [subview removeFromSuperview];
+        }
+        
+        if (subview == label36) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label37) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label38) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label39) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label40) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label41) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label42) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label43) {
+            [subview removeFromSuperview];
+        }
+        if (subview == label44) {
+            [subview removeFromSuperview];
+        }
+        
     }
-}   /* destroyRects */
+} /* destroyRects */
+
 
 #pragma mark - View lifecycle
 
