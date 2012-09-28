@@ -318,11 +318,11 @@
         [self.view addSubview:label37];
         [self.view addSubview:label38];
         [self.view addSubview:label39];
-        //  [self.view addSubview:label40];
-        //  [self.view addSubview:label41];
-        //   [self.view addSubview:label42];
-        //  [self.view addSubview:label43];
-        //  [self.view addSubview:label44];
+          [self.view addSubview:label40];
+          [self.view addSubview:label41];
+           [self.view addSubview:label42];
+          [self.view addSubview:label43];
+          [self.view addSubview:label44];
 #endif /* if TARGET_IPHONE_SIMULATOR */
 } /* drawRects */
 

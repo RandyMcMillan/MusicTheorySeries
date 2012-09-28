@@ -48,18 +48,18 @@
 #define A4sharp     CGRectMake([self view].center.x + (0.50 * SLOPEX), [self view].center.y - (18.0 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 #define B4          CGRectMake([self view].center.x + (1.00 * SLOPEX), [self view].center.y - (18.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 
-#define C5          CGRectMake([self view].center.x + (-2.00 * SLOPEX), [self view].center.y - (19.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)//36
-#define C5sharp     CGRectMake([self view].center.x + (-1.50 * SLOPEX), [self view].center.y - (18.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define D5          CGRectMake([self view].center.x + (-3.00 * SLOPEX), [self view].center.y - (20.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define D5sharp     CGRectMake([self view].center.x + (-2.50 * SLOPEX), [self view].center.y - (19.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define E5          CGRectMake([self view].center.x + (-4.00 * SLOPEX), [self view].center.y - (21.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define F5          CGRectMake([self view].center.x + (-5.00 * SLOPEX), [self view].center.y - (22.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define F5sharp     CGRectMake([self view].center.x + (-4.50 * SLOPEX), [self view].center.y - (21.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define G5          CGRectMake([self view].center.x + (-6.00 * SLOPEX), [self view].center.y - (23.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define G5sharp     CGRectMake([self view].center.x + (-5.50 * SLOPEX), [self view].center.y - (22.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define A5          CGRectMake([self view].center.x + (-7.00 * SLOPEX), [self view].center.y - (24.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define A5sharp     CGRectMake([self view].center.x + (-6.50 * SLOPEX), [self view].center.y - (23.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
-#define B5          CGRectMake([self view].center.x + (-8.00 * SLOPEX), [self view].center.y - (25.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define C5          CGRectMake([self view].center.x + (2.00 * SLOPEX), [self view].center.y - (19.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)//36
+#define C5sharp     CGRectMake([self view].center.x + (2.50 * SLOPEX), [self view].center.y - (20.0 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define D5          CGRectMake([self view].center.x + (3.00 * SLOPEX), [self view].center.y - (20.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define D5sharp     CGRectMake([self view].center.x + (3.50 * SLOPEX), [self view].center.y - (21.0 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define E5          CGRectMake([self view].center.x + (4.00 * SLOPEX), [self view].center.y - (21.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define F5          CGRectMake([self view].center.x + (5.00 * SLOPEX), [self view].center.y - (22.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define F5sharp     CGRectMake([self view].center.x + (5.50 * SLOPEX), [self view].center.y - (23.0 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)//42
+#define G5          CGRectMake([self view].center.x + (6.00 * SLOPEX), [self view].center.y - (23.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define G5sharp     CGRectMake([self view].center.x + (6.50 * SLOPEX), [self view].center.y - (24.0 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define A5          CGRectMake([self view].center.x + (7.00 * SLOPEX), [self view].center.y - (24.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define A5sharp     CGRectMake([self view].center.x + (7.50 * SLOPEX), [self view].center.y - (25.0 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
+#define B5          CGRectMake([self view].center.x + (8.00 * SLOPEX), [self view].center.y - (25.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 
 #define C6          CGRectMake([self view].center.x - (-9.00 * SLOPEX), [self view].center.y - (26.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
 #define C6sharp     CGRectMake([self view].center.x - (-8.50 * SLOPEX), [self view].center.y - (25.5 * SLOPEY), NOTEWIDTH, NOTEHEIGHT)
