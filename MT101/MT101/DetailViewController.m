@@ -416,31 +416,39 @@
         
     }
     
+#if TARGET_IPHONE_SIMULATOR
+    //  self.musicTheory101Label.backgroundColor = [UIColor redColor];
+    //self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
+    //self.vLabel.backgroundColor = [UIColor yellowColor];
+#endif
+
+    
     
     if (self.detailItem) {}
 
     [imageView useWelcomeStyle];
 
-    self.detailDescriptionLabel.text =
-        [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+    // self.detailDescriptionLabel.text =
+    //  [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
 
     if (IS_IPAD) {
         // ipad landscape welcome screen formatting
-        self.musicTheory101Label.text = @"Music Theory 101";
+        self.musicTheory101Label.text = @"MUSIC THEORY 101";
         self.musicTheory101Label.frame
-        = CGRectMake([self view].center.x-163,[self view].center.y+31, 326, 53);
+        = CGRectMake([self view].center.x-163,[self view].center.y+30, 326, 53);
         [self.musicTheory101Label setFont:[UIFont fontWithName:@"Helvetica-Bold" size:39.0]];
         self.musicTheory101Label.hidden = FALSE;
         
-        self.vLabel.text = @"vv";
+        self.vLabel.text = @"v";
         self.vLabel.frame 
-        = CGRectMake([self view].center.x,[self view].center.y, 350, 50);
-        [self.musicTheory101Label setFont:[UIFont fontWithName:@"Helvetica-Bold" size:39.0]];
+        = CGRectMake([self view].center.x+82,[self view].center.y+59.6, 20, 20);
+        [self.vLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:10.0]];
         self.vLabel.hidden = FALSE;
 
-        self.detailDescriptionLabel.text = @"description";
+        self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
         self.detailDescriptionLabel.frame
-        = CGRectMake([self view].center.x,[self view].center.y, 350, 50);
+        = CGRectMake([self view].center.x+84,[self view].center.y+60, 30, 20);
+        [self.detailDescriptionLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:11.0]];
         self.detailDescriptionLabel.hidden = FALSE;
         
         self.interActiveButton.hidden   = FALSE;
@@ -478,11 +486,6 @@
         // each style calls basic style first then continues with extra styling in its individual methods
     } // build for iPhone
 
-#if TARGET_IPHONE_SIMULATOR
-         self.musicTheory101Label.backgroundColor = [UIColor redColor];
-         self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
-         self.vLabel.backgroundColor = [UIColor yellowColor];
-#endif
 } /* configureView */
 
 #pragma mark - Open the mail interface
