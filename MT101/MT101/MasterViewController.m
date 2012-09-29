@@ -446,12 +446,23 @@
     _reloading = NO;
     [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
 
-    // [self.detailViewController configureView];
-    // [self.detailViewController.toolBar setHidden:TRUE];
+    NSURL* pURL = [ [NSURL alloc] initWithString:@"http://itunes.apple.com/us/artist/randy-mcmillan/id322256599" ];
+ 
+     [ [ UIApplication sharedApplication ] openURL:pURL];
 
-    if (IS_IPAD) {} else {
-        // [self.navigationController pushViewController:self.detailViewController animated:YES];
+    
+    if (IS_IPAD) {
+    
+        [[self.detailViewController scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+        [[self.detailViewController scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+    
+    } else {
+
+        [[self.detailViewController scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+        [[self.detailViewController scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+        [self.navigationController pushViewController:self.detailViewController animated:YES];
     }
+
 }
 
 #pragma mark -

@@ -645,6 +645,10 @@
 
 - (IBAction)openMail:(id)sender
 {
+    
+    [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+
     if ([MFMailComposeViewController canSendMail]) {
         MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
 
@@ -738,10 +742,16 @@
     NSLog(@"Twitter is setup = %i", canTweet);
 }
 
-#pragma mark - compseTweet
+#pragma mark - composeTweet
 
 - (IBAction)composeTweet:(id)sender
 {
+    
+    [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+
+    
+    
     NSString    *tweetText      = @"I am learning music theory with Music Theory 101 for iOS! @MT101App #MT101";
     NSString    *urlAttach      = @"http://itunes.apple.com/us/app/music-theory-101/id322256596?mt=8";
     NSString    *imageAttach    = @"icon-72@2x.png";
