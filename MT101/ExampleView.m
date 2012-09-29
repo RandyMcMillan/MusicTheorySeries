@@ -88,7 +88,7 @@
     CGRect rect = CGRectMake(0, 0, 703, 768);  // self.superview.frame;
 
     // CGRect rect = VIEWBOUNDS;//self.superview.frame;
-    self.alpha = 0.8;
+    self.alpha = 1.0;
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
     [self setAutoresizingMask:(UIViewAutoresizingNone)];
 
