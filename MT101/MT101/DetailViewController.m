@@ -407,6 +407,26 @@
 - (void)configureView
 {
     
+    
+	UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+    scroll.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+    
+	scroll.backgroundColor = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
+	scroll.delegate = self;
+	//image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"image.JPG"]];
+	scroll.contentSize = [self view].frame.size;
+    [imageView useGrandStaffStyle];
+	[scroll addSubview:imageView];
+    [self.view bringSubviewToFront:toolBar];
+	scroll.minimumZoomScale = scroll.frame.size.width / [self view].frame.size.width;
+	scroll.maximumZoomScale = 2.0;
+	[scroll setZoomScale:scroll.minimumZoomScale];
+    
+	self.view = scroll;
+	[scroll release];
+
+    
+    
     for (UIView *subview in self.view.subviews) {
         
         if ([subview isKindOfClass:[UITextView class]]) {
