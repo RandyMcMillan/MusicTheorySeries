@@ -1137,7 +1137,7 @@
 				B225A7221534CF59006FD46F /* Sources */,
 				B225A7231534CF59006FD46F /* Frameworks */,
 				B225A7241534CF59006FD46F /* Resources */,
-				48E369C815F9C07600EBE7CF /* Kill Phone */,
+				48E369C815F9C07600EBE7CF /* Write GitVersion */,
 			);
 			buildRules = (
 			);
@@ -1386,19 +1386,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		48E369C815F9C07600EBE7CF /* Kill Phone */ = {
+		48E369C815F9C07600EBE7CF /* Write GitVersion */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Kill Phone";
+			name = "Write GitVersion";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "infoplist=\"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\"\ngitversion=\"$(cd \"$SRCROOT\" && git describe --always --dirty 2>/dev/null)\"\nif [[ -n \"$gitversion\" ]]; then\ndefaults write \"${infoplist%.plist}\" GitVersion \"$gitversion\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 

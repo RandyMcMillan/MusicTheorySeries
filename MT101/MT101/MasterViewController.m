@@ -48,7 +48,7 @@
         EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.tableView.bounds.size.height, self.view.frame.size.width, self.tableView.bounds.size.height)];
         view.delegate = self;
 
-        view.alpha = 0.0;
+        view.alpha = 1.0;
 
         [self.tableView addSubview:view];
         _refreshHeaderView = view;
@@ -446,9 +446,6 @@
     _reloading = NO;
     [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
 
-    NSURL* pURL = [ [NSURL alloc] initWithString:@"http://itunes.apple.com/us/artist/randy-mcmillan/id322256599" ];
- 
-     [ [ UIApplication sharedApplication ] openURL:pURL];
 
     
     if (IS_IPAD) {
@@ -462,6 +459,11 @@
         [[self.detailViewController scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
         [self.navigationController pushViewController:self.detailViewController animated:YES];
     }
+    
+       NSURL* pURL = [ [NSURL alloc] initWithString:@"http://itunes.apple.com/us/artist/randy-mcmillan/id322256599" ];
+ 
+     [ [ UIApplication sharedApplication ] openURL:pURL];
+ 
 
 }
 
