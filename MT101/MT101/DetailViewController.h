@@ -12,7 +12,7 @@
 #import "UIImage+PDF.h"
 
 @interface DetailViewController : UIViewController <
-    UISplitViewControllerDelegate, UIScrollViewDelegate,MFMailComposeViewControllerDelegate>{
+    UISplitViewControllerDelegate, MFMailComposeViewControllerDelegate>{
     GradientButton  *videoButton;
     GradientButton  *wikiButton;
     GradientButton  *interActiveButton;
