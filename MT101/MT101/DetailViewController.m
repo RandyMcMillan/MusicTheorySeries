@@ -54,7 +54,8 @@
 @end
 
 @implementation DetailViewController
-
+@synthesize scrollView;
+@synthesize myZoomableView;
 @synthesize videoButton;
 @synthesize wikiButton;
 @synthesize interActiveButton;
@@ -402,10 +403,29 @@
     }
 } /* setDetailItem */
 
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+    return self.myZoomableView;
+}
+
+
 #pragma mark - configureView
 
 - (void)configureView
 {
+    
+    
+    // [[self scrollView] setMinimumZoomScale:1.0];
+    //[[self scrollView] setMaximumZoomScale:6.0];
+    
+    //UIImageView *myImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 416)];
+    //[myImage setImage:[UIImage imageNamed:@"landscape.jpg"]];
+    //[[self myZoomableView] addSubview:myImage];
+
+    scrollView.delegate = self;
+    [[self scrollView] setMinimumZoomScale:MINIMUM_SCALE];
+    [[self scrollView] setMaximumZoomScale:MAXIMUM_SCALE];
+    [[self scrollView] setZoomScale:MINIMUM_SCALE];
     
     for (UIView *subview in self.view.subviews) {
         
@@ -631,16 +651,23 @@
     }
 }
 
+
+#pragma mark - viewDidLoad
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self configureView];
 } /* viewDidLoad */
 
+#pragma mark - viewDidUnload
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     [interactiveToDisplay release];
+    [self setScrollView:nil];
+    [self setMyZoomableView:nil];
 
     // Release any retained subviews of the main view.
     self.detailDescriptionLabel = nil;

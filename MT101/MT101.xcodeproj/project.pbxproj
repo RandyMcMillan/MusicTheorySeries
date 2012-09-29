@@ -10,6 +10,8 @@
 		4801D4A5161450BC00512EA6 /* twitterglyph.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4A4161450BC00512EA6 /* twitterglyph.png */; };
 		4801D4B21614645500512EA6 /* Interactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4B11614645500512EA6 /* Interactive.png */; };
 		4801D4B4161464F100512EA6 /* Interactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4B3161464F100512EA6 /* Interactive@2x.png */; };
+		4805964E1616EADD00678501 /* ZoomableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4805964D1616EADD00678501 /* ZoomableView.m */; };
+		480596511616EE4F00678501 /* landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 480596501616EE4F00678501 /* landscape.jpg */; };
 		4809454A161317A800A600C3 /* A#.L.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48094500161317A800A600C3 /* A#.L.aif */; };
 		4809454B161317A800A600C3 /* A#.R.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48094501161317A800A600C3 /* A#.R.aif */; };
 		4809454C161317A800A600C3 /* A#2.L.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48094502161317A800A600C3 /* A#2.L.aif */; };
@@ -264,6 +266,9 @@
 		4801D4A4161450BC00512EA6 /* twitterglyph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitterglyph.png; path = "../../../../Desktop/iPad Simulator 6.0 artwork/SocialWeeApp bundle/twitterglyph.png"; sourceTree = "<group>"; };
 		4801D4B11614645500512EA6 /* Interactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Interactive.png; path = ../Interactive.png; sourceTree = "<group>"; };
 		4801D4B3161464F100512EA6 /* Interactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Interactive@2x.png"; path = "../Interactive@2x.png"; sourceTree = "<group>"; };
+		4805964C1616EADD00678501 /* ZoomableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomableView.h; sourceTree = "<group>"; };
+		4805964D1616EADD00678501 /* ZoomableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomableView.m; sourceTree = "<group>"; };
+		480596501616EE4F00678501 /* landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = landscape.jpg; sourceTree = "<group>"; };
 		48094500161317A800A600C3 /* A#.L.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A#.L.aif"; sourceTree = "<group>"; };
 		48094501161317A800A600C3 /* A#.R.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A#.R.aif"; sourceTree = "<group>"; };
 		48094502161317A800A600C3 /* A#2.L.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A#2.L.aif"; sourceTree = "<group>"; };
@@ -987,11 +992,14 @@
 		48EEEF6815DC52BA00D15F15 /* MainVCs */ = {
 			isa = PBXGroup;
 			children = (
+				4805964C1616EADD00678501 /* ZoomableView.h */,
+				4805964D1616EADD00678501 /* ZoomableView.m */,
 				4817CD7A16149A5D0014517A /* RefreshTableHeaderView */,
 				B225A73C1534CF59006FD46F /* MasterViewController.h */,
 				B225A73D1534CF59006FD46F /* MasterViewController.m */,
 				B225A73F1534CF59006FD46F /* DetailViewController.h */,
 				B225A7401534CF59006FD46F /* DetailViewController.m */,
+				480596501616EE4F00678501 /* landscape.jpg */,
 			);
 			name = MainVCs;
 			sourceTree = "<group>";
@@ -1371,6 +1379,7 @@
 				4895423216157D09003E95CE /* UIButtonBarCompose@2x~iphone.png in Resources */,
 				4895423516157DD9003E95CE /* PLVideoCameraPreviewStack@2x~ipad.png in Resources */,
 				4895423616157DD9003E95CE /* PLVideoCameraPreviewStack@2x~iphone.png in Resources */,
+				480596511616EE4F00678501 /* landscape.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1438,6 +1447,7 @@
 				485D15BE16040B4C00B401D2 /* UIView+Image.m in Sources */,
 				4817CD7D16149A5D0014517A /* EGORefreshTableHeaderView.m in Sources */,
 				4895424116159EE5003E95CE /* CGRects.m in Sources */,
+				4805964E1616EADD00678501 /* ZoomableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

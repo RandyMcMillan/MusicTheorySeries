@@ -423,6 +423,7 @@
 
     [self.detailViewController configureView];
     [self.detailViewController.toolBar setHidden:TRUE];
+
     // SHOW DETAILVIEW ON IPHONE DURING APP LAUNCH
     //  if (IS_IPAD) {} else {[self.navigationController pushViewController:self.detailViewController animated:YES]; }
 } /* viewDidLoad */
@@ -652,6 +653,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(
     NSIndexPath *)indexPath
 {
+    
+    
+    [[self.detailViewController scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+    [[self.detailViewController scrollView] scrollRectToVisible:self.detailViewController.view.frame  animated:TRUE] ;
+    
+    self.detailViewController.imageView.center = self.detailViewController.view.center;
+    self.detailViewController.scrollView.center = self.detailViewController.view.center;
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     if (indexPath.section == 0) {

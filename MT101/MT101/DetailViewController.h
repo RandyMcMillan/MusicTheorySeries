@@ -10,9 +10,10 @@
 #import "GradientToolBar.h"
 #import "ExampleView.h"
 #import "UIImage+PDF.h"
+#import "ZoomableView.h"
 
 @interface DetailViewController : UIViewController <
-    UISplitViewControllerDelegate, MFMailComposeViewControllerDelegate>{
+    UISplitViewControllerDelegate, MFMailComposeViewControllerDelegate,UIScrollViewDelegate>{
     GradientButton  *videoButton;
     GradientButton  *wikiButton;
     GradientButton  *interActiveButton;
@@ -24,6 +25,9 @@
 }
 
 @property (strong, nonatomic) id detailItem;
+
+@property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (retain, nonatomic) IBOutlet ZoomableView *myZoomableView;
 
 @property (strong, nonatomic) IBOutlet UILabel  *detailDescriptionLabel;
 @property (strong, nonatomic) IBOutlet UILabel  *musicTheory101Label;
