@@ -13,7 +13,7 @@
 #import "ZoomableView.h"
 
 @interface DetailViewController : UIViewController <
-    UISplitViewControllerDelegate, MFMailComposeViewControllerDelegate,UIScrollViewDelegate>{
+    UISplitViewControllerDelegate, MFMailComposeViewControllerDelegate,UIScrollViewDelegate,UIGestureRecognizerDelegate>{
     GradientButton  *videoButton;
     GradientButton  *wikiButton;
     GradientButton  *interActiveButton;

@@ -443,13 +443,21 @@
     NSLog(@"handleSingleTap");
    
     float newScale = [scrollView zoomScale] * ZOOM_STEP;
+
+    NSLog(@"%f",newScale);
+
+    if (newScale <= 2.250000) {
+        
+    
     CGRect zoomRect = [self zoomRectForScale:newScale withCenter:[gestureRecognizer locationInView:gestureRecognizer.view]];
     [scrollView zoomToRect:zoomRect animated:YES];
-
     
-    //[[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-    //[[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+    } else {
     
+[[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+[[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+    
+    }
 
 }
 
@@ -458,17 +466,30 @@
 - (void)handleDoubleTap:(UIGestureRecognizer *)gestureRecognizer {
     // single tap does nothing for now
     NSLog(@"handleDoubleTap");
-    //#define ZOOM_STEP 1.5
+ 
+    
+    float newScale = [scrollView zoomScale] * ZOOM_STEP;
+    
+    NSLog(@"%f",newScale);
+    
+    //The use can zoom a little further manually but tapping to this scale is prevented for usability 
+    //2.250000 - 3.375000 is the thresh hold with
+    /*
+     
+     
+     #define MINIMUM_SCALE 1.0f
+     #define MAXIMUM_SCALE 3.9f
+     #define ZOOM_STEP 1.5
+     
+     
+     */
+    if (newScale > 2.250000 && newScale <! 2.250000) {
+        
+    
+    [self   performSelector :@selector(handleSingleTap:) withObject:nil
+            afterDelay      :0.0];
 
-    //float newScale = [scrollView zoomScale] * ZOOM_STEP;
-    //CGRect zoomRect = [self zoomRectForScale:newScale withCenter:[gestureRecognizer locationInView:gestureRecognizer.view]];
-    //[scrollView zoomToRect:zoomRect animated:YES];
-    
-    
-    [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
-    
-
+    }else{}//do nothing
 
 }
 
@@ -502,16 +523,12 @@
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
     [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
     
-
- 
 }
 
 #pragma mark - configureView
 
 - (void)configureView
 {
-    
-   
     
     // add gesture recognizers to the image view
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
