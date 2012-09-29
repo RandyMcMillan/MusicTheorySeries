@@ -83,6 +83,10 @@
 - (IBAction)displayInteractive:(id)sender
 {
     NSLog(@"interactiveToDisplay = %@ ", interactiveToDisplay);
+    
+    [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+    
 
     if (interactiveToDisplay == @"GrandStaffViewController") {
         GrandStaffViewController *theGrandStaffVC =
@@ -283,6 +287,10 @@
 - (IBAction)playMovie:(id)sender
 {
     // NSBundle *bundle = [NSBundle mainBundle];
+    
+    [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+    
 
     NSURL *movieURL =
         [NSURL fileURLWithPath:[[NSBundle mainBundle]   pathForResource :
@@ -313,6 +321,10 @@
 - (void)moviePlayBackDidFinish:(NSNotification *)notification
 {
     NSLog(@"In playback Did Finish");
+    
+    [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+    
 
     MPMoviePlayerController *moviePlayer = [notification object];
     [[NSNotificationCenter defaultCenter]   removeObserver  :self
@@ -332,6 +344,10 @@
 - (IBAction)displayWiki:(id)sender
 {
     NSLog(@"displayWiki = %@", wikiToDisplay);
+    
+    [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+    
 
     WikiViewController *wikiVC = [[WikiViewController alloc] init];
     // wikiVC.modalPresentationStyle = UIModalPresentationPageSheet;
