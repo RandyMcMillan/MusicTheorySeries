@@ -412,9 +412,15 @@
     // single tap does nothing for now
     
     NSLog(@"handleSingleTap");
+   
     
-    [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+    float newScale = [scrollView zoomScale] * ZOOM_STEP;
+    CGRect zoomRect = [self zoomRectForScale:newScale withCenter:[gestureRecognizer locationInView:gestureRecognizer.view]];
+    [scrollView zoomToRect:zoomRect animated:YES];
+
+    
+    //[[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+    //[[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
     
 
 }
@@ -422,12 +428,41 @@
 - (void)handleDoubleTap:(UIGestureRecognizer *)gestureRecognizer {
     // single tap does nothing for now
     NSLog(@"handleDoubleTap");
+    //#define ZOOM_STEP 1.5
+
+    //float newScale = [scrollView zoomScale] * ZOOM_STEP;
+    //CGRect zoomRect = [self zoomRectForScale:newScale withCenter:[gestureRecognizer locationInView:gestureRecognizer.view]];
+    //[scrollView zoomToRect:zoomRect animated:YES];
+    
+    
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
     [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
     
 
 
 }
+
+#pragma mark Utility methods
+
+- (CGRect)zoomRectForScale:(float)scale withCenter:(CGPoint)center {
+    
+    CGRect zoomRect;
+    
+    // the zoom rect is in the content view's coordinates.
+    //    At a zoom scale of 1.0, it would be the size of the imageScrollView's bounds.
+    //    As the zoom scale decreases, so more content is visible, the size of the rect grows.
+    zoomRect.size.height = [scrollView frame].size.height / scale;
+    zoomRect.size.width  = [scrollView frame].size.width  / scale;
+    
+    // choose an origin so as to get the right center.
+    zoomRect.origin.x    = center.x - (zoomRect.size.width  / 2.0);
+    zoomRect.origin.y    = center.y - (zoomRect.size.height / 2.0);
+    
+    return zoomRect;
+}
+
+
+
 
 - (void)handleTwoFingerTap:(UIGestureRecognizer *)gestureRecognizer {
     // single tap does nothing for now

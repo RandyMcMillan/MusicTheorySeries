@@ -9,6 +9,7 @@
 #define BARBUTTON(TITLE, SELECTOR) [[UIBarButtonItem alloc] initWithTitle:TITLE style:UIBarButtonItemStylePlain target:self action:SELECTOR]
 #define MINIMUM_SCALE 1.0f
 #define MAXIMUM_SCALE 2.0f
+#define ZOOM_STEP 1.5
 
 #define kLeftMargin                 20.0
 #define kTopMargin                  20.0
