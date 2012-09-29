@@ -38,6 +38,8 @@
     return self;
 } /* initWithNibName */
 
+#pragma mark - viewDidLoad
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

@@ -72,13 +72,16 @@
 @synthesize wikiToDisplay;
 
 #pragma mark - Managing the detail item
-#pragma mark - displayInteractives
+
+#pragma mark - clickMe
 
 - (IBAction)clickMe:(UIButton *)sender
 {
     NSLog(@"clickMe!"); // I just put this in to verify that the
                         // IBAction was firing;
 }
+
+#pragma mark - displayInteractives
 
 - (IBAction)displayInteractive:(id)sender
 {
@@ -284,6 +287,8 @@
     //   [self presentModalViewController:test animated:YES];
 } /* displayInteractive */
 
+#pragma mark - playMovie
+
 - (IBAction)playMovie:(id)sender
 {
     // NSBundle *bundle = [NSBundle mainBundle];
@@ -317,6 +322,8 @@
 
     // [self presentMoviePlayerViewControllerAnimated:moviePlayer];
 } /* playMovie */
+
+#pragma mark - moviePlayBackDidFinish
 
 - (void)moviePlayBackDidFinish:(NSNotification *)notification
 {
@@ -405,6 +412,9 @@
     // scroll up and down." baseURL:nil];
 } /* displayWiki */
 
+
+#pragma mark - setDetailItem
+
 - (void)setDetailItem:(id)newDetailItem
 {
     if (_detailItem != newDetailItem) {
@@ -419,17 +429,19 @@
     }
 } /* setDetailItem */
 
+#pragma mark - viewForZoomingInScrollView
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
     return self.myZoomableView;
 }
+
+#pragma mark - handleSingleTap
 
 - (void)handleSingleTap:(UIGestureRecognizer *)gestureRecognizer {
     // single tap does nothing for now
     
     NSLog(@"handleSingleTap");
    
-    
     float newScale = [scrollView zoomScale] * ZOOM_STEP;
     CGRect zoomRect = [self zoomRectForScale:newScale withCenter:[gestureRecognizer locationInView:gestureRecognizer.view]];
     [scrollView zoomToRect:zoomRect animated:YES];
@@ -440,6 +452,8 @@
     
 
 }
+
+#pragma mark - handleDoubleTap
 
 - (void)handleDoubleTap:(UIGestureRecognizer *)gestureRecognizer {
     // single tap does nothing for now
@@ -460,6 +474,8 @@
 
 #pragma mark Utility methods
 
+#pragma mark - zoomRectForScale
+
 - (CGRect)zoomRectForScale:(float)scale withCenter:(CGPoint)center {
     
     CGRect zoomRect;
@@ -478,7 +494,7 @@
 }
 
 
-
+#pragma mark - handleTwoFingerTap
 
 - (void)handleTwoFingerTap:(UIGestureRecognizer *)gestureRecognizer {
     // single tap does nothing for now
@@ -786,6 +802,9 @@
      */
 } /* viewDidUnload */
 
+
+#pragma mark - shouldAutorotateToInterfaceOrientation
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
    toInterfaceOrientation
 {
@@ -808,12 +827,16 @@
     } else {return NO; }
 } /* shouldAutorotateToInterfaceOrientation */
 
+#pragma mark - didAutoRotateToInterfaceOrientation
+
 - (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
    currentInterfaceOrientation
 {
     NSLog(@"did auto rotate");
     return YES;
 }
+
+#pragma mark - initWithNibName
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)
    nibBundleOrNil
@@ -840,6 +863,8 @@
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.masterPopoverController = popoverController;
 }
+
+#pragma mark - splitViewController
 
 - (void)splitViewController         :(UISplitViewController *)splitController
         willShowViewController      :(UIViewController *)viewController
