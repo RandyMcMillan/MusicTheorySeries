@@ -408,11 +408,60 @@
     return self.myZoomableView;
 }
 
+- (void)handleSingleTap:(UIGestureRecognizer *)gestureRecognizer {
+    // single tap does nothing for now
+    
+    NSLog(@"handleSingleTap");
+    
+    [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+    
+
+}
+
+- (void)handleDoubleTap:(UIGestureRecognizer *)gestureRecognizer {
+    // single tap does nothing for now
+    NSLog(@"handleDoubleTap");
+    [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+    
+
+
+}
+
+- (void)handleTwoFingerTap:(UIGestureRecognizer *)gestureRecognizer {
+    // single tap does nothing for now
+    NSLog(@"handleTwoFingerTap");
+    [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+    
+
+ 
+}
 
 #pragma mark - configureView
 
 - (void)configureView
 {
+    
+   
+    
+    // add gesture recognizers to the image view
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
+    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];
+    UITapGestureRecognizer *twoFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTwoFingerTap:)];
+    
+    [doubleTap setNumberOfTapsRequired:2];
+    [twoFingerTap setNumberOfTouchesRequired:2];
+    
+    [self.view addGestureRecognizer:singleTap];
+    [self.view addGestureRecognizer:doubleTap];
+    [self.view addGestureRecognizer:twoFingerTap];
+    
+    [singleTap release];
+    [doubleTap release];
+    [twoFingerTap release];
+
     
     
     // [[self scrollView] setMinimumZoomScale:1.0];
