@@ -8,6 +8,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "GradientButton.h"
 #import "GradientToolBar.h"
+#import "GradientNavBar.h"
 #import "ExampleView.h"
 #import "UIImage+PDF.h"
 #import "ZoomableView.h"
@@ -18,6 +19,7 @@
     GradientButton  *wikiButton;
     GradientButton  *interActiveButton;
     GradientToolBar *toolBar;
+    GradientNavBar *detailNavBar;
     ExampleView     *imageView;
 
     GradientButton  *emailButton;
@@ -44,6 +46,7 @@
 @property (nonatomic, retain) IBOutlet GradientButton   *wikiButton;
 @property (nonatomic, retain) IBOutlet GradientButton   *interActiveButton;
 @property (nonatomic, retain) IBOutlet GradientToolBar  *toolBar;
+@property (nonatomic, retain) IBOutlet GradientNavBar   *detailNavBar;
 @property (nonatomic, retain) IBOutlet GradientButton   *emailButton;
 @property (nonatomic, retain) IBOutlet GradientButton   *composeTweetButton;
 @property (assign) BOOL   *shouldZoom;

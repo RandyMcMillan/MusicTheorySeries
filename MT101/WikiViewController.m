@@ -10,7 +10,7 @@
 #import "GradientButton.h"
 #import "GradientToolBar.h"
 
-#import "NavBarBackgroundGradientView.h"
+#import "GradientNavBar.h"
 
 #import "iScrollPlugin_JS.h"
 

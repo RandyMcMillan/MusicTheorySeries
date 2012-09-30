@@ -42,7 +42,7 @@
 
 #import "ColorUIButton.h"
 #import "GradientButton.h"
-#import "NavBarBackgroundGradientView.h"
+#import "GradientNavBar.h"
 
 @interface DetailViewController () {
     MPMoviePlayerViewController *moviePlayer;
@@ -60,6 +60,7 @@
 @synthesize wikiButton;
 @synthesize interActiveButton;
 @synthesize toolBar;
+@synthesize detailNavBar;
 @synthesize emailButton;
 @synthesize composeTweetButton;
 
@@ -498,6 +499,10 @@
 
 - (void)configureView
 {
+   
+    [self.navigationController.navigationBar addSubview:detailNavBar];
+    [self.detailNavBar setFrame:detailNavBar.superview.frame];
+ 
     // add gesture recognizers to the image view
     UITapGestureRecognizer  *singleTap      = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
     UITapGestureRecognizer  *doubleTap      = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];

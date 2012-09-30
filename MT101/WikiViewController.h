@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "GradientButton.h"
 #import "GradientToolBar.h"
-#import "NavBarBackgroundGradientView.h"
+#import "GradientNavBar.h"
 
 @protocol WebViewDelegate <NSObject>
 @end
