@@ -501,8 +501,8 @@
 - (void)configureView
 {
    
-    [self.navigationController.navigationBar addSubview:detailNavBar];
-    [self.detailNavBar setFrame:detailNavBar.superview.frame];
+    
+    [interActiveButton useDoneButtonStyle];
     ///self.detailNavItem.title = self.MovieToPlay;
     [self.navigationController.navigationBar bringSubviewToFront:detailNavBar];
     // add gesture recognizers to the image view
