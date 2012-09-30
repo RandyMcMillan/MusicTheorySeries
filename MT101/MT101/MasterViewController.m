@@ -778,6 +778,9 @@
     self.detailViewController.toolBar.alpha = 1.0;
     self.detailViewController.title         =
         self.detailViewController.MovieToPlay;
+    
+    self.detailViewController.detailNavItem.title = self.detailViewController.MovieToPlay;
+
     self.detailViewController.detailDescriptionLabel.text   = nil;
     self.detailViewController.musicTheory101Label.text      = nil;
     self.detailViewController.vLabel.text       = nil;

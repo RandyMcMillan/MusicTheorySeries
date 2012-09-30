@@ -61,6 +61,7 @@
 @synthesize interActiveButton;
 @synthesize toolBar;
 @synthesize detailNavBar;
+@synthesize detailNavItem;
 @synthesize emailButton;
 @synthesize composeTweetButton;
 
@@ -502,7 +503,8 @@
    
     [self.navigationController.navigationBar addSubview:detailNavBar];
     [self.detailNavBar setFrame:detailNavBar.superview.frame];
- 
+    ///self.detailNavItem.title = self.MovieToPlay;
+    [self.navigationController.navigationBar bringSubviewToFront:detailNavBar];
     // add gesture recognizers to the image view
     UITapGestureRecognizer  *singleTap      = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
     UITapGestureRecognizer  *doubleTap      = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];

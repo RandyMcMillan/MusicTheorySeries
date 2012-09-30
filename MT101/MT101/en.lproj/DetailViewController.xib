@@ -296,19 +296,62 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUINavigationBar" id="41197824">
+					<object class="IBUINavigationBar" id="126734880">
 						<reference key="NSNextResponder" ref="647120888"/>
 						<int key="NSvFlags">294</int>
+						<array class="NSMutableArray" key="NSSubviews">
+							<object class="IBUIButton" id="628485510">
+								<reference key="NSNextResponder" ref="126734880"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{455, 12}, {18, 19}}</string>
+								<reference key="NSSuperview" ref="126734880"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="10106660"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIOpaque">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<int key="IBUIContentHorizontalAlignment">0</int>
+								<int key="IBUIContentVerticalAlignment">0</int>
+								<int key="IBUIButtonType">4</int>
+								<bool key="IBUIShowsTouchWhenHighlighted">YES</bool>
+								<object class="NSColor" key="IBUIHighlightedTitleColor" id="175379254">
+									<int key="NSColorSpace">3</int>
+									<bytes key="NSWhite">MQA</bytes>
+								</object>
+								<object class="NSColor" key="IBUINormalTitleColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+								</object>
+								<object class="NSColor" key="IBUINormalTitleShadowColor" id="365025761">
+									<int key="NSColorSpace">3</int>
+									<bytes key="NSWhite">MC41AA</bytes>
+								</object>
+								<object class="IBUIFontDescription" key="IBUIFontDescription" id="185218964">
+									<int key="type">2</int>
+									<double key="pointSize">15</double>
+								</object>
+								<object class="NSFont" key="IBUIFont" id="562517040">
+									<string key="NSName">Helvetica-Bold</string>
+									<double key="NSSize">15</double>
+									<int key="NSfFlags">16</int>
+								</object>
+							</object>
+						</array>
 						<string key="NSFrameSize">{480, 44}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="204503168"/>
+						<reference key="NSNextKeyView" ref="628485510"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<array key="IBUIItems">
-							<object class="IBUINavigationItem" id="508703901">
-								<reference key="IBUINavigationBar" ref="41197824"/>
+							<object class="IBUINavigationItem" id="367297320">
+								<reference key="IBUINavigationBar" ref="126734880"/>
 								<string key="IBUITitle">Title</string>
+								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="910083581">
+									<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+									<reference key="IBUICustomView" ref="628485510"/>
+									<reference key="IBUINavigationItem" ref="367297320"/>
+								</object>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 							</object>
 						</array>
@@ -442,7 +485,7 @@
 								<string key="NSFrameSize">{480, 200}</string>
 								<reference key="NSSuperview" ref="10106660"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="41197824"/>
+								<reference key="NSNextKeyView" ref="204503168"/>
 								<string key="NSReuseIdentifierKey">_NS:196</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">2</int>
@@ -483,31 +526,18 @@
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
-								<object class="NSColor" key="IBUIHighlightedTitleColor" id="175379254">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MQA</bytes>
-								</object>
+								<reference key="IBUIHighlightedTitleColor" ref="175379254"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 								</object>
-								<object class="NSColor" key="IBUINormalTitleShadowColor" id="365025761">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MC41AA</bytes>
-								</object>
+								<reference key="IBUINormalTitleShadowColor" ref="365025761"/>
 								<object class="NSCustomResource" key="IBUINormalImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">Twitter.png</string>
 								</object>
-								<object class="IBUIFontDescription" key="IBUIFontDescription">
-									<int key="type">2</int>
-									<double key="pointSize">15</double>
-								</object>
-								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Helvetica-Bold</string>
-									<double key="NSSize">15</double>
-									<int key="NSfFlags">16</int>
-								</object>
+								<reference key="IBUIFontDescription" ref="185218964"/>
+								<reference key="IBUIFont" ref="562517040"/>
 							</object>
 							<object class="IBUIButton" id="230422698">
 								<reference key="NSNextResponder" ref="841819309"/>
@@ -606,7 +636,6 @@
 								<string key="NSFrame">{{410, 5}, {58, 34}}</string>
 								<reference key="NSSuperview" ref="841819309"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -688,7 +717,7 @@
 				<string key="NSFrameSize">{480, 288}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="10106660"/>
+				<reference key="NSNextKeyView" ref="126734880"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">2</int>
 					<bytes key="NSRGB">MC45MzMzMzMzOTY5IDAuOTMzMzMzMzk2OSAwLjkzMzMzMzM5NjkAA</bytes>
@@ -810,9 +839,17 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">detailNavBar</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="41197824"/>
+						<reference key="destination" ref="126734880"/>
 					</object>
 					<int key="connectionID">260</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">detailNavItem</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="367297320"/>
+					</object>
+					<int key="connectionID">263</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -884,7 +921,7 @@
 						<reference key="object" ref="647120888"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="841819309"/>
-							<reference ref="41197824"/>
+							<reference ref="126734880"/>
 							<reference ref="10106660"/>
 						</array>
 						<reference key="parent" ref="0"/>
@@ -1146,16 +1183,32 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">258</int>
-						<reference key="object" ref="41197824"/>
+						<reference key="object" ref="126734880"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="508703901"/>
+							<reference ref="367297320"/>
 						</array>
 						<reference key="parent" ref="647120888"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">259</int>
-						<reference key="object" ref="508703901"/>
-						<reference key="parent" ref="41197824"/>
+						<reference key="object" ref="367297320"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="910083581"/>
+						</array>
+						<reference key="parent" ref="126734880"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">262</int>
+						<reference key="object" ref="910083581"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="628485510"/>
+						</array>
+						<reference key="parent" ref="367297320"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">261</int>
+						<reference key="object" ref="628485510"/>
+						<reference key="parent" ref="910083581"/>
 					</object>
 				</array>
 			</object>
@@ -1219,8 +1272,9 @@
 				<string key="254.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="258.CustomClassName">NavBarBackgroundGradientView</string>
 				<string key="258.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="259.CustomClassName">Nav</string>
 				<string key="259.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="261.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="262.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="68.CustomClassName">ExampleView</string>
 				<string key="68.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -1261,7 +1315,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">260</int>
+			<int key="maxID">263</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1510,7 +1564,8 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="composeTweetButton">GradientButton</string>
 						<string key="detailDescriptionLabel">UILabel</string>
-						<string key="detailNavBar">NavBarBackgroundGradientView</string>
+						<string key="detailNavBar">GradientNavBar</string>
+						<string key="detailNavItem">UINavigationItem</string>
 						<string key="emailButton">GradientButton</string>
 						<string key="imageView">ExampleView</string>
 						<string key="interActiveButton">GradientButton</string>
@@ -1534,7 +1589,11 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="detailNavBar">
 							<string key="name">detailNavBar</string>
-							<string key="candidateClassName">NavBarBackgroundGradientView</string>
+							<string key="candidateClassName">GradientNavBar</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="detailNavItem">
+							<string key="name">detailNavItem</string>
+							<string key="candidateClassName">UINavigationItem</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="emailButton">
 							<string key="name">emailButton</string>
@@ -1641,6 +1700,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/GradientButton.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">GradientNavBar</string>
+					<string key="superclassName">UIView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/GradientNavBar.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -1895,14 +1962,6 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/MixoLydianViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">NavBarBackgroundGradientView</string>
-					<string key="superclassName">UINavigationBar</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/NavBarBackgroundGradientView.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
