@@ -69,40 +69,13 @@
         // http://localhost:9999/?page=1 or 2 ");
 #endif
 
-    /*  refreshBtn.image =
-     *        [UIImage imageNamed:[[self class] resolveImageResource:
-     *            @"WebView.bundle/but_refresh"]];
-     *    backBtn.image =
-     *        [UIImage imageNamed:[[self class] resolveImageResource:
-     *            @"WebView.bundle/arrow_left"]];
-     *    fwdBtn.image =
-     *        [UIImage imageNamed:[[self class] resolveImageResource:
-     *            @"WebView.bundle/arrow_right"]];
-     *    safariBtn.image =
-     *        [UIImage imageNamed:[[self class] resolveImageResource:
-     *            @"WebView.bundle/compass"]];
-     *
-     *
-     *
-     *    refreshBtn.enabled    = TRUE;
-     *    safariBtn.enabled = TRUE;
-     *    backBtn.enabled       = webView.canGoBack;
-     *    fwdBtn.enabled        = webView.canGoForward;
-     */
-
-    // [navBar useTBStyle];
-    // [toolBar useTBStyle];
     [doneButton useDoneButtonStyle];
-
     [safariButton useDoneButtonStyle];
     [safariButton useSafariStyle];
-
     [backButton useDoneButtonStyle];
     [backButton useBackStyle];
-
     [forwardButton useDoneButtonStyle];
     [forwardButton useForwardStyle];
-
     [refreshButton useDoneButtonStyle];
     [refreshButton useRefreshStyle];
 
@@ -147,7 +120,9 @@
     [twoFingerSwipeLeft release];
     [twoFingerSwipeRight release];
 
-    for (UIGestureRecognizer *recognizer in webView.gestureRecognizers) { recognizer.delegate = self; }
+    for (UIGestureRecognizer *recognizer in webView.gestureRecognizers) {
+        recognizer.delegate = self;
+    }
 }   /* viewDidLoad */
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -324,11 +299,10 @@
     [self closeBrowser];
 }
 
-- (BOOL)webView                             :(UIWebView *)webView shouldStartLoadWithRequest:(
-    NSURLRequest *)request navigationType   :(UIWebViewNavigationType)
-   navigationType; {
-    NSLog(@"shouldStartLoadWithRequest");
-
+- (BOOL)webView         :(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request
+        navigationType  :(UIWebViewNavigationType)navigationType
+{
+    NSLog(@"shouldStartLoadWithRequest = %@", request);
     return YES;
 }
 
@@ -353,15 +327,7 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)sender
 {
-    //  CGRect newRectangle = CGRectMake(320,
-    //                                 44,
-    //                               600,
-    //                             [self view].frame.size.height - 88
-    //                           );
-
-    // [self.view setFrame:newRectangle];
-    addressLabel.text = @"Loading...";
-
+    addressLabel.text           = @"Loading...";
     backButton.enabled          = webView.canGoBack;
     forwardButton.enabled       = webView.canGoForward;
     refreshButton.highlighted   = FALSE;
@@ -477,18 +443,17 @@
     safariButton.enabled    = FALSE;
 }   /* webView */
 
-///When UIWebView bounces this disables the subtle gradient
-- (void) hideGradientBackground:(UIView*)theView
+// /When UIWebView bounces this disables the subtle gradient
+- (void)hideGradientBackground:(UIView *)theView
 {
-    for (UIView * subview in theView.subviews)
-    {
-        if ([subview isKindOfClass:[UIImageView class]])
+    for (UIView *subview in theView.subviews) {
+        if ([subview isKindOfClass:[UIImageView class]]) {
             subview.hidden = YES;
-        
+        }
+
         [self hideGradientBackground:subview];
     }
 }
-
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
    toInterfaceOrientation
