@@ -402,6 +402,7 @@
     // single tap does nothing for now
 
     if (self.shouldZoom) {
+        self.scrollView.scrollEnabled = TRUE;
 
         NSLog(self.shouldZoom ? @"Yes" : @"No");
         NSLog(@"handleSingleTap");
@@ -417,11 +418,14 @@
         
                 [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
                 [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
-        
+                self.scrollView.scrollEnabled = FALSE;
             }
     
     } else {
-        
+        if ([scrollView zoomScale] > 0.0) {//allow user to zoom out if manually zoomed in welcome screen
+                [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+                [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
+            }
         NSLog(self.shouldZoom ? @"Yes" : @"No");
     
     }
@@ -518,7 +522,6 @@
 #endif
 
     if (self.detailItem) {
-        // shouldZoom = NO;
     }
 
     [imageView useWelcomeStyle];
@@ -527,19 +530,19 @@
         // ipad landscape welcome screen formatting
         self.musicTheory101Label.text = @"MUSIC THEORY 101";
         self.musicTheory101Label.frame
-            = CGRectMake([self view].center.x - 163, [self view].center.y + 30, 326, 53);
+            = CGRectMake(imageView.center.x - 163, imageView.center.y + 180, 326, 53);
         [self.musicTheory101Label setFont:[UIFont fontWithName:@"Helvetica-Bold" size:39.0]];
         self.musicTheory101Label.hidden = FALSE;
 
         self.vLabel.text = @"v";
         self.vLabel.frame
-            = CGRectMake([self view].center.x + 82, [self view].center.y + 59.6, 20, 20);
+            = CGRectMake(musicTheory101Label.center.x + 82.5, musicTheory101Label.center.y + 9.6, 20, 20);
         [self.vLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:10.0]];
         self.vLabel.hidden = FALSE;
 
         self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
         self.detailDescriptionLabel.frame
-            = CGRectMake([self view].center.x + 84, [self view].center.y + 60, 30, 20);
+            = CGRectMake(vLabel.center.x-8.5, vLabel.center.y-9.1, 30, 20);
         [self.detailDescriptionLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:11.0]];
         self.detailDescriptionLabel.hidden = FALSE;
 
@@ -728,6 +731,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    shouldZoom = FALSE;
+    scrollView.scrollEnabled=FALSE;
     [self configureView];
 } /* viewDidLoad */
 

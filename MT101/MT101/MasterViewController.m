@@ -672,7 +672,7 @@
 {
     
     self.detailViewController.shouldZoom = YES;
- 
+    self.detailViewController.scrollView.scrollEnabled= YES;
     [[self.detailViewController scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
     [[self.detailViewController scrollView] scrollRectToVisible:self.detailViewController.view.frame  animated:TRUE] ;
     

@@ -87,8 +87,11 @@
 {
     CGRect rect = self.superview.frame;
 
-    // CGRect rect = VIEWBOUNDS;//self.superview.frame;
-    self.alpha = 1.0;
+// CGRect rect = VIEWBOUNDS;//self.superview.frame;
+
+#if TARGET_IPHONE_SIMULATOR
+    self.alpha = 0.5;
+#endif
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
     //[self setAutoresizingMask:(UIViewAutoresizingNone)];
     [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
