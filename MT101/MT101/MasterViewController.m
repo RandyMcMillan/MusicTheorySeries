@@ -426,6 +426,8 @@
     [self.detailViewController configureView];
     [self.detailViewController.toolBar setHidden:TRUE];
 
+    self.detailViewController.shouldZoom = NO;
+    
     // SHOW DETAILVIEW ON IPHONE DURING APP LAUNCH
     //  if (IS_IPAD) {} else {[self.navigationController pushViewController:self.detailViewController animated:YES]; }
 } /* viewDidLoad */
@@ -669,7 +671,8 @@
     NSIndexPath *)indexPath
 {
     
-    
+    self.detailViewController.shouldZoom = YES;
+ 
     [[self.detailViewController scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
     [[self.detailViewController scrollView] scrollRectToVisible:self.detailViewController.view.frame  animated:TRUE] ;
     

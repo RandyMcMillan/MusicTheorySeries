@@ -22,7 +22,9 @@
 
     GradientButton  *emailButton;
     GradientButton  *composeTweetButton;
-}
+    BOOL *shouldZoom;
+
+    }
 
 @property (strong, nonatomic) id detailItem;
 
@@ -44,6 +46,7 @@
 @property (nonatomic, retain) IBOutlet GradientToolBar  *toolBar;
 @property (nonatomic, retain) IBOutlet GradientButton   *emailButton;
 @property (nonatomic, retain) IBOutlet GradientButton   *composeTweetButton;
+@property (assign) BOOL   *shouldZoom;
 
 - (IBAction)clickMe:(UIButton *)sender;
 

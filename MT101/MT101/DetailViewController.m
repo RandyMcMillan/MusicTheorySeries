@@ -86,10 +86,9 @@
 - (IBAction)displayInteractive:(id)sender
 {
     NSLog(@"interactiveToDisplay = %@ ", interactiveToDisplay);
-    
+
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
-    
+    [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 
     if (interactiveToDisplay == @"GrandStaffViewController") {
         GrandStaffViewController *theGrandStaffVC =
@@ -292,10 +291,9 @@
 - (IBAction)playMovie:(id)sender
 {
     // NSBundle *bundle = [NSBundle mainBundle];
-    
+
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
-    
+    [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 
     NSURL *movieURL =
         [NSURL fileURLWithPath:[[NSBundle mainBundle]   pathForResource :
@@ -328,10 +326,9 @@
 - (void)moviePlayBackDidFinish:(NSNotification *)notification
 {
     NSLog(@"In playback Did Finish");
-    
+
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
-    
+    [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 
     MPMoviePlayerController *moviePlayer = [notification object];
     [[NSNotificationCenter defaultCenter]   removeObserver  :self
@@ -351,10 +348,9 @@
 - (IBAction)displayWiki:(id)sender
 {
     NSLog(@"displayWiki = %@", wikiToDisplay);
-    
+
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
-    
+    [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 
     WikiViewController *wikiVC = [[WikiViewController alloc] init];
     // wikiVC.modalPresentationStyle = UIModalPresentationPageSheet;
@@ -371,47 +367,10 @@
     // URL Requst Object
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
 
-    // This is where more webView controls should go for presentation
-
-    /*example
-     *
-     *
-     *   NSLog(@"Opening Url : %@",url);
-     *
-     *   if( [url hasSuffix:@".png" ]  ||
-     *   [url hasSuffix:@".jpg" ]  ||
-     *   [url hasSuffix:@".jpeg" ] ||
-     *   [url hasSuffix:@".bmp" ]  ||
-     *   [url hasSuffix:@".gif" ]  )
-     *   {
-     *    [ imageURL release ];
-     *    imageURL = [url copy];
-     *    isImage = YES;
-     *    NSString* htmlText = @"<html><body style='background-color:#333;margin:0px;padding:0px;'><img style='min-height:200px;margin:0px;padding:0px;width:100%;height:auto;' alt='' src='IMGSRC'/></body></html>";
-     *    htmlText = [ htmlText stringByReplacingOccurrencesOfString:@"IMGSRC" withString:url ];
-     *
-     *    [webView loadHTMLString:htmlText baseURL:[NSURL URLWithString:@""]];
-     *
-     *   }
-     *   else
-     *   {
-     *    imageURL = @"";
-     *    isImage = NO;
-     *    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
-     *    [webView loadRequest:request];
-     *   }
-     *   webView.hidden = NO;
-     *
-     */
-
     // Load the request in the UIWebView.
     [wikiVC.webView loadRequest:requestObj];
     self.wikiButton.highlighted = FALSE;
-    // [webView loadHTMLString:@"This is a completely transparent
-    // UIWebView. Notice the missing gradient at the top and bottom as you
-    // scroll up and down." baseURL:nil];
 } /* displayWiki */
-
 
 #pragma mark - setDetailItem
 
@@ -431,31 +390,39 @@
 
 #pragma mark - viewForZoomingInScrollView
 
-- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
     return self.myZoomableView;
 }
 
 #pragma mark - handleSingleTap
 
-- (void)handleSingleTap:(UIGestureRecognizer *)gestureRecognizer {
+- (void)handleSingleTap:(UIGestureRecognizer *)gestureRecognizer
+{
     // single tap does nothing for now
-    
-    NSLog(@"handleSingleTap");
-   
-    float newScale = [scrollView zoomScale] * ZOOM_STEP;
 
-    NSLog(@"%f",newScale);
+    if (self.shouldZoom) {
 
-    if (newScale <= 2.250000) {
+        NSLog(self.shouldZoom ? @"Yes" : @"No");
+        NSLog(@"handleSingleTap");
+        float newScale = [scrollView zoomScale] * ZOOM_STEP;
+        NSLog(@"%f", newScale);
+
+            if (newScale <= 2.250000) {
+
+                CGRect zoomRect = [self zoomRectForScale:newScale withCenter:[gestureRecognizer locationInView:gestureRecognizer.view]];
+                [scrollView zoomToRect:zoomRect animated:YES];
+
+            } else {
         
-    
-    CGRect zoomRect = [self zoomRectForScale:newScale withCenter:[gestureRecognizer locationInView:gestureRecognizer.view]];
-    [scrollView zoomToRect:zoomRect animated:YES];
+                [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+                [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
+        
+            }
     
     } else {
-    
-[[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-[[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+        
+        NSLog(self.shouldZoom ? @"Yes" : @"No");
     
     }
 
@@ -463,33 +430,23 @@
 
 #pragma mark - handleDoubleTap
 
-- (void)handleDoubleTap:(UIGestureRecognizer *)gestureRecognizer {
+- (void)handleDoubleTap:(UIGestureRecognizer *)gestureRecognizer
+{
+
+    
     // single tap does nothing for now
     NSLog(@"handleDoubleTap");
- 
-    
-    float newScale = [scrollView zoomScale] * ZOOM_STEP;
-    
-    NSLog(@"%f",newScale);
-    
-    //The use can zoom a little further manually but tapping to this scale is prevented for usability 
-    //2.250000 - 3.375000 is the thresh hold with
-    /*
-     
-     
-     #define MINIMUM_SCALE 1.0f
-     #define MAXIMUM_SCALE 3.9f
-     #define ZOOM_STEP 1.5
-     
-     
-     */
-    if (newScale > 2.250000 && newScale <! 2.250000) {
-        
-    
-    [self   performSelector :@selector(handleSingleTap:) withObject:nil
-            afterDelay      :0.0];
 
-    }else{}//do nothing
+    float newScale = [scrollView zoomScale] * ZOOM_STEP;
+
+    NSLog(@"%f", newScale);
+
+    if ((newScale > 2.250000) && (newScale < !2.250000)) {
+        [self   performSelector :@selector(handleSingleTap:) withObject:nil
+                afterDelay      :0.0];
+    } else {} // do nothing
+
+
 
 }
 
@@ -497,114 +454,97 @@
 
 #pragma mark - zoomRectForScale
 
-- (CGRect)zoomRectForScale:(float)scale withCenter:(CGPoint)center {
-    
+- (CGRect)zoomRectForScale:(float)scale withCenter:(CGPoint)center
+{
     CGRect zoomRect;
-    
+
     // the zoom rect is in the content view's coordinates.
     //    At a zoom scale of 1.0, it would be the size of the imageScrollView's bounds.
     //    As the zoom scale decreases, so more content is visible, the size of the rect grows.
-    zoomRect.size.height = [scrollView frame].size.height / scale;
-    zoomRect.size.width  = [scrollView frame].size.width  / scale;
-    
+    zoomRect.size.height    = [scrollView frame].size.height / scale;
+    zoomRect.size.width     = [scrollView frame].size.width / scale;
+
     // choose an origin so as to get the right center.
-    zoomRect.origin.x    = center.x - (zoomRect.size.width  / 2.0);
-    zoomRect.origin.y    = center.y - (zoomRect.size.height / 2.0);
-    
+    zoomRect.origin.x   = center.x - (zoomRect.size.width / 2.0);
+    zoomRect.origin.y   = center.y - (zoomRect.size.height / 2.0);
+
     return zoomRect;
 }
 
-
 #pragma mark - handleTwoFingerTap
 
-- (void)handleTwoFingerTap:(UIGestureRecognizer *)gestureRecognizer {
+- (void)handleTwoFingerTap:(UIGestureRecognizer *)gestureRecognizer
+{
     // single tap does nothing for now
     NSLog(@"handleTwoFingerTap");
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
-    
+    [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 }
 
 #pragma mark - configureView
 
 - (void)configureView
 {
-    
     // add gesture recognizers to the image view
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
-    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];
-    UITapGestureRecognizer *twoFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTwoFingerTap:)];
-    
+    UITapGestureRecognizer  *singleTap      = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
+    UITapGestureRecognizer  *doubleTap      = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];
+    UITapGestureRecognizer  *twoFingerTap   = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTwoFingerTap:)];
+
     [doubleTap setNumberOfTapsRequired:2];
     [twoFingerTap setNumberOfTouchesRequired:2];
-    
+
     [self.view addGestureRecognizer:singleTap];
     [self.view addGestureRecognizer:doubleTap];
     [self.view addGestureRecognizer:twoFingerTap];
-    
+
     [singleTap release];
     [doubleTap release];
     [twoFingerTap release];
-
-    
-    
-    // [[self scrollView] setMinimumZoomScale:1.0];
-    //[[self scrollView] setMaximumZoomScale:6.0];
-    
-    //UIImageView *myImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 416)];
-    //[myImage setImage:[UIImage imageNamed:@"landscape.jpg"]];
-    //[[self myZoomableView] addSubview:myImage];
 
     scrollView.delegate = self;
     [[self scrollView] setMinimumZoomScale:MINIMUM_SCALE];
     [[self scrollView] setMaximumZoomScale:MAXIMUM_SCALE];
     [[self scrollView] setZoomScale:MINIMUM_SCALE];
-    
+
     for (UIView *subview in self.view.subviews) {
-        
         if ([subview isKindOfClass:[UITextView class]]) {
-            
             ((UITextView *)subview).font = [UIFont fontWithName:@"Helvetica-Bold" size:1];
         }
-        
     }
-    
+
 #if TARGET_IPHONE_SIMULATOR
-    //  self.musicTheory101Label.backgroundColor = [UIColor redColor];
-    //self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
-    //self.vLabel.backgroundColor = [UIColor yellowColor];
+        //  self.musicTheory101Label.backgroundColor = [UIColor redColor];
+        // self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
+        // self.vLabel.backgroundColor = [UIColor yellowColor];
 #endif
 
-    
-    
-    if (self.detailItem) {}
+    if (self.detailItem) {
+        // shouldZoom = NO;
+    }
 
     [imageView useWelcomeStyle];
-
-    // self.detailDescriptionLabel.text =
-    //  [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
 
     if (IS_IPAD) {
         // ipad landscape welcome screen formatting
         self.musicTheory101Label.text = @"MUSIC THEORY 101";
         self.musicTheory101Label.frame
-        = CGRectMake([self view].center.x-163,[self view].center.y+30, 326, 53);
+            = CGRectMake([self view].center.x - 163, [self view].center.y + 30, 326, 53);
         [self.musicTheory101Label setFont:[UIFont fontWithName:@"Helvetica-Bold" size:39.0]];
         self.musicTheory101Label.hidden = FALSE;
-        
+
         self.vLabel.text = @"v";
-        self.vLabel.frame 
-        = CGRectMake([self view].center.x+82,[self view].center.y+59.6, 20, 20);
+        self.vLabel.frame
+            = CGRectMake([self view].center.x + 82, [self view].center.y + 59.6, 20, 20);
         [self.vLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:10.0]];
         self.vLabel.hidden = FALSE;
 
         self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
         self.detailDescriptionLabel.frame
-        = CGRectMake([self view].center.x+84,[self view].center.y+60, 30, 20);
+            = CGRectMake([self view].center.x + 84, [self view].center.y + 60, 30, 20);
         [self.detailDescriptionLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:11.0]];
         self.detailDescriptionLabel.hidden = FALSE;
-        
-        self.interActiveButton.hidden   = FALSE;
+
+        self.interActiveButton.hidden = FALSE;
         [videoButton useDoneButtonStyle];
         [wikiButton useDoneButtonStyle];
         [interActiveButton useDoneButtonStyle];
@@ -633,27 +573,20 @@
         [emailButton useEmailStyle];
         [composeTweetButton useDoneButtonStyle];
         // [imageView useWelcomeStyle];
-        // useDoneButtonIPad
-        // useEmailButtonIPad etc...
-        // All styles start with "Basic Style" then augment the style with the secondary styling
-        // each style calls basic style first then continues with extra styling in its individual methods
-    } // build for iPhone
-
-} /* configureView */
+    }   // build for iPhone
+}       /* configureView */
 
 #pragma mark - Open the mail interface
 
 - (IBAction)openMail:(id)sender
 {
-    
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+    [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 
     if ([MFMailComposeViewController canSendMail]) {
         MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
 
         mailer.mailComposeDelegate = self;
-
         [mailer setSubject:@"A Message from a Music Theory 101 user."];
 
         NSArray *toRecipients = [NSArray arrayWithObjects:@"randy.lee.mcmillan@gmail.com", @"", nil];
@@ -746,12 +679,9 @@
 
 - (IBAction)composeTweet:(id)sender
 {
-    
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-    [[self scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+    [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 
-    
-    
     NSString    *tweetText      = @"I am learning music theory with Music Theory 101 for iOS! @MT101App #MT101";
     NSString    *urlAttach      = @"http://itunes.apple.com/us/app/music-theory-101/id322256596?mt=8";
     NSString    *imageAttach    = @"icon-72@2x.png";
@@ -794,7 +724,6 @@
     }
 }
 
-
 #pragma mark - viewDidLoad
 
 - (void)viewDidLoad
@@ -828,7 +757,6 @@
      *
      */
 } /* viewDidUnload */
-
 
 #pragma mark - shouldAutorotateToInterfaceOrientation
 
