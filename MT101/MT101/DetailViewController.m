@@ -356,16 +356,26 @@
     // wikiVC.modalPresentationStyle = UIModalPresentationPageSheet;
     wikiVC.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentModalViewController:wikiVC animated:YES];
+  [wikiVC.webView setBackgroundColor:[UIColor clearColor]];
+    [self hideGradientBackground:wikiVC.webView];
 
     // Create a URL object.
     NSURL *url = [NSURL URLWithString:wikiToDisplay];
     NSLog(@"%@", url);
 
-    [wikiVC.webView setBackgroundColor:[UIColor clearColor]];
-    [self hideGradientBackground:wikiVC.webView];
-
+    
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL URLWithString:wikiToDisplay] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval: 0.0];
+    
+    //Develop this more
+    //This is incomplete
+    
+    NSURLConnection *connection=[[NSURLConnection alloc] initWithRequest:requestObj delegate:nil];
+    if (connection != nil) {
+        NSLog(@"connection = %@",connection);
+    } else {NSLog(@"Please connect to internet!");}
+  
     // URL Requst Object
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    //   NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
 
     // Load the request in the UIWebView.
     [wikiVC.webView loadRequest:requestObj];
