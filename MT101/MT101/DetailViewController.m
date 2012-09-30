@@ -512,9 +512,9 @@
     }
 
 #if TARGET_IPHONE_SIMULATOR
-        //  self.musicTheory101Label.backgroundColor = [UIColor redColor];
-        // self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
-        // self.vLabel.backgroundColor = [UIColor yellowColor];
+         self.musicTheory101Label.backgroundColor = [UIColor redColor];
+         self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
+         self.vLabel.backgroundColor = [UIColor yellowColor];
 #endif
 
     if (self.detailItem) {
@@ -786,6 +786,10 @@
 - (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
    currentInterfaceOrientation
 {
+    
+    
+    [self.imageView setNeedsLayout];
+    
     NSLog(@"did auto rotate");
     return YES;
 }

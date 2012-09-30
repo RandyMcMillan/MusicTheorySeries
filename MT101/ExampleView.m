@@ -85,12 +85,13 @@
 
 - (void)useWelcomeStyle
 {
-    CGRect rect = CGRectMake(0, 0, 703, 768);  // self.superview.frame;
+    CGRect rect = self.superview.frame;
 
     // CGRect rect = VIEWBOUNDS;//self.superview.frame;
     self.alpha = 1.0;
     [self setContentMode:(UIViewContentModeScaleAspectFit)];
-    [self setAutoresizingMask:(UIViewAutoresizingNone)];
+    //[self setAutoresizingMask:(UIViewAutoresizingNone)];
+    [self setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
 
     ExampleView *welcomeIV = [[ExampleView alloc] initWithImage:
         [UIImage originalSizeImageWithPDFNamed:@"welcome.pdf"]];
@@ -100,23 +101,19 @@
 
     if (IS_IPAD) {
         if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
-            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH)];
-            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+            [self setBounds:CGRectMake(self.superview.center.x, self.superview.center.y, WELCOMEHEIGHT, WELCOMEWIDTH)];
+            [self setCenter:CGPointMake(self.superview.center.x, self.superview.center.y)];
         } else {
-            [self setBounds:CGRectMake(0, 0, WELCOMEHEIGHT, WELCOMEWIDTH)];
-            [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2.38)];
+            [self setBounds:CGRectMake(self.superview.center.x, self.superview.center.y, WELCOMEHEIGHT, WELCOMEWIDTH)];
+            [self setCenter:CGPointMake(self.superview.center.x, self.superview.center.y)];
         }
     } else { // not ipad
         if (([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES) && ([[UIScreen mainScreen] scale] == 2.00)) {
-            //  [self setBounds:VIEWBOUNDS];
-            [self setBounds:CGRectMake(-256, -256, IPHONEWELCOMEHEIGHT, IPHONEWELCOMEWIDTH)];
-            // / [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)];
-            //  [self setCenter:CGPointMake(0,0)];
+            [self setBounds:CGRectMake(self.superview.center.x, self.superview.center.y, WELCOMEHEIGHT, WELCOMEWIDTH)];
+            [self setCenter:CGPointMake(self.superview.center.x, self.superview.center.y)];
         } else {
-            // [self setBounds:VIEWBOUNDS];
-            [self setBounds:CGRectMake(-256, -256, IPHONEWELCOMEHEIGHT, IPHONEWELCOMEWIDTH)];
-            // [self setCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)];
-            // [self setCenter:CGPointMake(0,0)];
+            [self setBounds:CGRectMake(self.superview.center.x, self.superview.center.y, WELCOMEHEIGHT, WELCOMEWIDTH)];
+            [self setCenter:CGPointMake(self.superview.center.x, self.superview.center.y)];
         }
     }
 }   /* useGrandStaffStyle */
