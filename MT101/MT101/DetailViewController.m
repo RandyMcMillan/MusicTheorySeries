@@ -500,7 +500,13 @@
 
 - (void)configureView
 {
-   
+  
+    
+    [self.navigationController.navigationBar addSubview:detailNavBar];
+    [self.detailNavBar setFrame:detailNavBar.superview.frame];
+    
+    ///self.detailNavItem.title = self.MovieToPlay;
+    [self.navigationController.navigationBar bringSubviewToFront:detailNavBar];
     
     [interActiveButton useDoneButtonStyle];
     ///self.detailNavItem.title = self.MovieToPlay;
