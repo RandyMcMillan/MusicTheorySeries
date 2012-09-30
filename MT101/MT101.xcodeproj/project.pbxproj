@@ -175,6 +175,7 @@
 		485D15BC16040B4C00B401D2 /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D15B616040B4C00B401D2 /* PDFView.m */; };
 		485D15BD16040B4C00B401D2 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D15B816040B4C00B401D2 /* UIImage+PDF.m */; };
 		485D15BE16040B4C00B401D2 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D15BA16040B4C00B401D2 /* UIView+Image.m */; };
+		486A576C1618D9BB009ECCA2 /* DetailViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486A576B1618D9BB009ECCA2 /* DetailViewController~iphone.xib */; };
 		486B05EE15BF334A00B3F10D /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486B05ED15BF334A00B3F10D /* icon@2x.png */; };
 		487A1C7F15E84735006C5C59 /* WikiToDisplay1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */; };
 		487A1C9415E86AAD006C5C59 /* WikiToDisplay2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9015E86AAD006C5C59 /* WikiToDisplay2.plist */; };
@@ -455,6 +456,7 @@
 		485D15B816040B4C00B401D2 /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
 		485D15B916040B4C00B401D2 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		485D15BA16040B4C00B401D2 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+		486A576B1618D9BB009ECCA2 /* DetailViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "DetailViewController~iphone.xib"; path = "MT101/DetailViewController~iphone.xib"; sourceTree = "<group>"; };
 		486B05ED15BF334A00B3F10D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay1.plist; sourceTree = "<group>"; };
 		487A1C8915E85115006C5C59 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
@@ -1028,6 +1030,7 @@
 			children = (
 				B225A7421534CF59006FD46F /* MasterViewController.xib */,
 				B225A7451534CF59006FD46F /* DetailViewController.xib */,
+				486A576B1618D9BB009ECCA2 /* DetailViewController~iphone.xib */,
 			);
 			name = MainXIBs;
 			sourceTree = "<group>";
@@ -1384,6 +1387,7 @@
 				4895423616157DD9003E95CE /* PLVideoCameraPreviewStack@2x~iphone.png in Resources */,
 				480596511616EE4F00678501 /* landscape.jpg in Resources */,
 				489A81AF161870770018AAC8 /* Default-Landscape@2x~ipad.png in Resources */,
+				486A576C1618D9BB009ECCA2 /* DetailViewController~iphone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

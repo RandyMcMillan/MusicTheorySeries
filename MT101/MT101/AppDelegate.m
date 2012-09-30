@@ -31,29 +31,49 @@
         [[UINavigationController alloc] initWithRootViewController:
         masterViewController];
 
+    
+    if (IS_IPAD) {
+        
+    
     DetailViewController *detailViewController =
         [[DetailViewController alloc]   initWithNibName :
         @"DetailViewController"
                                         bundle          :nil];
-    UINavigationController *detailNavigationController =
+        
+        UINavigationController *detailNavigationController =
         [[UINavigationController alloc] initWithRootViewController:
-        detailViewController];
-
-    masterViewController.detailViewController = detailViewController;
-
-    if (IS_IPAD) {
+         detailViewController];
+        
+        masterViewController.detailViewController = detailViewController;
+        masterViewController.detailViewController = detailViewController;
         
         self.splitViewController                    = [[UISplitViewController alloc] init];
         self.splitViewController.delegate           = detailViewController;
         self.splitViewController.viewControllers    = @[masterNavigationController, detailNavigationController];
         self.window.rootViewController              = self.splitViewController;
-    
-        } else {
-        
-        self.window.rootViewController = masterNavigationController;
-        
-        }
 
+ 
+    }else{
+       
+        DetailViewController *detailViewController =
+        [[DetailViewController alloc]   initWithNibName :
+         @"DetailViewController~iphone"
+                                        bundle          :nil];
+        
+        UINavigationController *detailNavigationController =
+        [[UINavigationController alloc] initWithRootViewController:
+         detailViewController];
+        
+        masterViewController.detailViewController = detailViewController;
+        masterViewController.detailViewController = detailViewController;
+        self.window.rootViewController = masterNavigationController;
+
+        
+        
+    }
+
+
+    
     [self.window makeKeyAndVisible];
 
     return YES;
