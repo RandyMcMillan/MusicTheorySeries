@@ -37,7 +37,7 @@
     
     DetailViewController *detailViewController =
         [[DetailViewController alloc]   initWithNibName :
-        @"DetailViewController"
+        @"DetailViewController~ipad"
                                         bundle          :nil];
         
         UINavigationController *detailNavigationController =
