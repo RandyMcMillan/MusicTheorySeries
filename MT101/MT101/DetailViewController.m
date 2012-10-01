@@ -502,11 +502,11 @@
 {
   
     
-    //[self.navigationController.navigationBar addSubview:detailNavBar];
-    [self.detailNavBar setFrame:self.navigationController.navigationBar.frame];
-    self.navigationController.navigationBar.hidden = TRUE;
+    [self.navigationController.navigationBar addSubview:detailNavBar];
+    //[self.detailNavBar setFrame:self.navigationController.navigationBar.frame];
+    //self.navigationController.navigationBar.hidden = TRUE;
     ///self.detailNavItem.title = self.MovieToPlay;
-    //[self.navigationController.navigationBar bringSubviewToFront:detailNavBar];
+    [self.navigationController.navigationBar bringSubviewToFront:detailNavBar];
     
     [interActiveButton useDoneButtonStyle];
     ///self.detailNavItem.title = self.MovieToPlay;
