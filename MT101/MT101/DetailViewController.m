@@ -502,7 +502,7 @@
 {
   
     
-    // [self.navigationController.navigationBar addSubview:detailNavBar];
+     [self.navigationController.navigationBar addSubview:detailNavBar];
     //[self.detailNavBar setFrame:detailNavBar.superview.frame];
     
     ///self.detailNavItem.title = self.MovieToPlay;
