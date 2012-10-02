@@ -16,9 +16,9 @@
 @interface WikiViewController : UIViewController <UIWebViewDelegate, UIGestureRecognizerDelegate>{
     IBOutlet UIWebView *webView;
 
-    IBOutlet GradientToolBar    *toolBar;
-    IBOutlet GradientToolBar    *navBar;
-    IBOutlet UILabel            *addressLabel;
+    IBOutlet UIToolbar    *toolBar;
+    IBOutlet UINavigationBar    *navBar;
+    IBOutlet UINavigationItem *addressLabel;
 
     IBOutlet UIBarButtonItem    *doneBarButtonItem;
     IBOutlet GradientButton     *doneButton;

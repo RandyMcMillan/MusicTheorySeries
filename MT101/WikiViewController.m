@@ -26,10 +26,16 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)
    nibBundleOrNil
 {
-    if (self =
-            [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Initialization code
-    }
+    
+        if (IS_IPAD) {
+          
+            if (self = [super initWithNibName:@"WikiView~ipad" bundle:nibBundleOrNil]) {}
+            
+        } else {
+            
+            if (self = [super initWithNibName:@"WikiView~iphone" bundle:nibBundleOrNil]) {}
+        
+        }
 
     return self;
 }
@@ -60,7 +66,7 @@
     CGRect textFieldFrame = CGRectMake(kLeftMargin, kTweenMargin,
         self.view.bounds.size.width - (kLeftMargin * 2.0), kTextFieldHeight);
 
-    addressLabel.frame = textFieldFrame;
+    // addressLabel.frame = textFieldFrame;
 
 #if TARGET_IPHONE_SIMULATOR
         //  [NSClassFromString(@"WebView") _enableRemoteInspector];
@@ -69,6 +75,9 @@
         // http://localhost:9999/?page=1 or 2 ");
 #endif
 
+    
+    // [toolBar useTBStyle];
+    //[navBar useTBStyle];
     [doneButton useDoneButtonStyle];
     [safariButton useDoneButtonStyle];
     [safariButton useSafariStyle];
@@ -151,14 +160,30 @@
     CGRect newRectangle = CGRectMake(0,
         0,
         toolBar.frame.size.width,
-        [self view].frame.size.height
+        VIEWBOUNDS.size.height
         );
 
-    //   [webView setFrame:newRectangle];
+    //  [webView setFrame:newRectangle];
 
-    toolBar.hidden      = YES;
-    navBar.hidden       = toolBar.hidden;
-    addressLabel.hidden = navBar.hidden;
+    
+    [UIView animateWithDuration:1.0
+                          delay:0.0
+                        options:UIViewAnimationCurveEaseInOut
+                     animations:^ {
+                         toolBar.alpha = 0.0;
+                         navBar.alpha = 0.0;
+                           [webView setFrame:newRectangle];
+ 
+                         
+                     }
+                     completion:^(BOOL finished) {
+                         toolBar.hidden = YES;
+                         navBar.hidden = YES;
+                     }];
+    
+    
+    //toolBar.hidden      = YES;
+    //navBar.hidden       = toolBar.hidden;
 }
 
 - (void)showToolBar
@@ -169,11 +194,33 @@
         [self view].frame.size.height - 88
         );
 
-    [webView setFrame:newRectangle];
+    //  [webView setFrame:newRectangle];
 
-    toolBar.hidden      = NO;
-    navBar.hidden       = toolBar.hidden;
-    addressLabel.hidden = navBar.hidden;
+    
+    [UIView animateWithDuration:0.8
+                          delay:0.0
+                        options:UIViewAnimationCurveEaseInOut
+                     animations:^ {
+                         //unhide first so transition is percievable by user
+                         toolBar.hidden = NO;
+                         navBar.hidden = NO;
+                         toolBar.alpha = 1.0;
+                         navBar.alpha = 1.0;
+                         [webView setFrame:newRectangle];
+ 
+                         
+                     }
+                     completion:^(BOOL finished) {
+                         //toolBar.hidden = NO;
+                         //navBar.hidden = NO;
+                         //[webView setFrame:newRectangle];
+ 
+                     }];
+
+    
+    
+    //toolBar.hidden      = NO;
+    //navBar.hidden       = toolBar.hidden;
 }
 
 - (void)handleTap:(UITapGestureRecognizer *)uigr
@@ -221,24 +268,42 @@
 {
     NSLog(@"swipteLeft \n To handle Swiptes in WebView");
     [webView goForward];
+   
+    
+    [self   performSelector :@selector(showToolBar) withObject:nil
+            afterDelay      :0.0];
+
+    
 }
 
 - (void)swipeRight:(UIGestureRecognizer *)uigr
 {
     NSLog(@"swipteRight \n To handle Swiptes in WebView");
     [webView goBack];
+    
+    [self   performSelector :@selector(showToolBar) withObject:nil
+            afterDelay      :0.0];
+
 }
 
 - (void)twoFingerSwipeLeft:(UIGestureRecognizer *)uigr
 {
     NSLog(@"twoFingerSwipeLeft \n To handle Swiptes in WebView");
     [webView goForward];
+    
+    [self   performSelector :@selector(showToolBar) withObject:nil
+            afterDelay      :0.0];
+
 }
 
 - (void)twoFingerSwipeRight:(UIGestureRecognizer *)uigr
 {
     NSLog(@"twoFingerSwipeRight \n To handle Swiptes in WebView");
     [webView goBack];
+    
+    [self   performSelector :@selector(showToolBar) withObject:nil
+            afterDelay      :0.0];
+
 }
 
 - (void)swipeUp:(UIGestureRecognizer *)uigr
@@ -327,7 +392,10 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)sender
 {
-    addressLabel.text           = @"Loading...";
+    
+    //    [self showToolBar];
+
+    addressLabel.title           = @"Loading...";
     backButton.enabled          = webView.canGoBack;
     forwardButton.enabled       = webView.canGoForward;
     refreshButton.highlighted   = FALSE;
@@ -344,9 +412,9 @@
     NSLog(@"New Address is : %@", request.URL.absoluteString);
 
     if ([request.URL.absoluteString hasPrefix:@"file:///"]) {
-        addressLabel.text = @"Music Theory 101 appears to be offline.";
+        addressLabel.title = @"Music Theory 101 appears to be offline.";
     } else {
-        addressLabel.text = request.URL.absoluteString;
+        addressLabel.title = request.URL.absoluteString;
     }
 
     backButton.enabled          = webView.canGoBack;
@@ -365,11 +433,17 @@
     }
 
     spinner.hidden = TRUE;
+    
+    //  [self   performSelector :@selector(showToolBar) withObject:nil
+    ///        afterDelay      :0.0];
+
 }   /* webViewDidFinishLoad */
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)
    error
 {
+    
+    [self showToolBar];
     // load error, hide the activity indicator in the status bar
     // [UIApplication sharedApplication].networkActivityIndicatorVisible =
     // NO;

@@ -359,7 +359,7 @@
 						<array class="NSMutableArray" key="NSSubviews">
 							<object class="IBUIButton" id="712382007">
 								<reference key="NSNextResponder" ref="1000195323"/>
-								<int key="NSvFlags">292</int>
+								<int key="NSvFlags">-2147483356</int>
 								<string key="NSFrame">{{624, 6}, {73, 33}}</string>
 								<reference key="NSSuperview" ref="1000195323"/>
 								<reference key="NSWindow"/>
@@ -381,7 +381,7 @@
 									<int key="type">2</int>
 									<double key="pointSize">15</double>
 								</object>
-								<object class="NSFont" key="IBUIFont" id="18587505">
+								<object class="NSFont" key="IBUIFont" id="991722704">
 									<string key="NSName">Helvetica-Bold</string>
 									<double key="NSSize">15</double>
 									<int key="NSfFlags">16</int>
@@ -398,7 +398,7 @@
 							<object class="IBUINavigationItem" id="341061621">
 								<reference key="IBUINavigationBar" ref="1000195323"/>
 								<string key="IBUITitle">Music Theory 101</string>
-								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="605279687">
+								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="793904703">
 									<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 									<reference key="IBUICustomView" ref="712382007"/>
 									<reference key="IBUINavigationItem" ref="341061621"/>
@@ -434,7 +434,7 @@
 									<string key="NSResourceName">Twitter@2x~ipad.png</string>
 								</object>
 								<reference key="IBUIFontDescription" ref="267824508"/>
-								<reference key="IBUIFont" ref="18587505"/>
+								<reference key="IBUIFont" ref="991722704"/>
 							</object>
 							<object class="IBUIButton" id="872235608">
 								<reference key="NSNextResponder" ref="492466705"/>
@@ -459,7 +459,7 @@
 									<string key="NSResourceName">UIButtonBarCompose@2x~ipad.png</string>
 								</object>
 								<reference key="IBUIFontDescription" ref="267824508"/>
-								<reference key="IBUIFont" ref="18587505"/>
+								<reference key="IBUIFont" ref="991722704"/>
 							</object>
 						</array>
 						<string key="NSFrameSize">{162, 44}</string>
@@ -1190,7 +1190,7 @@
 						<int key="objectID">314</int>
 						<reference key="object" ref="341061621"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="605279687"/>
+							<reference ref="793904703"/>
 						</array>
 						<reference key="parent" ref="1000195323"/>
 					</object>
@@ -1239,7 +1239,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">316</int>
-						<reference key="object" ref="605279687"/>
+						<reference key="object" ref="793904703"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="712382007"/>
 						</array>
@@ -1248,7 +1248,7 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">296</int>
 						<reference key="object" ref="712382007"/>
-						<reference key="parent" ref="605279687"/>
+						<reference key="parent" ref="793904703"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">9</int>
