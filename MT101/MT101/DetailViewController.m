@@ -425,18 +425,54 @@
 
                 CGRect zoomRect = [self zoomRectForScale:newScale withCenter:[gestureRecognizer locationInView:gestureRecognizer.view]];
                 [scrollView zoomToRect:zoomRect animated:YES];
+                
+                [UIView animateWithDuration:1.0
+                                      delay:0.3
+                                    options:UIViewAnimationCurveEaseInOut
+                                 animations:^ {
+                                     
+                                     toolBar.alpha = 0.9;
+                                     
+                                 }
+                                 completion:^(BOOL finished) {}
+                 ];
+
 
             } else {
         
                 [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
                 [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
                 self.scrollView.scrollEnabled = FALSE;
+                
+                [UIView animateWithDuration:1.0
+                                      delay:0.3
+                                    options:UIViewAnimationCurveEaseInOut
+                                 animations:^ {
+                                     
+                                     toolBar.alpha = 1.0;
+                                     
+                                 }
+                                 completion:^(BOOL finished) {}
+                 ];
+
             }
     
     } else {
         if ([scrollView zoomScale] > 0.0) {//allow user to zoom out if manually zoomed in welcome screen
                 [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
                 [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
+            
+            [UIView animateWithDuration:1.0
+                                  delay:0.3
+                                options:UIViewAnimationCurveEaseInOut
+                             animations:^ {
+                                 
+                                 toolBar.alpha = 1.0;
+                                 
+                             }
+                             completion:^(BOOL finished) {}
+             ];
+
             }
         NSLog(self.shouldZoom ? @"Yes" : @"No");
     
@@ -462,6 +498,8 @@
                 afterDelay      :0.0];
     } else {} // do nothing
 
+    
+ 
 
 }
 
@@ -490,6 +528,18 @@
 
 - (void)handleTwoFingerTap:(UIGestureRecognizer *)gestureRecognizer
 {
+    
+    [UIView animateWithDuration:1.0
+                          delay:0.3
+                        options:UIViewAnimationCurveEaseInOut
+                     animations:^ {
+                         
+                         toolBar.alpha = 1.0;
+                         
+                     }
+                     completion:^(BOOL finished) {}
+     ];
+
     // single tap does nothing for now
     NSLog(@"handleTwoFingerTap");
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
@@ -612,6 +662,9 @@ self.vLabel.backgroundColor =
 
 - (IBAction)openMail:(id)sender
 {
+    
+    toolBar.alpha  = 1.0;
+
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
     [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 
@@ -711,6 +764,9 @@ self.vLabel.backgroundColor =
 
 - (IBAction)composeTweet:(id)sender
 {
+    
+    toolBar.alpha  = 1.0;
+    
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
     [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 
