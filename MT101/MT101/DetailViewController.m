@@ -501,10 +501,12 @@
 - (void)configureView
 {
   
-    
+    [detailNavBar useTBStyle];
+    [composeTweetButton useDoneButtonStyle];
+    [emailButton useDoneButtonStyle];
     [self.navigationController.navigationBar addSubview:detailNavBar];
-    //[self.detailNavBar setFrame:self.navigationController.navigationBar.frame];
-    //self.navigationController.navigationBar.hidden = TRUE;
+    [self.detailNavBar setFrame:self.navigationController.navigationBar.frame];
+    self.navigationController.navigationBar.hidden = TRUE;
     ///self.detailNavItem.title = self.MovieToPlay;
     [self.navigationController.navigationBar bringSubviewToFront:detailNavBar];
     
@@ -539,9 +541,14 @@
     }
 
 #if TARGET_IPHONE_SIMULATOR
-         self.musicTheory101Label.backgroundColor = [UIColor redColor];
-         self.detailDescriptionLabel.backgroundColor = [UIColor blueColor];
-         self.vLabel.backgroundColor = [UIColor yellowColor];
+self.musicTheory101Label.backgroundColor =
+    [UIColor colorWithRed:0.988 green:0.000 blue:0.027 alpha:0.500];
+
+self.detailDescriptionLabel.backgroundColor =
+    [UIColor colorWithRed:0.051 green:0.000 blue:0.988 alpha:0.500];
+
+self.vLabel.backgroundColor =
+    [UIColor colorWithRed:0.988 green:0.878 blue:0.000 alpha:0.500];
 #endif
 
     if (self.detailItem) {
@@ -553,19 +560,19 @@
         // ipad landscape welcome screen formatting
         self.musicTheory101Label.text = @"MUSIC THEORY 101";
         self.musicTheory101Label.frame
-            = CGRectMake(imageView.center.x - 163, imageView.center.y + 180, 326, 53);
+            = CGRectMake(imageView.center.x - 163, imageView.center.y + 170, 326, 53);
         [self.musicTheory101Label setFont:[UIFont fontWithName:@"Helvetica-Bold" size:39.0]];
         self.musicTheory101Label.hidden = FALSE;
 
         self.vLabel.text = @"v";
         self.vLabel.frame
-            = CGRectMake(musicTheory101Label.center.x + 82.5, musicTheory101Label.center.y + 9.6, 20, 20);
+            = CGRectMake(musicTheory101Label.center.x + 127.5, musicTheory101Label.center.y + 9.6, 20, 20);
         [self.vLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:10.0]];
         self.vLabel.hidden = FALSE;
 
         self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
         self.detailDescriptionLabel.frame
-            = CGRectMake(vLabel.center.x-8.5, vLabel.center.y-9.1, 30, 20);
+            = CGRectMake(vLabel.center.x-4.3, vLabel.center.y-9.1, 30, 20);
         [self.detailDescriptionLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:11.0]];
         self.detailDescriptionLabel.hidden = FALSE;
 

@@ -85,7 +85,7 @@
 {
     //  self.enabled = FALSE;
     NSMutableArray  *colors = [NSMutableArray arrayWithCapacity:3];
-    UIColor         *color  = [UIColor lightGrayColor]; // [UIColor
+    UIColor         *color  = [UIColor clearColor]; // [UIColor
     
     // colorWithRed:0.864
     // green:0.864 blue:0.864
@@ -117,7 +117,7 @@
                                        nil];
     
     self.cornerRadius   = 5.0f;
-    self.strokeColor    = [UIColor lightGrayColor];
+    self.strokeColor    = [UIColor clearColor];
     self.strokeWeight   = 0.1f;
     //  [self setTitleColor:[UIColor darkGrayColor] forState:
     //      UIControlStateNormal];
@@ -397,7 +397,7 @@
                                              :@"highlightGradientLocations"]];
         self.strokeColor =
         [UIColor colorWithRed:0.076 green:0.103 blue:0.195 alpha:1.0];
-        self.strokeWeight = 1.0;
+        self.strokeWeight = 0.0;
         
         if (self.normalGradientColors == nil) {
             // [self useWhiteStyle];
