@@ -170,6 +170,18 @@
                           delay:0.0
                         options:UIViewAnimationCurveEaseInOut
                      animations:^ {
+                        
+                         addressLabel.alpha = 0.0;
+                         
+                     }
+                     completion:^(BOOL finished) {}
+     ];
+
+    
+    [UIView animateWithDuration:1.0
+                          delay:0.3
+                        options:UIViewAnimationCurveEaseInOut
+                     animations:^ {
                          toolBar.alpha = 0.0;
                          navBar.alpha = 0.0;
                            [webView setFrame:newRectangle];
@@ -195,6 +207,21 @@
         );
 
     //  [webView setFrame:newRectangle];
+
+   
+    
+    
+    [UIView animateWithDuration:1.0
+                          delay:0.3
+                        options:UIViewAnimationCurveEaseInOut
+                     animations:^ {
+                         
+                         addressLabel.alpha = 1.0;
+                         
+                     }
+                     completion:^(BOOL finished) {}
+     ];
+    
 
     
     [UIView animateWithDuration:0.8
@@ -395,7 +422,7 @@
     
     //    [self showToolBar];
 
-    addressLabel.title           = @"Loading...";
+    addressLabel.text           = @"Loading...";
     backButton.enabled          = webView.canGoBack;
     forwardButton.enabled       = webView.canGoForward;
     refreshButton.highlighted   = FALSE;
@@ -412,9 +439,9 @@
     NSLog(@"New Address is : %@", request.URL.absoluteString);
 
     if ([request.URL.absoluteString hasPrefix:@"file:///"]) {
-        addressLabel.title = @"Music Theory 101 appears to be offline.";
+        addressLabel.text = @"Music Theory 101 appears to be offline.";
     } else {
-        addressLabel.title = request.URL.absoluteString;
+        addressLabel.text = request.URL.absoluteString;
     }
 
     backButton.enabled          = webView.canGoBack;

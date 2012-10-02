@@ -18,7 +18,7 @@
 
     IBOutlet UIToolbar    *toolBar;
     IBOutlet UINavigationBar    *navBar;
-    IBOutlet UINavigationItem *addressLabel;
+    IBOutlet UILabel *addressLabel;
 
     IBOutlet UIBarButtonItem    *doneBarButtonItem;
     IBOutlet GradientButton     *doneButton;
