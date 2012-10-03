@@ -77,17 +77,11 @@
 		4809458E161317A800A600C3 /* G5.L.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48094548161317A800A600C3 /* G5.L.aif */; };
 		4809458F161317A800A600C3 /* G5.R.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48094549161317A800A600C3 /* G5.R.aif */; };
 		480A792515DD59BD005E9C43 /* IonianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A792315DD59BD005E9C43 /* IonianViewController.m */; };
-		480A792615DD59BD005E9C43 /* IonianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A792415DD59BD005E9C43 /* IonianViewController.xib */; };
 		480A792A15DD59DE005E9C43 /* DorianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A792815DD59DE005E9C43 /* DorianViewController.m */; };
-		480A792B15DD59DE005E9C43 /* DorianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A792915DD59DE005E9C43 /* DorianViewController.xib */; };
 		480A792F15DD59EC005E9C43 /* PhrygianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A792D15DD59EC005E9C43 /* PhrygianViewController.m */; };
-		480A793015DD59EC005E9C43 /* PhrygianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A792E15DD59EC005E9C43 /* PhrygianViewController.xib */; };
 		480A793415DD59F7005E9C43 /* LydianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A793215DD59F7005E9C43 /* LydianViewController.m */; };
-		480A793515DD59F7005E9C43 /* LydianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A793315DD59F7005E9C43 /* LydianViewController.xib */; };
 		480A793915DD5A04005E9C43 /* MixoLydianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A793715DD5A04005E9C43 /* MixoLydianViewController.m */; };
-		480A793A15DD5A04005E9C43 /* MixoLydianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A793815DD5A04005E9C43 /* MixoLydianViewController.xib */; };
 		480A793E15DD5A0F005E9C43 /* LocrianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A793C15DD5A0F005E9C43 /* LocrianViewController.m */; };
-		480A793F15DD5A0F005E9C43 /* LocrianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480A793D15DD5A0F005E9C43 /* LocrianViewController.xib */; };
 		480A795815DD6060005E9C43 /* Aeolian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A794115DD6060005E9C43 /* Aeolian.mp4 */; };
 		480A795915DD6060005E9C43 /* Alto Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A794215DD6060005E9C43 /* Alto Clef.mp4 */; };
 		480A795A15DD6060005E9C43 /* BariTone Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A794315DD6060005E9C43 /* BariTone Clef.mp4 */; };
@@ -113,6 +107,13 @@
 		480D185415F9E3E90086C3EF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480D185315F9E3E90086C3EF /* MessageUI.framework */; };
 		480D185915F9F7CF0086C3EF /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 480D185815F9F7CF0086C3EF /* email.png */; };
 		480D185B15F9FA9D0086C3EF /* email@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 480D185A15F9FA9D0086C3EF /* email@2x.png */; };
+		481388A8161C550B00E03E3E /* IonianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481388A7161C550B00E03E3E /* IonianViewController.xib */; };
+		481388AA161C555800E03E3E /* DorianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481388A9161C555800E03E3E /* DorianViewController.xib */; };
+		481388AC161C55C300E03E3E /* PhrygianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481388AB161C55C300E03E3E /* PhrygianViewController.xib */; };
+		481388AE161C55E900E03E3E /* LydianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481388AD161C55E900E03E3E /* LydianViewController.xib */; };
+		481388B0161C560B00E03E3E /* MixoLydianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481388AF161C560B00E03E3E /* MixoLydianViewController.xib */; };
+		481388B2161C562900E03E3E /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481388B1161C562900E03E3E /* AeolianViewController.xib */; };
+		481388B4161C564700E03E3E /* LocrianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481388B3161C564700E03E3E /* LocrianViewController.xib */; };
 		4817CD7D16149A5D0014517A /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4817CD7C16149A5D0014517A /* EGORefreshTableHeaderView.m */; };
 		4817CD8716149CA50014517A /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4817CD7F16149CA50014517A /* grayArrow.png */; };
 		4817CD8816149CA50014517A /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4817CD8016149CA50014517A /* grayArrow@2x.png */; };
@@ -204,7 +205,6 @@
 		48B67BC815F411DA00B0C6F2 /* GradientToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */; };
 		48BA8A1B161A49B600F239B1 /* DetailViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48BA8A1A161A49B600F239B1 /* DetailViewController~ipad.xib */; };
 		48C2E762160A86CD009BD8FE /* TrebleClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48C2E761160A86CD009BD8FE /* TrebleClefViewController.xib */; };
-		48C848F51605412C00200BEE /* AeolianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48C848F41605412B00200BEE /* AeolianViewController.xib */; };
 		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48DBC8C615FBF46400CEE854 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC8C515FBF46400CEE854 /* Twitter.framework */; };
@@ -339,22 +339,16 @@
 		48094549161317A800A600C3 /* G5.R.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = G5.R.aif; sourceTree = "<group>"; };
 		480A792215DD59BD005E9C43 /* IonianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IonianViewController.h; sourceTree = "<group>"; };
 		480A792315DD59BD005E9C43 /* IonianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IonianViewController.m; sourceTree = "<group>"; };
-		480A792415DD59BD005E9C43 /* IonianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IonianViewController.xib; sourceTree = "<group>"; };
 		480A792715DD59DE005E9C43 /* DorianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DorianViewController.h; sourceTree = "<group>"; };
 		480A792815DD59DE005E9C43 /* DorianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DorianViewController.m; sourceTree = "<group>"; };
-		480A792915DD59DE005E9C43 /* DorianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DorianViewController.xib; sourceTree = "<group>"; };
 		480A792C15DD59EC005E9C43 /* PhrygianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhrygianViewController.h; sourceTree = "<group>"; };
 		480A792D15DD59EC005E9C43 /* PhrygianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhrygianViewController.m; sourceTree = "<group>"; };
-		480A792E15DD59EC005E9C43 /* PhrygianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhrygianViewController.xib; sourceTree = "<group>"; };
 		480A793115DD59F7005E9C43 /* LydianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LydianViewController.h; sourceTree = "<group>"; };
 		480A793215DD59F7005E9C43 /* LydianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LydianViewController.m; sourceTree = "<group>"; };
-		480A793315DD59F7005E9C43 /* LydianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LydianViewController.xib; sourceTree = "<group>"; };
 		480A793615DD5A04005E9C43 /* MixoLydianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixoLydianViewController.h; sourceTree = "<group>"; };
 		480A793715DD5A04005E9C43 /* MixoLydianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixoLydianViewController.m; sourceTree = "<group>"; };
-		480A793815DD5A04005E9C43 /* MixoLydianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixoLydianViewController.xib; sourceTree = "<group>"; };
 		480A793B15DD5A0F005E9C43 /* LocrianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocrianViewController.h; sourceTree = "<group>"; };
 		480A793C15DD5A0F005E9C43 /* LocrianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocrianViewController.m; sourceTree = "<group>"; };
-		480A793D15DD5A0F005E9C43 /* LocrianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocrianViewController.xib; sourceTree = "<group>"; };
 		480A794115DD6060005E9C43 /* Aeolian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aeolian.mp4; sourceTree = "<group>"; };
 		480A794215DD6060005E9C43 /* Alto Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alto Clef.mp4"; sourceTree = "<group>"; };
 		480A794315DD6060005E9C43 /* BariTone Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BariTone Clef.mp4"; sourceTree = "<group>"; };
@@ -380,6 +374,13 @@
 		480D185315F9E3E90086C3EF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		480D185815F9F7CF0086C3EF /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
 		480D185A15F9FA9D0086C3EF /* email@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email@2x.png"; sourceTree = "<group>"; };
+		481388A7161C550B00E03E3E /* IonianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IonianViewController.xib; sourceTree = "<group>"; };
+		481388A9161C555800E03E3E /* DorianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DorianViewController.xib; sourceTree = "<group>"; };
+		481388AB161C55C300E03E3E /* PhrygianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhrygianViewController.xib; sourceTree = "<group>"; };
+		481388AD161C55E900E03E3E /* LydianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LydianViewController.xib; sourceTree = "<group>"; };
+		481388AF161C560B00E03E3E /* MixoLydianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixoLydianViewController.xib; sourceTree = "<group>"; };
+		481388B1161C562900E03E3E /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AeolianViewController.xib; sourceTree = "<group>"; };
+		481388B3161C564700E03E3E /* LocrianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocrianViewController.xib; sourceTree = "<group>"; };
 		4817CD7B16149A5D0014517A /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
 		4817CD7C16149A5D0014517A /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		4817CD7F16149CA50014517A /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
@@ -495,7 +496,6 @@
 		48B6FEC51604A56C00B941C2 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		48BA8A1A161A49B600F239B1 /* DetailViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DetailViewController~ipad.xib"; sourceTree = "<group>"; };
 		48C2E761160A86CD009BD8FE /* TrebleClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrebleClefViewController.xib; sourceTree = "<group>"; };
-		48C848F41605412B00200BEE /* AeolianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AeolianViewController.xib; sourceTree = "<group>"; };
 		48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
@@ -689,13 +689,13 @@
 		480A792115DD599C005E9C43 /* ModeXIBs */ = {
 			isa = PBXGroup;
 			children = (
-				480A792415DD59BD005E9C43 /* IonianViewController.xib */,
-				480A792915DD59DE005E9C43 /* DorianViewController.xib */,
-				480A792E15DD59EC005E9C43 /* PhrygianViewController.xib */,
-				480A793315DD59F7005E9C43 /* LydianViewController.xib */,
-				480A793815DD5A04005E9C43 /* MixoLydianViewController.xib */,
-				48C848F41605412B00200BEE /* AeolianViewController.xib */,
-				480A793D15DD5A0F005E9C43 /* LocrianViewController.xib */,
+				481388A7161C550B00E03E3E /* IonianViewController.xib */,
+				481388A9161C555800E03E3E /* DorianViewController.xib */,
+				481388AB161C55C300E03E3E /* PhrygianViewController.xib */,
+				481388AD161C55E900E03E3E /* LydianViewController.xib */,
+				481388AF161C560B00E03E3E /* MixoLydianViewController.xib */,
+				481388B1161C562900E03E3E /* AeolianViewController.xib */,
+				481388B3161C564700E03E3E /* LocrianViewController.xib */,
 			);
 			name = ModeXIBs;
 			sourceTree = "<group>";
@@ -1221,12 +1221,6 @@
 				48EEEF6E15DC549A00D15F15 /* icon-72@2x.png in Resources */,
 				48EEEF7015DC54D700D15F15 /* Default-Portrait~ipad.png in Resources */,
 				48EEEF7215DC54DF00D15F15 /* Default-Portrait@2x~ipad.png in Resources */,
-				480A792615DD59BD005E9C43 /* IonianViewController.xib in Resources */,
-				480A792B15DD59DE005E9C43 /* DorianViewController.xib in Resources */,
-				480A793015DD59EC005E9C43 /* PhrygianViewController.xib in Resources */,
-				480A793515DD59F7005E9C43 /* LydianViewController.xib in Resources */,
-				480A793A15DD5A04005E9C43 /* MixoLydianViewController.xib in Resources */,
-				480A793F15DD5A0F005E9C43 /* LocrianViewController.xib in Resources */,
 				480A795815DD6060005E9C43 /* Aeolian.mp4 in Resources */,
 				480A795915DD6060005E9C43 /* Alto Clef.mp4 in Resources */,
 				480A795A15DD6060005E9C43 /* BariTone Clef.mp4 in Resources */,
@@ -1288,7 +1282,6 @@
 				48584A7A16045DE10020DB00 /* TheGrandStaff.pdf in Resources */,
 				48584A7B16045DE10020DB00 /* TrebleClef.pdf in Resources */,
 				48584A7C16045DE10020DB00 /* welcome.pdf in Resources */,
-				48C848F51605412C00200BEE /* AeolianViewController.xib in Resources */,
 				483F4C771606F41C00BB6744 /* SolfegeNaturals.pdf in Resources */,
 				48C2E762160A86CD009BD8FE /* TrebleClefViewController.xib in Resources */,
 				4849AD0C160AE1DB002B5E40 /* SolfegeFlats.pdf in Resources */,
@@ -1396,6 +1389,13 @@
 				48BA8A1B161A49B600F239B1 /* DetailViewController~ipad.xib in Resources */,
 				483959DB161B17C5005BC1E2 /* WikiView~ipad.xib in Resources */,
 				483959DE161B17D8005BC1E2 /* WikiView~iphone.xib in Resources */,
+				481388A8161C550B00E03E3E /* IonianViewController.xib in Resources */,
+				481388AA161C555800E03E3E /* DorianViewController.xib in Resources */,
+				481388AC161C55C300E03E3E /* PhrygianViewController.xib in Resources */,
+				481388AE161C55E900E03E3E /* LydianViewController.xib in Resources */,
+				481388B0161C560B00E03E3E /* MixoLydianViewController.xib in Resources */,
+				481388B2161C562900E03E3E /* AeolianViewController.xib in Resources */,
+				481388B4161C564700E03E3E /* LocrianViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
