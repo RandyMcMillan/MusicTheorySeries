@@ -122,6 +122,9 @@
 		481388C0161C579900E03E3E /* BariToneClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481388BF161C579900E03E3E /* BariToneClefViewController.xib */; };
 		481388C2161C57BE00E03E3E /* SubBassClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481388C1161C57BE00E03E3E /* SubBassClefViewController.xib */; };
 		481388C4161C57DF00E03E3E /* BassClefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481388C3161C57DF00E03E3E /* BassClefViewController.xib */; };
+		481388C6161C587A00E03E3E /* SolfegeNaturalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481388C5161C587A00E03E3E /* SolfegeNaturalsViewController.xib */; };
+		481388C8161C58AF00E03E3E /* SolfegeSharpsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481388C7161C58AF00E03E3E /* SolfegeSharpsViewController.xib */; };
+		481388CA161C58B900E03E3E /* SolfegeFlatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481388C9161C58B900E03E3E /* SolfegeFlatsViewController.xib */; };
 		4817CD7D16149A5D0014517A /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4817CD7C16149A5D0014517A /* EGORefreshTableHeaderView.m */; };
 		4817CD8716149CA50014517A /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4817CD7F16149CA50014517A /* grayArrow.png */; };
 		4817CD8816149CA50014517A /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4817CD8016149CA50014517A /* grayArrow@2x.png */; };
@@ -141,11 +144,8 @@
 		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
 		4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */; };
 		4825559915DD7A3000737C61 /* SolfegeNaturalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */; };
-		4825559A15DD7A3000737C61 /* SolfegeNaturalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4825559815DD7A3000737C61 /* SolfegeNaturalsViewController.xib */; };
 		4825559E15DD7A4C00737C61 /* SolfegeSharpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559C15DD7A4C00737C61 /* SolfegeSharpsViewController.m */; };
-		4825559F15DD7A4C00737C61 /* SolfegeSharpsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4825559D15DD7A4C00737C61 /* SolfegeSharpsViewController.xib */; };
 		482555A315DD7A5400737C61 /* SolfegeFlatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482555A115DD7A5400737C61 /* SolfegeFlatsViewController.m */; };
-		482555A415DD7A5400737C61 /* SolfegeFlatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482555A215DD7A5400737C61 /* SolfegeFlatsViewController.xib */; };
 		4825A36115C4DB2D006F0C46 /* AppleXylophoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4825A36615C4DB43006F0C46 /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A36515C4DB43006F0C46 /* MixerHostAudio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4825A36815C4DBC3006F0C46 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */; };
@@ -389,6 +389,9 @@
 		481388BF161C579900E03E3E /* BariToneClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BariToneClefViewController.xib; sourceTree = "<group>"; };
 		481388C1161C57BE00E03E3E /* SubBassClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubBassClefViewController.xib; sourceTree = "<group>"; };
 		481388C3161C57DF00E03E3E /* BassClefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BassClefViewController.xib; sourceTree = "<group>"; };
+		481388C5161C587A00E03E3E /* SolfegeNaturalsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SolfegeNaturalsViewController.xib; sourceTree = "<group>"; };
+		481388C7161C58AF00E03E3E /* SolfegeSharpsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SolfegeSharpsViewController.xib; sourceTree = "<group>"; };
+		481388C9161C58B900E03E3E /* SolfegeFlatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SolfegeFlatsViewController.xib; sourceTree = "<group>"; };
 		4817CD7B16149A5D0014517A /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
 		4817CD7C16149A5D0014517A /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		4817CD7F16149CA50014517A /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
@@ -413,13 +416,10 @@
 		4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppleXylophoneViewController.xib; sourceTree = "<group>"; };
 		4825559615DD7A3000737C61 /* SolfegeNaturalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeNaturalsViewController.h; sourceTree = "<group>"; };
 		4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolfegeNaturalsViewController.m; sourceTree = "<group>"; };
-		4825559815DD7A3000737C61 /* SolfegeNaturalsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SolfegeNaturalsViewController.xib; sourceTree = "<group>"; };
 		4825559B15DD7A4C00737C61 /* SolfegeSharpsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeSharpsViewController.h; sourceTree = "<group>"; };
 		4825559C15DD7A4C00737C61 /* SolfegeSharpsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolfegeSharpsViewController.m; sourceTree = "<group>"; };
-		4825559D15DD7A4C00737C61 /* SolfegeSharpsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SolfegeSharpsViewController.xib; sourceTree = "<group>"; };
 		482555A015DD7A5400737C61 /* SolfegeFlatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeFlatsViewController.h; sourceTree = "<group>"; };
 		482555A115DD7A5400737C61 /* SolfegeFlatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolfegeFlatsViewController.m; sourceTree = "<group>"; };
-		482555A215DD7A5400737C61 /* SolfegeFlatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SolfegeFlatsViewController.xib; sourceTree = "<group>"; };
 		4825A35E15C4DB2D006F0C46 /* AppleXylophoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleXylophoneViewController.h; path = MT101/AppleXylophoneViewController.h; sourceTree = "<group>"; };
 		4825A35F15C4DB2D006F0C46 /* AppleXylophoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppleXylophoneViewController.m; path = MT101/AppleXylophoneViewController.m; sourceTree = "<group>"; };
 		4825A36415C4DB43006F0C46 /* MixerHostAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerHostAudio.h; sourceTree = "<group>"; };
@@ -781,9 +781,9 @@
 		4825559415DD7A0600737C61 /* SolfegeXIBs */ = {
 			isa = PBXGroup;
 			children = (
-				4825559815DD7A3000737C61 /* SolfegeNaturalsViewController.xib */,
-				4825559D15DD7A4C00737C61 /* SolfegeSharpsViewController.xib */,
-				482555A215DD7A5400737C61 /* SolfegeFlatsViewController.xib */,
+				481388C5161C587A00E03E3E /* SolfegeNaturalsViewController.xib */,
+				481388C7161C58AF00E03E3E /* SolfegeSharpsViewController.xib */,
+				481388C9161C58B900E03E3E /* SolfegeFlatsViewController.xib */,
 			);
 			name = SolfegeXIBs;
 			sourceTree = "<group>";
@@ -1236,9 +1236,6 @@
 				480A796C15DD6060005E9C43 /* Treble Clef.mp4 in Resources */,
 				480A796D15DD6060005E9C43 /* UnderWater.mp4 in Resources */,
 				480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */,
-				4825559A15DD7A3000737C61 /* SolfegeNaturalsViewController.xib in Resources */,
-				4825559F15DD7A4C00737C61 /* SolfegeSharpsViewController.xib in Resources */,
-				482555A415DD7A5400737C61 /* SolfegeFlatsViewController.xib in Resources */,
 				4882981A15E006BB00239B29 /* ChromaticCircleViewController.xib in Resources */,
 				4882981C15E009B900239B29 /* Chromatic Circle.mp4 in Resources */,
 				48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */,
@@ -1396,6 +1393,9 @@
 				481388C0161C579900E03E3E /* BariToneClefViewController.xib in Resources */,
 				481388C2161C57BE00E03E3E /* SubBassClefViewController.xib in Resources */,
 				481388C4161C57DF00E03E3E /* BassClefViewController.xib in Resources */,
+				481388C6161C587A00E03E3E /* SolfegeNaturalsViewController.xib in Resources */,
+				481388C8161C58AF00E03E3E /* SolfegeSharpsViewController.xib in Resources */,
+				481388CA161C58B900E03E3E /* SolfegeFlatsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
