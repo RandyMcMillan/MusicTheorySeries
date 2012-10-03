@@ -299,7 +299,7 @@
 
     NSURL *movieURL =
         [NSURL fileURLWithPath:[[NSBundle mainBundle]   pathForResource :
-            MovieToPlay                                 ofType          :@"mp4"]];
+            MovieToPlay                                 ofType          :@"mov"]];
 
     moviePlayer =
         [[MPMoviePlayerViewController alloc] initWithContentURL:movieURL];

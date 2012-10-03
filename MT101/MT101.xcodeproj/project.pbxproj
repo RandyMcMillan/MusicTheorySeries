@@ -101,7 +101,6 @@
 		480A796915DD6060005E9C43 /* SunInClouds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795215DD6060005E9C43 /* SunInClouds.mp4 */; };
 		480A796A15DD6060005E9C43 /* Tenor Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795315DD6060005E9C43 /* Tenor Clef.mp4 */; };
 		480A796B15DD6060005E9C43 /* The Grand Staff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795415DD6060005E9C43 /* The Grand Staff.mp4 */; };
-		480A796C15DD6060005E9C43 /* Treble Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795515DD6060005E9C43 /* Treble Clef.mp4 */; };
 		480A796D15DD6060005E9C43 /* UnderWater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795615DD6060005E9C43 /* UnderWater.mp4 */; };
 		480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795715DD6060005E9C43 /* WindyTrees.mp4 */; };
 		480D185415F9E3E90086C3EF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480D185315F9E3E90086C3EF /* MessageUI.framework */; };
@@ -143,6 +142,12 @@
 		481C3B58161074390010028D /* SVWebViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 481C3B57161074390010028D /* SVWebViewController.bundle */; };
 		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
 		4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */; };
+		48214BCD161CE03C00F43AFA /* Treble Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BCC161CE03C00F43AFA /* Treble Clef.mov */; };
+		48214BCF161CE27300F43AFA /* Bass Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BCE161CE27300F43AFA /* Bass Clef.mov */; };
+		48214BD1161CE40500F43AFA /* Alto Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BD0161CE40500F43AFA /* Alto Clef.mov */; };
+		48214BD3161CE4F000F43AFA /* Soprano Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BD2161CE4F000F43AFA /* Soprano Clef.mov */; };
+		48214BD5161CE61F00F43AFA /* MezzoSoprano Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BD4161CE61F00F43AFA /* MezzoSoprano Clef.mov */; };
+		48214BD7161CE7D400F43AFA /* Tenor Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BD6161CE7D400F43AFA /* Tenor Clef.mov */; };
 		4825559915DD7A3000737C61 /* SolfegeNaturalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */; };
 		4825559E15DD7A4C00737C61 /* SolfegeSharpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559C15DD7A4C00737C61 /* SolfegeSharpsViewController.m */; };
 		482555A315DD7A5400737C61 /* SolfegeFlatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482555A115DD7A5400737C61 /* SolfegeFlatsViewController.m */; };
@@ -212,6 +217,7 @@
 		48A3562F15E2363F00A3529D /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3562E15E2363F00A3529D /* WikiViewController.m */; };
 		48B67BC815F411DA00B0C6F2 /* GradientToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */; };
 		48BA8A1B161A49B600F239B1 /* DetailViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48BA8A1A161A49B600F239B1 /* DetailViewController~ipad.xib */; };
+		48BBFFDF161CDDA000F6EC06 /* The Grand Staff.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48BBFFDE161CDDA000F6EC06 /* The Grand Staff.mov */; };
 		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48DBC8C615FBF46400CEE854 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC8C515FBF46400CEE854 /* Twitter.framework */; };
@@ -368,7 +374,6 @@
 		480A795215DD6060005E9C43 /* SunInClouds.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SunInClouds.mp4; sourceTree = "<group>"; };
 		480A795315DD6060005E9C43 /* Tenor Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tenor Clef.mp4"; sourceTree = "<group>"; };
 		480A795415DD6060005E9C43 /* The Grand Staff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Grand Staff.mp4"; sourceTree = "<group>"; };
-		480A795515DD6060005E9C43 /* Treble Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Treble Clef.mp4"; sourceTree = "<group>"; };
 		480A795615DD6060005E9C43 /* UnderWater.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnderWater.mp4; sourceTree = "<group>"; };
 		480A795715DD6060005E9C43 /* WindyTrees.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WindyTrees.mp4; sourceTree = "<group>"; };
 		480D185315F9E3E90086C3EF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -414,6 +419,12 @@
 		481C3B57161074390010028D /* SVWebViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVWebViewController.bundle; sourceTree = "<group>"; };
 		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
 		4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppleXylophoneViewController.xib; sourceTree = "<group>"; };
+		48214BCC161CE03C00F43AFA /* Treble Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Treble Clef.mov"; sourceTree = "<group>"; };
+		48214BCE161CE27300F43AFA /* Bass Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Bass Clef.mov"; sourceTree = "<group>"; };
+		48214BD0161CE40500F43AFA /* Alto Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Alto Clef.mov"; sourceTree = "<group>"; };
+		48214BD2161CE4F000F43AFA /* Soprano Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Soprano Clef.mov"; sourceTree = "<group>"; };
+		48214BD4161CE61F00F43AFA /* MezzoSoprano Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "MezzoSoprano Clef.mov"; sourceTree = "<group>"; };
+		48214BD6161CE7D400F43AFA /* Tenor Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Tenor Clef.mov"; sourceTree = "<group>"; };
 		4825559615DD7A3000737C61 /* SolfegeNaturalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeNaturalsViewController.h; sourceTree = "<group>"; };
 		4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolfegeNaturalsViewController.m; sourceTree = "<group>"; };
 		4825559B15DD7A4C00737C61 /* SolfegeSharpsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeSharpsViewController.h; sourceTree = "<group>"; };
@@ -503,6 +514,7 @@
 		48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientToolBar.m; path = ../GradientToolBar.m; sourceTree = "<group>"; };
 		48B6FEC51604A56C00B941C2 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		48BA8A1A161A49B600F239B1 /* DetailViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DetailViewController~ipad.xib"; sourceTree = "<group>"; };
+		48BBFFDE161CDDA000F6EC06 /* The Grand Staff.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "The Grand Staff.mov"; sourceTree = "<group>"; };
 		48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
@@ -703,6 +715,13 @@
 		480A794015DD6060005E9C43 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				48214BD6161CE7D400F43AFA /* Tenor Clef.mov */,
+				48214BD4161CE61F00F43AFA /* MezzoSoprano Clef.mov */,
+				48214BD2161CE4F000F43AFA /* Soprano Clef.mov */,
+				48214BD0161CE40500F43AFA /* Alto Clef.mov */,
+				48214BCE161CE27300F43AFA /* Bass Clef.mov */,
+				48BBFFDE161CDDA000F6EC06 /* The Grand Staff.mov */,
+				48214BCC161CE03C00F43AFA /* Treble Clef.mov */,
 				B225A76C1534D27F006FD46F /* greenlights.png */,
 				B225A75A1534D1D4006FD46F /* clouds.png */,
 				4849AD10160AE2E7002B5E40 /* Solfege Flats.mp4 */,
@@ -728,7 +747,6 @@
 				480A795215DD6060005E9C43 /* SunInClouds.mp4 */,
 				480A795315DD6060005E9C43 /* Tenor Clef.mp4 */,
 				480A795415DD6060005E9C43 /* The Grand Staff.mp4 */,
-				480A795515DD6060005E9C43 /* Treble Clef.mp4 */,
 				480A795615DD6060005E9C43 /* UnderWater.mp4 */,
 				480A795715DD6060005E9C43 /* WindyTrees.mp4 */,
 			);
@@ -1233,7 +1251,6 @@
 				480A796915DD6060005E9C43 /* SunInClouds.mp4 in Resources */,
 				480A796A15DD6060005E9C43 /* Tenor Clef.mp4 in Resources */,
 				480A796B15DD6060005E9C43 /* The Grand Staff.mp4 in Resources */,
-				480A796C15DD6060005E9C43 /* Treble Clef.mp4 in Resources */,
 				480A796D15DD6060005E9C43 /* UnderWater.mp4 in Resources */,
 				480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */,
 				4882981A15E006BB00239B29 /* ChromaticCircleViewController.xib in Resources */,
@@ -1396,6 +1413,13 @@
 				481388C6161C587A00E03E3E /* SolfegeNaturalsViewController.xib in Resources */,
 				481388C8161C58AF00E03E3E /* SolfegeSharpsViewController.xib in Resources */,
 				481388CA161C58B900E03E3E /* SolfegeFlatsViewController.xib in Resources */,
+				48BBFFDF161CDDA000F6EC06 /* The Grand Staff.mov in Resources */,
+				48214BCD161CE03C00F43AFA /* Treble Clef.mov in Resources */,
+				48214BCF161CE27300F43AFA /* Bass Clef.mov in Resources */,
+				48214BD1161CE40500F43AFA /* Alto Clef.mov in Resources */,
+				48214BD3161CE4F000F43AFA /* Soprano Clef.mov in Resources */,
+				48214BD5161CE61F00F43AFA /* MezzoSoprano Clef.mov in Resources */,
+				48214BD7161CE7D400F43AFA /* Tenor Clef.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
