@@ -474,6 +474,7 @@
 
     // create the mixer
     self.mixerHost = [[MixerHostAudio alloc] init];
+    [self.mixerHost setMixerOutputGain:(AudioUnitParameterValue)0.1];
 
     // start the audio graph
     [mixerHost startAUGraph];
