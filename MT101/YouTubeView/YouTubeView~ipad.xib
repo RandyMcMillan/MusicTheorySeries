@@ -47,7 +47,7 @@
 						<string key="NSFrameSize">{1024, 44}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="395360854"/>
+						<reference key="NSNextKeyView" ref="350513010"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor" id="165427749">
 							<int key="NSColorSpace">3</int>
@@ -62,7 +62,7 @@
 						<string key="NSFrameSize">{1024, 748}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="395360854"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4zMDE5NjA3OTYxIDAuMzAxOTYwNzk2MSAwLjMwNTg4MjM2NDUAA</bytes>
@@ -79,7 +79,7 @@
 							<object class="IBUIButton" id="477847584">
 								<reference key="NSNextResponder" ref="55284529"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{89, 0}, {106, 44}}</string>
+								<string key="NSFrame">{{83, 0}, {106, 44}}</string>
 								<reference key="NSSuperview" ref="55284529"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="220039333"/>
@@ -117,7 +117,7 @@
 							<object class="IBUIButton" id="220039333">
 								<reference key="NSNextResponder" ref="55284529"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{282, 0}, {72, 44}}</string>
+								<string key="NSFrame">{{271, 0}, {72, 44}}</string>
 								<reference key="NSSuperview" ref="55284529"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="498081151"/>
@@ -142,7 +142,7 @@
 							<object class="IBUIButton" id="498081151">
 								<reference key="NSNextResponder" ref="55284529"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{441, 0}, {180, 44}}</string>
+								<string key="NSFrame">{{424, 0}, {180, 44}}</string>
 								<reference key="NSSuperview" ref="55284529"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="794545583"/>
@@ -171,7 +171,7 @@
 							<object class="IBUIButton" id="794545583">
 								<reference key="NSNextResponder" ref="55284529"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{708, 0}, {72, 44}}</string>
+								<string key="NSFrame">{{685, 0}, {72, 44}}</string>
 								<reference key="NSSuperview" ref="55284529"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="1040939455"/>
@@ -196,10 +196,10 @@
 							<object class="IBUIButton" id="1040939455">
 								<reference key="NSNextResponder" ref="55284529"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{867, 0}, {72, 44}}</string>
+								<string key="NSFrame">{{839, 0}, {106, 44}}</string>
 								<reference key="NSSuperview" ref="55284529"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="350513010"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<int key="IBUIContentMode">1</int>
@@ -242,7 +242,7 @@
 								<reference key="IBUICustomView" ref="477847584"/>
 								<reference key="IBUIToolbar" ref="55284529"/>
 							</object>
-							<object class="IBUIBarButtonItem" id="199350269">
+							<object class="IBUIBarButtonItem" id="1053377834">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<reference key="IBUIToolbar" ref="55284529"/>
 								<int key="IBUISystemItemIdentifier">5</int>
@@ -273,7 +273,7 @@
 								<reference key="IBUICustomView" ref="794545583"/>
 								<reference key="IBUIToolbar" ref="55284529"/>
 							</object>
-							<object class="IBUIBarButtonItem" id="30712218">
+							<object class="IBUIBarButtonItem" id="64926269">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<reference key="IBUIToolbar" ref="55284529"/>
 								<int key="IBUISystemItemIdentifier">5</int>
@@ -324,10 +324,10 @@
 					<object class="IBUIActivityIndicatorView" id="198650247">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{984, 12}, {20, 20}}</string>
+						<string key="NSFrame">{{502, 364}, {20, 20}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="55284529"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -557,8 +557,8 @@
 							<reference ref="1035708653"/>
 							<reference ref="410746011"/>
 							<reference ref="650041603"/>
-							<reference ref="199350269"/>
-							<reference ref="30712218"/>
+							<reference ref="1053377834"/>
+							<reference ref="64926269"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 					</object>
@@ -649,12 +649,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">163</int>
-						<reference key="object" ref="199350269"/>
+						<reference key="object" ref="1053377834"/>
 						<reference key="parent" ref="55284529"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">164</int>
-						<reference key="object" ref="30712218"/>
+						<reference key="object" ref="64926269"/>
 						<reference key="parent" ref="55284529"/>
 					</object>
 				</array>
@@ -763,10 +763,6 @@
 						<string key="safariBarButtonItem">UIBarButtonItem</string>
 						<string key="safariButton">GradientButton</string>
 						<string key="spinner">UIActivityIndicatorView</string>
-						<string key="tbLabel1">UILabel</string>
-						<string key="tbLabel2">UILabel</string>
-						<string key="tbLabel3">UILabel</string>
-						<string key="tbLabel4">UILabel</string>
 						<string key="toolBar">GradientToolBar</string>
 						<string key="webView">UIWebView</string>
 					</dictionary>
@@ -822,22 +818,6 @@
 						<object class="IBToOneOutletInfo" key="spinner">
 							<string key="name">spinner</string>
 							<string key="candidateClassName">UIActivityIndicatorView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="tbLabel1">
-							<string key="name">tbLabel1</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="tbLabel2">
-							<string key="name">tbLabel2</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="tbLabel3">
-							<string key="name">tbLabel3</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="tbLabel4">
-							<string key="name">tbLabel4</string>
-							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="toolBar">
 							<string key="name">toolBar</string>

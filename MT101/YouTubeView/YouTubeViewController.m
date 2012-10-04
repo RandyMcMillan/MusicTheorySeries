@@ -66,6 +66,8 @@
     CGRect textFieldFrame = CGRectMake(kLeftMargin, kTweenMargin,
         self.view.bounds.size.width - (kLeftMargin * 2.0), kTextFieldHeight);
 
+    [self.view setBackgroundColor:[UIColor colorWithRed:0.098 green:0.098 blue:0.098 alpha:1.000]//[UIColor colorWithRed:0.173 green:0.169 blue:0.173 alpha:1.00];//[UIColor colorWithRed: 0.11 green: 0.11 blue: 0.11 alpha: 1];
+];
     // addressLabel.frame = textFieldFrame;
 
 #if TARGET_IPHONE_SIMULATOR
@@ -386,6 +388,8 @@
 
 - (IBAction)onDoneButtonPress:(id)sender
 {
+    
+    [webView reload];///stop video playback
     [webView release];
 
     [self closeBrowser];
