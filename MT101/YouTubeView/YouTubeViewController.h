@@ -17,7 +17,7 @@
     IBOutlet UIWebView *webView;
 
     IBOutlet GradientToolBar    *toolBar;
-    IBOutlet UINavigationBar    *navBar;
+    IBOutlet GradientNavBar    *navBar;
     IBOutlet UILabel *addressLabel;
 
     IBOutlet UIBarButtonItem    *doneBarButtonItem;

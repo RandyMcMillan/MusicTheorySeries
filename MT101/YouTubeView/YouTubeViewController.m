@@ -78,14 +78,14 @@
     
      [toolBar useYouTubeUIBar];
     //[navBar useTBStyle];
-    [doneButton useDoneButtonStyle];
-    [safariButton useDoneButtonStyle];
+    [doneButton useYouTubeUIBar];
+    [safariButton useYouTubeUIBar];
     [safariButton useSafariStyle];
-    [backButton useDoneButtonStyle];
+    [backButton useYouTubeUIBar];
     [backButton useBackStyle];
-    [forwardButton useDoneButtonStyle];
+    [forwardButton useYouTubeUIBar];
     [forwardButton useForwardStyle];
-    [refreshButton useDoneButtonStyle];
+    [refreshButton useYouTubeUIBar];
     [refreshButton useRefreshStyle];
 
     webView.delegate        = self;
