@@ -48,9 +48,6 @@
 - (void)useTBStyle;
 - (void)useEmailStyle;
 
-- (void)useYouTubeUIBar;
-
-
 - (void)useAlertStyle;
 - (void)useRedDeleteStyle;
 - (void)useWhiteStyle;

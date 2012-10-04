@@ -183,8 +183,6 @@
 		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
 		4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */; };
 		4821435F161DF643009CCC34 /* Treble Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4821435E161DF643009CCC34 /* Treble Clef.mp4 */; };
-		4821436A161DFB50009CCC34 /* B Minor Locrian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48214369161DFB50009CCC34 /* B Minor Locrian.mp4 */; };
-		4821436D161DFB59009CCC34 /* A Minor Aeolian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4821436C161DFB59009CCC34 /* A Minor Aeolian.mp4 */; };
 		48214BCD161CE03C00F43AFA /* Treble Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BCC161CE03C00F43AFA /* Treble Clef.mov */; };
 		48214BCF161CE27300F43AFA /* Bass Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BCE161CE27300F43AFA /* Bass Clef.mov */; };
 		48214BD1161CE40500F43AFA /* Alto Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BD0161CE40500F43AFA /* Alto Clef.mov */; };
@@ -323,8 +321,8 @@
 		48022A2E161DDD5D00F31287 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		48022A2F161DDD5D00F31287 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		48022A30161DDD5D00F31287 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		48022A31161DDD5D00F31287 /* iTunesArtwork1024 */ = {isa = PBXFileReference; lastKnownFileType = text; path = iTunesArtwork1024; sourceTree = "<group>"; };
-		48022A32161DDD5D00F31287 /* iTunesArtwork512 */ = {isa = PBXFileReference; lastKnownFileType = text; path = iTunesArtwork512; sourceTree = "<group>"; };
+		48022A31161DDD5D00F31287 /* iTunesArtwork1024 */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork1024; sourceTree = "<group>"; };
+		48022A32161DDD5D00F31287 /* iTunesArtwork512 */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork512; sourceTree = "<group>"; };
 		48022A40161DDD9C00F31287 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "../../Icon-72@2x.png"; sourceTree = "<group>"; };
 		48022A45161DDEF500F31287 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		48022A5B161DE12C00F31287 /* error.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = error.html; sourceTree = "<group>"; };
@@ -487,8 +485,6 @@
 		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
 		4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppleXylophoneViewController.xib; sourceTree = "<group>"; };
 		4821435E161DF643009CCC34 /* Treble Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Treble Clef.mp4"; sourceTree = "<group>"; };
-		48214369161DFB50009CCC34 /* B Minor Locrian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "B Minor Locrian.mp4"; sourceTree = "<group>"; };
-		4821436C161DFB59009CCC34 /* A Minor Aeolian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A Minor Aeolian.mp4"; sourceTree = "<group>"; };
 		48214BCC161CE03C00F43AFA /* Treble Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Treble Clef.mov"; sourceTree = "<group>"; };
 		48214BCE161CE27300F43AFA /* Bass Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Bass Clef.mov"; sourceTree = "<group>"; };
 		48214BD0161CE40500F43AFA /* Alto Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Alto Clef.mov"; sourceTree = "<group>"; };
@@ -823,8 +819,6 @@
 		480A794015DD6060005E9C43 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				4821436C161DFB59009CCC34 /* A Minor Aeolian.mp4 */,
-				48214369161DFB50009CCC34 /* B Minor Locrian.mp4 */,
 				48214BD6161CE7D400F43AFA /* Tenor Clef.mov */,
 				48214BD4161CE61F00F43AFA /* MezzoSoprano Clef.mov */,
 				48214BD2161CE4F000F43AFA /* Soprano Clef.mov */,
@@ -1536,8 +1530,6 @@
 				48022A7C161DE37900F31287 /* YouTubeToDisplay5.plist in Resources */,
 				48022A7E161DE91400F31287 /* youtube-icon.png in Resources */,
 				4821435F161DF643009CCC34 /* Treble Clef.mp4 in Resources */,
-				4821436A161DFB50009CCC34 /* B Minor Locrian.mp4 in Resources */,
-				4821436D161DFB59009CCC34 /* A Minor Aeolian.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

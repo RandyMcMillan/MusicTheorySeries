@@ -396,8 +396,8 @@
     [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
     
     YouTubeViewController *youtubeVC = [[YouTubeViewController alloc] init];
-     youtubeVC.modalPresentationStyle = UIModalPresentationPageSheet;
-    //youtubeVC.modalPresentationStyle = UIModalPresentationFullScreen;
+    // wikiVC.modalPresentationStyle = UIModalPresentationPageSheet;
+    youtubeVC.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentModalViewController:youtubeVC animated:YES];
     [youtubeVC.webView setBackgroundColor:[UIColor clearColor]];
     [self hideGradientBackground:youtubeVC.webView];
