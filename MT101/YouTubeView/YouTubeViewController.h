@@ -16,8 +16,8 @@
 @interface YouTubeViewController : UIViewController <UIWebViewDelegate, UIGestureRecognizerDelegate>{
     IBOutlet UIWebView *webView;
 
-    IBOutlet UIToolbar    *toolBar;
-    IBOutlet UINavigationBar    *navBar;
+    IBOutlet GradientToolBar    *toolBar;
+    IBOutlet GradientNavBar    *navBar;
     IBOutlet UILabel *addressLabel;
 
     IBOutlet UIBarButtonItem    *doneBarButtonItem;
