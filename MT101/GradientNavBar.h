@@ -37,5 +37,6 @@
 @property (nonatomic, retain) UIColor   *strokeColor;
 
 - (void)useTBStyle;
+- (void)useYouTubeUIBar;
 
 @end

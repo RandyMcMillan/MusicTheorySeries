@@ -66,6 +66,8 @@
     CGRect textFieldFrame = CGRectMake(kLeftMargin, kTweenMargin,
         self.view.bounds.size.width - (kLeftMargin * 2.0), kTextFieldHeight);
 
+    [self.view setBackgroundColor:[UIColor colorWithRed:0.098 green:0.098 blue:0.098 alpha:1.000]//[UIColor colorWithRed:0.173 green:0.169 blue:0.173 alpha:1.00];//[UIColor colorWithRed: 0.11 green: 0.11 blue: 0.11 alpha: 1];
+];
     // addressLabel.frame = textFieldFrame;
 
 #if TARGET_IPHONE_SIMULATOR
@@ -76,16 +78,16 @@
 #endif
 
     
-    // [toolBar useTBStyle];
+     [toolBar useYouTubeUIBar];
     //[navBar useTBStyle];
-    [doneButton useDoneButtonStyle];
-    [safariButton useDoneButtonStyle];
+    [doneButton useYouTubeUIBar];
+    [safariButton useYouTubeUIBar];
     [safariButton useSafariStyle];
-    [backButton useDoneButtonStyle];
+    [backButton useYouTubeUIBar];
     [backButton useBackStyle];
-    [forwardButton useDoneButtonStyle];
+    [forwardButton useYouTubeUIBar];
     [forwardButton useForwardStyle];
-    [refreshButton useDoneButtonStyle];
+    [refreshButton useYouTubeUIBar];
     [refreshButton useRefreshStyle];
 
     webView.delegate        = self;
@@ -184,7 +186,7 @@
                      animations:^ {
                          toolBar.alpha = 0.0;
                          navBar.alpha = 0.0;
-                           [webView setFrame:newRectangle];
+                         //[webView setFrame:newRectangle];
  
                          
                      }
@@ -233,7 +235,7 @@
                          navBar.hidden = NO;
                          toolBar.alpha = 1.0;
                          navBar.alpha = 1.0;
-                         [webView setFrame:newRectangle];
+                         //[webView setFrame:newRectangle];
  
                          
                      }
@@ -386,6 +388,8 @@
 
 - (IBAction)onDoneButtonPress:(id)sender
 {
+    
+    [webView reload];///stop video playback
     [webView release];
 
     [self closeBrowser];
@@ -441,7 +445,10 @@
     if ([request.URL.absoluteString hasPrefix:@"file:///"]) {
         addressLabel.text = @"Music Theory 101 appears to be offline.";
     } else {
-        addressLabel.text = request.URL.absoluteString;
+        
+        addressLabel.text = @"";
+        //addressLabel.text = request.URL.absoluteString;
+
     }
 
     backButton.enabled          = webView.canGoBack;
