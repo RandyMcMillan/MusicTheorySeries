@@ -17,6 +17,7 @@
     UISplitViewControllerDelegate, MFMailComposeViewControllerDelegate,UIScrollViewDelegate,UIGestureRecognizerDelegate>{
     GradientButton  *videoButton;
     GradientButton  *wikiButton;
+        GradientButton  *youtubeButton;
     GradientButton  *interActiveButton;
     GradientToolBar *toolBar;
     GradientNavBar *detailNavBar;
@@ -42,9 +43,10 @@
 @property (nonatomic, retain) IBOutlet ExampleView  *imageView;
 @property (nonatomic, retain) IBOutlet NSString     *interactiveToDisplay;
 @property (nonatomic, retain) NSString              *wikiToDisplay;
-
+@property (nonatomic, retain) NSString              *youtubeToDisplay;
 @property (nonatomic, retain) IBOutlet GradientButton   *videoButton;
 @property (nonatomic, retain) IBOutlet GradientButton   *wikiButton;
+@property (nonatomic, retain) IBOutlet GradientButton   *youtubeButton;
 @property (nonatomic, retain) IBOutlet GradientButton   *interActiveButton;
 @property (nonatomic, retain) IBOutlet GradientToolBar  *toolBar;
 @property (nonatomic, retain) IBOutlet GradientNavBar   *detailNavBar;
@@ -58,6 +60,7 @@
 
 - (IBAction)displayInteractive:(id)sender;
 - (IBAction)displayWiki:(id)sender;
+- (IBAction)displayYouTube:(id)sender;
 - (IBAction)playMovie:(id)sender;
 - (IBAction)openMail:(id)sender;
 

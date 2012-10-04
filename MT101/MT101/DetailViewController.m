@@ -39,6 +39,7 @@
 #import "SolfegeFlatsViewController.h"
 
 #import "WikiViewController.h"
+#import "YouTubeViewController.h"
 
 #import "ColorUIButton.h"
 #import "GradientButton.h"
@@ -58,6 +59,7 @@
 @synthesize myZoomableView,shouldZoom;
 @synthesize videoButton;
 @synthesize wikiButton;
+@synthesize youtubeButton;
 @synthesize interActiveButton;
 @synthesize toolBar;
 @synthesize detailNavBar;
@@ -72,7 +74,7 @@
 @synthesize vLabel;
 @synthesize imageView, MovieToPlay, interactiveToDisplay;
 @synthesize wikiToDisplay;
-
+@synthesize youtubeToDisplay;
 #pragma mark - Managing the detail item
 
 #pragma mark - clickMe
@@ -383,6 +385,46 @@
     [wikiVC.webView loadRequest:requestObj];
     self.wikiButton.highlighted = FALSE;
 } /* displayWiki */
+
+#pragma mark - displayYouTube
+
+- (IBAction)displayYouTube:(id)sender
+{
+    NSLog(@"displayYouTube = %@", youtubeToDisplay);
+    
+    [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+    [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
+    
+    YouTubeViewController *youtubeVC = [[YouTubeViewController alloc] init];
+    // wikiVC.modalPresentationStyle = UIModalPresentationPageSheet;
+    youtubeVC.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentModalViewController:youtubeVC animated:YES];
+    [youtubeVC.webView setBackgroundColor:[UIColor clearColor]];
+    [self hideGradientBackground:youtubeVC.webView];
+    
+    // Create a URL object.
+    NSURL *url = [NSURL URLWithString:youtubeToDisplay];
+    NSLog(@"%@", url);
+    
+    
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL URLWithString:youtubeToDisplay] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval: 6.0];
+    
+    //Develop this more
+    //This is incomplete
+    
+    NSURLConnection *connection=[[NSURLConnection alloc] initWithRequest:requestObj delegate:nil];
+    if (connection != nil) {
+        NSLog(@"connection = %@",connection);
+    } else {NSLog(@"Please connect to internet!");}
+    
+    // URL Requst Object
+    //   NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
+    // Load the request in the UIWebView.
+    [youtubeVC.webView loadRequest:requestObj];
+    self.youtubeButton.highlighted = FALSE;
+} /* displayYouTube */
+
 
 #pragma mark - setDetailItem
 

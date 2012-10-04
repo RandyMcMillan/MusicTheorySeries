@@ -58,6 +58,12 @@
   NSArray *wikiToDiplayList4;
   NSArray *wikiToDiplayList5;
 
+    NSArray *youtubeToDiplayList0;
+    NSArray *youtubeToDiplayList1;
+    NSArray *youtubeToDiplayList2;
+    NSArray *youtubeToDiplayList3;
+    NSArray *youtubeToDiplayList4;
+    NSArray *youtubeToDiplayList5;
 
   NSArray *sectionHeader;
 

@@ -69,6 +69,8 @@
         self.detailViewController.detailDescriptionLabel.frame = CGRectMake(self.view.frame.size.width / 1.60, 254, 20, 20);
         [self.detailViewController.videoButton useDoneButtonStyle];
         [self.detailViewController.wikiButton useDoneButtonStyle];
+        [self.detailViewController.youtubeButton useDoneButtonStyle];
+
         [self.detailViewController.emailButton useDoneButtonStyle];
         [self.detailViewController.emailButton useEmailStyle];
         [self.detailViewController.composeTweetButton useDoneButtonStyle];
@@ -147,6 +149,69 @@
     for (NSString *str in wikiToDiplayList5) {
         NSLog(@"wikiToDiplayList5 = %@", str);
     }
+    
+#pragma mark - YouTubeToDisplay
+    
+    NSString *youtubeToDisplay0Path =
+    [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay0" ofType:
+     @"plist"];
+    youtubeToDiplayList0 =
+    [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay0Path];
+    
+    for (NSString *str in youtubeToDiplayList0) {
+        NSLog(@"wikiToDiplayList0 = %@", str);
+    }
+    
+    NSString *youtubeToDisplay1Path =
+    [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay1" ofType:
+     @"plist"];
+    youtubeToDiplayList1 =
+    [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay1Path];
+    
+    for (NSString *str in youtubeToDiplayList1) {
+        NSLog(@"youtubeToDiplayList1 = %@", str);
+    }
+    
+    NSString *youtubeToDisplay2Path =
+    [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay2" ofType:
+     @"plist"];
+    youtubeToDiplayList2 =
+    [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay2Path];
+    
+    for (NSString *str in youtubeToDiplayList2) {
+        NSLog(@"youtubeToDiplayList2 = %@", str);
+    }
+    
+    NSString *youtubeToDisplay3Path =
+    [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay3" ofType:
+     @"plist"];
+    youtubeToDiplayList3 =
+    [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay3Path];
+    
+    for (NSString *str in youtubeToDiplayList3) {
+        NSLog(@"youtubeToDiplayList3 = %@", str);
+    }
+    
+    NSString *youtubeToDisplay4Path =
+    [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay4" ofType:
+     @"plist"];
+    youtubeToDiplayList4 =
+    [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay4Path];
+    
+    for (NSString *str in youtubeToDiplayList4) {
+        NSLog(@"youtubeToDiplayList4 = %@", str);
+    }
+    
+    NSString *youtubeToDisplay5Path =
+    [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay5" ofType:
+     @"plist"];
+    youtubeToDiplayList5 =
+    [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay5Path];
+    
+    for (NSString *str in youtubeToDiplayList5) {
+        NSLog(@"youtubeToDiplayList5 = %@", str);
+    }
+
 
 #pragma mark - Video Lists
 
@@ -692,6 +757,9 @@
             [interactiveList0 objectAtIndex:indexPath.row];
         self.detailViewController.wikiToDisplay =
             [wikiToDiplayList0 objectAtIndex:indexPath.row];
+        self.detailViewController.youtubeToDisplay =
+        [youtubeToDiplayList0 objectAtIndex:indexPath.row];
+
         [self.detailViewController.imageView useGrandStaffStyle];
     }
 
@@ -706,6 +774,8 @@
             [interactiveList1 objectAtIndex:indexPath.row];
         self.detailViewController.wikiToDisplay =
             [wikiToDiplayList1 objectAtIndex:indexPath.row];
+        self.detailViewController.youtubeToDisplay =
+        [youtubeToDiplayList1 objectAtIndex:indexPath.row];
         [self.detailViewController.imageView useCircleStyle];
     }
 
@@ -720,6 +790,8 @@
             [interactiveList2 objectAtIndex:indexPath.row];
         self.detailViewController.wikiToDisplay =
             [wikiToDiplayList2 objectAtIndex:indexPath.row];
+        self.detailViewController.youtubeToDisplay =
+        [youtubeToDiplayList2 objectAtIndex:indexPath.row];
         [self.detailViewController.imageView useGrandStaffStyle];
     }
 
@@ -734,6 +806,8 @@
             [interactiveList3 objectAtIndex:indexPath.row];
         self.detailViewController.wikiToDisplay =
             [wikiToDiplayList3 objectAtIndex:indexPath.row];
+        self.detailViewController.youtubeToDisplay =
+        [youtubeToDiplayList3 objectAtIndex:indexPath.row];
         [self.detailViewController.imageView useGrandStaffStyle];
     }
 
@@ -751,6 +825,8 @@
             [imageList4 objectAtIndex:indexPath.row];
         self.detailViewController.interactiveToDisplay =
             [interactiveList4 objectAtIndex:indexPath.row];
+        self.detailViewController.youtubeToDisplay =
+        [youtubeToDiplayList4 objectAtIndex:indexPath.row];
         [self.detailViewController.imageView useGrandStaffStyle];
     }
 
@@ -768,6 +844,8 @@
             [imageList5 objectAtIndex:indexPath.row];
         self.detailViewController.interactiveToDisplay =
             [interactiveList5 objectAtIndex:indexPath.row];
+        self.detailViewController.youtubeToDisplay =
+        [youtubeToDiplayList5 objectAtIndex:indexPath.row];
         [self.detailViewController.imageView useGrandStaffStyle];
     }
 

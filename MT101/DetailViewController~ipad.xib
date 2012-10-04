@@ -3,12 +3,12 @@
 	<data>
 		<int key="IBDocument.SystemTarget">1072</int>
 		<string key="IBDocument.SystemVersion">12C54</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2840</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2843</string>
 		<string key="IBDocument.AppKitVersion">1187.34</string>
 		<string key="IBDocument.HIToolboxVersion">625.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">1926</string>
+			<string key="NS.object.0">1929</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
@@ -207,10 +207,10 @@
 							<object class="IBUIButton" id="641090686">
 								<reference key="NSNextResponder" ref="144060710"/>
 								<int key="NSvFlags">303</int>
-								<string key="NSFrame">{{61, 5}, {85, 34}}</string>
+								<string key="NSFrame">{{42, 5}, {85, 34}}</string>
 								<reference key="NSSuperview" ref="144060710"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="813097345"/>
+								<reference key="NSNextKeyView" ref="1031125649"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -230,7 +230,7 @@
 								</object>
 								<object class="NSCustomResource" key="IBUINormalImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">PLVideoCameraPreviewStack@2x~ipad.png</string>
+									<string key="NSResourceName">youtube-icon.png</string>
 								</object>
 								<object class="IBUIFontDescription" key="IBUIFontDescription" id="898202187">
 									<int key="type">2</int>
@@ -242,10 +242,35 @@
 									<int key="NSfFlags">16</int>
 								</object>
 							</object>
+							<object class="IBUIButton" id="1031125649">
+								<reference key="NSNextResponder" ref="144060710"/>
+								<int key="NSvFlags">303</int>
+								<string key="NSFrame">{{137, 5}, {85, 34}}</string>
+								<reference key="NSSuperview" ref="144060710"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="813097345"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIOpaque">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<int key="IBUIContentHorizontalAlignment">0</int>
+								<int key="IBUIContentVerticalAlignment">0</int>
+								<reference key="IBUIHighlightedTitleColor" ref="904493619"/>
+								<object class="NSColor" key="IBUINormalTitleColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC4xOTYwNzg0MzE0IDAuMzA5ODAzOTIxNiAwLjUyMTU2ODYyNzUAA</bytes>
+								</object>
+								<reference key="IBUINormalTitleShadowColor" ref="230467590"/>
+								<object class="NSCustomResource" key="IBUINormalImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">PLVideoCameraPreviewStack@2x~ipad.png</string>
+								</object>
+								<reference key="IBUIFontDescription" ref="898202187"/>
+								<reference key="IBUIFont" ref="103392027"/>
+							</object>
 							<object class="IBUIButton" id="813097345">
 								<reference key="NSNextResponder" ref="144060710"/>
 								<int key="NSvFlags">303</int>
-								<string key="NSFrame">{{205, 5}, {243, 34}}</string>
+								<string key="NSFrame">{{262, 5}, {243, 34}}</string>
 								<reference key="NSSuperview" ref="144060710"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="204551855"/>
@@ -270,7 +295,7 @@
 							<object class="IBUIButton" id="204551855">
 								<reference key="NSNextResponder" ref="144060710"/>
 								<int key="NSvFlags">303</int>
-								<string key="NSFrame">{{508, 5}, {85, 34}}</string>
+								<string key="NSFrame">{{546, 5}, {85, 34}}</string>
 								<reference key="NSSuperview" ref="144060710"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView"/>
@@ -320,6 +345,11 @@
 							<object class="IBUIBarButtonItem" id="926458405">
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<reference key="IBUICustomView" ref="641090686"/>
+								<reference key="IBUIToolbar" ref="144060710"/>
+							</object>
+							<object class="IBUIBarButtonItem" id="258356263">
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<reference key="IBUICustomView" ref="1031125649"/>
 								<reference key="IBUIToolbar" ref="144060710"/>
 							</object>
 							<object class="IBUIBarButtonItem" id="26644624">
@@ -836,27 +866,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">videoButton</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="641090686"/>
-					</object>
-					<int key="connectionID">92</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">vLabel</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="979263357"/>
 					</object>
 					<int key="connectionID">93</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">wikiButton</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="204551855"/>
-					</object>
-					<int key="connectionID">94</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -891,6 +905,30 @@
 					<int key="connectionID">307</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">youtubeButton</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="641090686"/>
+					</object>
+					<int key="connectionID">320</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">wikiButton</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="204551855"/>
+					</object>
+					<int key="connectionID">322</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">videoButton</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="1031125649"/>
+					</object>
+					<int key="connectionID">323</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">playMovie:</string>
 						<reference key="source" ref="641090686"/>
@@ -898,6 +936,15 @@
 						<int key="IBEventType">7</int>
 					</object>
 					<int key="connectionID">99</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">displayYouTube:</string>
+						<reference key="source" ref="641090686"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">321</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -934,6 +981,15 @@
 						<int key="IBEventType">7</int>
 					</object>
 					<int key="connectionID">309</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">playMovie:</string>
+						<reference key="source" ref="1031125649"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">319</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -978,6 +1034,7 @@
 							<reference ref="26644624"/>
 							<reference ref="986672779"/>
 							<reference ref="926458405"/>
+							<reference ref="258356263"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 					</object>
@@ -1271,6 +1328,19 @@
 						<reference key="object" ref="720036833"/>
 						<reference key="parent" ref="1067156870"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">317</int>
+						<reference key="object" ref="258356263"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="1031125649"/>
+						</array>
+						<reference key="parent" ref="144060710"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">318</int>
+						<reference key="object" ref="1031125649"/>
+						<reference key="parent" ref="258356263"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -1320,6 +1390,11 @@
 				<string key="313.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="314.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="316.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="317.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="318.CustomClassName">GradientButton</string>
+				<string key="318.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<real value="0.0" key="318.IBUIButtonInspectorSelectedEdgeInsetMetadataKey"/>
+				<real value="0.0" key="318.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="59.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.CustomClassName">ZoomableView</string>
@@ -1380,7 +1455,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">316</int>
+			<int key="maxID">323</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2722,6 +2797,7 @@
 						<string key="composeTweet:">id</string>
 						<string key="displayInteractive:">id</string>
 						<string key="displayWiki:">id</string>
+						<string key="displayYouTube:">id</string>
 						<string key="openMail:">id</string>
 						<string key="playMovie:">id</string>
 					</dictionary>
@@ -2740,6 +2816,10 @@
 						</object>
 						<object class="IBActionInfo" key="displayWiki:">
 							<string key="name">displayWiki:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="displayYouTube:">
+							<string key="name">displayYouTube:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="openMail:">
@@ -2767,6 +2847,7 @@
 						<string key="vLabel">UILabel</string>
 						<string key="videoButton">GradientButton</string>
 						<string key="wikiButton">GradientButton</string>
+						<string key="youtubeButton">GradientButton</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="composeTweetButton">
@@ -2827,6 +2908,10 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="wikiButton">
 							<string key="name">wikiButton</string>
+							<string key="candidateClassName">GradientButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="youtubeButton">
+							<string key="name">youtubeButton</string>
 							<string key="candidateClassName">GradientButton</string>
 						</object>
 					</dictionary>
@@ -6881,7 +6966,8 @@
 			<string key="Twitter@2x~ipad.png">{200, 120}</string>
 			<string key="UIButtonBarCompose@2x~ipad.png">{22, 18}</string>
 			<string key="W@2x~ipad.png">{44, 26}</string>
+			<string key="youtube-icon.png">{138, 60}</string>
 		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">1926</string>
+		<string key="IBCocoaTouchPluginVersion">1929</string>
 	</data>
 </archive>
