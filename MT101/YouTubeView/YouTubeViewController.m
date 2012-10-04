@@ -76,7 +76,7 @@
 #endif
 
     
-    // [toolBar useTBStyle];
+     [toolBar useYouTubeUIBar];
     //[navBar useTBStyle];
     [doneButton useDoneButtonStyle];
     [safariButton useDoneButtonStyle];
@@ -184,7 +184,7 @@
                      animations:^ {
                          toolBar.alpha = 0.0;
                          navBar.alpha = 0.0;
-                           [webView setFrame:newRectangle];
+                         //[webView setFrame:newRectangle];
  
                          
                      }
@@ -233,7 +233,7 @@
                          navBar.hidden = NO;
                          toolBar.alpha = 1.0;
                          navBar.alpha = 1.0;
-                         [webView setFrame:newRectangle];
+                         //[webView setFrame:newRectangle];
  
                          
                      }
@@ -441,7 +441,10 @@
     if ([request.URL.absoluteString hasPrefix:@"file:///"]) {
         addressLabel.text = @"Music Theory 101 appears to be offline.";
     } else {
-        addressLabel.text = request.URL.absoluteString;
+        
+        addressLabel.text = @"";
+        //addressLabel.text = request.URL.absoluteString;
+
     }
 
     backButton.enabled          = webView.canGoBack;
