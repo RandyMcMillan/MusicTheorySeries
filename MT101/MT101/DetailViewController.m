@@ -671,6 +671,7 @@ self.vLabel.backgroundColor =
         self.interActiveButton.hidden = FALSE;
         [videoButton useDoneButtonStyle];
         [wikiButton useDoneButtonStyle];
+        [youtubeButton useDoneButtonStyle];
         [interActiveButton useDoneButtonStyle];
         [emailButton useDoneButtonStyle];
         [emailButton useEmailStyle];
@@ -692,6 +693,7 @@ self.vLabel.backgroundColor =
 
         [videoButton useDoneButtonStyle];
         [wikiButton useDoneButtonStyle];
+        [youtubeButton useDoneButtonStyle];
         // [interActiveButton useDoneButtonStyle];
         [emailButton useDoneButtonStyle];
         [emailButton useEmailStyle];

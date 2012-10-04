@@ -182,6 +182,7 @@
 		481A432A15F101C5006EDF46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481A432915F101C5006EDF46 /* QuartzCore.framework */; };
 		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
 		4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */; };
+		4821435F161DF643009CCC34 /* Treble Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4821435E161DF643009CCC34 /* Treble Clef.mp4 */; };
 		48214BCD161CE03C00F43AFA /* Treble Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BCC161CE03C00F43AFA /* Treble Clef.mov */; };
 		48214BCF161CE27300F43AFA /* Bass Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BCE161CE27300F43AFA /* Bass Clef.mov */; };
 		48214BD1161CE40500F43AFA /* Alto Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BD0161CE40500F43AFA /* Alto Clef.mov */; };
@@ -483,6 +484,7 @@
 		481A432915F101C5006EDF46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
 		4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppleXylophoneViewController.xib; sourceTree = "<group>"; };
+		4821435E161DF643009CCC34 /* Treble Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Treble Clef.mp4"; sourceTree = "<group>"; };
 		48214BCC161CE03C00F43AFA /* Treble Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Treble Clef.mov"; sourceTree = "<group>"; };
 		48214BCE161CE27300F43AFA /* Bass Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Bass Clef.mov"; sourceTree = "<group>"; };
 		48214BD0161CE40500F43AFA /* Alto Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Alto Clef.mov"; sourceTree = "<group>"; };
@@ -847,6 +849,7 @@
 				480A795015DD6060005E9C43 /* Soprano Clef.mp4 */,
 				480A795115DD6060005E9C43 /* SubBass Clef.mp4 */,
 				480A795215DD6060005E9C43 /* SunInClouds.mp4 */,
+				4821435E161DF643009CCC34 /* Treble Clef.mp4 */,
 				480A795315DD6060005E9C43 /* Tenor Clef.mp4 */,
 				480A795415DD6060005E9C43 /* The Grand Staff.mp4 */,
 				480A795615DD6060005E9C43 /* UnderWater.mp4 */,
@@ -1526,6 +1529,7 @@
 				48022A7B161DE37900F31287 /* YouTubeToDisplay4.plist in Resources */,
 				48022A7C161DE37900F31287 /* YouTubeToDisplay5.plist in Resources */,
 				48022A7E161DE91400F31287 /* youtube-icon.png in Resources */,
+				4821435F161DF643009CCC34 /* Treble Clef.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
