@@ -13,6 +13,7 @@
 #import "UIImage+PDF.h"
 #import "ZoomableView.h"
 
+@class Reachability;
 @interface DetailViewController : UIViewController <
     UISplitViewControllerDelegate, MFMailComposeViewControllerDelegate,UIScrollViewDelegate,UIGestureRecognizerDelegate>{
     GradientButton  *videoButton;
@@ -27,6 +28,11 @@
     GradientButton  *emailButton;
     GradientButton  *composeTweetButton;
     BOOL *shouldZoom;
+        
+        Reachability* hostReach;
+        Reachability* internetReach;
+        Reachability* wifiReach;
+
 
     }
 

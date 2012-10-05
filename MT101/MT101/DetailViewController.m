@@ -45,6 +45,9 @@
 #import "GradientButton.h"
 #import "GradientNavBar.h"
 
+#import "Reachability.h"
+
+
 @interface DetailViewController () {
     MPMoviePlayerViewController *moviePlayer;
 }
@@ -857,11 +860,53 @@ self.vLabel.backgroundColor =
     }
 }
 
-#pragma mark - viewDidLoad
 
+
+#pragma mark - updateInterfaceWithReachability
+
+- (void) updateInterfaceWithReachability: (Reachability*) curReach {
+
+
+    NSLog(@"updateInterfaceWithReachability = %@", curReach);
+
+}
+
+#pragma mark - reachabilityChanged
+
+//Called by Reachability whenever status changes.
+- (void) reachabilityChanged: (NSNotification* )note
+{
+	Reachability* curReach = [note object];
+	NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
+	[self updateInterfaceWithReachability: curReach];
+}
+
+#pragma mark - viewDidLoad
 - (void)viewDidLoad
 {
+    
+    
     [super viewDidLoad];
+    
+    // Observe the kNetworkReachabilityChangedNotification. When that notification is posted, the
+    // method "reachabilityChanged" will be called.
+    [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
+    
+    //Change the host name here to change the server your monitoring
+    self.detailDescriptionLabel.text = [NSString stringWithFormat: @"Remote Host: %@", @"www.apple.com"];
+	hostReach = [[Reachability reachabilityWithHostName: @"www.apple.com"] retain];
+	[hostReach startNotifier];
+	[self updateInterfaceWithReachability: hostReach];
+	
+    internetReach = [[Reachability reachabilityForInternetConnection] retain];
+	[internetReach startNotifier];
+	[self updateInterfaceWithReachability: internetReach];
+    
+    wifiReach = [[Reachability reachabilityForLocalWiFi] retain];
+	[wifiReach startNotifier];
+	[self updateInterfaceWithReachability: wifiReach];
+
+    
     shouldZoom = FALSE;
     scrollView.scrollEnabled=FALSE;
     [self configureView];
