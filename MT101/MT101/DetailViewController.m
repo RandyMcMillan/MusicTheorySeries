@@ -592,6 +592,48 @@
     [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 }
 
+
+
+#pragma mark - configureTextField
+
+- (void) configureTextField: (UITextField*) textField imageView: (UIImageView*) imageView reachability: (Reachability*) curReach
+{
+    NetworkStatus netStatus = [curReach currentReachabilityStatus];
+    BOOL connectionRequired= [curReach connectionRequired];
+    NSString* statusString= @"";
+    switch (netStatus)
+    {
+        case NotReachable:
+        {
+            statusString = @"Access Not Available";
+            self.imageView.image = [UIImage imageNamed: @"stop-32.png"] ;
+            //Minor interface detail- connectionRequired may return yes, even when the host is unreachable.  We cover that up here...
+            connectionRequired= NO;
+            break;
+        }
+            
+        case ReachableViaWWAN:
+        {
+            statusString = @"Reachable WWAN";
+            self.imageView.image = [UIImage imageNamed: @"WWAN5.png"];
+            break;
+        }
+        case ReachableViaWiFi:
+        {
+            statusString= @"Reachable WiFi";
+            self.imageView.image = [UIImage imageNamed: @"Airport.png"];
+            break;
+        }
+    }
+    if(connectionRequired)
+    {
+        statusString= [NSString stringWithFormat: @"%@, Connection Required", statusString];
+    }
+    textField.text= statusString;
+}
+
+
+
 #pragma mark - configureView
 
 - (void)configureView
@@ -868,6 +910,36 @@ self.vLabel.backgroundColor =
 
 
     NSLog(@"updateInterfaceWithReachability = %@", curReach);
+    
+    if(curReach == hostReach){
+    
+    NetworkStatus netStatus = [curReach currentReachabilityStatus];
+    BOOL connectionRequired= [curReach connectionRequired];
+
+        if(connectionRequired)
+        {
+            self.detailDescriptionLabel.text =  @"Cellular data network is available.\n  Internet traffic will be routed through it after a connection is established.";
+        }
+        else
+        {
+            self.detailDescriptionLabel.text =  @"Cellular data network is active.\n  Internet traffic will be routed through it.";
+        }
+        NSLog(@"netStatus = %i", netStatus);
+
+        
+        
+    }
+    
+    if(curReach == internetReach)
+	{
+	}
+	if(curReach == wifiReach)
+	{
+	}
+
+    
+    
+   
 
 }
 
