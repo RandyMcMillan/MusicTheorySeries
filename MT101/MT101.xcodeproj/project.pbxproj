@@ -253,6 +253,7 @@
 		48E2E9B51613D183000A05D3 /* hook-icon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E2E9B31613D183000A05D3 /* hook-icon~ipad.png */; };
 		48E2E9B61613D183000A05D3 /* hook-icon~ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E2E9B41613D183000A05D3 /* hook-icon~ipad@2x.png */; };
 		48E2E9CE1613DD2E000A05D3 /* twitterglyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E2E9CD1613DD2E000A05D3 /* twitterglyph@2x.png */; };
+		48EE21C6161F9CF50003BC3D /* Solfege Flats .mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48EE21C5161F9CF50003BC3D /* Solfege Flats .mp4 */; };
 		48EEEF3715DC47DC00D15F15 /* SopranoClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EEEF3515DC47DC00D15F15 /* SopranoClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48EEEF4215DC4A1600D15F15 /* AltoClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EEEF4015DC4A1600D15F15 /* AltoClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48EEEF5115DC4B4F00D15F15 /* TenorClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EEEF4F15DC4B4F00D15F15 /* TenorClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -570,6 +571,7 @@
 		48E2E9B31613D183000A05D3 /* hook-icon~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hook-icon~ipad.png"; path = "../hook-icon~ipad.png"; sourceTree = "<group>"; };
 		48E2E9B41613D183000A05D3 /* hook-icon~ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hook-icon~ipad@2x.png"; path = "../hook-icon~ipad@2x.png"; sourceTree = "<group>"; };
 		48E2E9CD1613DD2E000A05D3 /* twitterglyph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitterglyph@2x.png"; path = "../twitterglyph@2x.png"; sourceTree = "<group>"; };
+		48EE21C5161F9CF50003BC3D /* Solfege Flats .mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solfege Flats .mp4"; sourceTree = "<group>"; };
 		48EEEF3415DC47DC00D15F15 /* SopranoClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SopranoClefViewController.h; sourceTree = "<group>"; };
 		48EEEF3515DC47DC00D15F15 /* SopranoClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SopranoClefViewController.m; sourceTree = "<group>"; };
 		48EEEF3F15DC4A1600D15F15 /* AltoClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AltoClefViewController.h; sourceTree = "<group>"; };
@@ -808,6 +810,7 @@
 		480A794015DD6060005E9C43 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				48EE21C5161F9CF50003BC3D /* Solfege Flats .mp4 */,
 				4821436C161DFB59009CCC34 /* A Minor Aeolian.mp4 */,
 				48214369161DFB50009CCC34 /* B Minor Locrian.mp4 */,
 				482A04CA161F179A00405AE6 /* C Major Ionian.mp4 */,
@@ -1519,6 +1522,7 @@
 				4821436D161DFB59009CCC34 /* A Minor Aeolian.mp4 in Resources */,
 				482A04CB161F179A00405AE6 /* C Major Ionian.mp4 in Resources */,
 				482A04CE161F181200405AE6 /* D Minor Dorian.mp4 in Resources */,
+				48EE21C6161F9CF50003BC3D /* Solfege Flats .mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
