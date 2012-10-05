@@ -738,10 +738,14 @@
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
+    
+    self.detailViewController.youtubeButton.hidden = FALSE;//ensure they are shown by default
+    self.detailViewController.videoButton . hidden = FALSE;
+    
     if (indexPath.section == 0) {
     
-
-        if (indexPath.row == 1 | indexPath.row == 7 | indexPath.row == 8) {//bypass Treble Clef, Bass Clef and SubBass Clef
+        //bypass Treble Clef, Bass Clef and SubBass Clef
+        if (indexPath.row == 1 | indexPath.row == 7 | indexPath.row == 8) {
         
             self.detailViewController.MovieToPlay =
             [videoList0 objectAtIndex:0];
@@ -751,6 +755,12 @@
             self.detailViewController.MovieToPlay =
             [videoList0 objectAtIndex:indexPath.row];
         
+        }
+        //hide for C Clef examples FIX THIS!!! ADD CONTENT to APP and YOUTUBE!!
+        NSLog(@"ADD CONTENT TO APP AND YOUTUBE!!");
+        if ((indexPath.row >= 2) & (indexPath.row < 7) ) {
+            self.detailViewController.youtubeButton.hidden = TRUE;
+            self.detailViewController.videoButton . hidden = TRUE;
         }
         
         self.detailViewController.imageView.image =
