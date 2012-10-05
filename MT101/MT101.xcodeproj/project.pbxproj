@@ -189,6 +189,8 @@
 		4825A36615C4DB43006F0C46 /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A36515C4DB43006F0C46 /* MixerHostAudio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4825A36815C4DBC3006F0C46 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */; };
 		4825A36A15C4DBCF006F0C46 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36915C4DBCF006F0C46 /* AVFoundation.framework */; };
+		482A04CB161F179A00405AE6 /* C Major Ionian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 482A04CA161F179A00405AE6 /* C Major Ionian.mp4 */; };
+		482A04CE161F181200405AE6 /* D Minor Dorian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 482A04CD161F181200405AE6 /* D Minor Dorian.mp4 */; };
 		483F4C771606F41C00BB6744 /* SolfegeNaturals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 483F4C761606F41C00BB6744 /* SolfegeNaturals.pdf */; };
 		4849AD0C160AE1DB002B5E40 /* SolfegeFlats.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD0B160AE1DB002B5E40 /* SolfegeFlats.pdf */; };
 		4849AD0F160AE1E7002B5E40 /* SolfegeSharps.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD0E160AE1E7002B5E40 /* SolfegeSharps.pdf */; };
@@ -488,6 +490,8 @@
 		4825A36515C4DB43006F0C46 /* MixerHostAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixerHostAudio.m; sourceTree = "<group>"; };
 		4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4825A36915C4DBCF006F0C46 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		482A04CA161F179A00405AE6 /* C Major Ionian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "C Major Ionian.mp4"; sourceTree = "<group>"; };
+		482A04CD161F181200405AE6 /* D Minor Dorian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "D Minor Dorian.mp4"; sourceTree = "<group>"; };
 		483F4C761606F41C00BB6744 /* SolfegeNaturals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeNaturals.pdf; sourceTree = "<group>"; };
 		4849AD0B160AE1DB002B5E40 /* SolfegeFlats.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeFlats.pdf; sourceTree = "<group>"; };
 		4849AD0E160AE1E7002B5E40 /* SolfegeSharps.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeSharps.pdf; sourceTree = "<group>"; };
@@ -802,6 +806,8 @@
 			children = (
 				4821436C161DFB59009CCC34 /* A Minor Aeolian.mp4 */,
 				48214369161DFB50009CCC34 /* B Minor Locrian.mp4 */,
+				482A04CA161F179A00405AE6 /* C Major Ionian.mp4 */,
+				482A04CD161F181200405AE6 /* D Minor Dorian.mp4 */,
 				B225A76C1534D27F006FD46F /* greenlights.png */,
 				B225A75A1534D1D4006FD46F /* clouds.png */,
 				4849AD10160AE2E7002B5E40 /* Solfege Flats.mp4 */,
@@ -1498,6 +1504,8 @@
 				4821435F161DF643009CCC34 /* Treble Clef.mp4 in Resources */,
 				4821436A161DFB50009CCC34 /* B Minor Locrian.mp4 in Resources */,
 				4821436D161DFB59009CCC34 /* A Minor Aeolian.mp4 in Resources */,
+				482A04CB161F179A00405AE6 /* C Major Ionian.mp4 in Resources */,
+				482A04CE161F181200405AE6 /* D Minor Dorian.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
