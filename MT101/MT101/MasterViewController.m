@@ -846,9 +846,8 @@
     if (indexPath.section == 7) {}
 
     self.detailViewController.toolBar.alpha = 1.0;
-    self.detailViewController.title         =
-        self.detailViewController.MovieToPlay;
-
+    self.detailViewController.navigationItem.title = self.detailViewController.MovieToPlay;
+    self.detailViewController.navigationController.navigationItem.title = self.detailViewController.MovieToPlay;
     self.detailViewController.detailNavItem.title = self.detailViewController.MovieToPlay;
 
     self.detailViewController.detailDescriptionLabel.text   = nil;
