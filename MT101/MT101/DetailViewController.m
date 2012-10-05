@@ -916,15 +916,20 @@ self.vLabel.backgroundColor =
     if(curReach == hostReach){
     
     NetworkStatus netStatus = [curReach currentReachabilityStatus];
-    BOOL connectionRequired= [curReach connectionRequired];
+    BOOL connectionRequired = [curReach connectionRequired];
 
         if(connectionRequired)
         {
-            self.musicTheory101Label.text =  @"network is available.\n  Internet traffic will be routed through it after a connection is established.";
+            NSLog(@"connectionRequired = %s", connectionRequired ? "true" : "false");
+
+        //self.musicTheory101Label.text =  @"network is available.\n  Internet traffic will be routed through it after a connection is established.";
         }
         else
         {
-            self.musicTheory101Label.text =  @"Cellular data network is active.\n  Internet traffic will be routed through it.";
+            
+            NSLog(@"connectionRequired = %s", connectionRequired ? "true" : "false");
+
+        //self.musicTheory101Label.text =  @"Cellular data network is active.\n  Internet traffic will be routed through it.";
         }
         NSLog(@"netStatus = %i", netStatus);
 
