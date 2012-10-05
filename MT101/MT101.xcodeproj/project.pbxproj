@@ -189,6 +189,8 @@
 		4825A36615C4DB43006F0C46 /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825A36515C4DB43006F0C46 /* MixerHostAudio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4825A36815C4DBC3006F0C46 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */; };
 		4825A36A15C4DBCF006F0C46 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4825A36915C4DBCF006F0C46 /* AVFoundation.framework */; };
+		482A04CB161F179A00405AE6 /* C Major Ionian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 482A04CA161F179A00405AE6 /* C Major Ionian.mp4 */; };
+		482A04CE161F181200405AE6 /* D Minor Dorian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 482A04CD161F181200405AE6 /* D Minor Dorian.mp4 */; };
 		483F4C771606F41C00BB6744 /* SolfegeNaturals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 483F4C761606F41C00BB6744 /* SolfegeNaturals.pdf */; };
 		4849AD0C160AE1DB002B5E40 /* SolfegeFlats.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD0B160AE1DB002B5E40 /* SolfegeFlats.pdf */; };
 		4849AD0F160AE1E7002B5E40 /* SolfegeSharps.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD0E160AE1E7002B5E40 /* SolfegeSharps.pdf */; };
@@ -225,6 +227,8 @@
 		487A1C9515E86AAD006C5C59 /* WikiToDisplay3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9115E86AAD006C5C59 /* WikiToDisplay3.plist */; };
 		487A1C9615E86AAD006C5C59 /* WikiToDisplay4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9215E86AAD006C5C59 /* WikiToDisplay4.plist */; };
 		487A1C9715E86AAD006C5C59 /* WikiToDisplay5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9315E86AAD006C5C59 /* WikiToDisplay5.plist */; };
+		487B3E25161F1A6000E29AEF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B3E24161F1A6000E29AEF /* Reachability.m */; };
+		487B3E28161F1C1800E29AEF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 487B3E27161F1C1800E29AEF /* SystemConfiguration.framework */; };
 		4882981915E006BB00239B29 /* ChromaticCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4882981715E006BB00239B29 /* ChromaticCircleViewController.m */; };
 		4882981A15E006BB00239B29 /* ChromaticCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4882981815E006BB00239B29 /* ChromaticCircleViewController.xib */; };
 		4882981C15E009B900239B29 /* Chromatic Circle.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4882981B15E009B900239B29 /* Chromatic Circle.mp4 */; };
@@ -488,6 +492,8 @@
 		4825A36515C4DB43006F0C46 /* MixerHostAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixerHostAudio.m; sourceTree = "<group>"; };
 		4825A36715C4DBC3006F0C46 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4825A36915C4DBCF006F0C46 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		482A04CA161F179A00405AE6 /* C Major Ionian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "C Major Ionian.mp4"; sourceTree = "<group>"; };
+		482A04CD161F181200405AE6 /* D Minor Dorian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "D Minor Dorian.mp4"; sourceTree = "<group>"; };
 		483F4C761606F41C00BB6744 /* SolfegeNaturals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeNaturals.pdf; sourceTree = "<group>"; };
 		4849AD0B160AE1DB002B5E40 /* SolfegeFlats.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeFlats.pdf; sourceTree = "<group>"; };
 		4849AD0E160AE1E7002B5E40 /* SolfegeSharps.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeSharps.pdf; sourceTree = "<group>"; };
@@ -531,6 +537,9 @@
 		487A1C9115E86AAD006C5C59 /* WikiToDisplay3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay3.plist; sourceTree = "<group>"; };
 		487A1C9215E86AAD006C5C59 /* WikiToDisplay4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay4.plist; sourceTree = "<group>"; };
 		487A1C9315E86AAD006C5C59 /* WikiToDisplay5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay5.plist; sourceTree = "<group>"; };
+		487B3E23161F1A6000E29AEF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		487B3E24161F1A6000E29AEF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		487B3E27161F1C1800E29AEF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4882981615E006BB00239B29 /* ChromaticCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromaticCircleViewController.h; sourceTree = "<group>"; };
 		4882981715E006BB00239B29 /* ChromaticCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromaticCircleViewController.m; sourceTree = "<group>"; };
 		4882981815E006BB00239B29 /* ChromaticCircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChromaticCircleViewController.xib; sourceTree = "<group>"; };
@@ -622,6 +631,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487B3E28161F1C1800E29AEF /* SystemConfiguration.framework in Frameworks */,
 				48DBC8C915FBF46800CEE854 /* Accounts.framework in Frameworks */,
 				48DBC8C615FBF46400CEE854 /* Twitter.framework in Frameworks */,
 				480D185415F9E3E90086C3EF /* MessageUI.framework in Frameworks */,
@@ -802,6 +812,8 @@
 			children = (
 				4821436C161DFB59009CCC34 /* A Minor Aeolian.mp4 */,
 				48214369161DFB50009CCC34 /* B Minor Locrian.mp4 */,
+				482A04CA161F179A00405AE6 /* C Major Ionian.mp4 */,
+				482A04CD161F181200405AE6 /* D Minor Dorian.mp4 */,
 				B225A76C1534D27F006FD46F /* greenlights.png */,
 				B225A75A1534D1D4006FD46F /* clouds.png */,
 				4849AD10160AE2E7002B5E40 /* Solfege Flats.mp4 */,
@@ -976,6 +988,15 @@
 			);
 			name = "UIImage+PDF";
 			path = "../UIImage+PDF";
+			sourceTree = "<group>";
+		};
+		487B3E22161F1A6000E29AEF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				487B3E23161F1A6000E29AEF /* Reachability.h */,
+				487B3E24161F1A6000E29AEF /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 		4882981315E005F600239B29 /* CircleVCs */ = {
@@ -1158,6 +1179,7 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
+				487B3E27161F1C1800E29AEF /* SystemConfiguration.framework */,
 				48022A5A161DE12C00F31287 /* YouTubeView */,
 				48022A08161DD8EC00F31287 /* WikiView */,
 				489A81AE161870770018AAC8 /* Default-Landscape@2x~ipad.png */,
@@ -1209,6 +1231,7 @@
 		B225A7311534CF59006FD46F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				487B3E22161F1A6000E29AEF /* Reachability */,
 				480944FF161317A800A600C3 /* Audio */,
 				481A431615F0FE8A006EDF46 /* ButtonArt */,
 				4895423C16159CE3003E95CE /* Gradients */,
@@ -1498,6 +1521,8 @@
 				4821435F161DF643009CCC34 /* Treble Clef.mp4 in Resources */,
 				4821436A161DFB50009CCC34 /* B Minor Locrian.mp4 in Resources */,
 				4821436D161DFB59009CCC34 /* A Minor Aeolian.mp4 in Resources */,
+				482A04CB161F179A00405AE6 /* C Major Ionian.mp4 in Resources */,
+				482A04CE161F181200405AE6 /* D Minor Dorian.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1568,6 +1593,7 @@
 				48022A1C161DD8EC00F31287 /* WikiViewController.m in Sources */,
 				48022A6A161DE12C00F31287 /* YouTubeView_JS.m in Sources */,
 				48022A6B161DE12C00F31287 /* YouTubeViewController.m in Sources */,
+				487B3E25161F1A6000E29AEF /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -45,6 +45,9 @@
 #import "GradientButton.h"
 #import "GradientNavBar.h"
 
+#import "Reachability.h"
+
+
 @interface DetailViewController () {
     MPMoviePlayerViewController *moviePlayer;
 }
@@ -589,6 +592,48 @@
     [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 }
 
+
+
+#pragma mark - configureTextField
+
+- (void) configureTextField: (UITextField*) textField imageView: (UIImageView*) imageView reachability: (Reachability*) curReach
+{
+    NetworkStatus netStatus = [curReach currentReachabilityStatus];
+    BOOL connectionRequired= [curReach connectionRequired];
+    NSString* statusString= @"";
+    switch (netStatus)
+    {
+        case NotReachable:
+        {
+            statusString = @"Access Not Available";
+            self.imageView.image = [UIImage imageNamed: @"stop-32.png"] ;
+            //Minor interface detail- connectionRequired may return yes, even when the host is unreachable.  We cover that up here...
+            connectionRequired= NO;
+            break;
+        }
+            
+        case ReachableViaWWAN:
+        {
+            statusString = @"Reachable WWAN";
+            self.imageView.image = [UIImage imageNamed: @"WWAN5.png"];
+            break;
+        }
+        case ReachableViaWiFi:
+        {
+            statusString= @"Reachable WiFi";
+            self.imageView.image = [UIImage imageNamed: @"Airport.png"];
+            break;
+        }
+    }
+    if(connectionRequired)
+    {
+        statusString= [NSString stringWithFormat: @"%@, Connection Required", statusString];
+    }
+    textField.text= statusString;
+}
+
+
+
 #pragma mark - configureView
 
 - (void)configureView
@@ -699,6 +744,8 @@ self.vLabel.backgroundColor =
         [emailButton useDoneButtonStyle];
         [emailButton useEmailStyle];
         [composeTweetButton useDoneButtonStyle];
+        
+        [self.view bringSubviewToFront:detailNavBar];
         // [imageView useWelcomeStyle];
     }   // build for iPhone
 }       /* configureView */
@@ -857,11 +904,120 @@ self.vLabel.backgroundColor =
     }
 }
 
+
+
+#pragma mark - updateInterfaceWithReachability
+
+- (void) updateInterfaceWithReachability: (Reachability*) curReach {
+
+
+    NSLog(@"updateInterfaceWithReachability = %@", curReach);
+    
+    if(curReach == hostReach){
+    
+    NetworkStatus netStatus = [curReach currentReachabilityStatus];
+    BOOL connectionRequired= [curReach connectionRequired];
+
+        if(connectionRequired)
+        {
+            self.musicTheory101Label.text =  @"network is available.\n  Internet traffic will be routed through it after a connection is established.";
+        }
+        else
+        {
+            self.musicTheory101Label.text =  @"Cellular data network is active.\n  Internet traffic will be routed through it.";
+        }
+        NSLog(@"netStatus = %i", netStatus);
+
+        
+        if (netStatus == 0) {
+            
+            NSLog(@"netStatus = 0");
+            self.youtubeButton.hidden = TRUE;
+            self.composeTweetButton.hidden = TRUE;
+            self.emailButton.hidden = TRUE;
+            self.wikiButton.hidden   = TRUE;
+        }
+        
+        if (netStatus > 0) {
+            
+            NSLog(@"netStatus = 1");
+            self.youtubeButton.hidden = FALSE;
+            self.composeTweetButton.hidden = FALSE;
+            self.emailButton.hidden = FALSE;
+            self.wikiButton.hidden   = FALSE;
+        }
+        
+        
+        if (netStatus > 1) {
+
+            NSLog(@"netStatus = 2");
+            self.youtubeButton.hidden = FALSE;
+            self.composeTweetButton.hidden = FALSE;
+            self.emailButton.hidden = FALSE;
+            self.wikiButton.hidden   = FALSE;
+ 
+        }
+        
+     
+    }
+    
+    if(curReach == internetReach)
+	{
+        
+        NSLog(@"internetReach");
+	}
+	if(curReach == wifiReach)
+	{
+        
+        NSLog(@"wifiReach");
+	
+    }
+
+    
+    
+   
+
+}
+
+#pragma mark - reachabilityChanged
+
+//Called by Reachability whenever status changes.
+- (void) reachabilityChanged: (NSNotification* )note
+{
+	Reachability* curReach = [note object];
+	NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
+	[self updateInterfaceWithReachability: curReach];
+}
+
 #pragma mark - viewDidLoad
+
+#pragma mark - hostReach Line 1002
 
 - (void)viewDidLoad
 {
+    
+    
     [super viewDidLoad];
+    
+    // Observe the kNetworkReachabilityChangedNotification. When that notification is posted, the
+    // method "reachabilityChanged" will be called.
+    [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
+    
+    //Change the host name here to change the server your monitoring
+    //self.detailDescriptionLabel.text = [NSString stringWithFormat: @"Remote Host: %@", @"www.apple.com"];
+	hostReach = [[Reachability reachabilityWithHostName: @"youtube.com"] retain];
+	[hostReach startNotifier];
+	[self updateInterfaceWithReachability: hostReach];
+	
+    internetReach = [[Reachability reachabilityForInternetConnection] retain];
+	[internetReach startNotifier];
+	[self updateInterfaceWithReachability: internetReach];
+    
+    wifiReach = [[Reachability reachabilityForLocalWiFi] retain];
+	[wifiReach startNotifier];
+	[self updateInterfaceWithReachability: wifiReach];
+
+    
     shouldZoom = FALSE;
     scrollView.scrollEnabled=FALSE;
     [self configureView];
