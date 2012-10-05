@@ -739,10 +739,20 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     if (indexPath.section == 0) {
-        //
+    
 
-        self.detailViewController.MovieToPlay =
+        if (indexPath.row == 1 | indexPath.row == 7 | indexPath.row == 8) {//bypass Treble Clef, Bass Clef and SubBass Clef
+        
+            self.detailViewController.MovieToPlay =
+            [videoList0 objectAtIndex:0];
+        
+        } else {
+        
+            self.detailViewController.MovieToPlay =
             [videoList0 objectAtIndex:indexPath.row];
+        
+        }
+        
         self.detailViewController.imageView.image =
             [imageList0 objectAtIndex:indexPath.row];
         self.detailViewController.interactiveToDisplay =
