@@ -149,69 +149,68 @@
     for (NSString *str in wikiToDiplayList5) {
         NSLog(@"wikiToDiplayList5 = %@", str);
     }
-    
+
 #pragma mark - YouTubeToDisplay
-    
+
     NSString *youtubeToDisplay0Path =
-    [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay0" ofType:
-     @"plist"];
+        [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay0" ofType:
+        @"plist"];
     youtubeToDiplayList0 =
-    [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay0Path];
-    
+        [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay0Path];
+
     for (NSString *str in youtubeToDiplayList0) {
         NSLog(@"wikiToDiplayList0 = %@", str);
     }
-    
+
     NSString *youtubeToDisplay1Path =
-    [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay1" ofType:
-     @"plist"];
+        [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay1" ofType:
+        @"plist"];
     youtubeToDiplayList1 =
-    [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay1Path];
-    
+        [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay1Path];
+
     for (NSString *str in youtubeToDiplayList1) {
         NSLog(@"youtubeToDiplayList1 = %@", str);
     }
-    
+
     NSString *youtubeToDisplay2Path =
-    [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay2" ofType:
-     @"plist"];
+        [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay2" ofType:
+        @"plist"];
     youtubeToDiplayList2 =
-    [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay2Path];
-    
+        [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay2Path];
+
     for (NSString *str in youtubeToDiplayList2) {
         NSLog(@"youtubeToDiplayList2 = %@", str);
     }
-    
+
     NSString *youtubeToDisplay3Path =
-    [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay3" ofType:
-     @"plist"];
+        [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay3" ofType:
+        @"plist"];
     youtubeToDiplayList3 =
-    [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay3Path];
-    
+        [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay3Path];
+
     for (NSString *str in youtubeToDiplayList3) {
         NSLog(@"youtubeToDiplayList3 = %@", str);
     }
-    
+
     NSString *youtubeToDisplay4Path =
-    [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay4" ofType:
-     @"plist"];
+        [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay4" ofType:
+        @"plist"];
     youtubeToDiplayList4 =
-    [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay4Path];
-    
+        [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay4Path];
+
     for (NSString *str in youtubeToDiplayList4) {
         NSLog(@"youtubeToDiplayList4 = %@", str);
     }
-    
+
     NSString *youtubeToDisplay5Path =
-    [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay5" ofType:
-     @"plist"];
+        [[NSBundle mainBundle] pathForResource:@"YouTubeToDisplay5" ofType:
+        @"plist"];
     youtubeToDiplayList5 =
-    [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay5Path];
-    
+        [[NSArray alloc] initWithContentsOfFile:youtubeToDisplay5Path];
+
     for (NSString *str in youtubeToDiplayList5) {
         NSLog(@"youtubeToDiplayList5 = %@", str);
     }
-
 
 #pragma mark - Video Lists
 
@@ -492,7 +491,7 @@
     [self.detailViewController.toolBar setHidden:TRUE];
 
     self.detailViewController.shouldZoom = NO;
-    
+
     // SHOW DETAILVIEW ON IPHONE DURING APP LAUNCH
     //  if (IS_IPAD) {} else {[self.navigationController pushViewController:self.detailViewController animated:YES]; }
 } /* viewDidLoad */
@@ -513,25 +512,19 @@
     _reloading = NO;
     [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
 
-
-    
     if (IS_IPAD) {
-    
         [[self.detailViewController scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-        [[self.detailViewController scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
-    
+        [[self.detailViewController scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
     } else {
-
         [[self.detailViewController scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-        [[self.detailViewController scrollView] scrollRectToVisible:self.view.frame  animated:TRUE] ;
+        [[self.detailViewController scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
         [self.navigationController pushViewController:self.detailViewController animated:YES];
     }
-    
-       NSURL* pURL = [ [NSURL alloc] initWithString:@"http://itunes.apple.com/us/artist/randy-mcmillan/id322256599" ];
- 
-     [ [ UIApplication sharedApplication ] openURL:pURL];
-    [pURL release];
 
+    NSURL *pURL = [[NSURL alloc] initWithString:@"http://itunes.apple.com/us/artist/randy-mcmillan/id322256599"];
+
+    [[UIApplication sharedApplication] openURL:pURL];
+    [pURL release];
 }
 
 #pragma mark -
@@ -735,15 +728,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(
     NSIndexPath *)indexPath
 {
-    
     self.detailViewController.shouldZoom = YES;
-    self.detailViewController.scrollView.scrollEnabled= YES;
+    self.detailViewController.scrollView.scrollEnabled = YES;
     [[self.detailViewController scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-    [[self.detailViewController scrollView] scrollRectToVisible:self.detailViewController.view.frame  animated:TRUE] ;
-    
-    self.detailViewController.imageView.center = self.detailViewController.view.center;
+    [[self.detailViewController scrollView] scrollRectToVisible:self.detailViewController.view.frame animated:TRUE];
+
+    self.detailViewController.imageView.center  = self.detailViewController.view.center;
     self.detailViewController.scrollView.center = self.detailViewController.view.center;
-    
+
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     if (indexPath.section == 0) {
@@ -758,7 +750,7 @@
         self.detailViewController.wikiToDisplay =
             [wikiToDiplayList0 objectAtIndex:indexPath.row];
         self.detailViewController.youtubeToDisplay =
-        [youtubeToDiplayList0 objectAtIndex:indexPath.row];
+            [youtubeToDiplayList0 objectAtIndex:indexPath.row];
 
         [self.detailViewController.imageView useGrandStaffStyle];
     }
@@ -775,7 +767,7 @@
         self.detailViewController.wikiToDisplay =
             [wikiToDiplayList1 objectAtIndex:indexPath.row];
         self.detailViewController.youtubeToDisplay =
-        [youtubeToDiplayList1 objectAtIndex:indexPath.row];
+            [youtubeToDiplayList1 objectAtIndex:indexPath.row];
         [self.detailViewController.imageView useCircleStyle];
     }
 
@@ -791,7 +783,7 @@
         self.detailViewController.wikiToDisplay =
             [wikiToDiplayList2 objectAtIndex:indexPath.row];
         self.detailViewController.youtubeToDisplay =
-        [youtubeToDiplayList2 objectAtIndex:indexPath.row];
+            [youtubeToDiplayList2 objectAtIndex:indexPath.row];
         [self.detailViewController.imageView useGrandStaffStyle];
     }
 
@@ -807,7 +799,7 @@
         self.detailViewController.wikiToDisplay =
             [wikiToDiplayList3 objectAtIndex:indexPath.row];
         self.detailViewController.youtubeToDisplay =
-        [youtubeToDiplayList3 objectAtIndex:indexPath.row];
+            [youtubeToDiplayList3 objectAtIndex:indexPath.row];
         [self.detailViewController.imageView useGrandStaffStyle];
     }
 
@@ -826,7 +818,7 @@
         self.detailViewController.interactiveToDisplay =
             [interactiveList4 objectAtIndex:indexPath.row];
         self.detailViewController.youtubeToDisplay =
-        [youtubeToDiplayList4 objectAtIndex:indexPath.row];
+            [youtubeToDiplayList4 objectAtIndex:indexPath.row];
         [self.detailViewController.imageView useGrandStaffStyle];
     }
 
@@ -845,7 +837,7 @@
         self.detailViewController.interactiveToDisplay =
             [interactiveList5 objectAtIndex:indexPath.row];
         self.detailViewController.youtubeToDisplay =
-        [youtubeToDiplayList5 objectAtIndex:indexPath.row];
+            [youtubeToDiplayList5 objectAtIndex:indexPath.row];
         [self.detailViewController.imageView useGrandStaffStyle];
     }
 
@@ -856,18 +848,18 @@
     self.detailViewController.toolBar.alpha = 1.0;
     self.detailViewController.title         =
         self.detailViewController.MovieToPlay;
-    
+
     self.detailViewController.detailNavItem.title = self.detailViewController.MovieToPlay;
 
     self.detailViewController.detailDescriptionLabel.text   = nil;
     self.detailViewController.musicTheory101Label.text      = nil;
-    self.detailViewController.vLabel.text       = nil;
-    
+    self.detailViewController.vLabel.text = nil;
+
     self.detailViewController.vLabel.hidden = TRUE;
     self.detailViewController.detailDescriptionLabel.hidden = TRUE;
-    self.detailViewController.musicTheory101Label.hidden = TRUE;
-    
-    self.detailViewController.toolBar.hidden    = FALSE;
+    self.detailViewController.musicTheory101Label.hidden    = TRUE;
+
+    self.detailViewController.toolBar.hidden = FALSE;
 
     if (IS_IPAD) {} else {
         [self.navigationController pushViewController:self.detailViewController animated:YES];

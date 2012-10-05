@@ -199,169 +199,167 @@
     //                    SMALLBOXHEIGHT// 1/6th width of screen
     //                  );//do
 
-     #if TARGET_IPHONE_SIMULATOR
+#if TARGET_IPHONE_SIMULATOR
+        // For your convience in configuring keyRects. Pink Transparencies only
+        // displayed in Simulator
 
-    // For your convience in configuring keyRects. Pink Transparencies only
-    // displayed in Simulator
+        label0 = [[UILabel alloc] initWithFrame:keyRects[0]];
+        label0.backgroundColor  = DO;
+        label0.text             = [NSString stringWithFormat:@"keyRect[0]"];
 
-    label0 = [[UILabel alloc] initWithFrame:keyRects[0]];
-    label0.backgroundColor  = DO;
-    label0.text             = [NSString stringWithFormat:@"keyRect[0]"];
+        label1 = [[UILabel alloc] initWithFrame:keyRects[1]];
+        label1.backgroundColor  = DI;
+        label1.text             = [NSString stringWithFormat:@"keyRect[1]"];
 
-    label1 = [[UILabel alloc] initWithFrame:keyRects[1]];
-    label1.backgroundColor  = DI;
-    label1.text             = [NSString stringWithFormat:@"keyRect[1]"];
+        label2 = [[UILabel alloc] initWithFrame:keyRects[2]];
+        label2.backgroundColor  = RE;
+        label2.text             = [NSString stringWithFormat:@"keyRect[2]"];
 
-    label2 = [[UILabel alloc] initWithFrame:keyRects[2]];
-    label2.backgroundColor  = RE;
-    label2.text             = [NSString stringWithFormat:@"keyRect[2]"];
+        label3 = [[UILabel alloc] initWithFrame:keyRects[3]];
+        label3.backgroundColor  = RI;
+        label3.text             = [NSString stringWithFormat:@"keyRect[3]"];
 
-    label3 = [[UILabel alloc] initWithFrame:keyRects[3]];
-    label3.backgroundColor  = RI;
-    label3.text             = [NSString stringWithFormat:@"keyRect[3]"];
+        label4 = [[UILabel alloc] initWithFrame:keyRects[4]];
+        label4.backgroundColor = MI;    // [UIColor colorWithRed:0.024
+                                        // green:0.000 blue:1.000 alpha:1.000];
+        label4.text = [NSString stringWithFormat:@"keyRect[4]"];
 
-    label4 = [[UILabel alloc] initWithFrame:keyRects[4]];
-    label4.backgroundColor = MI;    // [UIColor colorWithRed:0.024
-                                    // green:0.000 blue:1.000 alpha:1.000];
-    label4.text = [NSString stringWithFormat:@"keyRect[4]"];
+        label5 = [[UILabel alloc] initWithFrame:keyRects[5]];
+        label5.backgroundColor = FA;    // [UIColor colorWithRed:0.255
+                                        // green:0.000 blue:0.663 alpha:1.000];
+        label5.text = [NSString stringWithFormat:@"keyRect[5]"];
 
-    label5 = [[UILabel alloc] initWithFrame:keyRects[5]];
-    label5.backgroundColor = FA;    // [UIColor colorWithRed:0.255
-                                    // green:0.000 blue:0.663 alpha:1.000];
-    label5.text = [NSString stringWithFormat:@"keyRect[5]"];
+        label6 = [[UILabel alloc] initWithFrame:keyRects[6]];
+        label6.backgroundColor = FI;    // [UIColor colorWithRed:0.357
+                                        // green:0.000 blue:0.663 alpha:1.000];
+        label6.text = [NSString stringWithFormat:@"keyRect[6]"];
 
-    label6 = [[UILabel alloc] initWithFrame:keyRects[6]];
-    label6.backgroundColor = FI;    // [UIColor colorWithRed:0.357
-                                    // green:0.000 blue:0.663 alpha:1.000];
-    label6.text = [NSString stringWithFormat:@"keyRect[6]"];
+        label7 = [[UILabel alloc] initWithFrame:keyRects[7]];
+        label7.backgroundColor = SOL;   // [UIColor colorWithRed:0.541
+                                        // green:0.000 blue:0.796 alpha:1.000];
+        label7.text = [NSString stringWithFormat:@"keyRect[7]"];
 
-    label7 = [[UILabel alloc] initWithFrame:keyRects[7]];
-    label7.backgroundColor = SOL;   // [UIColor colorWithRed:0.541
-                                    // green:0.000 blue:0.796 alpha:1.000];
-    label7.text = [NSString stringWithFormat:@"keyRect[7]"];
+        label8 = [[UILabel alloc] initWithFrame:keyRects[8]];
+        label8.backgroundColor = SI;    // [UIColor colorWithRed:0.702
+                                        // green:0.000 blue:0.486 alpha:1.000];
+        label8.text = [NSString stringWithFormat:@"keyRect[8]"];
 
-    label8 = [[UILabel alloc] initWithFrame:keyRects[8]];
-    label8.backgroundColor = SI;    // [UIColor colorWithRed:0.702
-                                    // green:0.000 blue:0.486 alpha:1.000];
-    label8.text = [NSString stringWithFormat:@"keyRect[8]"];
+        label9 = [[UILabel alloc] initWithFrame:keyRects[9]];
+        label9.backgroundColor = LA;    // [UIColor colorWithRed:0.788
+                                        // green:0.043 blue:0.102 alpha:1.000];
+        label9.text = [NSString stringWithFormat:@"keyRect[9]"];
 
-    label9 = [[UILabel alloc] initWithFrame:keyRects[9]];
-    label9.backgroundColor = LA;    // [UIColor colorWithRed:0.788
-                                    // green:0.043 blue:0.102 alpha:1.000];
-    label9.text = [NSString stringWithFormat:@"keyRect[9]"];
+        label10 = [[UILabel alloc] initWithFrame:keyRects[10]];
+        label10.backgroundColor = LI;   // [UIColor colorWithRed:0.788
+                                        // green:0.043 blue:0.102 alpha:1.000];
+        label10.text = [NSString stringWithFormat:@"keyRect[10]"];
 
-    label10 = [[UILabel alloc] initWithFrame:keyRects[10]];
-    label10.backgroundColor = LI;   // [UIColor colorWithRed:0.788
-                                    // green:0.043 blue:0.102 alpha:1.000];
-    label10.text = [NSString stringWithFormat:@"keyRect[10]"];
+        label11 = [[UILabel alloc] initWithFrame:keyRects[11]];
+        label11.backgroundColor = TI;   // [UIColor colorWithRed:0.992
+                                        // green:0.518 blue:0.129 alpha:1.000];
+        label11.text = [NSString stringWithFormat:@"keyRect[11]"];
 
-    label11 = [[UILabel alloc] initWithFrame:keyRects[11]];
-    label11.backgroundColor = TI;   // [UIColor colorWithRed:0.992
-                                    // green:0.518 blue:0.129 alpha:1.000];
-    label11.text = [NSString stringWithFormat:@"keyRect[11]"];
+        label12 = [[UILabel alloc] initWithFrame:keyRects[12]];
+        label12.backgroundColor = DO;   // [UIColor colorWithRed:1.000
+                                        // green:0.820 blue:0.839 alpha:1.000];
+        label12.text = [NSString stringWithFormat:@"keyRect[12]"];
 
-    label12 = [[UILabel alloc] initWithFrame:keyRects[12]];
-    label12.backgroundColor = DO;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:1.000];
-    label12.text = [NSString stringWithFormat:@"keyRect[12]"];
+        // minors
+        label13 = [[UILabel alloc] initWithFrame:keyRects[13]];
+        label13.backgroundColor = DO;   // [UIColor colorWithRed:1.000
+                                        // green:1.000 blue:0.043 alpha:1.000];
+        label13.text = [NSString stringWithFormat:@"keyRect[13]"];
 
-    // minors
-    label13 = [[UILabel alloc] initWithFrame:keyRects[13]];
-    label13.backgroundColor = DO;   // [UIColor colorWithRed:1.000
-                                    // green:1.000 blue:0.043 alpha:1.000];
-    label13.text = [NSString stringWithFormat:@"keyRect[13]"];
+        label14 = [[UILabel alloc] initWithFrame:keyRects[14]];
+        label14.backgroundColor = DI;   // [UIColor colorWithRed:1.000
+                                        // green:0.820 blue:0.839 alpha:0.500];
+        label14.text = [NSString stringWithFormat:@"keyRect[14]"];
 
-    label14 = [[UILabel alloc] initWithFrame:keyRects[14]];
-    label14.backgroundColor = DI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label14.text = [NSString stringWithFormat:@"keyRect[14]"];
+        label15 = [[UILabel alloc] initWithFrame:keyRects[15]];
+        label15.backgroundColor = RE;   // [UIColor colorWithRed:1.000
+                                        // green:0.820 blue:0.839 alpha:0.500];
+        label15.text = [NSString stringWithFormat:@"keyRect[15]"];
 
-    label15 = [[UILabel alloc] initWithFrame:keyRects[15]];
-    label15.backgroundColor = RE;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label15.text = [NSString stringWithFormat:@"keyRect[15]"];
+        label16 = [[UILabel alloc] initWithFrame:keyRects[16]];
+        label16.backgroundColor = RI;   // [UIColor colorWithRed:1.000
+                                        // green:0.820 blue:0.839 alpha:0.500];
+        label16.text = [NSString stringWithFormat:@"keyRect[16]"];
 
-    label16 = [[UILabel alloc] initWithFrame:keyRects[16]];
-    label16.backgroundColor = RI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label16.text = [NSString stringWithFormat:@"keyRect[16]"];
+        label17 = [[UILabel alloc] initWithFrame:keyRects[17]];
+        label17.backgroundColor = MI;   // [UIColor colorWithRed:1.000
+                                        // green:0.820 blue:0.839 alpha:0.500];
+        label17.text = [NSString stringWithFormat:@"keyRect[17]"];
 
-    label17 = [[UILabel alloc] initWithFrame:keyRects[17]];
-    label17.backgroundColor = MI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label17.text = [NSString stringWithFormat:@"keyRect[17]"];
+        label18 = [[UILabel alloc] initWithFrame:keyRects[18]];
+        label18.backgroundColor = FA;   // [UIColor colorWithRed:1.000
+                                        // green:0.820 blue:0.839 alpha:0.500];
+        label18.text = [NSString stringWithFormat:@"keyRect[18]"];
 
-    label18 = [[UILabel alloc] initWithFrame:keyRects[18]];
-    label18.backgroundColor = FA;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label18.text = [NSString stringWithFormat:@"keyRect[18]"];
+        label19 = [[UILabel alloc] initWithFrame:keyRects[19]];
+        label19.backgroundColor = FI;   // [UIColor colorWithRed:1.000
+                                        // green:0.820 blue:0.839 alpha:0.500];
+        label19.text = [NSString stringWithFormat:@"keyRect[19]"];
 
-    label19 = [[UILabel alloc] initWithFrame:keyRects[19]];
-    label19.backgroundColor = FI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label19.text = [NSString stringWithFormat:@"keyRect[19]"];
+        label20 = [[UILabel alloc] initWithFrame:keyRects[20]];
+        label20.backgroundColor = SOL;  // [UIColor colorWithRed:1.000
+                                        // green:0.820 blue:0.839
+                                        // alpha:0.500];
+        label20.text = [NSString stringWithFormat:@"keyRect[20]"];
 
-    label20 = [[UILabel alloc] initWithFrame:keyRects[20]];
-    label20.backgroundColor = SOL;  // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839
-                                    // alpha:0.500];
-    label20.text = [NSString stringWithFormat:@"keyRect[20]"];
+        label21 = [[UILabel alloc] initWithFrame:keyRects[21]];
+        label21.backgroundColor = SI;   // [UIColor colorWithRed:1.000
+                                        // green:0.820 blue:0.839 alpha:0.500];
+        label21.text = [NSString stringWithFormat:@"keyRect[21]"];
 
-    label21 = [[UILabel alloc] initWithFrame:keyRects[21]];
-    label21.backgroundColor = SI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label21.text = [NSString stringWithFormat:@"keyRect[21]"];
+        label22 = [[UILabel alloc] initWithFrame:keyRects[22]];
+        label22.backgroundColor = LA;   // [UIColor colorWithRed:1.000
+                                        // green:0.820 blue:0.839 alpha:0.500];
+        label22.text = [NSString stringWithFormat:@"keyRect[22]"];
 
-    label22 = [[UILabel alloc] initWithFrame:keyRects[22]];
-    label22.backgroundColor = LA;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label22.text = [NSString stringWithFormat:@"keyRect[22]"];
+        label23 = [[UILabel alloc] initWithFrame:keyRects[23]];
+        label23.backgroundColor = LI;   // [UIColor colorWithRed:1.000
+                                        // green:0.820 blue:0.839 alpha:0.500];
+        label23.text = [NSString stringWithFormat:@"keyRect[23]"];
 
-    label23 = [[UILabel alloc] initWithFrame:keyRects[23]];
-    label23.backgroundColor = LI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label23.text = [NSString stringWithFormat:@"keyRect[23]"];
+        label24 = [[UILabel alloc] initWithFrame:keyRects[24]];
+        label24.backgroundColor = TI;   // [UIColor colorWithRed:1.000
+                                        // green:0.820 blue:0.839 alpha:0.500];
+        label24.text = [NSString stringWithFormat:@"keyRect[24]"];
 
-    label24 = [[UILabel alloc] initWithFrame:keyRects[24]];
-    label24.backgroundColor = TI;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label24.text = [NSString stringWithFormat:@"keyRect[24]"];
+        label25 = [[UILabel alloc] initWithFrame:keyRects[25]];
+        label25.backgroundColor = DO;   // [UIColor colorWithRed:1.000
+                                        // green:0.820 blue:0.839 alpha:0.500];
+        label25.text = [NSString stringWithFormat:@"keyRect[25]"];
 
-    label25 = [[UILabel alloc] initWithFrame:keyRects[25]];
-    label25.backgroundColor = DO;   // [UIColor colorWithRed:1.000
-                                    // green:0.820 blue:0.839 alpha:0.500];
-    label25.text = [NSString stringWithFormat:@"keyRect[25]"];
+        [self.view addSubview:label0];
+        [self.view addSubview:label1];
+        [self.view addSubview:label2];
+        [self.view addSubview:label3];
+        [self.view addSubview:label4];
+        [self.view addSubview:label5];
+        [self.view addSubview:label6];
+        [self.view addSubview:label7];
+        [self.view addSubview:label8];
+        [self.view addSubview:label9];
+        [self.view addSubview:label10];
+        [self.view addSubview:label11];
+        [self.view addSubview:label12];
 
-    [self.view addSubview:label0];
-    [self.view addSubview:label1];
-    [self.view addSubview:label2];
-    [self.view addSubview:label3];
-    [self.view addSubview:label4];
-    [self.view addSubview:label5];
-    [self.view addSubview:label6];
-    [self.view addSubview:label7];
-    [self.view addSubview:label8];
-    [self.view addSubview:label9];
-    [self.view addSubview:label10];
-    [self.view addSubview:label11];
-    [self.view addSubview:label12];
-
-    // minors
-    [self.view addSubview:label13];
-    [self.view addSubview:label14];
-    [self.view addSubview:label15];
-    [self.view addSubview:label16];
-    [self.view addSubview:label17];
-    [self.view addSubview:label18];
-    [self.view addSubview:label19];
-    [self.view addSubview:label20];
-    [self.view addSubview:label21];
-    [self.view addSubview:label22];
-    [self.view addSubview:label23];
-    [self.view addSubview:label24];
-    [self.view addSubview:label25];
-
-     #endif
+        // minors
+        [self.view addSubview:label13];
+        [self.view addSubview:label14];
+        [self.view addSubview:label15];
+        [self.view addSubview:label16];
+        [self.view addSubview:label17];
+        [self.view addSubview:label18];
+        [self.view addSubview:label19];
+        [self.view addSubview:label20];
+        [self.view addSubview:label21];
+        [self.view addSubview:label22];
+        [self.view addSubview:label23];
+        [self.view addSubview:label24];
+        [self.view addSubview:label25];
+#endif /* if TARGET_IPHONE_SIMULATOR */
 }   /* drawRects */
 
 - (void)destroyRects

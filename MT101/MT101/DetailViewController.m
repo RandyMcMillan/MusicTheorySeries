@@ -47,7 +47,6 @@
 
 #import "Reachability.h"
 
-
 @interface DetailViewController () {
     MPMoviePlayerViewController *moviePlayer;
 }
@@ -59,7 +58,7 @@
 
 @implementation DetailViewController
 @synthesize scrollView;
-@synthesize myZoomableView,shouldZoom;
+@synthesize myZoomableView, shouldZoom;
 @synthesize videoButton;
 @synthesize wikiButton;
 @synthesize youtubeButton;
@@ -363,24 +362,24 @@
     // wikiVC.modalPresentationStyle = UIModalPresentationPageSheet;
     wikiVC.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentModalViewController:wikiVC animated:YES];
-  [wikiVC.webView setBackgroundColor:[UIColor clearColor]];
+    [wikiVC.webView setBackgroundColor:[UIColor clearColor]];
     [self hideGradientBackground:wikiVC.webView];
 
     // Create a URL object.
     NSURL *url = [NSURL URLWithString:wikiToDisplay];
     NSLog(@"%@", url);
 
-    
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL URLWithString:wikiToDisplay] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval: 0.0];
-    
-    //Develop this more
-    //This is incomplete
-    
-    NSURLConnection *connection=[[NSURLConnection alloc] initWithRequest:requestObj delegate:nil];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL URLWithString:wikiToDisplay] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:0.0];
+
+    // Develop this more
+    // This is incomplete
+
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:requestObj delegate:nil];
+
     if (connection != nil) {
-        NSLog(@"connection = %@",connection);
-    } else {NSLog(@"Please connect to internet!");}
-  
+        NSLog(@"connection = %@", connection);
+    } else {NSLog(@"Please connect to internet!"); }
+
     // URL Requst Object
     //   NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
 
@@ -395,40 +394,39 @@
 - (IBAction)displayYouTube:(id)sender
 {
     NSLog(@"displayYouTube = %@", youtubeToDisplay);
-    
+
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
     [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
-    
+
     YouTubeViewController *youtubeVC = [[YouTubeViewController alloc] init];
-     youtubeVC.modalPresentationStyle = UIModalPresentationPageSheet;
-    //youtubeVC.modalPresentationStyle = UIModalPresentationFullScreen;
+    youtubeVC.modalPresentationStyle = UIModalPresentationPageSheet;
+    // youtubeVC.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentModalViewController:youtubeVC animated:YES];
     [youtubeVC.webView setBackgroundColor:[UIColor clearColor]];
     [self hideGradientBackground:youtubeVC.webView];
-    
+
     // Create a URL object.
     NSURL *url = [NSURL URLWithString:youtubeToDisplay];
     NSLog(@"%@", url);
-    
-    
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL URLWithString:youtubeToDisplay] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval: 6.0];
-    
-    //Develop this more
-    //This is incomplete
-    
-    NSURLConnection *connection=[[NSURLConnection alloc] initWithRequest:requestObj delegate:nil];
+
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL URLWithString:youtubeToDisplay] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:6.0];
+
+    // Develop this more
+    // This is incomplete
+
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:requestObj delegate:nil];
+
     if (connection != nil) {
-        NSLog(@"connection = %@",connection);
-    } else {NSLog(@"Please connect to internet!");}
-    
+        NSLog(@"connection = %@", connection);
+    } else {NSLog(@"Please connect to internet!"); }
+
     // URL Requst Object
     //   NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    
+
     // Load the request in the UIWebView.
     [youtubeVC.webView loadRequest:requestObj];
     self.youtubeButton.highlighted = FALSE;
 } /* displayYouTube */
-
 
 #pragma mark - setDetailItem
 
@@ -467,71 +465,55 @@
         float newScale = [scrollView zoomScale] * ZOOM_STEP;
         NSLog(@"%f", newScale);
 
-            if (newScale <= 2.250000) {
+        if (newScale <= 2.250000) {
+            CGRect zoomRect = [self zoomRectForScale:newScale withCenter:[gestureRecognizer locationInView:gestureRecognizer.view]];
+            [scrollView zoomToRect:zoomRect animated:YES];
 
-                CGRect zoomRect = [self zoomRectForScale:newScale withCenter:[gestureRecognizer locationInView:gestureRecognizer.view]];
-                [scrollView zoomToRect:zoomRect animated:YES];
-                
-                [UIView animateWithDuration:1.0
-                                      delay:0.3
-                                    options:UIViewAnimationCurveEaseInOut
-                                 animations:^ {
-                                     
-                                     toolBar.alpha = 0.9;
-                                     
-                                 }
-                                 completion:^(BOOL finished) {}
-                 ];
+            [UIView animateWithDuration :1.0
+                    delay               :0.3
+                    options             :UIViewAnimationCurveEaseInOut
+                    animations          :^{
+                    toolBar.alpha = 0.9;
+                }
+                    completion          :^(BOOL finished) {}
+            ];
+        } else {
+            [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+            [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
+            self.scrollView.scrollEnabled = FALSE;
 
-
-            } else {
-        
-                [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-                [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
-                self.scrollView.scrollEnabled = FALSE;
-                
-                [UIView animateWithDuration:1.0
-                                      delay:0.3
-                                    options:UIViewAnimationCurveEaseInOut
-                                 animations:^ {
-                                     
-                                     toolBar.alpha = 1.0;
-                                     
-                                 }
-                                 completion:^(BOOL finished) {}
-                 ];
-
-            }
-    
+            [UIView animateWithDuration :1.0
+                    delay               :0.3
+                    options             :UIViewAnimationCurveEaseInOut
+                    animations          :^{
+                    toolBar.alpha = 1.0;
+                }
+                    completion          :^(BOOL finished) {}
+            ];
+        }
     } else {
-        if ([scrollView zoomScale] > 0.0) {//allow user to zoom out if manually zoomed in welcome screen
-                [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
-                [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
-            
-            [UIView animateWithDuration:1.0
-                                  delay:0.3
-                                options:UIViewAnimationCurveEaseInOut
-                             animations:^ {
-                                 
-                                 toolBar.alpha = 1.0;
-                                 
-                             }
-                             completion:^(BOOL finished) {}
-             ];
+        if ([scrollView zoomScale] > 0.0) { // allow user to zoom out if manually zoomed in welcome screen
+            [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
+            [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 
-            }
-        NSLog(self.shouldZoom ? @"Yes" : @"No");
-    
+            [UIView animateWithDuration :1.0
+                    delay               :0.3
+                    options             :UIViewAnimationCurveEaseInOut
+                    animations          :^{
+                    toolBar.alpha = 1.0;
+                }
+                    completion          :^(BOOL finished) {}
+            ];
+        }
+
+        NSLog (self.shouldZoom ? @"Yes" : @"No");
     }
-
 }
 
 #pragma mark - handleDoubleTap
 
 - (void)handleDoubleTap:(UIGestureRecognizer *)gestureRecognizer
 {
-
-    
     // single tap does nothing for now
     NSLog(@"handleDoubleTap");
 
@@ -543,10 +525,6 @@
         [self   performSelector :@selector(handleSingleTap:) withObject:nil
                 afterDelay      :0.0];
     } else {} // do nothing
-
-    
- 
-
 }
 
 #pragma mark Utility methods
@@ -574,83 +552,77 @@
 
 - (void)handleTwoFingerTap:(UIGestureRecognizer *)gestureRecognizer
 {
-    
-    [UIView animateWithDuration:1.0
-                          delay:0.3
-                        options:UIViewAnimationCurveEaseInOut
-                     animations:^ {
-                         
-                         toolBar.alpha = 1.0;
-                         
-                     }
-                     completion:^(BOOL finished) {}
-     ];
+    [UIView animateWithDuration :1.0
+            delay               :0.3
+            options             :UIViewAnimationCurveEaseInOut
+            animations          :^{
+            toolBar.alpha = 1.0;
+        }
+            completion          :^(BOOL finished) {}
+    ];
 
     // single tap does nothing for now
-    NSLog(@"handleTwoFingerTap");
+    NSLog (@"handleTwoFingerTap");
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
     [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 }
 
-
-
 #pragma mark - configureTextField
 
-- (void) configureTextField: (UITextField*) textField imageView: (UIImageView*) imageView reachability: (Reachability*) curReach
+- (void)configureTextField:(UITextField *)textField imageView:(UIImageView *)imageView reachability:(Reachability *)curReach
 {
-    NetworkStatus netStatus = [curReach currentReachabilityStatus];
-    BOOL connectionRequired= [curReach connectionRequired];
-    NSString* statusString= @"";
-    switch (netStatus)
-    {
+    NetworkStatus   netStatus           = [curReach currentReachabilityStatus];
+    BOOL            connectionRequired  = [curReach connectionRequired];
+    NSString        *statusString       = @"";
+
+    switch (netStatus) {
         case NotReachable:
-        {
-            statusString = @"Access Not Available";
-            self.imageView.image = [UIImage imageNamed: @"stop-32.png"] ;
-            //Minor interface detail- connectionRequired may return yes, even when the host is unreachable.  We cover that up here...
-            connectionRequired= NO;
-            break;
-        }
-            
+            {
+                statusString            = @"Access Not Available";
+                self.imageView.image    = [UIImage imageNamed:@"stop-32.png"];
+                // Minor interface detail- connectionRequired may return yes, even when the host is unreachable.  We cover that up here...
+                connectionRequired = NO;
+                break;
+            }
+
         case ReachableViaWWAN:
-        {
-            statusString = @"Reachable WWAN";
-            self.imageView.image = [UIImage imageNamed: @"WWAN5.png"];
-            break;
-        }
+            {
+                statusString            = @"Reachable WWAN";
+                self.imageView.image    = [UIImage imageNamed:@"WWAN5.png"];
+                break;
+            }
+
         case ReachableViaWiFi:
-        {
-            statusString= @"Reachable WiFi";
-            self.imageView.image = [UIImage imageNamed: @"Airport.png"];
-            break;
-        }
+            {
+                statusString            = @"Reachable WiFi";
+                self.imageView.image    = [UIImage imageNamed:@"Airport.png"];
+                break;
+            }
     }
-    if(connectionRequired)
-    {
-        statusString= [NSString stringWithFormat: @"%@, Connection Required", statusString];
+
+    if (connectionRequired) {
+        statusString = [NSString stringWithFormat:@"%@, Connection Required", statusString];
     }
-    textField.text= statusString;
+
+    textField.text = statusString;
 }
-
-
 
 #pragma mark - configureView
 
 - (void)configureView
 {
-  
     [detailNavBar useTBStyle];
     [composeTweetButton useDoneButtonStyle];
     [emailButton useDoneButtonStyle];
     [self.navigationController.navigationBar addSubview:detailNavBar];
     [self.detailNavBar setFrame:self.navigationController.navigationBar.frame];
     self.navigationController.navigationBar.hidden = TRUE;
-    ///self.detailNavItem.title = self.MovieToPlay;
+    // /self.detailNavItem.title = self.MovieToPlay;
     [self.navigationController.navigationBar bringSubviewToFront:detailNavBar];
-    
+
     [interActiveButton useDoneButtonStyle];
-    ///self.detailNavItem.title = self.MovieToPlay;
-    //[self.navigationController.navigationBar bringSubviewToFront:detailNavBar];
+    // /self.detailNavItem.title = self.MovieToPlay;
+    // [self.navigationController.navigationBar bringSubviewToFront:detailNavBar];
     // add gesture recognizers to the image view
     UITapGestureRecognizer  *singleTap      = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
     UITapGestureRecognizer  *doubleTap      = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];
@@ -679,18 +651,17 @@
     }
 
 #if TARGET_IPHONE_SIMULATOR
-self.musicTheory101Label.backgroundColor =
-    [UIColor colorWithRed:0.988 green:0.000 blue:0.027 alpha:0.500];
+        self.musicTheory101Label.backgroundColor =
+        [UIColor colorWithRed:0.988 green:0.000 blue:0.027 alpha:0.500];
 
-self.detailDescriptionLabel.backgroundColor =
-    [UIColor colorWithRed:0.051 green:0.000 blue:0.988 alpha:0.500];
+        self.detailDescriptionLabel.backgroundColor =
+        [UIColor colorWithRed:0.051 green:0.000 blue:0.988 alpha:0.500];
 
-self.vLabel.backgroundColor =
-    [UIColor colorWithRed:0.988 green:0.878 blue:0.000 alpha:0.500];
+        self.vLabel.backgroundColor =
+        [UIColor colorWithRed:0.988 green:0.878 blue:0.000 alpha:0.500];
 #endif
 
-    if (self.detailItem) {
-    }
+    if (self.detailItem) {}
 
     [imageView useWelcomeStyle];
 
@@ -710,7 +681,7 @@ self.vLabel.backgroundColor =
 
         self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
         self.detailDescriptionLabel.frame
-            = CGRectMake(vLabel.center.x-4.3, vLabel.center.y-9.1, 30, 20);
+            = CGRectMake(vLabel.center.x - 4.3, vLabel.center.y - 9.1, 30, 20);
         [self.detailDescriptionLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:11.0]];
         self.detailDescriptionLabel.hidden = FALSE;
 
@@ -744,7 +715,7 @@ self.vLabel.backgroundColor =
         [emailButton useDoneButtonStyle];
         [emailButton useEmailStyle];
         [composeTweetButton useDoneButtonStyle];
-        
+
         [self.view bringSubviewToFront:detailNavBar];
         // [imageView useWelcomeStyle];
     }   // build for iPhone
@@ -754,8 +725,7 @@ self.vLabel.backgroundColor =
 
 - (IBAction)openMail:(id)sender
 {
-    
-    toolBar.alpha  = 1.0;
+    toolBar.alpha = 1.0;
 
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
     [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
@@ -856,9 +826,8 @@ self.vLabel.backgroundColor =
 
 - (IBAction)composeTweet:(id)sender
 {
-    
-    toolBar.alpha  = 1.0;
-    
+    toolBar.alpha = 1.0;
+
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
     [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 
@@ -904,94 +873,71 @@ self.vLabel.backgroundColor =
     }
 }
 
-
-
 #pragma mark - updateInterfaceWithReachability
 
-- (void) updateInterfaceWithReachability: (Reachability*) curReach {
-
-
+- (void)updateInterfaceWithReachability:(Reachability *)curReach
+{
     NSLog(@"updateInterfaceWithReachability = %@", curReach);
-    
-    if(curReach == hostReach){
-    
-    NetworkStatus netStatus = [curReach currentReachabilityStatus];
-    BOOL connectionRequired = [curReach connectionRequired];
 
-        if(connectionRequired)
-        {
+    if (curReach == hostReach) {
+        NetworkStatus   netStatus           = [curReach currentReachabilityStatus];
+        BOOL            connectionRequired  = [curReach connectionRequired];
+
+        if (connectionRequired) {
             NSLog(@"connectionRequired = %s", connectionRequired ? "true" : "false");
 
-        //self.musicTheory101Label.text =  @"network is available.\n  Internet traffic will be routed through it after a connection is established.";
-        }
-        else
-        {
-            
+            // self.musicTheory101Label.text =  @"network is available.\n  Internet traffic will be routed through it after a connection is established.";
+        } else {
             NSLog(@"connectionRequired = %s", connectionRequired ? "true" : "false");
 
-        //self.musicTheory101Label.text =  @"Cellular data network is active.\n  Internet traffic will be routed through it.";
+            // self.musicTheory101Label.text =  @"Cellular data network is active.\n  Internet traffic will be routed through it.";
         }
+
         NSLog(@"netStatus = %i", netStatus);
 
-        
         if (netStatus == 0) {
-            
             NSLog(@"netStatus = 0");
-            self.youtubeButton.hidden = TRUE;
-            self.composeTweetButton.hidden = TRUE;
-            self.emailButton.hidden = TRUE;
-            self.wikiButton.hidden   = TRUE;
+            self.youtubeButton.hidden       = TRUE;
+            self.composeTweetButton.hidden  = TRUE;
+            self.emailButton.hidden         = TRUE;
+            self.wikiButton.hidden          = TRUE;
         }
-        
+
         if (netStatus > 0) {
-            
             NSLog(@"netStatus = 1");
-            self.youtubeButton.hidden = FALSE;
-            self.composeTweetButton.hidden = FALSE;
-            self.emailButton.hidden = FALSE;
-            self.wikiButton.hidden   = FALSE;
+            self.youtubeButton.hidden       = FALSE;
+            self.composeTweetButton.hidden  = FALSE;
+            self.emailButton.hidden         = FALSE;
+            self.wikiButton.hidden          = FALSE;
         }
-        
-        
+
         if (netStatus > 1) {
-
             NSLog(@"netStatus = 2");
-            self.youtubeButton.hidden = FALSE;
-            self.composeTweetButton.hidden = FALSE;
-            self.emailButton.hidden = FALSE;
-            self.wikiButton.hidden   = FALSE;
- 
+            self.youtubeButton.hidden       = FALSE;
+            self.composeTweetButton.hidden  = FALSE;
+            self.emailButton.hidden         = FALSE;
+            self.wikiButton.hidden          = FALSE;
         }
-        
-     
     }
-    
-    if(curReach == internetReach)
-	{
-        
+
+    if (curReach == internetReach) {
         NSLog(@"internetReach");
-	}
-	if(curReach == wifiReach)
-	{
-        
-        NSLog(@"wifiReach");
-	
     }
 
-    
-    
-   
-
+    if (curReach == wifiReach) {
+        NSLog(@"wifiReach");
+    }
 }
 
 #pragma mark - reachabilityChanged
 
-//Called by Reachability whenever status changes.
-- (void) reachabilityChanged: (NSNotification* )note
+// Called by Reachability whenever status changes.
+- (void)reachabilityChanged:(NSNotification *)note
 {
-	Reachability* curReach = [note object];
-	NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
-	[self updateInterfaceWithReachability: curReach];
+    Reachability *curReach = [note object];
+
+    NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
+    [self updateInterfaceWithReachability:curReach];
 }
 
 #pragma mark - viewDidLoad
@@ -1000,31 +946,28 @@ self.vLabel.backgroundColor =
 
 - (void)viewDidLoad
 {
-    
-    
     [super viewDidLoad];
-    
+
     // Observe the kNetworkReachabilityChangedNotification. When that notification is posted, the
     // method "reachabilityChanged" will be called.
-    [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
-    
-    //Change the host name here to change the server your monitoring
-    //self.detailDescriptionLabel.text = [NSString stringWithFormat: @"Remote Host: %@", @"www.apple.com"];
-	hostReach = [[Reachability reachabilityWithHostName: @"youtube.com"] retain];
-	[hostReach startNotifier];
-	[self updateInterfaceWithReachability: hostReach];
-	
-    internetReach = [[Reachability reachabilityForInternetConnection] retain];
-	[internetReach startNotifier];
-	[self updateInterfaceWithReachability: internetReach];
-    
-    wifiReach = [[Reachability reachabilityForLocalWiFi] retain];
-	[wifiReach startNotifier];
-	[self updateInterfaceWithReachability: wifiReach];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
 
-    
+    // Change the host name here to change the server your monitoring
+    // self.detailDescriptionLabel.text = [NSString stringWithFormat: @"Remote Host: %@", @"www.apple.com"];
+    hostReach = [[Reachability reachabilityWithHostName:@"youtube.com"] retain];
+    [hostReach startNotifier];
+    [self updateInterfaceWithReachability:hostReach];
+
+    internetReach = [[Reachability reachabilityForInternetConnection] retain];
+    [internetReach startNotifier];
+    [self updateInterfaceWithReachability:internetReach];
+
+    wifiReach = [[Reachability reachabilityForLocalWiFi] retain];
+    [wifiReach startNotifier];
+    [self updateInterfaceWithReachability:wifiReach];
+
     shouldZoom = FALSE;
-    scrollView.scrollEnabled=FALSE;
+    scrollView.scrollEnabled = FALSE;
     [self configureView];
 } /* viewDidLoad */
 
@@ -1083,10 +1026,8 @@ self.vLabel.backgroundColor =
 - (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
    currentInterfaceOrientation
 {
-    
-    
     [self.imageView setNeedsLayout];
-    
+
     NSLog(@"did auto rotate");
     return YES;
 }

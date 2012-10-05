@@ -50,7 +50,6 @@
 
 - (void)useYouTubeUIBar;
 
-
 - (void)useAlertStyle;
 - (void)useRedDeleteStyle;
 - (void)useWhiteStyle;

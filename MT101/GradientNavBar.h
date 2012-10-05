@@ -11,20 +11,20 @@
     // when the button is in UIControlStateNormal
     NSArray *normalGradientColors;      // Colors
     NSArray *normalGradientLocations;   // Relative locations
-    
+
     // These two arrays define the gradient that will be used
     // when the button is in UIControlStateHighlighted
     NSArray *highlightGradientColors;       // Colors
     NSArray *highlightGradientLocations;    // Relative locations
-    
+
     // This defines the corner radius of the button
     CGFloat cornerRadius;
-    
+
     // This defines the size and color of the stroke
     CGFloat strokeWeight;
     UIColor *strokeColor;
-    
-@private
+
+    @private
     CGGradientRef   normalGradient;
     CGGradientRef   highlightGradient;
 }

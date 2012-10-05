@@ -15,26 +15,24 @@
 
 @class Reachability;
 @interface DetailViewController : UIViewController <
-    UISplitViewControllerDelegate, MFMailComposeViewControllerDelegate,UIScrollViewDelegate,UIGestureRecognizerDelegate>{
-    GradientButton  *videoButton;
-    GradientButton  *wikiButton;
-        GradientButton  *youtubeButton;
-    GradientButton  *interActiveButton;
-    GradientToolBar *toolBar;
-    GradientNavBar *detailNavBar;
-        UINavigationItem *detailNavItem;
-    ExampleView     *imageView;
+    UISplitViewControllerDelegate, MFMailComposeViewControllerDelegate, UIScrollViewDelegate, UIGestureRecognizerDelegate>{
+    GradientButton      *videoButton;
+    GradientButton      *wikiButton;
+    GradientButton      *youtubeButton;
+    GradientButton      *interActiveButton;
+    GradientToolBar     *toolBar;
+    GradientNavBar      *detailNavBar;
+    UINavigationItem    *detailNavItem;
+    ExampleView         *imageView;
 
     GradientButton  *emailButton;
     GradientButton  *composeTweetButton;
-    BOOL *shouldZoom;
-        
-        Reachability* hostReach;
-        Reachability* internetReach;
-        Reachability* wifiReach;
+    BOOL            *shouldZoom;
 
-
-    }
+    Reachability    *hostReach;
+    Reachability    *internetReach;
+    Reachability    *wifiReach;
+}
 
 @property (strong, nonatomic) id detailItem;
 
@@ -45,22 +43,22 @@
 @property (strong, nonatomic) IBOutlet UILabel  *musicTheory101Label;
 @property (strong, nonatomic) IBOutlet UILabel  *vLabel;
 
-@property (nonatomic, retain) NSString              *MovieToPlay;
-@property (nonatomic, retain) IBOutlet ExampleView  *imageView;
-@property (nonatomic, retain) IBOutlet NSString     *interactiveToDisplay;
-@property (nonatomic, retain) NSString              *wikiToDisplay;
-@property (nonatomic, retain) NSString              *youtubeToDisplay;
+@property (nonatomic, retain) NSString                  *MovieToPlay;
+@property (nonatomic, retain) IBOutlet ExampleView      *imageView;
+@property (nonatomic, retain) IBOutlet NSString         *interactiveToDisplay;
+@property (nonatomic, retain) NSString                  *wikiToDisplay;
+@property (nonatomic, retain) NSString                  *youtubeToDisplay;
 @property (nonatomic, retain) IBOutlet GradientButton   *videoButton;
 @property (nonatomic, retain) IBOutlet GradientButton   *wikiButton;
 @property (nonatomic, retain) IBOutlet GradientButton   *youtubeButton;
 @property (nonatomic, retain) IBOutlet GradientButton   *interActiveButton;
 @property (nonatomic, retain) IBOutlet GradientToolBar  *toolBar;
 @property (nonatomic, retain) IBOutlet GradientNavBar   *detailNavBar;
-@property (nonatomic, retain) IBOutlet UINavigationItem   *detailNavItem;
+@property (nonatomic, retain) IBOutlet UINavigationItem *detailNavItem;
 
 @property (nonatomic, retain) IBOutlet GradientButton   *emailButton;
 @property (nonatomic, retain) IBOutlet GradientButton   *composeTweetButton;
-@property (assign) BOOL   *shouldZoom;
+@property (assign) BOOL                                 *shouldZoom;
 
 - (IBAction)clickMe:(UIButton *)sender;
 

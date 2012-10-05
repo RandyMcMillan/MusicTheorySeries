@@ -86,7 +86,8 @@
 {
     NSMutableArray  *colors = [NSMutableArray arrayWithCapacity:3];
     UIColor         *color  = [UIColor clearColor]; // [UIColor
-self.titleLabel.text = @"DONE";
+
+    self.titleLabel.text = @"DONE";
     // colorWithRed:0.864
     // green:0.864 blue:0.864
     // alpha:1.0];
@@ -121,15 +122,10 @@ self.titleLabel.text = @"DONE";
     self.strokeWeight   = 0.1f;
 
     if (IS_IPAD) {
-    
-    [self setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
-        
+        [self setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     } else {
-    
-    [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-
+        [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }
-    
 }
 
 - (void)useSafariStyle
@@ -203,11 +199,10 @@ self.titleLabel.text = @"DONE";
         UIControlStateNormal];
     [self setTitleColor:[UIColor darkGrayColor] forState:
         UIControlStateHighlighted];
-    
+
     // [self.titleLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:13.0]];
     // [self.titleLabel setFont:[UIFont fontWithName:@"Hoefler Text" size:13.0]];
     // self.titleLabel.font = @"Hoefler Text";
-
 }   /* useWikiStyle */
 
 - (void)useInteractiveStyle
@@ -297,37 +292,35 @@ self.titleLabel.text = @"DONE";
         UIControlStateHighlighted];
 }   /* useTBStyle */
 
-
-
 #pragma mark useYouTubeUIBar
 
 - (void)useYouTubeUIBar
 {
     self.titleLabel.textColor = [UIColor whiteColor];
-    //// Color Declarations
-    UIColor* darkBar = [UIColor clearColor];//[UIColor colorWithRed:0.098 green:0.098 blue:0.098 alpha:1.000];//[UIColor colorWithRed:0.173 green:0.169 blue:0.173 alpha:1.00];//[UIColor colorWithRed: 0.11 green: 0.11 blue: 0.11 alpha: 1];
-    UIColor* lightBar = [UIColor clearColor];//[UIColor colorWithRed:0.098 green:0.098 blue:0.098 alpha:0.800];;//[UIColor colorWithRed:0.286 green:0.286 blue:0.290 alpha:0.800];//[UIColor colorWithRed:0.227 green:0.227 blue:0.231 alpha:1.000];//[UIColor colorWithRed:0.188 green:0.188 blue:0.192 alpha:1.000];//[UIColor colorWithRed:0.149 green:0.149 blue:0.149 alpha:1.000];//[UIColor colorWithRed: 0.378 green: 0.378 blue: 0.378 alpha: 1];
-    UIColor* shadowColor2 = [UIColor colorWithRed:0.241 green:0.241 blue:0.241 alpha:0.900];//[UIColor colorWithRed: 0.624 green: 0.624 blue: 0.624 alpha: 0.1];
-    
+    // // Color Declarations
+    UIColor *darkBar        = [UIColor clearColor];                                             // [UIColor colorWithRed:0.098 green:0.098 blue:0.098 alpha:1.000];//[UIColor colorWithRed:0.173 green:0.169 blue:0.173 alpha:1.00];//[UIColor colorWithRed: 0.11 green: 0.11 blue: 0.11 alpha: 1];
+    UIColor *lightBar       = [UIColor clearColor];                                             // [UIColor colorWithRed:0.098 green:0.098 blue:0.098 alpha:0.800];;//[UIColor colorWithRed:0.286 green:0.286 blue:0.290 alpha:0.800];//[UIColor colorWithRed:0.227 green:0.227 blue:0.231 alpha:1.000];//[UIColor colorWithRed:0.188 green:0.188 blue:0.192 alpha:1.000];//[UIColor colorWithRed:0.149 green:0.149 blue:0.149 alpha:1.000];//[UIColor colorWithRed: 0.378 green: 0.378 blue: 0.378 alpha: 1];
+    UIColor *shadowColor2   = [UIColor colorWithRed:0.241 green:0.241 blue:0.241 alpha:0.900];  // [UIColor colorWithRed: 0.624 green: 0.624 blue: 0.624 alpha: 0.1];
+
     //  self.enabled = FALSE;
-    NSMutableArray  *colors = [NSMutableArray arrayWithCapacity:3];
-    
-    UIColor         *color  = darkBar;
+    NSMutableArray *colors = [NSMutableArray arrayWithCapacity:3];
+
+    UIColor *color = darkBar;
     [colors addObject:(id)[color CGColor]];
-    
-    color = darkBar;//[UIColor colorWithRed:0.995 green:0.995 blue:0.995 alpha:1.0];
+
+    color = darkBar; // [UIColor colorWithRed:0.995 green:0.995 blue:0.995 alpha:1.0];
     [colors addObject:(id)[color CGColor]];
-    
-    color = lightBar;//[UIColor colorWithRed:0.956 green:0.956 blue:0.955 alpha:1.0];
+
+    color = lightBar; // [UIColor colorWithRed:0.956 green:0.956 blue:0.955 alpha:1.0];
     [colors addObject:(id)[color CGColor]];
-    
+
     self.normalGradientColors       = colors;
     self.normalGradientLocations    = [NSMutableArray arrayWithObjects:
-                                       [NSNumber numberWithFloat:0.0f],
-                                       [NSNumber numberWithFloat:0.4f],
-                                       [NSNumber numberWithFloat:1.0f],
-                                       nil];
-    
+        [NSNumber numberWithFloat:0.0f],
+        [NSNumber numberWithFloat:0.4f],
+        [NSNumber numberWithFloat:1.0f],
+        nil];
+
     NSMutableArray *colors2 = [NSMutableArray arrayWithCapacity:3];
     color = [UIColor colorWithRed:0.992 green:0.692 blue:0.691 alpha:1.0];
     [colors2 addObject:(id)[color CGColor]];
@@ -337,22 +330,19 @@ self.titleLabel.text = @"DONE";
     [colors2 addObject:(id)[color CGColor]];
     self.highlightGradientColors    = colors;
     self.highlightGradientLocations = [NSMutableArray arrayWithObjects:
-                                       [NSNumber numberWithFloat:0.0f],
-                                       [NSNumber numberWithFloat:1.0f],
-                                       [NSNumber numberWithFloat:0.601f],
-                                       nil];
-    
-    
-    
-    self.cornerRadius   = 0.0f;
-    self.strokeColor    = darkBar;//[UIColor lightGrayColor];
-    self.strokeWeight   = 0.1f;
-      [self setTitleColor:[UIColor lightGrayColor] forState:
-          UIControlStateNormal];
-      [self setTitleColor:[UIColor whiteColor] forState:
-          UIControlStateHighlighted];
-}   /* useTBStyle */
+        [NSNumber numberWithFloat:0.0f],
+        [NSNumber numberWithFloat:1.0f],
+        [NSNumber numberWithFloat:0.601f],
+        nil];
 
+    self.cornerRadius   = 0.0f;
+    self.strokeColor    = darkBar; // [UIColor lightGrayColor];
+    self.strokeWeight   = 0.1f;
+    [self setTitleColor:[UIColor lightGrayColor] forState:
+        UIControlStateNormal];
+    [self setTitleColor:[UIColor whiteColor] forState:
+        UIControlStateHighlighted];
+}   /* useTBStyle */
 
 - (void)useAlertStyle
 {
@@ -1004,19 +994,11 @@ self.titleLabel.text = @"DONE";
 
 + (NSString *)resolveImageResource:(NSString *)resource
 {
-    
     if (IS_IPAD) {
-        
-        
         return [NSString stringWithFormat:@"%@@2x~ipad.png", resource];
-        
-    }else {
-        
-        
+    } else {
         return [NSString stringWithFormat:@"%@2x~iphone.png", resource];
-        
     }
-    
 }
 
 #pragma mark -

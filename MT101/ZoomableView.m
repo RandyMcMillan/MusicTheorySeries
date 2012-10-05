@@ -11,54 +11,52 @@
 
 @implementation ZoomableView
 
-
 // Set the UIView layer to CATiledLayer
-+(Class)layerClass
++ (Class)layerClass
 {
     return [CATiledLayer class];
 }
 
-
 // Initialize the layer by setting
 // the levelsOfDetailBias of bias and levelsOfDetail
 // of the tiled layer
--(id)initWithFrame:(CGRect)r
+- (id)initWithFrame:(CGRect)r
 {
     self = [super initWithFrame:r];
-    if(self) {
-        CATiledLayer *tempTiledLayer = (CATiledLayer*)self.layer;
-        tempTiledLayer.levelsOfDetail = 5;
-        tempTiledLayer.levelsOfDetailBias = 2;
-        self.opaque=YES;
+
+    if (self) {
+        CATiledLayer *tempTiledLayer = (CATiledLayer *)self.layer;
+        tempTiledLayer.levelsOfDetail       = 5;
+        tempTiledLayer.levelsOfDetailBias   = 2;
+        self.opaque = YES;
     }
+
     return self;
 }
 
 // Implement -drawRect: so that the UIView class works correctly
 // Real drawing work is done in -drawLayer:inContext
--(void)drawRect:(CGRect)r
-{
-}
-
+- (void)drawRect:(CGRect)r
+{}
 
 #pragma mark - shouldAutorotateToInterfaceOrientation
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
-toInterfaceOrientation
+   toInterfaceOrientation
 {
     // Return YES for supported orientations
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
         return YES;
     }
-    
+
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
         return YES;
     }
-    
+
     if (toInterfaceOrientation == UIInterfaceOrientationPortrait) {
         return NO;
     }
-    
+
     if (toInterfaceOrientation ==
         UIInterfaceOrientationPortraitUpsideDown) {
         return NO;
@@ -68,12 +66,10 @@ toInterfaceOrientation
 #pragma mark - didAutoRotateToInterfaceOrientation
 
 - (BOOL)didAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
-currentInterfaceOrientation
+   currentInterfaceOrientation
 {
     NSLog(@"did auto rotate");
     return YES;
 }
-
-
 
 @end
