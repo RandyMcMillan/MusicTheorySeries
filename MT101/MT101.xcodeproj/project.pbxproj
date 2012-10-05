@@ -1179,7 +1179,6 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
-				487B3E27161F1C1800E29AEF /* SystemConfiguration.framework */,
 				48022A5A161DE12C00F31287 /* YouTubeView */,
 				48022A08161DD8EC00F31287 /* WikiView */,
 				489A81AE161870770018AAC8 /* Default-Landscape@2x~ipad.png */,
@@ -1203,6 +1202,7 @@
 		B225A7291534CF59006FD46F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				487B3E27161F1C1800E29AEF /* SystemConfiguration.framework */,
 				48DBC8C815FBF46800CEE854 /* Accounts.framework */,
 				48DBC8C515FBF46400CEE854 /* Twitter.framework */,
 				480D185315F9E3E90086C3EF /* MessageUI.framework */,
