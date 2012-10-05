@@ -12,7 +12,6 @@
 		4801D4B4161464F100512EA6 /* Interactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4B3161464F100512EA6 /* Interactive@2x.png */; };
 		48022A15161DD8EC00F31287 /* error.html in Resources */ = {isa = PBXBuildFile; fileRef = 48022A09161DD8EC00F31287 /* error.html */; };
 		48022A16161DD8EC00F31287 /* iScrollPlugin_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 48022A0B161DD8EC00F31287 /* iScrollPlugin_JS.m */; };
-		48022A18161DD8EC00F31287 /* SVWebViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48022A0D161DD8EC00F31287 /* SVWebViewController.bundle */; };
 		48022A1A161DD8EC00F31287 /* WikiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48022A0F161DD8EC00F31287 /* WikiView.bundle */; };
 		48022A1B161DD8EC00F31287 /* WikiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48022A10161DD8EC00F31287 /* WikiView.xib */; };
 		48022A1C161DD8EC00F31287 /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48022A12161DD8EC00F31287 /* WikiViewController.m */; };
@@ -42,7 +41,6 @@
 		48022A6A161DE12C00F31287 /* YouTubeView_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 48022A61161DE12C00F31287 /* YouTubeView_JS.m */; };
 		48022A6B161DE12C00F31287 /* YouTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48022A63161DE12C00F31287 /* YouTubeViewController.m */; };
 		48022A6C161DE12C00F31287 /* YouTubeView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48022A64161DE12C00F31287 /* YouTubeView~ipad.xib */; };
-		48022A6E161DE14900F31287 /* YouTubeViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48022A6D161DE14900F31287 /* YouTubeViewController.bundle */; };
 		48022A70161DE17D00F31287 /* YouTubeView~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48022A6F161DE17D00F31287 /* YouTubeView~iphone.xib */; };
 		48022A77161DE37900F31287 /* YouTubeToDisplay0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48022A71161DE37900F31287 /* YouTubeToDisplay0.plist */; };
 		48022A78161DE37900F31287 /* YouTubeToDisplay1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48022A72161DE37900F31287 /* YouTubeToDisplay1.plist */; };
@@ -304,7 +302,6 @@
 		48022A09161DD8EC00F31287 /* error.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = error.html; sourceTree = "<group>"; };
 		48022A0A161DD8EC00F31287 /* iScrollPlugin_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iScrollPlugin_JS.h; sourceTree = "<group>"; };
 		48022A0B161DD8EC00F31287 /* iScrollPlugin_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iScrollPlugin_JS.m; sourceTree = "<group>"; };
-		48022A0D161DD8EC00F31287 /* SVWebViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVWebViewController.bundle; sourceTree = "<group>"; };
 		48022A0F161DD8EC00F31287 /* WikiView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WikiView.bundle; sourceTree = "<group>"; };
 		48022A10161DD8EC00F31287 /* WikiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiView.xib; sourceTree = "<group>"; };
 		48022A11161DD8EC00F31287 /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
@@ -335,7 +332,6 @@
 		48022A62161DE12C00F31287 /* YouTubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeViewController.h; sourceTree = "<group>"; };
 		48022A63161DE12C00F31287 /* YouTubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeViewController.m; sourceTree = "<group>"; };
 		48022A64161DE12C00F31287 /* YouTubeView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "YouTubeView~ipad.xib"; sourceTree = "<group>"; };
-		48022A6D161DE14900F31287 /* YouTubeViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YouTubeViewController.bundle; sourceTree = "<group>"; };
 		48022A6F161DE17D00F31287 /* YouTubeView~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "YouTubeView~iphone.xib"; sourceTree = "<group>"; };
 		48022A71161DE37900F31287 /* YouTubeToDisplay0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouTubeToDisplay0.plist; sourceTree = "<group>"; };
 		48022A72161DE37900F31287 /* YouTubeToDisplay1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouTubeToDisplay1.plist; sourceTree = "<group>"; };
@@ -664,7 +660,6 @@
 				48022A09161DD8EC00F31287 /* error.html */,
 				48022A0A161DD8EC00F31287 /* iScrollPlugin_JS.h */,
 				48022A0B161DD8EC00F31287 /* iScrollPlugin_JS.m */,
-				48022A0D161DD8EC00F31287 /* SVWebViewController.bundle */,
 				48022A0F161DD8EC00F31287 /* WikiView.bundle */,
 				48022A10161DD8EC00F31287 /* WikiView.xib */,
 				48022A11161DD8EC00F31287 /* WikiViewController.h */,
@@ -701,7 +696,6 @@
 			children = (
 				48022A7D161DE91400F31287 /* youtube-icon.png */,
 				48022A5B161DE12C00F31287 /* error.html */,
-				48022A6D161DE14900F31287 /* YouTubeViewController.bundle */,
 				48022A5E161DE12C00F31287 /* YouTubeView.bundle */,
 				48022A5F161DE12C00F31287 /* YouTubeView.xib */,
 				48022A60161DE12C00F31287 /* YouTubeView_JS.h */,
@@ -1499,7 +1493,6 @@
 				48214BD5161CE61F00F43AFA /* MezzoSoprano Clef.mov in Resources */,
 				48214BD7161CE7D400F43AFA /* Tenor Clef.mov in Resources */,
 				48022A15161DD8EC00F31287 /* error.html in Resources */,
-				48022A18161DD8EC00F31287 /* SVWebViewController.bundle in Resources */,
 				48022A1A161DD8EC00F31287 /* WikiView.bundle in Resources */,
 				48022A1B161DD8EC00F31287 /* WikiView.xib in Resources */,
 				48022A1D161DD8EC00F31287 /* WikiView~ipad.xib in Resources */,
@@ -1526,7 +1519,6 @@
 				48022A68161DE12C00F31287 /* YouTubeView.bundle in Resources */,
 				48022A69161DE12C00F31287 /* YouTubeView.xib in Resources */,
 				48022A6C161DE12C00F31287 /* YouTubeView~ipad.xib in Resources */,
-				48022A6E161DE14900F31287 /* YouTubeViewController.bundle in Resources */,
 				48022A70161DE17D00F31287 /* YouTubeView~iphone.xib in Resources */,
 				48022A77161DE37900F31287 /* YouTubeToDisplay0.plist in Resources */,
 				48022A78161DE37900F31287 /* YouTubeToDisplay1.plist in Resources */,
