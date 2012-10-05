@@ -12,7 +12,6 @@
 		4801D4B4161464F100512EA6 /* Interactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4B3161464F100512EA6 /* Interactive@2x.png */; };
 		48022A15161DD8EC00F31287 /* error.html in Resources */ = {isa = PBXBuildFile; fileRef = 48022A09161DD8EC00F31287 /* error.html */; };
 		48022A16161DD8EC00F31287 /* iScrollPlugin_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 48022A0B161DD8EC00F31287 /* iScrollPlugin_JS.m */; };
-		48022A18161DD8EC00F31287 /* SVWebViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48022A0D161DD8EC00F31287 /* SVWebViewController.bundle */; };
 		48022A1A161DD8EC00F31287 /* WikiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48022A0F161DD8EC00F31287 /* WikiView.bundle */; };
 		48022A1B161DD8EC00F31287 /* WikiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48022A10161DD8EC00F31287 /* WikiView.xib */; };
 		48022A1C161DD8EC00F31287 /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48022A12161DD8EC00F31287 /* WikiViewController.m */; };
@@ -36,13 +35,11 @@
 		48022A41161DDD9C00F31287 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48022A40161DDD9C00F31287 /* Icon-72@2x.png */; };
 		48022A43161DDE9E00F31287 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 48F228DD160D34A3005B1D1E /* Default.png */; };
 		48022A46161DDEF500F31287 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48022A45161DDEF500F31287 /* Default@2x.png */; };
-		48022A65161DE12C00F31287 /* error.html in Resources */ = {isa = PBXBuildFile; fileRef = 48022A5B161DE12C00F31287 /* error.html */; };
 		48022A68161DE12C00F31287 /* YouTubeView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48022A5E161DE12C00F31287 /* YouTubeView.bundle */; };
 		48022A69161DE12C00F31287 /* YouTubeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48022A5F161DE12C00F31287 /* YouTubeView.xib */; };
 		48022A6A161DE12C00F31287 /* YouTubeView_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 48022A61161DE12C00F31287 /* YouTubeView_JS.m */; };
 		48022A6B161DE12C00F31287 /* YouTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48022A63161DE12C00F31287 /* YouTubeViewController.m */; };
 		48022A6C161DE12C00F31287 /* YouTubeView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48022A64161DE12C00F31287 /* YouTubeView~ipad.xib */; };
-		48022A6E161DE14900F31287 /* YouTubeViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48022A6D161DE14900F31287 /* YouTubeViewController.bundle */; };
 		48022A70161DE17D00F31287 /* YouTubeView~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48022A6F161DE17D00F31287 /* YouTubeView~iphone.xib */; };
 		48022A77161DE37900F31287 /* YouTubeToDisplay0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48022A71161DE37900F31287 /* YouTubeToDisplay0.plist */; };
 		48022A78161DE37900F31287 /* YouTubeToDisplay1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48022A72161DE37900F31287 /* YouTubeToDisplay1.plist */; };
@@ -185,12 +182,6 @@
 		4821435F161DF643009CCC34 /* Treble Clef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4821435E161DF643009CCC34 /* Treble Clef.mp4 */; };
 		4821436A161DFB50009CCC34 /* B Minor Locrian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48214369161DFB50009CCC34 /* B Minor Locrian.mp4 */; };
 		4821436D161DFB59009CCC34 /* A Minor Aeolian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4821436C161DFB59009CCC34 /* A Minor Aeolian.mp4 */; };
-		48214BCD161CE03C00F43AFA /* Treble Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BCC161CE03C00F43AFA /* Treble Clef.mov */; };
-		48214BCF161CE27300F43AFA /* Bass Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BCE161CE27300F43AFA /* Bass Clef.mov */; };
-		48214BD1161CE40500F43AFA /* Alto Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BD0161CE40500F43AFA /* Alto Clef.mov */; };
-		48214BD3161CE4F000F43AFA /* Soprano Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BD2161CE4F000F43AFA /* Soprano Clef.mov */; };
-		48214BD5161CE61F00F43AFA /* MezzoSoprano Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BD4161CE61F00F43AFA /* MezzoSoprano Clef.mov */; };
-		48214BD7161CE7D400F43AFA /* Tenor Clef.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48214BD6161CE7D400F43AFA /* Tenor Clef.mov */; };
 		4825559915DD7A3000737C61 /* SolfegeNaturalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */; };
 		4825559E15DD7A4C00737C61 /* SolfegeSharpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825559C15DD7A4C00737C61 /* SolfegeSharpsViewController.m */; };
 		482555A315DD7A5400737C61 /* SolfegeFlatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482555A115DD7A5400737C61 /* SolfegeFlatsViewController.m */; };
@@ -202,8 +193,8 @@
 		4849AD0C160AE1DB002B5E40 /* SolfegeFlats.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD0B160AE1DB002B5E40 /* SolfegeFlats.pdf */; };
 		4849AD0F160AE1E7002B5E40 /* SolfegeSharps.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD0E160AE1E7002B5E40 /* SolfegeSharps.pdf */; };
 		4849AD13160AE2E7002B5E40 /* Solfege Flats.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD10160AE2E7002B5E40 /* Solfege Flats.mp4 */; };
-		4849AD14160AE2E7002B5E40 /* Solfege Naturals.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD11160AE2E7002B5E40 /* Solfege Naturals.mp4 */; };
-		4849AD15160AE2E7002B5E40 /* Solfege Sharps.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD12160AE2E7002B5E40 /* Solfege Sharps.mp4 */; };
+		4849AD14160AE2E7002B5E40 /* Solfege Naturals .mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD11160AE2E7002B5E40 /* Solfege Naturals .mp4 */; };
+		4849AD15160AE2E7002B5E40 /* Solfege Sharps .mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4849AD12160AE2E7002B5E40 /* Solfege Sharps .mp4 */; };
 		484D16E515DAE485005FC66E /* SectionHeaders.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484D16E415DAE485005FC66E /* SectionHeaders.plist */; };
 		48584A6A16045DE10020DB00 /* Aeolian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A5716045DE10020DB00 /* Aeolian.pdf */; };
 		48584A6B16045DE10020DB00 /* AltoClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48584A5816045DE10020DB00 /* AltoClef.pdf */; };
@@ -252,7 +243,6 @@
 		48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */; };
 		48B67BC815F411DA00B0C6F2 /* GradientToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */; };
 		48BA8A1B161A49B600F239B1 /* DetailViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48BA8A1A161A49B600F239B1 /* DetailViewController~ipad.xib */; };
-		48BBFFDF161CDDA000F6EC06 /* The Grand Staff.mov in Resources */ = {isa = PBXBuildFile; fileRef = 48BBFFDE161CDDA000F6EC06 /* The Grand Staff.mov */; };
 		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48DBC8C615FBF46400CEE854 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC8C515FBF46400CEE854 /* Twitter.framework */; };
@@ -304,7 +294,6 @@
 		48022A09161DD8EC00F31287 /* error.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = error.html; sourceTree = "<group>"; };
 		48022A0A161DD8EC00F31287 /* iScrollPlugin_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iScrollPlugin_JS.h; sourceTree = "<group>"; };
 		48022A0B161DD8EC00F31287 /* iScrollPlugin_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iScrollPlugin_JS.m; sourceTree = "<group>"; };
-		48022A0D161DD8EC00F31287 /* SVWebViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVWebViewController.bundle; sourceTree = "<group>"; };
 		48022A0F161DD8EC00F31287 /* WikiView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WikiView.bundle; sourceTree = "<group>"; };
 		48022A10161DD8EC00F31287 /* WikiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiView.xib; sourceTree = "<group>"; };
 		48022A11161DD8EC00F31287 /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
@@ -327,7 +316,6 @@
 		48022A32161DDD5D00F31287 /* iTunesArtwork512 */ = {isa = PBXFileReference; lastKnownFileType = text; path = iTunesArtwork512; sourceTree = "<group>"; };
 		48022A40161DDD9C00F31287 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "../../Icon-72@2x.png"; sourceTree = "<group>"; };
 		48022A45161DDEF500F31287 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
-		48022A5B161DE12C00F31287 /* error.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = error.html; sourceTree = "<group>"; };
 		48022A5E161DE12C00F31287 /* YouTubeView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YouTubeView.bundle; sourceTree = "<group>"; };
 		48022A5F161DE12C00F31287 /* YouTubeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YouTubeView.xib; sourceTree = "<group>"; };
 		48022A60161DE12C00F31287 /* YouTubeView_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeView_JS.h; sourceTree = "<group>"; };
@@ -335,7 +323,6 @@
 		48022A62161DE12C00F31287 /* YouTubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeViewController.h; sourceTree = "<group>"; };
 		48022A63161DE12C00F31287 /* YouTubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeViewController.m; sourceTree = "<group>"; };
 		48022A64161DE12C00F31287 /* YouTubeView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "YouTubeView~ipad.xib"; sourceTree = "<group>"; };
-		48022A6D161DE14900F31287 /* YouTubeViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YouTubeViewController.bundle; sourceTree = "<group>"; };
 		48022A6F161DE17D00F31287 /* YouTubeView~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "YouTubeView~iphone.xib"; sourceTree = "<group>"; };
 		48022A71161DE37900F31287 /* YouTubeToDisplay0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouTubeToDisplay0.plist; sourceTree = "<group>"; };
 		48022A72161DE37900F31287 /* YouTubeToDisplay1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouTubeToDisplay1.plist; sourceTree = "<group>"; };
@@ -489,12 +476,6 @@
 		4821435E161DF643009CCC34 /* Treble Clef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Treble Clef.mp4"; sourceTree = "<group>"; };
 		48214369161DFB50009CCC34 /* B Minor Locrian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "B Minor Locrian.mp4"; sourceTree = "<group>"; };
 		4821436C161DFB59009CCC34 /* A Minor Aeolian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A Minor Aeolian.mp4"; sourceTree = "<group>"; };
-		48214BCC161CE03C00F43AFA /* Treble Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Treble Clef.mov"; sourceTree = "<group>"; };
-		48214BCE161CE27300F43AFA /* Bass Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Bass Clef.mov"; sourceTree = "<group>"; };
-		48214BD0161CE40500F43AFA /* Alto Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Alto Clef.mov"; sourceTree = "<group>"; };
-		48214BD2161CE4F000F43AFA /* Soprano Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Soprano Clef.mov"; sourceTree = "<group>"; };
-		48214BD4161CE61F00F43AFA /* MezzoSoprano Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "MezzoSoprano Clef.mov"; sourceTree = "<group>"; };
-		48214BD6161CE7D400F43AFA /* Tenor Clef.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Tenor Clef.mov"; sourceTree = "<group>"; };
 		4825559615DD7A3000737C61 /* SolfegeNaturalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeNaturalsViewController.h; sourceTree = "<group>"; };
 		4825559715DD7A3000737C61 /* SolfegeNaturalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolfegeNaturalsViewController.m; sourceTree = "<group>"; };
 		4825559B15DD7A4C00737C61 /* SolfegeSharpsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolfegeSharpsViewController.h; sourceTree = "<group>"; };
@@ -511,8 +492,8 @@
 		4849AD0B160AE1DB002B5E40 /* SolfegeFlats.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeFlats.pdf; sourceTree = "<group>"; };
 		4849AD0E160AE1E7002B5E40 /* SolfegeSharps.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeSharps.pdf; sourceTree = "<group>"; };
 		4849AD10160AE2E7002B5E40 /* Solfege Flats.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solfege Flats.mp4"; sourceTree = "<group>"; };
-		4849AD11160AE2E7002B5E40 /* Solfege Naturals.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solfege Naturals.mp4"; sourceTree = "<group>"; };
-		4849AD12160AE2E7002B5E40 /* Solfege Sharps.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solfege Sharps.mp4"; sourceTree = "<group>"; };
+		4849AD11160AE2E7002B5E40 /* Solfege Naturals .mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solfege Naturals .mp4"; sourceTree = "<group>"; };
+		4849AD12160AE2E7002B5E40 /* Solfege Sharps .mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solfege Sharps .mp4"; sourceTree = "<group>"; };
 		484D16E415DAE485005FC66E /* SectionHeaders.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SectionHeaders.plist; sourceTree = "<group>"; };
 		484D3A04161257F700E6551C /* GrandStaffMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrandStaffMacros.h; sourceTree = "<group>"; };
 		484D3A061612586400E6551C /* Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = SOURCE_ROOT; };
@@ -574,7 +555,6 @@
 		48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientToolBar.m; path = ../GradientToolBar.m; sourceTree = "<group>"; };
 		48B6FEC51604A56C00B941C2 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		48BA8A1A161A49B600F239B1 /* DetailViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DetailViewController~ipad.xib"; sourceTree = "<group>"; };
-		48BBFFDE161CDDA000F6EC06 /* The Grand Staff.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "The Grand Staff.mov"; sourceTree = "<group>"; };
 		48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
@@ -664,7 +644,6 @@
 				48022A09161DD8EC00F31287 /* error.html */,
 				48022A0A161DD8EC00F31287 /* iScrollPlugin_JS.h */,
 				48022A0B161DD8EC00F31287 /* iScrollPlugin_JS.m */,
-				48022A0D161DD8EC00F31287 /* SVWebViewController.bundle */,
 				48022A0F161DD8EC00F31287 /* WikiView.bundle */,
 				48022A10161DD8EC00F31287 /* WikiView.xib */,
 				48022A11161DD8EC00F31287 /* WikiViewController.h */,
@@ -700,8 +679,6 @@
 			isa = PBXGroup;
 			children = (
 				48022A7D161DE91400F31287 /* youtube-icon.png */,
-				48022A5B161DE12C00F31287 /* error.html */,
-				48022A6D161DE14900F31287 /* YouTubeViewController.bundle */,
 				48022A5E161DE12C00F31287 /* YouTubeView.bundle */,
 				48022A5F161DE12C00F31287 /* YouTubeView.xib */,
 				48022A60161DE12C00F31287 /* YouTubeView_JS.h */,
@@ -825,18 +802,11 @@
 			children = (
 				4821436C161DFB59009CCC34 /* A Minor Aeolian.mp4 */,
 				48214369161DFB50009CCC34 /* B Minor Locrian.mp4 */,
-				48214BD6161CE7D400F43AFA /* Tenor Clef.mov */,
-				48214BD4161CE61F00F43AFA /* MezzoSoprano Clef.mov */,
-				48214BD2161CE4F000F43AFA /* Soprano Clef.mov */,
-				48214BD0161CE40500F43AFA /* Alto Clef.mov */,
-				48214BCE161CE27300F43AFA /* Bass Clef.mov */,
-				48BBFFDE161CDDA000F6EC06 /* The Grand Staff.mov */,
-				48214BCC161CE03C00F43AFA /* Treble Clef.mov */,
 				B225A76C1534D27F006FD46F /* greenlights.png */,
 				B225A75A1534D1D4006FD46F /* clouds.png */,
 				4849AD10160AE2E7002B5E40 /* Solfege Flats.mp4 */,
-				4849AD11160AE2E7002B5E40 /* Solfege Naturals.mp4 */,
-				4849AD12160AE2E7002B5E40 /* Solfege Sharps.mp4 */,
+				4849AD11160AE2E7002B5E40 /* Solfege Naturals .mp4 */,
+				4849AD12160AE2E7002B5E40 /* Solfege Sharps .mp4 */,
 				480A794115DD6060005E9C43 /* Aeolian.mp4 */,
 				480A794215DD6060005E9C43 /* Alto Clef.mp4 */,
 				480A794315DD6060005E9C43 /* BariTone Clef.mp4 */,
@@ -1380,8 +1350,8 @@
 				4849AD0C160AE1DB002B5E40 /* SolfegeFlats.pdf in Resources */,
 				4849AD0F160AE1E7002B5E40 /* SolfegeSharps.pdf in Resources */,
 				4849AD13160AE2E7002B5E40 /* Solfege Flats.mp4 in Resources */,
-				4849AD14160AE2E7002B5E40 /* Solfege Naturals.mp4 in Resources */,
-				4849AD15160AE2E7002B5E40 /* Solfege Sharps.mp4 in Resources */,
+				4849AD14160AE2E7002B5E40 /* Solfege Naturals .mp4 in Resources */,
+				4849AD15160AE2E7002B5E40 /* Solfege Sharps .mp4 in Resources */,
 				48F228E0160D34C4005B1D1E /* Default-568h@2x.png in Resources */,
 				4809454A161317A800A600C3 /* A#.L.aif in Resources */,
 				4809454B161317A800A600C3 /* A#.R.aif in Resources */,
@@ -1491,15 +1461,7 @@
 				481388C6161C587A00E03E3E /* SolfegeNaturalsViewController.xib in Resources */,
 				481388C8161C58AF00E03E3E /* SolfegeSharpsViewController.xib in Resources */,
 				481388CA161C58B900E03E3E /* SolfegeFlatsViewController.xib in Resources */,
-				48BBFFDF161CDDA000F6EC06 /* The Grand Staff.mov in Resources */,
-				48214BCD161CE03C00F43AFA /* Treble Clef.mov in Resources */,
-				48214BCF161CE27300F43AFA /* Bass Clef.mov in Resources */,
-				48214BD1161CE40500F43AFA /* Alto Clef.mov in Resources */,
-				48214BD3161CE4F000F43AFA /* Soprano Clef.mov in Resources */,
-				48214BD5161CE61F00F43AFA /* MezzoSoprano Clef.mov in Resources */,
-				48214BD7161CE7D400F43AFA /* Tenor Clef.mov in Resources */,
 				48022A15161DD8EC00F31287 /* error.html in Resources */,
-				48022A18161DD8EC00F31287 /* SVWebViewController.bundle in Resources */,
 				48022A1A161DD8EC00F31287 /* WikiView.bundle in Resources */,
 				48022A1B161DD8EC00F31287 /* WikiView.xib in Resources */,
 				48022A1D161DD8EC00F31287 /* WikiView~ipad.xib in Resources */,
@@ -1522,11 +1484,9 @@
 				48022A41161DDD9C00F31287 /* Icon-72@2x.png in Resources */,
 				48022A43161DDE9E00F31287 /* Default.png in Resources */,
 				48022A46161DDEF500F31287 /* Default@2x.png in Resources */,
-				48022A65161DE12C00F31287 /* error.html in Resources */,
 				48022A68161DE12C00F31287 /* YouTubeView.bundle in Resources */,
 				48022A69161DE12C00F31287 /* YouTubeView.xib in Resources */,
 				48022A6C161DE12C00F31287 /* YouTubeView~ipad.xib in Resources */,
-				48022A6E161DE14900F31287 /* YouTubeViewController.bundle in Resources */,
 				48022A70161DE17D00F31287 /* YouTubeView~iphone.xib in Resources */,
 				48022A77161DE37900F31287 /* YouTubeToDisplay0.plist in Resources */,
 				48022A78161DE37900F31287 /* YouTubeToDisplay1.plist in Resources */,
@@ -1654,7 +1614,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -1673,7 +1633,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;

@@ -530,7 +530,7 @@
        NSURL* pURL = [ [NSURL alloc] initWithString:@"http://itunes.apple.com/us/artist/randy-mcmillan/id322256599" ];
  
      [ [ UIApplication sharedApplication ] openURL:pURL];
- 
+    [pURL release];
 
 }
 

@@ -383,6 +383,7 @@
 
     // Load the request in the UIWebView.
     [wikiVC.webView loadRequest:requestObj];
+    requestObj = nil;
     self.wikiButton.highlighted = FALSE;
 } /* displayWiki */
 
