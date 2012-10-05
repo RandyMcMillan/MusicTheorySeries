@@ -54,7 +54,7 @@
 @property (nonatomic, retain) IBOutlet GradientButton   *interActiveButton;
 @property (nonatomic, retain) IBOutlet GradientToolBar  *toolBar;
 @property (nonatomic, retain) IBOutlet GradientNavBar   *detailNavBar;
-@property (nonatomic, retain) IBOutlet UINavigationItem *detailNavItem;
+@property (nonatomic, retain) IBOutlet GradientNavBar *detailNavBar2;
 
 @property (nonatomic, retain) IBOutlet GradientButton   *emailButton;
 @property (nonatomic, retain) IBOutlet GradientButton   *composeTweetButton;

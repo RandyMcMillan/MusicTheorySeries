@@ -846,9 +846,18 @@
     if (indexPath.section == 7) {}
 
     self.detailViewController.toolBar.alpha = 1.0;
-    self.detailViewController.navigationItem.title = self.detailViewController.MovieToPlay;
-    self.detailViewController.navigationController.navigationItem.title = self.detailViewController.MovieToPlay;
-    self.detailViewController.detailNavItem.title = self.detailViewController.MovieToPlay;
+    //self.detailViewController.navigationItem.title = self.detailViewController.MovieToPlay;
+    //self.detailViewController.navigationController.navigationItem.title = self.detailViewController.MovieToPlay;
+    //self.detailViewController.detailNavItem.title = self.detailViewController.MovieToPlay;
+
+    
+    //default UINavBar
+    self.detailViewController.navigationController.navigationBar.topItem.title = self.detailViewController.MovieToPlay;
+    
+    //in the DEtailViewController NIB;
+    self.detailViewController.detailNavBar.topItem.title = @"Line : 856";
+    
+    self.detailViewController.detailNavBar2.topItem.title = @"detailNAvItem 860";
 
     self.detailViewController.detailDescriptionLabel.text   = nil;
     self.detailViewController.musicTheory101Label.text      = nil;

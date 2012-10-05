@@ -65,7 +65,7 @@
 @synthesize interActiveButton;
 @synthesize toolBar;
 @synthesize detailNavBar;
-@synthesize detailNavItem;
+@synthesize detailNavBar2;
 @synthesize emailButton;
 @synthesize composeTweetButton;
 
@@ -612,11 +612,12 @@
 - (void)configureView
 {
     [detailNavBar useTBStyle];
+    [detailNavBar2 useTBStyle];
     [composeTweetButton useDoneButtonStyle];
     [emailButton useDoneButtonStyle];
-    [self.navigationController.navigationBar addSubview:detailNavBar];
-    [self.detailNavBar setFrame:self.navigationController.navigationBar.frame];
-    self.navigationController.navigationBar.hidden = TRUE;
+    //[self.navigationController.navigationBar addSubview:detailNavBar];
+    //[self.detailNavBar setFrame:self.navigationController.navigationBar.frame];
+    self.navigationController.navigationBar.hidden = FALSE;
     // /self.detailNavItem.title = self.MovieToPlay;
     [self.navigationController.navigationBar bringSubviewToFront:detailNavBar];
 
@@ -1040,9 +1041,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 
     if (self) {
-        self.title = NSLocalizedString(@"Music Theory 101",
+        self.title = NSLocalizedString(@"detailVC Line:1043 Music Theory 101",
             @"Music Theory 101");
-        [self.navigationController.view addSubview:emailButton];
+        
     }
 
     return self;

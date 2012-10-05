@@ -57,7 +57,7 @@
 										<string key="NSFrameSize">{703, 768}</string>
 										<reference key="NSSuperview" ref="1067156870"/>
 										<reference key="NSWindow"/>
-										<reference key="NSNextKeyView" ref="356869139"/>
+										<reference key="NSNextKeyView" ref="492466705"/>
 										<string key="NSReuseIdentifierKey">_NS:9</string>
 										<string key="NSHuggingPriority">{1, 1}</string>
 										<string key="NSAntiCompressionPriority">{1, 1}</string>
@@ -77,7 +77,7 @@
 										<string key="NSFrame">{{449, 533}, {42, 21}}</string>
 										<reference key="NSSuperview" ref="1067156870"/>
 										<reference key="NSWindow"/>
-										<reference key="NSNextKeyView" ref="492466705"/>
+										<reference key="NSNextKeyView" ref="144060710"/>
 										<string key="NSReuseIdentifierKey">_NS:9</string>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
@@ -170,6 +170,23 @@
 											<int key="NSfFlags">16</int>
 										</object>
 									</object>
+									<object class="IBUINavigationBar" id="492466705">
+										<reference key="NSNextResponder" ref="1067156870"/>
+										<int key="NSvFlags">290</int>
+										<array class="NSMutableArray" key="NSSubviews"/>
+										<string key="NSFrame">{{13, 58}, {703, 44}}</string>
+										<reference key="NSSuperview" ref="1067156870"/>
+										<reference key="NSWindow"/>
+										<reference key="NSNextKeyView" ref="356869139"/>
+										<string key="NSReuseIdentifierKey">_NS:9</string>
+										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+										<array key="IBUIItems">
+											<object class="IBUINavigationItem" id="431785177">
+												<reference key="IBUINavigationBar" ref="492466705"/>
+												<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+											</object>
+										</array>
+									</object>
 								</array>
 								<string key="NSFrameSize">{703, 768}</string>
 								<reference key="NSSuperview" ref="1069567413"/>
@@ -210,7 +227,7 @@
 								<string key="NSFrame">{{12, 6}, {51, 33}}</string>
 								<reference key="NSSuperview" ref="144060710"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="872235608"/>
+								<reference key="NSNextKeyView" ref="641090686"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -330,6 +347,7 @@
 								<string key="NSFrame">{{540, 5}, {85, 34}}</string>
 								<reference key="NSSuperview" ref="144060710"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="872235608"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -363,7 +381,7 @@
 								<string key="NSFrame">{{641, 6}, {50, 33}}</string>
 								<reference key="NSSuperview" ref="144060710"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="144060710"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -386,7 +404,7 @@
 						<string key="NSFrame">{{0, 724}, {703, 44}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="641090686"/>
+						<reference key="NSNextKeyView" ref="81738141"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -487,29 +505,12 @@
 						<array key="IBUIItems">
 							<object class="IBUINavigationItem" id="341061621">
 								<reference key="IBUINavigationBar" ref="1000195323"/>
-								<string key="IBUITitle">Music Theory 101</string>
+								<string key="IBUITitle">Init</string>
 								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="793904703">
 									<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 									<reference key="IBUICustomView" ref="712382007"/>
 									<reference key="IBUINavigationItem" ref="341061621"/>
 								</object>
-								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-							</object>
-						</array>
-					</object>
-					<object class="IBUINavigationBar" id="492466705">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">-2147483358</int>
-						<array class="NSMutableArray" key="NSSubviews"/>
-						<string key="NSFrameSize">{703, 44}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="81738141"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<array key="IBUIItems">
-							<object class="IBUINavigationItem" id="431785177">
-								<reference key="IBUINavigationBar" ref="492466705"/>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 							</object>
 						</array>
@@ -904,22 +905,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">detailNavItem</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="431785177"/>
-					</object>
-					<int key="connectionID">324</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">detailNavBar</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="492466705"/>
-					</object>
-					<int key="connectionID">326</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">composeTweetButton</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="81738141"/>
@@ -933,6 +918,22 @@
 						<reference key="destination" ref="872235608"/>
 					</object>
 					<int key="connectionID">306</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">detailNavBar2</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="492466705"/>
+					</object>
+					<int key="connectionID">327</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">detailNavBar</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="1000195323"/>
+					</object>
+					<int key="connectionID">328</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -1013,7 +1014,6 @@
 							<reference ref="144060710"/>
 							<reference ref="1069567413"/>
 							<reference ref="1000195323"/>
-							<reference ref="492466705"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -1062,6 +1062,7 @@
 							<reference ref="356869139"/>
 							<reference ref="1056012090"/>
 							<reference ref="979263357"/>
+							<reference ref="492466705"/>
 						</array>
 						<reference key="parent" ref="1069567413"/>
 					</object>
@@ -1261,20 +1262,6 @@
 						<reference key="parent" ref="1000195323"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">285</int>
-						<reference key="object" ref="492466705"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="431785177"/>
-						</array>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">287</int>
-						<reference key="object" ref="431785177"/>
-						<array class="NSMutableArray" key="children"/>
-						<reference key="parent" ref="492466705"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">316</int>
 						<reference key="object" ref="793904703"/>
 						<array class="NSMutableArray" key="children">
@@ -1346,6 +1333,19 @@
 						<reference key="object" ref="872235608"/>
 						<reference key="parent" ref="488625168"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">285</int>
+						<reference key="object" ref="492466705"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="431785177"/>
+						</array>
+						<reference key="parent" ref="1067156870"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">287</int>
+						<reference key="object" ref="431785177"/>
+						<reference key="parent" ref="492466705"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -1392,6 +1392,7 @@
 				<string key="298.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="299.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="3.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="313.CustomClassName">GradientNavBar</string>
 				<string key="313.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="314.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="316.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -1460,7 +1461,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">326</int>
+			<int key="maxID">328</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2840,7 +2841,7 @@
 						<string key="composeTweetButton">GradientButton</string>
 						<string key="detailDescriptionLabel">UILabel</string>
 						<string key="detailNavBar">GradientNavBar</string>
-						<string key="detailNavItem">UINavigationItem</string>
+						<string key="detailNavBar2">GradientNavBar</string>
 						<string key="emailButton">GradientButton</string>
 						<string key="imageView">ExampleView</string>
 						<string key="interActiveButton">GradientButton</string>
@@ -2867,9 +2868,9 @@
 							<string key="name">detailNavBar</string>
 							<string key="candidateClassName">GradientNavBar</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="detailNavItem">
-							<string key="name">detailNavItem</string>
-							<string key="candidateClassName">UINavigationItem</string>
+						<object class="IBToOneOutletInfo" key="detailNavBar2">
+							<string key="name">detailNavBar2</string>
+							<string key="candidateClassName">GradientNavBar</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="emailButton">
 							<string key="name">emailButton</string>
