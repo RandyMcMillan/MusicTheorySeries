@@ -744,6 +744,8 @@ self.vLabel.backgroundColor =
         [emailButton useDoneButtonStyle];
         [emailButton useEmailStyle];
         [composeTweetButton useDoneButtonStyle];
+        
+        [self.view bringSubviewToFront:detailNavBar];
         // [imageView useWelcomeStyle];
     }   // build for iPhone
 }       /* configureView */
@@ -918,24 +920,58 @@ self.vLabel.backgroundColor =
 
         if(connectionRequired)
         {
-            self.detailDescriptionLabel.text =  @"Cellular data network is available.\n  Internet traffic will be routed through it after a connection is established.";
+            self.musicTheory101Label.text =  @"network is available.\n  Internet traffic will be routed through it after a connection is established.";
         }
         else
         {
-            self.detailDescriptionLabel.text =  @"Cellular data network is active.\n  Internet traffic will be routed through it.";
+            self.musicTheory101Label.text =  @"Cellular data network is active.\n  Internet traffic will be routed through it.";
         }
         NSLog(@"netStatus = %i", netStatus);
 
         
+        if (netStatus == 0) {
+            
+            NSLog(@"netStatus = 0");
+            self.youtubeButton.hidden = TRUE;
+            self.composeTweetButton.hidden = TRUE;
+            self.emailButton.hidden = TRUE;
+            self.wikiButton.hidden   = TRUE;
+        }
         
+        if (netStatus > 0) {
+            
+            NSLog(@"netStatus = 1");
+            self.youtubeButton.hidden = FALSE;
+            self.composeTweetButton.hidden = FALSE;
+            self.emailButton.hidden = FALSE;
+            self.wikiButton.hidden   = FALSE;
+        }
+        
+        
+        if (netStatus > 1) {
+
+            NSLog(@"netStatus = 2");
+            self.youtubeButton.hidden = FALSE;
+            self.composeTweetButton.hidden = FALSE;
+            self.emailButton.hidden = FALSE;
+            self.wikiButton.hidden   = FALSE;
+ 
+        }
+        
+     
     }
     
     if(curReach == internetReach)
 	{
+        
+        NSLog(@"internetReach");
 	}
 	if(curReach == wifiReach)
 	{
-	}
+        
+        NSLog(@"wifiReach");
+	
+    }
 
     
     
@@ -954,6 +990,9 @@ self.vLabel.backgroundColor =
 }
 
 #pragma mark - viewDidLoad
+
+#pragma mark - hostReach Line 1002
+
 - (void)viewDidLoad
 {
     
@@ -965,8 +1004,8 @@ self.vLabel.backgroundColor =
     [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
     
     //Change the host name here to change the server your monitoring
-    self.detailDescriptionLabel.text = [NSString stringWithFormat: @"Remote Host: %@", @"www.apple.com"];
-	hostReach = [[Reachability reachabilityWithHostName: @"www.apple.com"] retain];
+    //self.detailDescriptionLabel.text = [NSString stringWithFormat: @"Remote Host: %@", @"www.apple.com"];
+	hostReach = [[Reachability reachabilityWithHostName: @"youtube.com"] retain];
 	[hostReach startNotifier];
 	[self updateInterfaceWithReachability: hostReach];
 	
