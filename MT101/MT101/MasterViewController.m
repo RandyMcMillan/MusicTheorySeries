@@ -778,6 +778,14 @@
     if (indexPath.section == 1) {
         //
 
+        
+        if (indexPath.row == 1) {
+        
+            self.detailViewController.youtubeButton.hidden = TRUE;
+            self.detailViewController.videoButton . hidden = TRUE;
+        
+        }
+
         self.detailViewController.MovieToPlay =
             [videoList1 objectAtIndex:indexPath.row];
         self.detailViewController.imageView.image =

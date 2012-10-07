@@ -93,192 +93,192 @@
     keyRects[43]    = label43.frame;
     // keyRects[44]    = CGRectZero;//label44.frame;
 
-    // #if TARGET_IPHONE_SIMULATOR
-    // displayed in Simulator
+#if TARGET_IPHONE_SIMULATOR
+        // displayed in Simulator
 
-    label0.backgroundColor  = DO;
-    label0.text             = [NSString stringWithFormat:@"0"];
+        label0.backgroundColor  = DO;
+        label0.text             = [NSString stringWithFormat:@"0"];
 
-    label1.backgroundColor  = DI;
-    label1.text             = [NSString stringWithFormat:@"1"];
+        label1.backgroundColor  = DI;
+        label1.text             = [NSString stringWithFormat:@"1"];
 
-    label2.backgroundColor  = RE;
-    label2.text             = [NSString stringWithFormat:@"2"];
+        label2.backgroundColor  = RE;
+        label2.text             = [NSString stringWithFormat:@"2"];
 
-    label3.backgroundColor  = RI;
-    label3.text             = [NSString stringWithFormat:@"3"];
+        label3.backgroundColor  = RI;
+        label3.text             = [NSString stringWithFormat:@"3"];
 
-    label4.backgroundColor  = MI;
-    label4.text             = [NSString stringWithFormat:@"4"];
+        label4.backgroundColor  = MI;
+        label4.text             = [NSString stringWithFormat:@"4"];
 
-    label5.backgroundColor  = FA;
-    label5.text             = [NSString stringWithFormat:@"5"];
+        label5.backgroundColor  = FA;
+        label5.text             = [NSString stringWithFormat:@"5"];
 
-    label6.backgroundColor  = FI;
-    label6.text             = [NSString stringWithFormat:@"6"];
+        label6.backgroundColor  = FI;
+        label6.text             = [NSString stringWithFormat:@"6"];
 
-    label7.backgroundColor  = SOL;
-    label7.text             = [NSString stringWithFormat:@"7"];
+        label7.backgroundColor  = SOL;
+        label7.text             = [NSString stringWithFormat:@"7"];
 
-    label8.backgroundColor  = SI;
-    label8.text             = [NSString stringWithFormat:@"8"];
+        label8.backgroundColor  = SI;
+        label8.text             = [NSString stringWithFormat:@"8"];
 
-    label9.backgroundColor  = LA;
-    label9.text             = [NSString stringWithFormat:@"9"];
+        label9.backgroundColor  = LA;
+        label9.text             = [NSString stringWithFormat:@"9"];
 
-    label10.backgroundColor = LI;
-    label10.text            = [NSString stringWithFormat:@"10"];
+        label10.backgroundColor = LI;
+        label10.text            = [NSString stringWithFormat:@"10"];
 
-    label11.backgroundColor = TI;
-    label11.text            = [NSString stringWithFormat:@"11"];
+        label11.backgroundColor = TI;
+        label11.text            = [NSString stringWithFormat:@"11"];
 
-    label12.backgroundColor = DO;
-    label12.text            = [NSString stringWithFormat:@"•"];
+        label12.backgroundColor = DO;
+        label12.text            = [NSString stringWithFormat:@"•"];
 
-    label13.backgroundColor = DI;
-    label13.text            = [NSString stringWithFormat:@"13"];
+        label13.backgroundColor = DI;
+        label13.text            = [NSString stringWithFormat:@"13"];
 
-    label14.backgroundColor = RE;
-    label14.text            = [NSString stringWithFormat:@"14"];
+        label14.backgroundColor = RE;
+        label14.text            = [NSString stringWithFormat:@"14"];
 
-    label15.backgroundColor = RI;
-    label15.text            = [NSString stringWithFormat:@"15"];
+        label15.backgroundColor = RI;
+        label15.text            = [NSString stringWithFormat:@"15"];
 
-    label16.backgroundColor = MI;
-    label16.text            = [NSString stringWithFormat:@"16"];
+        label16.backgroundColor = MI;
+        label16.text            = [NSString stringWithFormat:@"16"];
 
-    label17.backgroundColor = FA;
-    label17.text            = [NSString stringWithFormat:@"17"];
+        label17.backgroundColor = FA;
+        label17.text            = [NSString stringWithFormat:@"17"];
 
-    label18.backgroundColor = FI;
-    label18.text            = [NSString stringWithFormat:@"18"];
+        label18.backgroundColor = FI;
+        label18.text            = [NSString stringWithFormat:@"18"];
 
-    label19.backgroundColor = SOL;
-    label19.text            = [NSString stringWithFormat:@"19"];
+        label19.backgroundColor = SOL;
+        label19.text            = [NSString stringWithFormat:@"19"];
 
-    label20.backgroundColor = SI;
-    label20.text            = [NSString stringWithFormat:@"20"];
+        label20.backgroundColor = SI;
+        label20.text            = [NSString stringWithFormat:@"20"];
 
-    label21.backgroundColor = LA;
-    label21.text            = [NSString stringWithFormat:@"21"];
+        label21.backgroundColor = LA;
+        label21.text            = [NSString stringWithFormat:@"21"];
 
-    label22.backgroundColor = LI;
-    label22.text            = [NSString stringWithFormat:@"22"];
+        label22.backgroundColor = LI;
+        label22.text            = [NSString stringWithFormat:@"22"];
 
-    label23.backgroundColor = TI;
-    label23.text            = [NSString stringWithFormat:@"23"];
+        label23.backgroundColor = TI;
+        label23.text            = [NSString stringWithFormat:@"23"];
 
-    label24.backgroundColor = DO;
-    label24.text            = [NSString stringWithFormat:@"24"];
+        label24.backgroundColor = DO;
+        label24.text            = [NSString stringWithFormat:@"24"];
 
-    label25.backgroundColor = DI;
-    label25.text            = [NSString stringWithFormat:@"25"];
+        label25.backgroundColor = DI;
+        label25.text            = [NSString stringWithFormat:@"25"];
 
-    label26.backgroundColor = RE;
-    label26.text            = [NSString stringWithFormat:@"26"];
+        label26.backgroundColor = RE;
+        label26.text            = [NSString stringWithFormat:@"26"];
 
-    label27.backgroundColor = RI;
-    label27.text            = [NSString stringWithFormat:@"27"];
+        label27.backgroundColor = RI;
+        label27.text            = [NSString stringWithFormat:@"27"];
 
-    label28.backgroundColor = MI;
-    label28.text            = [NSString stringWithFormat:@"28"];
+        label28.backgroundColor = MI;
+        label28.text            = [NSString stringWithFormat:@"28"];
 
-    label29.backgroundColor = FA;
-    label29.text            = [NSString stringWithFormat:@"29"];
+        label29.backgroundColor = FA;
+        label29.text            = [NSString stringWithFormat:@"29"];
 
-    label30.backgroundColor = FI;
-    label30.text            = [NSString stringWithFormat:@"30"];
+        label30.backgroundColor = FI;
+        label30.text            = [NSString stringWithFormat:@"30"];
 
-    label31.backgroundColor = SOL;
-    label31.text            = [NSString stringWithFormat:@"31"];
+        label31.backgroundColor = SOL;
+        label31.text            = [NSString stringWithFormat:@"31"];
 
-    label32.backgroundColor = SI;
-    label32.text            = [NSString stringWithFormat:@"32"];
+        label32.backgroundColor = SI;
+        label32.text            = [NSString stringWithFormat:@"32"];
 
-    label33.backgroundColor = LA;
-    label33.text            = [NSString stringWithFormat:@"33"];
+        label33.backgroundColor = LA;
+        label33.text            = [NSString stringWithFormat:@"33"];
 
-    label34.backgroundColor = LI;
-    label34.text            = [NSString stringWithFormat:@"34"];
+        label34.backgroundColor = LI;
+        label34.text            = [NSString stringWithFormat:@"34"];
 
-    label35.backgroundColor = TI;
-    label35.text            = [NSString stringWithFormat:@"35"];
+        label35.backgroundColor = TI;
+        label35.text            = [NSString stringWithFormat:@"35"];
 
-    label36.backgroundColor = DO;
-    label36.text            = [NSString stringWithFormat:@"36"];
+        label36.backgroundColor = DO;
+        label36.text            = [NSString stringWithFormat:@"36"];
 
-    label37.backgroundColor = DI;
-    label37.text            = [NSString stringWithFormat:@"37"];
+        label37.backgroundColor = DI;
+        label37.text            = [NSString stringWithFormat:@"37"];
 
-    label38.backgroundColor = RE;
-    label38.text            = [NSString stringWithFormat:@"38"];
+        label38.backgroundColor = RE;
+        label38.text            = [NSString stringWithFormat:@"38"];
 
-    label39.backgroundColor = RI;
-    label39.text            = [NSString stringWithFormat:@"39"];
+        label39.backgroundColor = RI;
+        label39.text            = [NSString stringWithFormat:@"39"];
 
-    label40.backgroundColor = MI;
-    label40.text            = [NSString stringWithFormat:@"40"];
+        label40.backgroundColor = MI;
+        label40.text            = [NSString stringWithFormat:@"40"];
 
-    label41.backgroundColor = FA;
-    label41.text            = [NSString stringWithFormat:@"41"];
+        label41.backgroundColor = FA;
+        label41.text            = [NSString stringWithFormat:@"41"];
 
-    label42.backgroundColor = FI;
-    label42.text            = [NSString stringWithFormat:@"42"];
+        label42.backgroundColor = FI;
+        label42.text            = [NSString stringWithFormat:@"42"];
 
-    label43.backgroundColor = SOL;
-    label43.text            = [NSString stringWithFormat:@"43"];
+        label43.backgroundColor = SOL;
+        label43.text            = [NSString stringWithFormat:@"43"];
 
-    label44.backgroundColor = SI;
-    label44.text            = [NSString stringWithFormat:@"44"];
+        label44.backgroundColor = SI;
+        label44.text            = [NSString stringWithFormat:@"44"];
 
-    [self.view addSubview:label0];
-    [self.view addSubview:label1];
-    [self.view addSubview:label2];
-    [self.view addSubview:label3];
-    [self.view addSubview:label4];
-    [self.view addSubview:label5];
-    [self.view addSubview:label6];
-    [self.view addSubview:label7];
-    [self.view addSubview:label8];
-    [self.view addSubview:label9];
-    [self.view addSubview:label10];
-    [self.view addSubview:label11];
-    [self.view addSubview:label12];
+        [self.view addSubview:label0];
+        [self.view addSubview:label1];
+        [self.view addSubview:label2];
+        [self.view addSubview:label3];
+        [self.view addSubview:label4];
+        [self.view addSubview:label5];
+        [self.view addSubview:label6];
+        [self.view addSubview:label7];
+        [self.view addSubview:label8];
+        [self.view addSubview:label9];
+        [self.view addSubview:label10];
+        [self.view addSubview:label11];
+        [self.view addSubview:label12];
 
-    [self.view addSubview:label13];
+        [self.view addSubview:label13];
 
-    [self.view addSubview:label14];
-    [self.view addSubview:label15];
-    [self.view addSubview:label16];
-    [self.view addSubview:label17];
-    [self.view addSubview:label18];
-    [self.view addSubview:label19];
-    [self.view addSubview:label20];
-    [self.view addSubview:label21];
-    [self.view addSubview:label22];
-    [self.view addSubview:label23];
-    [self.view addSubview:label24];
-    [self.view addSubview:label25];
-    [self.view addSubview:label26];
-    [self.view addSubview:label27];
-    [self.view addSubview:label28];
-    [self.view addSubview:label29];
-    [self.view addSubview:label30];
-    [self.view addSubview:label31];
-    [self.view addSubview:label32];
-    [self.view addSubview:label33];
-    [self.view addSubview:label34];
-    [self.view addSubview:label35];
-    [self.view addSubview:label36];
-    [self.view addSubview:label37];
-    [self.view addSubview:label38];
-    [self.view addSubview:label39];
-    [self.view addSubview:label40];
-    [self.view addSubview:label41];
-    [self.view addSubview:label42];
-    [self.view addSubview:label43];
-    [self.view addSubview:label44];
-    // #endif /* if TARGET_IPHONE_SIMULATOR */
+        [self.view addSubview:label14];
+        [self.view addSubview:label15];
+        [self.view addSubview:label16];
+        [self.view addSubview:label17];
+        [self.view addSubview:label18];
+        [self.view addSubview:label19];
+        [self.view addSubview:label20];
+        [self.view addSubview:label21];
+        [self.view addSubview:label22];
+        [self.view addSubview:label23];
+        [self.view addSubview:label24];
+        [self.view addSubview:label25];
+        [self.view addSubview:label26];
+        [self.view addSubview:label27];
+        [self.view addSubview:label28];
+        [self.view addSubview:label29];
+        [self.view addSubview:label30];
+        [self.view addSubview:label31];
+        [self.view addSubview:label32];
+        [self.view addSubview:label33];
+        [self.view addSubview:label34];
+        [self.view addSubview:label35];
+        [self.view addSubview:label36];
+        [self.view addSubview:label37];
+        [self.view addSubview:label38];
+        [self.view addSubview:label39];
+        [self.view addSubview:label40];
+        [self.view addSubview:label41];
+        [self.view addSubview:label42];
+        [self.view addSubview:label43];
+        [self.view addSubview:label44];
+#endif      /* if TARGET_IPHONE_SIMULATOR */
 } /* drawRects */
 
 - (void)destroyRects
