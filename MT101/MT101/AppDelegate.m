@@ -60,9 +60,7 @@
          @"DetailViewController~iphone"
                                         bundle          :nil];
         
-        UINavigationController *detailNavigationController =
-        [[UINavigationController alloc] initWithRootViewController:
-         detailViewController];
+        //  UINavigationController *detailNavigationController = [[UINavigationController alloc] initWithRootViewController:kdetailViewController];
         
         masterViewController.detailViewController = detailViewController;
         masterViewController.detailViewController = detailViewController;

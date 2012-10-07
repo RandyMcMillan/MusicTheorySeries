@@ -16,6 +16,8 @@
 @class Reachability;
 @interface DetailViewController : UIViewController <
     UISplitViewControllerDelegate, MFMailComposeViewControllerDelegate, UIScrollViewDelegate, UIGestureRecognizerDelegate>{
+        
+        
     GradientButton      *videoButton;
     GradientButton      *wikiButton;
     GradientButton      *youtubeButton;
@@ -27,7 +29,7 @@
 
     GradientButton  *emailButton;
     GradientButton  *composeTweetButton;
-    BOOL            *shouldZoom;
+        BOOL            *shouldZoom;//http://stackoverflow.com/questions/4864239/using-a-bool-property
 
     Reachability    *hostReach;
     Reachability    *internetReach;
@@ -58,7 +60,7 @@
 
 @property (nonatomic, retain) IBOutlet GradientButton   *emailButton;
 @property (nonatomic, retain) IBOutlet GradientButton   *composeTweetButton;
-@property (assign) BOOL                                 *shouldZoom;
+@property (nonatomic, assign,getter=isZooming) BOOL     *shouldZoom;
 
 - (IBAction)clickMe:(UIButton *)sender;
 
