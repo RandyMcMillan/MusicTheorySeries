@@ -102,7 +102,7 @@
         theGrandStaffVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
 
-        [self presentModalViewController:theGrandStaffVC animated:YES];
+        [self presentViewController:theGrandStaffVC animated:YES completion:nil];
         // [self.navigationController pushViewController:theGrandStaffVC animated:YES];
 
         [theGrandStaffVC  release];
@@ -113,7 +113,7 @@
             [[TrebleClefViewController alloc] init];
         trebleClefVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:trebleClefVC animated:YES];
+        [self presentViewController:trebleClefVC animated:YES completion:nil];
         [trebleClefVC release];
     }
 
@@ -122,7 +122,7 @@
             [[SopranoClefViewController alloc] init];
         sopranoClefVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:sopranoClefVC animated:YES];
+        [self presentViewController:sopranoClefVC animated:YES completion:nil];
         [sopranoClefVC release];
     }
 
@@ -131,8 +131,8 @@
             [[MezzoSopranoClefViewController alloc] init];
         mezzoSopranoClefVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:mezzoSopranoClefVC animated:
-            YES];
+        [self presentViewController:mezzoSopranoClefVC animated:
+            YES completion:nil];
         [mezzoSopranoClefVC release];
     }
 
@@ -141,7 +141,7 @@
             [[AltoClefViewController alloc] init];
         altoClefVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:altoClefVC animated:YES];
+        [self presentViewController:altoClefVC animated:YES completion:nil];
         [altoClefVC release];
     }
 
@@ -150,7 +150,7 @@
             [[TenorClefViewController alloc] init];
         tenorClefVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:tenorClefVC animated:YES];
+        [self presentViewController:tenorClefVC animated:YES completion:nil];
         [tenorClefVC release];
     }
 
@@ -159,7 +159,7 @@
             [[BariToneClefViewController alloc] init];
         bariToneClefVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:bariToneClefVC animated:YES];
+        [self presentViewController:bariToneClefVC animated:YES completion:nil];
         [bariToneClefVC release];
     }
 
@@ -168,7 +168,7 @@
             [[BassClefViewController alloc] init];
         bassClefVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:bassClefVC animated:YES];
+        [self presentViewController:bassClefVC animated:YES completion:nil];
         [bassClefVC release];
     }
 
@@ -177,7 +177,7 @@
             [[SubBassClefViewController alloc] init];
         subBassClefVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:subBassClefVC animated:YES];
+        [self presentViewController:subBassClefVC animated:YES completion:nil];
         [subBassClefVC release];
     }
 
@@ -187,7 +187,7 @@
             [[CircleOfFifthsViewController alloc] init];
         circleOfFifthsVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:circleOfFifthsVC animated:YES];
+        [self presentViewController:circleOfFifthsVC animated:YES completion:nil];
         [circleOfFifthsVC release];
     }
 
@@ -196,8 +196,8 @@
             [[ChromaticCircleViewController alloc] init];
         chromaticCircleVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:chromaticCircleVC animated:YES
-        ];
+        [self presentViewController:chromaticCircleVC animated:YES
+        completion:nil];
         [chromaticCircleVC release];
     }
 
@@ -207,7 +207,7 @@
         IonianViewController *ionianVC =
             [[IonianViewController alloc] init];
         ionianVC.modalPresentationStyle = UIModalPresentationPageSheet;
-        [self presentModalViewController:ionianVC animated:YES];
+        [self presentViewController:ionianVC animated:YES completion:nil];
         [ionianVC release];
     }
 
@@ -215,7 +215,7 @@
         DorianViewController *dorianVC =
             [[DorianViewController alloc] init];
         dorianVC.modalPresentationStyle = UIModalPresentationPageSheet;
-        [self presentModalViewController:dorianVC animated:YES];
+        [self presentViewController:dorianVC animated:YES completion:nil];
         [dorianVC release];
     }
 
@@ -224,7 +224,7 @@
             [[PhrygianViewController alloc] init];
         phrygianVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:phrygianVC animated:YES];
+        [self presentViewController:phrygianVC animated:YES completion:nil];
         [phrygianVC release];
     }
 
@@ -232,7 +232,7 @@
         LydianViewController *lydianVC =
             [[LydianViewController alloc] init];
         lydianVC.modalPresentationStyle = UIModalPresentationPageSheet;
-        [self presentModalViewController:lydianVC animated:YES];
+        [self presentViewController:lydianVC animated:YES completion:nil];
         [lydianVC release];
     }
 
@@ -241,7 +241,7 @@
             [[MixoLydianViewController alloc] init];
         mixoLydianVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:mixoLydianVC animated:YES];
+        [self presentViewController:mixoLydianVC animated:YES completion:nil];
         [mixoLydianVC release];
     }
 
@@ -249,7 +249,7 @@
         AeolianViewController *aeolianVC =
             [[AeolianViewController alloc] init];
         aeolianVC.modalPresentationStyle = UIModalPresentationPageSheet;
-        [self presentModalViewController:aeolianVC animated:YES];
+        [self presentViewController:aeolianVC animated:YES completion:nil];
         [aeolianVC release];
     }
 
@@ -257,7 +257,7 @@
         LocrianViewController *locrianVC =
             [[LocrianViewController alloc] init];
         locrianVC.modalPresentationStyle = UIModalPresentationPageSheet;
-        [self presentModalViewController:locrianVC animated:YES];
+        [self presentViewController:locrianVC animated:YES completion:nil];
         [locrianVC release];
     }
 
@@ -266,8 +266,8 @@
             [[SolfegeNaturalsViewController alloc] init];
         solfegeNaturalsVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:solfegeNaturalsVC animated:YES
-        ];
+        [self presentViewController:solfegeNaturalsVC animated:YES
+         completion:nil];
         [solfegeNaturalsVC release];
     }
 
@@ -276,7 +276,7 @@
             [[SolfegeSharpsViewController alloc] init];
         solfegeSharpsVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:solfegeSharpsVC animated:YES];
+        [self presentViewController:solfegeSharpsVC animated:YES completion:nil];
         [solfegeSharpsVC release];
     }
 
@@ -285,7 +285,7 @@
             [[SolfegeFlatsViewController alloc] init];
         solfegeFlatsVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentModalViewController:solfegeFlatsVC animated:YES];
+        [self presentViewController:solfegeFlatsVC animated:YES completion:nil];
         [solfegeFlatsVC release];
     }
 

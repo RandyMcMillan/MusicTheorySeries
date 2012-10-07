@@ -63,8 +63,8 @@
 
 - (void)viewDidLoad
 {
-    CGRect textFieldFrame = CGRectMake(kLeftMargin, kTweenMargin,
-        self.view.bounds.size.width - (kLeftMargin * 2.0), kTextFieldHeight);
+    //CGRect textFieldFrame = CGRectMake(kLeftMargin, kTweenMargin,
+    //  self.view.bounds.size.width - (kLeftMargin * 2.0), kTextFieldHeight);
 
     // addressLabel.frame = textFieldFrame;
 

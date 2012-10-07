@@ -2,13 +2,13 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1072</int>
-		<string key="IBDocument.SystemVersion">12C54</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2840</string>
+		<string key="IBDocument.SystemVersion">12C60</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2843</string>
 		<string key="IBDocument.AppKitVersion">1187.34</string>
 		<string key="IBDocument.HIToolboxVersion">625.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">1926</string>
+			<string key="NS.object.0">1929</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
@@ -154,7 +154,7 @@
 										<reference key="IBUITextColor" ref="106966926"/>
 										<nil key="IBUIHighlightedColor"/>
 										<int key="IBUIBaselineAdjustment">0</int>
-										<float key="IBUIMinimumFontSize">10</float>
+										<float key="IBUIMinimumFontSize">7</float>
 										<int key="IBUITextAlignment">1</int>
 										<object class="IBUIFontDescription" key="IBUIFontDescription">
 											<int key="type">1</int>
@@ -264,6 +264,7 @@
 								<string key="NSFrame">{{328, 5}, {58, 34}}</string>
 								<reference key="NSSuperview" ref="787435862"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">2</int>
@@ -2384,6 +2385,7 @@
 						<string key="composeTweet:">id</string>
 						<string key="displayInteractive:">id</string>
 						<string key="displayWiki:">id</string>
+						<string key="displayYouTube:">id</string>
 						<string key="openMail:">id</string>
 						<string key="playMovie:">id</string>
 					</dictionary>
@@ -2404,6 +2406,10 @@
 							<string key="name">displayWiki:</string>
 							<string key="candidateClassName">id</string>
 						</object>
+						<object class="IBActionInfo" key="displayYouTube:">
+							<string key="name">displayYouTube:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBActionInfo" key="openMail:">
 							<string key="name">openMail:</string>
 							<string key="candidateClassName">id</string>
@@ -2417,7 +2423,7 @@
 						<string key="composeTweetButton">GradientButton</string>
 						<string key="detailDescriptionLabel">UILabel</string>
 						<string key="detailNavBar">GradientNavBar</string>
-						<string key="detailNavItem">UINavigationItem</string>
+						<string key="detailNavBar2">GradientNavBar</string>
 						<string key="emailButton">GradientButton</string>
 						<string key="imageView">ExampleView</string>
 						<string key="interActiveButton">GradientButton</string>
@@ -2429,6 +2435,7 @@
 						<string key="vLabel">UILabel</string>
 						<string key="videoButton">GradientButton</string>
 						<string key="wikiButton">GradientButton</string>
+						<string key="youtubeButton">GradientButton</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="composeTweetButton">
@@ -2443,9 +2450,9 @@
 							<string key="name">detailNavBar</string>
 							<string key="candidateClassName">GradientNavBar</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="detailNavItem">
-							<string key="name">detailNavItem</string>
-							<string key="candidateClassName">UINavigationItem</string>
+						<object class="IBToOneOutletInfo" key="detailNavBar2">
+							<string key="name">detailNavBar2</string>
+							<string key="candidateClassName">GradientNavBar</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="emailButton">
 							<string key="name">emailButton</string>
@@ -2491,6 +2498,10 @@
 							<string key="name">wikiButton</string>
 							<string key="candidateClassName">GradientButton</string>
 						</object>
+						<object class="IBToOneOutletInfo" key="youtubeButton">
+							<string key="name">youtubeButton</string>
+							<string key="candidateClassName">GradientButton</string>
+						</object>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
@@ -2517,6 +2528,51 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="closeButton">GradientButton</string>
 						<string key="imageView">ExampleView</string>
+						<string key="label0">UILabel</string>
+						<string key="label1">UILabel</string>
+						<string key="label10">UILabel</string>
+						<string key="label11">UILabel</string>
+						<string key="label12">UILabel</string>
+						<string key="label13">UILabel</string>
+						<string key="label14">UILabel</string>
+						<string key="label15">UILabel</string>
+						<string key="label16">UILabel</string>
+						<string key="label17">UILabel</string>
+						<string key="label18">UILabel</string>
+						<string key="label19">UILabel</string>
+						<string key="label2">UILabel</string>
+						<string key="label20">UILabel</string>
+						<string key="label21">UILabel</string>
+						<string key="label22">UILabel</string>
+						<string key="label23">UILabel</string>
+						<string key="label24">UILabel</string>
+						<string key="label25">UILabel</string>
+						<string key="label26">UILabel</string>
+						<string key="label27">UILabel</string>
+						<string key="label28">UILabel</string>
+						<string key="label29">UILabel</string>
+						<string key="label3">UILabel</string>
+						<string key="label30">UILabel</string>
+						<string key="label31">UILabel</string>
+						<string key="label32">UILabel</string>
+						<string key="label33">UILabel</string>
+						<string key="label34">UILabel</string>
+						<string key="label35">UILabel</string>
+						<string key="label36">UILabel</string>
+						<string key="label37">UILabel</string>
+						<string key="label38">UILabel</string>
+						<string key="label39">UILabel</string>
+						<string key="label4">UILabel</string>
+						<string key="label40">UILabel</string>
+						<string key="label41">UILabel</string>
+						<string key="label42">UILabel</string>
+						<string key="label43">UILabel</string>
+						<string key="label44">UILabel</string>
+						<string key="label5">UILabel</string>
+						<string key="label6">UILabel</string>
+						<string key="label7">UILabel</string>
+						<string key="label8">UILabel</string>
+						<string key="label9">UILabel</string>
 						<string key="toolBar">GradientToolBar</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -2527,6 +2583,186 @@
 						<object class="IBToOneOutletInfo" key="imageView">
 							<string key="name">imageView</string>
 							<string key="candidateClassName">ExampleView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label0">
+							<string key="name">label0</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label1">
+							<string key="name">label1</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label10">
+							<string key="name">label10</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label11">
+							<string key="name">label11</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label12">
+							<string key="name">label12</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label13">
+							<string key="name">label13</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label14">
+							<string key="name">label14</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label15">
+							<string key="name">label15</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label16">
+							<string key="name">label16</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label17">
+							<string key="name">label17</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label18">
+							<string key="name">label18</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label19">
+							<string key="name">label19</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label2">
+							<string key="name">label2</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label20">
+							<string key="name">label20</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label21">
+							<string key="name">label21</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label22">
+							<string key="name">label22</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label23">
+							<string key="name">label23</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label24">
+							<string key="name">label24</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label25">
+							<string key="name">label25</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label26">
+							<string key="name">label26</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label27">
+							<string key="name">label27</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label28">
+							<string key="name">label28</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label29">
+							<string key="name">label29</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label3">
+							<string key="name">label3</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label30">
+							<string key="name">label30</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label31">
+							<string key="name">label31</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label32">
+							<string key="name">label32</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label33">
+							<string key="name">label33</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label34">
+							<string key="name">label34</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label35">
+							<string key="name">label35</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label36">
+							<string key="name">label36</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label37">
+							<string key="name">label37</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label38">
+							<string key="name">label38</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label39">
+							<string key="name">label39</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label4">
+							<string key="name">label4</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label40">
+							<string key="name">label40</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label41">
+							<string key="name">label41</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label42">
+							<string key="name">label42</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label43">
+							<string key="name">label43</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label44">
+							<string key="name">label44</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label5">
+							<string key="name">label5</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label6">
+							<string key="name">label6</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label7">
+							<string key="name">label7</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label8">
+							<string key="name">label8</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label9">
+							<string key="name">label9</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="toolBar">
 							<string key="name">toolBar</string>
@@ -2856,6 +3092,51 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="closeButton">GradientButton</string>
 						<string key="imageView">ExampleView</string>
+						<string key="label0">UILabel</string>
+						<string key="label1">UILabel</string>
+						<string key="label10">UILabel</string>
+						<string key="label11">UILabel</string>
+						<string key="label12">UILabel</string>
+						<string key="label13">UILabel</string>
+						<string key="label14">UILabel</string>
+						<string key="label15">UILabel</string>
+						<string key="label16">UILabel</string>
+						<string key="label17">UILabel</string>
+						<string key="label18">UILabel</string>
+						<string key="label19">UILabel</string>
+						<string key="label2">UILabel</string>
+						<string key="label20">UILabel</string>
+						<string key="label21">UILabel</string>
+						<string key="label22">UILabel</string>
+						<string key="label23">UILabel</string>
+						<string key="label24">UILabel</string>
+						<string key="label25">UILabel</string>
+						<string key="label26">UILabel</string>
+						<string key="label27">UILabel</string>
+						<string key="label28">UILabel</string>
+						<string key="label29">UILabel</string>
+						<string key="label3">UILabel</string>
+						<string key="label30">UILabel</string>
+						<string key="label31">UILabel</string>
+						<string key="label32">UILabel</string>
+						<string key="label33">UILabel</string>
+						<string key="label34">UILabel</string>
+						<string key="label35">UILabel</string>
+						<string key="label36">UILabel</string>
+						<string key="label37">UILabel</string>
+						<string key="label38">UILabel</string>
+						<string key="label39">UILabel</string>
+						<string key="label4">UILabel</string>
+						<string key="label40">UILabel</string>
+						<string key="label41">UILabel</string>
+						<string key="label42">UILabel</string>
+						<string key="label43">UILabel</string>
+						<string key="label44">UILabel</string>
+						<string key="label5">UILabel</string>
+						<string key="label6">UILabel</string>
+						<string key="label7">UILabel</string>
+						<string key="label8">UILabel</string>
+						<string key="label9">UILabel</string>
 						<string key="toolBar">GradientToolBar</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -2866,6 +3147,186 @@
 						<object class="IBToOneOutletInfo" key="imageView">
 							<string key="name">imageView</string>
 							<string key="candidateClassName">ExampleView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label0">
+							<string key="name">label0</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label1">
+							<string key="name">label1</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label10">
+							<string key="name">label10</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label11">
+							<string key="name">label11</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label12">
+							<string key="name">label12</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label13">
+							<string key="name">label13</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label14">
+							<string key="name">label14</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label15">
+							<string key="name">label15</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label16">
+							<string key="name">label16</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label17">
+							<string key="name">label17</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label18">
+							<string key="name">label18</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label19">
+							<string key="name">label19</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label2">
+							<string key="name">label2</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label20">
+							<string key="name">label20</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label21">
+							<string key="name">label21</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label22">
+							<string key="name">label22</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label23">
+							<string key="name">label23</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label24">
+							<string key="name">label24</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label25">
+							<string key="name">label25</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label26">
+							<string key="name">label26</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label27">
+							<string key="name">label27</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label28">
+							<string key="name">label28</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label29">
+							<string key="name">label29</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label3">
+							<string key="name">label3</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label30">
+							<string key="name">label30</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label31">
+							<string key="name">label31</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label32">
+							<string key="name">label32</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label33">
+							<string key="name">label33</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label34">
+							<string key="name">label34</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label35">
+							<string key="name">label35</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label36">
+							<string key="name">label36</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label37">
+							<string key="name">label37</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label38">
+							<string key="name">label38</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label39">
+							<string key="name">label39</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label4">
+							<string key="name">label4</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label40">
+							<string key="name">label40</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label41">
+							<string key="name">label41</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label42">
+							<string key="name">label42</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label43">
+							<string key="name">label43</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label44">
+							<string key="name">label44</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label5">
+							<string key="name">label5</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label6">
+							<string key="name">label6</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label7">
+							<string key="name">label7</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label8">
+							<string key="name">label8</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label9">
+							<string key="name">label9</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="toolBar">
 							<string key="name">toolBar</string>
@@ -2897,6 +3358,51 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="closeButton">GradientButton</string>
 						<string key="imageView">ExampleView</string>
+						<string key="label0">UILabel</string>
+						<string key="label1">UILabel</string>
+						<string key="label10">UILabel</string>
+						<string key="label11">UILabel</string>
+						<string key="label12">UILabel</string>
+						<string key="label13">UILabel</string>
+						<string key="label14">UILabel</string>
+						<string key="label15">UILabel</string>
+						<string key="label16">UILabel</string>
+						<string key="label17">UILabel</string>
+						<string key="label18">UILabel</string>
+						<string key="label19">UILabel</string>
+						<string key="label2">UILabel</string>
+						<string key="label20">UILabel</string>
+						<string key="label21">UILabel</string>
+						<string key="label22">UILabel</string>
+						<string key="label23">UILabel</string>
+						<string key="label24">UILabel</string>
+						<string key="label25">UILabel</string>
+						<string key="label26">UILabel</string>
+						<string key="label27">UILabel</string>
+						<string key="label28">UILabel</string>
+						<string key="label29">UILabel</string>
+						<string key="label3">UILabel</string>
+						<string key="label30">UILabel</string>
+						<string key="label31">UILabel</string>
+						<string key="label32">UILabel</string>
+						<string key="label33">UILabel</string>
+						<string key="label34">UILabel</string>
+						<string key="label35">UILabel</string>
+						<string key="label36">UILabel</string>
+						<string key="label37">UILabel</string>
+						<string key="label38">UILabel</string>
+						<string key="label39">UILabel</string>
+						<string key="label4">UILabel</string>
+						<string key="label40">UILabel</string>
+						<string key="label41">UILabel</string>
+						<string key="label42">UILabel</string>
+						<string key="label43">UILabel</string>
+						<string key="label44">UILabel</string>
+						<string key="label5">UILabel</string>
+						<string key="label6">UILabel</string>
+						<string key="label7">UILabel</string>
+						<string key="label8">UILabel</string>
+						<string key="label9">UILabel</string>
 						<string key="toolBar">GradientToolBar</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -2907,6 +3413,186 @@
 						<object class="IBToOneOutletInfo" key="imageView">
 							<string key="name">imageView</string>
 							<string key="candidateClassName">ExampleView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label0">
+							<string key="name">label0</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label1">
+							<string key="name">label1</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label10">
+							<string key="name">label10</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label11">
+							<string key="name">label11</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label12">
+							<string key="name">label12</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label13">
+							<string key="name">label13</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label14">
+							<string key="name">label14</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label15">
+							<string key="name">label15</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label16">
+							<string key="name">label16</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label17">
+							<string key="name">label17</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label18">
+							<string key="name">label18</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label19">
+							<string key="name">label19</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label2">
+							<string key="name">label2</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label20">
+							<string key="name">label20</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label21">
+							<string key="name">label21</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label22">
+							<string key="name">label22</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label23">
+							<string key="name">label23</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label24">
+							<string key="name">label24</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label25">
+							<string key="name">label25</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label26">
+							<string key="name">label26</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label27">
+							<string key="name">label27</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label28">
+							<string key="name">label28</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label29">
+							<string key="name">label29</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label3">
+							<string key="name">label3</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label30">
+							<string key="name">label30</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label31">
+							<string key="name">label31</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label32">
+							<string key="name">label32</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label33">
+							<string key="name">label33</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label34">
+							<string key="name">label34</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label35">
+							<string key="name">label35</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label36">
+							<string key="name">label36</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label37">
+							<string key="name">label37</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label38">
+							<string key="name">label38</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label39">
+							<string key="name">label39</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label4">
+							<string key="name">label4</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label40">
+							<string key="name">label40</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label41">
+							<string key="name">label41</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label42">
+							<string key="name">label42</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label43">
+							<string key="name">label43</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label44">
+							<string key="name">label44</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label5">
+							<string key="name">label5</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label6">
+							<string key="name">label6</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label7">
+							<string key="name">label7</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label8">
+							<string key="name">label8</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label9">
+							<string key="name">label9</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="toolBar">
 							<string key="name">toolBar</string>
@@ -2938,6 +3624,51 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="closeButton">GradientButton</string>
 						<string key="imageView">ExampleView</string>
+						<string key="label0">UILabel</string>
+						<string key="label1">UILabel</string>
+						<string key="label10">UILabel</string>
+						<string key="label11">UILabel</string>
+						<string key="label12">UILabel</string>
+						<string key="label13">UILabel</string>
+						<string key="label14">UILabel</string>
+						<string key="label15">UILabel</string>
+						<string key="label16">UILabel</string>
+						<string key="label17">UILabel</string>
+						<string key="label18">UILabel</string>
+						<string key="label19">UILabel</string>
+						<string key="label2">UILabel</string>
+						<string key="label20">UILabel</string>
+						<string key="label21">UILabel</string>
+						<string key="label22">UILabel</string>
+						<string key="label23">UILabel</string>
+						<string key="label24">UILabel</string>
+						<string key="label25">UILabel</string>
+						<string key="label26">UILabel</string>
+						<string key="label27">UILabel</string>
+						<string key="label28">UILabel</string>
+						<string key="label29">UILabel</string>
+						<string key="label3">UILabel</string>
+						<string key="label30">UILabel</string>
+						<string key="label31">UILabel</string>
+						<string key="label32">UILabel</string>
+						<string key="label33">UILabel</string>
+						<string key="label34">UILabel</string>
+						<string key="label35">UILabel</string>
+						<string key="label36">UILabel</string>
+						<string key="label37">UILabel</string>
+						<string key="label38">UILabel</string>
+						<string key="label39">UILabel</string>
+						<string key="label4">UILabel</string>
+						<string key="label40">UILabel</string>
+						<string key="label41">UILabel</string>
+						<string key="label42">UILabel</string>
+						<string key="label43">UILabel</string>
+						<string key="label44">UILabel</string>
+						<string key="label5">UILabel</string>
+						<string key="label6">UILabel</string>
+						<string key="label7">UILabel</string>
+						<string key="label8">UILabel</string>
+						<string key="label9">UILabel</string>
 						<string key="toolBar">GradientToolBar</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -2948,6 +3679,186 @@
 						<object class="IBToOneOutletInfo" key="imageView">
 							<string key="name">imageView</string>
 							<string key="candidateClassName">ExampleView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label0">
+							<string key="name">label0</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label1">
+							<string key="name">label1</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label10">
+							<string key="name">label10</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label11">
+							<string key="name">label11</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label12">
+							<string key="name">label12</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label13">
+							<string key="name">label13</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label14">
+							<string key="name">label14</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label15">
+							<string key="name">label15</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label16">
+							<string key="name">label16</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label17">
+							<string key="name">label17</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label18">
+							<string key="name">label18</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label19">
+							<string key="name">label19</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label2">
+							<string key="name">label2</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label20">
+							<string key="name">label20</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label21">
+							<string key="name">label21</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label22">
+							<string key="name">label22</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label23">
+							<string key="name">label23</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label24">
+							<string key="name">label24</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label25">
+							<string key="name">label25</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label26">
+							<string key="name">label26</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label27">
+							<string key="name">label27</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label28">
+							<string key="name">label28</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label29">
+							<string key="name">label29</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label3">
+							<string key="name">label3</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label30">
+							<string key="name">label30</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label31">
+							<string key="name">label31</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label32">
+							<string key="name">label32</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label33">
+							<string key="name">label33</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label34">
+							<string key="name">label34</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label35">
+							<string key="name">label35</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label36">
+							<string key="name">label36</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label37">
+							<string key="name">label37</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label38">
+							<string key="name">label38</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label39">
+							<string key="name">label39</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label4">
+							<string key="name">label4</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label40">
+							<string key="name">label40</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label41">
+							<string key="name">label41</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label42">
+							<string key="name">label42</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label43">
+							<string key="name">label43</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label44">
+							<string key="name">label44</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label5">
+							<string key="name">label5</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label6">
+							<string key="name">label6</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label7">
+							<string key="name">label7</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label8">
+							<string key="name">label8</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label9">
+							<string key="name">label9</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="toolBar">
 							<string key="name">toolBar</string>
@@ -3245,6 +4156,51 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="closeButton">GradientButton</string>
 						<string key="imageView">ExampleView</string>
+						<string key="label0">UILabel</string>
+						<string key="label1">UILabel</string>
+						<string key="label10">UILabel</string>
+						<string key="label11">UILabel</string>
+						<string key="label12">UILabel</string>
+						<string key="label13">UILabel</string>
+						<string key="label14">UILabel</string>
+						<string key="label15">UILabel</string>
+						<string key="label16">UILabel</string>
+						<string key="label17">UILabel</string>
+						<string key="label18">UILabel</string>
+						<string key="label19">UILabel</string>
+						<string key="label2">UILabel</string>
+						<string key="label20">UILabel</string>
+						<string key="label21">UILabel</string>
+						<string key="label22">UILabel</string>
+						<string key="label23">UILabel</string>
+						<string key="label24">UILabel</string>
+						<string key="label25">UILabel</string>
+						<string key="label26">UILabel</string>
+						<string key="label27">UILabel</string>
+						<string key="label28">UILabel</string>
+						<string key="label29">UILabel</string>
+						<string key="label3">UILabel</string>
+						<string key="label30">UILabel</string>
+						<string key="label31">UILabel</string>
+						<string key="label32">UILabel</string>
+						<string key="label33">UILabel</string>
+						<string key="label34">UILabel</string>
+						<string key="label35">UILabel</string>
+						<string key="label36">UILabel</string>
+						<string key="label37">UILabel</string>
+						<string key="label38">UILabel</string>
+						<string key="label39">UILabel</string>
+						<string key="label4">UILabel</string>
+						<string key="label40">UILabel</string>
+						<string key="label41">UILabel</string>
+						<string key="label42">UILabel</string>
+						<string key="label43">UILabel</string>
+						<string key="label44">UILabel</string>
+						<string key="label5">UILabel</string>
+						<string key="label6">UILabel</string>
+						<string key="label7">UILabel</string>
+						<string key="label8">UILabel</string>
+						<string key="label9">UILabel</string>
 						<string key="toolBar">GradientToolBar</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -3255,6 +4211,186 @@
 						<object class="IBToOneOutletInfo" key="imageView">
 							<string key="name">imageView</string>
 							<string key="candidateClassName">ExampleView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label0">
+							<string key="name">label0</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label1">
+							<string key="name">label1</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label10">
+							<string key="name">label10</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label11">
+							<string key="name">label11</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label12">
+							<string key="name">label12</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label13">
+							<string key="name">label13</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label14">
+							<string key="name">label14</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label15">
+							<string key="name">label15</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label16">
+							<string key="name">label16</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label17">
+							<string key="name">label17</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label18">
+							<string key="name">label18</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label19">
+							<string key="name">label19</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label2">
+							<string key="name">label2</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label20">
+							<string key="name">label20</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label21">
+							<string key="name">label21</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label22">
+							<string key="name">label22</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label23">
+							<string key="name">label23</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label24">
+							<string key="name">label24</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label25">
+							<string key="name">label25</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label26">
+							<string key="name">label26</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label27">
+							<string key="name">label27</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label28">
+							<string key="name">label28</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label29">
+							<string key="name">label29</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label3">
+							<string key="name">label3</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label30">
+							<string key="name">label30</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label31">
+							<string key="name">label31</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label32">
+							<string key="name">label32</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label33">
+							<string key="name">label33</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label34">
+							<string key="name">label34</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label35">
+							<string key="name">label35</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label36">
+							<string key="name">label36</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label37">
+							<string key="name">label37</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label38">
+							<string key="name">label38</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label39">
+							<string key="name">label39</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label4">
+							<string key="name">label4</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label40">
+							<string key="name">label40</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label41">
+							<string key="name">label41</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label42">
+							<string key="name">label42</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label43">
+							<string key="name">label43</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label44">
+							<string key="name">label44</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label5">
+							<string key="name">label5</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label6">
+							<string key="name">label6</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label7">
+							<string key="name">label7</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label8">
+							<string key="name">label8</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label9">
+							<string key="name">label9</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="toolBar">
 							<string key="name">toolBar</string>
@@ -3286,6 +4422,51 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="closeButton">GradientButton</string>
 						<string key="imageView">ExampleView</string>
+						<string key="label0">UILabel</string>
+						<string key="label1">UILabel</string>
+						<string key="label10">UILabel</string>
+						<string key="label11">UILabel</string>
+						<string key="label12">UILabel</string>
+						<string key="label13">UILabel</string>
+						<string key="label14">UILabel</string>
+						<string key="label15">UILabel</string>
+						<string key="label16">UILabel</string>
+						<string key="label17">UILabel</string>
+						<string key="label18">UILabel</string>
+						<string key="label19">UILabel</string>
+						<string key="label2">UILabel</string>
+						<string key="label20">UILabel</string>
+						<string key="label21">UILabel</string>
+						<string key="label22">UILabel</string>
+						<string key="label23">UILabel</string>
+						<string key="label24">UILabel</string>
+						<string key="label25">UILabel</string>
+						<string key="label26">UILabel</string>
+						<string key="label27">UILabel</string>
+						<string key="label28">UILabel</string>
+						<string key="label29">UILabel</string>
+						<string key="label3">UILabel</string>
+						<string key="label30">UILabel</string>
+						<string key="label31">UILabel</string>
+						<string key="label32">UILabel</string>
+						<string key="label33">UILabel</string>
+						<string key="label34">UILabel</string>
+						<string key="label35">UILabel</string>
+						<string key="label36">UILabel</string>
+						<string key="label37">UILabel</string>
+						<string key="label38">UILabel</string>
+						<string key="label39">UILabel</string>
+						<string key="label4">UILabel</string>
+						<string key="label40">UILabel</string>
+						<string key="label41">UILabel</string>
+						<string key="label42">UILabel</string>
+						<string key="label43">UILabel</string>
+						<string key="label44">UILabel</string>
+						<string key="label5">UILabel</string>
+						<string key="label6">UILabel</string>
+						<string key="label7">UILabel</string>
+						<string key="label8">UILabel</string>
+						<string key="label9">UILabel</string>
 						<string key="toolBar">GradientToolBar</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -3296,6 +4477,186 @@
 						<object class="IBToOneOutletInfo" key="imageView">
 							<string key="name">imageView</string>
 							<string key="candidateClassName">ExampleView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label0">
+							<string key="name">label0</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label1">
+							<string key="name">label1</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label10">
+							<string key="name">label10</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label11">
+							<string key="name">label11</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label12">
+							<string key="name">label12</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label13">
+							<string key="name">label13</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label14">
+							<string key="name">label14</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label15">
+							<string key="name">label15</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label16">
+							<string key="name">label16</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label17">
+							<string key="name">label17</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label18">
+							<string key="name">label18</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label19">
+							<string key="name">label19</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label2">
+							<string key="name">label2</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label20">
+							<string key="name">label20</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label21">
+							<string key="name">label21</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label22">
+							<string key="name">label22</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label23">
+							<string key="name">label23</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label24">
+							<string key="name">label24</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label25">
+							<string key="name">label25</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label26">
+							<string key="name">label26</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label27">
+							<string key="name">label27</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label28">
+							<string key="name">label28</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label29">
+							<string key="name">label29</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label3">
+							<string key="name">label3</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label30">
+							<string key="name">label30</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label31">
+							<string key="name">label31</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label32">
+							<string key="name">label32</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label33">
+							<string key="name">label33</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label34">
+							<string key="name">label34</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label35">
+							<string key="name">label35</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label36">
+							<string key="name">label36</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label37">
+							<string key="name">label37</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label38">
+							<string key="name">label38</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label39">
+							<string key="name">label39</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label4">
+							<string key="name">label4</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label40">
+							<string key="name">label40</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label41">
+							<string key="name">label41</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label42">
+							<string key="name">label42</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label43">
+							<string key="name">label43</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label44">
+							<string key="name">label44</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label5">
+							<string key="name">label5</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label6">
+							<string key="name">label6</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label7">
+							<string key="name">label7</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label8">
+							<string key="name">label8</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label9">
+							<string key="name">label9</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="toolBar">
 							<string key="name">toolBar</string>
@@ -3327,6 +4688,51 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="closeButton">GradientButton</string>
 						<string key="imageView">ExampleView</string>
+						<string key="label0">UILabel</string>
+						<string key="label1">UILabel</string>
+						<string key="label10">UILabel</string>
+						<string key="label11">UILabel</string>
+						<string key="label12">UILabel</string>
+						<string key="label13">UILabel</string>
+						<string key="label14">UILabel</string>
+						<string key="label15">UILabel</string>
+						<string key="label16">UILabel</string>
+						<string key="label17">UILabel</string>
+						<string key="label18">UILabel</string>
+						<string key="label19">UILabel</string>
+						<string key="label2">UILabel</string>
+						<string key="label20">UILabel</string>
+						<string key="label21">UILabel</string>
+						<string key="label22">UILabel</string>
+						<string key="label23">UILabel</string>
+						<string key="label24">UILabel</string>
+						<string key="label25">UILabel</string>
+						<string key="label26">UILabel</string>
+						<string key="label27">UILabel</string>
+						<string key="label28">UILabel</string>
+						<string key="label29">UILabel</string>
+						<string key="label3">UILabel</string>
+						<string key="label30">UILabel</string>
+						<string key="label31">UILabel</string>
+						<string key="label32">UILabel</string>
+						<string key="label33">UILabel</string>
+						<string key="label34">UILabel</string>
+						<string key="label35">UILabel</string>
+						<string key="label36">UILabel</string>
+						<string key="label37">UILabel</string>
+						<string key="label38">UILabel</string>
+						<string key="label39">UILabel</string>
+						<string key="label4">UILabel</string>
+						<string key="label40">UILabel</string>
+						<string key="label41">UILabel</string>
+						<string key="label42">UILabel</string>
+						<string key="label43">UILabel</string>
+						<string key="label44">UILabel</string>
+						<string key="label5">UILabel</string>
+						<string key="label6">UILabel</string>
+						<string key="label7">UILabel</string>
+						<string key="label8">UILabel</string>
+						<string key="label9">UILabel</string>
 						<string key="toolBar">GradientToolBar</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -3337,6 +4743,186 @@
 						<object class="IBToOneOutletInfo" key="imageView">
 							<string key="name">imageView</string>
 							<string key="candidateClassName">ExampleView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label0">
+							<string key="name">label0</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label1">
+							<string key="name">label1</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label10">
+							<string key="name">label10</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label11">
+							<string key="name">label11</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label12">
+							<string key="name">label12</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label13">
+							<string key="name">label13</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label14">
+							<string key="name">label14</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label15">
+							<string key="name">label15</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label16">
+							<string key="name">label16</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label17">
+							<string key="name">label17</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label18">
+							<string key="name">label18</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label19">
+							<string key="name">label19</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label2">
+							<string key="name">label2</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label20">
+							<string key="name">label20</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label21">
+							<string key="name">label21</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label22">
+							<string key="name">label22</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label23">
+							<string key="name">label23</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label24">
+							<string key="name">label24</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label25">
+							<string key="name">label25</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label26">
+							<string key="name">label26</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label27">
+							<string key="name">label27</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label28">
+							<string key="name">label28</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label29">
+							<string key="name">label29</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label3">
+							<string key="name">label3</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label30">
+							<string key="name">label30</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label31">
+							<string key="name">label31</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label32">
+							<string key="name">label32</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label33">
+							<string key="name">label33</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label34">
+							<string key="name">label34</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label35">
+							<string key="name">label35</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label36">
+							<string key="name">label36</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label37">
+							<string key="name">label37</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label38">
+							<string key="name">label38</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label39">
+							<string key="name">label39</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label4">
+							<string key="name">label4</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label40">
+							<string key="name">label40</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label41">
+							<string key="name">label41</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label42">
+							<string key="name">label42</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label43">
+							<string key="name">label43</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label44">
+							<string key="name">label44</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label5">
+							<string key="name">label5</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label6">
+							<string key="name">label6</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label7">
+							<string key="name">label7</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label8">
+							<string key="name">label8</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label9">
+							<string key="name">label9</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="toolBar">
 							<string key="name">toolBar</string>
@@ -3368,6 +4954,51 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="closeButton">GradientButton</string>
 						<string key="imageView">ExampleView</string>
+						<string key="label0">UILabel</string>
+						<string key="label1">UILabel</string>
+						<string key="label10">UILabel</string>
+						<string key="label11">UILabel</string>
+						<string key="label12">UILabel</string>
+						<string key="label13">UILabel</string>
+						<string key="label14">UILabel</string>
+						<string key="label15">UILabel</string>
+						<string key="label16">UILabel</string>
+						<string key="label17">UILabel</string>
+						<string key="label18">UILabel</string>
+						<string key="label19">UILabel</string>
+						<string key="label2">UILabel</string>
+						<string key="label20">UILabel</string>
+						<string key="label21">UILabel</string>
+						<string key="label22">UILabel</string>
+						<string key="label23">UILabel</string>
+						<string key="label24">UILabel</string>
+						<string key="label25">UILabel</string>
+						<string key="label26">UILabel</string>
+						<string key="label27">UILabel</string>
+						<string key="label28">UILabel</string>
+						<string key="label29">UILabel</string>
+						<string key="label3">UILabel</string>
+						<string key="label30">UILabel</string>
+						<string key="label31">UILabel</string>
+						<string key="label32">UILabel</string>
+						<string key="label33">UILabel</string>
+						<string key="label34">UILabel</string>
+						<string key="label35">UILabel</string>
+						<string key="label36">UILabel</string>
+						<string key="label37">UILabel</string>
+						<string key="label38">UILabel</string>
+						<string key="label39">UILabel</string>
+						<string key="label4">UILabel</string>
+						<string key="label40">UILabel</string>
+						<string key="label41">UILabel</string>
+						<string key="label42">UILabel</string>
+						<string key="label43">UILabel</string>
+						<string key="label44">UILabel</string>
+						<string key="label5">UILabel</string>
+						<string key="label6">UILabel</string>
+						<string key="label7">UILabel</string>
+						<string key="label8">UILabel</string>
+						<string key="label9">UILabel</string>
 						<string key="toolBar">GradientToolBar</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -3378,6 +5009,186 @@
 						<object class="IBToOneOutletInfo" key="imageView">
 							<string key="name">imageView</string>
 							<string key="candidateClassName">ExampleView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label0">
+							<string key="name">label0</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label1">
+							<string key="name">label1</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label10">
+							<string key="name">label10</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label11">
+							<string key="name">label11</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label12">
+							<string key="name">label12</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label13">
+							<string key="name">label13</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label14">
+							<string key="name">label14</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label15">
+							<string key="name">label15</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label16">
+							<string key="name">label16</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label17">
+							<string key="name">label17</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label18">
+							<string key="name">label18</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label19">
+							<string key="name">label19</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label2">
+							<string key="name">label2</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label20">
+							<string key="name">label20</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label21">
+							<string key="name">label21</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label22">
+							<string key="name">label22</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label23">
+							<string key="name">label23</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label24">
+							<string key="name">label24</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label25">
+							<string key="name">label25</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label26">
+							<string key="name">label26</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label27">
+							<string key="name">label27</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label28">
+							<string key="name">label28</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label29">
+							<string key="name">label29</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label3">
+							<string key="name">label3</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label30">
+							<string key="name">label30</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label31">
+							<string key="name">label31</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label32">
+							<string key="name">label32</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label33">
+							<string key="name">label33</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label34">
+							<string key="name">label34</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label35">
+							<string key="name">label35</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label36">
+							<string key="name">label36</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label37">
+							<string key="name">label37</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label38">
+							<string key="name">label38</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label39">
+							<string key="name">label39</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label4">
+							<string key="name">label4</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label40">
+							<string key="name">label40</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label41">
+							<string key="name">label41</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label42">
+							<string key="name">label42</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label43">
+							<string key="name">label43</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label44">
+							<string key="name">label44</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label5">
+							<string key="name">label5</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label6">
+							<string key="name">label6</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label7">
+							<string key="name">label7</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label8">
+							<string key="name">label8</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label9">
+							<string key="name">label9</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="toolBar">
 							<string key="name">toolBar</string>
@@ -3409,6 +5220,51 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="closeButton">GradientButton</string>
 						<string key="imageView">ExampleView</string>
+						<string key="label0">UILabel</string>
+						<string key="label1">UILabel</string>
+						<string key="label10">UILabel</string>
+						<string key="label11">UILabel</string>
+						<string key="label12">UILabel</string>
+						<string key="label13">UILabel</string>
+						<string key="label14">UILabel</string>
+						<string key="label15">UILabel</string>
+						<string key="label16">UILabel</string>
+						<string key="label17">UILabel</string>
+						<string key="label18">UILabel</string>
+						<string key="label19">UILabel</string>
+						<string key="label2">UILabel</string>
+						<string key="label20">UILabel</string>
+						<string key="label21">UILabel</string>
+						<string key="label22">UILabel</string>
+						<string key="label23">UILabel</string>
+						<string key="label24">UILabel</string>
+						<string key="label25">UILabel</string>
+						<string key="label26">UILabel</string>
+						<string key="label27">UILabel</string>
+						<string key="label28">UILabel</string>
+						<string key="label29">UILabel</string>
+						<string key="label3">UILabel</string>
+						<string key="label30">UILabel</string>
+						<string key="label31">UILabel</string>
+						<string key="label32">UILabel</string>
+						<string key="label33">UILabel</string>
+						<string key="label34">UILabel</string>
+						<string key="label35">UILabel</string>
+						<string key="label36">UILabel</string>
+						<string key="label37">UILabel</string>
+						<string key="label38">UILabel</string>
+						<string key="label39">UILabel</string>
+						<string key="label4">UILabel</string>
+						<string key="label40">UILabel</string>
+						<string key="label41">UILabel</string>
+						<string key="label42">UILabel</string>
+						<string key="label43">UILabel</string>
+						<string key="label44">UILabel</string>
+						<string key="label5">UILabel</string>
+						<string key="label6">UILabel</string>
+						<string key="label7">UILabel</string>
+						<string key="label8">UILabel</string>
+						<string key="label9">UILabel</string>
 						<string key="toolBar">GradientToolBar</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -3419,6 +5275,186 @@
 						<object class="IBToOneOutletInfo" key="imageView">
 							<string key="name">imageView</string>
 							<string key="candidateClassName">ExampleView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label0">
+							<string key="name">label0</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label1">
+							<string key="name">label1</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label10">
+							<string key="name">label10</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label11">
+							<string key="name">label11</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label12">
+							<string key="name">label12</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label13">
+							<string key="name">label13</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label14">
+							<string key="name">label14</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label15">
+							<string key="name">label15</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label16">
+							<string key="name">label16</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label17">
+							<string key="name">label17</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label18">
+							<string key="name">label18</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label19">
+							<string key="name">label19</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label2">
+							<string key="name">label2</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label20">
+							<string key="name">label20</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label21">
+							<string key="name">label21</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label22">
+							<string key="name">label22</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label23">
+							<string key="name">label23</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label24">
+							<string key="name">label24</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label25">
+							<string key="name">label25</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label26">
+							<string key="name">label26</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label27">
+							<string key="name">label27</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label28">
+							<string key="name">label28</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label29">
+							<string key="name">label29</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label3">
+							<string key="name">label3</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label30">
+							<string key="name">label30</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label31">
+							<string key="name">label31</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label32">
+							<string key="name">label32</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label33">
+							<string key="name">label33</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label34">
+							<string key="name">label34</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label35">
+							<string key="name">label35</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label36">
+							<string key="name">label36</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label37">
+							<string key="name">label37</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label38">
+							<string key="name">label38</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label39">
+							<string key="name">label39</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label4">
+							<string key="name">label4</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label40">
+							<string key="name">label40</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label41">
+							<string key="name">label41</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label42">
+							<string key="name">label42</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label43">
+							<string key="name">label43</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label44">
+							<string key="name">label44</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label5">
+							<string key="name">label5</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label6">
+							<string key="name">label6</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label7">
+							<string key="name">label7</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label8">
+							<string key="name">label8</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label9">
+							<string key="name">label9</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="toolBar">
 							<string key="name">toolBar</string>
@@ -4516,6 +6552,6 @@
 			<string key="PLVideoCameraPreviewStack.png">{16, 16}</string>
 			<string key="W.png">{16, 16}</string>
 		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">1926</string>
+		<string key="IBCocoaTouchPluginVersion">1929</string>
 	</data>
 </archive>
