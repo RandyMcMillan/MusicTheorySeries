@@ -85,7 +85,7 @@
 
 - (void)useWelcomeStyle
 {
-    CGRect rect = self.superview.frame;
+    //CGRect rect = self.superview.frame;
 
     // CGRect rect = VIEWBOUNDS;//self.superview.frame;
 

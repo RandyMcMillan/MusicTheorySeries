@@ -322,7 +322,7 @@
 
     // [self.view addSubview:moviePlayer.view];
 
-    [self presentModalViewController:moviePlayer animated:YES];
+    [self presentViewController:moviePlayer animated:YES completion:nil];
 
     // [self presentMoviePlayerViewControllerAnimated:moviePlayer];
 } /* playMovie */
@@ -361,7 +361,7 @@
     WikiViewController *wikiVC = [[WikiViewController alloc] init];
     // wikiVC.modalPresentationStyle = UIModalPresentationPageSheet;
     wikiVC.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentModalViewController:wikiVC animated:YES];
+    [self presentViewController:wikiVC animated:YES completion:nil];
     [wikiVC.webView setBackgroundColor:[UIColor clearColor]];
     [self hideGradientBackground:wikiVC.webView];
 
@@ -401,7 +401,7 @@
     YouTubeViewController *youtubeVC = [[YouTubeViewController alloc] init];
     youtubeVC.modalPresentationStyle = UIModalPresentationPageSheet;
     // youtubeVC.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentModalViewController:youtubeVC animated:YES];
+    [self presentViewController:youtubeVC animated:YES completion:nil];
     [youtubeVC.webView setBackgroundColor:[UIColor clearColor]];
     [self hideGradientBackground:youtubeVC.webView];
 
@@ -752,7 +752,7 @@
         // only for iPad
         // mailer.modalPresentationStyle = UIModalPresentationPageSheet;
 
-        [self presentModalViewController:mailer animated:YES];
+        [self presentViewController:mailer animated:YES completion:nil];
 
         [mailer release];
     } else {
@@ -792,7 +792,7 @@
             break;
     }
 
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - isTwitterAvailable
@@ -850,7 +850,7 @@
             [tweetSheet addURL:[NSURL URLWithString:urlAttach]];
         }
 
-        [self presentModalViewController:tweetSheet animated:YES];
+        [self presentViewController:tweetSheet animated:YES completion:nil];
         [tweetSheet release];
     } else {
         UIAlertView *alertView = [[UIAlertView alloc]   initWithTitle       :@"Sorry"

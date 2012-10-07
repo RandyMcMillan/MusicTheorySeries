@@ -300,7 +300,7 @@
     // // Color Declarations
     UIColor *darkBar        = [UIColor clearColor];                                             // [UIColor colorWithRed:0.098 green:0.098 blue:0.098 alpha:1.000];//[UIColor colorWithRed:0.173 green:0.169 blue:0.173 alpha:1.00];//[UIColor colorWithRed: 0.11 green: 0.11 blue: 0.11 alpha: 1];
     UIColor *lightBar       = [UIColor clearColor];                                             // [UIColor colorWithRed:0.098 green:0.098 blue:0.098 alpha:0.800];;//[UIColor colorWithRed:0.286 green:0.286 blue:0.290 alpha:0.800];//[UIColor colorWithRed:0.227 green:0.227 blue:0.231 alpha:1.000];//[UIColor colorWithRed:0.188 green:0.188 blue:0.192 alpha:1.000];//[UIColor colorWithRed:0.149 green:0.149 blue:0.149 alpha:1.000];//[UIColor colorWithRed: 0.378 green: 0.378 blue: 0.378 alpha: 1];
-    UIColor *shadowColor2   = [UIColor colorWithRed:0.241 green:0.241 blue:0.241 alpha:0.900];  // [UIColor colorWithRed: 0.624 green: 0.624 blue: 0.624 alpha: 0.1];
+    //UIColor *shadowColor2   = [UIColor colorWithRed:0.241 green:0.241 blue:0.241 alpha:0.900];  // [UIColor colorWithRed: 0.624 green: 0.624 blue: 0.624 alpha: 0.1];
 
     //  self.enabled = FALSE;
     NSMutableArray *colors = [NSMutableArray arrayWithCapacity:3];

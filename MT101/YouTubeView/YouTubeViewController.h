@@ -10,7 +10,7 @@
 #import "GradientToolBar.h"
 #import "GradientNavBar.h"
 
-@protocol WebViewDelegate <NSObject>
+@protocol YouTubeWebViewDelegate <NSObject>
 @end
 
 @interface YouTubeViewController : UIViewController <UIWebViewDelegate, UIGestureRecognizerDelegate>{
@@ -38,7 +38,7 @@
     IBOutlet UIActivityIndicatorView    *spinner;
     BOOL                                isImage;
     NSString                            *imageURL;
-    id <WebViewDelegate>                delegate;
+    id <YouTubeWebViewDelegate>                delegate;
 
     BOOL scaleEnabled;
 
@@ -55,7 +55,7 @@
 @property (nonatomic, retain) UIWebView                         *webView;
 @property (retain) NSString                                     *imageURL;
 @property (assign) BOOL                                         isImage;
-@property (nonatomic, retain) id <WebViewDelegate>              delegate;
+@property (nonatomic, retain) id <YouTubeWebViewDelegate>              delegate;
 @property (nonatomic, retain) GradientButton                    *doneButton;
 @property (nonatomic, retain) id <UIGestureRecognizerDelegate>  uigr;
 

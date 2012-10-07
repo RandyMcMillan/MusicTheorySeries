@@ -63,8 +63,8 @@
 
 - (void)viewDidLoad
 {
-    CGRect textFieldFrame = CGRectMake(kLeftMargin, kTweenMargin,
-        self.view.bounds.size.width - (kLeftMargin * 2.0), kTextFieldHeight);
+    //CGRect textFieldFrame = CGRectMake(kLeftMargin, kTweenMargin,
+    //  self.view.bounds.size.width - (kLeftMargin * 2.0), kTextFieldHeight);
 
     [self.view setBackgroundColor:[UIColor colorWithRed:0.098 green:0.098 blue:0.098 alpha:1.000]//[UIColor colorWithRed:0.173 green:0.169 blue:0.173 alpha:1.00];//[UIColor colorWithRed: 0.11 green: 0.11 blue: 0.11 alpha: 1];
 ];
@@ -159,11 +159,11 @@
 
 - (void)hideToolBar
 {
-    CGRect newRectangle = CGRectMake(0,
-        0,
-        toolBar.frame.size.width,
-        VIEWBOUNDS.size.height
-        );
+    //CGRect newRectangle = CGRectMake(0,
+    //  0,
+    //  toolBar.frame.size.width,
+    //  VIEWBOUNDS.size.height
+    //  );
 
     //  [webView setFrame:newRectangle];
 
@@ -202,11 +202,11 @@
 
 - (void)showToolBar
 {
-    CGRect newRectangle = CGRectMake(0,
-        44,
-        toolBar.frame.size.width,
-        [self view].frame.size.height - 88
-        );
+    //CGRect newRectangle = CGRectMake(0,
+    //  44,
+    //  toolBar.frame.size.width,
+    //  [self view].frame.size.height - 88
+    //  );
 
     //  [webView setFrame:newRectangle];
 
@@ -379,8 +379,7 @@
         [[self presentingViewController]    dismissViewControllerAnimated   :
             YES                             completion                      :nil];
     } else {
-        [[self parentViewController] dismissModalViewControllerAnimated
-            :YES];
+        [[self parentViewController] dismissViewControllerAnimated:YES completion:nil];
     }
 
     [webView release];
