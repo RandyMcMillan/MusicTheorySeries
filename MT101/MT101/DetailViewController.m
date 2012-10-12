@@ -695,9 +695,12 @@
         NSLog(@"Localization = %@",
               [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleLocalizationsKey]);
 
-        self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+        //self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+        self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"GitVersion"];
+ 
+        
         self.detailDescriptionLabel.frame
-            = CGRectMake(vLabel.center.x - 4.3, vLabel.center.y - 9.1, 30, 20);
+            = CGRectMake(vLabel.center.x - 4.3, vLabel.center.y - 9.1, 50, 20);
         [self.detailDescriptionLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:11.0]];
         self.detailDescriptionLabel.hidden = FALSE;
 
