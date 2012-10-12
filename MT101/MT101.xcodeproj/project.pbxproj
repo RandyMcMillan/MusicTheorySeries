@@ -1553,7 +1553,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "infoplist=\"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\"\ngitversion=\"$(cd \"$SRCROOT\" && git describe --always --dirty 2>/dev/null)\"\nif [[ -n \"$gitversion\" ]]; then\ndefaults write \"${infoplist%.plist}\" GitVersion \"$gitversion\"\nfi";
+			shellScript = "infoplist=\"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\"\ngitversion=\"$(cd \"$SRCROOT\" && git describe --always --dirty>/dev/null)\"\nif [[ -n \"$gitversion\" ]]; then\ndefaults write \"${infoplist%.plist}\" GitVersion \"$gitversion\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
