@@ -694,12 +694,19 @@
               [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleNameKey]);
         NSLog(@"Localization = %@",
               [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleLocalizationsKey]);
+    
+        NSDictionary *appInfo = [[NSBundle mainBundle] infoDictionary];
+        NSString *versionStr = [NSString stringWithFormat:@"%@ (%@)",
+                                [appInfo objectForKey:@"CFBundleShortVersionString"],
+                                [appInfo objectForKey:@"GitVersion"]];
+        
 
         //self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
-        self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"GitVersion"];
+        self.detailDescriptionLabel.text = versionStr;//[[[NSBundle mainBundle] infoDictionary] objectForKey:@"GitVersion"];
  
         
-        self.detailDescriptionLabel.frame
+        
+           self.detailDescriptionLabel.frame
         = CGRectMake(musicTheory101Label.center.x + 77.5, musicTheory101Label.center.y + 11.6, 180, 20);
         //CGRectMake(vLabel.center.x - 2.3, vLabel.center.y - 9.1, 150, 20);
         [self.detailDescriptionLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:11.0]];
