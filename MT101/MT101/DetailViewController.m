@@ -1067,7 +1067,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 
     if (self) {
-        self.title = NSLocalizedString(@"detailVC Line:1043 Music Theory 101",
+        self.title = NSLocalizedString(@"Music Theory 101",
             @"Music Theory 101");
     }
 
