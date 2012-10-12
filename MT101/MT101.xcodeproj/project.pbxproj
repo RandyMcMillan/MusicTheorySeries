@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4801258F161FA9BA0026281D /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801258E161FA9BA0026281D /* Default-Landscape@2x~ipad.png */; };
 		4801D4B21614645500512EA6 /* Interactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4B11614645500512EA6 /* Interactive.png */; };
 		4801D4B4161464F100512EA6 /* Interactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4B3161464F100512EA6 /* Interactive@2x.png */; };
 		48022A15161DD8EC00F31287 /* error.html in Resources */ = {isa = PBXBuildFile; fileRef = 48022A09161DD8EC00F31287 /* error.html */; };
@@ -192,6 +191,8 @@
 		482A04CB161F179A00405AE6 /* C Major Ionian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 482A04CA161F179A00405AE6 /* C Major Ionian.mp4 */; };
 		482A04CE161F181200405AE6 /* D Minor Dorian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 482A04CD161F181200405AE6 /* D Minor Dorian.mp4 */; };
 		483F4C771606F41C00BB6744 /* SolfegeNaturals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 483F4C761606F41C00BB6744 /* SolfegeNaturals.pdf */; };
+		4844E2021628DDA900844F8A /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4844E2011628DDA900844F8A /* Default-Landscape@2x~ipad.png */; };
+		4844E2051628DE0A00844F8A /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4844E2041628DE0A00844F8A /* Default-Landscape~ipad.png */; };
 		4848AAC416213F5800001F8F /* E Minor Phrygian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4848AAC216213F5800001F8F /* E Minor Phrygian.mp4 */; };
 		4848AAC516213F5800001F8F /* F Major Lydian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4848AAC316213F5800001F8F /* F Major Lydian.mp4 */; };
 		4848AAC81621457800001F8F /* G Major MixoLydian.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4848AAC71621457800001F8F /* G Major MixoLydian.mp4 */; };
@@ -295,7 +296,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4801258E161FA9BA0026281D /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		4801D4B11614645500512EA6 /* Interactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Interactive.png; path = ../Interactive.png; sourceTree = "<group>"; };
 		4801D4B3161464F100512EA6 /* Interactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Interactive@2x.png"; path = "../Interactive@2x.png"; sourceTree = "<group>"; };
 		48022A09161DD8EC00F31287 /* error.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = error.html; sourceTree = "<group>"; };
@@ -498,6 +498,8 @@
 		482A04CA161F179A00405AE6 /* C Major Ionian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "C Major Ionian.mp4"; sourceTree = "<group>"; };
 		482A04CD161F181200405AE6 /* D Minor Dorian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "D Minor Dorian.mp4"; sourceTree = "<group>"; };
 		483F4C761606F41C00BB6744 /* SolfegeNaturals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeNaturals.pdf; sourceTree = "<group>"; };
+		4844E2011628DDA900844F8A /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		4844E2041628DE0A00844F8A /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		4848AAC216213F5800001F8F /* E Minor Phrygian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "E Minor Phrygian.mp4"; sourceTree = "<group>"; };
 		4848AAC316213F5800001F8F /* F Major Lydian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "F Major Lydian.mp4"; sourceTree = "<group>"; };
 		4848AAC71621457800001F8F /* G Major MixoLydian.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "G Major MixoLydian.mp4"; sourceTree = "<group>"; };
@@ -1188,7 +1190,8 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
-				4801258E161FA9BA0026281D /* Default-Landscape@2x~ipad.png */,
+				4844E2041628DE0A00844F8A /* Default-Landscape~ipad.png */,
+				4844E2011628DDA900844F8A /* Default-Landscape@2x~ipad.png */,
 				48022A5A161DE12C00F31287 /* YouTubeView */,
 				48022A08161DD8EC00F31287 /* WikiView */,
 				484D16E315DAE471005FC66E /* Plists */,
@@ -1531,10 +1534,11 @@
 				482A04CB161F179A00405AE6 /* C Major Ionian.mp4 in Resources */,
 				482A04CE161F181200405AE6 /* D Minor Dorian.mp4 in Resources */,
 				48EE21C6161F9CF50003BC3D /* Solfege Flats .mp4 in Resources */,
-				4801258F161FA9BA0026281D /* Default-Landscape@2x~ipad.png in Resources */,
 				4848AAC416213F5800001F8F /* E Minor Phrygian.mp4 in Resources */,
 				4848AAC516213F5800001F8F /* F Major Lydian.mp4 in Resources */,
 				4848AAC81621457800001F8F /* G Major MixoLydian.mp4 in Resources */,
+				4844E2021628DDA900844F8A /* Default-Landscape@2x~ipad.png in Resources */,
+				4844E2051628DE0A00844F8A /* Default-Landscape~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
