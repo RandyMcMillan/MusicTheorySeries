@@ -674,9 +674,9 @@
         [self.musicTheory101Label setFont:[UIFont fontWithName:@"Helvetica-Bold" size:39.0]];
         self.musicTheory101Label.hidden = FALSE;
 
-        self.vLabel.text = @"v";
+        self.vLabel.text = @"";
         self.vLabel.frame
-            = CGRectMake(musicTheory101Label.center.x + 127.5, musicTheory101Label.center.y + 9.6, 20, 20);
+            = CGRectMake(musicTheory101Label.center.x + 87.5, musicTheory101Label.center.y + 9.6, 80, 20);
         [self.vLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:10.0]];
         self.vLabel.hidden = FALSE;
 
@@ -700,7 +700,8 @@
  
         
         self.detailDescriptionLabel.frame
-            = CGRectMake(vLabel.center.x - 4.3, vLabel.center.y - 9.1, 50, 20);
+        = CGRectMake(musicTheory101Label.center.x + 77.5, musicTheory101Label.center.y + 11.6, 180, 20);
+        //CGRectMake(vLabel.center.x - 2.3, vLabel.center.y - 9.1, 150, 20);
         [self.detailDescriptionLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:11.0]];
         self.detailDescriptionLabel.hidden = FALSE;
 
