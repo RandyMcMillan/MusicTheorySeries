@@ -8,7 +8,7 @@ xml:lang="en" lang="en">
 
 <head>
 
-<title>The page you requested is no longer here [error 404]</title>
+<title>Music Theory 101 seems to be offline. [error 404]</title>
 
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 
@@ -18,9 +18,9 @@ xml:lang="en" lang="en">
 
 <body>
 
-<h1>The page you requested is no longer here <small>[error 404]</small></h1>
+<h1>Music Theory 101 seems to be offline. <small>[error 404]</small></h1>
 
-<p>... but we think we can help you</p>
+<p>Please check you internet connection.</p>
 
 <script type="text/javaScript">
 
@@ -42,27 +42,27 @@ if (strReferrer.length==0)
 
 	var str='';
 
-	str+='We think you will find one of the following links useful:</p>';
+	str+='</p>';
 
-	str+='<p><a href="/" title="Go to the home page for blahblah.com">Home Page<\/a>  ';
+	str+='<p><a href="/" title="Go to the home page for blahblah.com"><\/a>  ';
 
-	str+='<a href="/site-map.php" title="View the complete site map for blahblah.com">Site Map<\/a><\/p>';
+	str+='<a href="/site-map.php" title="View the complete site map for blahblah.com"><\/a><\/p>';
 
 	str+='<hr \/>';
 
-	str+='<p><strong>You may not be able to find this page because of:<\/strong><\/p>';
+	str+='<p><\/p>';
 
 	str+='<ol type="a">';
 
-	str+='  <li>An <strong>out-of-date bookmark\/favourite<\/strong><\/li>';
+	str+='  <li><\/li>';
 
-	str+='  <li>A search engine that has an <strong>out-of-date listing for us</strong><\/li>';
+	str+='  <li><\/li>';
 
-	str+='  <li>A <strong>mis-typed address</strong><\/li>';
+	str+='  <li><\/li>';
 
 	str+='<\/ol>';
 
-	document.write(str);
+	//document.write(str);
 
 }
 
@@ -179,9 +179,9 @@ if (strReferrer.length!=0)
 
 			{
 
-			document.write("<a href='http://www.alistapart.com/topics/usability/'>topic directory: usability</a><br />");
+			//document.write("<a href='http://www.alistapart.com/topics/usability/'>topic directory: usability</a><br />");
 
-			document.write("<a href='http://www.alistapart.com/topics/accessibility/'>topic directory: accessibility</a><br />");
+			//document.write("<a href='http://www.alistapart.com/topics/accessibility/'>topic directory: accessibility</a><br />");
 
 			}
 
@@ -205,7 +205,7 @@ if (strReferrer.length!=0)
 
 			strSite = strSite[2];
 
-			document.write("<p>You were incorrectly referred to this page by: <strong><a href='" + strReferrer + "' target='_blank'>" + strSite + "</a></strong><br />We suggest you try one of the links below:</p>");
+			//document.write("<p>You were incorrectly referred to this page by: <strong><a href='" + strReferrer + "' target='_blank'>" + strSite + "</a></strong><br />We suggest you try one of the links below:</p>");
 
 			}
 
@@ -213,13 +213,13 @@ if (strReferrer.length!=0)
 
 			{
 
-			document.write("<p>Or you could try one of the following pages:<\/p>");
+			//document.write("<p>Or you could try one of the following pages:<\/p>");
 
 			}
 
-			document.write('<p><a href="/" title="Go to the home page for blahblah.com">Home Page<\/a>  ');
+			//document.write('<p><a href="/" title="Go to the home page for blahblah.com">Home Page<\/a>  ');
 
-			document.write('<a href="/site-map.php" title="View the complete site map for blahblah.com">Site Map<\/a><\/p>');
+			//document.write('<a href="/site-map.php" title="View the complete site map for blahblah.com">Site Map<\/a><\/p>');
 
 
 
@@ -269,7 +269,7 @@ if (strReferrer.length!=0)
 
 			str+='<\/div>';
 
-			document.write(str);
+			//document.write(str);
 
 			}
 
@@ -285,24 +285,11 @@ if (strReferrer.length!=0)
 
 <ol type="a">
 
-  <li>An <strong>out-of-date bookmark/favourite</strong></li>
 
-  <li>A search engine that has an <strong>out-of-date listing for us</strong></li>
 
-  <li>A <strong>mis-typed address</strong></li>
 
 </ol>
 
-<p><strong>Please try one of the following pages:</strong></p>
-
-<p>
-
-<ul>
-<li><a href="/" title="Go to the home page of widgets.com">Home Page</a></li>
-
-<li><a href="/site-map.php" title="View the complete site map for widgets.com">Site Map</a></li>
-</ul>
-</p>
 
 </noscript>
 
