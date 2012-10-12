@@ -131,8 +131,8 @@
             [[MezzoSopranoClefViewController alloc] init];
         mezzoSopranoClefVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentViewController:mezzoSopranoClefVC animated:
-            YES completion:nil];
+        [self   presentViewController   :mezzoSopranoClefVC animated:
+            YES completion              :nil];
         [mezzoSopranoClefVC release];
     }
 
@@ -196,8 +196,8 @@
             [[ChromaticCircleViewController alloc] init];
         chromaticCircleVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentViewController:chromaticCircleVC animated:YES
-        completion:nil];
+        [self   presentViewController   :chromaticCircleVC animated:YES
+                completion              :nil];
         [chromaticCircleVC release];
     }
 
@@ -266,8 +266,8 @@
             [[SolfegeNaturalsViewController alloc] init];
         solfegeNaturalsVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
-        [self presentViewController:solfegeNaturalsVC animated:YES
-         completion:nil];
+        [self   presentViewController   :solfegeNaturalsVC animated:YES
+                completion              :nil];
         [solfegeNaturalsVC release];
     }
 
@@ -615,8 +615,8 @@
     [detailNavBar2 useTBStyle];
     [composeTweetButton useDoneButtonStyle];
     [emailButton useDoneButtonStyle];
-    //[self.navigationController.navigationBar addSubview:detailNavBar];
-    //[self.detailNavBar setFrame:self.navigationController.navigationBar.frame];
+    // [self.navigationController.navigationBar addSubview:detailNavBar];
+    // [self.detailNavBar setFrame:self.navigationController.navigationBar.frame];
     self.navigationController.navigationBar.hidden = FALSE;
     // /self.detailNavItem.title = self.MovieToPlay;
     [self.navigationController.navigationBar bringSubviewToFront:detailNavBar];
@@ -679,6 +679,21 @@
             = CGRectMake(musicTheory101Label.center.x + 127.5, musicTheory101Label.center.y + 9.6, 20, 20);
         [self.vLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:10.0]];
         self.vLabel.hidden = FALSE;
+
+        NSLog(@"InfoDictVersion = %@",
+              [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleInfoDictionaryVersionKey]);
+        NSLog(@"Executable = %@",
+              [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleExecutableKey]);
+        NSLog(@"Identifier = %@",
+              [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleIdentifierKey]);
+        NSLog(@"BundleVersion = %@",
+              [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey]);
+        NSLog(@"DevRegion = %@",
+              [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleDevelopmentRegionKey]);
+        NSLog(@"NameKey = %@",
+              [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleNameKey]);
+        NSLog(@"Localization = %@",
+              [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleLocalizationsKey]);
 
         self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
         self.detailDescriptionLabel.frame
@@ -1043,7 +1058,6 @@
     if (self) {
         self.title = NSLocalizedString(@"detailVC Line:1043 Music Theory 101",
             @"Music Theory 101");
-        
     }
 
     return self;
