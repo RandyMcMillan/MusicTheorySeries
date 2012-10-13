@@ -1,6 +1,6 @@
 //
 //  DetailViewController.m
-//  MT101v5.1
+//  MT101
 //
 //  Created by Matt Gemmell on 26/07/2010.
 //  Copyright Instinctive Code 2010.
@@ -51,7 +51,7 @@
     detailDescriptionLabel.text = [detailItem description];
 	toggleItem.title = ([splitController isShowingMaster]) ? @"Hide Master" : @"Show Master"; // "I... AM... THE MASTER!" Derek Jacobi. Gave me chills.
 	verticalItem.title = (splitController.vertical) ? @"Horizontal Split" : @"Vertical Split";
-	dividerStyleItem.title = (splitController.dividerStyle == MT101v5.1DividerStyleThin) ? @"Enable Dragging" : @"Disable Dragging";
+	dividerStyleItem.title = (splitController.dividerStyle == MT101DividerStyleThin) ? @"Enable Dragging" : @"Disable Dragging";
 	masterBeforeDetailItem.title = (splitController.masterBeforeDetail) ? @"Detail First" : @"Master First";
 }
 
@@ -60,7 +60,7 @@
 #pragma mark Split view support
 
 
-- (void)splitViewController:(MT101v5.1Controller*)svc 
+- (void)splitViewController:(MT101Controller*)svc 
 	 willHideViewController:(UIViewController *)aViewController 
 		  withBarButtonItem:(UIBarButtonItem*)barButtonItem 
 	   forPopoverController: (UIPopoverController*)pc
@@ -79,7 +79,7 @@
 
 
 // Called when the view is shown again in the split view, invalidating the button and popover controller.
-- (void)splitViewController:(MT101v5.1Controller*)svc 
+- (void)splitViewController:(MT101Controller*)svc 
 	 willShowViewController:(UIViewController *)aViewController 
   invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
 {
@@ -95,7 +95,7 @@
 }
 
 
-- (void)splitViewController:(MT101v5.1Controller*)svc 
+- (void)splitViewController:(MT101Controller*)svc 
 		  popoverController:(UIPopoverController*)pc 
   willPresentViewController:(UIViewController *)aViewController
 {
@@ -103,19 +103,19 @@
 }
 
 
-- (void)splitViewController:(MT101v5.1Controller*)svc willChangeSplitOrientationToVertical:(BOOL)isVertical
+- (void)splitViewController:(MT101Controller*)svc willChangeSplitOrientationToVertical:(BOOL)isVertical
 {
 	//NSLog(@"%@", NSStringFromSelector(_cmd));
 }
 
 
-- (void)splitViewController:(MT101v5.1Controller*)svc willMoveSplitToPosition:(float)position
+- (void)splitViewController:(MT101Controller*)svc willMoveSplitToPosition:(float)position
 {
 	//NSLog(@"%@", NSStringFromSelector(_cmd));
 }
 
 
-- (float)splitViewController:(MT101v5.1Controller *)svc constrainSplitPosition:(float)proposedPosition splitViewSize:(CGSize)viewSize
+- (float)splitViewController:(MT101Controller *)svc constrainSplitPosition:(float)proposedPosition splitViewSize:(CGSize)viewSize
 {
 	//NSLog(@"%@", NSStringFromSelector(_cmd));
 	return proposedPosition;
@@ -142,7 +142,7 @@
 
 - (IBAction)toggleDividerStyle:(id)sender
 {
-	MT101v5.1DividerStyle newStyle = ((splitController.dividerStyle == MT101v5.1DividerStyleThin) ? MT101v5.1DividerStylePaneSplitter : MT101v5.1DividerStyleThin);
+	MT101DividerStyle newStyle = ((splitController.dividerStyle == MT101DividerStyleThin) ? MT101DividerStylePaneSplitter : MT101DividerStyleThin);
 	[splitController setDividerStyle:newStyle animated:YES];
 	[self configureView];
 }

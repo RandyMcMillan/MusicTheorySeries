@@ -10,18 +10,18 @@
 
 @class RootViewController;
 @class DetailViewController;
-@class MT101v5.1Controller;
+@class MT101Controller;
 
-@interface MT101v5.1AppDelegate : NSObject <UIApplicationDelegate> {
+@interface MT101AppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    MT101v5.1Controller *splitViewController;
+    MT101Controller *splitViewController;
     RootViewController *rootViewController;
     DetailViewController *detailViewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet MT101v5.1Controller *splitViewController;
+@property (nonatomic, retain) IBOutlet MT101Controller *splitViewController;
 @property (nonatomic, retain) IBOutlet RootViewController *rootViewController;
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
 

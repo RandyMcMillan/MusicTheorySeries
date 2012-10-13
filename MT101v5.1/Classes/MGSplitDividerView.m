@@ -1,13 +1,13 @@
 //
 //  MGSplitDividerView.m
-//  MT101v5.1
+//  MT101
 //
 //  Created by Matt Gemmell on 26/07/2010.
 //  Copyright 2010 Instinctive Code.
 //
 
 #import "MGSplitDividerView.h"
-#import "MT101v5.1Controller.h"
+#import "MT101Controller.h"
 
 
 @implementation MGSplitDividerView
@@ -41,10 +41,10 @@
 
 - (void)drawRect:(CGRect)rect
 {
-	if (splitViewController.dividerStyle == MT101v5.1DividerStyleThin) {
+	if (splitViewController.dividerStyle == MT101DividerStyleThin) {
 		[super drawRect:rect];
 		
-	} else if (splitViewController.dividerStyle == MT101v5.1DividerStylePaneSplitter) {
+	} else if (splitViewController.dividerStyle == MT101DividerStylePaneSplitter) {
 		// Draw gradient background.
 		CGRect bounds = self.bounds;
 		CGColorSpaceRef rgb = CGColorSpaceCreateDeviceRGB();

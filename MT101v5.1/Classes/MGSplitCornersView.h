@@ -1,6 +1,6 @@
 //
 //  MGSplitCornersView.h
-//  MT101v5.1
+//  MT101
 //
 //  Created by Matt Gemmell on 28/07/2010.
 //  Copyright 2010 Instinctive Code.
@@ -15,16 +15,16 @@ typedef enum _MGCornersPosition {
 	MGCornersPositionTrailingHorizontal	= 3  // right of screen for a top/bottom split.
 } MGCornersPosition;
 
-@class MT101v5.1Controller;
+@class MT101Controller;
 @interface MGSplitCornersView : UIView {
 	float cornerRadius;
-	MT101v5.1Controller *splitViewController;
+	MT101Controller *splitViewController;
 	MGCornersPosition cornersPosition;
 	UIColor *cornerBackgroundColor;
 }
 
 @property (nonatomic, assign) float cornerRadius;
-@property (nonatomic, assign) MT101v5.1Controller *splitViewController; // weak ref.
+@property (nonatomic, assign) MT101Controller *splitViewController; // weak ref.
 @property (nonatomic, assign) MGCornersPosition cornersPosition; // don't change this manually; let the splitViewController manage it.
 @property (nonatomic, retain) UIColor *cornerBackgroundColor;
 

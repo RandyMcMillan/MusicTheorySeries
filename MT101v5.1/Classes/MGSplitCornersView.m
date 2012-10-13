@@ -1,6 +1,6 @@
 //
 //  MGSplitCornersView.m
-//  MT101v5.1
+//  MT101
 //
 //  Created by Matt Gemmell on 28/07/2010.
 //  Copyright 2010 Instinctive Code.
@@ -204,7 +204,7 @@ double rad2Deg(double radians)
 }
 
 
-- (void)setSplitViewController:(MT101v5.1Controller *)theController
+- (void)setSplitViewController:(MT101Controller *)theController
 {
 	if (theController != splitViewController) {
 		splitViewController = theController;

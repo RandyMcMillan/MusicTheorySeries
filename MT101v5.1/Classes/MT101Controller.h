@@ -1,6 +1,6 @@
 //
-//  MT101v5.1Controller.h
-//  MT101v5.1
+//  MT101Controller.h
+//  MT101
 //
 //  Created by Matt Gemmell on 26/07/2010.
 //  Copyright 2010 Instinctive Code.
@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum _MT101v5.1DividerStyle {
+typedef enum _MT101DividerStyle {
 	// These names have been chosen to be conceptually similar to those of NSSplitView on Mac OS X.
-	MT101v5.1DividerStyleThin			= 0, // Thin divider, like UISplitViewController (default).
-	MT101v5.1DividerStylePaneSplitter	= 1  // Thick divider, drawn with a grey gradient and a grab-strip.
-} MT101v5.1DividerStyle;
+	MT101DividerStyleThin			= 0, // Thin divider, like UISplitViewController (default).
+	MT101DividerStylePaneSplitter	= 1  // Thick divider, drawn with a grey gradient and a grab-strip.
+} MT101DividerStyle;
 
 @class MGSplitDividerView;
-@protocol MT101v5.1ControllerDelegate;
-@interface MT101v5.1Controller : UIViewController <UIPopoverControllerDelegate> {
+@protocol MT101ControllerDelegate;
+@interface MT101Controller : UIViewController <UIPopoverControllerDelegate> {
 	BOOL _showsMasterInPortrait;
 	BOOL _showsMasterInLandscape;
 	float _splitWidth;
@@ -30,10 +30,10 @@ typedef enum _MT101v5.1DividerStyle {
 	NSArray *_cornerViews; // Views to draw the inner rounded corners between master and detail views.
 	float _splitPosition;
 	BOOL _reconfigurePopup;
-	MT101v5.1DividerStyle _dividerStyle; // Meta-setting which configures several aspects of appearance and behaviour.
+	MT101DividerStyle _dividerStyle; // Meta-setting which configures several aspects of appearance and behaviour.
 }
 
-@property (nonatomic, assign) IBOutlet id <MT101v5.1ControllerDelegate> delegate;
+@property (nonatomic, assign) IBOutlet id <MT101ControllerDelegate> delegate;
 @property (nonatomic, assign) BOOL showsMasterInPortrait; // applies to both portrait orientations (default NO)
 @property (nonatomic, assign) BOOL showsMasterInLandscape; // applies to both landscape orientations (default YES)
 @property (nonatomic, assign, getter=isVertical) BOOL vertical; // if NO, split is horizontal, i.e. master above detail (default YES)
@@ -46,7 +46,7 @@ typedef enum _MT101v5.1DividerStyle {
 @property (nonatomic, retain) IBOutlet UIViewController *masterViewController; // convenience.
 @property (nonatomic, retain) IBOutlet UIViewController *detailViewController; // convenience.
 @property (nonatomic, retain) MGSplitDividerView *dividerView; // the view which draws the divider/split between master and detail.
-@property (nonatomic, assign) MT101v5.1DividerStyle dividerStyle; // style (and behaviour) of the divider between master and detail.
+@property (nonatomic, assign) MT101DividerStyle dividerStyle; // style (and behaviour) of the divider between master and detail.
 
 @property (nonatomic, readonly, getter=isLandscape) BOOL landscape; // returns YES if this view controller is in either of the two Landscape orientations, else NO.
 
@@ -69,7 +69,7 @@ typedef enum _MT101v5.1DividerStyle {
 
 			This implementation was chosen so you don't need to recalculate equivalent splitPositions if the user toggles masterBeforeDetail themselves.
  */
-- (void)setDividerStyle:(MT101v5.1DividerStyle)newStyle animated:(BOOL)animate; // Allows for animation of dividerStyle changes. The property's regular setter is not animated.
+- (void)setDividerStyle:(MT101DividerStyle)newStyle animated:(BOOL)animate; // Allows for animation of dividerStyle changes. The property's regular setter is not animated.
 - (NSArray *)cornerViews;
 /*
  -cornerViews returns an NSArray of two MGSplitCornersView objects, used to draw the inner corners.
@@ -83,34 +83,34 @@ typedef enum _MT101v5.1DividerStyle {
 @end
 
 
-@protocol MT101v5.1ControllerDelegate
+@protocol MT101ControllerDelegate
 
 @optional
 
 // Called when a button should be added to a toolbar for a hidden view controller.
-- (void)splitViewController:(MT101v5.1Controller*)svc 
+- (void)splitViewController:(MT101Controller*)svc 
 	 willHideViewController:(UIViewController *)aViewController 
 		  withBarButtonItem:(UIBarButtonItem*)barButtonItem 
 	   forPopoverController: (UIPopoverController*)pc;
 
 // Called when the master view is shown again in the split view, invalidating the button and popover controller.
-- (void)splitViewController:(MT101v5.1Controller*)svc 
+- (void)splitViewController:(MT101Controller*)svc 
 	 willShowViewController:(UIViewController *)aViewController 
   invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem;
 
 // Called when the master view is shown in a popover, so the delegate can take action like hiding other popovers.
-- (void)splitViewController:(MT101v5.1Controller*)svc 
+- (void)splitViewController:(MT101Controller*)svc 
 		  popoverController:(UIPopoverController*)pc 
   willPresentViewController:(UIViewController *)aViewController;
 
 // Called when the split orientation will change (from vertical to horizontal, or vice versa).
-- (void)splitViewController:(MT101v5.1Controller*)svc willChangeSplitOrientationToVertical:(BOOL)isVertical;
+- (void)splitViewController:(MT101Controller*)svc willChangeSplitOrientationToVertical:(BOOL)isVertical;
 
 // Called when split position will change to the given pixel value (relative to left if split is vertical, or to top if horizontal).
-- (void)splitViewController:(MT101v5.1Controller*)svc willMoveSplitToPosition:(float)position;
+- (void)splitViewController:(MT101Controller*)svc willMoveSplitToPosition:(float)position;
 
 // Called before split position is changed to the given pixel value (relative to left if split is vertical, or to top if horizontal).
 // Note that viewSize is the current size of the entire split-view; i.e. the area enclosing the master, divider and detail views.
-- (float)splitViewController:(MT101v5.1Controller *)svc constrainSplitPosition:(float)proposedPosition splitViewSize:(CGSize)viewSize;
+- (float)splitViewController:(MT101Controller *)svc constrainSplitPosition:(float)proposedPosition splitViewSize:(CGSize)viewSize;
 
 @end

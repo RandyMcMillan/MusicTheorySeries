@@ -1,12 +1,12 @@
 //
-//  MT101v5.1Controller.m
-//  MT101v5.1
+//  MT101Controller.m
+//  MT101
 //
 //  Created by Matt Gemmell on 26/07/2010.
 //  Copyright 2010 Instinctive Code.
 //
 
-#import "MT101v5.1Controller.h"
+#import "MT101Controller.h"
 #import "MGSplitDividerView.h"
 #import "MGSplitCornersView.h"
 
@@ -15,8 +15,8 @@
 #define MG_DEFAULT_CORNER_RADIUS		5.0		// default corner-radius of overlapping split-inner corners on the master and detail views.
 #define MG_DEFAULT_CORNER_COLOR			[UIColor blackColor]	// default color of intruding inner corners (and divider background).
 
-#define MG_PANESPLITTER_CORNER_RADIUS	0.0		// corner-radius of split-inner corners for MT101v5.1DividerStylePaneSplitter style.
-#define MG_PANESPLITTER_SPLIT_WIDTH		25.0	// width of split-gutter for MT101v5.1DividerStylePaneSplitter style.
+#define MG_PANESPLITTER_CORNER_RADIUS	0.0		// corner-radius of split-inner corners for MT101DividerStylePaneSplitter style.
+#define MG_PANESPLITTER_SPLIT_WIDTH		25.0	// width of split-gutter for MT101DividerStylePaneSplitter style.
 
 #define MG_MIN_VIEW_WIDTH				200.0	// minimum width a view is allowed to become as a result of changing the splitPosition.
 
@@ -24,7 +24,7 @@
 #define MG_ANIMATION_CHANGE_SUBVIEWS_ORDER		@"ChangeSubviewsOrder"	// Animation ID for internal use.
 
 
-@interface MT101v5.1Controller (MGPrivateMethods)
+@interface MT101Controller (MGPrivateMethods)
 
 - (void)setup;
 - (CGSize)splitViewSizeForOrientation:(UIInterfaceOrientation)theOrientation;
@@ -39,7 +39,7 @@
 @end
 
 
-@implementation MT101v5.1Controller
+@implementation MT101Controller
 
 
 #pragma mark -
@@ -141,7 +141,7 @@
 	_dividerView = [[MGSplitDividerView alloc] initWithFrame:divRect];
 	_dividerView.splitViewController = self;
 	_dividerView.backgroundColor = MG_DEFAULT_CORNER_COLOR;
-	_dividerStyle = MT101v5.1DividerStyleThin;
+	_dividerStyle = MT101DividerStyleThin;
 }
 
 
@@ -573,7 +573,7 @@
 		
 		// Inform delegate of this state of affairs.
 		if (_delegate && [_delegate respondsToSelector:@selector(splitViewController:willHideViewController:withBarButtonItem:forPopoverController:)]) {
-			[(NSObject <MT101v5.1ControllerDelegate> *)_delegate splitViewController:self 
+			[(NSObject <MT101ControllerDelegate> *)_delegate splitViewController:self 
 																willHideViewController:self.masterViewController 
 																	 withBarButtonItem:_barButtonItem 
 																  forPopoverController:_hiddenPopoverController];
@@ -590,7 +590,7 @@
 		
 		// Inform delegate that the _barButtonItem will become invalid.
 		if (_delegate && [_delegate respondsToSelector:@selector(splitViewController:willShowViewController:invalidatingBarButtonItem:)]) {
-			[(NSObject <MT101v5.1ControllerDelegate> *)_delegate splitViewController:self 
+			[(NSObject <MT101ControllerDelegate> *)_delegate splitViewController:self 
 																willShowViewController:self.masterViewController 
 															 invalidatingBarButtonItem:_barButtonItem];
 		}
@@ -712,7 +712,7 @@
 	if (_hiddenPopoverController && !(_hiddenPopoverController.popoverVisible)) {
 		// Inform delegate.
 		if (_delegate && [_delegate respondsToSelector:@selector(splitViewController:popoverController:willPresentViewController:)]) {
-			[(NSObject <MT101v5.1ControllerDelegate> *)_delegate splitViewController:self 
+			[(NSObject <MT101ControllerDelegate> *)_delegate splitViewController:self 
 																	 popoverController:_hiddenPopoverController 
 															 willPresentViewController:self.masterViewController];
 		}
@@ -733,10 +733,10 @@
 }
 
 
-- (void)setDelegate:(id <MT101v5.1ControllerDelegate>)newDelegate
+- (void)setDelegate:(id <MT101ControllerDelegate>)newDelegate
 {
 	if (newDelegate != _delegate && 
-		(!newDelegate || [(NSObject *)newDelegate conformsToProtocol:@protocol(MT101v5.1ControllerDelegate)])) {
+		(!newDelegate || [(NSObject *)newDelegate conformsToProtocol:@protocol(MT101ControllerDelegate)])) {
 		_delegate = newDelegate;
 	}
 }
@@ -1056,13 +1056,13 @@
 }
 
 
-- (MT101v5.1DividerStyle)dividerStyle
+- (MT101DividerStyle)dividerStyle
 {
 	return _dividerStyle;
 }
 
 
-- (void)setDividerStyle:(MT101v5.1DividerStyle)newStyle
+- (void)setDividerStyle:(MT101DividerStyle)newStyle
 {
 	if (_hiddenPopoverController && _hiddenPopoverController.popoverVisible) {
 		[_hiddenPopoverController dismissPopoverAnimated:NO];
@@ -1074,12 +1074,12 @@
 	
 	// Reconfigure general appearance and behaviour.
 	float cornerRadius;
-	if (_dividerStyle == MT101v5.1DividerStyleThin) {
+	if (_dividerStyle == MT101DividerStyleThin) {
 		cornerRadius = MG_DEFAULT_CORNER_RADIUS;
 		_splitWidth = MG_DEFAULT_SPLIT_WIDTH;
 		self.allowsDraggingDivider = NO;
 		
-	} else if (_dividerStyle == MT101v5.1DividerStylePaneSplitter) {
+	} else if (_dividerStyle == MT101DividerStylePaneSplitter) {
 		cornerRadius = MG_PANESPLITTER_CORNER_RADIUS;
 		_splitWidth = MG_PANESPLITTER_SPLIT_WIDTH;
 		self.allowsDraggingDivider = YES;
@@ -1098,7 +1098,7 @@
 }
 
 
-- (void)setDividerStyle:(MT101v5.1DividerStyle)newStyle animated:(BOOL)animate
+- (void)setDividerStyle:(MT101DividerStyle)newStyle animated:(BOOL)animate
 {
 	BOOL shouldAnimate = (animate && [self isShowingMaster]);
 	if (shouldAnimate) {

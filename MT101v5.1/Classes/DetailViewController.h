@@ -1,16 +1,16 @@
 //
 //  DetailViewController.h
-//  MT101v5.1
+//  MT101
 //
 //  Created by Matt Gemmell on 26/07/2010.
 //  Copyright Instinctive Code 2010.
 //
 
 #import <UIKit/UIKit.h>
-#import "MT101v5.1Controller.h"
+#import "MT101Controller.h"
 
-@interface DetailViewController : UIViewController <UIPopoverControllerDelegate, MT101v5.1ControllerDelegate> {
-	IBOutlet MT101v5.1Controller *splitController;
+@interface DetailViewController : UIViewController <UIPopoverControllerDelegate, MT101ControllerDelegate> {
+	IBOutlet MT101Controller *splitController;
 	IBOutlet UIBarButtonItem *toggleItem;
 	IBOutlet UIBarButtonItem *verticalItem;
 	IBOutlet UIBarButtonItem *dividerStyleItem;
