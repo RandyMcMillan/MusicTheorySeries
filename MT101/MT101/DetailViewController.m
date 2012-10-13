@@ -697,7 +697,7 @@
     
         NSDictionary *appInfo = [[NSBundle mainBundle] infoDictionary];
         NSString *versionStr = [NSString stringWithFormat:@"build (%@)",
-                                [appInfo objectForKey:@"GitVersion"]];
+                                [appInfo objectForKey:@"GitTag"]];
         
 
         self.detailDescriptionLabel.text = versionStr;
