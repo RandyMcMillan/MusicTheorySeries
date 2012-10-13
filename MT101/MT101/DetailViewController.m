@@ -653,13 +653,13 @@
 
 #if TARGET_IPHONE_SIMULATOR
         self.musicTheory101Label.backgroundColor =
-        [UIColor colorWithRed:0.988 green:0.000 blue:0.027 alpha:0.500];
+        [UIColor colorWithRed:0.988 green:0.000 blue:0.027 alpha:0.100];
 
         self.detailDescriptionLabel.backgroundColor =
-        [UIColor colorWithRed:0.051 green:0.000 blue:0.988 alpha:0.500];
+        [UIColor colorWithRed:0.051 green:0.000 blue:0.988 alpha:0.100];
 
         self.vLabel.backgroundColor =
-        [UIColor colorWithRed:0.988 green:0.878 blue:0.000 alpha:0.500];
+        [UIColor colorWithRed:0.988 green:0.878 blue:0.000 alpha:0.100];
 #endif
 
     if (self.detailItem) {}
