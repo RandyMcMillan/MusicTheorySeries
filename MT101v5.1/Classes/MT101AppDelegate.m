@@ -1,17 +1,17 @@
 //
-//  MT101v5.1AppDelegate.m
-//  MT101v5.1
+//  MT101AppDelegate.m
+//  MT101
 //
 //  Created by Matt Gemmell on 26/07/2010.
 //  Copyright Instinctive Code 2010.
 //
 
-#import "MT101v5.1AppDelegate.h"
+#import "MT101AppDelegate.h"
 #import "RootViewController.h"
 #import "DetailViewController.h"
-#import "MT101v5.1Controller.h"
+#import "MT101Controller.h"
 
-@implementation MT101v5.1AppDelegate
+@implementation MT101AppDelegate
 
 
 @synthesize window, splitViewController, rootViewController, detailViewController;
