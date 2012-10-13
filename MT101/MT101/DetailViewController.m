@@ -696,15 +696,11 @@
               [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleLocalizationsKey]);
     
         NSDictionary *appInfo = [[NSBundle mainBundle] infoDictionary];
-        NSString *versionStr = [NSString stringWithFormat:@"%@ (%@)",
-                                [appInfo objectForKey:@"CFBundleShortVersionString"],
+        NSString *versionStr = [NSString stringWithFormat:@"build (%@)",
                                 [appInfo objectForKey:@"GitVersion"]];
         
 
-        //self.detailDescriptionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
-        self.detailDescriptionLabel.text = versionStr;//[[[NSBundle mainBundle] infoDictionary] objectForKey:@"GitVersion"];
- 
-        
+        self.detailDescriptionLabel.text = versionStr;
         
            self.detailDescriptionLabel.frame
         = CGRectMake(musicTheory101Label.center.x + 77.5, musicTheory101Label.center.y + 11.6, 100, 20);
