@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "DetailViewController.h"
+#define ROW_HEIGHT 120
 
 
 @implementation RootViewController
@@ -25,6 +26,9 @@
     [super viewDidLoad];
     self.clearsSelectionOnViewWillAppear = NO;
     self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
+    self.tableView.rowHeight = ROW_HEIGHT;
+
+    
 }
 
 
@@ -51,7 +55,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)aTableView
 {
     // Return the number of sections.
-    return 1;
+    return 5;
+}
+
+- (NSString *)tableView:(UITableView *)aTableView titleForHeaderInSection:(NSInteger)section {
+	// Section title is the region name
+	NSString *headerName = @"   Header";
+	return headerName;
 }
 
 
