@@ -102,8 +102,25 @@
         theGrandStaffVC.modalPresentationStyle =
             UIModalPresentationPageSheet;
 
-        [self presentViewController:theGrandStaffVC animated:YES completion:nil];
-        // [self.navigationController pushViewController:theGrandStaffVC animated:YES];
+        
+        if ([self respondsToSelector:@selector(presentViewController:animated:completion:)])
+        {
+
+            NSLog(@"_____________________respondes to presentViewC");
+            [self presentViewController:theGrandStaffVC animated:YES completion:nil];
+            
+        }
+        else
+        {
+       
+            NSLog(@"_____________________respondes to presentModalViewC");
+            [self presentModalViewController:theGrandStaffVC animated:YES];
+            
+        }
+        
+       
+            
+            // [self.navigationController pushViewController:theGrandStaffVC animated:YES];
 
         [theGrandStaffVC  release];
     }
