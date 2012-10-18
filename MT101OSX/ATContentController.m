@@ -80,7 +80,13 @@
 }
 
 - (void)awakeFromNib {
-    NSURL *url = [NSURL fileURLWithPath:@"/Library/Desktop Pictures" isDirectory:YES];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:nil ofType: nil];
+    //    NSURL *url = [NSURL fileURLWithPath: path];
+    
+    NSLog(path);
+    
+    NSURL *url = [NSURL fileURLWithPath:path isDirectory:YES];
     ATDesktopFolderEntity *primaryFolder = [[ATDesktopFolderEntity alloc] initWithFileURL:url];
     // Create a flat array of ATDesktopFolderEntity and ATDesktopImageEntity objects to display
     _tableContents = [NSMutableArray new];
