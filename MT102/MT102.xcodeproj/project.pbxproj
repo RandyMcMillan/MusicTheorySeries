@@ -9,13 +9,6 @@
 /* Begin PBXBuildFile section */
 		4801D4B21614645500512EA6 /* Interactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4B11614645500512EA6 /* Interactive.png */; };
 		4801D4B4161464F100512EA6 /* Interactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4801D4B3161464F100512EA6 /* Interactive@2x.png */; };
-		48022A15161DD8EC00F31287 /* error.html in Resources */ = {isa = PBXBuildFile; fileRef = 48022A09161DD8EC00F31287 /* error.html */; };
-		48022A16161DD8EC00F31287 /* iScrollPlugin_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 48022A0B161DD8EC00F31287 /* iScrollPlugin_JS.m */; };
-		48022A1A161DD8EC00F31287 /* WikiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48022A0F161DD8EC00F31287 /* WikiView.bundle */; };
-		48022A1B161DD8EC00F31287 /* WikiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48022A10161DD8EC00F31287 /* WikiView.xib */; };
-		48022A1C161DD8EC00F31287 /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48022A12161DD8EC00F31287 /* WikiViewController.m */; };
-		48022A1D161DD8EC00F31287 /* WikiView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48022A13161DD8EC00F31287 /* WikiView~ipad.xib */; };
-		48022A1E161DD8EC00F31287 /* WikiView~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48022A14161DD8EC00F31287 /* WikiView~iphone.xib */; };
 		48022A1F161DDAE800F31287 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48EEEF7115DC54DF00D15F15 /* Default-Portrait@2x~ipad.png */; };
 		48022A21161DDAF500F31287 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48022A20161DDAF500F31287 /* Default-Portrait~ipad.png */; };
 		48022A33161DDD5D00F31287 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 48022A29161DDD5D00F31287 /* Icon-72.png */; };
@@ -34,19 +27,12 @@
 		48022A41161DDD9C00F31287 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48022A40161DDD9C00F31287 /* Icon-72@2x.png */; };
 		48022A43161DDE9E00F31287 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 48F228DD160D34A3005B1D1E /* Default.png */; };
 		48022A46161DDEF500F31287 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48022A45161DDEF500F31287 /* Default@2x.png */; };
-		48022A68161DE12C00F31287 /* YouTubeView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48022A5E161DE12C00F31287 /* YouTubeView.bundle */; };
-		48022A69161DE12C00F31287 /* YouTubeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48022A5F161DE12C00F31287 /* YouTubeView.xib */; };
-		48022A6A161DE12C00F31287 /* YouTubeView_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 48022A61161DE12C00F31287 /* YouTubeView_JS.m */; };
-		48022A6B161DE12C00F31287 /* YouTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48022A63161DE12C00F31287 /* YouTubeViewController.m */; };
-		48022A6C161DE12C00F31287 /* YouTubeView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48022A64161DE12C00F31287 /* YouTubeView~ipad.xib */; };
-		48022A70161DE17D00F31287 /* YouTubeView~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48022A6F161DE17D00F31287 /* YouTubeView~iphone.xib */; };
 		48022A77161DE37900F31287 /* YouTubeToDisplay0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48022A71161DE37900F31287 /* YouTubeToDisplay0.plist */; };
 		48022A78161DE37900F31287 /* YouTubeToDisplay1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48022A72161DE37900F31287 /* YouTubeToDisplay1.plist */; };
 		48022A79161DE37900F31287 /* YouTubeToDisplay2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48022A73161DE37900F31287 /* YouTubeToDisplay2.plist */; };
 		48022A7A161DE37900F31287 /* YouTubeToDisplay3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48022A74161DE37900F31287 /* YouTubeToDisplay3.plist */; };
 		48022A7B161DE37900F31287 /* YouTubeToDisplay4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48022A75161DE37900F31287 /* YouTubeToDisplay4.plist */; };
 		48022A7C161DE37900F31287 /* YouTubeToDisplay5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48022A76161DE37900F31287 /* YouTubeToDisplay5.plist */; };
-		48022A7E161DE91400F31287 /* youtube-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48022A7D161DE91400F31287 /* youtube-icon.png */; };
 		4805964E1616EADD00678501 /* ZoomableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4805964D1616EADD00678501 /* ZoomableView.m */; };
 		480596511616EE4F00678501 /* landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 480596501616EE4F00678501 /* landscape.jpg */; };
 		4809454A161317A800A600C3 /* A#.L.aif in Resources */ = {isa = PBXBuildFile; fileRef = 48094500161317A800A600C3 /* A#.L.aif */; };
@@ -174,7 +160,6 @@
 		481A431A15F0FE8A006EDF46 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 481A431715F0FE8A006EDF46 /* button1.png */; };
 		481A431E15F0FEA8006EDF46 /* tbButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 481A431D15F0FEA8006EDF46 /* tbButton.png */; };
 		481A432715F0FFF8006EDF46 /* GradientNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A432415F0FFF7006EDF46 /* GradientNavBar.m */; };
-		481A432815F0FFF8006EDF46 /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A432615F0FFF7006EDF46 /* GradientButton.m */; };
 		481A432A15F101C5006EDF46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481A432915F101C5006EDF46 /* QuartzCore.framework */; };
 		4820B0AC15EDEEEB003768DC /* GrandStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */; };
 		4820B0B215EE08A8003768DC /* AppleXylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */; };
@@ -226,6 +211,22 @@
 		485D15BD16040B4C00B401D2 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D15B816040B4C00B401D2 /* UIImage+PDF.m */; };
 		485D15BE16040B4C00B401D2 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D15BA16040B4C00B401D2 /* UIView+Image.m */; };
 		486A576C1618D9BB009ECCA2 /* DetailViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486A576B1618D9BB009ECCA2 /* DetailViewController~iphone.xib */; };
+		486C63911632189B007E5045 /* error.html in Resources */ = {isa = PBXBuildFile; fileRef = 486C63871632189B007E5045 /* error.html */; };
+		486C63921632189B007E5045 /* youtube-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 486C63881632189B007E5045 /* youtube-icon.png */; };
+		486C63931632189B007E5045 /* YouTubeView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 486C63891632189B007E5045 /* YouTubeView.bundle */; };
+		486C63941632189B007E5045 /* YouTubeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486C638A1632189B007E5045 /* YouTubeView.xib */; };
+		486C63951632189B007E5045 /* YouTubeView_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 486C638C1632189B007E5045 /* YouTubeView_JS.m */; };
+		486C63961632189B007E5045 /* YouTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486C638E1632189B007E5045 /* YouTubeViewController.m */; };
+		486C63971632189B007E5045 /* YouTubeView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486C638F1632189B007E5045 /* YouTubeView~ipad.xib */; };
+		486C63981632189B007E5045 /* YouTubeView~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486C63901632189B007E5045 /* YouTubeView~iphone.xib */; };
+		486C63A316321956007E5045 /* error.html in Resources */ = {isa = PBXBuildFile; fileRef = 486C639A16321956007E5045 /* error.html */; };
+		486C63A416321956007E5045 /* iScrollPlugin_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 486C639C16321956007E5045 /* iScrollPlugin_JS.m */; };
+		486C63A516321956007E5045 /* WikiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 486C639D16321956007E5045 /* WikiView.bundle */; };
+		486C63A616321956007E5045 /* WikiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486C639E16321956007E5045 /* WikiView.xib */; };
+		486C63A716321956007E5045 /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486C63A016321956007E5045 /* WikiViewController.m */; };
+		486C63A816321956007E5045 /* WikiView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486C63A116321956007E5045 /* WikiView~ipad.xib */; };
+		486C63A916321956007E5045 /* WikiView~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486C63A216321956007E5045 /* WikiView~iphone.xib */; };
+		486C63B016321E2E007E5045 /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 486C63AF16321E2E007E5045 /* GradientButton.m */; };
 		487A1C7F15E84735006C5C59 /* WikiToDisplay1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */; };
 		487A1C9415E86AAD006C5C59 /* WikiToDisplay2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9015E86AAD006C5C59 /* WikiToDisplay2.plist */; };
 		487A1C9515E86AAD006C5C59 /* WikiToDisplay3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487A1C9115E86AAD006C5C59 /* WikiToDisplay3.plist */; };
@@ -298,15 +299,6 @@
 /* Begin PBXFileReference section */
 		4801D4B11614645500512EA6 /* Interactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Interactive.png; path = ../Interactive.png; sourceTree = "<group>"; };
 		4801D4B3161464F100512EA6 /* Interactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Interactive@2x.png"; path = "../Interactive@2x.png"; sourceTree = "<group>"; };
-		48022A09161DD8EC00F31287 /* error.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = error.html; sourceTree = "<group>"; };
-		48022A0A161DD8EC00F31287 /* iScrollPlugin_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iScrollPlugin_JS.h; sourceTree = "<group>"; };
-		48022A0B161DD8EC00F31287 /* iScrollPlugin_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iScrollPlugin_JS.m; sourceTree = "<group>"; };
-		48022A0F161DD8EC00F31287 /* WikiView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WikiView.bundle; sourceTree = "<group>"; };
-		48022A10161DD8EC00F31287 /* WikiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiView.xib; sourceTree = "<group>"; };
-		48022A11161DD8EC00F31287 /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
-		48022A12161DD8EC00F31287 /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
-		48022A13161DD8EC00F31287 /* WikiView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WikiView~ipad.xib"; sourceTree = "<group>"; };
-		48022A14161DD8EC00F31287 /* WikiView~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WikiView~iphone.xib"; sourceTree = "<group>"; };
 		48022A20161DDAF500F31287 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		48022A22161DDD1700F31287 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../../Icon.png; sourceTree = "<group>"; };
 		48022A24161DDD2200F31287 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../../Icon@2x.png"; sourceTree = "<group>"; };
@@ -323,21 +315,12 @@
 		48022A32161DDD5D00F31287 /* iTunesArtwork512 */ = {isa = PBXFileReference; lastKnownFileType = text; path = iTunesArtwork512; sourceTree = "<group>"; };
 		48022A40161DDD9C00F31287 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "../../Icon-72@2x.png"; sourceTree = "<group>"; };
 		48022A45161DDEF500F31287 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
-		48022A5E161DE12C00F31287 /* YouTubeView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YouTubeView.bundle; sourceTree = "<group>"; };
-		48022A5F161DE12C00F31287 /* YouTubeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YouTubeView.xib; sourceTree = "<group>"; };
-		48022A60161DE12C00F31287 /* YouTubeView_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeView_JS.h; sourceTree = "<group>"; };
-		48022A61161DE12C00F31287 /* YouTubeView_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeView_JS.m; sourceTree = "<group>"; };
-		48022A62161DE12C00F31287 /* YouTubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeViewController.h; sourceTree = "<group>"; };
-		48022A63161DE12C00F31287 /* YouTubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeViewController.m; sourceTree = "<group>"; };
-		48022A64161DE12C00F31287 /* YouTubeView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "YouTubeView~ipad.xib"; sourceTree = "<group>"; };
-		48022A6F161DE17D00F31287 /* YouTubeView~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "YouTubeView~iphone.xib"; sourceTree = "<group>"; };
 		48022A71161DE37900F31287 /* YouTubeToDisplay0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouTubeToDisplay0.plist; sourceTree = "<group>"; };
 		48022A72161DE37900F31287 /* YouTubeToDisplay1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouTubeToDisplay1.plist; sourceTree = "<group>"; };
 		48022A73161DE37900F31287 /* YouTubeToDisplay2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouTubeToDisplay2.plist; sourceTree = "<group>"; };
 		48022A74161DE37900F31287 /* YouTubeToDisplay3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouTubeToDisplay3.plist; sourceTree = "<group>"; };
 		48022A75161DE37900F31287 /* YouTubeToDisplay4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouTubeToDisplay4.plist; sourceTree = "<group>"; };
 		48022A76161DE37900F31287 /* YouTubeToDisplay5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouTubeToDisplay5.plist; sourceTree = "<group>"; };
-		48022A7D161DE91400F31287 /* youtube-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youtube-icon.png"; sourceTree = "<group>"; };
 		4805964C1616EADD00678501 /* ZoomableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomableView.h; sourceTree = "<group>"; };
 		4805964D1616EADD00678501 /* ZoomableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomableView.m; sourceTree = "<group>"; };
 		480596501616EE4F00678501 /* landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = landscape.jpg; sourceTree = "<group>"; };
@@ -475,8 +458,6 @@
 		481A431D15F0FEA8006EDF46 /* tbButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tbButton.png; sourceTree = "<group>"; };
 		481A432315F0FFF7006EDF46 /* GradientNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientNavBar.h; path = ../GradientNavBar.h; sourceTree = "<group>"; };
 		481A432415F0FFF7006EDF46 /* GradientNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientNavBar.m; path = ../GradientNavBar.m; sourceTree = "<group>"; };
-		481A432515F0FFF7006EDF46 /* GradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientButton.h; path = ../GradientButton.h; sourceTree = "<group>"; };
-		481A432615F0FFF7006EDF46 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientButton.m; path = ../GradientButton.m; sourceTree = "<group>"; };
 		481A432915F101C5006EDF46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4820B0AB15EDEEEB003768DC /* GrandStaffViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrandStaffViewController.xib; sourceTree = "<group>"; };
 		4820B0B115EE08A6003768DC /* AppleXylophoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppleXylophoneViewController.xib; sourceTree = "<group>"; };
@@ -539,6 +520,27 @@
 		485D15B916040B4C00B401D2 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		485D15BA16040B4C00B401D2 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
 		486A576B1618D9BB009ECCA2 /* DetailViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "DetailViewController~iphone.xib"; path = "MT102/DetailViewController~iphone.xib"; sourceTree = "<group>"; };
+		486C63871632189B007E5045 /* error.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = error.html; sourceTree = "<group>"; };
+		486C63881632189B007E5045 /* youtube-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youtube-icon.png"; sourceTree = "<group>"; };
+		486C63891632189B007E5045 /* YouTubeView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YouTubeView.bundle; sourceTree = "<group>"; };
+		486C638A1632189B007E5045 /* YouTubeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YouTubeView.xib; sourceTree = "<group>"; };
+		486C638B1632189B007E5045 /* YouTubeView_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeView_JS.h; sourceTree = "<group>"; };
+		486C638C1632189B007E5045 /* YouTubeView_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeView_JS.m; sourceTree = "<group>"; };
+		486C638D1632189B007E5045 /* YouTubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeViewController.h; sourceTree = "<group>"; };
+		486C638E1632189B007E5045 /* YouTubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeViewController.m; sourceTree = "<group>"; };
+		486C638F1632189B007E5045 /* YouTubeView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "YouTubeView~ipad.xib"; sourceTree = "<group>"; };
+		486C63901632189B007E5045 /* YouTubeView~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "YouTubeView~iphone.xib"; sourceTree = "<group>"; };
+		486C639A16321956007E5045 /* error.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = error.html; sourceTree = "<group>"; };
+		486C639B16321956007E5045 /* iScrollPlugin_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iScrollPlugin_JS.h; sourceTree = "<group>"; };
+		486C639C16321956007E5045 /* iScrollPlugin_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iScrollPlugin_JS.m; sourceTree = "<group>"; };
+		486C639D16321956007E5045 /* WikiView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WikiView.bundle; sourceTree = "<group>"; };
+		486C639E16321956007E5045 /* WikiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiView.xib; sourceTree = "<group>"; };
+		486C639F16321956007E5045 /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
+		486C63A016321956007E5045 /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
+		486C63A116321956007E5045 /* WikiView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WikiView~ipad.xib"; sourceTree = "<group>"; };
+		486C63A216321956007E5045 /* WikiView~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WikiView~iphone.xib"; sourceTree = "<group>"; };
+		486C63AE16321E2E007E5045 /* GradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientButton.h; path = ../../MT101/GradientButton.h; sourceTree = "<group>"; };
+		486C63AF16321E2E007E5045 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientButton.m; path = ../../MT101/GradientButton.m; sourceTree = "<group>"; };
 		487A1C7E15E84735006C5C59 /* WikiToDisplay1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay1.plist; sourceTree = "<group>"; };
 		487A1C8915E85115006C5C59 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
 		487A1C9015E86AAD006C5C59 /* WikiToDisplay2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay2.plist; sourceTree = "<group>"; };
@@ -656,22 +658,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		48022A08161DD8EC00F31287 /* WikiView */ = {
-			isa = PBXGroup;
-			children = (
-				48022A09161DD8EC00F31287 /* error.html */,
-				48022A0A161DD8EC00F31287 /* iScrollPlugin_JS.h */,
-				48022A0B161DD8EC00F31287 /* iScrollPlugin_JS.m */,
-				48022A0F161DD8EC00F31287 /* WikiView.bundle */,
-				48022A10161DD8EC00F31287 /* WikiView.xib */,
-				48022A11161DD8EC00F31287 /* WikiViewController.h */,
-				48022A12161DD8EC00F31287 /* WikiViewController.m */,
-				48022A13161DD8EC00F31287 /* WikiView~ipad.xib */,
-				48022A14161DD8EC00F31287 /* WikiView~iphone.xib */,
-			);
-			path = WikiView;
-			sourceTree = "<group>";
-		};
 		48022A28161DDD5D00F31287 /* icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -691,22 +677,6 @@
 				48022A32161DDD5D00F31287 /* iTunesArtwork512 */,
 			);
 			path = icons;
-			sourceTree = "<group>";
-		};
-		48022A5A161DE12C00F31287 /* YouTubeView */ = {
-			isa = PBXGroup;
-			children = (
-				48022A7D161DE91400F31287 /* youtube-icon.png */,
-				48022A5E161DE12C00F31287 /* YouTubeView.bundle */,
-				48022A5F161DE12C00F31287 /* YouTubeView.xib */,
-				48022A60161DE12C00F31287 /* YouTubeView_JS.h */,
-				48022A61161DE12C00F31287 /* YouTubeView_JS.m */,
-				48022A62161DE12C00F31287 /* YouTubeViewController.h */,
-				48022A63161DE12C00F31287 /* YouTubeViewController.m */,
-				48022A6F161DE17D00F31287 /* YouTubeView~iphone.xib */,
-				48022A64161DE12C00F31287 /* YouTubeView~ipad.xib */,
-			);
-			path = YouTubeView;
 			sourceTree = "<group>";
 		};
 		480944FF161317A800A600C3 /* Audio */ = {
@@ -1001,6 +971,41 @@
 			path = "../UIImage+PDF";
 			sourceTree = "<group>";
 		};
+		486C63861632189B007E5045 /* YouTubeView */ = {
+			isa = PBXGroup;
+			children = (
+				486C63871632189B007E5045 /* error.html */,
+				486C63881632189B007E5045 /* youtube-icon.png */,
+				486C63891632189B007E5045 /* YouTubeView.bundle */,
+				486C638A1632189B007E5045 /* YouTubeView.xib */,
+				486C638B1632189B007E5045 /* YouTubeView_JS.h */,
+				486C638C1632189B007E5045 /* YouTubeView_JS.m */,
+				486C638D1632189B007E5045 /* YouTubeViewController.h */,
+				486C638E1632189B007E5045 /* YouTubeViewController.m */,
+				486C638F1632189B007E5045 /* YouTubeView~ipad.xib */,
+				486C63901632189B007E5045 /* YouTubeView~iphone.xib */,
+			);
+			name = YouTubeView;
+			path = ../MT101/YouTubeView;
+			sourceTree = "<group>";
+		};
+		486C639916321956007E5045 /* WikiView */ = {
+			isa = PBXGroup;
+			children = (
+				486C639A16321956007E5045 /* error.html */,
+				486C639B16321956007E5045 /* iScrollPlugin_JS.h */,
+				486C639C16321956007E5045 /* iScrollPlugin_JS.m */,
+				486C639D16321956007E5045 /* WikiView.bundle */,
+				486C639E16321956007E5045 /* WikiView.xib */,
+				486C639F16321956007E5045 /* WikiViewController.h */,
+				486C63A016321956007E5045 /* WikiViewController.m */,
+				486C63A116321956007E5045 /* WikiView~ipad.xib */,
+				486C63A216321956007E5045 /* WikiView~iphone.xib */,
+			);
+			name = WikiView;
+			path = ../MT101/WikiView;
+			sourceTree = "<group>";
+		};
 		487B3E22161F1A6000E29AEF /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -1048,6 +1053,8 @@
 		4895423C16159CE3003E95CE /* Gradients */ = {
 			isa = PBXGroup;
 			children = (
+				486C63AE16321E2E007E5045 /* GradientButton.h */,
+				486C63AF16321E2E007E5045 /* GradientButton.m */,
 				481A431015F0F52C006EDF46 /* ColorUIButton.h */,
 				481A431115F0F52C006EDF46 /* ColorUIButton.m */,
 				484D3A061612586400E6551C /* Colors.h */,
@@ -1057,8 +1064,6 @@
 				48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */,
 				481A432315F0FFF7006EDF46 /* GradientNavBar.h */,
 				481A432415F0FFF7006EDF46 /* GradientNavBar.m */,
-				481A432515F0FFF7006EDF46 /* GradientButton.h */,
-				481A432615F0FFF7006EDF46 /* GradientButton.m */,
 			);
 			name = Gradients;
 			sourceTree = "<group>";
@@ -1190,10 +1195,10 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
+				486C639916321956007E5045 /* WikiView */,
+				486C63861632189B007E5045 /* YouTubeView */,
 				4844E2041628DE0A00844F8A /* Default-Landscape~ipad.png */,
 				4844E2011628DDA900844F8A /* Default-Landscape@2x~ipad.png */,
-				48022A5A161DE12C00F31287 /* YouTubeView */,
-				48022A08161DD8EC00F31287 /* WikiView */,
 				484D16E315DAE471005FC66E /* Plists */,
 				48FAB51A15CAF8710087DCFA /* XIBs */,
 				48FAB51815CAF84F0087DCFA /* ViewControllers */,
@@ -1494,11 +1499,6 @@
 				481388C6161C587A00E03E3E /* SolfegeNaturalsViewController.xib in Resources */,
 				481388C8161C58AF00E03E3E /* SolfegeSharpsViewController.xib in Resources */,
 				481388CA161C58B900E03E3E /* SolfegeFlatsViewController.xib in Resources */,
-				48022A15161DD8EC00F31287 /* error.html in Resources */,
-				48022A1A161DD8EC00F31287 /* WikiView.bundle in Resources */,
-				48022A1B161DD8EC00F31287 /* WikiView.xib in Resources */,
-				48022A1D161DD8EC00F31287 /* WikiView~ipad.xib in Resources */,
-				48022A1E161DD8EC00F31287 /* WikiView~iphone.xib in Resources */,
 				48022A1F161DDAE800F31287 /* Default-Portrait@2x~ipad.png in Resources */,
 				48022A21161DDAF500F31287 /* Default-Portrait~ipad.png in Resources */,
 				48022A33161DDD5D00F31287 /* Icon-72.png in Resources */,
@@ -1517,17 +1517,12 @@
 				48022A41161DDD9C00F31287 /* Icon-72@2x.png in Resources */,
 				48022A43161DDE9E00F31287 /* Default.png in Resources */,
 				48022A46161DDEF500F31287 /* Default@2x.png in Resources */,
-				48022A68161DE12C00F31287 /* YouTubeView.bundle in Resources */,
-				48022A69161DE12C00F31287 /* YouTubeView.xib in Resources */,
-				48022A6C161DE12C00F31287 /* YouTubeView~ipad.xib in Resources */,
-				48022A70161DE17D00F31287 /* YouTubeView~iphone.xib in Resources */,
 				48022A77161DE37900F31287 /* YouTubeToDisplay0.plist in Resources */,
 				48022A78161DE37900F31287 /* YouTubeToDisplay1.plist in Resources */,
 				48022A79161DE37900F31287 /* YouTubeToDisplay2.plist in Resources */,
 				48022A7A161DE37900F31287 /* YouTubeToDisplay3.plist in Resources */,
 				48022A7B161DE37900F31287 /* YouTubeToDisplay4.plist in Resources */,
 				48022A7C161DE37900F31287 /* YouTubeToDisplay5.plist in Resources */,
-				48022A7E161DE91400F31287 /* youtube-icon.png in Resources */,
 				4821435F161DF643009CCC34 /* Treble Clef.mp4 in Resources */,
 				4821436A161DFB50009CCC34 /* B Minor Locrian.mp4 in Resources */,
 				4821436D161DFB59009CCC34 /* A Minor Aeolian.mp4 in Resources */,
@@ -1539,6 +1534,17 @@
 				4848AAC81621457800001F8F /* G Major MixoLydian.mp4 in Resources */,
 				4844E2021628DDA900844F8A /* Default-Landscape@2x~ipad.png in Resources */,
 				4844E2051628DE0A00844F8A /* Default-Landscape~ipad.png in Resources */,
+				486C63911632189B007E5045 /* error.html in Resources */,
+				486C63921632189B007E5045 /* youtube-icon.png in Resources */,
+				486C63931632189B007E5045 /* YouTubeView.bundle in Resources */,
+				486C63941632189B007E5045 /* YouTubeView.xib in Resources */,
+				486C63971632189B007E5045 /* YouTubeView~ipad.xib in Resources */,
+				486C63981632189B007E5045 /* YouTubeView~iphone.xib in Resources */,
+				486C63A316321956007E5045 /* error.html in Resources */,
+				486C63A516321956007E5045 /* WikiView.bundle in Resources */,
+				486C63A616321956007E5045 /* WikiView.xib in Resources */,
+				486C63A816321956007E5045 /* WikiView~ipad.xib in Resources */,
+				486C63A916321956007E5045 /* WikiView~iphone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1595,7 +1601,6 @@
 				4882981915E006BB00239B29 /* ChromaticCircleViewController.m in Sources */,
 				481A431215F0F52C006EDF46 /* ColorUIButton.m in Sources */,
 				481A432715F0FFF8006EDF46 /* GradientNavBar.m in Sources */,
-				481A432815F0FFF8006EDF46 /* GradientButton.m in Sources */,
 				48B67BC815F411DA00B0C6F2 /* GradientToolBar.m in Sources */,
 				4887524F15F59731006FBD28 /* ExampleView.m in Sources */,
 				485D15BB16040B4C00B401D2 /* NSString+MD5.m in Sources */,
@@ -1605,11 +1610,12 @@
 				4817CD7D16149A5D0014517A /* EGORefreshTableHeaderView.m in Sources */,
 				4895424116159EE5003E95CE /* CGRects.m in Sources */,
 				4805964E1616EADD00678501 /* ZoomableView.m in Sources */,
-				48022A16161DD8EC00F31287 /* iScrollPlugin_JS.m in Sources */,
-				48022A1C161DD8EC00F31287 /* WikiViewController.m in Sources */,
-				48022A6A161DE12C00F31287 /* YouTubeView_JS.m in Sources */,
-				48022A6B161DE12C00F31287 /* YouTubeViewController.m in Sources */,
 				487B3E25161F1A6000E29AEF /* Reachability.m in Sources */,
+				486C63951632189B007E5045 /* YouTubeView_JS.m in Sources */,
+				486C63961632189B007E5045 /* YouTubeViewController.m in Sources */,
+				486C63A416321956007E5045 /* iScrollPlugin_JS.m in Sources */,
+				486C63A716321956007E5045 /* WikiViewController.m in Sources */,
+				486C63B016321E2E007E5045 /* GradientButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

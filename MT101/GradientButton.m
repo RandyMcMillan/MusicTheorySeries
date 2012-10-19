@@ -997,7 +997,7 @@
     if (IS_IPAD) {
         return [NSString stringWithFormat:@"%@@2x~ipad.png", resource];
     } else {
-        return [NSString stringWithFormat:@"%@2x~iphone.png", resource];
+        return [NSString stringWithFormat:@"%@@2x~iphone.png", resource];
     }
 }
 
