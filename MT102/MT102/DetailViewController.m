@@ -685,7 +685,7 @@
 
     if (IS_IPAD) {
         // ipad landscape welcome screen formatting
-        self.musicTheory101Label.text = @"MUSIC THEORY 101";
+        self.musicTheory101Label.text = @"MUSIC THEORY 102";
         self.musicTheory101Label.frame
             = CGRectMake(imageView.center.x - 163, imageView.center.y + 170, 326, 53);
         [self.musicTheory101Label setFont:[UIFont fontWithName:@"Helvetica-Bold" size:39.0]];
