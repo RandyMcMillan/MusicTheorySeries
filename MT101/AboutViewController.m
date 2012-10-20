@@ -15,7 +15,7 @@
 - (void)loadView
 {
 	[super loadView];
-	self.title = NSLocalizedString(@"About DocSets", nil);
+	self.title = NSLocalizedString(@"About Music Thoery 101", nil);
 	self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
 	self.webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	self.webView.delegate = self;
@@ -26,7 +26,23 @@
 
 - (void)done:(id)sender
 {
-	[self dismissModalViewControllerAnimated:YES];
+    //	[self dismissModalViewControllerAnimated:YES];
+    //    [self dismissViewController:YES ];
+    
+    
+    
+    if ([self respondsToSelector:@selector(presentingViewController)]) {
+        [[self presentingViewController]    dismissViewControllerAnimated   :
+         YES                             completion                      :nil];
+    } else {
+        [[self parentViewController] dismissViewControllerAnimated:YES completion:nil];
+    }
+
+    
+    
+    
+    
+
 }
 
 - (void)viewDidLoad
