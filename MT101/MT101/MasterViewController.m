@@ -9,6 +9,9 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+
+#import "AboutViewController.h"
+
 #import "Constants.h"
 
 #define MAINLABEL_TAG   1
@@ -44,6 +47,21 @@
 {
     [super viewDidLoad];
 
+   
+    
+    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 64)];
+	UIButton *aboutButton = [UIButton buttonWithType:UIButtonTypeCustom];
+	[aboutButton setTitle:NSLocalizedString(@"About DocSets", nil) forState:UIControlStateNormal];
+	[aboutButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+	aboutButton.titleLabel.font = [UIFont systemFontOfSize:14.0];
+	aboutButton.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+	aboutButton.showsTouchWhenHighlighted = YES;
+	[aboutButton setFrame:CGRectInset(footerView.bounds, 50, 20)];
+	[aboutButton addTarget:self action:@selector(showInfo:) forControlEvents:UIControlEventTouchUpInside];
+	[footerView addSubview:aboutButton];
+	self.tableView.tableFooterView = footerView;
+
+    
     
     
     
@@ -501,6 +519,22 @@
     //  if (IS_IPAD) {} else {[self.navigationController pushViewController:self.detailViewController animated:YES]; }
 } /* viewDidLoad */
 
+
+
+
+- (void)showInfo:(id)sender
+{
+	//TODO: Show info dialog with libxar license
+	AboutViewController *vc = [[AboutViewController alloc] initWithNibName:nil bundle:nil];
+	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:vc];
+	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+		navController.modalPresentationStyle = UIModalPresentationFormSheet;
+	}
+	[self.view.window.rootViewController presentModalViewController:navController animated:YES];
+}
+
+
+
 #pragma mark -
 #pragma mark Data Source Loading / Reloading Methods
 
@@ -670,6 +704,10 @@
     // cell.textLabel.shadowOffset = CGSizeMake(1, 1);
     cell.textLabel.backgroundColor = [UIColor clearColor];
 
+    
+    cell.imageView.image = [UIImage imageNamed:@"Default.png"];
+
+    
     if (indexPath.section == 0) {
         //
         cell.textLabel.text = [videoList0 objectAtIndex:indexPath.row];

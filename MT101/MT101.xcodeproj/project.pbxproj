@@ -255,6 +255,9 @@
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48DBC8C615FBF46400CEE854 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC8C515FBF46400CEE854 /* Twitter.framework */; };
 		48DBC8C915FBF46800CEE854 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC8C815FBF46800CEE854 /* Accounts.framework */; };
+		48DDB30C16335FA30055D151 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DDB30B16335FA30055D151 /* AboutViewController.m */; };
+		48DDB30F1633600E0055D151 /* AboutIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48DDB30D1633600D0055D151 /* AboutIcon.png */; };
+		48DDB3101633600E0055D151 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 48DDB30E1633600D0055D151 /* About.html */; };
 		48E2E9B51613D183000A05D3 /* hook-icon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E2E9B31613D183000A05D3 /* hook-icon~ipad.png */; };
 		48E2E9B61613D183000A05D3 /* hook-icon~ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E2E9B41613D183000A05D3 /* hook-icon~ipad@2x.png */; };
 		48E2E9CE1613DD2E000A05D3 /* twitterglyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E2E9CD1613DD2E000A05D3 /* twitterglyph@2x.png */; };
@@ -577,6 +580,10 @@
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
 		48DBC8C515FBF46400CEE854 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		48DBC8C815FBF46800CEE854 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		48DDB30916335F9A0055D151 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		48DDB30B16335FA30055D151 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		48DDB30D1633600D0055D151 /* AboutIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AboutIcon.png; sourceTree = "<group>"; };
+		48DDB30E1633600D0055D151 /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
 		48E2E9B31613D183000A05D3 /* hook-icon~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hook-icon~ipad.png"; path = "../hook-icon~ipad.png"; sourceTree = "<group>"; };
 		48E2E9B41613D183000A05D3 /* hook-icon~ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hook-icon~ipad@2x.png"; path = "../hook-icon~ipad@2x.png"; sourceTree = "<group>"; };
 		48E2E9CD1613DD2E000A05D3 /* twitterglyph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitterglyph@2x.png"; path = "../twitterglyph@2x.png"; sourceTree = "<group>"; };
@@ -1117,6 +1124,8 @@
 		48EEEF6815DC52BA00D15F15 /* MainVCs */ = {
 			isa = PBXGroup;
 			children = (
+				48DDB30916335F9A0055D151 /* AboutViewController.h */,
+				48DDB30B16335FA30055D151 /* AboutViewController.m */,
 				4805964C1616EADD00678501 /* ZoomableView.h */,
 				4805964D1616EADD00678501 /* ZoomableView.m */,
 				4817CD7A16149A5D0014517A /* RefreshTableHeaderView */,
@@ -1244,6 +1253,8 @@
 		B225A7311534CF59006FD46F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48DDB30D1633600D0055D151 /* AboutIcon.png */,
+				48DDB30E1633600D0055D151 /* About.html */,
 				487B3E22161F1A6000E29AEF /* Reachability */,
 				480944FF161317A800A600C3 /* Audio */,
 				481A431615F0FE8A006EDF46 /* ButtonArt */,
@@ -1541,6 +1552,8 @@
 				4844E2021628DDA900844F8A /* Default-Landscape@2x~ipad.png in Resources */,
 				4844E2051628DE0A00844F8A /* Default-Landscape~ipad.png in Resources */,
 				486C63B5163223F5007E5045 /* Default-Landscape@2x~ipad.png in Resources */,
+				48DDB30F1633600E0055D151 /* AboutIcon.png in Resources */,
+				48DDB3101633600E0055D151 /* About.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1612,6 +1625,7 @@
 				48022A6A161DE12C00F31287 /* YouTubeView_JS.m in Sources */,
 				48022A6B161DE12C00F31287 /* YouTubeViewController.m in Sources */,
 				487B3E25161F1A6000E29AEF /* Reachability.m in Sources */,
+				48DDB30C16335FA30055D151 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
