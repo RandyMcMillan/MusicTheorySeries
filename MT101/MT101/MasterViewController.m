@@ -705,14 +705,14 @@
     cell.textLabel.backgroundColor = [UIColor clearColor];
 
     
-    // cell.imageView.image = [UIImage imageNamed:@"Default@2x.png"];
+     cell.imageView.image = [UIImage imageNamed:@"Default@2x.png"];
 
     
     if (indexPath.section == 0) {
         //
         cell.textLabel.text = [videoList0 objectAtIndex:indexPath.row];
         //cell.imageView.image = [imageList0 objectAtIndex:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:@"Default@2x.png"];
+        //        cell.imageView.image = [UIImage imageNamed:@"Default@2x.png"];
         
     }
 
