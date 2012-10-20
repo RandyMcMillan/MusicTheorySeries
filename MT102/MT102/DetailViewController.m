@@ -669,14 +669,14 @@
     }
 
 #if TARGET_IPHONE_SIMULATOR
-        self.musicTheory101Label.backgroundColor =
-        [UIColor colorWithRed:0.988 green:0.000 blue:0.027 alpha:0.100];
+    //self.musicTheory101Label.backgroundColor =
+    //  [UIColor colorWithRed:0.988 green:0.000 blue:0.027 alpha:0.100];
 
-        self.detailDescriptionLabel.backgroundColor =
-        [UIColor colorWithRed:0.051 green:0.000 blue:0.988 alpha:0.100];
+    //  self.detailDescriptionLabel.backgroundColor =
+    //  [UIColor colorWithRed:0.051 green:0.000 blue:0.988 alpha:0.100];
 
-        self.vLabel.backgroundColor =
-        [UIColor colorWithRed:0.988 green:0.878 blue:0.000 alpha:0.100];
+    //  self.vLabel.backgroundColor =
+    //  [UIColor colorWithRed:0.988 green:0.878 blue:0.000 alpha:0.100];
 #endif
 
     if (self.detailItem) {}
@@ -774,14 +774,14 @@
         MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
 
         mailer.mailComposeDelegate = self;
-        [mailer setSubject:@"A Message from a Music Theory 101 user."];
+        [mailer setSubject:@"A Message from a Music Theory 102 user."];
 
         NSArray *toRecipients = [NSArray arrayWithObjects:@"randy.lee.mcmillan@gmail.com", @"", nil];
         [mailer setToRecipients:toRecipients];
 
         UIImage     *myImage    = imageView.image;
         NSData      *imageData  = UIImagePNGRepresentation(myImage);
-        NSString    *imageName  = @"Music Theory 101 for iOS Created by Randy McMillan Copyright (c) 2012 Randy McMillan. All rights reserved.";
+        NSString    *imageName  = @"Music Theory 102 for iOS Created by Randy McMillan Copyright (c) 2012 Randy McMillan. All rights reserved.";
         [mailer addAttachmentData:imageData mimeType:@"image/png" fileName:imageName];
 
         NSString *emailBody = @"Thank you for your interest in Music Theory 101 for iOS \n All questions are welcome.\n All constructive feed back is welcome.\n Images in this app may be used for educational purposes.\n These images may NEVER be reused/redistributed in any commercial way including other mobile applications. \n\nMusic Theory 101 for iOS \nCreated by Randy McMillan \nCopyright (c) 2012 Randy McMillan. All rights reserved.";
@@ -871,7 +871,7 @@
     [[self scrollView] setZoomScale:MINIMUM_SCALE animated:TRUE];
     [[self scrollView] scrollRectToVisible:self.view.frame animated:TRUE];
 
-    NSString    *tweetText      = @"I am learning music theory with Music Theory 101 for iOS! @MT102App #MT102";
+    NSString    *tweetText      = @"I am learning music theory with Music Theory 102 for iOS! @MT101App #MT102";
     NSString    *urlAttach      = @"http://itunes.apple.com/us/app/music-theory-101/id322256596?mt=8";
     NSString    *imageAttach    = @"icon-72@2x.png";
 
@@ -1080,7 +1080,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 
     if (self) {
-        self.title = NSLocalizedString(@"Music Theory 101",
+        self.title = NSLocalizedString(@"Music Theory 102",
             @"Music Theory 101");
     }
 
