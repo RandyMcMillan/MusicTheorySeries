@@ -809,19 +809,18 @@
     self.detailViewController.videoButton . hidden = FALSE;
     
     if (indexPath.section == 0) {
-    
+   
+        
         //bypass Treble Clef, Bass Clef and SubBass Clef
         if (indexPath.row == 1 | indexPath.row == 7 | indexPath.row == 8) {
         
-            self.detailViewController.MovieToPlay =
-            [videoList0 objectAtIndex:0];
-        
-        } else {
+            self.detailViewController.videoButton.hidden = TRUE;
+            
+        }
         
             self.detailViewController.MovieToPlay =
             [videoList0 objectAtIndex:indexPath.row];
         
-        }
         //hide for C Clef examples FIX THIS!!! ADD CONTENT to APP and YOUTUBE!!
         NSLog(@"ADD CONTENT TO APP AND YOUTUBE!!");
         if ((indexPath.row >= 2) & (indexPath.row < 7) ) {
