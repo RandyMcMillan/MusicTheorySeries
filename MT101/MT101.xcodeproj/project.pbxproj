@@ -255,6 +255,7 @@
 		48BA8A1B161A49B600F239B1 /* DetailViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48BA8A1A161A49B600F239B1 /* DetailViewController~ipad.xib */; };
 		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
 		48CE1238163C8D4A009B0140 /* CClefIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CE1237163C8D4A009B0140 /* CClefIcon.png */; };
+		48CE123B163C8F0D009B0140 /* FClefIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CE123A163C8F0D009B0140 /* FClefIcon.png */; };
 		48D50A2515D8879D009121C3 /* TrebleClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D50A2415D8879D009121C3 /* TrebleClefViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48DBC8C615FBF46400CEE854 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC8C515FBF46400CEE854 /* Twitter.framework */; };
 		48DBC8C915FBF46800CEE854 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC8C815FBF46800CEE854 /* Accounts.framework */; };
@@ -582,6 +583,7 @@
 		48BA8A1A161A49B600F239B1 /* DetailViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DetailViewController~ipad.xib"; sourceTree = "<group>"; };
 		48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		48CE1237163C8D4A009B0140 /* CClefIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CClefIcon.png; sourceTree = "<group>"; };
+		48CE123A163C8F0D009B0140 /* FClefIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FClefIcon.png; sourceTree = "<group>"; };
 		48D50A2115D8876D009121C3 /* TrebleClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrebleClefViewController.h; path = MT101/TrebleClefViewController.h; sourceTree = "<group>"; };
 		48D50A2415D8879D009121C3 /* TrebleClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrebleClefViewController.m; path = MT101/TrebleClefViewController.m; sourceTree = "<group>"; };
 		48DBC8C515FBF46400CEE854 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
@@ -1101,6 +1103,7 @@
 		48A9B0DF163C70FA0033C07E /* CellIcons */ = {
 			isa = PBXGroup;
 			children = (
+				48CE123A163C8F0D009B0140 /* FClefIcon.png */,
 				48CE1237163C8D4A009B0140 /* CClefIcon.png */,
 				48A9B0E1163C70FA0033C07E /* StaffIcon.png */,
 			);
@@ -1574,6 +1577,7 @@
 				48A9B0CC163C618D0033C07E /* CellIcon.plist in Resources */,
 				48A9B0E3163C70FA0033C07E /* StaffIcon.png in Resources */,
 				48CE1238163C8D4A009B0140 /* CClefIcon.png in Resources */,
+				48CE123B163C8F0D009B0140 /* FClefIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
