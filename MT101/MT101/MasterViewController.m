@@ -14,6 +14,10 @@
 
 #import "Constants.h"
 
+
+#import "UIImage+PDF.h"
+
+
 #define MAINLABEL_TAG   1
 #define SECONDLABEL_TAG 2
 #define PHOTO_TAG       3
@@ -711,17 +715,9 @@
     tableView.backgroundColor =
         [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
     tableView.separatorColor = [UIColor lightGrayColor];
-
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:18.0];
-
-    //   cell.textLabel.shadowColor = [UIColor whiteColor];
-    // cell.textLabel.shadowOffset = CGSizeMake(1, 1);
     cell.textLabel.backgroundColor = [UIColor clearColor];
-
-    //        cell.imageView.image = [cellIcon objectAtIndex:indexPath.row];
- 
-    //    cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
-    cell.imageView.layer.cornerRadius = 5.0;
+    //    cell.imageView.layer.cornerRadius = 5.0;
 
     
     if (indexPath.section == 0) {
