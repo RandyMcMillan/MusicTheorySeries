@@ -723,37 +723,37 @@
     if (indexPath.section == 0) {
         //
         cell.textLabel.text = [videoList0 objectAtIndex:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.row]];
     }
 
     if (indexPath.section == 1) {
         //
         cell.textLabel.text = [videoList1 objectAtIndex:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.row]];
 }
 
     if (indexPath.section == 2) {
         //
         cell.textLabel.text = [videoList2 objectAtIndex:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.row]];
 }
 
     if (indexPath.section == 3) {
         //
         cell.textLabel.text = [videoList3 objectAtIndex:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.row]];
     }
 
     if (indexPath.section == 4) {
         //
         cell.textLabel.text = [videoList4 objectAtIndex:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.row]];
     }
 
     if (indexPath.section == 5) {
         //
         cell.textLabel.text = [videoList5 objectAtIndex:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.row]];
     }
 
     if (indexPath.section == 6) {
