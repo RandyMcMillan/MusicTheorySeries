@@ -110,6 +110,20 @@
     for (NSString *str in sectionHeader) {
         NSLog(@"sectionHeader = %@", str);
     }
+    
+    
+#pragma mark - Cell Icons
+    
+    NSString *cellIconPath =
+    [[NSBundle mainBundle] pathForResource:@"CellIcon" ofType:
+     @"plist"];
+    cellIcon =
+    [[NSArray alloc] initWithContentsOfFile:cellIconPath];
+    
+    for (NSString *str in cellIcon) {
+        NSLog(@"cellIcon = %@", str);
+    }
+
 
 #pragma mark - WikiToDisplay
 
@@ -704,53 +718,60 @@
     // cell.textLabel.shadowOffset = CGSizeMake(1, 1);
     cell.textLabel.backgroundColor = [UIColor clearColor];
 
-    
-     cell.imageView.image = [UIImage imageNamed:@"Default@2x.png"];
+    //        cell.imageView.image = [cellIcon objectAtIndex:indexPath.row];
+ 
+    //    cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
+    cell.imageView.layer.cornerRadius = 5.0;
 
     
     if (indexPath.section == 0) {
         //
         cell.textLabel.text = [videoList0 objectAtIndex:indexPath.row];
-        //cell.imageView.image = [imageList0 objectAtIndex:indexPath.row];
-        //        cell.imageView.image = [UIImage imageNamed:@"Default@2x.png"];
-        
+        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
     }
 
     if (indexPath.section == 1) {
         //
         cell.textLabel.text = [videoList1 objectAtIndex:indexPath.row];
-    }
+        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
+}
 
     if (indexPath.section == 2) {
         //
         cell.textLabel.text = [videoList2 objectAtIndex:indexPath.row];
-    }
+        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
+}
 
     if (indexPath.section == 3) {
         //
         cell.textLabel.text = [videoList3 objectAtIndex:indexPath.row];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
     }
 
     if (indexPath.section == 4) {
         //
         cell.textLabel.text = [videoList4 objectAtIndex:indexPath.row];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
     }
 
     if (indexPath.section == 5) {
         //
         cell.textLabel.text = [videoList5 objectAtIndex:indexPath.row];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
     }
 
     if (indexPath.section == 6) {
         //
         //        cell.textLabel.text = [videoList6
         // objectAtIndex:indexPath.row];
+        //cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
     }
 
     if (indexPath.section == 7) {
         //
         //      cell.textLabel.text = [videoList7
         // objectAtIndex:indexPath.row];
+        //cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.section]];
     }
 
     return cell;

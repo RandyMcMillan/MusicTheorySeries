@@ -249,6 +249,7 @@
 		4895424116159EE5003E95CE /* CGRects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4895424016159EE5003E95CE /* CGRects.m */; };
 		489C8BB215CF05DD00F15D05 /* GrandStaffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		48A3562015E224CD00A3529D /* WikiToDisplay0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */; };
+		48A9B0CC163C618D0033C07E /* CellIcon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48A9B0CB163C618D0033C07E /* CellIcon.plist */; };
 		48B67BC815F411DA00B0C6F2 /* GradientToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */; };
 		48BA8A1B161A49B600F239B1 /* DetailViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48BA8A1A161A49B600F239B1 /* DetailViewController~ipad.xib */; };
 		48CA556015DB65980099FD63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CA555F15DB65980099FD63 /* Default-Landscape~ipad.png */; };
@@ -571,6 +572,7 @@
 		489C8BB015CF05DD00F15D05 /* GrandStaffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrandStaffViewController.h; path = MT101/GrandStaffViewController.h; sourceTree = "<group>"; };
 		489C8BB115CF05DD00F15D05 /* GrandStaffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrandStaffViewController.m; path = MT101/GrandStaffViewController.m; sourceTree = "<group>"; };
 		48A3561F15E224CD00A3529D /* WikiToDisplay0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WikiToDisplay0.plist; sourceTree = "<group>"; };
+		48A9B0CB163C618D0033C07E /* CellIcon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CellIcon.plist; sourceTree = "<group>"; };
 		48B67BC615F411DA00B0C6F2 /* GradientToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientToolBar.h; path = ../GradientToolBar.h; sourceTree = "<group>"; };
 		48B67BC715F411DA00B0C6F2 /* GradientToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientToolBar.m; path = ../GradientToolBar.m; sourceTree = "<group>"; };
 		48B6FEC51604A56C00B941C2 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
@@ -935,6 +937,7 @@
 			isa = PBXGroup;
 			children = (
 				48022A71161DE37900F31287 /* YouTubeToDisplay0.plist */,
+				48A9B0CB163C618D0033C07E /* CellIcon.plist */,
 				48022A72161DE37900F31287 /* YouTubeToDisplay1.plist */,
 				48022A73161DE37900F31287 /* YouTubeToDisplay2.plist */,
 				48022A74161DE37900F31287 /* YouTubeToDisplay3.plist */,
@@ -1554,6 +1557,7 @@
 				486C63B5163223F5007E5045 /* Default-Landscape@2x~ipad.png in Resources */,
 				48DDB30F1633600E0055D151 /* AboutIcon.png in Resources */,
 				48DDB3101633600E0055D151 /* About.html in Resources */,
+				48A9B0CC163C618D0033C07E /* CellIcon.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

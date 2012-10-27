@@ -62,6 +62,7 @@
     NSArray *youtubeToDiplayList5;
 
     NSArray *sectionHeader;
+    NSArray *cellIcon;
 }
 
 @property (strong,
