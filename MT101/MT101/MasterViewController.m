@@ -118,15 +118,71 @@
     
 #pragma mark - Cell Icons
     
-    NSString *cellIconPath =
-    [[NSBundle mainBundle] pathForResource:@"CellIcon" ofType:
+    NSString *cellIconPath0 =
+    [[NSBundle mainBundle] pathForResource:@"CellIcon0" ofType:
      @"plist"];
-    cellIcon =
-    [[NSArray alloc] initWithContentsOfFile:cellIconPath];
+    cellIcon0 =
+    [[NSArray alloc] initWithContentsOfFile:cellIconPath0];
     
-    for (NSString *str in cellIcon) {
+    for (NSString *str in cellIcon0) {
         NSLog(@"cellIcon = %@", str);
     }
+    
+    NSString *cellIconPath1 =
+    [[NSBundle mainBundle] pathForResource:@"CellIcon1" ofType:
+     @"plist"];
+    cellIcon1 =
+    [[NSArray alloc] initWithContentsOfFile:cellIconPath1];
+    
+    for (NSString *str in cellIcon1) {
+        NSLog(@"cellIcon = %@", str);
+    }
+
+    NSString *cellIconPath2 =
+    [[NSBundle mainBundle] pathForResource:@"CellIcon2" ofType:
+     @"plist"];
+    cellIcon2 =
+    [[NSArray alloc] initWithContentsOfFile:cellIconPath2];
+    
+    for (NSString *str in cellIcon2) {
+        NSLog(@"cellIcon = %@", str);
+    }
+
+    
+    NSString *cellIconPath3 =
+    [[NSBundle mainBundle] pathForResource:@"CellIcon3" ofType:
+     @"plist"];
+    cellIcon3 =
+    [[NSArray alloc] initWithContentsOfFile:cellIconPath3];
+    
+    for (NSString *str in cellIcon3) {
+        NSLog(@"cellIcon = %@", str);
+    }
+
+    
+    NSString *cellIconPath4 =
+    [[NSBundle mainBundle] pathForResource:@"CellIcon4" ofType:
+     @"plist"];
+    cellIcon4 =
+    [[NSArray alloc] initWithContentsOfFile:cellIconPath4];
+    
+    for (NSString *str in cellIcon4) {
+        NSLog(@"cellIcon = %@", str);
+    }
+
+    
+    NSString *cellIconPath5 =
+    [[NSBundle mainBundle] pathForResource:@"CellIcon5" ofType:
+     @"plist"];
+    cellIcon5 =
+    [[NSArray alloc] initWithContentsOfFile:cellIconPath5];
+    
+    for (NSString *str in cellIcon5) {
+        NSLog(@"cellIcon = %@", str);
+    }
+
+    
+    
 
 
 #pragma mark - WikiToDisplay
@@ -723,37 +779,37 @@
     if (indexPath.section == 0) {
         //
         cell.textLabel.text = [videoList0 objectAtIndex:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.row]];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon0 objectAtIndex:indexPath.row]];
     }
 
     if (indexPath.section == 1) {
         //
         cell.textLabel.text = [videoList1 objectAtIndex:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.row]];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon1 objectAtIndex:indexPath.row]];
 }
 
     if (indexPath.section == 2) {
         //
         cell.textLabel.text = [videoList2 objectAtIndex:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.row]];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon2 objectAtIndex:indexPath.row]];
 }
 
     if (indexPath.section == 3) {
         //
         cell.textLabel.text = [videoList3 objectAtIndex:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.row]];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon3 objectAtIndex:indexPath.row]];
     }
 
     if (indexPath.section == 4) {
         //
         cell.textLabel.text = [videoList4 objectAtIndex:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.row]];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon4 objectAtIndex:indexPath.row]];
     }
 
     if (indexPath.section == 5) {
         //
         cell.textLabel.text = [videoList5 objectAtIndex:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:[cellIcon objectAtIndex:indexPath.row]];
+        cell.imageView.image = [UIImage imageNamed:[cellIcon5 objectAtIndex:indexPath.row]];
     }
 
     if (indexPath.section == 6) {
