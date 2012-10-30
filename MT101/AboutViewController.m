@@ -15,7 +15,7 @@
 - (void)loadView
 {
 	[super loadView];
-	self.title = NSLocalizedString(@"About Music Thoery 101", nil);
+	self.title = NSLocalizedString(@"About Music Theory 101", nil);
 	self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
 	self.webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	self.webView.delegate = self;
