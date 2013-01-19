@@ -1,6 +1,6 @@
 //
 //  RootViewController.h
-//  MT101v5.1
+//  MGSplitView
 //
 //  Created by Matt Gemmell on 26/07/2010.
 //  Copyright Instinctive Code 2010.
@@ -11,7 +11,7 @@
 @class DetailViewController;
 
 @interface RootViewController : UITableViewController {
-    DetailViewController *detailViewController;
+	DetailViewController *detailViewController;
 }
 
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;

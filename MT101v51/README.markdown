@@ -1,6 +1,9 @@
 MGSplitViewController
 =====================
 
+####Universal-iOS branch supports iPhone/iPad - @RandyMcMillan
+
+
 MGSplitViewController is a replacement for UISplitViewController, with various useful enhancements.
 
 
@@ -17,7 +20,7 @@ Features
 
 Please note that, since split-views are commonly used for "Master-Detail" interfaces, I call the first sub-view the "master" and the second sub-view the "detail".
 
-- By default, MGSplitViewController mimics the appearance and (complete) behaviour of UISplitViewController, including its delegate API. It accepts two UIViewControllers (or subclasses thereof).
+- By default, MGSplitViewController mimics the appearance and (complete) behavior of UISplitViewController, including its delegate API. It accepts two UIViewControllers (or subclasses thereof).
 - Allows toggling the _visibility of the master view_ in either interface-orientation; i.e. you can have master-detail or detail-only in either landscape and/or portrait orientations (independently, and/or interactively).
 - Allows choosing whether the _split orientation_ is vertical (i.e. left/right, like UISplitViewController), or horizontal (master above, and detail below). You can toggle between modes interactively, with animation.
 - Allows choosing whether the master view is _before_ (above, or to left of) the detail view, or _after_ it (below, or to the right).
