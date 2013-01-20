@@ -19,5 +19,9 @@
 @property (nonatomic, retain) IBOutlet UIToolbar	*toolbar;
 @property (nonatomic, retain) id					detailItem;
 @property (nonatomic, retain) IBOutlet UILabel		*detailDescriptionLabel;
+@property (nonatomic,retain)IBOutlet UIView *viewA;
+@property (nonatomic,retain)IBOutlet UIView *viewB;
 
+@property (nonatomic,retain)IBOutlet UIImageView *imageViewA;
+@property (nonatomic,retain)IBOutlet UIImageView *imageViewB;
 @end

@@ -16,6 +16,7 @@
 @synthesize detailItem;
 @synthesize toolbar;
 @synthesize detailDescriptionLabel;
+@synthesize viewA,viewB,imageViewA,imageViewB;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
