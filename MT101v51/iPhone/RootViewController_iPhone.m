@@ -78,8 +78,6 @@
 {
 	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-	DetailViewController_iPhone *detailViewController_iPhone = [[DetailViewController_iPhone alloc]init];
-
 	if (IS_IPAD()) {} else {
 		[self.navigationController pushViewController:detailViewController_iPhone animated:YES];
 	}

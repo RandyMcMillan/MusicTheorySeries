@@ -17,7 +17,6 @@
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		480C589016935A04001A7007 /* DetailViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 480C588E16935A04001A7007 /* DetailViewController_iPhone.m */; };
-		480C589116935A04001A7007 /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480C588F16935A04001A7007 /* DetailViewController_iPhone.xib */; };
 		4810392E16588685001A324E /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4810392D16588685001A324E /* MainWindow_iPhone.xib */; };
 		486AFF651658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AFF641658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m */; };
 		486AFF691658594900FBFAD6 /* RootViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AFF671658594900FBFAD6 /* RootViewController_iPhone.m */; };
@@ -44,7 +43,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		480C588D16935A04001A7007 /* DetailViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController_iPhone.h; path = iPhone/DetailViewController_iPhone.h; sourceTree = "<group>"; };
 		480C588E16935A04001A7007 /* DetailViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController_iPhone.m; path = iPhone/DetailViewController_iPhone.m; sourceTree = "<group>"; };
-		480C588F16935A04001A7007 /* DetailViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController_iPhone.xib; path = iPhone/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		4810392D16588685001A324E /* MainWindow_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow_iPhone.xib; path = iPhone/MainWindow_iPhone.xib; sourceTree = "<group>"; };
 		486AFF631658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGSplitViewAppDelegate_iPhone.h; path = Classes/iPhone/MGSplitViewAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		486AFF641658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGSplitViewAppDelegate_iPhone.m; path = Classes/iPhone/MGSplitViewAppDelegate_iPhone.m; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 				486AFF681658594900FBFAD6 /* RootViewController_iPhone.xib */,
 				480C588D16935A04001A7007 /* DetailViewController_iPhone.h */,
 				480C588E16935A04001A7007 /* DetailViewController_iPhone.m */,
-				480C588F16935A04001A7007 /* DetailViewController_iPhone.xib */,
 			);
 			name = iPhone;
 			path = ..;
@@ -239,7 +236,6 @@
 				2804203C108E9BAB000629CD /* DetailView.xib in Resources */,
 				486AFF6A1658594900FBFAD6 /* RootViewController_iPhone.xib in Resources */,
 				4810392E16588685001A324E /* MainWindow_iPhone.xib in Resources */,
-				480C589116935A04001A7007 /* DetailViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
