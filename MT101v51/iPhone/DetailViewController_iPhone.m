@@ -33,6 +33,47 @@
 {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view from its nib.
+    double phi = 1.61803398875;
+    int x = 0;
+    int y = 0;
+    //ref view width only for split division
+    //
+    //self.phi = doublePhi;
+    
+    /*
+     
+     
+     
+     
+     */
+    
+    //[self.view bringSubviewToFront:viewA];
+    [self.viewA setBounds:CGRectMake(0,
+                                     0,
+                                     self.view.bounds.size.width/phi,
+                                     self.view.bounds.size.height/phi)];
+    
+    
+    [self.viewB setBounds:CGRectMake(x,
+                                     y,
+                                     200,
+                                     200)];
+ 
+    
+    [self.imageViewA setBounds:CGRectMake(0,
+                                          0,
+                                          0,
+                                          0)];
+    
+    [self.imageViewB setBounds:CGRectMake(0,
+                                          0,
+                                          0,
+                                          0)];
+    
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
