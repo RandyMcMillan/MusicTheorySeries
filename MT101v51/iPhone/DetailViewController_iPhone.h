@@ -25,4 +25,6 @@
 @property (nonatomic,retain)IBOutlet UIImageView *imageViewA;
 @property (nonatomic,retain)IBOutlet UIImageView *imageViewB;
 
+-(void)layoutSubViews;
+
 @end
