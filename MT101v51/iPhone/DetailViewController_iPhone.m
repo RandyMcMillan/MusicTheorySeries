@@ -49,24 +49,17 @@
     float screenHeight = [UIScreen mainScreen].bounds.size.height;
     float viewWidth = self.view.bounds.size.width;
     float viewHeight = self.view.bounds.size.height;
-    [self.viewA setCenter:self.view.center];
- 
+    //[self.viewA setCenter:self.view.center];
+    self.view.autoresizesSubviews = YES;
     if (self.view.bounds.size.width > self.view.bounds.size.height) {//landscape
    
     
-    [self.viewA setBounds:CGRectMake(0,
-                                     0,
-                                     (viewWidth-40/phi),
-                                     viewHeight-40)];
-    
+       
     
        
     }else{//portrait
     
-        [self.viewA setBounds:CGRectMake(0,
-                                         0,
-                                         viewWidth-40,
-                                         (viewHeight-40/phi))];
+    
     
     
     }
