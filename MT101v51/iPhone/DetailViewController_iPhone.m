@@ -37,40 +37,48 @@
     
 }
 
+- (void)setDetailItem:(id)newDetailItem {
+
+    if (detailItem != newDetailItem) {
+		[detailItem release];
+		detailItem = [newDetailItem retain];
+        
+		// Update the view.
+		[self configureView];
+	}
+    
+   }
+
+
+- (void)configureView {
+    
+    
+ // Update the user interface for the detail item.
+	detailDescriptionLabel.text		= [detailItem description];
+
+   UIImageView *imageView = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"  ]];
+    self.imageViewA.image = imageView.image;
+    [imageView release];
+
+
+
+}
 
 -(void)layoutSubViews{
 
 
    // Do any additional setup after loading the view from its nib.
-    double phi = 1.61803398875;
-    int x = 0;
-    int y = 0;
     float screenWidth = [UIScreen mainScreen].bounds.size.width;
     float screenHeight = [UIScreen mainScreen].bounds.size.height;
-    float viewWidth = self.view.bounds.size.width;
-    float viewHeight = self.view.bounds.size.height;
     //[self.viewA setCenter:self.view.center];
     self.view.autoresizesSubviews = YES;
     if (self.view.bounds.size.width > self.view.bounds.size.height) {//landscape
-   
-    
-       
-    
        
     }else{//portrait
     
-    
-    
-    
     }
     
-    
-    
-    
-    UIImageView *imageView = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"  ]];
-
-    self.imageViewA.image = imageView.image;
- 
+  
     NSLog(@"screenWidth = %f screenHeight = %f",screenWidth,screenHeight);
     NSLog(@"viewWidth = %f viewHeight %f",self.view.bounds.size.width,self.view.bounds.size.height);
     NSLog(@"viewAWidth = %f viewAHeight %f \n\n",self.viewA.bounds.size.width,self.viewA.bounds.size.height);

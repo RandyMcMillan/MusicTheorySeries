@@ -83,7 +83,10 @@
 	}
 
 	// When a row is selected, set the detail view controller's detail item to the item associated with the selected row.
-	detailViewController_iPhone.detailDescriptionLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
+    //	detailViewController_iPhone.detailDescriptionLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
+    
+	detailViewController_iPhone.detailItem = [NSString stringWithFormat:@"Row %d", indexPath.row];
+
     [self.detailViewController_iPhone layoutSubViews];
 }
 

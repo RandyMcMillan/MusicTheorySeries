@@ -37,23 +37,60 @@
 	if (popoverController != nil) {
 		[popoverController dismissPopoverAnimated:YES];
 	}
-    
-    UIImageView *imageView = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"  ]];
-    
-    self.imageViewA.image = imageView.image;
-    
+       
     
 }
 
 - (void)configureView
 {
+    
+    //splitview config dont mess
 	// Update the user interface for the detail item.
 	detailDescriptionLabel.text		= [detailItem description];
 	toggleItem.title				= ([splitController isShowingMaster]) ? @"Hide Master" : @"Show Master";// "I... AM... THE MASTER!" Derek Jacobi. Gave me chills.
 	verticalItem.title				= (splitController.vertical) ? @"Horizontal Split" : @"Vertical Split";
 	dividerStyleItem.title			= (splitController.dividerStyle == MGSplitViewDividerStyleThin) ? @"Enable Dragging" : @"Disable Dragging";
 	masterBeforeDetailItem.title	= (splitController.masterBeforeDetail) ? @"Detail First" : @"Master First";
+    
+    
+    //my config options
+    
+    
+    UIImageView *imageView = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"  ]];
+    
+    self.imageViewA.image = imageView.image;
+    [imageView release];
+ 
+    
+    
+    
+    
+    
+    
+    
 }
+
+-(void)layoutSubViews{
+    
+    
+    // Do any additional setup after loading the view from its nib.
+    float screenWidth = [UIScreen mainScreen].bounds.size.width;
+    float screenHeight = [UIScreen mainScreen].bounds.size.height;
+    //[self.viewA setCenter:self.view.center];
+    self.view.autoresizesSubviews = YES;
+    if (self.view.bounds.size.width > self.view.bounds.size.height) {//landscape
+        
+    }else{//portrait
+        
+    }
+    
+    
+    NSLog(@"screenWidth = %f screenHeight = %f",screenWidth,screenHeight);
+    NSLog(@"viewWidth = %f viewHeight %f",self.view.bounds.size.width,self.view.bounds.size.height);
+    NSLog(@"viewAWidth = %f viewAHeight %f \n\n",self.viewA.bounds.size.width,self.viewA.bounds.size.height);
+    
+}
+
 
 #pragma mark -
 #pragma mark Split view support
