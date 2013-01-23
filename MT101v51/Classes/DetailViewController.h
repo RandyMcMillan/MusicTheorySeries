@@ -25,6 +25,7 @@
 @property (nonatomic, retain) IBOutlet UIToolbar	*toolbar;
 @property (nonatomic, retain) id					detailItem;
 @property (nonatomic, retain) IBOutlet UILabel		*detailDescriptionLabel;
+@property (nonatomic,retain)IBOutlet UIImageView *imageViewA;
 
 - (IBAction)toggleMasterView:(id)sender;
 - (IBAction)toggleVertical:(id)sender;

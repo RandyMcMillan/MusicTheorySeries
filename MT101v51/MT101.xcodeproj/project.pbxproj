@@ -23,6 +23,28 @@
 		48456B3716B07FE4001278CB /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3116B07FE4001278CB /* PDFView.m */; };
 		48456B3816B07FE4001278CB /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3316B07FE4001278CB /* UIImage+PDF.m */; };
 		48456B3916B07FE4001278CB /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3516B07FE4001278CB /* UIView+Image.m */; };
+		48456B6216B09882001278CB /* Aeolian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B4C16B09882001278CB /* Aeolian.pdf */; };
+		48456B6316B09882001278CB /* AltoClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B4D16B09882001278CB /* AltoClef.pdf */; };
+		48456B6416B09882001278CB /* BariToneClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B4E16B09882001278CB /* BariToneClef.pdf */; };
+		48456B6516B09882001278CB /* BassClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B4F16B09882001278CB /* BassClef.pdf */; };
+		48456B6616B09882001278CB /* ChromaticCircle.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5016B09882001278CB /* ChromaticCircle.pdf */; };
+		48456B6716B09882001278CB /* CircleOfFifths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5116B09882001278CB /* CircleOfFifths.pdf */; };
+		48456B6816B09882001278CB /* Dorian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5216B09882001278CB /* Dorian.pdf */; };
+		48456B6916B09882001278CB /* Ionian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5316B09882001278CB /* Ionian.pdf */; };
+		48456B6A16B09882001278CB /* Locrian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5416B09882001278CB /* Locrian.pdf */; };
+		48456B6B16B09882001278CB /* Lydian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5516B09882001278CB /* Lydian.pdf */; };
+		48456B6C16B09882001278CB /* MezzoSopranoClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5616B09882001278CB /* MezzoSopranoClef.pdf */; };
+		48456B6D16B09882001278CB /* MixoLydian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5716B09882001278CB /* MixoLydian.pdf */; };
+		48456B6E16B09882001278CB /* Phrygian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5816B09882001278CB /* Phrygian.pdf */; };
+		48456B6F16B09882001278CB /* SolfegeFlats.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5916B09882001278CB /* SolfegeFlats.pdf */; };
+		48456B7016B09882001278CB /* SolfegeNaturals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5A16B09882001278CB /* SolfegeNaturals.pdf */; };
+		48456B7116B09882001278CB /* SolfegeSharps.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5B16B09882001278CB /* SolfegeSharps.pdf */; };
+		48456B7216B09882001278CB /* SopranoClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5C16B09882001278CB /* SopranoClef.pdf */; };
+		48456B7316B09882001278CB /* SubBassClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5D16B09882001278CB /* SubBassClef.pdf */; };
+		48456B7416B09882001278CB /* TenorClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5E16B09882001278CB /* TenorClef.pdf */; };
+		48456B7516B09882001278CB /* TheGrandStaff.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5F16B09882001278CB /* TheGrandStaff.pdf */; };
+		48456B7616B09882001278CB /* TrebleClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B6016B09882001278CB /* TrebleClef.pdf */; };
+		48456B7716B09882001278CB /* welcome.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B6116B09882001278CB /* welcome.pdf */; };
 		486AFF651658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AFF641658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m */; };
 		486AFF691658594900FBFAD6 /* RootViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AFF671658594900FBFAD6 /* RootViewController_iPhone.m */; };
 		48C9BCD416AB82F1007EC563 /* Default copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 48C9BCC616AB82F1007EC563 /* Default copy.png */; };
@@ -75,6 +97,28 @@
 		48456B3316B07FE4001278CB /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
 		48456B3416B07FE4001278CB /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		48456B3516B07FE4001278CB /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+		48456B4C16B09882001278CB /* Aeolian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Aeolian.pdf; sourceTree = "<group>"; };
+		48456B4D16B09882001278CB /* AltoClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AltoClef.pdf; sourceTree = "<group>"; };
+		48456B4E16B09882001278CB /* BariToneClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = BariToneClef.pdf; sourceTree = "<group>"; };
+		48456B4F16B09882001278CB /* BassClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = BassClef.pdf; sourceTree = "<group>"; };
+		48456B5016B09882001278CB /* ChromaticCircle.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ChromaticCircle.pdf; sourceTree = "<group>"; };
+		48456B5116B09882001278CB /* CircleOfFifths.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CircleOfFifths.pdf; sourceTree = "<group>"; };
+		48456B5216B09882001278CB /* Dorian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Dorian.pdf; sourceTree = "<group>"; };
+		48456B5316B09882001278CB /* Ionian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Ionian.pdf; sourceTree = "<group>"; };
+		48456B5416B09882001278CB /* Locrian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Locrian.pdf; sourceTree = "<group>"; };
+		48456B5516B09882001278CB /* Lydian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Lydian.pdf; sourceTree = "<group>"; };
+		48456B5616B09882001278CB /* MezzoSopranoClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MezzoSopranoClef.pdf; sourceTree = "<group>"; };
+		48456B5716B09882001278CB /* MixoLydian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MixoLydian.pdf; sourceTree = "<group>"; };
+		48456B5816B09882001278CB /* Phrygian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Phrygian.pdf; sourceTree = "<group>"; };
+		48456B5916B09882001278CB /* SolfegeFlats.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeFlats.pdf; sourceTree = "<group>"; };
+		48456B5A16B09882001278CB /* SolfegeNaturals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeNaturals.pdf; sourceTree = "<group>"; };
+		48456B5B16B09882001278CB /* SolfegeSharps.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeSharps.pdf; sourceTree = "<group>"; };
+		48456B5C16B09882001278CB /* SopranoClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SopranoClef.pdf; sourceTree = "<group>"; };
+		48456B5D16B09882001278CB /* SubBassClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SubBassClef.pdf; sourceTree = "<group>"; };
+		48456B5E16B09882001278CB /* TenorClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TenorClef.pdf; sourceTree = "<group>"; };
+		48456B5F16B09882001278CB /* TheGrandStaff.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TheGrandStaff.pdf; sourceTree = "<group>"; };
+		48456B6016B09882001278CB /* TrebleClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TrebleClef.pdf; sourceTree = "<group>"; };
+		48456B6116B09882001278CB /* welcome.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = welcome.pdf; sourceTree = "<group>"; };
 		486AFF631658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGSplitViewAppDelegate_iPhone.h; path = Classes/iPhone/MGSplitViewAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		486AFF641658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGSplitViewAppDelegate_iPhone.m; path = Classes/iPhone/MGSplitViewAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		486AFF661658594900FBFAD6 /* RootViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController_iPhone.h; path = iPhone/RootViewController_iPhone.h; sourceTree = "<group>"; };
@@ -177,6 +221,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				48456B4B16B09882001278CB /* ScalePDFs */,
 				48C9BCE316AB83A0007EC563 /* icon-72.png */,
 				48C9BCE416AB83A0007EC563 /* icon-72@2x.png */,
 				48C9BCE516AB83A0007EC563 /* icon.png */,
@@ -226,6 +271,35 @@
 				48456B3516B07FE4001278CB /* UIView+Image.m */,
 			);
 			path = "UIImage+PDF";
+			sourceTree = "<group>";
+		};
+		48456B4B16B09882001278CB /* ScalePDFs */ = {
+			isa = PBXGroup;
+			children = (
+				48456B4C16B09882001278CB /* Aeolian.pdf */,
+				48456B4D16B09882001278CB /* AltoClef.pdf */,
+				48456B4E16B09882001278CB /* BariToneClef.pdf */,
+				48456B4F16B09882001278CB /* BassClef.pdf */,
+				48456B5016B09882001278CB /* ChromaticCircle.pdf */,
+				48456B5116B09882001278CB /* CircleOfFifths.pdf */,
+				48456B5216B09882001278CB /* Dorian.pdf */,
+				48456B5316B09882001278CB /* Ionian.pdf */,
+				48456B5416B09882001278CB /* Locrian.pdf */,
+				48456B5516B09882001278CB /* Lydian.pdf */,
+				48456B5616B09882001278CB /* MezzoSopranoClef.pdf */,
+				48456B5716B09882001278CB /* MixoLydian.pdf */,
+				48456B5816B09882001278CB /* Phrygian.pdf */,
+				48456B5916B09882001278CB /* SolfegeFlats.pdf */,
+				48456B5A16B09882001278CB /* SolfegeNaturals.pdf */,
+				48456B5B16B09882001278CB /* SolfegeSharps.pdf */,
+				48456B5C16B09882001278CB /* SopranoClef.pdf */,
+				48456B5D16B09882001278CB /* SubBassClef.pdf */,
+				48456B5E16B09882001278CB /* TenorClef.pdf */,
+				48456B5F16B09882001278CB /* TheGrandStaff.pdf */,
+				48456B6016B09882001278CB /* TrebleClef.pdf */,
+				48456B6116B09882001278CB /* welcome.pdf */,
+			);
+			path = ScalePDFs;
 			sourceTree = "<group>";
 		};
 		486AFF621658542D00FBFAD6 /* iPhone */ = {
@@ -346,6 +420,28 @@
 				48C9BCEC16AB841D007EC563 /* icon@2x.png in Resources */,
 				48C9BCEE16AB8424007EC563 /* icon-72@2x.png in Resources */,
 				48C9BCF016AB8434007EC563 /* icon-72.png in Resources */,
+				48456B6216B09882001278CB /* Aeolian.pdf in Resources */,
+				48456B6316B09882001278CB /* AltoClef.pdf in Resources */,
+				48456B6416B09882001278CB /* BariToneClef.pdf in Resources */,
+				48456B6516B09882001278CB /* BassClef.pdf in Resources */,
+				48456B6616B09882001278CB /* ChromaticCircle.pdf in Resources */,
+				48456B6716B09882001278CB /* CircleOfFifths.pdf in Resources */,
+				48456B6816B09882001278CB /* Dorian.pdf in Resources */,
+				48456B6916B09882001278CB /* Ionian.pdf in Resources */,
+				48456B6A16B09882001278CB /* Locrian.pdf in Resources */,
+				48456B6B16B09882001278CB /* Lydian.pdf in Resources */,
+				48456B6C16B09882001278CB /* MezzoSopranoClef.pdf in Resources */,
+				48456B6D16B09882001278CB /* MixoLydian.pdf in Resources */,
+				48456B6E16B09882001278CB /* Phrygian.pdf in Resources */,
+				48456B6F16B09882001278CB /* SolfegeFlats.pdf in Resources */,
+				48456B7016B09882001278CB /* SolfegeNaturals.pdf in Resources */,
+				48456B7116B09882001278CB /* SolfegeSharps.pdf in Resources */,
+				48456B7216B09882001278CB /* SopranoClef.pdf in Resources */,
+				48456B7316B09882001278CB /* SubBassClef.pdf in Resources */,
+				48456B7416B09882001278CB /* TenorClef.pdf in Resources */,
+				48456B7516B09882001278CB /* TheGrandStaff.pdf in Resources */,
+				48456B7616B09882001278CB /* TrebleClef.pdf in Resources */,
+				48456B7716B09882001278CB /* welcome.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

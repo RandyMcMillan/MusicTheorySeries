@@ -114,7 +114,7 @@
 								<reference key="NSSuperview" ref="144700642"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="74340680"/>
-								<object class="NSColor" key="IBUIBackgroundColor" id="704460112">
+								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MC42NjY2NjY2NjY3AA</bytes>
 								</object>
@@ -155,7 +155,6 @@
 										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="483876647"/>
 										<string key="NSReuseIdentifierKey">_NS:9</string>
-										<reference key="IBUIBackgroundColor" ref="704460112"/>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 									</object>
 								</object>
@@ -273,6 +272,14 @@
 						<reference key="destination" ref="483876647"/>
 					</object>
 					<int key="connectionID">66</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">imageViewA</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="106763093"/>
+					</object>
+					<int key="connectionID">86</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -443,6 +450,7 @@
 					<string>82.IBPluginDependency</string>
 					<string>83.IBPluginDependency</string>
 					<string>84.IBPluginDependency</string>
+					<string>85.CustomClassName</string>
 					<string>85.IBPluginDependency</string>
 				</object>
 				<object class="NSArray" key="dict.values">
@@ -463,6 +471,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>UIImageView</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
 			</object>
@@ -478,7 +487,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">85</int>
+			<int key="maxID">86</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -538,6 +547,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>detailDescriptionLabel</string>
 							<string>dividerStyleItem</string>
+							<string>imageViewA</string>
 							<string>masterBeforeDetailItem</string>
 							<string>splitController</string>
 							<string>toggleItem</string>
@@ -548,6 +558,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UILabel</string>
 							<string>UIBarButtonItem</string>
+							<string>UIImageView</string>
 							<string>UIBarButtonItem</string>
 							<string>MGSplitViewController</string>
 							<string>UIBarButtonItem</string>
@@ -561,6 +572,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>detailDescriptionLabel</string>
 							<string>dividerStyleItem</string>
+							<string>imageViewA</string>
 							<string>masterBeforeDetailItem</string>
 							<string>splitController</string>
 							<string>toggleItem</string>
@@ -576,6 +588,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">dividerStyleItem</string>
 								<string key="candidateClassName">UIBarButtonItem</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">imageViewA</string>
+								<string key="candidateClassName">UIImageView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">masterBeforeDetailItem</string>

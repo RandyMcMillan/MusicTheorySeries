@@ -18,7 +18,7 @@
 
 @implementation DetailViewController
 
-@synthesize toolbar, popoverController, detailItem, detailDescriptionLabel;
+@synthesize toolbar, popoverController, detailItem, detailDescriptionLabel,imageViewA;
 
 #pragma mark -
 #pragma mark Managing the detail item
@@ -37,6 +37,12 @@
 	if (popoverController != nil) {
 		[popoverController dismissPopoverAnimated:YES];
 	}
+    
+    UIImageView *imageView = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"  ]];
+    
+    self.imageViewA.image = imageView.image;
+    
+    
 }
 
 - (void)configureView

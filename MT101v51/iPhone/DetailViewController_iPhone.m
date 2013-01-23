@@ -63,6 +63,13 @@
     
     
     }
+    
+    
+    
+    
+    UIImageView *imageView = [[ UIImageView alloc ] initWithImage:[ UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"  ]];
+
+    self.imageViewA.image = imageView.image;
  
     NSLog(@"screenWidth = %f screenHeight = %f",screenWidth,screenHeight);
     NSLog(@"viewWidth = %f viewHeight %f",self.view.bounds.size.width,self.view.bounds.size.height);
