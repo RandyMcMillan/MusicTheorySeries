@@ -29,6 +29,7 @@
 	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
 
 	self.window.rootViewController = navController;
+    [application setStatusBarHidden:YES];
 
 	[window makeKeyAndVisible];
 

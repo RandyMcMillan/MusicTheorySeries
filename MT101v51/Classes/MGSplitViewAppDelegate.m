@@ -25,6 +25,7 @@
 		[window addSubview:splitViewController.view];
 #endif
 
+    [application setStatusBarHidden:YES];
 	//    [window addSubview:splitViewController.view];
 	[window makeKeyAndVisible];
 
