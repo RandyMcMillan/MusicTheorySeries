@@ -566,10 +566,10 @@
 
 		// Inform delegate of this state of affairs.
 		if (_delegate && [_delegate respondsToSelector:@selector(splitViewController:willHideViewController:withBarButtonItem:forPopoverController:)]) {
-			[(NSObject < MGSplitViewControllerDelegate > *) _delegate splitViewController     : self
-			willHideViewController  : self.masterViewController
-			withBarButtonItem       : _barButtonItem
-			forPopoverController    : _hiddenPopoverController];
+			[(NSObject < MGSplitViewControllerDelegate > *) _delegate	splitViewController		:self
+																		willHideViewController	:self.masterViewController
+																		withBarButtonItem		:_barButtonItem
+																		forPopoverController	:_hiddenPopoverController];
 		}
 	} else if (!inPopover && _hiddenPopoverController && _barButtonItem) {
 		// I know this looks strange, but it fixes a bizarre issue with UIPopoverController leaving masterViewController's views in disarray.
@@ -582,9 +582,9 @@
 
 		// Inform delegate that the _barButtonItem will become invalid.
 		if (_delegate && [_delegate respondsToSelector:@selector(splitViewController:willShowViewController:invalidatingBarButtonItem:)]) {
-			[(NSObject < MGSplitViewControllerDelegate > *) _delegate splitViewController         : self
-			willShowViewController      : self.masterViewController
-			invalidatingBarButtonItem   : _barButtonItem];
+			[(NSObject < MGSplitViewControllerDelegate > *) _delegate	splitViewController			:self
+																		willShowViewController		:self.masterViewController
+																		invalidatingBarButtonItem	:_barButtonItem];
 		}
 
 		// Destroy _barButtonItem.
@@ -616,7 +616,7 @@
 - (void)animationDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context
 {
 	if (([animationID isEqualToString:MG_ANIMATION_CHANGE_SPLIT_ORIENTATION] ||
-		[animationID isEqualToString:MG_ANIMATION_CHANGE_SUBVIEWS_ORDER])
+			[animationID isEqualToString:MG_ANIMATION_CHANGE_SUBVIEWS_ORDER])
 		&& _cornerViews) {
 		for (UIView *corner in _cornerViews) {
 			corner.hidden = NO;
@@ -709,9 +709,9 @@
 	if (_hiddenPopoverController && !(_hiddenPopoverController.popoverVisible)) {
 		// Inform delegate.
 		if (_delegate && [_delegate respondsToSelector:@selector(splitViewController:popoverController:willPresentViewController:)]) {
-			[(NSObject < MGSplitViewControllerDelegate > *) _delegate splitViewController         : self
-			popoverController           : _hiddenPopoverController
-			willPresentViewController   : self.masterViewController];
+			[(NSObject < MGSplitViewControllerDelegate > *) _delegate	splitViewController			:self
+																		popoverController			:_hiddenPopoverController
+																		willPresentViewController	:self.masterViewController];
 		}
 
 		// Show popover.
@@ -730,7 +730,7 @@
 - (void)setDelegate:(id <MGSplitViewControllerDelegate>)newDelegate
 {
 	if ((newDelegate != _delegate) &&
-		(!newDelegate || [(NSObject *)newDelegate conformsToProtocol : @protocol(MGSplitViewControllerDelegate)])) {
+		(!newDelegate || [(NSObject *) newDelegate conformsToProtocol:@protocol(MGSplitViewControllerDelegate)])) {
 		_delegate = newDelegate;
 	}
 }

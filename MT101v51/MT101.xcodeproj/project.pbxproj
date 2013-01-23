@@ -19,6 +19,10 @@
 		480B3E6516AB7AFC00A3F687 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480B3E6416AB7AFC00A3F687 /* MainWindow_iPhone.xib */; };
 		480B3E9C16AB80A500A3F687 /* RootViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480B3E9B16AB80A500A3F687 /* RootViewController_iPhone.xib */; };
 		480C589016935A04001A7007 /* DetailViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 480C588E16935A04001A7007 /* DetailViewController_iPhone.m */; };
+		48456B3616B07FE4001278CB /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B2F16B07FE4001278CB /* NSString+MD5.m */; };
+		48456B3716B07FE4001278CB /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3116B07FE4001278CB /* PDFView.m */; };
+		48456B3816B07FE4001278CB /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3316B07FE4001278CB /* UIImage+PDF.m */; };
+		48456B3916B07FE4001278CB /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3516B07FE4001278CB /* UIView+Image.m */; };
 		486AFF651658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AFF641658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m */; };
 		486AFF691658594900FBFAD6 /* RootViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AFF671658594900FBFAD6 /* RootViewController_iPhone.m */; };
 		48C9BCD416AB82F1007EC563 /* Default copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 48C9BCC616AB82F1007EC563 /* Default copy.png */; };
@@ -63,6 +67,14 @@
 		480B3E9B16AB80A500A3F687 /* RootViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController_iPhone.xib; path = iPhone/RootViewController_iPhone.xib; sourceTree = "<group>"; };
 		480C588D16935A04001A7007 /* DetailViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController_iPhone.h; path = iPhone/DetailViewController_iPhone.h; sourceTree = "<group>"; };
 		480C588E16935A04001A7007 /* DetailViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController_iPhone.m; path = iPhone/DetailViewController_iPhone.m; sourceTree = "<group>"; };
+		48456B2E16B07FE4001278CB /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		48456B2F16B07FE4001278CB /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		48456B3016B07FE4001278CB /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
+		48456B3116B07FE4001278CB /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
+		48456B3216B07FE4001278CB /* UIImage+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDF.h"; sourceTree = "<group>"; };
+		48456B3316B07FE4001278CB /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
+		48456B3416B07FE4001278CB /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
+		48456B3516B07FE4001278CB /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
 		486AFF631658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGSplitViewAppDelegate_iPhone.h; path = Classes/iPhone/MGSplitViewAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		486AFF641658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGSplitViewAppDelegate_iPhone.m; path = Classes/iPhone/MGSplitViewAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		486AFF661658594900FBFAD6 /* RootViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController_iPhone.h; path = iPhone/RootViewController_iPhone.h; sourceTree = "<group>"; };
@@ -136,6 +148,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				48456B2D16B07FE4001278CB /* UIImage+PDF */,
 				48C9BCEF16AB8434007EC563 /* icon-72.png */,
 				48C9BCED16AB8424007EC563 /* icon-72@2x.png */,
 				48C9BCEB16AB841D007EC563 /* icon@2x.png */,
@@ -198,6 +211,21 @@
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48456B2D16B07FE4001278CB /* UIImage+PDF */ = {
+			isa = PBXGroup;
+			children = (
+				48456B2E16B07FE4001278CB /* NSString+MD5.h */,
+				48456B2F16B07FE4001278CB /* NSString+MD5.m */,
+				48456B3016B07FE4001278CB /* PDFView.h */,
+				48456B3116B07FE4001278CB /* PDFView.m */,
+				48456B3216B07FE4001278CB /* UIImage+PDF.h */,
+				48456B3316B07FE4001278CB /* UIImage+PDF.m */,
+				48456B3416B07FE4001278CB /* UIView+Image.h */,
+				48456B3516B07FE4001278CB /* UIView+Image.m */,
+			);
+			path = "UIImage+PDF";
 			sourceTree = "<group>";
 		};
 		486AFF621658542D00FBFAD6 /* iPhone */ = {
@@ -338,6 +366,10 @@
 				486AFF651658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m in Sources */,
 				486AFF691658594900FBFAD6 /* RootViewController_iPhone.m in Sources */,
 				480C589016935A04001A7007 /* DetailViewController_iPhone.m in Sources */,
+				48456B3616B07FE4001278CB /* NSString+MD5.m in Sources */,
+				48456B3716B07FE4001278CB /* PDFView.m in Sources */,
+				48456B3816B07FE4001278CB /* UIImage+PDF.m in Sources */,
+				48456B3916B07FE4001278CB /* UIView+Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

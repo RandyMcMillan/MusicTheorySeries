@@ -70,7 +70,7 @@ typedef enum _MGSplitViewDividerStyle {
  *
  *            This implementation was chosen so you don't need to recalculate equivalent splitPositions if the user toggles masterBeforeDetail themselves.
  */
-- (void)setDividerStyle:(MGSplitViewDividerStyle)newStyle animated:(BOOL)animate;	// Allows for animation of dividerStyle changes. The property's regular setter is not animated.
+- (void)setDividerStyle:(MGSplitViewDividerStyle) newStyle animated:(BOOL)animate;	// Allows for animation of dividerStyle changes. The property's regular setter is not animated.
 - (NSArray *)cornerViews;
 
 /*
