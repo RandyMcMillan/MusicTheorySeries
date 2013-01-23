@@ -18,3 +18,5 @@
 #else
 #define IS_IPAD() (false)
 #endif
+
+#import "UIImage+PDF.h"
