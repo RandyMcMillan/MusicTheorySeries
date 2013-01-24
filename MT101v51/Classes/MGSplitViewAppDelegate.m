@@ -31,6 +31,7 @@
 
 	[rootViewController performSelector:@selector(selectFirstRow) withObject:nil afterDelay:0];
 	[detailViewController performSelector:@selector(configureView) withObject:nil afterDelay:0];
+	[detailViewController performSelector:@selector(toggleMasterView:) withObject:nil afterDelay:0];
 
 	if (NO) {												// whether to allow dragging the divider to move the split.
 		splitViewController.splitWidth				= 15.0;	// make it wide enough to actually drag!
