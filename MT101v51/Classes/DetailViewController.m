@@ -105,8 +105,13 @@
 	if (barButtonItem) {
 		barButtonItem.title = @"Popover";
 		NSMutableArray *items = [[toolbar items] mutableCopy];
-		[items insertObject:barButtonItem atIndex:0];
-		[toolbar setItems:items animated:YES];
+		//hides Popover button
+        //[items insertObject:barButtonItem atIndex:0];
+		//removes enable dragging btn
+        [items removeObject:dividerStyleItem];
+        //removes horizontal/vert splt btn
+        [items removeObject:verticalItem];
+        [toolbar setItems:items animated:YES];
 		[items release];
 	}
 
