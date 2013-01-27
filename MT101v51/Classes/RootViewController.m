@@ -66,7 +66,7 @@
 	}
 
 	// Configure the cell.
-	cell.textLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
+	cell.textLabel.text = [NSString stringWithFormat:@"RootVC Row %d", indexPath.row];
 	return cell;
 }
 
@@ -78,7 +78,7 @@
 	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 
 	// When a row is selected, set the detail view controller's detail item to the item associated with the selected row.
-	detailViewController.detailItem = [NSString stringWithFormat:@"Row %d", indexPath.row];
+	detailViewController.detailItem = [NSString stringWithFormat:@"From RootVC Row %d", indexPath.row];
 }
 
 #pragma mark -

@@ -119,7 +119,7 @@
 	}
     
 	// Configure the cell.
-	cell.textLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
+	cell.textLabel.text = [NSString stringWithFormat:@"DetailVC Row %d", indexPath.row];
 	return cell;
 }
 
