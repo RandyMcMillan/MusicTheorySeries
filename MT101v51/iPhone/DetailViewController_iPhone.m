@@ -126,7 +126,7 @@
 	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 	// When a row is selected, set the detail view controller's detail item to the item associated with the selected row.
-     self.detailItem = [NSString stringWithFormat:@"Row %d", indexPath.row];
+     self.detailItem = [NSString stringWithFormat:@"From detailVC Row %d", indexPath.row];
 }
 
 
