@@ -15,6 +15,7 @@
 	IBOutlet UIBarButtonItem		*verticalItem;
 	IBOutlet UIBarButtonItem		*dividerStyleItem;
 	IBOutlet UIBarButtonItem		*masterBeforeDetailItem;
+    IBOutlet UITableView *tableView;
 	UIPopoverController				*popoverController;
 	UIToolbar						*toolbar;
 
@@ -32,7 +33,7 @@
 
 @property (nonatomic,retain)IBOutlet UIImageView *imageViewA;
 @property (nonatomic,retain)IBOutlet UIImageView *imageViewB;
-
+@property (nonatomic,retain)IBOutlet UITableView *tableView;
 
 - (IBAction)toggleMasterView:(id)sender;
 - (IBAction)toggleVertical:(id)sender;

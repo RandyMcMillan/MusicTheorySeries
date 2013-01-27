@@ -18,7 +18,7 @@
 
 @implementation DetailViewController
 
-@synthesize toolbar, popoverController, detailItem, detailDescriptionLabel,imageViewA;
+@synthesize toolbar, popoverController, detailItem, detailDescriptionLabel,imageViewA,tableView;
 
 #pragma mark -
 #pragma mark Managing the detail item
@@ -90,6 +90,50 @@
     NSLog(@"viewAWidth = %f viewAHeight %f \n\n",self.viewA.bounds.size.width,self.viewA.bounds.size.height);
     
 }
+
+#pragma mark -
+#pragma mark Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)aTableView
+{
+	// Return the number of sections.
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section
+{
+	// Return the number of rows in the section.
+	return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	static NSString *CellIdentifier = @"CellIdentifier";
+    
+	// Dequeue or create a cell of the appropriate type.
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+	if (cell == nil) {
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+		cell.accessoryType = UITableViewCellAccessoryNone;
+	}
+    
+	// Configure the cell.
+	cell.textLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
+	return cell;
+}
+
+#pragma mark -
+#pragma mark Table view delegate
+
+- (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+	// When a row is selected, set the detail view controller's detail item to the item associated with the selected row.
+ self.detailItem = [NSString stringWithFormat:@"Row %d", indexPath.row];
+}
+
 
 
 #pragma mark -

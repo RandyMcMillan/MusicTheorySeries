@@ -94,7 +94,6 @@
 				<string key="NSFrameSize">{320, 568}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<object class="NSColor" key="IBUIBackgroundColor" id="286198352">
 					<int key="NSColorSpace">3</int>
@@ -150,7 +149,6 @@
 							<string key="NSFrame">{{0, 436}, {320, 44}}</string>
 							<reference key="NSSuperview" ref="460186832"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="IBUIOpaque">NO</bool>
 							<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -319,6 +317,30 @@
 					</object>
 					<int key="connectionID">115</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">tableView</string>
+						<reference key="source" ref="353842452"/>
+						<reference key="destination" ref="100221130"/>
+					</object>
+					<int key="connectionID">116</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">dataSource</string>
+						<reference key="source" ref="100221130"/>
+						<reference key="destination" ref="353842452"/>
+					</object>
+					<int key="connectionID">119</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="100221130"/>
+						<reference key="destination" ref="353842452"/>
+					</object>
+					<int key="connectionID">120</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -453,7 +475,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">115</int>
+			<int key="maxID">120</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -464,6 +486,7 @@
 						<string key="detailDescriptionLabel">UILabel</string>
 						<string key="imageViewA">UIImageView</string>
 						<string key="imageViewB">UIImageView</string>
+						<string key="tableView">UITableView</string>
 						<string key="toolbar">UIToolbar</string>
 						<string key="viewA">UIView</string>
 						<string key="viewB">UIView</string>
@@ -480,6 +503,10 @@
 						<object class="IBToOneOutletInfo" key="imageViewB">
 							<string key="name">imageViewB</string>
 							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="tableView">
+							<string key="name">tableView</string>
+							<string key="candidateClassName">UITableView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="toolbar">
 							<string key="name">toolbar</string>
