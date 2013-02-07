@@ -65,8 +65,18 @@
 		cell.accessoryType = UITableViewCellAccessoryNone;
 	}
 
+    
+    
+    tableView.backgroundColor =
+    [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
+    tableView.separatorColor = [UIColor lightGrayColor];
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:8.0];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    //    cell.imageView.layer.cornerRadius = 5.0;
+
+    tableView.rowHeight = 150.0;
 	// Configure the cell.
-	cell.textLabel.text = [NSString stringWithFormat:@"RootVC Row %d", indexPath.row];
+	cell.textLabel.text = [NSString stringWithFormat:@"%d RVC", indexPath.row];
     cell.imageView.image = [UIImage originalSizeImageWithPDFNamed:@"StaffIcon.pdf"];
 	return cell;
 }
