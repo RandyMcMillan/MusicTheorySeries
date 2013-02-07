@@ -76,8 +76,9 @@
 
     tableView.rowHeight = 150.0;
 	// Configure the cell.
-	cell.textLabel.text = [NSString stringWithFormat:@"%d RVC", indexPath.row];
+	//cell.textLabel.text = [NSString stringWithFormat:@"%d RVC", indexPath.row];
     cell.imageView.image = [UIImage originalSizeImageWithPDFNamed:@"StaffIcon.pdf"];
+    cell.imageView.center = cell.center;
 	return cell;
 }
 
