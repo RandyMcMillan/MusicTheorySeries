@@ -67,6 +67,7 @@
 
 	// Configure the cell.
 	cell.textLabel.text = [NSString stringWithFormat:@"RootVC Row %d", indexPath.row];
+    cell.imageView.image = [UIImage originalSizeImageWithPDFNamed:@"StaffIcon.pdf"];
 	return cell;
 }
 
