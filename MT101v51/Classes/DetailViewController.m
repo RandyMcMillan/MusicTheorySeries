@@ -111,7 +111,7 @@
 	static NSString *CellIdentifier = @"CellIdentifier";
     
 	// Dequeue or create a cell of the appropriate type.
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
 	if (cell == nil) {
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
@@ -120,6 +120,13 @@
     
 	// Configure the cell.
 	cell.textLabel.text = [NSString stringWithFormat:@"DetailVC Row %d", indexPath.row];
+    self.tableView.backgroundColor =
+    [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
+    self.tableView.separatorColor = [UIColor lightGrayColor];
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:18.0];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    //    cell.imageView.layer.cornerRadius = 5.0;
+
 	return cell;
 }
 

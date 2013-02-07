@@ -115,6 +115,13 @@
     
 	// Configure the cell.
 	cell.textLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
+    tableView.backgroundColor =
+    [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
+    tableView.separatorColor = [UIColor lightGrayColor];
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:18.0];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    //    cell.imageView.layer.cornerRadius = 5.0;
+
 	return cell;
 }
 
