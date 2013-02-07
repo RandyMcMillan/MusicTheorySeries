@@ -11,8 +11,7 @@
 #import "ExampleView.h"
 #import "UIImage+PDF.h"
 
-@interface AppleXylophoneViewController : UIViewController <
-    UISplitViewControllerDelegate>{
+@interface AppleXylophoneViewController : UIViewController <UISplitViewControllerDelegate>{
     int     lastKeyIndex;
     CGRect  keyRects[KEY_COUNT];
 

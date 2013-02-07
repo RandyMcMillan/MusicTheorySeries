@@ -19,6 +19,7 @@
 @implementation DetailViewController
 
 @synthesize toolbar, popoverController, detailItem, detailDescriptionLabel,imageViewA,tableView;
+@synthesize mixerHost;
 
 #pragma mark -
 #pragma mark Managing the detail item
@@ -41,6 +42,22 @@
     
 }
 
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [mixerHost stopAUGraph];
+    
+    // create the mixer
+    self.mixerHost = [[MixerHostAudio alloc] init];
+    
+    // start the audio graph
+    [mixerHost startAUGraph];
+} /* viewDidLoad */
+
+
+
 - (void)configureView
 {
     
@@ -61,12 +78,6 @@
     self.imageViewA.image = imageView.image;
     [imageView release];
  
-    
-    
-    
-    
-    
-    
     
 }
 
@@ -140,6 +151,72 @@
 	// When a row is selected, set the detail view controller's detail item to the item associated with the selected row.
     self.detailItem = [NSString stringWithFormat:@"From detailVC Row %d", indexPath.row];
 }
+
+
+
+// Handle a change in the mixer output gain slider.
+- (IBAction)mixerOutputGainChanged:(UISlider *)sender
+{
+    [mixerHost setMixerOutputGain:(AudioUnitParameterValue)sender.value
+     ];
+}
+
+#pragma mark -
+#pragma mark Touch events
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    //[self destroyRects];
+    //[self drawRects];
+    
+    UITouch *aTouch = [touches anyObject];
+    int     idx     = [self keyIndexForTouch:aTouch];
+    
+    if (idx >= 0) {
+        if ([mixerHost playNote:idx] == YES) {
+            lastKeyIndex = idx;
+        }
+    }
+} /* touchesBegan */
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    lastKeyIndex = -1;
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *aTouch = [touches anyObject];
+    int     idx     = [self keyIndexForTouch:aTouch];
+    
+    if ((idx >= 0) && (idx != lastKeyIndex)) {
+        if ([mixerHost playNote:idx] == YES) {
+            lastKeyIndex = idx;
+        }
+    }
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    lastKeyIndex = -1;
+}
+
+- (int)keyIndexForTouch:(UITouch *)touch
+{
+    int     keyIndex    = -1;
+    CGPoint pt          = [touch locationInView:self.view];
+    
+    for (int i = 0; i < KEY_COUNT; i++) {
+        CGRect rect = keyRects[i];
+        
+        if (CGRectContainsPoint(rect, pt)) {
+            keyIndex = i;
+            break;
+        }
+    }
+    
+    return keyIndex;
+} /* keyIndexForTouch */
 
 
 

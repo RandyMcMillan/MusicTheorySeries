@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MGSplitViewController.h"
+#import "MixerHostAudio.h"
 
 @interface DetailViewController : UIViewController <UIPopoverControllerDelegate, MGSplitViewControllerDelegate>{
 	IBOutlet MGSplitViewController	*splitController;
@@ -21,6 +22,10 @@
 
 	id		detailItem;
 	UILabel *detailDescriptionLabel;
+    
+    int     lastKeyIndex;
+    CGRect  keyRects[KEY_COUNT];
+
 }
 
 @property (nonatomic, retain) IBOutlet UIToolbar	*toolbar;
@@ -39,5 +44,10 @@
 - (IBAction)toggleVertical:(id)sender;
 - (IBAction)toggleDividerStyle:(id)sender;
 - (IBAction)toggleMasterBeforeDetail:(id)sender;
+
+@property (nonatomic, assign) MixerHostAudio *mixerHost;
+- (int)keyIndexForTouch:(UITouch *)touch;
+- (IBAction)mixerOutputGainChanged:(UISlider *)sender;
+
 
 @end
