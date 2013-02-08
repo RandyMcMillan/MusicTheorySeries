@@ -87,7 +87,7 @@
 	self.view.autoresizesSubviews = YES;
 
 	if (self.view.bounds.size.width > self.view.bounds.size.height) {	// landscape
-	} else {// portrait
+	} else {															// portrait
 	}
 
 	NSLog(@"screenWidth = %f screenHeight = %f", screenWidth, screenHeight);
@@ -715,7 +715,7 @@
 {
 	[splitController toggleMasterView:sender];
 	[self configureView];
-    [self drawRects];
+	[self drawRects];
 }
 
 - (IBAction)toggleVertical:(id)sender

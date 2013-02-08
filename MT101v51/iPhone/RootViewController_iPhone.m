@@ -21,7 +21,7 @@
 	[super viewDidLoad];
 	self.clearsSelectionOnViewWillAppear	= NO;
 	self.contentSizeForViewInPopover		= CGSizeMake(320.0, 600.0);
-    self.title = @"Examples";
+	self.title = @"Examples";
 }
 
 // Ensure that the view controller supports rotation and that the split view can therefore show in both portrait and landscape.
@@ -68,15 +68,15 @@
 	}
 
 	// Configure the cell.
-	cell.textLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
-    tableView.backgroundColor =
-    [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
-    tableView.separatorColor = [UIColor lightGrayColor];
-    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:18.0];
-    cell.textLabel.backgroundColor = [UIColor clearColor];
-    //    cell.imageView.layer.cornerRadius = 5.0;
-    //cell.imageView.image = [UIImage imageNamed:[cellIcon0 objectAtIndex:indexPath.row]];
-    cell.imageView.image = [UIImage originalSizeImageWithPDFNamed:@"StaffIcon.pdf"];
+	cell.textLabel.text			= [NSString stringWithFormat:@"Row %d", indexPath.row];
+	tableView.backgroundColor	=
+		[UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
+	tableView.separatorColor		= [UIColor lightGrayColor];
+	cell.textLabel.font				= [UIFont fontWithName:@"Helvetica" size:18.0];
+	cell.textLabel.backgroundColor	= [UIColor clearColor];
+	//    cell.imageView.layer.cornerRadius = 5.0;
+	// cell.imageView.image = [UIImage imageNamed:[cellIcon0 objectAtIndex:indexPath.row]];
+	cell.imageView.image = [UIImage originalSizeImageWithPDFNamed:@"StaffIcon.pdf"];
 
 	return cell;
 }
@@ -93,13 +93,12 @@
 	}
 
 	// When a row is selected, set the detail view controller's detail item to the item associated with the selected row.
-    //	detailViewController_iPhone.detailDescriptionLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
-    
+	//	detailViewController_iPhone.detailDescriptionLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
+
 	detailViewController_iPhone.detailItem = [NSString stringWithFormat:@"Row %d", indexPath.row];
 
-    [self.detailViewController_iPhone layoutSubViews];
+	[self.detailViewController_iPhone layoutSubViews];
 }
-
 
 #pragma mark -
 #pragma mark Memory management

@@ -65,20 +65,19 @@
 		cell.accessoryType = UITableViewCellAccessoryNone;
 	}
 
-    
 	// Style the tableView
-    tableView.rowHeight = 150.0;
-    tableView.backgroundColor =
-    [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
-    tableView.separatorColor = [UIColor lightGrayColor];
+	tableView.rowHeight			= 150.0;
+	tableView.backgroundColor	=
+		[UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1.000];
+	tableView.separatorColor = [UIColor lightGrayColor];
 
 	// Configure the cell
-    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:8.0];
-    cell.textLabel.backgroundColor = [UIColor clearColor];
-    //cell.imageView.layer.cornerRadius = 5.0;
-	//cell.textLabel.text = [NSString stringWithFormat:@"%d RVC", indexPath.row];
-    cell.imageView.image = [UIImage originalSizeImageWithPDFNamed:@"StaffIcon.pdf"];
-    cell.imageView.center = cell.center;
+	cell.textLabel.font				= [UIFont fontWithName:@"Helvetica" size:8.0];
+	cell.textLabel.backgroundColor	= [UIColor clearColor];
+	// cell.imageView.layer.cornerRadius = 5.0;
+	// cell.textLabel.text = [NSString stringWithFormat:@"%d RVC", indexPath.row];
+	cell.imageView.image	= [UIImage originalSizeImageWithPDFNamed:@"StaffIcon.pdf"];
+	cell.imageView.center	= cell.center;
 
 	return cell;
 }
