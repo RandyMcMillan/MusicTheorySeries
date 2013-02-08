@@ -54,6 +54,16 @@
     
     // start the audio graph
     [mixerHost startAUGraph];
+    
+    [[UIDevice currentDevice]
+     beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter]   addObserver :self selector:
+     @selector(orientationChanged:)
+                                            name        :UIDeviceOrientationDidChangeNotification object:nil];
+    
+
+    
+    
 } /* viewDidLoad */
 
 
@@ -753,6 +763,18 @@
 #pragma mark -
 #pragma mark Rotation support
 
+- (void)orientationChanged:(NSNotification *)notification
+{
+    // We must add a delay here, otherwise we'll swap in the new view
+    // too quickly and we'll get an animation glitch
+    // [self performSelector:@selector(updateLandscapeView) withObject:nil
+    // afterDelay:0];
+    
+    NSLog(@"orientationChanged");
+}
+
+
+
 // Ensure that the view controller supports rotation and that the split view can therefore show in both portrait and landscape.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -762,6 +784,8 @@
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
 	[self configureView];
+    [self drawRects];
+
 }
 
 - (void)dealloc
