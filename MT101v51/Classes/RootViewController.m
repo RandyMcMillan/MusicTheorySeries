@@ -90,10 +90,10 @@
 	// cell.imageView.layer.cornerRadius = 5.0;
 	// cell.textLabel.text = [NSString stringWithFormat:@"%d RVC", indexPath.row];
 	
-    
+    if (indexPath.section == 0) {
     //    cell.imageView.image	= [UIImage originalSizeImageWithPDFNamed:@"StaffIcon.pdf"];
-    cell.imageView.image	= [UIImage originalSizeImageWithPDFNamed:rootVCIcon[indexPath.section]];
-	
+    cell.imageView.image	= [UIImage originalSizeImageWithPDFNamed:rootVCIcon[indexPath.row]];
+    }
     
     
     cell.imageView.center	= cell.center;
