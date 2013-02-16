@@ -11,6 +11,7 @@
 #define MAXIMUM_SCALE 4.0f
 #define ZOOM_STEP 1.5
 
+
 #define kLeftMargin                 20.0
 #define kTopMargin                  20.0
 #define kRightMargin                20.0
