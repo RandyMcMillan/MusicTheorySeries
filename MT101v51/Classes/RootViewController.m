@@ -21,6 +21,19 @@
 	[super viewDidLoad];
 	self.clearsSelectionOnViewWillAppear	= NO;
 	self.contentSizeForViewInPopover		= CGSizeMake(320.0, 600.0);
+    
+#pragma mark - Cell Icons
+    
+    NSString *rootVCIconPath =
+    [[NSBundle mainBundle] pathForResource:@"RootVCIcons" ofType:@"plist"];
+    rootVCIcon = [[NSArray alloc] initWithContentsOfFile:rootVCIconPath];
+    
+    for (NSString *str in rootVCIcon) {
+        NSLog(@"cellIcon = %@", str);
+    }
+
+    
+    
 }
 
 // Ensure that the view controller supports rotation and that the split view can therefore show in both portrait and landscape.
@@ -76,8 +89,14 @@
 	cell.textLabel.backgroundColor	= [UIColor clearColor];
 	// cell.imageView.layer.cornerRadius = 5.0;
 	// cell.textLabel.text = [NSString stringWithFormat:@"%d RVC", indexPath.row];
-	cell.imageView.image	= [UIImage originalSizeImageWithPDFNamed:@"StaffIcon.pdf"];
-	cell.imageView.center	= cell.center;
+	
+    
+    //    cell.imageView.image	= [UIImage originalSizeImageWithPDFNamed:@"StaffIcon.pdf"];
+    cell.imageView.image	= [UIImage originalSizeImageWithPDFNamed:rootVCIcon[indexPath.section]];
+	
+    
+    
+    cell.imageView.center	= cell.center;
 
 	return cell;
 }

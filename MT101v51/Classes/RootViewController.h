@@ -12,6 +12,8 @@
 
 @interface RootViewController : UITableViewController {
 	DetailViewController *detailViewController;
+    NSArray *rootVCIcon;
+
 }
 
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
