@@ -21,7 +21,19 @@
 	[super viewDidLoad];
 	self.clearsSelectionOnViewWillAppear	= NO;
 	self.contentSizeForViewInPopover		= CGSizeMake(320.0, 600.0);
+   
+#pragma mark - Section Headers
     
+    NSString *sectionHeadersPath =
+    [[NSBundle mainBundle] pathForResource:@"SectionHeaders" ofType:
+     @"plist"];
+    sectionHeader =
+    [[NSArray alloc] initWithContentsOfFile:sectionHeadersPath];
+    
+    for (NSString *str in sectionHeader) {
+        NSLog(@"sectionHeader = %@", str);
+    }
+
 #pragma mark - Cell Icons
     
     NSString *rootVCIconPath =
@@ -57,13 +69,27 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)aTableView
 {
 	// Return the number of sections.
-	return 1;
+	//return 1;
+   return [sectionHeader count];
+
 }
+
+- (NSString *)  tableView               :(UITableView *)tableView
+                titleForHeaderInSection :(NSInteger)section
+{
+    //  The header for the section is the region name -- get this from the
+    //  region at the section index.
+    //  Region *region = [regions objectAtIndex:section];
+    
+    return [sectionHeader objectAtIndex:section]; // sectionHeaders;
+}
+
 
 - (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section
 {
 	// Return the number of rows in the section.
-	return 10;
+	//return 10;
+    return [rootVCIcon count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

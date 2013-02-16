@@ -12,6 +12,8 @@
 
 @interface RootViewController : UITableViewController {
 	DetailViewController *detailViewController;
+    
+    NSArray *sectionHeader;
     NSArray *rootVCIcon;
 
 }
