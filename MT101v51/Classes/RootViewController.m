@@ -21,7 +21,10 @@
 	[super viewDidLoad];
 	self.clearsSelectionOnViewWillAppear	= NO;
 	self.contentSizeForViewInPopover		= CGSizeMake(320.0, 600.0);
-   
+  
+    self.tableView.showsVerticalScrollIndicator = NO;
+
+    
 #pragma mark - Section Headers
     
     NSString *sectionHeadersPath =
