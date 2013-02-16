@@ -81,7 +81,7 @@
     //  region at the section index.
     //  Region *region = [regions objectAtIndex:section];
     
-    return [sectionHeader objectAtIndex:section]; // sectionHeaders;
+    return nil;//[sectionHeader objectAtIndex:section]; // sectionHeaders;
 }
 
 
