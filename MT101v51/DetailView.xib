@@ -99,7 +99,7 @@
 												<int key="NSvFlags">303</int>
 												<string key="NSFrame">{{101, 113}, {58, 21}}</string>
 												<reference key="NSSuperview" ref="106763093"/>
-												<reference key="NSNextKeyView" ref="106763093"/>
+												<reference key="NSNextKeyView" ref="483876647"/>
 												<string key="NSReuseIdentifierKey">_NS:9</string>
 												<object class="NSColor" key="IBUIBackgroundColor">
 													<int key="NSColorSpace">1</int>
@@ -156,7 +156,7 @@
 										</object>
 										<string key="NSFrame">{{20, 100}, {728, 347}}</string>
 										<reference key="NSSuperview" ref="618141864"/>
-										<reference key="NSNextKeyView" ref="483876647"/>
+										<reference key="NSNextKeyView" ref="540583707"/>
 										<string key="NSReuseIdentifierKey">_NS:9</string>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 									</object>
@@ -186,7 +186,7 @@
 								</object>
 								<string key="NSFrameSize">{768, 715}</string>
 								<reference key="NSSuperview" ref="144700642"/>
-								<reference key="NSNextKeyView" ref="540583707"/>
+								<reference key="NSNextKeyView" ref="106763093"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">2</int>
@@ -231,6 +231,7 @@
 						<int key="NSvFlags">266</int>
 						<string key="NSFrame">{{0, 960}, {768, 44}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>

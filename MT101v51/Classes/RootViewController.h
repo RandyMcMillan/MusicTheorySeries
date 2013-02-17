@@ -15,6 +15,7 @@
     
     NSArray *sectionHeader;
     NSArray *rootVCIcon;
+    NSArray *imageList0;
 
 }
 

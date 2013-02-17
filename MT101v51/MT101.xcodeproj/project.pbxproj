@@ -46,6 +46,7 @@
 		48456B7516B09882001278CB /* TheGrandStaff.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5F16B09882001278CB /* TheGrandStaff.pdf */; };
 		48456B7616B09882001278CB /* TrebleClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B6016B09882001278CB /* TrebleClef.pdf */; };
 		48456B7716B09882001278CB /* welcome.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B6116B09882001278CB /* welcome.pdf */; };
+		484BF42616D0672600C0A8A5 /* imageList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484BF42516D0672600C0A8A5 /* imageList0.plist */; };
 		48596CF216D0293B004DEE0F /* RootVCIcons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48596CDA16D0293B004DEE0F /* RootVCIcons.plist */; };
 		48596CF316D0293B004DEE0F /* CellIcon1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48596CDB16D0293B004DEE0F /* CellIcon1.plist */; };
 		48596CF416D0293B004DEE0F /* CellIcon2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48596CDC16D0293B004DEE0F /* CellIcon2.plist */; };
@@ -226,6 +227,7 @@
 		48456B5F16B09882001278CB /* TheGrandStaff.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TheGrandStaff.pdf; sourceTree = "<group>"; };
 		48456B6016B09882001278CB /* TrebleClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TrebleClef.pdf; sourceTree = "<group>"; };
 		48456B6116B09882001278CB /* welcome.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = welcome.pdf; sourceTree = "<group>"; };
+		484BF42516D0672600C0A8A5 /* imageList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList0.plist; sourceTree = "<group>"; };
 		48596CDA16D0293B004DEE0F /* RootVCIcons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RootVCIcons.plist; sourceTree = "<group>"; };
 		48596CDB16D0293B004DEE0F /* CellIcon1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CellIcon1.plist; sourceTree = "<group>"; };
 		48596CDC16D0293B004DEE0F /* CellIcon2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CellIcon2.plist; sourceTree = "<group>"; };
@@ -553,6 +555,7 @@
 				48596CEF16D0293B004DEE0F /* YouTubeToDisplay3.plist */,
 				48596CF016D0293B004DEE0F /* YouTubeToDisplay4.plist */,
 				48596CF116D0293B004DEE0F /* YouTubeToDisplay5.plist */,
+				484BF42516D0672600C0A8A5 /* imageList0.plist */,
 			);
 			path = Plists;
 			sourceTree = "<group>";
@@ -903,6 +906,7 @@
 				48596D0816D0293B004DEE0F /* YouTubeToDisplay4.plist in Resources */,
 				48596D0916D0293B004DEE0F /* YouTubeToDisplay5.plist in Resources */,
 				4808659916D03E7F00BB7D5D /* SectionHeaders.plist in Resources */,
+				484BF42616D0672600C0A8A5 /* imageList0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -46,16 +46,22 @@
     for (NSString *str in rootVCIcon) {
         NSLog(@"cellIcon = %@", str);
     }
+    
+#pragma mark - Image Lists
+    
+    NSString *imageListPath =
+    [[NSBundle mainBundle] pathForResource:@"imageList0" ofType:@"plist"];
+    imageList0 = [[NSArray alloc] initWithContentsOfFile:imageListPath];
+    
+    for (NSString *str in imageList0) {
+        NSLog(@"cellIcon = %@", str);
+    }
+
 
     
     
 }
 
-// Ensure that the view controller supports rotation and that the split view can therefore show in both portrait and landscape.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-	return YES;
-}
 
 - (void)selectFirstRow
 {
@@ -139,6 +145,25 @@
 
 	// When a row is selected, set the detail view controller's detail item to the item associated with the selected row.
 	detailViewController.detailItem = [NSString stringWithFormat:@"From RootVC Row %d", indexPath.row];
+    
+    
+    //    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"]];
+
+    //detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"];
+    if (indexPath.section == 0) {
+    
+    detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
+
+    }
+}
+
+
+#pragma mark -
+#pragma mark orientation Support
+// Ensure that the view controller supports rotation and that the split view can therefore show in both portrait and landscape.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+	return YES;
 }
 
 #pragma mark -

@@ -71,10 +71,10 @@
 
 	// my config options
 
-	UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"]];
+    //	UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"]];
 
-	self.imageViewA.image = imageView.image;
-	[imageView release];
+	//self.imageViewA.image = imageView.image;
+	//[imageView release];
 }
 
 - (void)layoutSubViews
