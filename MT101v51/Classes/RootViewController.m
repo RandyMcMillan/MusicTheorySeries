@@ -144,12 +144,12 @@
 	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 
 	// When a row is selected, set the detail view controller's detail item to the item associated with the selected row.
-	detailViewController.detailItem = [NSString stringWithFormat:@"From RootVC Row %d", indexPath.row];
+    //	detailViewController.detailItem = [NSString stringWithFormat:@"From RootVC Row %d", indexPath.row];
+    detailViewController.detailItem = [NSString stringWithFormat:@"From RootVC Row %@", imageList0[indexPath.row]];
     
-    
-    //    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"]];
-
+    //UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"]];
     //detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"];
+
     if (indexPath.section == 0) {
     
     detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
