@@ -151,7 +151,7 @@
 	keyRects[43]	= label43.frame;
 	// keyRects[44]    = CGRectZero;//label44.frame;
 
-#if TARGET_IPHONE_SIMULATOR
+    //#if TARGET_IPHONE_SIMULATOR
 		// displayed in Simulator
 
 		label0.backgroundColor	= DO;
@@ -336,7 +336,7 @@
 		[self.view addSubview:label42];
 		[self.view addSubview:label43];
 		[self.view addSubview:label44];
-#endif	/* if TARGET_IPHONE_SIMULATOR */
+    //#endif	/* if TARGET_IPHONE_SIMULATOR */
 }	/* drawRects */
 
 - (void)destroyRects
