@@ -16,7 +16,7 @@
 		2804203C108E9BAB000629CD /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2804203B108E9BAB000629CD /* DetailView.xib */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
-		4808659916D03E7F00BB7D5D /* SectionHeaders.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4808659816D03E7F00BB7D5D /* SectionHeaders.plist */; };
+		4808659916D03E7F00BB7D5D /* RootSections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4808659816D03E7F00BB7D5D /* RootSections.plist */; };
 		480B3E6516AB7AFC00A3F687 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480B3E6416AB7AFC00A3F687 /* MainWindow_iPhone.xib */; };
 		480B3E9C16AB80A500A3F687 /* RootViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480B3E9B16AB80A500A3F687 /* RootViewController_iPhone.xib */; };
 		480C589016935A04001A7007 /* DetailViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 480C588E16935A04001A7007 /* DetailViewController_iPhone.m */; };
@@ -24,27 +24,27 @@
 		48456B3716B07FE4001278CB /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3116B07FE4001278CB /* PDFView.m */; };
 		48456B3816B07FE4001278CB /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3316B07FE4001278CB /* UIImage+PDF.m */; };
 		48456B3916B07FE4001278CB /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3516B07FE4001278CB /* UIView+Image.m */; };
-		48456B6216B09882001278CB /* Aeolian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B4C16B09882001278CB /* Aeolian.pdf */; };
-		48456B6316B09882001278CB /* AltoClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B4D16B09882001278CB /* AltoClef.pdf */; };
-		48456B6416B09882001278CB /* BariToneClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B4E16B09882001278CB /* BariToneClef.pdf */; };
-		48456B6516B09882001278CB /* BassClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B4F16B09882001278CB /* BassClef.pdf */; };
-		48456B6616B09882001278CB /* ChromaticCircle.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5016B09882001278CB /* ChromaticCircle.pdf */; };
-		48456B6716B09882001278CB /* CircleOfFifths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5116B09882001278CB /* CircleOfFifths.pdf */; };
-		48456B6816B09882001278CB /* Dorian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5216B09882001278CB /* Dorian.pdf */; };
-		48456B6916B09882001278CB /* Ionian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5316B09882001278CB /* Ionian.pdf */; };
-		48456B6A16B09882001278CB /* Locrian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5416B09882001278CB /* Locrian.pdf */; };
-		48456B6B16B09882001278CB /* Lydian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5516B09882001278CB /* Lydian.pdf */; };
-		48456B6C16B09882001278CB /* MezzoSopranoClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5616B09882001278CB /* MezzoSopranoClef.pdf */; };
-		48456B6D16B09882001278CB /* MixoLydian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5716B09882001278CB /* MixoLydian.pdf */; };
-		48456B6E16B09882001278CB /* Phrygian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5816B09882001278CB /* Phrygian.pdf */; };
-		48456B6F16B09882001278CB /* SolfegeFlats.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5916B09882001278CB /* SolfegeFlats.pdf */; };
-		48456B7016B09882001278CB /* SolfegeNaturals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5A16B09882001278CB /* SolfegeNaturals.pdf */; };
-		48456B7116B09882001278CB /* SolfegeSharps.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5B16B09882001278CB /* SolfegeSharps.pdf */; };
-		48456B7216B09882001278CB /* SopranoClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5C16B09882001278CB /* SopranoClef.pdf */; };
-		48456B7316B09882001278CB /* SubBassClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5D16B09882001278CB /* SubBassClef.pdf */; };
-		48456B7416B09882001278CB /* TenorClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5E16B09882001278CB /* TenorClef.pdf */; };
+		48456B6216B09882001278CB /* Aeolian in Resources */ = {isa = PBXBuildFile; fileRef = 48456B4C16B09882001278CB /* Aeolian */; };
+		48456B6316B09882001278CB /* Alto Clef in Resources */ = {isa = PBXBuildFile; fileRef = 48456B4D16B09882001278CB /* Alto Clef */; };
+		48456B6416B09882001278CB /* BariTone Clef in Resources */ = {isa = PBXBuildFile; fileRef = 48456B4E16B09882001278CB /* BariTone Clef */; };
+		48456B6516B09882001278CB /* Bass Clef in Resources */ = {isa = PBXBuildFile; fileRef = 48456B4F16B09882001278CB /* Bass Clef */; };
+		48456B6616B09882001278CB /* Chromatic Circle in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5016B09882001278CB /* Chromatic Circle */; };
+		48456B6716B09882001278CB /* Circle Of Fifths in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5116B09882001278CB /* Circle Of Fifths */; };
+		48456B6816B09882001278CB /* Dorian in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5216B09882001278CB /* Dorian */; };
+		48456B6916B09882001278CB /* Ionian in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5316B09882001278CB /* Ionian */; };
+		48456B6A16B09882001278CB /* Locrian in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5416B09882001278CB /* Locrian */; };
+		48456B6B16B09882001278CB /* Lydian in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5516B09882001278CB /* Lydian */; };
+		48456B6C16B09882001278CB /* MezzoSoprano Clef in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5616B09882001278CB /* MezzoSoprano Clef */; };
+		48456B6D16B09882001278CB /* MixoLydian in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5716B09882001278CB /* MixoLydian */; };
+		48456B6E16B09882001278CB /* Phrygian in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5816B09882001278CB /* Phrygian */; };
+		48456B6F16B09882001278CB /* Solfege Flats in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5916B09882001278CB /* Solfege Flats */; };
+		48456B7016B09882001278CB /* Solfege Naturals in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5A16B09882001278CB /* Solfege Naturals */; };
+		48456B7116B09882001278CB /* Solfege Sharps in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5B16B09882001278CB /* Solfege Sharps */; };
+		48456B7216B09882001278CB /* Soprano Clef in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5C16B09882001278CB /* Soprano Clef */; };
+		48456B7316B09882001278CB /* SubBass Clef in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5D16B09882001278CB /* SubBass Clef */; };
+		48456B7416B09882001278CB /* Tenor Clef in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5E16B09882001278CB /* Tenor Clef */; };
 		48456B7516B09882001278CB /* The Grand Staff in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5F16B09882001278CB /* The Grand Staff */; };
-		48456B7616B09882001278CB /* TrebleClef.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B6016B09882001278CB /* TrebleClef.pdf */; };
+		48456B7616B09882001278CB /* Treble Clef in Resources */ = {isa = PBXBuildFile; fileRef = 48456B6016B09882001278CB /* Treble Clef */; };
 		48456B7716B09882001278CB /* welcome.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B6116B09882001278CB /* welcome.pdf */; };
 		484BF42616D0672600C0A8A5 /* imageList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484BF42516D0672600C0A8A5 /* imageList0.plist */; };
 		48596CF216D0293B004DEE0F /* RootVCIcons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48596CDA16D0293B004DEE0F /* RootVCIcons.plist */; };
@@ -87,6 +87,7 @@
 		48849CDB16C3D17600BE741F /* PhrygianIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48849CCD16C3D17600BE741F /* PhrygianIcon.png */; };
 		48849CDC16C3D17600BE741F /* StaffIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48849CCE16C3D17600BE741F /* StaffIcon.pdf */; };
 		48849CDD16C3D17600BE741F /* StaffIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48849CCF16C3D17600BE741F /* StaffIcon.png */; };
+		4889F6AC16D0A24800C4C349 /* imageList1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4889F6AB16D0A24800C4C349 /* imageList1.plist */; };
 		48BB214516C42EC40021E05F /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BB214416C42EC40021E05F /* MixerHostAudio.m */; };
 		48BB214916C42F8D0021E05F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BB214816C42F8D0021E05F /* AVFoundation.framework */; };
 		48BB214B16C42F920021E05F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BB214A16C42F920021E05F /* AudioToolbox.framework */; };
@@ -182,7 +183,7 @@
 		28A0AAE50D9B0CCF005BE974 /* MT101_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MT101_Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = ../MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4808659816D03E7F00BB7D5D /* SectionHeaders.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SectionHeaders.plist; sourceTree = "<group>"; };
+		4808659816D03E7F00BB7D5D /* RootSections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RootSections.plist; sourceTree = "<group>"; };
 		480B3E6416AB7AFC00A3F687 /* MainWindow_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow_iPhone.xib; sourceTree = "<group>"; };
 		480B3E9B16AB80A500A3F687 /* RootViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController_iPhone.xib; path = iPhone/RootViewController_iPhone.xib; sourceTree = "<group>"; };
 		480C588D16935A04001A7007 /* DetailViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController_iPhone.h; path = iPhone/DetailViewController_iPhone.h; sourceTree = "<group>"; };
@@ -195,27 +196,27 @@
 		48456B3316B07FE4001278CB /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
 		48456B3416B07FE4001278CB /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		48456B3516B07FE4001278CB /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
-		48456B4C16B09882001278CB /* Aeolian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Aeolian.pdf; sourceTree = "<group>"; };
-		48456B4D16B09882001278CB /* AltoClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AltoClef.pdf; sourceTree = "<group>"; };
-		48456B4E16B09882001278CB /* BariToneClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = BariToneClef.pdf; sourceTree = "<group>"; };
-		48456B4F16B09882001278CB /* BassClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = BassClef.pdf; sourceTree = "<group>"; };
-		48456B5016B09882001278CB /* ChromaticCircle.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ChromaticCircle.pdf; sourceTree = "<group>"; };
-		48456B5116B09882001278CB /* CircleOfFifths.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CircleOfFifths.pdf; sourceTree = "<group>"; };
-		48456B5216B09882001278CB /* Dorian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Dorian.pdf; sourceTree = "<group>"; };
-		48456B5316B09882001278CB /* Ionian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Ionian.pdf; sourceTree = "<group>"; };
-		48456B5416B09882001278CB /* Locrian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Locrian.pdf; sourceTree = "<group>"; };
-		48456B5516B09882001278CB /* Lydian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Lydian.pdf; sourceTree = "<group>"; };
-		48456B5616B09882001278CB /* MezzoSopranoClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MezzoSopranoClef.pdf; sourceTree = "<group>"; };
-		48456B5716B09882001278CB /* MixoLydian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MixoLydian.pdf; sourceTree = "<group>"; };
-		48456B5816B09882001278CB /* Phrygian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Phrygian.pdf; sourceTree = "<group>"; };
-		48456B5916B09882001278CB /* SolfegeFlats.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeFlats.pdf; sourceTree = "<group>"; };
-		48456B5A16B09882001278CB /* SolfegeNaturals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeNaturals.pdf; sourceTree = "<group>"; };
-		48456B5B16B09882001278CB /* SolfegeSharps.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SolfegeSharps.pdf; sourceTree = "<group>"; };
-		48456B5C16B09882001278CB /* SopranoClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SopranoClef.pdf; sourceTree = "<group>"; };
-		48456B5D16B09882001278CB /* SubBassClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SubBassClef.pdf; sourceTree = "<group>"; };
-		48456B5E16B09882001278CB /* TenorClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TenorClef.pdf; sourceTree = "<group>"; };
+		48456B4C16B09882001278CB /* Aeolian */ = {isa = PBXFileReference; lastKnownFileType = text; path = Aeolian; sourceTree = "<group>"; };
+		48456B4D16B09882001278CB /* Alto Clef */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Alto Clef"; sourceTree = "<group>"; };
+		48456B4E16B09882001278CB /* BariTone Clef */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BariTone Clef"; sourceTree = "<group>"; };
+		48456B4F16B09882001278CB /* Bass Clef */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Bass Clef"; sourceTree = "<group>"; };
+		48456B5016B09882001278CB /* Chromatic Circle */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Chromatic Circle"; sourceTree = "<group>"; };
+		48456B5116B09882001278CB /* Circle Of Fifths */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Circle Of Fifths"; sourceTree = "<group>"; };
+		48456B5216B09882001278CB /* Dorian */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dorian; sourceTree = "<group>"; };
+		48456B5316B09882001278CB /* Ionian */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ionian; sourceTree = "<group>"; };
+		48456B5416B09882001278CB /* Locrian */ = {isa = PBXFileReference; lastKnownFileType = text; path = Locrian; sourceTree = "<group>"; };
+		48456B5516B09882001278CB /* Lydian */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lydian; sourceTree = "<group>"; };
+		48456B5616B09882001278CB /* MezzoSoprano Clef */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MezzoSoprano Clef"; sourceTree = "<group>"; };
+		48456B5716B09882001278CB /* MixoLydian */ = {isa = PBXFileReference; lastKnownFileType = text; path = MixoLydian; sourceTree = "<group>"; };
+		48456B5816B09882001278CB /* Phrygian */ = {isa = PBXFileReference; lastKnownFileType = text; path = Phrygian; sourceTree = "<group>"; };
+		48456B5916B09882001278CB /* Solfege Flats */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Solfege Flats"; sourceTree = "<group>"; };
+		48456B5A16B09882001278CB /* Solfege Naturals */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Solfege Naturals"; sourceTree = "<group>"; };
+		48456B5B16B09882001278CB /* Solfege Sharps */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Solfege Sharps"; sourceTree = "<group>"; };
+		48456B5C16B09882001278CB /* Soprano Clef */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Soprano Clef"; sourceTree = "<group>"; };
+		48456B5D16B09882001278CB /* SubBass Clef */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SubBass Clef"; sourceTree = "<group>"; };
+		48456B5E16B09882001278CB /* Tenor Clef */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Tenor Clef"; sourceTree = "<group>"; };
 		48456B5F16B09882001278CB /* The Grand Staff */ = {isa = PBXFileReference; lastKnownFileType = text; path = "The Grand Staff"; sourceTree = "<group>"; };
-		48456B6016B09882001278CB /* TrebleClef.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TrebleClef.pdf; sourceTree = "<group>"; };
+		48456B6016B09882001278CB /* Treble Clef */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Treble Clef"; sourceTree = "<group>"; };
 		48456B6116B09882001278CB /* welcome.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = welcome.pdf; sourceTree = "<group>"; };
 		484BF42516D0672600C0A8A5 /* imageList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList0.plist; sourceTree = "<group>"; };
 		48596CDA16D0293B004DEE0F /* RootVCIcons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RootVCIcons.plist; sourceTree = "<group>"; };
@@ -260,6 +261,7 @@
 		48849CCD16C3D17600BE741F /* PhrygianIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhrygianIcon.png; sourceTree = "<group>"; };
 		48849CCE16C3D17600BE741F /* StaffIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = StaffIcon.pdf; sourceTree = "<group>"; };
 		48849CCF16C3D17600BE741F /* StaffIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StaffIcon.png; sourceTree = "<group>"; };
+		4889F6AB16D0A24800C4C349 /* imageList1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList1.plist; sourceTree = "<group>"; };
 		48BB214316C42EC40021E05F /* MixerHostAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerHostAudio.h; sourceTree = "<group>"; };
 		48BB214416C42EC40021E05F /* MixerHostAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixerHostAudio.m; sourceTree = "<group>"; };
 		48BB214616C42EF80021E05F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -471,27 +473,27 @@
 		48456B4B16B09882001278CB /* ScalePDFs */ = {
 			isa = PBXGroup;
 			children = (
-				48456B4C16B09882001278CB /* Aeolian.pdf */,
-				48456B4D16B09882001278CB /* AltoClef.pdf */,
-				48456B4E16B09882001278CB /* BariToneClef.pdf */,
-				48456B4F16B09882001278CB /* BassClef.pdf */,
-				48456B5016B09882001278CB /* ChromaticCircle.pdf */,
-				48456B5116B09882001278CB /* CircleOfFifths.pdf */,
-				48456B5216B09882001278CB /* Dorian.pdf */,
-				48456B5316B09882001278CB /* Ionian.pdf */,
-				48456B5416B09882001278CB /* Locrian.pdf */,
-				48456B5516B09882001278CB /* Lydian.pdf */,
-				48456B5616B09882001278CB /* MezzoSopranoClef.pdf */,
-				48456B5716B09882001278CB /* MixoLydian.pdf */,
-				48456B5816B09882001278CB /* Phrygian.pdf */,
-				48456B5916B09882001278CB /* SolfegeFlats.pdf */,
-				48456B5A16B09882001278CB /* SolfegeNaturals.pdf */,
-				48456B5B16B09882001278CB /* SolfegeSharps.pdf */,
-				48456B5C16B09882001278CB /* SopranoClef.pdf */,
-				48456B5D16B09882001278CB /* SubBassClef.pdf */,
-				48456B5E16B09882001278CB /* TenorClef.pdf */,
+				48456B4C16B09882001278CB /* Aeolian */,
+				48456B4D16B09882001278CB /* Alto Clef */,
+				48456B4E16B09882001278CB /* BariTone Clef */,
+				48456B4F16B09882001278CB /* Bass Clef */,
+				48456B5016B09882001278CB /* Chromatic Circle */,
+				48456B5116B09882001278CB /* Circle Of Fifths */,
+				48456B5216B09882001278CB /* Dorian */,
+				48456B5316B09882001278CB /* Ionian */,
+				48456B5416B09882001278CB /* Locrian */,
+				48456B5516B09882001278CB /* Lydian */,
+				48456B5616B09882001278CB /* MezzoSoprano Clef */,
+				48456B5716B09882001278CB /* MixoLydian */,
+				48456B5816B09882001278CB /* Phrygian */,
+				48456B5916B09882001278CB /* Solfege Flats */,
+				48456B5A16B09882001278CB /* Solfege Naturals */,
+				48456B5B16B09882001278CB /* Solfege Sharps */,
+				48456B5C16B09882001278CB /* Soprano Clef */,
+				48456B5D16B09882001278CB /* SubBass Clef */,
+				48456B5E16B09882001278CB /* Tenor Clef */,
 				48456B5F16B09882001278CB /* The Grand Staff */,
-				48456B6016B09882001278CB /* TrebleClef.pdf */,
+				48456B6016B09882001278CB /* Treble Clef */,
 				48456B6116B09882001278CB /* welcome.pdf */,
 			);
 			path = ScalePDFs;
@@ -500,7 +502,7 @@
 		48596CD916D0293B004DEE0F /* Plists */ = {
 			isa = PBXGroup;
 			children = (
-				4808659816D03E7F00BB7D5D /* SectionHeaders.plist */,
+				4808659816D03E7F00BB7D5D /* RootSections.plist */,
 				48596CDA16D0293B004DEE0F /* RootVCIcons.plist */,
 				48596CDB16D0293B004DEE0F /* CellIcon1.plist */,
 				48596CDC16D0293B004DEE0F /* CellIcon2.plist */,
@@ -526,6 +528,7 @@
 				48596CF016D0293B004DEE0F /* YouTubeToDisplay4.plist */,
 				48596CF116D0293B004DEE0F /* YouTubeToDisplay5.plist */,
 				484BF42516D0672600C0A8A5 /* imageList0.plist */,
+				4889F6AB16D0A24800C4C349 /* imageList1.plist */,
 			);
 			path = Plists;
 			sourceTree = "<group>";
@@ -741,27 +744,27 @@
 				48C9BCEC16AB841D007EC563 /* icon@2x.png in Resources */,
 				48C9BCEE16AB8424007EC563 /* icon-72@2x.png in Resources */,
 				48C9BCF016AB8434007EC563 /* icon-72.png in Resources */,
-				48456B6216B09882001278CB /* Aeolian.pdf in Resources */,
-				48456B6316B09882001278CB /* AltoClef.pdf in Resources */,
-				48456B6416B09882001278CB /* BariToneClef.pdf in Resources */,
-				48456B6516B09882001278CB /* BassClef.pdf in Resources */,
-				48456B6616B09882001278CB /* ChromaticCircle.pdf in Resources */,
-				48456B6716B09882001278CB /* CircleOfFifths.pdf in Resources */,
-				48456B6816B09882001278CB /* Dorian.pdf in Resources */,
-				48456B6916B09882001278CB /* Ionian.pdf in Resources */,
-				48456B6A16B09882001278CB /* Locrian.pdf in Resources */,
-				48456B6B16B09882001278CB /* Lydian.pdf in Resources */,
-				48456B6C16B09882001278CB /* MezzoSopranoClef.pdf in Resources */,
-				48456B6D16B09882001278CB /* MixoLydian.pdf in Resources */,
-				48456B6E16B09882001278CB /* Phrygian.pdf in Resources */,
-				48456B6F16B09882001278CB /* SolfegeFlats.pdf in Resources */,
-				48456B7016B09882001278CB /* SolfegeNaturals.pdf in Resources */,
-				48456B7116B09882001278CB /* SolfegeSharps.pdf in Resources */,
-				48456B7216B09882001278CB /* SopranoClef.pdf in Resources */,
-				48456B7316B09882001278CB /* SubBassClef.pdf in Resources */,
-				48456B7416B09882001278CB /* TenorClef.pdf in Resources */,
+				48456B6216B09882001278CB /* Aeolian in Resources */,
+				48456B6316B09882001278CB /* Alto Clef in Resources */,
+				48456B6416B09882001278CB /* BariTone Clef in Resources */,
+				48456B6516B09882001278CB /* Bass Clef in Resources */,
+				48456B6616B09882001278CB /* Chromatic Circle in Resources */,
+				48456B6716B09882001278CB /* Circle Of Fifths in Resources */,
+				48456B6816B09882001278CB /* Dorian in Resources */,
+				48456B6916B09882001278CB /* Ionian in Resources */,
+				48456B6A16B09882001278CB /* Locrian in Resources */,
+				48456B6B16B09882001278CB /* Lydian in Resources */,
+				48456B6C16B09882001278CB /* MezzoSoprano Clef in Resources */,
+				48456B6D16B09882001278CB /* MixoLydian in Resources */,
+				48456B6E16B09882001278CB /* Phrygian in Resources */,
+				48456B6F16B09882001278CB /* Solfege Flats in Resources */,
+				48456B7016B09882001278CB /* Solfege Naturals in Resources */,
+				48456B7116B09882001278CB /* Solfege Sharps in Resources */,
+				48456B7216B09882001278CB /* Soprano Clef in Resources */,
+				48456B7316B09882001278CB /* SubBass Clef in Resources */,
+				48456B7416B09882001278CB /* Tenor Clef in Resources */,
 				48456B7516B09882001278CB /* The Grand Staff in Resources */,
-				48456B7616B09882001278CB /* TrebleClef.pdf in Resources */,
+				48456B7616B09882001278CB /* Treble Clef in Resources */,
 				48456B7716B09882001278CB /* welcome.pdf in Resources */,
 				48849CD016C3D17600BE741F /* CClefIcon.png in Resources */,
 				48849CD116C3D17600BE741F /* CircleIcon.pdf in Resources */,
@@ -865,8 +868,9 @@
 				48596D0716D0293B004DEE0F /* YouTubeToDisplay3.plist in Resources */,
 				48596D0816D0293B004DEE0F /* YouTubeToDisplay4.plist in Resources */,
 				48596D0916D0293B004DEE0F /* YouTubeToDisplay5.plist in Resources */,
-				4808659916D03E7F00BB7D5D /* SectionHeaders.plist in Resources */,
+				4808659916D03E7F00BB7D5D /* RootSections.plist in Resources */,
 				484BF42616D0672600C0A8A5 /* imageList0.plist in Resources */,
+				4889F6AC16D0A24800C4C349 /* imageList1.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

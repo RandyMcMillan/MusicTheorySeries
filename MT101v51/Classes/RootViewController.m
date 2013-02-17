@@ -28,13 +28,13 @@
 #pragma mark - Section Headers
     
     NSString *sectionHeadersPath =
-    [[NSBundle mainBundle] pathForResource:@"SectionHeaders" ofType:
+    [[NSBundle mainBundle] pathForResource:@"RootSections" ofType:
      @"plist"];
-    sectionHeader =
+    rootSection =
     [[NSArray alloc] initWithContentsOfFile:sectionHeadersPath];
     
-    for (NSString *str in sectionHeader) {
-        NSLog(@"sectionHeader = %@", str);
+    for (NSString *str in rootSection) {
+        NSLog(@"section = %@", str);
     }
 
 #pragma mark - Cell Icons
@@ -49,15 +49,22 @@
     
 #pragma mark - Image Lists
     
-    NSString *imageListPath =
+    NSString *imageListPath0 =
     [[NSBundle mainBundle] pathForResource:@"imageList0" ofType:@"plist"];
-    imageList0 = [[NSArray alloc] initWithContentsOfFile:imageListPath];
+    imageList0 = [[NSArray alloc] initWithContentsOfFile:imageListPath0];
     
     for (NSString *str in imageList0) {
         NSLog(@"cellIcon = %@", str);
     }
 
 
+    NSString *imageListPath1 =
+    [[NSBundle mainBundle] pathForResource:@"imageList1" ofType:@"plist"];
+    imageList1 = [[NSArray alloc] initWithContentsOfFile:imageListPath1];
+    
+    for (NSString *str in imageList1) {
+        NSLog(@"cellIcon = %@", str);
+    }
     
     
 }
@@ -79,7 +86,7 @@
 {
 	// Return the number of sections.
 	//return 1;
-   return [sectionHeader count];
+   return [rootSection count];
 
 }
 
@@ -90,7 +97,7 @@
     //  region at the section index.
     //  Region *region = [regions objectAtIndex:section];
     
-    return nil;//[sectionHeader objectAtIndex:section]; // sectionHeaders;
+    return [rootSection objectAtIndex:section]; // sectionHeaders;
 }
 
 
@@ -98,7 +105,7 @@
 {
 	// Return the number of rows in the section.
 	//return 10;
-    return [rootVCIcon count];
+    return 1;//[rootVCIcon count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -125,10 +132,10 @@
 	// cell.imageView.layer.cornerRadius = 5.0;
 	// cell.textLabel.text = [NSString stringWithFormat:@"%d RVC", indexPath.row];
 	
-    if (indexPath.section == 0) {
+    //if (indexPath.section == 0) {
     //    cell.imageView.image	= [UIImage originalSizeImageWithPDFNamed:@"StaffIcon.pdf"];
-    cell.imageView.image	= [UIImage originalSizeImageWithPDFNamed:rootVCIcon[indexPath.row]];
-    }
+    cell.imageView.image	= [UIImage originalSizeImageWithPDFNamed:rootVCIcon[indexPath.section]];
+    //}
     
     
     cell.imageView.center	= cell.center;
@@ -155,6 +162,32 @@
     detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
 
     }
+    
+    if (indexPath.section == 1) {
+        
+        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList1[indexPath.row]];
+        
+    }
+    
+    if (indexPath.section == 0) {
+        
+        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
+        
+    }
+    
+    if (indexPath.section == 0) {
+        
+        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
+        
+    }
+    
+    if (indexPath.section == 0) {
+        
+        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
+        
+    }
+    
+    
 }
 
 
