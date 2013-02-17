@@ -73,6 +73,10 @@
 		48596D0916D0293B004DEE0F /* YouTubeToDisplay5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48596CF116D0293B004DEE0F /* YouTubeToDisplay5.plist */; };
 		486AFF651658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AFF641658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m */; };
 		486AFF691658594900FBFAD6 /* RootViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AFF671658594900FBFAD6 /* RootViewController_iPhone.m */; };
+		487D64F616D14E8B0098AEA7 /* imageList2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487D64F216D14E8B0098AEA7 /* imageList2.plist */; };
+		487D64F716D14E8B0098AEA7 /* imageList3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487D64F316D14E8B0098AEA7 /* imageList3.plist */; };
+		487D64F816D14E8B0098AEA7 /* imageList4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487D64F416D14E8B0098AEA7 /* imageList4.plist */; };
+		487D64F916D14E8B0098AEA7 /* imageList5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487D64F516D14E8B0098AEA7 /* imageList5.plist */; };
 		48849CD016C3D17600BE741F /* CClefIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48849CC216C3D17600BE741F /* CClefIcon.png */; };
 		48849CD116C3D17600BE741F /* CircleIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48849CC316C3D17600BE741F /* CircleIcon.pdf */; };
 		48849CD216C3D17600BE741F /* CircleIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48849CC416C3D17600BE741F /* CircleIcon.png */; };
@@ -247,6 +251,10 @@
 		486AFF641658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGSplitViewAppDelegate_iPhone.m; path = Classes/iPhone/MGSplitViewAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		486AFF661658594900FBFAD6 /* RootViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController_iPhone.h; path = iPhone/RootViewController_iPhone.h; sourceTree = "<group>"; };
 		486AFF671658594900FBFAD6 /* RootViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController_iPhone.m; path = iPhone/RootViewController_iPhone.m; sourceTree = "<group>"; };
+		487D64F216D14E8B0098AEA7 /* imageList2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList2.plist; sourceTree = "<group>"; };
+		487D64F316D14E8B0098AEA7 /* imageList3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList3.plist; sourceTree = "<group>"; };
+		487D64F416D14E8B0098AEA7 /* imageList4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList4.plist; sourceTree = "<group>"; };
+		487D64F516D14E8B0098AEA7 /* imageList5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList5.plist; sourceTree = "<group>"; };
 		48849CC216C3D17600BE741F /* CClefIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CClefIcon.png; sourceTree = "<group>"; };
 		48849CC316C3D17600BE741F /* CircleIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CircleIcon.pdf; sourceTree = "<group>"; };
 		48849CC416C3D17600BE741F /* CircleIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleIcon.png; sourceTree = "<group>"; };
@@ -502,6 +510,10 @@
 		48596CD916D0293B004DEE0F /* Plists */ = {
 			isa = PBXGroup;
 			children = (
+				487D64F216D14E8B0098AEA7 /* imageList2.plist */,
+				487D64F316D14E8B0098AEA7 /* imageList3.plist */,
+				487D64F416D14E8B0098AEA7 /* imageList4.plist */,
+				487D64F516D14E8B0098AEA7 /* imageList5.plist */,
 				4808659816D03E7F00BB7D5D /* RootSections.plist */,
 				48596CDA16D0293B004DEE0F /* RootVCIcons.plist */,
 				48596CDB16D0293B004DEE0F /* CellIcon1.plist */,
@@ -871,6 +883,10 @@
 				4808659916D03E7F00BB7D5D /* RootSections.plist in Resources */,
 				484BF42616D0672600C0A8A5 /* imageList0.plist in Resources */,
 				4889F6AC16D0A24800C4C349 /* imageList1.plist in Resources */,
+				487D64F616D14E8B0098AEA7 /* imageList2.plist in Resources */,
+				487D64F716D14E8B0098AEA7 /* imageList3.plist in Resources */,
+				487D64F816D14E8B0098AEA7 /* imageList4.plist in Resources */,
+				487D64F916D14E8B0098AEA7 /* imageList5.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

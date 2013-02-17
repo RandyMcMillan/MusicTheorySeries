@@ -67,6 +67,36 @@
     }
     
     
+    NSString *imageListPath2 =
+    [[NSBundle mainBundle] pathForResource:@"imageList2" ofType:@"plist"];
+    imageList2 = [[NSArray alloc] initWithContentsOfFile:imageListPath2];
+    
+    for (NSString *str in imageList2) {
+        NSLog(@"cellIcon = %@", str);
+    }
+    
+    NSString *imageListPath3 =
+    [[NSBundle mainBundle] pathForResource:@"imageList3" ofType:@"plist"];
+    imageList3 = [[NSArray alloc] initWithContentsOfFile:imageListPath3];
+    
+    for (NSString *str in imageList3) {
+        NSLog(@"cellIcon = %@", str);
+    }
+    NSString *imageListPath4 =
+    [[NSBundle mainBundle] pathForResource:@"imageList4" ofType:@"plist"];
+    imageList4 = [[NSArray alloc] initWithContentsOfFile:imageListPath4];
+    
+    for (NSString *str in imageList4) {
+        NSLog(@"cellIcon = %@", str);
+    }
+    NSString *imageListPath5 =
+    [[NSBundle mainBundle] pathForResource:@"imageList5" ofType:@"plist"];
+    imageList5 = [[NSArray alloc] initWithContentsOfFile:imageListPath5];
+    
+    for (NSString *str in imageList5) {
+        NSLog(@"cellIcon = %@", str);
+    }
+
 }
 
 
@@ -169,6 +199,12 @@
         
     }
     
+    if (indexPath.section == 2) {
+        
+        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList2[indexPath.row]];
+        
+    }
+    
     if (indexPath.section == 3) {
         
         detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList3[indexPath.row]];
@@ -178,12 +214,6 @@
     if (indexPath.section == 4) {
         
         detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList4[indexPath.row]];
-        
-    }
-    
-    if (indexPath.section == 5) {
-        
-        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList5[indexPath.row]];
         
     }
     
