@@ -136,13 +136,6 @@
 		480A796B15DD6060005E9C43 /* The Grand Staff.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795415DD6060005E9C43 /* The Grand Staff.mp4 */; };
 		480A796D15DD6060005E9C43 /* UnderWater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795615DD6060005E9C43 /* UnderWater.mp4 */; };
 		480A796E15DD6060005E9C43 /* WindyTrees.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 480A795715DD6060005E9C43 /* WindyTrees.mp4 */; };
-		480BD9EF163FB42C002ED043 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 480BD9EE163FB42C002ED043 /* Default.png */; };
-		480BD9F1163FB434002ED043 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 480BD9F0163FB434002ED043 /* Default@2x.png */; };
-		480BD9F3163FB43E002ED043 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 480BD9F2163FB43E002ED043 /* Default-568h@2x.png */; };
-		480BD9F5163FB46C002ED043 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 480BD9F4163FB46C002ED043 /* Default-Landscape~ipad.png */; };
-		480BD9F7163FB470002ED043 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 480BD9F6163FB470002ED043 /* Default-Landscape@2x~ipad.png */; };
-		480BD9F9163FB47B002ED043 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 480BD9F8163FB47B002ED043 /* Default-Portrait~ipad.png */; };
-		480BD9FB163FB485002ED043 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 480BD9FA163FB485002ED043 /* Default-Portrait@2x~ipad.png */; };
 		480D185415F9E3E90086C3EF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480D185315F9E3E90086C3EF /* MessageUI.framework */; };
 		480D185915F9F7CF0086C3EF /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 480D185815F9F7CF0086C3EF /* email.png */; };
 		480D185B15F9FA9D0086C3EF /* email@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 480D185A15F9FA9D0086C3EF /* email@2x.png */; };
@@ -452,13 +445,6 @@
 		480A795415DD6060005E9C43 /* The Grand Staff.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Grand Staff.mp4"; sourceTree = "<group>"; };
 		480A795615DD6060005E9C43 /* UnderWater.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnderWater.mp4; sourceTree = "<group>"; };
 		480A795715DD6060005E9C43 /* WindyTrees.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WindyTrees.mp4; sourceTree = "<group>"; };
-		480BD9EE163FB42C002ED043 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		480BD9F0163FB434002ED043 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		480BD9F2163FB43E002ED043 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		480BD9F4163FB46C002ED043 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
-		480BD9F6163FB470002ED043 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
-		480BD9F8163FB47B002ED043 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
-		480BD9FA163FB485002ED043 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		480D185315F9E3E90086C3EF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		480D185815F9F7CF0086C3EF /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
 		480D185A15F9FA9D0086C3EF /* email@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email@2x.png"; sourceTree = "<group>"; };
@@ -1238,13 +1224,6 @@
 		B225A71B1534CF58006FD46F = {
 			isa = PBXGroup;
 			children = (
-				480BD9FA163FB485002ED043 /* Default-Portrait@2x~ipad.png */,
-				480BD9F8163FB47B002ED043 /* Default-Portrait~ipad.png */,
-				480BD9F6163FB470002ED043 /* Default-Landscape@2x~ipad.png */,
-				480BD9F4163FB46C002ED043 /* Default-Landscape~ipad.png */,
-				480BD9F2163FB43E002ED043 /* Default-568h@2x.png */,
-				480BD9F0163FB434002ED043 /* Default@2x.png */,
-				480BD9EE163FB42C002ED043 /* Default.png */,
 				48022A5A161DE12C00F31287 /* YouTubeView */,
 				48022A08161DD8EC00F31287 /* WikiView */,
 				484D16E315DAE471005FC66E /* Plists */,
@@ -1603,13 +1582,6 @@
 				4839AB4F163CAECC00124C80 /* DorianIcon.png in Resources */,
 				4839AB51163CAFB800124C80 /* PhrygianIcon.png in Resources */,
 				4839AB53163CBB3200124C80 /* LydianIcon.png in Resources */,
-				480BD9EF163FB42C002ED043 /* Default.png in Resources */,
-				480BD9F1163FB434002ED043 /* Default@2x.png in Resources */,
-				480BD9F3163FB43E002ED043 /* Default-568h@2x.png in Resources */,
-				480BD9F5163FB46C002ED043 /* Default-Landscape~ipad.png in Resources */,
-				480BD9F7163FB470002ED043 /* Default-Landscape@2x~ipad.png in Resources */,
-				480BD9F9163FB47B002ED043 /* Default-Portrait~ipad.png in Resources */,
-				480BD9FB163FB485002ED043 /* Default-Portrait@2x~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

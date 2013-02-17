@@ -169,21 +169,21 @@
         
     }
     
-    if (indexPath.section == 0) {
+    if (indexPath.section == 3) {
         
-        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
-        
-    }
-    
-    if (indexPath.section == 0) {
-        
-        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
+        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList3[indexPath.row]];
         
     }
     
-    if (indexPath.section == 0) {
+    if (indexPath.section == 4) {
         
-        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
+        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList4[indexPath.row]];
+        
+    }
+    
+    if (indexPath.section == 5) {
+        
+        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList5[indexPath.row]];
         
     }
     

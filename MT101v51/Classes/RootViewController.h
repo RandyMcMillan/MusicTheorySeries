@@ -17,7 +17,11 @@
     NSArray *rootVCIcon;
     NSArray *imageList0;
     NSArray *imageList1;
-
+    NSArray *imageList2;
+    NSArray *imageList3;
+    NSArray *imageList4;
+    NSArray *imageList5;
+    
 
 }
 
