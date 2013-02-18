@@ -245,7 +245,8 @@
         [UIView animateWithDuration:0.3 delay:0.0  options:UIViewAnimationCurveEaseOut animations:^{
             
             [detailViewController.imageViewA setBounds:CGRectMake(0, 0, detailViewController.viewA.bounds.size.width * 0.9, detailViewController.viewA.bounds.size.height * 0.8)];
-            detailViewController.imageViewA.center = detailViewController.viewA.center;
+            //detailViewController.imageViewA.center = detailViewController.viewA.center;
+            [detailViewController.imageViewA setCenter:CGPointMake(detailViewController.viewA.center.x, detailViewController.viewA.center.y-30)];
             detailViewController.imageViewA.alpha = 1.0;
             
         }   completion:^(BOOL finished){}];
@@ -257,7 +258,8 @@
         [UIView animateWithDuration:0.3 delay:0.0  options:UIViewAnimationCurveEaseOut animations:^{
             
             [detailViewController.imageViewA setBounds:CGRectMake(0, 0, detailViewController.viewA.bounds.size.height * 0.9, detailViewController.viewA.bounds.size.height * 0.9)];
-            detailViewController.imageViewA.center = detailViewController.viewA.center;
+            //detailViewController.imageViewA.center = detailViewController.viewA.center;
+            [detailViewController.imageViewA setCenter:CGPointMake(detailViewController.viewA.center.x, detailViewController.viewA.center.y-30)];
             detailViewController.imageViewA.alpha = 1.0;
             
         }   completion:^(BOOL finished){}];

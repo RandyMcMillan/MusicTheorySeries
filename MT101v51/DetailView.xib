@@ -162,7 +162,7 @@
 										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="540583707"/>
 										<string key="NSReuseIdentifierKey">_NS:9</string>
-										<bool key="IBUIAutoresizesSubviews">NO</bool>
+										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">1</int>
 										<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 									</object>
@@ -200,6 +200,7 @@
 									<int key="NSColorSpace">2</int>
 									<bytes key="NSRGB">MC44Nzg0MzE0Mzk0IDAuODc4NDMxNDM5NCAwLjg3ODQzMTQzOTQAA</bytes>
 								</object>
+								<bool key="IBUIClipsSubviews">YES</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 							</object>
 							<object class="IBUITableView" id="74340680">
