@@ -208,7 +208,7 @@
     }
     
     if (indexPath.section == 3) {
-        isCircleView = FALSE;
+        isCircleView = TRUE;
         detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList3[indexPath.row]];
         [UIView animateWithDuration:0.5 delay:0.5  options:UIViewAnimationCurveEaseOut animations:^{}   completion:^(BOOL finished){}];
 
@@ -233,7 +233,7 @@
         
     }   completion:^(BOOL finished){}];
 
-
+    NSLog(@"%i",isCircleView);
     [self layoutImageView];
     [self layoutCircleView];
     
