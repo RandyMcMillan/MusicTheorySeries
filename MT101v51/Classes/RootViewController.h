@@ -21,12 +21,16 @@
     NSArray *imageList3;
     NSArray *imageList4;
     NSArray *imageList5;
-    
+    BOOL isCircleView;
 
 }
 
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
+@property (nonatomic, assign) BOOL	 isCircleView;
 
 - (void)selectFirstRow;
+- (void)layOut;
+- (void)layoutImageView;
+- (void)layoutCircleView;
 
 @end

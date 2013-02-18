@@ -11,7 +11,7 @@
 
 @implementation RootViewController
 
-@synthesize detailViewController;
+@synthesize detailViewController,isCircleView;
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -188,37 +188,81 @@
     //detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"];
 
     if (indexPath.section == 0) {
-    
+        isCircleView = FALSE;
     detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
-
+        [UIView animateWithDuration:0.5 delay:0.5  options:UIViewAnimationCurveEaseOut animations:^{}   completion:^(BOOL finished){}];
     }
     
     if (indexPath.section == 1) {
-        
+        isCircleView = TRUE;
         detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList1[indexPath.row]];
+        [UIView animateWithDuration:0.5 delay:0.5  options:UIViewAnimationCurveEaseOut animations:^{}   completion:^(BOOL finished){}];
         
     }
     
     if (indexPath.section == 2) {
-        
+        isCircleView = FALSE;
         detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList2[indexPath.row]];
-        
+        [UIView animateWithDuration:0.5 delay:0.5  options:UIViewAnimationCurveEaseOut animations:^{}   completion:^(BOOL finished){}];
+
     }
     
     if (indexPath.section == 3) {
-        
+        isCircleView = FALSE;
         detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList3[indexPath.row]];
-        
+        [UIView animateWithDuration:0.5 delay:0.5  options:UIViewAnimationCurveEaseOut animations:^{}   completion:^(BOOL finished){}];
+
     }
     
     if (indexPath.section == 4) {
-        
+        isCircleView = FALSE;
         detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList4[indexPath.row]];
-        
+        [UIView animateWithDuration:0.5 delay:0.5  options:UIViewAnimationCurveEaseOut animations:^{}   completion:^(BOOL finished){}];
+
     }
     
+    [self layOut];
+
+}
+
+-(void)layOut {
+   
+    [UIView animateWithDuration:0.2 delay:0.0  options:UIViewAnimationCurveEaseOut animations:^{
+        
+        detailViewController.imageViewA.alpha = 5.0;
+        
+    }   completion:^(BOOL finished){}];
+
+
+    [self layoutImageView];
+    [self layoutCircleView];
     
 }
+
+- (void)layoutImageView {
+    if (!isCircleView) {
+        
+        [UIView animateWithDuration:0.3 delay:0.0  options:UIViewAnimationCurveEaseOut animations:^{
+            
+            [detailViewController.imageViewA setBounds:CGRectMake(0, 0, detailViewController.viewA.bounds.size.width * 0.9, detailViewController.viewA.bounds.size.height * 0.8)];
+            detailViewController.imageViewA.center = detailViewController.viewA.center;
+            detailViewController.imageViewA.alpha = 1.0;
+            
+        }   completion:^(BOOL finished){}];
+    }
+}
+
+- (void)layoutCircleView {
+    if (isCircleView) {
+        [UIView animateWithDuration:0.3 delay:0.0  options:UIViewAnimationCurveEaseOut animations:^{
+            
+            [detailViewController.imageViewA setBounds:CGRectMake(0, 0, detailViewController.viewA.bounds.size.height * 0.9, detailViewController.viewA.bounds.size.height * 0.9)];
+            detailViewController.imageViewA.center = detailViewController.viewA.center;
+            detailViewController.imageViewA.alpha = 1.0;
+            
+        }   completion:^(BOOL finished){}];
+    }
+};
 
 
 #pragma mark -
@@ -229,6 +273,11 @@
 	return YES;
 }
 
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    [self layoutImageView];
+    [self layoutCircleView];
+}
 #pragma mark -
 #pragma mark Memory management
 
