@@ -106,12 +106,16 @@
 		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
 		[self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionTop];
 		//[self tableView:self.tableView didSelectRowAtIndexPath:indexPath];
-       
-        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:@"Welcome"];
-        [self layoutImageView];
+      
+        CGFloat midX = CGRectGetMidX(detailViewController.viewA.bounds);
+        CGFloat midY = CGRectGetMidY(detailViewController.viewA.bounds);
+    detailViewController.imageViewA.center = CGPointMake(midX, midY);
+    detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:@"Welcome"];
+                [self layoutImageView];
       	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
   
 	}
+    
 }
 
 #pragma mark -
@@ -249,9 +253,13 @@
         
         [UIView animateWithDuration:0.3 delay:0.0  options:UIViewAnimationCurveEaseOut animations:^{
             
-            [detailViewController.imageViewA setBounds:CGRectMake(0, 0, detailViewController.viewA.bounds.size.width * 0.9, detailViewController.viewA.bounds.size.height * 0.8)];
+[detailViewController.imageViewA setBounds:CGRectMake(0, 0, detailViewController.viewA.bounds.size.width * 0.9, detailViewController.viewA.bounds.size.height * 0.8)];
             //detailViewController.imageViewA.center = detailViewController.viewA.center;
-            [detailViewController.imageViewA setCenter:CGPointMake(detailViewController.viewA.center.x, detailViewController.viewA.center.y-30)];
+            CGFloat midX = CGRectGetMidX(detailViewController.viewA.bounds);
+            CGFloat midY = CGRectGetMidY(detailViewController.viewA.bounds);
+            detailViewController.imageViewA.center = CGPointMake(midX, midY);
+            
+            // [detailViewController.imageViewA setCenter:CGPointMake(detailViewController.viewA.center.x, detailViewController.viewA.center.y-30)];
             detailViewController.imageViewA.alpha = 1.0;
             
         }   completion:^(BOOL finished){}];
@@ -261,10 +269,14 @@
 - (void)layoutCircleView {
     if (isCircleView) {
         [UIView animateWithDuration:0.3 delay:0.0  options:UIViewAnimationCurveEaseOut animations:^{
-            
-            [detailViewController.imageViewA setBounds:CGRectMake(0, 0, detailViewController.viewA.bounds.size.height * 0.9, detailViewController.viewA.bounds.size.height * 0.9)];
             //detailViewController.imageViewA.center = detailViewController.viewA.center;
-            [detailViewController.imageViewA setCenter:CGPointMake(detailViewController.viewA.center.x, detailViewController.viewA.center.y-30)];
+            CGFloat midX = CGRectGetMidX(detailViewController.viewA.bounds);
+            CGFloat midY = CGRectGetMidY(detailViewController.viewA.bounds);
+[detailViewController.imageViewA setBounds:CGRectMake(0, 0, detailViewController.viewA.bounds.size.width * 0.9, detailViewController.viewA.bounds.size.height * 0.8)];
+           
+            detailViewController.imageViewA.center = CGPointMake(midX, midY);
+            
+            // [detailViewController.imageViewA setCenter:CGPointMake(detailViewController.viewA.center.x, detailViewController.viewA.center.y-30)];
             detailViewController.imageViewA.alpha = 1.0;
             
         }   completion:^(BOOL finished){}];

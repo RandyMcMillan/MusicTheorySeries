@@ -92,5 +92,7 @@
 @property (nonatomic, assign) MixerHostAudio *mixerHost;
 - (int)keyIndexForTouch:(UITouch *)touch;
 - (IBAction)mixerOutputGainChanged:(UISlider *)sender;
+- (void)drawRects:(NSIndexPath *)indexPath;
+@property (nonatomic,readwrite) BOOL isShowingLandscapeView;
 
 @end

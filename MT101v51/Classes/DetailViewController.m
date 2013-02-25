@@ -43,7 +43,7 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-	[self drawRects];
+	[self drawRects:0];
 	// [mixerHost stopAUGraph];
 
 	// create the mixer
@@ -75,6 +75,8 @@
 
 	//self.imageViewA.image = imageView.image;
 	//[imageView release];
+    NSLog(@"imageViewA width = %f / height = %f ",imageViewA.bounds.size.width,imageViewA.bounds.size.height);
+
 }
 
 - (void)layoutSubViews
@@ -82,7 +84,9 @@
 	// Do any additional setup after loading the view from its nib.
 	float	screenWidth		= [UIScreen mainScreen].bounds.size.width;
 	float	screenHeight	= [UIScreen mainScreen].bounds.size.height;
-
+    CGFloat midX = CGRectGetMidX(self.view.bounds);
+    CGFloat midY = CGRectGetMidY(self.view.bounds);
+    self.viewA.center = CGPointMake(midX+300, midY+300);
 	// [self.viewA setCenter:self.view.center];
 	self.view.autoresizesSubviews = YES;
 
@@ -93,13 +97,95 @@
 	NSLog(@"screenWidth = %f screenHeight = %f", screenWidth, screenHeight);
 	NSLog(@"viewWidth = %f viewHeight %f", self.view.bounds.size.width, self.view.bounds.size.height);
 	NSLog(@"viewAWidth = %f viewAHeight %f \n\n", self.viewA.bounds.size.width, self.viewA.bounds.size.height);
+   
+    
+
+    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
+    if (UIDeviceOrientationIsLandscape(deviceOrientation) &&
+        !self.isShowingLandscapeView)
+    {
+        [self performSegueWithIdentifier:@"DisplayAlternateView" sender:self];
+        self.isShowingLandscapeView = YES;
+    }
+    else if (UIDeviceOrientationIsPortrait(deviceOrientation) &&
+             self.isShowingLandscapeView)
+    {
+        [self dismissViewControllerAnimated:YES completion:nil];
+        self.isShowingLandscapeView = NO;
+    }
+    
+    
 }
 
-- (void)drawRects
+- (void)drawRects:(NSIndexPath *)indexPath
 {
-	// define the note rectangles
-	keyRects[0] = label0.frame;	// C2;
 
+    CGFloat midX = CGRectGetMidX(self.imageViewA.bounds);
+    CGFloat midY = CGRectGetMidY(self.imageViewA.bounds);
+    NSLog(@"midX = %f midY = %f",midX,midY);
+    
+    if (indexPath.section == 0) {
+        
+        label0.center = CGPointMake(midX+30, midY+30);
+        label1.center = CGPointMake(midX+60, midY+60);
+        label2.center = CGPointMake(midX+90, midY+90);
+        label3.center = CGPointMake(midX+120, midY+120);
+        
+    }
+    
+    if (indexPath.section == 1) {
+        
+    }
+    
+    if (indexPath.section == 2) {
+        
+    }
+    
+    if (indexPath.section == 3) {
+        
+    }
+    
+    if (indexPath.section == 4) {
+        
+    }
+    
+    if (indexPath.section == 5) {
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // define the note rectangles
+	keyRects[0] = label0.frame;	// C2;
 	keyRects[1]		= label1.frame;
 	keyRects[2]		= label2.frame;
 	keyRects[3]		= label3.frame;
@@ -337,6 +423,11 @@
 		[self.view addSubview:label43];
 		[self.view addSubview:label44];
     //#endif	/* if TARGET_IPHONE_SIMULATOR */
+    
+    NSLog(@"imageViewA width = %f / height = %f ",imageViewA.bounds.size.width,imageViewA.bounds.size.height);
+
+    
+    
 }	/* drawRects */
 
 - (void)destroyRects
@@ -585,6 +676,7 @@
 	];
 }
 
+
 #pragma mark -
 #pragma mark Touch events
 
@@ -715,7 +807,7 @@
 {
 	[splitController toggleMasterView:sender];
 	[self configureView];
-	[self drawRects];
+	[self drawRects:0];
 }
 
 - (IBAction)toggleVertical:(id)sender
@@ -749,6 +841,18 @@
 	// afterDelay:0];
 
 	NSLog(@"orientationChanged");
+    NSLog(@"imageViewA width = %f / height = %f ",imageViewA.bounds.size.width,imageViewA.bounds.size.height);
+    
+    if (self.view.bounds.size.width > self.view.bounds.size.height) {
+        self.isShowingLandscapeView = NO;
+
+    } else {
+    
+        self.isShowingLandscapeView = YES;
+
+    }
+    
+    NSLog(@" self.isShowingLandscapeView = %i",self.isShowingLandscapeView);
 }
 
 // Ensure that the view controller supports rotation and that the split view can therefore show in both portrait and landscape.
@@ -760,7 +864,7 @@
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
 	[self configureView];
-	[self drawRects];
+	[self drawRects:0];
 }
 
 - (void)dealloc
