@@ -26,18 +26,18 @@
 #endif
 
 	[application setStatusBarHidden:YES];
-	//    [window addSubview:splitViewController.view];
-
-	[rootViewController performSelector:@selector(selectFirstRow) withObject:nil afterDelay:0];
-	[detailViewController performSelector:@selector(configureView) withObject:nil afterDelay:0];
-	[detailViewController performSelector:@selector(toggleMasterView:) withObject:nil afterDelay:0];
+//  [window addSubview:splitViewController.view];
+//	[rootViewController performSelector:@selector(selectFirstRow) withObject:nil afterDelay:0];
+[detailViewController performSelector:@selector(configureView) withObject:nil afterDelay:0];
+[detailViewController performSelector:@selector(toggleMasterView:) withObject:nil afterDelay:0];
+[rootViewController performSelector:@selector(selectFirstRow) withObject:nil afterDelay:0];
 
 	if (NO) {												// whether to allow dragging the divider to move the split.
 		splitViewController.splitWidth				= 15.0;	// make it wide enough to actually drag!
 		splitViewController.allowsDraggingDivider	= YES;
 	}
 
-	//[window makeKeyAndVisible];
+	[window makeKeyAndVisible];
 
 	return YES;
 }
@@ -46,7 +46,6 @@
 {
 	[splitViewController release];
 	[window release];
-
 	[super dealloc];
 }
 
