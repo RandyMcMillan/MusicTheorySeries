@@ -105,7 +105,12 @@
 	if (([self.tableView numberOfSections] > 0) && ([self.tableView numberOfRowsInSection:0] > 0)) {
 		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
 		[self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionTop];
-		[self tableView:self.tableView didSelectRowAtIndexPath:indexPath];
+		//[self tableView:self.tableView didSelectRowAtIndexPath:indexPath];
+       
+        detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:@"Welcome"];
+        [self layoutImageView];
+      	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+  
 	}
 }
 

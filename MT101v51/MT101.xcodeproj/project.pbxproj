@@ -45,7 +45,6 @@
 		48456B7416B09882001278CB /* Tenor Clef in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5E16B09882001278CB /* Tenor Clef */; };
 		48456B7516B09882001278CB /* The Grand Staff in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5F16B09882001278CB /* The Grand Staff */; };
 		48456B7616B09882001278CB /* Treble Clef in Resources */ = {isa = PBXBuildFile; fileRef = 48456B6016B09882001278CB /* Treble Clef */; };
-		48456B7716B09882001278CB /* welcome.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48456B6116B09882001278CB /* welcome.pdf */; };
 		484BF42616D0672600C0A8A5 /* imageList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484BF42516D0672600C0A8A5 /* imageList0.plist */; };
 		48596CF216D0293B004DEE0F /* RootVCIcons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48596CDA16D0293B004DEE0F /* RootVCIcons.plist */; };
 		48596CF316D0293B004DEE0F /* CellIcon1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48596CDB16D0293B004DEE0F /* CellIcon1.plist */; };
@@ -92,6 +91,7 @@
 		48849CDC16C3D17600BE741F /* StaffIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48849CCE16C3D17600BE741F /* StaffIcon.pdf */; };
 		48849CDD16C3D17600BE741F /* StaffIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48849CCF16C3D17600BE741F /* StaffIcon.png */; };
 		4889F6AC16D0A24800C4C349 /* imageList1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4889F6AB16D0A24800C4C349 /* imageList1.plist */; };
+		48B011A616DBD5CE00621CCB /* Welcome in Resources */ = {isa = PBXBuildFile; fileRef = 48B011A516DBD5CE00621CCB /* Welcome */; };
 		48BB214516C42EC40021E05F /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BB214416C42EC40021E05F /* MixerHostAudio.m */; };
 		48BB214916C42F8D0021E05F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BB214816C42F8D0021E05F /* AVFoundation.framework */; };
 		48BB214B16C42F920021E05F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BB214A16C42F920021E05F /* AudioToolbox.framework */; };
@@ -221,7 +221,6 @@
 		48456B5E16B09882001278CB /* Tenor Clef */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Tenor Clef"; sourceTree = "<group>"; };
 		48456B5F16B09882001278CB /* The Grand Staff */ = {isa = PBXFileReference; lastKnownFileType = text; path = "The Grand Staff"; sourceTree = "<group>"; };
 		48456B6016B09882001278CB /* Treble Clef */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Treble Clef"; sourceTree = "<group>"; };
-		48456B6116B09882001278CB /* welcome.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = welcome.pdf; sourceTree = "<group>"; };
 		484BF42516D0672600C0A8A5 /* imageList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList0.plist; sourceTree = "<group>"; };
 		48596CDA16D0293B004DEE0F /* RootVCIcons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RootVCIcons.plist; sourceTree = "<group>"; };
 		48596CDB16D0293B004DEE0F /* CellIcon1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CellIcon1.plist; sourceTree = "<group>"; };
@@ -270,6 +269,7 @@
 		48849CCE16C3D17600BE741F /* StaffIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = StaffIcon.pdf; sourceTree = "<group>"; };
 		48849CCF16C3D17600BE741F /* StaffIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StaffIcon.png; sourceTree = "<group>"; };
 		4889F6AB16D0A24800C4C349 /* imageList1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList1.plist; sourceTree = "<group>"; };
+		48B011A516DBD5CE00621CCB /* Welcome */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Welcome; sourceTree = "<group>"; };
 		48BB214316C42EC40021E05F /* MixerHostAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerHostAudio.h; sourceTree = "<group>"; };
 		48BB214416C42EC40021E05F /* MixerHostAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixerHostAudio.m; sourceTree = "<group>"; };
 		48BB214616C42EF80021E05F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -481,6 +481,7 @@
 		48456B4B16B09882001278CB /* ScalePDFs */ = {
 			isa = PBXGroup;
 			children = (
+				48B011A516DBD5CE00621CCB /* Welcome */,
 				48456B4C16B09882001278CB /* Aeolian */,
 				48456B4D16B09882001278CB /* Alto Clef */,
 				48456B4E16B09882001278CB /* BariTone Clef */,
@@ -502,7 +503,6 @@
 				48456B5E16B09882001278CB /* Tenor Clef */,
 				48456B5F16B09882001278CB /* The Grand Staff */,
 				48456B6016B09882001278CB /* Treble Clef */,
-				48456B6116B09882001278CB /* welcome.pdf */,
 			);
 			path = ScalePDFs;
 			sourceTree = "<group>";
@@ -777,7 +777,6 @@
 				48456B7416B09882001278CB /* Tenor Clef in Resources */,
 				48456B7516B09882001278CB /* The Grand Staff in Resources */,
 				48456B7616B09882001278CB /* Treble Clef in Resources */,
-				48456B7716B09882001278CB /* welcome.pdf in Resources */,
 				48849CD016C3D17600BE741F /* CClefIcon.png in Resources */,
 				48849CD116C3D17600BE741F /* CircleIcon.pdf in Resources */,
 				48849CD216C3D17600BE741F /* CircleIcon.png in Resources */,
@@ -887,6 +886,7 @@
 				487D64F716D14E8B0098AEA7 /* imageList3.plist in Resources */,
 				487D64F816D14E8B0098AEA7 /* imageList4.plist in Resources */,
 				487D64F916D14E8B0098AEA7 /* imageList5.plist in Resources */,
+				48B011A616DBD5CE00621CCB /* Welcome in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
