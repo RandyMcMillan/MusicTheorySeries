@@ -20,6 +20,8 @@
 		480B3E6516AB7AFC00A3F687 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480B3E6416AB7AFC00A3F687 /* MainWindow_iPhone.xib */; };
 		480B3E9C16AB80A500A3F687 /* RootViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480B3E9B16AB80A500A3F687 /* RootViewController_iPhone.xib */; };
 		480C589016935A04001A7007 /* DetailViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 480C588E16935A04001A7007 /* DetailViewController_iPhone.m */; };
+		481BF43116DEB3BE006F67B8 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 481BF43016DEB3BE006F67B8 /* OBShapedButton.m */; };
+		481BF46416DEB3E4006F67B8 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 481BF46316DEB3E4006F67B8 /* UIImage+ColorAtPixel.m */; };
 		48456B3616B07FE4001278CB /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B2F16B07FE4001278CB /* NSString+MD5.m */; };
 		48456B3716B07FE4001278CB /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3116B07FE4001278CB /* PDFView.m */; };
 		48456B3816B07FE4001278CB /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3316B07FE4001278CB /* UIImage+PDF.m */; };
@@ -192,6 +194,10 @@
 		480B3E9B16AB80A500A3F687 /* RootViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController_iPhone.xib; path = iPhone/RootViewController_iPhone.xib; sourceTree = "<group>"; };
 		480C588D16935A04001A7007 /* DetailViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController_iPhone.h; path = iPhone/DetailViewController_iPhone.h; sourceTree = "<group>"; };
 		480C588E16935A04001A7007 /* DetailViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController_iPhone.m; path = iPhone/DetailViewController_iPhone.m; sourceTree = "<group>"; };
+		481BF42F16DEB3BE006F67B8 /* OBShapedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBShapedButton.h; sourceTree = "<group>"; };
+		481BF43016DEB3BE006F67B8 /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBShapedButton.m; sourceTree = "<group>"; };
+		481BF46216DEB3E4006F67B8 /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		481BF46316DEB3E4006F67B8 /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
 		48456B2E16B07FE4001278CB /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		48456B2F16B07FE4001278CB /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		48456B3016B07FE4001278CB /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
@@ -434,6 +440,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				481BF46116DEB3E4006F67B8 /* UIImage+ColorAtPixel */,
+				481BF42E16DEB3BE006F67B8 /* OBShapedButton */,
 				48596CD916D0293B004DEE0F /* Plists */,
 				48BB214C16C431D70021E05F /* Audio */,
 				48456B4B16B09882001278CB /* ScalePDFs */,
@@ -461,6 +469,24 @@
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		481BF42E16DEB3BE006F67B8 /* OBShapedButton */ = {
+			isa = PBXGroup;
+			children = (
+				481BF42F16DEB3BE006F67B8 /* OBShapedButton.h */,
+				481BF43016DEB3BE006F67B8 /* OBShapedButton.m */,
+			);
+			path = OBShapedButton;
+			sourceTree = "<group>";
+		};
+		481BF46116DEB3E4006F67B8 /* UIImage+ColorAtPixel */ = {
+			isa = PBXGroup;
+			children = (
+				481BF46216DEB3E4006F67B8 /* UIImage+ColorAtPixel.h */,
+				481BF46316DEB3E4006F67B8 /* UIImage+ColorAtPixel.m */,
+			);
+			path = "UIImage+ColorAtPixel";
 			sourceTree = "<group>";
 		};
 		48456B2D16B07FE4001278CB /* UIImage+PDF */ = {
@@ -912,6 +938,8 @@
 				48456B3816B07FE4001278CB /* UIImage+PDF.m in Sources */,
 				48456B3916B07FE4001278CB /* UIView+Image.m in Sources */,
 				48BB214516C42EC40021E05F /* MixerHostAudio.m in Sources */,
+				481BF43116DEB3BE006F67B8 /* OBShapedButton.m in Sources */,
+				481BF46416DEB3E4006F67B8 /* UIImage+ColorAtPixel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
