@@ -24,6 +24,8 @@
 		481BF46416DEB3E4006F67B8 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 481BF46316DEB3E4006F67B8 /* UIImage+ColorAtPixel.m */; };
 		481BF46816DEC32E006F67B8 /* TheGrandStaff.m in Sources */ = {isa = PBXBuildFile; fileRef = 481BF46616DEC32E006F67B8 /* TheGrandStaff.m */; };
 		481BF46916DEC32E006F67B8 /* TheGrandStaff.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481BF46716DEC32E006F67B8 /* TheGrandStaff.xib */; };
+		481BF46D16DECBDB006F67B8 /* CircleOfFifthsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 481BF46B16DECBDB006F67B8 /* CircleOfFifthsViewController.m */; };
+		481BF46E16DECBDB006F67B8 /* CircleOfFifthsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481BF46C16DECBDB006F67B8 /* CircleOfFifthsViewController.xib */; };
 		48456B3616B07FE4001278CB /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B2F16B07FE4001278CB /* NSString+MD5.m */; };
 		48456B3716B07FE4001278CB /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3116B07FE4001278CB /* PDFView.m */; };
 		48456B3816B07FE4001278CB /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3316B07FE4001278CB /* UIImage+PDF.m */; };
@@ -198,6 +200,9 @@
 		481BF46516DEC32E006F67B8 /* TheGrandStaff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TheGrandStaff.h; path = ExampleVCs/TheGrandStaff.h; sourceTree = "<group>"; };
 		481BF46616DEC32E006F67B8 /* TheGrandStaff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TheGrandStaff.m; path = ExampleVCs/TheGrandStaff.m; sourceTree = "<group>"; };
 		481BF46716DEC32E006F67B8 /* TheGrandStaff.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TheGrandStaff.xib; path = ExampleVCs/TheGrandStaff.xib; sourceTree = "<group>"; };
+		481BF46A16DECBDB006F67B8 /* CircleOfFifthsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleOfFifthsViewController.h; path = ExampleVCs/CircleOfFifthsViewController.h; sourceTree = "<group>"; };
+		481BF46B16DECBDB006F67B8 /* CircleOfFifthsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleOfFifthsViewController.m; path = ExampleVCs/CircleOfFifthsViewController.m; sourceTree = "<group>"; };
+		481BF46C16DECBDB006F67B8 /* CircleOfFifthsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CircleOfFifthsViewController.xib; path = ExampleVCs/CircleOfFifthsViewController.xib; sourceTree = "<group>"; };
 		48456B2E16B07FE4001278CB /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		48456B2F16B07FE4001278CB /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		48456B3016B07FE4001278CB /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
@@ -688,6 +693,9 @@
 				1D3623250D0F684500981E51 /* MGSplitViewAppDelegate.m */,
 				28042007108E984D000629CD /* RootViewController.h */,
 				28042008108E984D000629CD /* RootViewController.m */,
+				481BF46A16DECBDB006F67B8 /* CircleOfFifthsViewController.h */,
+				481BF46B16DECBDB006F67B8 /* CircleOfFifthsViewController.m */,
+				481BF46C16DECBDB006F67B8 /* CircleOfFifthsViewController.xib */,
 				28042009108E984D000629CD /* DetailViewController.h */,
 				2804200A108E984D000629CD /* DetailViewController.m */,
 				481BF46516DEC32E006F67B8 /* TheGrandStaff.h */,
@@ -902,6 +910,7 @@
 				484BF42616D0672600C0A8A5 /* subViewList0.plist in Resources */,
 				48B011A616DBD5CE00621CCB /* Welcome in Resources */,
 				481BF46916DEC32E006F67B8 /* TheGrandStaff.xib in Resources */,
+				481BF46E16DECBDB006F67B8 /* CircleOfFifthsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -930,6 +939,7 @@
 				481BF43116DEB3BE006F67B8 /* OBShapedButton.m in Sources */,
 				481BF46416DEB3E4006F67B8 /* UIImage+ColorAtPixel.m in Sources */,
 				481BF46816DEC32E006F67B8 /* TheGrandStaff.m in Sources */,
+				481BF46D16DECBDB006F67B8 /* CircleOfFifthsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

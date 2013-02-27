@@ -10,6 +10,7 @@
 
 @class DetailViewController;
 @class TheGrandStaff;
+@class CircleOfFifthsViewController;
 
 @interface RootViewController : UITableViewController {
 	DetailViewController *detailViewController;

@@ -9,7 +9,7 @@
 #import "RootViewController.h"
 #import "DetailViewController.h"
 #import "TheGrandStaff.h"
-
+#import "CircleOfFifthsViewController.h"
 
 @implementation RootViewController
 
@@ -157,6 +157,7 @@ if (([self.tableView numberOfSections] > 0) && ([self.tableView numberOfRowsInSe
 		//detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
         
         UIViewController *theGrandStaff = [[TheGrandStaff alloc]init];
+        
         [detailViewController.viewA addSubview:theGrandStaff.view];
         [theGrandStaff.view setFrame:detailViewController.viewA.frame];
         [detailViewController.viewA bringSubviewToFront:theGrandStaff.view];
@@ -166,6 +167,11 @@ if (([self.tableView numberOfSections] > 0) && ([self.tableView numberOfRowsInSe
 	}
 
 	if (indexPath.section == 1) {
+        UIViewController *theCircleOfFifths = [[CircleOfFifthsViewController alloc]init];
+        
+        [detailViewController.viewA addSubview:theCircleOfFifths.view];
+        [theCircleOfFifths.view setFrame:detailViewController.viewA.frame];
+        [detailViewController.viewA bringSubviewToFront:theCircleOfFifths.view];
 		isCircleView = TRUE;
 		//detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList1[indexPath.row]];
 		[UIView animateWithDuration:0.5 delay:0.5  options:UIViewAnimationCurveEaseOut animations:^{}   completion:^(BOOL finished) {}];
