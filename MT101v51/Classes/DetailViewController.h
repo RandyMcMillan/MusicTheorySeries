@@ -26,6 +26,7 @@
 	int		lastKeyIndex;
 	CGRect	keyRects[KEY_COUNT];
 
+	IBOutlet UIButton	*button0;
 	IBOutlet UILabel	*label0;
 	IBOutlet UILabel	*label1;
 	IBOutlet UILabel	*label2;
@@ -94,5 +95,10 @@
 - (IBAction)mixerOutputGainChanged:(UISlider *)sender;
 - (void)drawRects:(NSIndexPath *)indexPath;
 @property (nonatomic,readwrite) BOOL isShowingLandscapeView;
+
+
+- (IBAction)playNote:(id)sender;
+
+
 
 @end

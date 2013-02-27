@@ -117,9 +117,10 @@
 	CGFloat midY	= CGRectGetMidY(self.imageViewA.bounds);
 
 	NSLog(@"midX = %f midY = %f", midX, midY);
-
+    //[mixerHost playNote:0];///manually trigger an audio event like this;
 	if (indexPath.section == 0) {
-		label0.center	= CGPointMake(midX - 290, midY + 330);
+		button0.center	= CGPointMake(midX + 30, midY + 30);
+		label0.center	= CGPointMake(midX + 30, midY + 30);
 		label1.center	= CGPointMake(midX + 60, midY + 60);
 		label2.center	= CGPointMake(midX + 90, midY + 90);
 		label3.center	= CGPointMake(midX + 120, midY + 120);
@@ -176,6 +177,7 @@
 	if (indexPath.section == 5) {}
 
 	// define the note rectangles
+	label0.frame	= button0.frame;	// C2;
 	keyRects[0]		= label0.frame;	// C2;
 	keyRects[1]		= label1.frame;
 	keyRects[2]		= label2.frame;
@@ -707,6 +709,7 @@
 - (int)keyIndexForTouch:(UITouch *)touch
 {
 	int		keyIndex	= -1;
+    //	CGPoint pt			= [touch locationInView:self.view];
 	CGPoint pt			= [touch locationInView:self.view];
 
 	for (int i = 0; i < KEY_COUNT; i++) {
@@ -720,6 +723,19 @@
 
 	return keyIndex;
 }	/* keyIndexForTouch */
+
+
+
+#pragma mark -
+#pragma mark Play Note
+
+- (IBAction)playNote:(id)sender {
+
+    [mixerHost playNote:0];
+ 
+    
+}
+
 
 #pragma mark -
 #pragma mark Split view support
