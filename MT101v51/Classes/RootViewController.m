@@ -46,55 +46,17 @@
 		NSLog(@"cellIcon = %@", str);
 	}
 
-#pragma mark - Image Lists
-
-	NSString *imageListPath0 =
-		[[NSBundle mainBundle] pathForResource:@"imageList0" ofType:@"plist"];
-	imageList0 = [[NSArray alloc] initWithContentsOfFile:imageListPath0];
-
-	for (NSString *str in imageList0) {
-		NSLog(@"cellIcon = %@", str);
+#pragma mark - SubView Lists
+    
+    NSString *subViewListPath0 =
+    [[NSBundle mainBundle] pathForResource:@"subViewList0" ofType:@"plist"];
+	subViewList0 = [[NSArray alloc] initWithContentsOfFile:subViewListPath0];
+    
+	for (NSString *str in subViewList0) {
+		NSLog(@"subViewList0 = %@", str);
 	}
+ 
 
-	NSString *imageListPath1 =
-		[[NSBundle mainBundle] pathForResource:@"imageList1" ofType:@"plist"];
-	imageList1 = [[NSArray alloc] initWithContentsOfFile:imageListPath1];
-
-	for (NSString *str in imageList1) {
-		NSLog(@"cellIcon = %@", str);
-	}
-
-	NSString *imageListPath2 =
-		[[NSBundle mainBundle] pathForResource:@"imageList2" ofType:@"plist"];
-	imageList2 = [[NSArray alloc] initWithContentsOfFile:imageListPath2];
-
-	for (NSString *str in imageList2) {
-		NSLog(@"cellIcon = %@", str);
-	}
-
-	NSString *imageListPath3 =
-		[[NSBundle mainBundle] pathForResource:@"imageList3" ofType:@"plist"];
-	imageList3 = [[NSArray alloc] initWithContentsOfFile:imageListPath3];
-
-	for (NSString *str in imageList3) {
-		NSLog(@"cellIcon = %@", str);
-	}
-
-	NSString *imageListPath4 =
-		[[NSBundle mainBundle] pathForResource:@"imageList4" ofType:@"plist"];
-	imageList4 = [[NSArray alloc] initWithContentsOfFile:imageListPath4];
-
-	for (NSString *str in imageList4) {
-		NSLog(@"cellIcon = %@", str);
-	}
-
-	NSString *imageListPath5 =
-		[[NSBundle mainBundle] pathForResource:@"imageList5" ofType:@"plist"];
-	imageList5 = [[NSArray alloc] initWithContentsOfFile:imageListPath5];
-
-	for (NSString *str in imageList5) {
-		NSLog(@"cellIcon = %@", str);
-	}
 }
 
 - (void)selectFirstRow
@@ -183,38 +145,38 @@ if (([self.tableView numberOfSections] > 0) && ([self.tableView numberOfRowsInSe
 
 	// When a row is selected, set the detail view controller's detail item to the item associated with the selected row.
 	//	detailViewController.detailItem = [NSString stringWithFormat:@"From RootVC Row %d", indexPath.row];
-	detailViewController.detailItem = [NSString stringWithFormat:@"From RootVC Row %@", imageList0[indexPath.row]];
+	detailViewController.detailItem = [NSString stringWithFormat:@"From RootVC Row %@", subViewList0[indexPath.row]];
 
 	// UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"]];
 	// detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:@"TheGrandStaff.pdf"];
 
 	if (indexPath.section == 0) {
 		isCircleView = FALSE;
-		detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
+		//detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
 		[UIView animateWithDuration:0.5 delay:0.5  options:UIViewAnimationCurveEaseOut animations:^{}   completion:^(BOOL finished) {}];
 	}
 
 	if (indexPath.section == 1) {
 		isCircleView = TRUE;
-		detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList1[indexPath.row]];
+		//detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList1[indexPath.row]];
 		[UIView animateWithDuration:0.5 delay:0.5  options:UIViewAnimationCurveEaseOut animations:^{}   completion:^(BOOL finished) {}];
 	}
 
 	if (indexPath.section == 2) {
 		isCircleView = FALSE;
-		detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList2[indexPath.row]];
+		//detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList2[indexPath.row]];
 		[UIView animateWithDuration:0.5 delay:0.5  options:UIViewAnimationCurveEaseOut animations:^{}   completion:^(BOOL finished) {}];
 	}
 
 	if (indexPath.section == 3) {
 		isCircleView = TRUE;
-		detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList3[indexPath.row]];
+		//detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList3[indexPath.row]];
 		[UIView animateWithDuration:0.5 delay:0.5  options:UIViewAnimationCurveEaseOut animations:^{}   completion:^(BOOL finished) {}];
 	}
 
 	if (indexPath.section == 4) {
 		isCircleView = FALSE;
-		detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList4[indexPath.row]];
+		//detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList4[indexPath.row]];
 		[UIView animateWithDuration:0.5 delay:0.5  options:UIViewAnimationCurveEaseOut animations:^{}   completion:^(BOOL finished) {}];
 	}
 

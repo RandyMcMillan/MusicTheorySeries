@@ -22,6 +22,8 @@
 		480C589016935A04001A7007 /* DetailViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 480C588E16935A04001A7007 /* DetailViewController_iPhone.m */; };
 		481BF43116DEB3BE006F67B8 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 481BF43016DEB3BE006F67B8 /* OBShapedButton.m */; };
 		481BF46416DEB3E4006F67B8 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 481BF46316DEB3E4006F67B8 /* UIImage+ColorAtPixel.m */; };
+		481BF46816DEC32E006F67B8 /* TheGrandStaff.m in Sources */ = {isa = PBXBuildFile; fileRef = 481BF46616DEC32E006F67B8 /* TheGrandStaff.m */; };
+		481BF46916DEC32E006F67B8 /* TheGrandStaff.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481BF46716DEC32E006F67B8 /* TheGrandStaff.xib */; };
 		48456B3616B07FE4001278CB /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B2F16B07FE4001278CB /* NSString+MD5.m */; };
 		48456B3716B07FE4001278CB /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3116B07FE4001278CB /* PDFView.m */; };
 		48456B3816B07FE4001278CB /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 48456B3316B07FE4001278CB /* UIImage+PDF.m */; };
@@ -47,7 +49,7 @@
 		48456B7416B09882001278CB /* Tenor Clef in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5E16B09882001278CB /* Tenor Clef */; };
 		48456B7516B09882001278CB /* The Grand Staff in Resources */ = {isa = PBXBuildFile; fileRef = 48456B5F16B09882001278CB /* The Grand Staff */; };
 		48456B7616B09882001278CB /* Treble Clef in Resources */ = {isa = PBXBuildFile; fileRef = 48456B6016B09882001278CB /* Treble Clef */; };
-		484BF42616D0672600C0A8A5 /* imageList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484BF42516D0672600C0A8A5 /* imageList0.plist */; };
+		484BF42616D0672600C0A8A5 /* subViewList0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484BF42516D0672600C0A8A5 /* subViewList0.plist */; };
 		48596CF216D0293B004DEE0F /* RootVCIcons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48596CDA16D0293B004DEE0F /* RootVCIcons.plist */; };
 		48596CF316D0293B004DEE0F /* CellIcon1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48596CDB16D0293B004DEE0F /* CellIcon1.plist */; };
 		48596CF416D0293B004DEE0F /* CellIcon2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48596CDC16D0293B004DEE0F /* CellIcon2.plist */; };
@@ -74,10 +76,6 @@
 		48596D0916D0293B004DEE0F /* YouTubeToDisplay5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48596CF116D0293B004DEE0F /* YouTubeToDisplay5.plist */; };
 		486AFF651658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AFF641658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m */; };
 		486AFF691658594900FBFAD6 /* RootViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AFF671658594900FBFAD6 /* RootViewController_iPhone.m */; };
-		487D64F616D14E8B0098AEA7 /* imageList2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487D64F216D14E8B0098AEA7 /* imageList2.plist */; };
-		487D64F716D14E8B0098AEA7 /* imageList3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487D64F316D14E8B0098AEA7 /* imageList3.plist */; };
-		487D64F816D14E8B0098AEA7 /* imageList4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487D64F416D14E8B0098AEA7 /* imageList4.plist */; };
-		487D64F916D14E8B0098AEA7 /* imageList5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 487D64F516D14E8B0098AEA7 /* imageList5.plist */; };
 		48849CD016C3D17600BE741F /* CClefIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48849CC216C3D17600BE741F /* CClefIcon.png */; };
 		48849CD116C3D17600BE741F /* CircleIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48849CC316C3D17600BE741F /* CircleIcon.pdf */; };
 		48849CD216C3D17600BE741F /* CircleIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48849CC416C3D17600BE741F /* CircleIcon.png */; };
@@ -92,7 +90,6 @@
 		48849CDB16C3D17600BE741F /* PhrygianIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48849CCD16C3D17600BE741F /* PhrygianIcon.png */; };
 		48849CDC16C3D17600BE741F /* StaffIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48849CCE16C3D17600BE741F /* StaffIcon.pdf */; };
 		48849CDD16C3D17600BE741F /* StaffIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 48849CCF16C3D17600BE741F /* StaffIcon.png */; };
-		4889F6AC16D0A24800C4C349 /* imageList1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4889F6AB16D0A24800C4C349 /* imageList1.plist */; };
 		48B011A616DBD5CE00621CCB /* Welcome in Resources */ = {isa = PBXBuildFile; fileRef = 48B011A516DBD5CE00621CCB /* Welcome */; };
 		48BB214516C42EC40021E05F /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BB214416C42EC40021E05F /* MixerHostAudio.m */; };
 		48BB214916C42F8D0021E05F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BB214816C42F8D0021E05F /* AVFoundation.framework */; };
@@ -198,6 +195,9 @@
 		481BF43016DEB3BE006F67B8 /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBShapedButton.m; sourceTree = "<group>"; };
 		481BF46216DEB3E4006F67B8 /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
 		481BF46316DEB3E4006F67B8 /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
+		481BF46516DEC32E006F67B8 /* TheGrandStaff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TheGrandStaff.h; path = ExampleVCs/TheGrandStaff.h; sourceTree = "<group>"; };
+		481BF46616DEC32E006F67B8 /* TheGrandStaff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TheGrandStaff.m; path = ExampleVCs/TheGrandStaff.m; sourceTree = "<group>"; };
+		481BF46716DEC32E006F67B8 /* TheGrandStaff.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TheGrandStaff.xib; path = ExampleVCs/TheGrandStaff.xib; sourceTree = "<group>"; };
 		48456B2E16B07FE4001278CB /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		48456B2F16B07FE4001278CB /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		48456B3016B07FE4001278CB /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 		48456B5E16B09882001278CB /* Tenor Clef */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Tenor Clef"; sourceTree = "<group>"; };
 		48456B5F16B09882001278CB /* The Grand Staff */ = {isa = PBXFileReference; lastKnownFileType = text; path = "The Grand Staff"; sourceTree = "<group>"; };
 		48456B6016B09882001278CB /* Treble Clef */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Treble Clef"; sourceTree = "<group>"; };
-		484BF42516D0672600C0A8A5 /* imageList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList0.plist; sourceTree = "<group>"; };
+		484BF42516D0672600C0A8A5 /* subViewList0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = subViewList0.plist; sourceTree = "<group>"; };
 		48596CDA16D0293B004DEE0F /* RootVCIcons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RootVCIcons.plist; sourceTree = "<group>"; };
 		48596CDB16D0293B004DEE0F /* CellIcon1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CellIcon1.plist; sourceTree = "<group>"; };
 		48596CDC16D0293B004DEE0F /* CellIcon2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CellIcon2.plist; sourceTree = "<group>"; };
@@ -256,10 +256,6 @@
 		486AFF641658575C00FBFAD6 /* MGSplitViewAppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGSplitViewAppDelegate_iPhone.m; path = Classes/iPhone/MGSplitViewAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		486AFF661658594900FBFAD6 /* RootViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController_iPhone.h; path = iPhone/RootViewController_iPhone.h; sourceTree = "<group>"; };
 		486AFF671658594900FBFAD6 /* RootViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController_iPhone.m; path = iPhone/RootViewController_iPhone.m; sourceTree = "<group>"; };
-		487D64F216D14E8B0098AEA7 /* imageList2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList2.plist; sourceTree = "<group>"; };
-		487D64F316D14E8B0098AEA7 /* imageList3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList3.plist; sourceTree = "<group>"; };
-		487D64F416D14E8B0098AEA7 /* imageList4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList4.plist; sourceTree = "<group>"; };
-		487D64F516D14E8B0098AEA7 /* imageList5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList5.plist; sourceTree = "<group>"; };
 		48849CC216C3D17600BE741F /* CClefIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CClefIcon.png; sourceTree = "<group>"; };
 		48849CC316C3D17600BE741F /* CircleIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CircleIcon.pdf; sourceTree = "<group>"; };
 		48849CC416C3D17600BE741F /* CircleIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleIcon.png; sourceTree = "<group>"; };
@@ -274,7 +270,6 @@
 		48849CCD16C3D17600BE741F /* PhrygianIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhrygianIcon.png; sourceTree = "<group>"; };
 		48849CCE16C3D17600BE741F /* StaffIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = StaffIcon.pdf; sourceTree = "<group>"; };
 		48849CCF16C3D17600BE741F /* StaffIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StaffIcon.png; sourceTree = "<group>"; };
-		4889F6AB16D0A24800C4C349 /* imageList1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList1.plist; sourceTree = "<group>"; };
 		48B011A516DBD5CE00621CCB /* Welcome */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Welcome; sourceTree = "<group>"; };
 		48BB214316C42EC40021E05F /* MixerHostAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerHostAudio.h; sourceTree = "<group>"; };
 		48BB214416C42EC40021E05F /* MixerHostAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixerHostAudio.m; sourceTree = "<group>"; };
@@ -536,10 +531,6 @@
 		48596CD916D0293B004DEE0F /* Plists */ = {
 			isa = PBXGroup;
 			children = (
-				487D64F216D14E8B0098AEA7 /* imageList2.plist */,
-				487D64F316D14E8B0098AEA7 /* imageList3.plist */,
-				487D64F416D14E8B0098AEA7 /* imageList4.plist */,
-				487D64F516D14E8B0098AEA7 /* imageList5.plist */,
 				4808659816D03E7F00BB7D5D /* RootSections.plist */,
 				48596CDA16D0293B004DEE0F /* RootVCIcons.plist */,
 				48596CDB16D0293B004DEE0F /* CellIcon1.plist */,
@@ -565,8 +556,7 @@
 				48596CEF16D0293B004DEE0F /* YouTubeToDisplay3.plist */,
 				48596CF016D0293B004DEE0F /* YouTubeToDisplay4.plist */,
 				48596CF116D0293B004DEE0F /* YouTubeToDisplay5.plist */,
-				484BF42516D0672600C0A8A5 /* imageList0.plist */,
-				4889F6AB16D0A24800C4C349 /* imageList1.plist */,
+				484BF42516D0672600C0A8A5 /* subViewList0.plist */,
 			);
 			path = Plists;
 			sourceTree = "<group>";
@@ -700,6 +690,9 @@
 				28042008108E984D000629CD /* RootViewController.m */,
 				28042009108E984D000629CD /* DetailViewController.h */,
 				2804200A108E984D000629CD /* DetailViewController.m */,
+				481BF46516DEC32E006F67B8 /* TheGrandStaff.h */,
+				481BF46616DEC32E006F67B8 /* TheGrandStaff.m */,
+				481BF46716DEC32E006F67B8 /* TheGrandStaff.xib */,
 			);
 			name = Demo;
 			sourceTree = "<group>";
@@ -906,13 +899,9 @@
 				48596D0816D0293B004DEE0F /* YouTubeToDisplay4.plist in Resources */,
 				48596D0916D0293B004DEE0F /* YouTubeToDisplay5.plist in Resources */,
 				4808659916D03E7F00BB7D5D /* RootSections.plist in Resources */,
-				484BF42616D0672600C0A8A5 /* imageList0.plist in Resources */,
-				4889F6AC16D0A24800C4C349 /* imageList1.plist in Resources */,
-				487D64F616D14E8B0098AEA7 /* imageList2.plist in Resources */,
-				487D64F716D14E8B0098AEA7 /* imageList3.plist in Resources */,
-				487D64F816D14E8B0098AEA7 /* imageList4.plist in Resources */,
-				487D64F916D14E8B0098AEA7 /* imageList5.plist in Resources */,
+				484BF42616D0672600C0A8A5 /* subViewList0.plist in Resources */,
 				48B011A616DBD5CE00621CCB /* Welcome in Resources */,
+				481BF46916DEC32E006F67B8 /* TheGrandStaff.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -940,6 +929,7 @@
 				48BB214516C42EC40021E05F /* MixerHostAudio.m in Sources */,
 				481BF43116DEB3BE006F67B8 /* OBShapedButton.m in Sources */,
 				481BF46416DEB3E4006F67B8 /* UIImage+ColorAtPixel.m in Sources */,
+				481BF46816DEC32E006F67B8 /* TheGrandStaff.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
