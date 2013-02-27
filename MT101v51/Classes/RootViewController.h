@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class DetailViewController;
+@class TheGrandStaff;
 
 @interface RootViewController : UITableViewController {
 	DetailViewController *detailViewController;

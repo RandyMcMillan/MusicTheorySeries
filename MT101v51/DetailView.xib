@@ -126,7 +126,7 @@
 											<int key="NSfFlags">16</int>
 										</object>
 									</object>
-									<object class="IBUIButton" id="885065326">
+									<object class="IBUIButton" id="211658778">
 										<reference key="NSNextResponder" ref="618141864"/>
 										<int key="NSvFlags">269</int>
 										<string key="NSFrame">{{295, 265}, {179, 186}}</string>
@@ -368,7 +368,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">playNote:</string>
-						<reference key="source" ref="885065326"/>
+						<reference key="source" ref="211658778"/>
 						<reference key="destination" ref="841351856"/>
 						<int key="IBEventType">1</int>
 					</object>
@@ -470,7 +470,7 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="483876647"/>
-							<reference ref="885065326"/>
+							<reference ref="211658778"/>
 						</object>
 						<reference key="parent" ref="144700642"/>
 					</object>
@@ -486,7 +486,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">105</int>
-						<reference key="object" ref="885065326"/>
+						<reference key="object" ref="211658778"/>
 						<reference key="parent" ref="618141864"/>
 					</object>
 				</object>
@@ -625,51 +625,6 @@
 							<string>dividerStyleItem</string>
 							<string>imageViewA</string>
 							<string>imageViewB</string>
-							<string>label0</string>
-							<string>label1</string>
-							<string>label10</string>
-							<string>label11</string>
-							<string>label12</string>
-							<string>label13</string>
-							<string>label14</string>
-							<string>label15</string>
-							<string>label16</string>
-							<string>label17</string>
-							<string>label18</string>
-							<string>label19</string>
-							<string>label2</string>
-							<string>label20</string>
-							<string>label21</string>
-							<string>label22</string>
-							<string>label23</string>
-							<string>label24</string>
-							<string>label25</string>
-							<string>label26</string>
-							<string>label27</string>
-							<string>label28</string>
-							<string>label29</string>
-							<string>label3</string>
-							<string>label30</string>
-							<string>label31</string>
-							<string>label32</string>
-							<string>label33</string>
-							<string>label34</string>
-							<string>label35</string>
-							<string>label36</string>
-							<string>label37</string>
-							<string>label38</string>
-							<string>label39</string>
-							<string>label4</string>
-							<string>label40</string>
-							<string>label41</string>
-							<string>label42</string>
-							<string>label43</string>
-							<string>label44</string>
-							<string>label5</string>
-							<string>label6</string>
-							<string>label7</string>
-							<string>label8</string>
-							<string>label9</string>
 							<string>masterBeforeDetailItem</string>
 							<string>splitController</string>
 							<string>tableView</string>
@@ -686,51 +641,6 @@
 							<string>UIBarButtonItem</string>
 							<string>UIImageView</string>
 							<string>UIImageView</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
 							<string>UIBarButtonItem</string>
 							<string>MGSplitViewController</string>
 							<string>UITableView</string>
@@ -750,51 +660,6 @@
 							<string>dividerStyleItem</string>
 							<string>imageViewA</string>
 							<string>imageViewB</string>
-							<string>label0</string>
-							<string>label1</string>
-							<string>label10</string>
-							<string>label11</string>
-							<string>label12</string>
-							<string>label13</string>
-							<string>label14</string>
-							<string>label15</string>
-							<string>label16</string>
-							<string>label17</string>
-							<string>label18</string>
-							<string>label19</string>
-							<string>label2</string>
-							<string>label20</string>
-							<string>label21</string>
-							<string>label22</string>
-							<string>label23</string>
-							<string>label24</string>
-							<string>label25</string>
-							<string>label26</string>
-							<string>label27</string>
-							<string>label28</string>
-							<string>label29</string>
-							<string>label3</string>
-							<string>label30</string>
-							<string>label31</string>
-							<string>label32</string>
-							<string>label33</string>
-							<string>label34</string>
-							<string>label35</string>
-							<string>label36</string>
-							<string>label37</string>
-							<string>label38</string>
-							<string>label39</string>
-							<string>label4</string>
-							<string>label40</string>
-							<string>label41</string>
-							<string>label42</string>
-							<string>label43</string>
-							<string>label44</string>
-							<string>label5</string>
-							<string>label6</string>
-							<string>label7</string>
-							<string>label8</string>
-							<string>label9</string>
 							<string>masterBeforeDetailItem</string>
 							<string>splitController</string>
 							<string>tableView</string>
@@ -825,186 +690,6 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">imageViewB</string>
 								<string key="candidateClassName">UIImageView</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label0</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label1</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label10</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label11</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label12</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label13</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label14</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label15</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label16</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label17</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label18</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label19</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label2</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label20</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label21</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label22</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label23</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label24</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label25</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label26</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label27</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label28</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label29</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label3</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label30</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label31</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label32</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label33</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label34</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label35</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label36</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label37</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label38</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label39</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label4</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label40</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label41</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label42</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label43</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label44</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label5</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label6</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label7</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label8</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">label9</string>
-								<string key="candidateClassName">UILabel</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">masterBeforeDetailItem</string>

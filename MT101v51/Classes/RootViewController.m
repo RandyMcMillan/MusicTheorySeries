@@ -8,6 +8,8 @@
 
 #import "RootViewController.h"
 #import "DetailViewController.h"
+#import "TheGrandStaff.h"
+
 
 @implementation RootViewController
 
@@ -153,6 +155,13 @@ if (([self.tableView numberOfSections] > 0) && ([self.tableView numberOfRowsInSe
 	if (indexPath.section == 0) {
 		isCircleView = FALSE;
 		//detailViewController.imageViewA.image = [UIImage originalSizeImageWithPDFNamed:imageList0[indexPath.row]];
+        
+        UIViewController *theGrandStaff = [[TheGrandStaff alloc]init];
+        [detailViewController.viewA addSubview:theGrandStaff.view];
+        [theGrandStaff.view setFrame:detailViewController.viewA.frame];
+        [detailViewController.viewA bringSubviewToFront:theGrandStaff.view];
+        
+        
 		[UIView animateWithDuration:0.5 delay:0.5  options:UIViewAnimationCurveEaseOut animations:^{}   completion:^(BOOL finished) {}];
 	}
 
